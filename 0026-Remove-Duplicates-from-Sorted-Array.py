@@ -6,17 +6,17 @@
 class Solution:
     @staticmethod
     def removeDuplicates(nums: list[int]) -> int:
-        # Initialize the index to 0
+        # Initialize unique numbers index to 0
         i = 0
-        # Loop through the list
+        # Loop through the rest of the list
         for j in range(1, len(nums)):
-            # If the current number is not equal to the previous number
+            # If the current number nums[j] != previous number nums[i], unique number found
             if nums[j] != nums[i]:
-                # Increment the index
+                # Increase the length of the unique numbers
                 i += 1
-                # Update the current number to the next number
+                # Replace nums[i] with the unique number to compared with the next nums[j]
                 nums[i] = nums[j]
-        # Return the length of the list
+        # Return the length of the list with unique numbers, minimal length is 1
         return i + 1
 
 
