@@ -1,0 +1,31 @@
+# MacOS
+*.DS_Store
+
+# Windows
+*.db
+*.ini
+$RECYCLE.BIN/
+
+# Course Materials
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.csv
+*.ppt
+*.pptx
+*.pdf
+*.mp4
+*.html
+
+# Keep Syllabus
+!/*Syllabus*.pdf
+
+# Software files
+.ipynb_checkpoints/
+.idea/
+.metadata/
+
+
+
+
