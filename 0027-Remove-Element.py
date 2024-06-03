@@ -12,7 +12,7 @@ class Solution:
         for j in range(len(nums)):
             # If the current number != val, keep it at the new length index
             if nums[j] != val:
-                # Replace the number in-place with the current number
+                # Replace the new length number in-place with the current number
                 nums[i] = nums[j]
                 # Increase the new length index
                 i += 1
