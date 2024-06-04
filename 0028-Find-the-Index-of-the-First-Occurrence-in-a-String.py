@@ -10,23 +10,19 @@ class Solution:
         if not needle:
             return 0
         # Loop through the index of characters in the haystack
-        for i in range(len(haystack)):
-            # Loop through the index of characters in the needle
-            for j in range(len(needle)):
-                # If the current index i + j is out of range of the haystack,
-                # or the current character in the haystack does not match the character in the needle,
-                # break out of the loop
-                if i + j >= len(haystack) or haystack[i + j] != needle[j]:
-                    break
-                # If the current index j is at the end of the needle,
-                # return the index i of the first occurrence of the needle in the haystack
-                if j == len(needle) - 1:
-                    return i
+        for i in range(len(haystack) + 1 - len(needle)):  # E.g. "hello" and "ll": i = 0, 1, 2, 3
+            if haystack[i:i + len(needle)] == needle:
+                # If the needle is part of the haystack, return the index
+                return i
+        # If the needle is not part of the haystack, return -1
         return -1
 
 
 # Unit Test: Input: haystack = "hello", needle = "ll", Output: 2
 assert Solution.strStr("hello", "ll") == 2
+
+# Unit Test: Input: haystack = "hello", needle = "lll", Output: -1
+assert Solution.strStr("hello", "lll") == -1
 
 # Unit Test: Input: haystack = "aaaaa", needle = "bba", Output: -1
 assert Solution.strStr("aaaaa", "bba") == -1
