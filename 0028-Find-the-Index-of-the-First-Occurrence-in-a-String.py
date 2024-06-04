@@ -12,7 +12,7 @@ class Solution:
         # Loop through the index of characters in the haystack
         for i in range(len(haystack) + 1 - len(needle)):  # E.g. "hello" and "ll": i = 0, 1, 2, 3
             # If the needle is part of the haystack, return the index
-            if haystack[i:i + len(needle)] == needle:
+            if haystack[i: i + len(needle)] == needle:
                 return i
         # If the needle is not part of the haystack, return -1
         return -1
