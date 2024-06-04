@@ -19,13 +19,12 @@ class Solution:
             # If the character is an opening bracket, add it to the stack
             if char in bracket_dict:  # E.g. "(", "{", "["
                 stack.append(char)
-            # If the character is a closing bracket, check if the stack is empty
-            # or the last element in the stack is not the corresponding opening bracket
-            # If so, return False
+            # Otherwise, pop from the non-empty stack (if empty, cannot pop, return False)
+            # if the last element is not the corresponding opening bracket, return False
             elif not stack or bracket_dict[stack.pop()] != char:
                 return False
-        # If the stack is empty, return True
-        return not stack
+        # If the stack has popped all the elements, return True
+        return True if not stack else False
 
 
 # Unit Test: Input: s = "()", Output: True
@@ -36,4 +35,8 @@ assert Solution.isValid("()[]{}") == True
 
 # Unit Test: Input: s = "(]", Output: False
 assert Solution.isValid("(]") == False
+
+# Unit Test: Input: s = "]", Output: False
+assert Solution.isValid("]") == False
+
 print("All unit tests are passed")

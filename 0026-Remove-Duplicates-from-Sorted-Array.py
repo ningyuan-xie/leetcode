@@ -7,17 +7,17 @@ class Solution:
     @staticmethod
     def removeDuplicates(nums: list[int]) -> int:
         # Initialize unique numbers index to 0
-        i = 0
-        # Loop through the rest of the list
-        for j in range(1, len(nums)):
-            # If the current number nums[j] != previous number nums[i], unique number found
-            if nums[j] != nums[i]:
+        length_unique = 0
+        # Loop begin from the second number
+        for i in range(1, len(nums)):
+            # If the current number nums[i] != previous number nums[length_unique], unique number found
+            if nums[i] != nums[length_unique]:
                 # Increase the length of the unique numbers
-                i += 1
-                # Replace nums[i] with the unique number to compared with the next nums[j]
-                nums[i] = nums[j]
+                length_unique += 1
+                # Replace nums[length_unique] with the unique number to compared with the next nums[i]
+                nums[length_unique] = nums[i]
         # Return the length of the list with unique numbers, minimal length is 1
-        return i + 1
+        return length_unique + 1
 
 
 # Unit Test: Input: nums = [1,1,2], Output: 2

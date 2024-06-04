@@ -7,17 +7,17 @@ class Solution:
     @staticmethod
     def removeElement(nums: list[int], val: int) -> int:
         # Initialize the new length index to 0
-        i = 0
+        length_new = 0
         # Loop through the list
-        for j in range(len(nums)):
+        for i in range(len(nums)):
             # If the current number != val, keep it at the new length index
-            if nums[j] != val:
+            if nums[i] != val:  # E.g. val = 3, nums = [3, 2, 2, 3]
                 # Replace the new length number in-place with the current number
-                nums[i] = nums[j]
+                nums[length_new] = nums[i]
                 # Increase the new length index
-                i += 1
+                length_new += 1
         # Return the length of the list, minimal length is 0
-        return i
+        return length_new
 
 
 # Unit Test: Input: nums = [3,2,2,3], val = 3, Output: 2; nums = [2,2,_,_]

@@ -13,7 +13,6 @@ class ListNode:
 class Solution:
     @staticmethod
     def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
-
         # Initiate a new list node to store the merged list
         l3 = ListNode(0)
         # Create a helper list to always point to the beginning of the merged list
