@@ -10,14 +10,14 @@ class Solution:
         # If the list is empty, return an empty string
         if not strs:
             return prefix
-        # Loop through the index of characters in the first string in the list
+        # Use first string in the list as the reference string: loop through its index
         for i in range(len(strs[0])):  # E.g. "flower": i = 0, 1, 2, 3, 4, 5
             # Loop through the rest of the strings in the list
-            for j in range(1, len(strs)):  # E.g. "flow", "flight": j = 1, 2
-                # If the current index i > the length of the current string,
+            for s in strs:  # E.g. "flow", "flight": s = "flow", "flight"
+                # If the current index reaches the length of the current string,
                 # or the current string's character does not match the character in the first string,
                 # return the prefix
-                if i >= len(strs[j]) or strs[j][i] != strs[0][i]:
+                if i == len(s) or strs[0][i] != s[i]:
                     return prefix
             # Otherwise, add the current character to the prefix
             prefix += strs[0][i]
