@@ -8,22 +8,24 @@ class Solution:
         # Initialize carry and result
         carry = 0
         result = []
-        # Loop through the maximum length of a and b
+        # Reverse the strings
+        a, b = a[::-1], b[::-1]
+        # Loop through the maximum length to get every digit
         for i in range(max(len(a), len(b))):
-            # Get the sum of the last element of a and b
-            total = carry
-            if i < len(a):
-                total += int(a[-1 - i])
-            if i < len(b):
-                total += int(b[-1 - i])
-            # Append the remainder of the total divided by 2 to the result
-            result.append(str(total % 2))
-            # Update the carry
-            carry = total // 2
-        # If carry is not 0, append it to the result
+            digit_a = int(a[i]) if i < len(a) else 0
+            digit_b = int(b[i]) if i < len(b) else 0
+
+            # Add the digits and the carry
+            total = digit_a + digit_b + carry
+            digit_result = str(total % 2)  # E.g. 1 + 1 = 10 -> 0; 1 + 0 = 1 -> 1
+            result.append(digit_result)  # Add the remainder to the result
+            carry = total // 2  # E.g. 1 + 1 = 10 -> 1; 1 + 0 = 1 -> 0
+
+        # If there's a carry left, add it to the result
         if carry:
             result.append(str(carry))
-        # Reverse the result and join the elements
+
+        # Reverse the result and join the characters
         return "".join(result[::-1])
 
 
