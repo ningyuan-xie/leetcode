@@ -8,7 +8,7 @@ class Solution:
     @staticmethod
     def plusOne(digits: list[int]) -> list[int]:
         # Loop through the index of the numbers in the list in reverse order
-        # -1: the stopping condition, so loop will stop before -1 (at 0)
+        # -1: the stopping condition so loop will stop before -1 (at 0)
         for i in range(len(digits) - 1, -1, -1):  # E.g. [1, 2, 3] -> 3, 2, 1
             # If the number is less than 9, add 1 to the number and return the list
             if digits[i] < 9:
