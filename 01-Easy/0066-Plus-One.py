@@ -3,7 +3,6 @@
 # Description: Given a non-empty array of decimal digits representing a non-negative integer,
 # increment one to the integer.
 
-
 class Solution:
     @staticmethod
     def plusOne(digits: list[int]) -> list[int]:
