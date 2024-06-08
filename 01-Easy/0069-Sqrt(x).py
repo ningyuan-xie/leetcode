@@ -8,7 +8,7 @@ class Solution:
         # Base case: if x is 0 or 1, return x
         if x == 0 or x == 1:
             return x
-
+        # Binary search: O(log n)
         # Initialize the left and right pointers
         left, right = 1, x
         while left <= right:
@@ -27,7 +27,9 @@ class Solution:
             else:
                 right = mid - 1
 
-        # Return the right pointer
+        # When the loop terminates: left > right
+        # left will be the ceiling of the square root of x
+        # right will be the floor of the square root of x
         return right
 
 
@@ -40,4 +42,3 @@ assert Solution.mySqrt(8) == 2
 # Unit Test: Input: x = 1, Output: 1
 assert Solution.mySqrt(1) == 1
 print("All unit tests are passed")
-
