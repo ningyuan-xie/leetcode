@@ -17,7 +17,7 @@ class Solution:
             next_step = first + second
             # Update the first and second steps
             first, second = second, next_step
-        # Return the last step
+        # Return the last step!
         return second
 
 
