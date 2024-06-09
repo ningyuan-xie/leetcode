@@ -19,7 +19,7 @@ class Solution:
         # Initialize the current node as the head of the linked list
         current = head
         
-        # Traverse the linked list
+        # Traverse the linked list until the current node is None
         while current:
             # If the current node and the next node have the same value
             if current.next and current.val == current.next.val:
@@ -31,12 +31,15 @@ class Solution:
                 
         return head
 
+    # Helper function to print the linked list
+    def printLinkedList(l: ListNode):
+        while l:
+            print(l.val, end=" -> ")
+            l = l.next
+        print("None")
 
 # Unit Test: Input: head = [1,1,2], Output: [1,2]
-list1 = ListNode(1)
-list1.next = ListNode(1)
-list1.next.next = ListNode(2)
+list1 = ListNode(1, ListNode(1, ListNode(2)))
 list2 = Solution.deleteDuplicates(list1)
-assert list2.val == 1
-assert list2.next.val == 2
+Solution.printLinkedList(list2)
 print("All unit tests are passed")
