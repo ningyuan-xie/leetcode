@@ -13,31 +13,27 @@ class ListNode:
 class Solution:
     @staticmethod
     def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
-        # Initiate a new list node to store the merged list
-        l3 = ListNode(0)
-        # Create a helper list to always point to the beginning of the merged list
-        helper_l = l3
-
-        # Case 1: both list has something left
-        while l1 is not None and l2 is not None:
-            if l1.val <= l2.val:
-                l3.next = l1
+        dummy = ListNode()
+        tail = dummy
+        
+        # Traverse both linked lists until one of them is empty
+        while l1 and l2:
+            if l1.val < l2.val:
+                tail.next = l1
                 l1 = l1.next
             else:
-                l3.next = l2
+                tail.next = l2
                 l2 = l2.next
-            l3 = l3.next
-
-        # Case 2: l1 has something left
-        if l1 is not None:
-            l3.next = l1
-
-        # Case 3: l2 has something left
-        if l2 is not None:
-            l3.next = l2
-
-        # Return the helper list's next node which actually stores the merged list
-        return helper_l.next
+            # Move the tail to the next node after appending
+            tail = tail.next
+        
+        # Append the remaining nodes of l1 or l2
+        if l1:
+            tail.next = l1
+        elif l2:
+            tail.next = l2
+        
+        return dummy.next
 
 
 # Unit Test: Input: l1 = [1,2,4], l2 = [1,3,4], Output: [1,1,2,3,4,4]
