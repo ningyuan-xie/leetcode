@@ -26,6 +26,11 @@ $RECYCLE.BIN/
 .idea/
 .metadata/
 
+# Virtual Environment
+venv/
+env/
+ENV/
+
 
 
 
