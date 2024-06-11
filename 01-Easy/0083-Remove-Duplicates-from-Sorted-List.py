@@ -4,6 +4,9 @@
 # delete all duplicates such that each element appears only once. 
 # Return the linked list sorted as well.
 
+from typing import Optional
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -12,7 +15,7 @@ class ListNode:
 
 class Solution:
     @staticmethod
-    def deleteDuplicates(head: ListNode) -> ListNode:
+    def deleteDuplicates(head: Optional[ListNode]) -> Optional[ListNode]:
         # Base case: if the linked list is empty, return None
         if not head:
             return None

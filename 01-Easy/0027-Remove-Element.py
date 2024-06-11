@@ -3,9 +3,12 @@
 # Description: Given an integer array nums and an integer val,
 # remove all occurrences of val in nums in-place and return the new length.
 
+from typing import List
+
+
 class Solution:
     @staticmethod
-    def removeElement(nums: list[int], val: int) -> int:
+    def removeElement(nums: List[int], val: int) -> int:
         # Initialize the new length index to 0
         length_new = 0
         # Loop through the list

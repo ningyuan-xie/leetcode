@@ -3,9 +3,12 @@
 # Description: Given an array of integers nums and an integer target,
 # return indices of the two numbers such that they add up to target.
 
+from typing import List
+
+
 class Solution:
     @staticmethod
-    def twoSum(nums: list[int], target: int) -> list[int]:
+    def twoSum(nums: List[int], target: int) -> List[int]:
         # Create dictionary with key-value pairs to store the number and index
         num_dict = {}
 

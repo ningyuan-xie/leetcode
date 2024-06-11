@@ -3,9 +3,12 @@
 # Description: Given a sorted array nums, remove the duplicates in-place
 # such that each element appears only once and returns the new length.
 
+from typing import List
+
+
 class Solution:
     @staticmethod
-    def removeDuplicates(nums: list[int]) -> int:
+    def removeDuplicates(nums: List[int]) -> int:
         # Initialize unique numbers index to 0
         length_unique = 0
         # Loop begin from the second number

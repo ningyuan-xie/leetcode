@@ -4,9 +4,12 @@
 # return the index if the target is found.
 # If not, return the index where it would be if it were inserted in order.
 
+from typing import List
+
+
 class Solution:
     @staticmethod
-    def searchInsert(nums: list[int], target: int) -> int:
+    def searchInsert(nums: List[int], target: int) -> int:
         # Loop through the index of the numbers in the list
         for i in range(len(nums)):
             # If the target is found, return the index

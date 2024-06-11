@@ -2,9 +2,12 @@
 # Difficulty: Easy
 # Description: Write a function to find the longest common prefix string amongst an array of strings.
 
+from typing import List
+
+
 class Solution:
     @staticmethod
-    def longestCommonPrefix(strs: list[str]) -> str:
+    def longestCommonPrefix(strs: List[str]) -> str:
         # Initialize prefix
         prefix = ""
         # If the list is empty, return an empty string

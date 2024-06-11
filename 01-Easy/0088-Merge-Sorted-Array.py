@@ -4,10 +4,12 @@
 # and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
 # Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 
+from typing import List
+
 
 class Solution:
     @staticmethod
-    def merge(nums1, m, nums2, n):  # merge nums2 into nums1
+    def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:  # merge nums2 into nums1
         # Initialize the pointers for nums1 and nums2
         p1 = m - 1  # last index of current nums1
         p2 = n - 1  # last index of nums2
