@@ -1,4 +1,4 @@
-# Link: https://leetcode.com/problems/plus_one/
+# Link: https://leetcode.com/problems/plus-one/
 # Difficulty: Easy
 # Description: Given a non-empty array of decimal digits representing a non-negative integer,
 # increment one to the integer.
