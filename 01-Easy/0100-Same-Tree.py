@@ -25,7 +25,7 @@ class Solution:
         # Base case: If the values of the roots are not the same, then they are not the same
         if p.val != q.val:
             return False
-        # Recursively check the left and right subtrees
+        # DFS: Recursively check the left and right subtrees
         return (Solution.isSameTree(p.left, q.left) and
                 Solution.isSameTree(p.right, q.right))
 

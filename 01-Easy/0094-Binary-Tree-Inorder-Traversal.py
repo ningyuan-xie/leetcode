@@ -18,7 +18,7 @@ class Solution:
         # Base case: if the tree root is None, return an empty list
         if not root:
             return []
-        # Recursive inorder traversal: left -> root -> right.
+        # Recursive inorder DFS traversal: left -> root -> right
         # For BST, this will be in ascending order
         else:
             return (Solution.inorderTraversal(root.left) +
