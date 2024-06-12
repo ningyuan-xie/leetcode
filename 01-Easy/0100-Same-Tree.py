@@ -19,14 +19,15 @@ class Solution:
         # Base case: if both trees are None, then they are the same
         if not p and not q:
             return True
-        # If one of the trees is None, then they are not the same
+        # Base case: If one of the trees is None, then they are not the same
         if not p or not q:
             return False
-        # If the values of the roots are not the same, then they are not the same
+        # Base case: If the values of the roots are not the same, then they are not the same
         if p.val != q.val:
             return False
         # Recursively check the left and right subtrees
-        return Solution.isSameTree(p.left, q.left) and Solution.isSameTree(p.right, q.right)
+        return (Solution.isSameTree(p.left, q.left) and
+                Solution.isSameTree(p.right, q.right))
 
 
 # Unit Test: Input: p = [1,2,3], q = [1,2,3], Output: True
