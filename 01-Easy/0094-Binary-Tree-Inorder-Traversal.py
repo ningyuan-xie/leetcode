@@ -26,7 +26,7 @@ class Solution:
 
     # Helper function to print the inorder traversal of the binary tree
     @staticmethod
-    def printInorderTraversal(root: [TreeNode]):
+    def printInorderTraversal(root: Optional[TreeNode]):
         print(Solution.inorderTraversal(root))
 
 
