@@ -15,14 +15,14 @@ class TreeNode:
 class Solution:
     @staticmethod
     def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
-        # inorder: left -> root -> right. For BST, this will be in ascending order
-        if root:
+        # Base case: if the tree root is None, return an empty list
+        if not root:
+            return []
+        # Recursively inorder: left -> root -> right. For BST, this will be in ascending order
+        else:
             return (Solution.inorderTraversal(root.left) +
                     [root.val] +
                     Solution.inorderTraversal(root.right))
-        # Base case: if the tree root is None, return an empty list
-        else:
-            return []
 
     # Helper function to print the inorder traversal of the binary tree
     @staticmethod
