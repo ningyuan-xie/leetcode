@@ -15,7 +15,9 @@ class TreeNode:
 
 class Solution:
     @staticmethod
-    def isSymmetric(root: Optional[TreeNode]) -> bool:
+    def isSymmetric(root: Optional[TreeNode]) -> bool:  # only takes one parameter root
+        # However, we need to compare the left and right subtrees simultaneously
+        # Therefore, need an inner helper DFS function (like isSameTree) to take two parameters
         def dfs(left, right):
             # Base case: if both trees are None, then they are the same
             if not left and not right:
@@ -23,13 +25,12 @@ class Solution:
             # Base case: If one of the trees is None, then they are not the same
             if not left or not right:
                 return False
-            # Recursive case: if the values of the roots are the same
-            # and the left subtree of the left tree is the mirror of the right subtree of the right tree
-            # and the right subtree of the left tree is the mirror of the left subtree of the right tree
-            return (left.val == right.val and
-                    dfs(left.left, right.right) and
+            # Base case: If the values of the roots are not the same, then they are not the same
+            if left.val != right.val:
+                return False
+            # DFS: Recursively check the left and right subtrees
+            return (dfs(left.left, right.right) and
                     dfs(left.right, right.left))
-
         # Start the DFS traversal
         return dfs(root.left, root.right)
 
