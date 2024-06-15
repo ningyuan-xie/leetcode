@@ -25,20 +25,15 @@ class Solution:
                     [root.val] +
                     Solution.inorderTraversal(root.right))
 
-    # Helper function to print the inorder traversal of the binary tree
-    @staticmethod
-    def printInorderTraversal(root: Optional[TreeNode]):
-        print(Solution.inorderTraversal(root))
-
 
 # Unit Test: Input: root = [1,null,2,3], Output: [1,3,2]
 # The input [1,null,2,3] = serialized format of a binary tree using level order traversal,
 # where null = a path terminator where no node exists below
-Solution.printInorderTraversal(TreeNode(1, None, TreeNode(2, TreeNode(3))))
+assert Solution.inorderTraversal(TreeNode(1, None, TreeNode(2, TreeNode(3)))) == [1, 3, 2]
 
 # Unit Test: Input: root = [], Output: []
-Solution.printInorderTraversal(None)
+assert Solution.inorderTraversal(None) == []
 
 # Unit Test: Input: root = [1], Output: [1]
-Solution.printInorderTraversal(TreeNode(1))
+assert Solution.inorderTraversal(TreeNode(1)) == [1]
 print("All unit tests are passed")
