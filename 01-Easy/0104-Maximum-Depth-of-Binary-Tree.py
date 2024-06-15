@@ -1,6 +1,8 @@
 # Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 # Difficulty: Easy
 # Description: Given the root of a binary tree, return its maximum depth.
+# A binary tree's maximum depth is the number of nodes along the longest path
+# from the root node down to the farthest leaf node. (!= height of the tree)
 
 from typing import Optional
 
@@ -21,25 +23,21 @@ class Solution:
             return 0
         # Recursive DFS traversal: return the maximum depth of the left and right subtrees
         else:
-            return 1 + max(Solution.maxDepth(root.left),
-                           Solution.maxDepth(root.right))
-
-    # Helper function to print the maximum depth of the binary tree
-    @staticmethod
-    def printMaxDepth(root: Optional[TreeNode]):
-        print(Solution.maxDepth(root))
+            return (1 +  # Count the current node
+                    max(Solution.maxDepth(root.left),
+                        Solution.maxDepth(root.right)))
 
 
 # Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 3
 # The input [3,9,20,null,null,15,7] = serialized format of a binary tree using level order traversal
 # where null = a path terminator where no node exists below
-Solution.printMaxDepth(TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7))))
+assert Solution.maxDepth(TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))) == 3
 
 # Unit Test: Input: root = [1,null,2], Output: 2
 # The input [1,null,2] = serialized format of a binary tree using level order traversal
 # where null = a path terminator where no node exists below
-Solution.printMaxDepth(TreeNode(1, None, TreeNode(2)))
+assert Solution.maxDepth(TreeNode(1, None, TreeNode(2))) == 2
 
 # Unit Test: Input: root = [], Output: 0
-Solution.printMaxDepth(None)
+assert Solution.maxDepth(None) == 0
 print("All unit tests are passed")
