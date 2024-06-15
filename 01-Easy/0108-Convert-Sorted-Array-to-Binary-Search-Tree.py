@@ -15,44 +15,48 @@ class TreeNode:
 
 
 class Solution:
+    # Reverse of 0094-Binary-Tree-Inorder-Traversal.py
     @staticmethod
     def sortedArrayToBST(nums: List[int]) -> Optional[TreeNode]:
         # Base case: if the array is empty, return None
         if not nums:
             return None
         # Find the middle index of the array
-        mid = len(nums) // 2
+        mid = len(nums) // 2  # E.g. [-10,-3,0,5,9] -> mid = 2
         # Create a new node with the middle value
-        root = TreeNode(nums[mid])
+        root = TreeNode(nums[mid])  # E.g. [-10,-3,0,5,9] -> mid = 2, root = 0
         # Recursively build the left and right subtrees
-        root.left = Solution.sortedArrayToBST(nums[:mid])
-        root.right = Solution.sortedArrayToBST(nums[mid + 1:])
+        root.left = Solution.sortedArrayToBST(nums[:mid])  # E.g. [-10,-3] -> mid = 1, root = -3
+        root.right = Solution.sortedArrayToBST(nums[mid + 1:])  # E.g. [5,9] -> mid = 1, root = 9
         return root
+        # Actual return: TreeNode(0, TreeNode(-3, TreeNode(-10)), TreeNode(9, TreeNode(5)))
+        # Level order traversal list format: [0,-3,9,-10,null,5]
 
-    # Helper function to print the inorder traversal of the binary search tree
+    # 0094-Binary-Tree-Inorder-Traversal.py
     @staticmethod
-    def printInorderTraversal(root: Optional[TreeNode]):
-        def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
-            # Base case: if the tree root is None, return an empty list
-            if not root:
-                return []
-            # Recursive inorder DFS traversal: left -> root -> right
-            # For BST, this will be in ascending order
-            else:
-                return (inorderTraversal(root.left) +
-                        [root.val] +
-                        inorderTraversal(root.right))
-
-        print(inorderTraversal(root))
+    def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
+        # Base case: if the tree root is None, return an empty list
+        if not root:
+            return []
+        # Recursive inorder DFS traversal: left -> root -> right
+        # For BST, this will be in ascending order
+        else:
+            return (Solution.inorderTraversal(root.left) +
+                    [root.val] +
+                    Solution.inorderTraversal(root.right))
 
 
 # Unit Test: Input: nums = [-10,-3,0,5,9], Output: [0,-3,9,-10,null,5]
 # The input [-10,-3,0,5,9] = a sorted array
-# The output [0,-3,9,-10,null,5] = serialized format of a binary search tree using level order traversal
-Solution.printInorderTraversal(Solution.sortedArrayToBST([-10, -3, 0, 5, 9]))
+# Output: TreeNode(0, TreeNode(-3, TreeNode(-10)), TreeNode(9, TreeNode(5)))
+# Output (Level order traversal list format): [0,-3,9,-10,null,5]
+# Output (Inorder traversal list format): [-10,-3,0,5,9]
+assert Solution.inorderTraversal(Solution.sortedArrayToBST([-10, -3, 0, 5, 9])) == [-10, -3, 0, 5, 9]
 
 # Unit Test: Input: nums = [1,3], Output: [3,1]
 # The input [1,3] = a sorted array
-# The output [3,1] = serialized format of a binary search tree using level order traversal
-Solution.printInorderTraversal(Solution.sortedArrayToBST([1, 3]))
+# Output: TreeNode(3, TreeNode(1))
+# Output (Level order traversal list format): [3,1]
+# Output (Inorder traversal list format): [1,3]
+assert Solution.inorderTraversal(Solution.sortedArrayToBST([1, 3])) == [1, 3]
 print("All unit tests are passed")
