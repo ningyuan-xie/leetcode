@@ -28,6 +28,7 @@ class Solution:
         # Recursively build the left and right subtrees
         root.left = Solution.sortedArrayToBST(nums[:mid])  # E.g. [-10,-3] -> mid = 1, root = -3
         root.right = Solution.sortedArrayToBST(nums[mid + 1:])  # E.g. [5,9] -> mid = 1, root = 9
+        # Note: for root.right, [-10][1] will return an error, but [-10][1:] will actually return []
         return root
         # Actual return: TreeNode(0, TreeNode(-3, TreeNode(-10)), TreeNode(9, TreeNode(5)))
         # Level order traversal list format: [0,-3,9,-10,null,5]
