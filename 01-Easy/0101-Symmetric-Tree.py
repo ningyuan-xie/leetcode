@@ -18,7 +18,7 @@ class Solution:
     def isSymmetric(root: Optional[TreeNode]) -> bool:  # only takes one parameter root
         # However, we need to compare the left and right subtrees simultaneously
         # Therefore, need an inner helper DFS function (like isSameTree) to take two parameters
-        def dfs(left, right):
+        def dfs(left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
             # Base case: if both trees are None, then they are the same
             if not left and not right:
                 return True
