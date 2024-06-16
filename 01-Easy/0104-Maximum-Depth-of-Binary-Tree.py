@@ -23,9 +23,11 @@ class Solution:
             return 0
         # Recursive DFS traversal: return the maximum depth of the left and right subtrees
         else:
+            left_depth = Solution.maxDepth(root.left)
+            right_depth = Solution.maxDepth(root.right)
+            # Return the maximum depth of the left and right subtrees + 1 for the current node
             return (1 +  # Count the current node
-                    max(Solution.maxDepth(root.left),
-                        Solution.maxDepth(root.right)))
+                    max(left_depth, right_depth))
 
 
 # Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 3
