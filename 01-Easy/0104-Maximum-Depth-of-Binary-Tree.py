@@ -25,9 +25,9 @@ class Solution:
         else:
             left_depth = Solution.maxDepth(root.left)
             right_depth = Solution.maxDepth(root.right)
-            # Return the maximum depth of the left and right subtrees + 1 for the current node
-            return (1 +  # Count the current node
-                    max(left_depth, right_depth))
+            # Return the maximum depth of the left and right subtrees
+            # + 1 for every time we go down a level
+            return max(left_depth, right_depth) + 1
 
 
 # Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 3
