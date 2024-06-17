@@ -26,6 +26,7 @@ class Solution:
             left_depth = Solution.minDepth(root.left)
             right_depth = Solution.minDepth(root.right)
             # If either the left or right subtree is empty, return the non-empty subtree + 1
+            # + 1 for the root node
             if not root.left or not root.right:
                 return left_depth + right_depth + 1
             # Return the minimum depth of the left and right subtrees
@@ -34,8 +35,9 @@ class Solution:
 
 
 # Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 2
-assert Solution.minDepth(TreeNode(3, TreeNode(9),
-                                  TreeNode(20, TreeNode(15), TreeNode(7)))) == 2
+assert Solution.minDepth(TreeNode(3,
+                                  TreeNode(9), TreeNode(20,
+                                                        TreeNode(15), TreeNode(7)))) == 2
 
 # Unit Test: Input: root = [2,null,3,null,4,null,5,null,6], Output: 5
 assert Solution.minDepth(TreeNode(2, None,

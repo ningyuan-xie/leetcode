@@ -54,8 +54,9 @@ class Solution:
 # The input [3,9,20,null,null,15,7] = serialized format of a binary tree using level order traversal,
 # where null = a path terminator where no node exists below
 # The tree is balanced with height difference of 1
-assert Solution.isBalanced(TreeNode(3, TreeNode(9),
-                                    TreeNode(20, TreeNode(15), TreeNode(7)))) == True
+assert Solution.isBalanced(TreeNode(3,
+                                    TreeNode(9), TreeNode(20,
+                                                          TreeNode(15), TreeNode(7)))) == True
 
 # Unit Test: Input: root = [1,2,2,3,3,null,null,4,4], Output: False
 # The input [1,2,2,3,3,null,null,4,4] = serialized format of a binary tree using level order traversal,
