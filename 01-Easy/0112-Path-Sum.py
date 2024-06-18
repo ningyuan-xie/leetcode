@@ -22,11 +22,12 @@ class Solution:
             return False
         # Base case: if the node is a leaf node, check if the sum is equal to the target sum
         if not root.left and not root.right:
-            return targetSum == root.val
+            return root.val == targetSum
         # Recursively check if the left or right subtree has a path sum equal to the target sum
-        return (Solution.hasPathSum(root.left, targetSum - root.val)
-                or Solution.hasPathSum(root.right, targetSum - root.val))
-
+        left_path_sum = Solution.hasPathSum(root.left, targetSum - root.val)
+        right_path_sum = Solution.hasPathSum(root.right, targetSum - root.val)
+        # Return True if either the left or right subtree has a path sum equal to the target sum
+        return left_path_sum or right_path_sum
 
 # Unit Test: Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22, Output: True
 # The tree has a root-to-leaf path 5->4->11->2 which sums up to 22
