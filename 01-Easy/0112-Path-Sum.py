@@ -29,6 +29,7 @@ class Solution:
         # Return True if either the left or right subtree has a path sum equal to the target sum
         return left_path_sum or right_path_sum
 
+
 # Unit Test: Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22, Output: True
 # The tree has a root-to-leaf path 5->4->11->2 which sums up to 22
 assert Solution.hasPathSum(TreeNode(5,
