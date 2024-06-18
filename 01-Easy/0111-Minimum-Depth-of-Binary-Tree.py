@@ -16,6 +16,7 @@ class TreeNode:
 
 
 class Solution:
+    # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
     @staticmethod
     def minDepth(root: Optional[TreeNode]) -> int:
         # Base case: if the tree root is None, return 0
