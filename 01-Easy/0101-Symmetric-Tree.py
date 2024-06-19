@@ -39,4 +39,5 @@ class Solution:
 # The input [1,2,2,3,4,4,3] = serialized format of a binary tree using level order traversal
 assert Solution.isSymmetric(TreeNode(1, TreeNode(2, TreeNode(3), TreeNode(4)),
                                      TreeNode(2, TreeNode(4), TreeNode(3)))) == True
+
 print("All unit tests are passed")

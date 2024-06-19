@@ -31,4 +31,5 @@ assert Solution.removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]) == 5
 
 # Unit Test: Input: nums = [1,2,3], Output: 3
 assert Solution.removeDuplicates([1, 2, 3]) == 3
+
 print("All unit tests are passed")

@@ -22,4 +22,5 @@ assert Solution.isPalindrome(-121) == False
 
 # Unit Test: Input: x = 10, Output: False
 assert Solution.isPalindrome(10) == False
+
 print("All unit tests are passed")

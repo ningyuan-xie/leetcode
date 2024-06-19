@@ -26,5 +26,6 @@ assert Solution.lengthOfLastWord("luffy is still joyboy") == 6
 
 # Unit Test: Input: s = "a", Output: 1
 assert Solution.lengthOfLastWord("a") == 1
+
 print("All unit tests are passed")
 

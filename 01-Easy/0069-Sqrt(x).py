@@ -41,4 +41,5 @@ assert Solution.mySqrt(8) == 2
 
 # Unit Test: Input: x = 1, Output: 1
 assert Solution.mySqrt(1) == 1
+
 print("All unit tests are passed")

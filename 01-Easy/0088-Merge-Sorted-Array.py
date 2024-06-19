@@ -49,4 +49,5 @@ assert nums1_test == [1]
 nums1_test = [0]
 Solution.merge(nums1_test, 0, [1], 1)
 assert nums1_test == [1]
+
 print("All unit tests are passed")

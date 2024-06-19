@@ -30,4 +30,5 @@ assert Solution.plusOne([4, 3, 2, 1]) == [4, 3, 2, 2]
 
 # Unit Test: Input: digits = [0], Output: [1]
 assert Solution.plusOne([0]) == [1]
+
 print("All unit tests are passed")

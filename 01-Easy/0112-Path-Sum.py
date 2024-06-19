@@ -51,4 +51,5 @@ assert Solution.hasPathSum(TreeNode(1, TreeNode(2)), 0) == False
 # Unit Test: Input: root = [], targetSum = 0, Output: False
 # The tree is empty
 assert Solution.hasPathSum(None, 0) == False
+
 print("All unit tests are passed")

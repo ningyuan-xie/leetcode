@@ -31,4 +31,5 @@ assert Solution.removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2) == 5
 
 # Unit Test: Input: nums = [1], val = 1, Output: 0; nums = []
 assert Solution.removeElement([1], 1) == 0
+
 print("All unit tests are passed")

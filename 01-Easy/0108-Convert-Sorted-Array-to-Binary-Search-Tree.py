@@ -60,4 +60,5 @@ assert Solution.inorderTraversal(Solution.sortedArrayToBST([-10, -3, 0, 5, 9])) 
 # Output (Level order traversal list format): [3,1]
 # Output (Inorder traversal list format): [1,3]
 assert Solution.inorderTraversal(Solution.sortedArrayToBST([1, 3])) == [1, 3]
+
 print("All unit tests are passed")

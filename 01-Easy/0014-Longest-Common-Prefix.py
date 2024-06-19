@@ -35,4 +35,5 @@ assert Solution.longestCommonPrefix(["dog", "racecar", "car"]) == ""
 
 # Unit Test: Input: strs = ["c","acc","ccc"], Output: ""
 assert Solution.longestCommonPrefix(["c", "acc", "ccc"]) == ""
+
 print("All unit tests are passed")

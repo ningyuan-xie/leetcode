@@ -44,4 +44,5 @@ assert Solution.maxDepth(TreeNode(1, None, TreeNode(2))) == 2
 
 # Unit Test: Input: root = [], Output: 0
 assert Solution.maxDepth(None) == 0
+
 print("All unit tests are passed")

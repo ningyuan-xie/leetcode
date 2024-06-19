@@ -24,4 +24,5 @@ assert Solution.climbStairs(3) == 3
 
 # Unit Test: Input: n = 4, Output: 5
 assert Solution.climbStairs(4) == 5
+
 print("All unit tests are passed")

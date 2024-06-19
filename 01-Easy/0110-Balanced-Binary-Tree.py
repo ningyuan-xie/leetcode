@@ -73,4 +73,5 @@ assert Solution.isBalanced(None) == True
 # Unit Test: Input: root = [1], Output: True
 # A single node tree is considered balanced
 assert Solution.isBalanced(TreeNode(1)) == True
+
 print("All unit tests are passed")

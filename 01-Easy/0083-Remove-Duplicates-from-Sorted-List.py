@@ -48,4 +48,5 @@ class Solution:
 list1 = ListNode(1, ListNode(1, ListNode(2)))
 list2 = Solution.deleteDuplicates(list1)
 Solution.printLinkedList(list2)
+
 print("All unit tests are passed")

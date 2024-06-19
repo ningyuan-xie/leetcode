@@ -52,4 +52,5 @@ list1 = ListNode(1, ListNode(2, ListNode(4)))
 list2 = ListNode(1, ListNode(3, ListNode(4)))
 list3 = Solution.mergeTwoLists(list1, list2)
 Solution.printLinkedList(list3)
+
 print("All unit tests are passed")

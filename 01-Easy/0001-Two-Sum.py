@@ -32,4 +32,5 @@ assert Solution.twoSum([3, 2, 4], 6) == [1, 2]
 
 # Unit Test: Input: nums = [3,3], target = 6, Output: [0,1]
 assert Solution.twoSum([3, 3], 6) == [0, 1]
+
 print("All unit tests are passed")

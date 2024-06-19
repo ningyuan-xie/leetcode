@@ -37,4 +37,5 @@ assert Solution.addBinary("1010", "1011") == "10101"
 
 # Unit Test: Input: a = "1", b = "0", Output: "1"
 assert Solution.addBinary("1", "0") == "1"
+
 print("All unit tests are passed")

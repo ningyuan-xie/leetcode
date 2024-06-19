@@ -44,4 +44,5 @@ assert Solution.isSameTree(TreeNode(1, TreeNode(2)),
 # The input [1,2,1] = serialized format of a binary tree using level order traversal
 assert Solution.isSameTree(TreeNode(1, TreeNode(2), TreeNode(1)),
                            TreeNode(1, TreeNode(1), TreeNode(2))) == False
+
 print("All unit tests are passed")

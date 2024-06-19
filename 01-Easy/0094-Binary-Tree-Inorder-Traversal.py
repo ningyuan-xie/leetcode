@@ -36,4 +36,5 @@ assert Solution.inorderTraversal(None) == []
 
 # Unit Test: Input: root = [1], Output: [1]
 assert Solution.inorderTraversal(TreeNode(1)) == [1]
+
 print("All unit tests are passed")
