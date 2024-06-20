@@ -4,14 +4,7 @@
 # if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum.
 
 from typing import Optional
-
-
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from data_structures import TreeNode
 
 
 class Solution:

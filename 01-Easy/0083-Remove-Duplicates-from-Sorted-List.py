@@ -5,12 +5,7 @@
 # Return the linked list sorted as well.
 
 from typing import Optional
-
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from data_structures import ListNode
 
 
 class Solution:

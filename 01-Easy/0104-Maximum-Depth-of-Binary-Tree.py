@@ -5,14 +5,7 @@
 # from the root node down to the farthest leaf node. (!= height of the tree)
 
 from typing import Optional
-
-
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from data_structures import TreeNode
 
 
 class Solution:
