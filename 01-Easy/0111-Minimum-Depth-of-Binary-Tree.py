@@ -5,7 +5,7 @@
 # from the root node down to the nearest leaf node.
 
 from typing import Optional
-from data_structures import TreeNode
+from package.data_structures import TreeNode
 
 
 class Solution:

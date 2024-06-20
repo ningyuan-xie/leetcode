@@ -4,7 +4,7 @@
 # convert it to a height-balanced binary search tree.
 
 from typing import List, Optional
-from data_structures import TreeNode
+from package.data_structures import TreeNode
 
 
 class Solution:

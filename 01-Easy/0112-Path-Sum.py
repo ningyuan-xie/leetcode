@@ -4,7 +4,7 @@
 # if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum.
 
 from typing import Optional
-from data_structures import TreeNode
+from package.data_structures import TreeNode
 
 
 class Solution:

@@ -5,7 +5,7 @@
 # Return the linked list sorted as well.
 
 from typing import Optional
-from data_structures import ListNode
+from package.data_structures import ListNode
 
 
 class Solution:

@@ -3,7 +3,7 @@
 # Description: Given the root of a binary tree, return the inorder traversal of its nodes' values.
 
 from typing import List, Optional
-from data_structures import TreeNode
+from package.data_structures import TreeNode
 
 
 class Solution:

@@ -4,7 +4,7 @@
 # check whether it is a mirror of itself (i.e., symmetric around its center).
 
 from typing import Optional
-from data_structures import TreeNode
+from package.data_structures import TreeNode
 
 
 class Solution:
