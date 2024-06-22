@@ -12,15 +12,15 @@ class Solution:
     @staticmethod
     def maxProfit(prices: List[int]) -> int:
         # Initialize the minimum price to the maximum integer value
-        min_price = float('inf')
+        min_price = float('inf')  # float('inf') is equivalent to sys.maxsize
         # Initialize the maximum profit to 0
         max_profit = 0
         # Iterate through the prices list
-        for price in prices:
+        for price in prices:  # E.g. 7 -> 1 -> 5 -> 3 -> 6 -> 4
             # Update the minimum price if the current price is lower
-            min_price = min(min_price, price)
+            min_price = min(min_price, price)  # E.g. 7 -> 1 -> 1 -> 1 -> 1 -> 1
             # Update the maximum profit if the current profit is higher
-            max_profit = max(max_profit, price - min_price)
+            max_profit = max(max_profit, price - min_price)  # E.g. 0 -> 0 -> 4 -> 4 -> 5 -> 5
         return max_profit
 
 
