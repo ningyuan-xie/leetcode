@@ -3,11 +3,11 @@ import sys
 
 
 def main():
-    # Get the Python version information
+    # major, minor, micro, releaselevel, serial
     version_info = sys.version_info
-    # Convert the version information into a string through map function and join method
-    # The map function takes a list and applies a function to each member of the list
-    # and returns a second list that is the same size as the first
+    # version_info[:3] returns a tuple which is an iterable: (major, minor, micro)
+    # map takes this tuple and returns a map object with is an iterable
+    # ".".join() concatenates the iterable into a string with "." as the separator
     version = ".".join(map(str, version_info[:3]))
     print("Python version:", version)
 
