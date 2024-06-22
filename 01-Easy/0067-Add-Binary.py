@@ -25,7 +25,7 @@ class Solution:
         if carry:
             result.append(str(carry))
 
-        # Reverse the result and join the characters
+        # Reverse the result (which is a list of str) and join them into a string
         return "".join(result[::-1])
 
 
