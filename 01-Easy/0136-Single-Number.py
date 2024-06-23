@@ -2,6 +2,7 @@
 # Difficulty: Easy
 # Description: Given a non-empty array of integers nums,
 # every element appears twice except for one. Find that single one.
+# You must implement a solution with a linear runtime complexity and use only constant extra space.
 
 from typing import List
 
@@ -12,7 +13,7 @@ class Solution:
         # XOR (exclusive OR) operation: binary operation taking two equal-length binary representations
         # XOR of a number with itself is 0, so pairs will cancel each other
         # XOR of a number with 0 is the number itself, so the single number will remain
-        result = 0
+        result = 0  # nums ^ 0 = nums
         for num in nums:  # E.g. nums = [4, 1, 2, 1, 2]
             # XOR operation: result = result XOR num
             result ^= num
