@@ -17,8 +17,8 @@ class Solution:
 
             # Add the digits and the carry
             total = digit_a + digit_b + carry
-            digit_result = str(total % 2)  # E.g. 1 + 1 = 10 -> 0; 1 + 0 = 1 -> 1
-            result.append(digit_result)  # Add the remainder to the result
+            remainder = str(total % 2)  # E.g. 1 + 1 = 10 -> 0; 1 + 0 = 1 -> 1
+            result.append(remainder)  # Add the remainder to the result
             carry = total // 2  # E.g. 1 + 1 = 10 -> 1; 1 + 0 = 1 -> 0
 
         # If there's a carry left, add it to the result
