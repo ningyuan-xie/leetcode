@@ -18,11 +18,12 @@ class Solution:
         # Initialize two pointers to the heads of the linked lists
         pointerA, pointerB = headA, headB
 
-        # Traverse the linked lists until the two pointers meet
+        # Traverse the linked lists until the two pointers meet at intersection or meet at None
+        # Intuition: make the two pointers pass the same total distance, and they will certainly meet
         while pointerA != pointerB:
-            # If pointerA reaches the end of the linked list, reset it to the head of the other linked list
+            # If pointerA reaches the end of the linked list, reset it to the head of the other list
             pointerA = pointerA.next if pointerA else headB
-            # If pointerB reaches the end of the linked list, reset it to the head of the other linked list
+            # If pointerB reaches the end of the linked list, reset it to the head of the other list
             pointerB = pointerB.next if pointerB else headA
 
         return pointerA
