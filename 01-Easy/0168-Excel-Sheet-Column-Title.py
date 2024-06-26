@@ -5,6 +5,7 @@
 
 
 class Solution:
+    # Similar to 0067-Add-Binary.py
     @staticmethod
     def convertToTitle(columnNumber: int) -> str:
         result = ""
