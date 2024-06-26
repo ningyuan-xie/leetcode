@@ -12,11 +12,12 @@ class Solution:
         while columnNumber > 0:
             # Subtract 1 from columnNumber to make it 0-indexed for each digit
             columnNumber -= 1
-            # Append the character corresponding to the remainder of columnNumber divided by 26
+            # Title will be filled from right to left
             remainder = columnNumber % 26
             # 65 is the ASCII value of 'A': chr(65) = 'A', chr(66) = 'B', ..., chr(90) = 'Z'
-            result = chr(remainder + 65) + result  # Append char to the left: 'A' + 'B' = 'AB'
-            # Divide columnNumber by 26 using floor division "//" to get the next digit
+            # Append char to the left: 'B' -> 'A' + 'B' = 'AB'
+            result = chr(remainder + ord('A')) + result
+            # Divide columnNumber by 26 using floor division "//" to get the next digit on the left
             columnNumber //= 26
         return result
 
