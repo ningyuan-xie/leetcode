@@ -7,7 +7,7 @@ from typing import List
 
 
 class Solution:
-    @staticmethod
+    @staticmethod  # does not require access to class or instance, so does not need self
     def twoSum(nums: List[int], target: int) -> List[int]:
         # Create dictionary with key-value pairs to store the number and index
         num_dict = {}
