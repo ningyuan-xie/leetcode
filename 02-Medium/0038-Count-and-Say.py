@@ -31,7 +31,7 @@ class Solution:
 
 
 # Unit Test: Input: n = 1, Output: "1"
-# assert Solution.countAndSay(1) == "1"
+assert Solution.countAndSay(1) == "1"
 
 # Unit Test: Input: n = 4, Output: "1211"
 assert Solution.countAndSay(4) == "1211"
