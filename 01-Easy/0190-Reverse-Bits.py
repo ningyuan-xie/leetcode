@@ -3,6 +3,7 @@
 # Description: Reverse bits of a given 32 bits unsigned integer.
 
 class Solution:
+    # Similar to the reverse method in 02-Medium/0007-Reverse-Integer.py
     @staticmethod
     def reverseBits(n: int) -> int:
         # Initialize result in binary
@@ -11,11 +12,9 @@ class Solution:
         for i in range(32):
             # Shift the result to the left by 1 bit, leaving room for the next bit to be added
             result <<= 1  # 001 -> 010 -> 100
-
             # n & 1 extracts the rightmost bit of n, as 1 in binary only has its rightmost bit = 1
             # result |= n & 1 adds this rightmost bit of the given integer to the result
             result |= n & 1  # |= is the bitwise OR assignment operator, similar to += for addition
-
             # n is shifted to the right by 1 bit, removing the bit just added to result
             n >>= 1  # 100 -> 010 -> 001 -> 000
 

@@ -18,9 +18,9 @@ class Solution:
         while x > 0:
             # Extract the rightmost digit
             digit = x % 10  # 123 -> 3; 12 -> 2; 1 -> 1
-            # Update the reversed integer
+            # Shift the result to the left by 1 bit, leaving room for the next bit to be added
             reversed_x = reversed_x * 10 + digit  # 3 -> 32 -> 321
-            # Remove the rightmost digit
+            # Remove the rightmost digit that was just added to the result
             x //= 10  # 123 -> 12 -> 1 -> 0
         # Return the reversed integer with the sign
         return sign * reversed_x if reversed_x <= 2 ** 31 - 1 else 0
