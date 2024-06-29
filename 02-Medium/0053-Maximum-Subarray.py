@@ -2,21 +2,26 @@
 # Difficulty: Medium
 # Description: Given an integer array nums, find the contiguous subarray
 # (containing at least one number) which has the largest sum and return its sum.
+# The solution must have a time complexity of O(n).
 
 from typing import List
 
 
 class Solution:
+    # Kadane's Algorithm
     @staticmethod
     def maxSubArray(nums: List[int]) -> int:
         # Initialize the maximum sum and the current sum
-        max_sum = current_sum = nums[0]
-        # Continue the process until the end of the array
-        for i in range(1, len(nums)):
-            # Update the current sum
-            current_sum = max(nums[i], current_sum + nums[i])
+        max_sum, current_sum = nums[0], 0
+        # Continue the process until the end of the array: sliding window
+        for n in nums:
+            # If the current sum is negative, ignore the previous numbers and reset to 0
+            if current_sum < 0:
+                current_sum = 0
+            # Add the current number to the current sum
+            current_sum += n  # -2, 1, -2, 4, 3, 5, 6, 1, 5
             # Update the maximum sum
-            max_sum = max(max_sum, current_sum)
+            max_sum = max(max_sum, current_sum)  # -2, 1, 1, 4, 4, 5, 6, 6, 6
         return max_sum
 
 
