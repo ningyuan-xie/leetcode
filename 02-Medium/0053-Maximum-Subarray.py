@@ -13,11 +13,10 @@ class Solution:
     def maxSubArray(nums: List[int]) -> int:
         # Initialize the maximum sum and the current sum
         max_sum, current_sum = nums[0], 0
-        # Continue the process until the end of the array: sliding window
+        # Sliding window: adjust the window size based on the current sum
         for n in nums:
-            # If the current sum is negative, ignore the previous numbers and reset to 0
-            if current_sum < 0:
-                current_sum = 0
+            # If current sum is negative, ignore all the previous useless numbers and restart at 0
+            current_sum = 0 if current_sum < 0 else current_sum
             # Add the current number to the current sum
             current_sum += n  # -2, 1, -2, 4, 3, 5, 6, 1, 5
             # Update the maximum sum
