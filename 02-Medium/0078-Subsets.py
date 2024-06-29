@@ -16,7 +16,7 @@ class Solution:
             # Initialize a new list to store the new subsets
             new_subsets = []
             for subset in result:
-                new_subsets.append(subset + [n])
+                new_subsets.append(subset + [n])  # [] + [1] = [1], [] + [2] = [2]; [1] + [2] = [1, 2]
                 # n = 1, new_subsets: [[1]]
                 # n = 2, new_subsets: [[2]] -> [[2], [1, 2]]
                 # n = 3, new_subsets: [[3]] -> [[3], [1, 3]] -> ... -> [[3], [1, 3], [2, 3], [1, 2, 3]]
