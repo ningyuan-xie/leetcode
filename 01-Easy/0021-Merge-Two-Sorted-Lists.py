@@ -39,11 +39,11 @@ class Solution:
 list1 = ListNode(1, ListNode(2, ListNode(4)))
 list2 = ListNode(1, ListNode(3, ListNode(4)))
 result = Solution.mergeTwoLists(list1, list2)
-assert result == ListNode(1, ListNode(1,
-                                      ListNode(2, ListNode(3,
-                                                           ListNode(4, ListNode(4))))))
 # Two ways to print the linked list result
 print(result)
 ListNode.printLinkedList(result)
+assert result == ListNode(1, ListNode(1,
+                                      ListNode(2, ListNode(3,
+                                                           ListNode(4, ListNode(4))))))
 
 print("All unit tests are passed")

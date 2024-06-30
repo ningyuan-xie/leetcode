@@ -47,8 +47,8 @@ class Solution:
 # Output (Inorder traversal list format): [-10,-3,0,5,9]
 nums_test = [-10, -3, 0, 5, 9]
 result = Solution.sortedArrayToBST(nums_test)
-assert Solution.inorderTraversal(result) == [-10, -3, 0, 5, 9]
 print(result)
+assert Solution.inorderTraversal(result) == [-10, -3, 0, 5, 9]
 
 # Unit Test: Input: nums = [1,3], Output: [3,1]
 # The input [1,3] = a sorted array
@@ -57,7 +57,7 @@ print(result)
 # Output (Inorder traversal list format): [1,3]
 nums_test = [1, 3]
 result = Solution.sortedArrayToBST(nums_test)
-assert Solution.inorderTraversal(result) == [1, 3]
 print(result)
+assert Solution.inorderTraversal(result) == [1, 3]
 
 print("All unit tests are passed")

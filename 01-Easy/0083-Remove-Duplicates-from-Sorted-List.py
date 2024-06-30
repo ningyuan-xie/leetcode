@@ -16,11 +16,10 @@ class Solution:
             return None
         # Initialize the current node as the head of the linked list
         current = head
-        # Traverse the linked list until the current node is None
-        while current:
-            # If the current node and the next node have the same value
-            if current.next and current.val == current.next.val:
-                # Skip the next node
+        # Iterate through the linked list
+        while current.next:
+            # If the current node and the next node have the same value, skip the next node
+            if current.val == current.next.val:
                 current.next = current.next.next
             else:
                 # Move to the next node
@@ -31,9 +30,9 @@ class Solution:
 # Unit Test: Input: head = [1,1,2], Output: [1,2]
 head_test = ListNode(1, ListNode(1, ListNode(2)))
 result = Solution.deleteDuplicates(head_test)
-assert result == ListNode(1, ListNode(2))
 # Two ways to print the linked list result
 print(result)
 ListNode.printLinkedList(result)
+assert result == ListNode(1, ListNode(2))
 
 print("All unit tests are passed")
