@@ -45,13 +45,19 @@ class Solution:
 # Output: TreeNode(0, TreeNode(-3, TreeNode(-10)), TreeNode(9, TreeNode(5)))
 # Output (Level order traversal list format): [0,-3,9,-10,null,5]
 # Output (Inorder traversal list format): [-10,-3,0,5,9]
-assert Solution.inorderTraversal(Solution.sortedArrayToBST([-10, -3, 0, 5, 9])) == [-10, -3, 0, 5, 9]
+nums_test = [-10, -3, 0, 5, 9]
+result = Solution.sortedArrayToBST(nums_test)
+assert Solution.inorderTraversal(result) == [-10, -3, 0, 5, 9]
+print(result)
 
 # Unit Test: Input: nums = [1,3], Output: [3,1]
 # The input [1,3] = a sorted array
 # Output: TreeNode(3, TreeNode(1))
 # Output (Level order traversal list format): [3,1]
 # Output (Inorder traversal list format): [1,3]
-assert Solution.inorderTraversal(Solution.sortedArrayToBST([1, 3])) == [1, 3]
+nums_test = [1, 3]
+result = Solution.sortedArrayToBST(nums_test)
+assert Solution.inorderTraversal(result) == [1, 3]
+print(result)
 
 print("All unit tests are passed")
