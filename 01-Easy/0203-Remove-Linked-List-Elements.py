@@ -7,6 +7,7 @@ from package.data_structures import ListNode
 
 
 class Solution:
+    # Similar to 0083-Remove-Duplicates-from-Sorted-List.py
     @staticmethod
     def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
         # Initialize a dummy node to avoid edge cases
