@@ -40,8 +40,8 @@ class Solution:
 
 
 # Unit Test: Input: head = [1,1,2], Output: [1,2]
-list1 = ListNode(1, ListNode(1, ListNode(2)))
-list2 = Solution.deleteDuplicates(list1)
-Solution.printLinkedList(list2)
+head_test = ListNode(1, ListNode(1, ListNode(2)))
+result = Solution.deleteDuplicates(head_test)
+assert result == ListNode(1, ListNode(2))
 
 print("All unit tests are passed")

@@ -46,7 +46,10 @@ class Solution:
 # Unit Test: Input: l1 = [1,2,4], l2 = [1,3,4], Output: [1,1,2,3,4,4]
 list1 = ListNode(1, ListNode(2, ListNode(4)))
 list2 = ListNode(1, ListNode(3, ListNode(4)))
-list3 = Solution.mergeTwoLists(list1, list2)
-Solution.printLinkedList(list3)
+result = Solution.mergeTwoLists(list1, list2)
+Solution.printLinkedList(result)
+assert result == ListNode(1, ListNode(1,
+                                      ListNode(2, ListNode(3,
+                                                           ListNode(4, ListNode(4))))))
 
 print("All unit tests are passed")
