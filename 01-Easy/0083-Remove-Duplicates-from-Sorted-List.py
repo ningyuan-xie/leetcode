@@ -14,10 +14,8 @@ class Solution:
         # Base case: if the linked list is empty, return None
         if not head:
             return None
-
         # Initialize the current node as the head of the linked list
         current = head
-
         # Traverse the linked list until the current node is None
         while current:
             # If the current node and the next node have the same value
@@ -27,21 +25,15 @@ class Solution:
             else:
                 # Move to the next node
                 current = current.next
-
         return head
-
-    # Helper function to print the linked list
-    @staticmethod
-    def printLinkedList(l: ListNode):
-        while l:
-            print(l.val, end=" -> ")
-            l = l.next
-        print("None")
 
 
 # Unit Test: Input: head = [1,1,2], Output: [1,2]
 head_test = ListNode(1, ListNode(1, ListNode(2)))
 result = Solution.deleteDuplicates(head_test)
 assert result == ListNode(1, ListNode(2))
+# Two ways to print the linked list result
+print(result)
+ListNode.printLinkedList(result)
 
 print("All unit tests are passed")

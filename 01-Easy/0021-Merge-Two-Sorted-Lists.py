@@ -34,22 +34,16 @@ class Solution:
         # return dummy.next to exclude the head node
         return dummy.next  # dummy: 0 -> 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> None
 
-    # Helper function to print the linked list
-    @staticmethod
-    def printLinkedList(l: ListNode):
-        while l:
-            print(l.val, end=" -> ")
-            l = l.next
-        print("None")
-
 
 # Unit Test: Input: l1 = [1,2,4], l2 = [1,3,4], Output: [1,1,2,3,4,4]
 list1 = ListNode(1, ListNode(2, ListNode(4)))
 list2 = ListNode(1, ListNode(3, ListNode(4)))
 result = Solution.mergeTwoLists(list1, list2)
-Solution.printLinkedList(result)
 assert result == ListNode(1, ListNode(1,
                                       ListNode(2, ListNode(3,
                                                            ListNode(4, ListNode(4))))))
+# Two ways to print the linked list result
+print(result)
+ListNode.printLinkedList(result)
 
 print("All unit tests are passed")
