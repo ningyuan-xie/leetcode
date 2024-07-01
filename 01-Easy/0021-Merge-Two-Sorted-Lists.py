@@ -18,19 +18,14 @@ class Solution:
         # Traverse both linked lists until one of them is empty
         while l1 and l2:
             if l1.val < l2.val:
-                tail.next = l1  # append the whole l1, not just a value
-                l1 = l1.next
+                tail.next, l1 = l1, l1.next  # append the whole l1, not just a value
             else:
-                tail.next = l2  # append the whole l2, not just a value
-                l2 = l2.next
+                tail.next, l2 = l2, l2.next  # append the whole l2, not just a value
             # Move the tail to the next node after appending
             tail = tail.next
 
         # Append the remaining nodes of l1 or l2
-        if l1:
-            tail.next = l1
-        elif l2:
-            tail.next = l2
+        tail.next = l1 or l2
         # return dummy.next to exclude the head node
         return dummy.next  # dummy: 0 -> 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> None
 
