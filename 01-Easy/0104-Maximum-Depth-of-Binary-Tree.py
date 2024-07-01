@@ -15,9 +15,9 @@ class Solution:
         if not root:
             return 0
         # Recursive DFS traversal: return the maximum depth of the left and right subtrees
+        # + 1 for every time we go down a level
         left_depth = Solution.maxDepth(root.left)
         right_depth = Solution.maxDepth(root.right)
-        # + 1 for every time we go down a level
         return max(left_depth, right_depth) + 1
 
 

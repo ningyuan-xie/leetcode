@@ -16,16 +16,15 @@ class Solution:
         if not root:
             return 0
         # Recursive DFS traversal: return the minimum depth of the left and right subtrees
-        else:
-            left_depth = Solution.minDepth(root.left)
-            right_depth = Solution.minDepth(root.right)
-            # If either the left or right subtree is empty, return the non-empty subtree + 1
-            # + 1 for the root node
-            if not root.left or not root.right:
-                return left_depth + right_depth + 1
-            # Return the minimum depth of the left and right subtrees
-            # + 1 for every time we go down a level
-            return min(left_depth, right_depth) + 1
+        left_depth = Solution.minDepth(root.left)
+        right_depth = Solution.minDepth(root.right)
+        # If either the left or right subtree is empty, return the non-empty subtree + 1
+        # + 1 for the root node
+        if not root.left or not root.right:
+            return left_depth + right_depth + 1
+        # Return the minimum depth of the left and right subtrees
+        # + 1 for every time we go down a level
+        return min(left_depth, right_depth) + 1
 
 
 # Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 2
