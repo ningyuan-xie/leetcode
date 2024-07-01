@@ -9,7 +9,8 @@ class ListNode:
 
     # Override the __eq__ method to compare two ListNode objects
     def __eq__(self, other):
-        return self.val == other.val and self.next == other.next if other else False
+        return (self.val == other.val
+                and self.next == other.next) if other else False
 
     # Class description method: override the __str__ method
     def __str__(self):
@@ -31,6 +32,12 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+    # Override the __eq__ method to compare two TreeNode objects
+    def __eq__(self, other):
+        return (self.val == other.val
+                and self.left == other.left
+                and self.right == other.right) if other else False
 
     # Class description method: override the __str__ method
     def __str__(self):
