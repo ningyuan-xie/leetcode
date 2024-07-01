@@ -40,6 +40,7 @@ assert result == ListNode(2, ListNode(1))
 # Unit Test: Input: head = [], Output: []
 head_test = None
 result = Solution.reverseList(head_test)
+print(result)
 assert result is None
 
 print("All unit tests are passed")
