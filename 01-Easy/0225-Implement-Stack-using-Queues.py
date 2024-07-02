@@ -4,24 +4,26 @@
 # The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
 
 
+# Similar to 0232-Implement-Queue-using-Stacks.py, we can implement a stack using one queue.
 class MyStack:
     # Constructor: instance variable queue is a list
     def __init__(self):
         self.queue = []
 
-    # Push an element to the stack by appending it to the list
+    # Push: append an element to the stack.
+    # Last element in the list is the top of the stack
     def push(self, x: int) -> None:
         self.queue.append(x)
 
-    # Pop an element from the stack by removing the last element from the list
+    # Pop: remove and return the last element in the stack
     def pop(self) -> int:
         return self.queue.pop()
 
-    # Top of the stack is the last element in the list
+    # Top: return the last element in the stack, which is the top of the stack
     def top(self) -> int:
         return self.queue[-1]
 
-    # Check if the stack is empty by checking if the list is empty
+    # Empty: check if the stack is empty by checking if the queue is empty
     def empty(self) -> bool:
         return len(self.queue) == 0
 
