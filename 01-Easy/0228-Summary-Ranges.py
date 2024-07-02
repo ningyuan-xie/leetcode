@@ -28,7 +28,7 @@ class Solution:
                 else:
                     result.append(f"{start}->{end}")  # range of numbers
                 # Shift the start and end pointers to the current number
-                start = end = nums[i]
+                start = end = nums[i]  # start = end = 4, 7
         # Add the last range to the result list because the loop ends before adding it
         if start == end:
             result.append(str(start))  # single number
