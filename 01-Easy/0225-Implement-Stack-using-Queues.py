@@ -2,13 +2,14 @@
 # Difficulty: Easy
 # Description: Implement a last-in-first-out (LIFO) stack using only two queues.
 # The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
+from collections import deque
 
 
 # Similar to 0232-Implement-Queue-using-Stacks.py, we can implement a stack using one queue.
 class MyStack:
-    # Constructor: instance variable queue is a list
+    # Constructor: instance variable queue is a double-ended queue
     def __init__(self):
-        self.queue = []
+        self.queue = deque()
 
     # Push: append an element to the stack.
     # Last element in the list is the top of the stack
