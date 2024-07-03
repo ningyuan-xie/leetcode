@@ -7,6 +7,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Using Hash Table. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod  # does not require access to class or instance, so does not need self
     def twoSum(nums: List[int], target: int) -> List[int]:
         # Create dictionary with key-value pairs to store the number and index
