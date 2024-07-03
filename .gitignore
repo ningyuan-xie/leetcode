@@ -16,6 +16,7 @@ $RECYCLE.BIN/
 *.pptx
 *.pdf
 *.mp4
+*.html
 
 # Keep Syllabus
 !/*Syllabus*.pdf
