@@ -16,7 +16,7 @@ class Solution:
 
     # Alternative Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))
     @staticmethod
-    def addDigits2(n: int) -> int:
+    def addDigits_2(n: int) -> int:
         # Base case: if the number is less than 10, return the number
         if n < 10:
             return n
@@ -32,16 +32,16 @@ class Solution:
             n //= 10
 
         # Recursively call the function with the sum of the digits
-        return Solution.addDigits(sum_digits)
+        return Solution.addDigits_2(sum_digits)
 
 
 # Unit Test: Input: num = 38, Output: 2
 assert Solution.addDigits(38) == 2
 
 # Unit Test: Input: num = 0, Output: 0
-assert Solution.addDigits2(0) == 0
+assert Solution.addDigits_2(0) == 0
 
 # Unit Test: Input: num = 9, Output: 9
-assert Solution.addDigits2(9) == 9
+assert Solution.addDigits_2(9) == 9
 
 print("All unit tests are passed")
