@@ -22,7 +22,7 @@ class Solution:
         left, right = 1, n
         # Perform binary search to find the first bad version
         while left < right:
-            mid = left + (right - left) // 2
+            mid = (left + right) // 2
             if isBadVersion(mid):
                 right = mid
             else:
