@@ -8,6 +8,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def singleNumber(nums: List[int]) -> int:
         # XOR (exclusive OR) operation: binary operation taking two equal-length binary representations
