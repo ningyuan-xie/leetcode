@@ -7,7 +7,7 @@
 class Solution:
     # Optimal Solution: Digital Root. Time Complexity: O(1), Space Complexity: O(1)
     @staticmethod
-    def addDigits(n: int) -> int:
+    def addDigits_1(n: int) -> int:
         # The digital root (dr) of a number is given by the formula:
         # dr(n) = 1 + ((n - 1) % 9)
         return 1 + ((n - 1) % 9) if n > 0 else 0
@@ -36,7 +36,7 @@ class Solution:
 
 
 # Unit Test: Input: num = 38, Output: 2
-assert Solution.addDigits(38) == 2
+assert Solution.addDigits_1(38) == 2
 
 # Unit Test: Input: num = 0, Output: 0
 assert Solution.addDigits_2(0) == 0
