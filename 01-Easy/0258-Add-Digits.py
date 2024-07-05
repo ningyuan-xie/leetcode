@@ -7,7 +7,7 @@
 class Solution:
     # Optimal Solution: Digital Root. Time Complexity: O(1), Space Complexity: O(1)
     @staticmethod
-    def addDigits_1(n: int) -> int:
+    def addDigits(n: int) -> int:
         # The digital root (dr) of a number is given by the formula:
         # dr(n) = 1 + ((n - 1) % 9)
         return 1 + ((n - 1) % 9) if n > 0 else 0
@@ -16,7 +16,7 @@ class Solution:
 
     # Alternative Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))
     @staticmethod
-    def addDigits_2(n: int) -> int:
+    def addDigitsRecursion(n: int) -> int:
         # Base case: if the number is less than 10, return the number
         if n < 10:
             return n
@@ -32,16 +32,16 @@ class Solution:
             n //= 10
 
         # Recursively call the function with the sum of the digits
-        return Solution.addDigits_2(sum_digits)
+        return Solution.addDigitsRecursion(sum_digits)
 
 
 # Unit Test: Input: num = 38, Output: 2
-assert Solution.addDigits_1(38) == 2
+assert Solution.addDigits(38) == 2
 
 # Unit Test: Input: num = 0, Output: 0
-assert Solution.addDigits_2(0) == 0
+assert Solution.addDigitsRecursion(0) == 0
 
 # Unit Test: Input: num = 9, Output: 9
-assert Solution.addDigits_2(9) == 9
+assert Solution.addDigitsRecursion(9) == 9
 
 print("All unit tests are passed")
