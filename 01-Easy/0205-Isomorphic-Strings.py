@@ -5,6 +5,8 @@
 
 
 class Solution:
+    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
+    # Similar to 0290-Word-Pattern.py
     @staticmethod
     def isIsomorphic(s: str, t: str) -> bool:
         # Initialize two dictionaries to store the mapping of characters
