@@ -5,6 +5,7 @@
 # then return 0.
 
 class Solution:
+    # Optimal Solution: Math. Time Complexity: O(log(x)), Space Complexity: O(1)
     # Similar to the reverseBits method in 01-Easy/0190-Reverse-Bits.py
     @staticmethod
     def reverse(x: int) -> int:

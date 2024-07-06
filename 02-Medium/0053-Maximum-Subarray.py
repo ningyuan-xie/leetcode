@@ -8,7 +8,7 @@ from typing import List
 
 
 class Solution:
-    # Kadane's Algorithm
+    # Optimal Solution: Kadane's Algorithm. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def maxSubArray(nums: List[int]) -> int:
         # Initialize the maximum sum and the current sum
