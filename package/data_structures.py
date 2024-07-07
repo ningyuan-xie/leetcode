@@ -7,16 +7,16 @@ class ListNode:
         self.val = val
         self.next = next
 
-    # Override the __eq__ method to compare two ListNode objects
+    # Instance equality method: override the __eq__ method to compare two ListNode objects
     def __eq__(self, other):
         return (self.val == other.val
                 and self.next == other.next) if other else False
 
-    # Class description method: override the __str__ method
+    # Instance description method: override the __str__ method
     def __str__(self):
         return f"ListNode({self.val}, {self.next})"
 
-    # Helper function to print the linked list
+    # Static method: helper function to print the linked list
     @staticmethod
     def printLinkedList(head):
         while head:
@@ -33,12 +33,12 @@ class TreeNode:
         self.left = left
         self.right = right
 
-    # Override the __eq__ method to compare two TreeNode objects
+    # Instance equality method: override the __eq__ method to compare two TreeNode objects
     def __eq__(self, other):
         return (self.val == other.val
                 and self.left == other.left
                 and self.right == other.right) if other else False
 
-    # Class description method: override the __str__ method
+    # Instance description method: override the __str__ method
     def __str__(self):
         return f"TreeNode({self.val}, {self.left}, {self.right})"
