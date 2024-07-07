@@ -3,7 +3,6 @@
 # Description: Given an integer columnNumber,
 # return its corresponding column title as it appears in an Excel sheet.
 
-
 class Solution:
     # Similar to 0067-Add-Binary.py
     @staticmethod

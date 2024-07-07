@@ -3,7 +3,6 @@
 # Description: Implement a first in first out (FIFO) queue using only two stacks.
 # The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
 
-
 # Similar to 0225-Implement-Stack-using-Queues.py, we can implement a queue using two stacks.
 class MyQueue:
     # Constructor: instance variable stack1 and stack2 are lists

@@ -3,7 +3,6 @@
 # Description: Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 # An anagram is a word formed by rearranging the letters of another, such as cinema, formed from iceman.
 
-
 class Solution:
     # Optimal Solution: Using Hash Table. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod

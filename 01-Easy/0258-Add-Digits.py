@@ -3,7 +3,6 @@
 # Description: Given an integer num, repeatedly add its digits
 # until the result has only one digit, and return it.
 
-
 class Solution:
     # Optimal Solution: Digital Root. Time Complexity: O(1), Space Complexity: O(1)
     @staticmethod

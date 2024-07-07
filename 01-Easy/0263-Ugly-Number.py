@@ -3,7 +3,6 @@
 # Description: Write a program to check whether a given number is an ugly number.
 # An ugly number is a positive number whose prime factors only include 2, 3, and/or 5.
 
-
 class Solution:
     # Optimal Solution: Iterative Approach. Time Complexity: O(log(n)), Space Complexity: O(1)
     @staticmethod

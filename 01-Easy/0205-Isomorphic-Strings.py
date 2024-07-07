@@ -3,7 +3,6 @@
 # Description: Given two strings s and t, determine if they are isomorphic.
 # Two strings s and t are isomorphic if the characters in s can be replaced to get t.
 
-
 class Solution:
     # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
     # Similar to 0290-Word-Pattern.py

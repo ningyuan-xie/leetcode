@@ -6,7 +6,6 @@
 # On each turn, the person whose turn it is will remove 1 to 3 stones from the heap.
 # The one who removes the last stone is the winner.
 
-
 class Solution:
     # Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)
     @staticmethod

@@ -2,7 +2,6 @@
 # Difficulty: Easy
 # Description: Given a pattern and a string s, find if s follows the same pattern.
 
-
 class Solution:
     # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
     # Similar to 0205-Isomorphic-Strings.py

@@ -3,7 +3,6 @@
 # Description: Given a string s, determine if it is a palindrome,
 # considering only alphanumeric characters and ignoring cases.
 
-
 class Solution:
     @staticmethod
     def isPalindrome(s: str) -> bool:

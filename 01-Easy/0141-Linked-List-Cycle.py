@@ -4,7 +4,6 @@
 # There is a cycle in a linked list if there is some node in the list that can be
 # reached again by continuously following the next pointer.
 
-from typing import List
 from package.data_structures import ListNode
 
 
