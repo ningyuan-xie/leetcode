@@ -3,7 +3,7 @@
 # Description: Given an integer n, return true if it is a power of two. Otherwise, return false.
 
 class Solution:
-    # Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)
+    # Optimal Solution: Math (only for prime). Time Complexity: O(1), Space Complexity: O(1)
     @staticmethod
     def isPowerOfTwo(n: int) -> bool:
         # The maximum power of 2 that can be stored in a 32-bit integer is 2^30 = 1073741824

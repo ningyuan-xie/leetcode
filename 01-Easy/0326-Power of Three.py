@@ -4,7 +4,7 @@
 # Follow up: Could you solve it without loops/recursion?
 
 class Solution:
-    # Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)
+    # Optimal Solution: Math (only for prime). Time Complexity: O(1), Space Complexity: O(1)
     # Similar to 0231-Power-of-Two.py
     @staticmethod
     def isPowerOfThree(n: int) -> bool:
