@@ -11,9 +11,9 @@ class Solution:
     @staticmethod
     def removeDuplicates(nums: List[int]) -> int:
         # Initialize unique numbers index to 0
-        length_unique = 0
+        length_unique = 0  # pointer one
         # Loop begin from the second number
-        for i in range(1, len(nums)):
+        for i in range(1, len(nums)):  # pointer two: index i
             # If the current number nums[i] != previous number nums[length_unique], unique number found
             if nums[i] != nums[length_unique]:
                 # Increase the length of the unique numbers

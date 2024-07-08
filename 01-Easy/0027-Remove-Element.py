@@ -11,9 +11,9 @@ class Solution:
     @staticmethod
     def removeElement(nums: List[int], val: int) -> int:
         # Initialize the new length index to 0
-        length_new = 0
+        length_new = 0  # pointer one
         # Loop through the list
-        for i in range(len(nums)):
+        for i in range(len(nums)):  # pointer two: index i
             # If the current number != val, keep it at the new length index
             if nums[i] != val:  # E.g. val = 3, nums = [3, 2, 2, 3]
                 # Replace the new length number in-place with the current number

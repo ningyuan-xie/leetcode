@@ -4,7 +4,7 @@
 
 class Solution:
     # Optimal Solution: Convert to String. Time Complexity: O(n), Space Complexity: O(n)
-    # Alternative method in 0344-Reverse-String.py
+    # Alternative methods in 0344-Reverse-String.py: Two Pointers, Stack, Recursion
     @staticmethod
     def isPalindrome(x: int) -> bool:
         # Convert integer to string

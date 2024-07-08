@@ -8,13 +8,12 @@ from typing import List
 
 
 class Solution:
-    # Optimal Solution: Two-Pointers. Time Complexity: O(n), Space Complexity: O(1)
+    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
     # Similar to 0283-Move-Zeroes.py
     @staticmethod
     def reverseString(s: List[str]) -> None:
         # Initialize two pointers: left and right
         left, right = 0, len(s) - 1
-
         # Loop until left pointer is less than right pointer
         while left < right:
             # Swap the characters at the left and right pointers
@@ -24,6 +23,29 @@ class Solution:
             # Move the right pointer to the left
             right -= 1
 
+    # Alternative Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)
+    @staticmethod
+    def reverseStringStack(s: List[str]) -> None:
+        # Initialize a stack to store the characters of s
+        stack = []
+        # Push each character of s into the stack
+        for char in s:
+            stack.append(char)
+        # Pop each character from the stack and assign it to s
+        for i in range(len(s)):
+            s[i] = stack.pop()
+
+    # Alternative Solution: Recursion. Time Complexity: O(n), Space Complexity: O(n)
+    @staticmethod
+    def reverseStringRecursion(s: List[str]) -> None:
+        # Base case: if the length of s is less than or equal to 1, return
+        if len(s) <= 1:
+            return
+        # Swap the first and last characters
+        s[0], s[-1] = s[-1], s[0]
+        # Recursively reverse the substring s[1:-1]
+        Solution.reverseStringRecursion(s[1:-1])
+
 
 # Unit Test: Input: s = ["h", "e", "l", "l", "o"], Output: ["o", "l", "l", "e", "h"]
 s_test = ["h", "e", "l", "l", "o"]
@@ -32,7 +54,7 @@ assert s_test == ["o", "l", "l", "e", "h"]
 
 # Unit Test: Input: s = ["H", "a", "n", "n", "a", "h"], Output: ["h", "a", "n", "n", "a", "H"]
 s_test = ["H", "a", "n", "n", "a", "h"]
-Solution.reverseString(s_test)
+Solution.reverseStringRecursion(s_test)
 assert s_test == ["h", "a", "n", "n", "a", "H"]
 
 print("All unit tests are passed")
