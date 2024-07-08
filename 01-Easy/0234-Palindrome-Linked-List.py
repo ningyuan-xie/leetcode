@@ -8,6 +8,8 @@ from package.data_structures import ListNode
 
 
 class Solution:
+    # Optimal Solution: Reverse the second half of the linked list and compare
+    # the first half and the second half. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def isPalindrome(head: Optional[ListNode]) -> bool:
         # Base case: if head is None or head.next is None, return True

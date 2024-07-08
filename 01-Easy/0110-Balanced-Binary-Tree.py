@@ -22,6 +22,7 @@ class Solution:
             # + 1 for every time we go down a level
             return max(left_height, right_height) + 1
 
+        # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
         # Helper function 2 to check if the tree is balanced
         def is_balanced(node: Optional[TreeNode]) -> bool:
             # Base case: if the node is None, return True

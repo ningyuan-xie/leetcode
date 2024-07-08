@@ -7,6 +7,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
+    # Optimal Solution: Recursive DFS. Time Complexity: O(log(n)^2), Space Complexity: O(log(n))
     # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
     @staticmethod
     def countNodes(root: Optional[TreeNode]) -> int:

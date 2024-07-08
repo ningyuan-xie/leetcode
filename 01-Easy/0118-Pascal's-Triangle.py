@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Iteration. Time Complexity: O(numRows^2), Space Complexity: O(numRows^2)
     @staticmethod
     def generate(numRows: int) -> List[List[int]]:
         # Initialize the result list with the first row of Pascal's triangle

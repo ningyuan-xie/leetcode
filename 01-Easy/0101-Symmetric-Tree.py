@@ -8,6 +8,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
+    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def isSymmetric(root: Optional[TreeNode]) -> bool:  # only takes one parameter root
         # However, we need to compare the left and right subtrees simultaneously

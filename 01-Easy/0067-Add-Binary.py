@@ -3,6 +3,7 @@
 # Description: Given two binary strings a and b, return their sum as a binary string.
 
 class Solution:
+    # Optimal Solution: Math. Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m))
     @staticmethod
     def addBinary(a: str, b: str) -> str:
         # Initialize carry and result

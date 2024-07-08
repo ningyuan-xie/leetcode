@@ -4,6 +4,7 @@
 # determine if the input string is valid.
 
 class Solution:
+    # Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def isValid(s: str) -> bool:
         # Create dictionary with key-value pairs

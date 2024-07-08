@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Iteration. Time Complexity: O(n^2), Space Complexity: O(n)
     @staticmethod
     def getRow(rowIndex: int) -> List[int]:
         # Initialize the result list with the first row of Pascal's triangle

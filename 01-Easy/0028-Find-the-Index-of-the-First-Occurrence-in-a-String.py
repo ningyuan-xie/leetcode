@@ -4,6 +4,7 @@
 # return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
 class Solution:
+    # Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def strStr(haystack: str, needle: str) -> int:
         # If needle is empty, return 0

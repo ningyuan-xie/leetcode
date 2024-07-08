@@ -4,6 +4,7 @@
 # return its corresponding column title as it appears in an Excel sheet.
 
 class Solution:
+    # Optimal Solution: Math. Time Complexity: O(log(columnNumber)), Space Complexity: O(1)
     # Similar to 0067-Add-Binary.py
     @staticmethod
     def convertToTitle(columnNumber: int) -> str:

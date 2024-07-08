@@ -4,6 +4,7 @@
 # and returns the number of '1' bits it has (also known as the Hamming weight).
 
 class Solution:
+    # Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
     @staticmethod
     def hammingWeight(n: int) -> int:
         # Initialize the number of '1' bits

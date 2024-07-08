@@ -7,6 +7,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)
     # Similar to 0202-Happy-Number.py
     @staticmethod
     def containsDuplicate(nums: List[int]) -> bool:

@@ -7,6 +7,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def summaryRanges(nums: List[int]) -> List[str]:
         # Base case: if the input list is empty, return an empty list

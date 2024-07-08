@@ -4,7 +4,7 @@
 # Follow up: Could you solve it without loops/recursion?
 
 class Solution:
-    # Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))
+    # Optimal Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))
     # Similar to 0231-Power-of-Two.py and 0326-Power-of-Three.py
     # Written in instance method format instead of static method format
     def isPowerOfFour(self, n: int) -> bool:

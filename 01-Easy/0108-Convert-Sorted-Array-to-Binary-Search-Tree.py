@@ -8,6 +8,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
+    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
     # Reverse of 0094-Binary-Tree-Inorder-Traversal.py
     @staticmethod
     def sortedArrayToBST(nums: List[int]) -> Optional[TreeNode]:

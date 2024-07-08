@@ -4,6 +4,7 @@
 # return the length of the last word in the string.
 
 class Solution:
+    # Optimal Solution: Split. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def lengthOfLastWord(s: str) -> int:
         # Split the string by space

@@ -8,8 +8,9 @@ from typing import List
 
 
 class Solution:
-    # Boyer-Moore Voting Algorithm: Because this majority element occurs more than
-    # n/2 (floor value) times, even if other elements will 'vote against it', it will win
+    # Optimal Solution: Boyer-Moore Voting Algorithm. Time Complexity: O(n), Space Complexity: O(1)
+    # Because this majority element occurs more than n/2 (floor value) times,
+    # even if other elements will 'vote against it', it will win
     @staticmethod
     def majorityElement(nums: List[int]) -> int:
         # Initialize the majority element and its count

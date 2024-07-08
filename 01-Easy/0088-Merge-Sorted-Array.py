@@ -8,6 +8,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1)
     @staticmethod
     def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:  # merge nums2 into nums1
         # Initialize the pointers for nums1 and nums2

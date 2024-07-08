@@ -3,6 +3,7 @@
 # Description: Given a roman numeral, convert it to an integer.
 
 class Solution:
+    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def romanToInt(s: str) -> int:
         # Create dictionary with key-value pairs

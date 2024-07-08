@@ -7,6 +7,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def removeElement(nums: List[int], val: int) -> int:
         # Initialize the new length index to 0

@@ -8,6 +8,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def searchInsert(nums: List[int], target: int) -> int:
         # Loop through the index of the numbers in the list

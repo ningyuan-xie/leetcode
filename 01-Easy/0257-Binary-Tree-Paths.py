@@ -7,7 +7,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Depth-First Search (DFS). Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def binaryTreePaths(root: Optional[TreeNode]) -> List[str]:
         # Base case: if the root is None, return an empty list

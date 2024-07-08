@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Horizontal Scanning. Time Complexity: O(n * m), Space Complexity: O(1)
     @staticmethod
     def longestCommonPrefix(strs: List[str]) -> str:
         # Initialize prefix

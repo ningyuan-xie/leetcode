@@ -9,6 +9,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
+    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
     # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
     @staticmethod
     def minDepth(root: Optional[TreeNode]) -> int:

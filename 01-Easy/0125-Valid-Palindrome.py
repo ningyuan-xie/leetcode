@@ -4,6 +4,7 @@
 # considering only alphanumeric characters and ignoring cases.
 
 class Solution:
+    # Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def isPalindrome(s: str) -> bool:
         # Convert the string to lowercase and remove non-alphanumeric characters

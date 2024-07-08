@@ -7,6 +7,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def plusOne(digits: List[int]) -> List[int]:
         # Loop through the index of the numbers in the list in reverse order

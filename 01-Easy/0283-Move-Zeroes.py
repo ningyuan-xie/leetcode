@@ -8,7 +8,7 @@ from typing import List
 
 
 class Solution:
-    # Optimal Solution: Two Pointers Quick Sort. Time Complexity: O(n), Space Complexity: O(1)
+    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def moveZeroes(nums: List[int]) -> None:
         # Initialize the left and right pointers

@@ -7,6 +7,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
+    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def invertTree(root: Optional[TreeNode]) -> Optional[TreeNode]:
         # Base case: if the tree root is None, return None

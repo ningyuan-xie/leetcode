@@ -7,6 +7,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def removeDuplicates(nums: List[int]) -> int:
         # Initialize unique numbers index to 0

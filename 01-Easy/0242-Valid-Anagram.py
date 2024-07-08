@@ -4,7 +4,7 @@
 # An anagram is a word formed by rearranging the letters of another, such as cinema, formed from iceman.
 
 class Solution:
-    # Optimal Solution: Using Hash Table. Time Complexity: O(n), Space Complexity: O(1)
+    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def isAnagram(s: str, t: str) -> bool:
         # Base case: if the lengths of two strings are different, return False

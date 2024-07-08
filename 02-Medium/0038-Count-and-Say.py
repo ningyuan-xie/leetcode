@@ -6,7 +6,7 @@
 # countAndSay(n) is the way you would "say" the digit string from countAndSay(n-1).
 
 class Solution:
-    # Optimal Solution: Iterative Approach. Time Complexity: O(n), Space Complexity: O(1)
+    # Optimal Solution: Iteration. Time Complexity: O(2^n), Space Complexity: O(2^n)
     @staticmethod
     def countAndSay(n: int) -> str:
         # Initialize the first digit string

@@ -8,7 +8,8 @@ from package.data_structures import ListNode
 
 
 class Solution:
-    # Floyd's Tortoise and Hare (Cycle Detection) Algorithm
+    # Optimal Solution: Floyd's Tortoise and Hare (Cycle Detection) Algorithm
+    # Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def hasCycle(head: ListNode) -> bool:
         # Initialize two pointers: slow and fast

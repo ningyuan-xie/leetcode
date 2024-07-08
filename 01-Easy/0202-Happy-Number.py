@@ -8,6 +8,7 @@
 # Those numbers for which this process ends in 1 are happy.
 
 class Solution:
+    # Optimal Solution: Hash Set. Time Complexity: O(log(n)), Space Complexity: O(log(n))
     @staticmethod
     def isHappy(n: int) -> bool:
         # Initialize a set to store UNIQUE sum of squares of digits

@@ -7,7 +7,7 @@ from typing import List
 
 
 class Solution:
-    # Optimal Solution: Iterative Approach. Time Complexity: O(n * 2^n), Space Complexity: O(n * 2^n)
+    # Optimal Solution: Iteration. Time Complexity: O(2^n), Space Complexity: O(2^n)
     @staticmethod
     def subsets(nums: List[int]) -> List[List[int]]:
         # Initialize the result list with an empty subset

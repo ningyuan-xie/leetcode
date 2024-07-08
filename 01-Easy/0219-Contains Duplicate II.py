@@ -7,6 +7,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
     # Similar to 0001-Two-Sum.py
     @staticmethod
     def containsNearbyDuplicate(nums: List[int], k: int) -> bool:

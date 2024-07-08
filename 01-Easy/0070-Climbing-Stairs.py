@@ -4,6 +4,7 @@
 # Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
 class Solution:
+    # Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def climbStairs(n: int) -> int:
         # Base case for "two": if currently at final stair, 1 way to reach the top
@@ -11,7 +12,7 @@ class Solution:
         one, two = 1, 1
         # Fibonacci sequence going from back to beginning: f(n) = f(n-1) + f(n-2)
         # as each PREVIOUS stair depends on the LATER two stairs: dynamic programming
-        for i in range(n-1):  # E.g. if n = 5, have stair 5 and 4, need stair 3, 2, 1, 0
+        for i in range(n - 1):  # E.g. if n = 5, have stair 5 and 4, need stair 3, 2, 1, 0
             one, two = one + two, one
         return one
 

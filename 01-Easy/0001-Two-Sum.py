@@ -7,7 +7,7 @@ from typing import List
 
 
 class Solution:
-    # Optimal Solution: Using Hash Table. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     # static method: does not require access to class or instance, so does not need self
     # instance method: needs access to class or instance, so needs self

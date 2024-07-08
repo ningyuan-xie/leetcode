@@ -3,6 +3,7 @@
 # Description: Given an integer x, return true if x is palindrome integer.
 
 class Solution:
+    # Optimal Solution: Convert to String. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def isPalindrome(x: int) -> bool:
         # Convert integer to string

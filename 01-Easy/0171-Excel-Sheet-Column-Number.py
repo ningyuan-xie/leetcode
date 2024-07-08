@@ -4,6 +4,7 @@
 # as it appears in an Excel sheet, return its corresponding column number.
 
 class Solution:
+    # Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def titleToNumber(columnTitle: str) -> int:
         # Initialize the column number

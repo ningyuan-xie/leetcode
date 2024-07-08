@@ -8,6 +8,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
+    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def isSameTree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         # Base case: if both trees are None, then they are the same

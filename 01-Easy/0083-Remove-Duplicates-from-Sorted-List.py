@@ -9,6 +9,7 @@ from package.data_structures import ListNode
 
 
 class Solution:
+    # Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def deleteDuplicates(head: Optional[ListNode]) -> Optional[ListNode]:
         # Base case: if the linked list is empty, return None

@@ -9,6 +9,7 @@ from typing import List
 
 
 class Solution:
+    # Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def maxProfit(prices: List[int]) -> int:
         # Initialize the minimum price to the maximum integer value

@@ -7,6 +7,7 @@ from package.data_structures import ListNode
 
 
 class Solution:
+    # Optimal Solution: Iteration. Time Complexity: O(n + m), Space Complexity: O(1)
     @staticmethod
     def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
         # Dummy node to keep track of the head of the linked list
