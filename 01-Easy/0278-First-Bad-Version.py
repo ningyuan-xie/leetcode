@@ -16,6 +16,7 @@ def isBadVersion(version: int) -> bool:
 
 class Solution:
     # Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
+    # Similar to 0069-Sqrt(x).py and 0367-Valid-Perfect-Square.py
     @staticmethod
     def firstBadVersion(n: int) -> int:
         # Initialize the left and right pointers
