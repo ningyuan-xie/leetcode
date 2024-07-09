@@ -2,9 +2,6 @@
 # Difficulty: Easy
 # Description: Write a function that takes a string as input and reverse only the vowels of a string.
 
-from typing import List
-
-
 class Solution:
     # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
     # Similar to 0344-Reverse-String.py
