@@ -13,7 +13,7 @@ class Solution:
         # Initialize a set of vowels
         vowels = set("aeiouAEIOU")
         # Convert the string into a list of characters
-        s = list(s)
+        s = list(s)  # "hello" -> ["h", "e", "l", "l", "o"]
         # Initialize two pointers: left and right
         left, right = 0, len(s) - 1
         # Loop until left pointer is less than right pointer
