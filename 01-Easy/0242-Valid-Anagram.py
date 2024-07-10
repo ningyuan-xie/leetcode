@@ -10,24 +10,18 @@ class Solution:
         # Base case: if the lengths of two strings are different, return False
         if len(s) != len(t):
             return False
-
         # Initialize a hash table to store the frequency of characters in string s
-        hash_table = {}
-        # Traverse string s and store the frequency of characters in the hash table
+        char_freq = {}
         for char in s:
-            hash_table[char] = hash_table.get(char, 0) + 1
-
+            char_freq[char] = char_freq.get(char, 0) + 1
         # Traverse string t and decrement the frequency of characters in the hash table
         for char in t:
-            # If the character is not in the hash table, return False
-            if char not in hash_table:
+            # If the character is in the hash table and the frequency is greater than 0
+            if char in char_freq and char_freq[char] > 0:
+                # Decrement the frequency of the character in the hash table after using it
+                char_freq[char] -= 1
+            else:
                 return False
-            # Decrement the frequency of the character in the hash table
-            hash_table[char] -= 1
-            # If the frequency of the character is less than 0,
-            if hash_table[char] < 0:
-                return False
-
         return True
 
 

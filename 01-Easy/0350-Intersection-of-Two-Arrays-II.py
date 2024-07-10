@@ -13,18 +13,17 @@ class Solution:
     @staticmethod
     def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
         # Initialize a hash table to store the frequency of each element in nums1
-        freq = {}
+        num_freq = {}
         for num in nums1:
-            # Increment the frequency of the element in the hash table
-            freq[num] = freq.get(num, 0) + 1  # E.g., freq = {1: 2, 2: 2}
+            num_freq[num] = num_freq.get(num, 0) + 1  # E.g., num_freq = {1: 2, 2: 2}
         # Initialize a list to store the intersection of nums1 and nums2
         intersection = []
         for num in nums2:
             # If the element is in the hash table and the frequency is greater than 0
-            if num in freq and freq[num] > 0:
+            if num in num_freq and num_freq[num] > 0:
                 intersection.append(num)
-                # Decrement the frequency of the element in the hash table to avoid duplicates
-                freq[num] -= 1
+                # Decrement the frequency of the element in the hash table after using it
+                num_freq[num] -= 1
         return intersection
 
 
