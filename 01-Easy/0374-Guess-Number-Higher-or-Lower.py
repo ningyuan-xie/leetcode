@@ -22,7 +22,7 @@ class Solution:
     def guessNumber(n: int) -> int:
         # Initialize the left and right pointers for binary search
         left, right = 1, n
-        # Loop until the left pointer is less than or equal to the right pointer
+        # Loop until left pointer > right pointer
         while left <= right:
             mid = (left + right) // 2
             # Make a guess

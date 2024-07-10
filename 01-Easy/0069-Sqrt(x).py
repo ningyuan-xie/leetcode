@@ -11,6 +11,7 @@ class Solution:
             return x
         # Initialize the left and right pointers
         left, right = 1, x
+        # Loop until left pointer > right pointer
         while left <= right:
             # Calculate the middle value
             mid = (left + right) // 2

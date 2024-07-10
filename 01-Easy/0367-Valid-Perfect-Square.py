@@ -13,7 +13,7 @@ class Solution:
             return True
         # Initialize the left and right pointers for binary search
         left, right = 2, num  # E.g., num = 16 -> left = 2, right = 16
-        # Loop until the left pointer is less than or equal to the right pointer
+        # Loop until left pointer > right pointer
         while left <= right:
             mid = (left + right) // 2
             # Calculate the square of the middle pointer
