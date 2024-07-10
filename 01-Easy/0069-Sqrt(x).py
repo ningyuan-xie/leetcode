@@ -18,8 +18,10 @@ class Solution:
             mid_squared = mid ** 2
             if mid_squared == x:
                 return mid
+            # The square of the middle is less than x, so the square root is on the right side
             elif mid_squared < x:
                 left = mid + 1
+            # The square of the middle is greater than x, so the square root is on the left side
             else:
                 right = mid - 1
         # When the loop terminates: left > right

@@ -20,8 +20,10 @@ class Solution:
             mid_squared = mid ** 2
             if mid_squared == num:
                 return True
+            # The square of the middle is less than the number, so the number is on the right side
             elif mid_squared < num:
                 left = mid + 1
+            # The square of the middle is greater than the number, so the number is on the left side
             else:
                 right = mid - 1
         return False
