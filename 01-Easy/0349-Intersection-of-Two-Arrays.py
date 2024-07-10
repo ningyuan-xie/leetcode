@@ -14,7 +14,6 @@ class Solution:
         set1, set2 = set(nums1), set(nums2)
         # Initialize a list to store the intersection of nums1 and nums2
         intersection = []
-        # Loop through each element in set1
         for num in set1:
             # If the element is in set2, add it to the intersection
             if num in set2:

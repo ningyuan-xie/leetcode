@@ -9,25 +9,19 @@ class Solution:
         # Base case: if x is 0 or 1, return x
         if x == 0 or x == 1:
             return x
-        # Binary search: O(log(n))
         # Initialize the left and right pointers
         left, right = 1, x
         while left <= right:
             # Calculate the middle value
-            mid = left + (right - left) // 2
+            mid = (left + right) // 2
             # Calculate the square of the middle value
-            mid_squared = mid * mid
-
-            # If the square of the middle value is equal to x, return the middle value
+            mid_squared = mid ** 2
             if mid_squared == x:
                 return mid
-            # If the square of the middle value is less than x, move the left pointer to the middle value + 1
             elif mid_squared < x:
                 left = mid + 1
-            # If the square of the middle value is greater than x, move the right pointer to the middle value - 1
             else:
                 right = mid - 1
-
         # When the loop terminates: left > right
         # left will be the ceiling of the square root of x
         # right will be the floor of the square root of x

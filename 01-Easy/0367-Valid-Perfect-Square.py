@@ -5,7 +5,7 @@
 
 class Solution:
     # Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
-    # Similar to 0069-Sqrt(x).py and 0278-First-Bad-Version.py
+    # Similar to 0069-Sqrt(x).py
     @staticmethod
     def isPerfectSquare(num: int) -> bool:
         # Base case: 0 and 1 are perfect squares
@@ -15,17 +15,13 @@ class Solution:
         left, right = 2, num  # E.g., num = 16 -> left = 2, right = 16
         # Loop until the left pointer is less than or equal to the right pointer
         while left <= right:
-            # Calculate the middle pointer
             mid = (left + right) // 2
             # Calculate the square of the middle pointer
-            square = mid ** 2
-            # If the square is equal to the number, return True
-            if square == num:
+            mid_squared = mid ** 2
+            if mid_squared == num:
                 return True
-            # If the square is less than the number, move the left pointer to the middle pointer + 1
-            elif square < num:
+            elif mid_squared < num:
                 left = mid + 1
-            # If the square is greater than the number, move the right pointer to the middle pointer - 1
             else:
                 right = mid - 1
         return False
