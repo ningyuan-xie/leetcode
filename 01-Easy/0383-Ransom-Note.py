@@ -6,13 +6,13 @@
 
 class Solution:
     # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0242-Valid-Anagram.py and 0350-Intersection-of-Two-Arrays-II.py
+    # Similar to 0350-Intersection-of-Two-Arrays-II.py
     @staticmethod
     def canConstruct(ransomNote: str, magazine: str) -> bool:
         # Create a hash table to store the frequency of each character in the magazine
         char_freq = {}
         for char in magazine:
-            char_freq[char] = char_freq.get(char, 0) + 1  # E.g., char_freq = {'a': 1, 'b': 2}
+            char_freq[char] = char_freq.get(char, 0) + 1  # E.g., char_freq = {'a': 2, 'b': 1}
         # Iterate through the ransom note to check if the magazine can construct the ransom note
         for char in ransomNote:
             # If the character is in the hash table and the frequency is greater than 0

@@ -13,7 +13,7 @@ class Solution:
         # Initialize a hash table to store the frequency of characters in string s
         char_freq = {}
         for char in s:
-            char_freq[char] = char_freq.get(char, 0) + 1
+            char_freq[char] = char_freq.get(char, 0) + 1  # E.g., char_freq = {'a': 3, 'n': 1}
         # Traverse string t and decrement the frequency of characters in the hash table
         for char in t:
             # If the character is in the hash table and the frequency is greater than 0

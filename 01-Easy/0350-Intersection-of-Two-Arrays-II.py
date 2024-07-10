@@ -9,7 +9,7 @@ from typing import List
 
 class Solution:
     # Optimal Solution: Hash Table. Time Complexity: O(n + m), Space Complexity: O(n)
-    # Similar to 0242-Valid-Anagram.py and 0349-Intersection-of-Two-Arrays.py
+    # Similar to 0242-Valid-Anagram.py
     @staticmethod
     def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
         # Initialize a hash table to store the frequency of each element in nums1
