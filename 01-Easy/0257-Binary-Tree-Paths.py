@@ -17,6 +17,9 @@ class Solution:
         # Initialize a list to store the root-to-leaf paths
         result = []
 
+        # don't need to declare it as nonlocal since list is mutable (can change in place),
+        # so modifications to the list will be reflected in the outer scope
+
         # Helper function to traverse the binary tree and find the root-to-leaf paths
         def dfs_paths(node: TreeNode, path: Optional[str]) -> None:
             # Base case: if the node is a leaf node, append the path to the list of paths
@@ -25,12 +28,12 @@ class Solution:
                 return
             # Recursive case: traverse the left and right subtrees
             if node.left:
-                dfs_paths(node.left, path + str(node.val) + "->")
+                dfs_paths(node=node.left, path=path + str(node.val) + "->")
             if node.right:
-                dfs_paths(node.right, path + str(node.val) + "->")
+                dfs_paths(node=node.right, path=path + str(node.val) + "->")
 
         # Start the DFS traversal from the root node
-        dfs_paths(root, "")
+        dfs_paths(node=root, path="")
         return result
 
 
