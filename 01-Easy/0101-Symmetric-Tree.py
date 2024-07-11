@@ -9,6 +9,7 @@ from package.data_structures import TreeNode
 
 class Solution:
     # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Similar to 0100-Same-Tree.py, we need an inner helper DFS function to take two parameters
     @staticmethod
     def isSymmetric(root: Optional[TreeNode]) -> bool:  # only takes one parameter root
         # However, we need to compare the left and right subtrees simultaneously

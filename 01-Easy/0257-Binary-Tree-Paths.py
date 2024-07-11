@@ -8,12 +8,12 @@ from package.data_structures import TreeNode
 
 class Solution:
     # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Similar to 0101-Symmetric-Tree.py, we need an inner helper DFS function to take two parameters
     @staticmethod
     def binaryTreePaths(root: Optional[TreeNode]) -> List[str]:
         # Base case: if the root is None, return an empty list
         if not root:
             return []
-
         # Initialize a list to store the root-to-leaf paths
         result = []
 
@@ -23,7 +23,6 @@ class Solution:
             if not node.left and not node.right:
                 result.append(path + str(node.val))
                 return
-
             # Recursive case: traverse the left and right subtrees
             if node.left:
                 dfs_paths(node.left, path + str(node.val) + "->")
@@ -32,7 +31,6 @@ class Solution:
 
         # Start the DFS traversal from the root node
         dfs_paths(root, "")
-
         return result
 
 
