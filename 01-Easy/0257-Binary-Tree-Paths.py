@@ -26,6 +26,7 @@ class Solution:
                 result.append(path + str(node.val))
                 return
             # Recursive case: traverse the left and right subtrees
+            # and update path along the way using current node's value
             if node.left:
                 dfs_paths(node=node.left, path=path + str(node.val) + "->")
             if node.right:
