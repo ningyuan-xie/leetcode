@@ -15,16 +15,16 @@ class Solution:
         if not strs:
             return prefix
         # Use first string in the list as the reference string: loop through its index
-        for i in range(len(strs[0])):  # E.g. "flower": i = 0, 1, 2, 3, 4, 5
+        first_str = strs[0]  # E.g. "flower"
+        for i in range(len(first_str)):  # E.g. i = 0, 1, 2, 3, 4, 5
             # Loop through the rest of the strings in the list
-            for s in strs:  # E.g. "flow", "flight": s = "flow", "flight"
-                # If the current index reaches the length of the current string,
+            for current_str in strs:  # E.g. "flow", "flight": s = "flow", "flight"
+                # Return the prefix if the current index reaches the length of the current string,
                 # or the current string's character does not match the character in the first string,
-                # return the prefix
-                if i == len(s) or strs[0][i] != s[i]:
+                if i == len(current_str) or first_str[i] != current_str[i]:
                     return prefix
             # Otherwise, add the current character to the prefix
-            prefix += strs[0][i]
+            prefix += first_str[i]
         return prefix
 
 
