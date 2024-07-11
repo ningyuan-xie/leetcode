@@ -15,9 +15,9 @@ class Solution:
             # Title will be filled from right to left
             remainder = columnNumber % 26
             # 65 is the ASCII value of 'A': chr(65) = 'A', chr(66) = 'B', ..., chr(90) = 'Z'
-            # Append char to the left: 'B' -> 'A' + 'B' = 'AB'
+            # Add char to the front of the string: 'B' -> 'A' + 'B' = 'AB'
             result = chr(remainder + ord('A')) + result
-            # Divide columnNumber by 26 using floor division "//" to get the next digit on the left
+            # Divide columnNumber by 26 using floor division to get the next digit on the left
             columnNumber //= 26
         return result
 
