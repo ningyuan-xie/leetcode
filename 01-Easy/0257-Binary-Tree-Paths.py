@@ -16,7 +16,6 @@ class Solution:
             return []
         # Initialize a list to store the root-to-leaf paths
         result = []
-
         # don't need to declare it as nonlocal since list is mutable (can change in place),
         # so modifications to the list will be reflected in the outer scope
 
