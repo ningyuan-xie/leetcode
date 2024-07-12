@@ -4,12 +4,12 @@
 
 class Solution:
     # Optimal Solution: Math. Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m))
+    # Similar to 0066-Plus-One.py
     @staticmethod
     def addBinary(a: str, b: str) -> str:
-        # Initialize carry and result
-        carry = 0
-        result = []
-        # Reverse the strings
+        # Initialize result and carry
+        result, carry = [], 0
+        # Reverse the strings, so we can loop through the digits from right to left
         a, b = a[::-1], b[::-1]
         # Loop through the maximum length to get every digit
         for i in range(max(len(a), len(b))):
