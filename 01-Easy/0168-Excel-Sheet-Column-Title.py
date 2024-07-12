@@ -9,15 +9,15 @@ class Solution:
     @staticmethod
     def convertToTitle(columnNumber: int) -> str:
         result = ""
+        # Title will be filled from RIGHT to LEFT
         while columnNumber > 0:
             # Subtract 1 from columnNumber to make it 0-indexed for each digit
             columnNumber -= 1
-            # Title will be filled from right to left
             remainder = columnNumber % 26
             # 65 is the ASCII value of 'A': chr(65) = 'A', chr(66) = 'B', ..., chr(90) = 'Z'
             # Add char to the front of the string: 'B' -> 'A' + 'B' = 'AB'
             result = chr(remainder + ord('A')) + result
-            # Divide columnNumber by 26 using floor division to get the next digit on the left
+            # Divide columnNumber by 26 using floor division to move to the next digit on the left
             columnNumber //= 26
         return result
 

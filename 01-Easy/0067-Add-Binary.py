@@ -9,7 +9,7 @@ class Solution:
     def addBinary(a: str, b: str) -> str:
         # Initialize result and carry
         result, carry = [], 0
-        # Reverse the strings, so we can loop through the digits from right to left
+        # Reverse the strings, so we can loop through the digits from RIGHT to LEFT
         a, b = a[::-1], b[::-1]
         # Loop through the maximum length to get every digit
         for i in range(max(len(a), len(b))):

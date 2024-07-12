@@ -9,17 +9,15 @@ class Solution:
     def titleToNumber(columnTitle: str) -> int:
         # Initialize the column number
         column_number = 0
-
-        # Traverse the column title from left to right
+        # Traverse the column title from LEFT to RIGHT
         for char in columnTitle:  # "AB" -> 'A', 'B'
-            # Multiply the current column number by 26 to shift the previous digits to the left
-            # 'A' -> 'A_'
+            # Multiply the current column number by 26 to move to the next letter on the right
+            # '' -> 'A' -> 'AB'
             column_number *= 26
             # Add the value of the current character to the column number
             column_number += ord(char) - ord('A')  # ord('A') = 65, ord('B') = 66
             # Add 1 to the column number to make it 1-indexed
             column_number += 1
-
         return column_number
 
 

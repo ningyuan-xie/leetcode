@@ -19,12 +19,12 @@ class Solution:
         # Convert negative numbers to their two's complement representation
         if num < 0:
             num += 2 ** 32  # E.g., -1 = 2^32 - 1 = 4294967295 = 0xffffffff
-        # Convert the number to its hexadecimal representation
+        # Convert the number to its hexadecimal representation from RIGHT to LEFT
         while num > 0:
             remainder = num % 16
             # Add the remainder to the front of the string
             hex_str = hex_map[remainder] + hex_str
-            # Divide the number by 16 using floor division to get the next digit on the left
+            # Divide the number by 16 using floor division to move to the next digit on the left
             num //= 16
         return hex_str
 
