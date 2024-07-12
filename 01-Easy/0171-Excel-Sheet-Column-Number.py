@@ -5,12 +5,13 @@
 
 class Solution:
     # Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)
+    # Reverse of 0168-Excel-Sheet-Column-Title.py
     @staticmethod
     def titleToNumber(columnTitle: str) -> int:
         # Initialize the column number
         column_number = 0
         # Traverse the column title from LEFT to RIGHT
-        for char in columnTitle:  # "AB" -> 'A', 'B'
+        for char in columnTitle:  # "AB": 'A' -> 'B'
             # Multiply the current column number by 26 to move to the next letter on the right
             # '' -> 'A' -> 'AB'
             column_number *= 26
