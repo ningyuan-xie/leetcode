@@ -5,6 +5,7 @@
 
 class Solution:
     # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
+    # Similar to 0389-Find-the-Difference.py
     @staticmethod
     def longestPalindrome(s: str) -> int:
         # Initialize a dictionary to store the frequency of each character
