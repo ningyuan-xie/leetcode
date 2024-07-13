@@ -15,17 +15,14 @@ class Solution:
         for i in range(max(len(a), len(b))):
             digit_a = int(a[i]) if i < len(a) else 0
             digit_b = int(b[i]) if i < len(b) else 0
-
-            # Add the digits and the carry
+            # Calculate the total and get the remainder and carry
             total = digit_a + digit_b + carry
-            remainder = str(total % 2)  # E.g. 1 + 1 = 10 -> 0; 1 + 0 = 1 -> 1
-            result.append(remainder)  # Add the remainder to the result
-            carry = total // 2  # E.g. 1 + 1 = 10 -> 1; 1 + 0 = 1 -> 0
-
+            remainder, carry = total % 2, total // 2
+            # Add the remainder to the back of the result (reverted)
+            result.append(str(remainder))
         # If there's a carry left, add it to the result
         if carry:
             result.append(str(carry))
-
         # Reverse the result (which is a list of str) and join them into a string
         return "".join(result[::-1])
 
