@@ -25,9 +25,7 @@ class Solution:
             # The square of the middle is greater than x, so the square root is on the left side
             else:
                 right = mid - 1
-        # When the loop terminates: left > right
-        # left will be the ceiling of the square root of x
-        # right will be the floor of the square root of x
+        # Left is the ceiling and right is the floor of the square root of x
         return right
 
 
