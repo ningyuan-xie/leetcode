@@ -13,7 +13,7 @@ class Solution:
         s = list(s)  # "hello" -> ["h", "e", "l", "l", "o"]
         # Initialize two pointers: left and right
         left, right = 0, len(s) - 1
-        # Loop until left pointer is less than right pointer
+        # Loop until left pointer >= right pointer
         while left < right:
             # If the character at the left pointer is not a vowel, move the left pointer to the right
             if s[left] not in vowels:

@@ -14,7 +14,7 @@ class Solution:
     def reverseString(s: List[str]) -> None:
         # Initialize two pointers: left and right
         left, right = 0, len(s) - 1
-        # Loop until left pointer is less than right pointer
+        # Loop until left pointer >= right pointer
         while left < right:
             # Swap the characters at the left and right pointers
             s[left], s[right] = s[right], s[left]
