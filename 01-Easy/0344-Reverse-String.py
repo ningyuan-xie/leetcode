@@ -24,6 +24,7 @@ class Solution:
             right -= 1
 
     # Alternative Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)
+    # Similar to 0232-Implement-Queue-Using-Stacks.py
     @staticmethod
     def reverseStringStack(s: List[str]) -> None:
         # Initialize a stack to store the characters of s
