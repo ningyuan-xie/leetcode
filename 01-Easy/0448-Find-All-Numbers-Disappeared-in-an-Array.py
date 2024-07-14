@@ -10,7 +10,7 @@ from typing import List
 
 class Solution:
     # Optimal Solution: Negation. Time Complexity: O(n), Space Complexity: O(1)
-    # The trick is to view the numbers as indices and mark the presence of each number
+    # The trick is to view the numbers as indices, and use them on the original array for marking
     @staticmethod
     def findDisappearedNumbers(nums: List[int]) -> List[int]:
         # The first loop marks indices as negative to denote the presence of each number
