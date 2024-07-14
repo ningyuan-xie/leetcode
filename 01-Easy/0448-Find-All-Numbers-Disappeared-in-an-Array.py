@@ -10,18 +10,18 @@ from typing import List
 
 class Solution:
     # Optimal Solution: Negation. Time Complexity: O(n), Space Complexity: O(1)
-    # The trick is to view the numbers as indices, and use them on the original array for marking
+    # The trick is to utilize the input array itself for marking the presence of numbers
+    # Logic: input number -> -1 becomes index -> +1 becomes output number
     @staticmethod
     def findDisappearedNumbers(nums: List[int]) -> List[int]:
-        # The first loop marks indices as negative to denote the presence of each number
+        # The 1st loop marks index's number as negative to denote the presence of each number
         for num in nums:  # E.g. [4, 3, 2, 7, 8, 2, 3, 1], missing numbers: [5, 6]
             # Get the 0-based index of the number
             index = abs(num) - 1  # 3, 2, 1, 6, 7, 1, 2, 0
             # Using negation allows us to mark the presence of a number without using extra space
             nums[index] = -abs(nums[index])  # [-4, -3, -2, -7, -8, 2, 3, -1]
-            # nums[3] = -abs(nums[3]) = -abs(7) = -7, nums[2] = -abs(nums[2]) = -abs(2) = -2
 
-        # The second loop identifies the indices that remain positive, indicating the missing numbers
+        # The 2nd loop identifies the index's number that remain positive, indicating the missing index
         missing_nums = []
         for i, num in enumerate(nums):
             if num > 0:
