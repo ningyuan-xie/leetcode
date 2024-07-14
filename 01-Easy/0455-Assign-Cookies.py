@@ -17,21 +17,17 @@ class Solution:
         # Sort the greed factors and cookie sizes in ascending order
         g.sort()
         s.sort()
-        # Initialize the count of content children
-        count = 0
-        # Initialize the pointers for the greed factors and cookie sizes
+        # Initialize two pointers for the greed factors (children) and cookie sizes
         i, j = 0, 0
         # Iterate through the greed factors and cookie sizes
         while i < len(g) and j < len(s):
-            # If the cookie size is greater than or equal to the greed factor
+            # If the cookie satisfies the greed factor
             if s[j] >= g[i]:
-                # Assign the cookie to the child
-                count += 1
-                # Move to the next child and cookie
+                # Assign the cookie to the child and move to the next child
                 i += 1
             # Move to the next cookie
             j += 1
-        return count
+        return i
 
 
 # Unit Test: Input: g = [1, 2, 3], s = [1, 1], Output: 1
