@@ -4,29 +4,21 @@
 # and appending multiple copies of the substring together.
 
 class Solution:
-    # Optimal Solution: KMP Algorithm. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)
     @staticmethod
     def repeatedSubstringPattern(s: str) -> bool:
-        # Initialize the prefix table
-        prefix_table = [0] * len(s)
-        # Initialize the prefix length
-        prefix_len = 0
-        # Iterate through the range of 1 to the length of the string
-        for i in range(1, len(s)):
-            # If the characters match
-            while prefix_len > 0 and s[i] != s[prefix_len]:
-                prefix_len = prefix_table[prefix_len - 1]
-            if s[i] == s[prefix_len]:
-                prefix_len += 1
-                prefix_table[i] = prefix_len
-            else:
-                prefix_table[i] = 0
-
-        # Calculate the length of the longest proper prefix that is also a suffix
-        prefix_len = prefix_table[-1]
-        # Check if the string can be constructed by taking a substring of it
-        # and appending multiple copies of the substring together
-        return prefix_len > 0 and len(s) % (len(s) - prefix_len) == 0
+        # Substring's length ranges from 1 to len(s) // 2 + 1
+        for i in range(1, len(s) // 2 + 1):  # E.g. s = "abab", i = 1, 2. O(n/2)
+            # If the length of the substring divides the length of the string
+            if len(s) % i == 0:
+                # Construct the substring by repeating the first i characters
+                substring = s[:i]
+                # Recover the string by repeating the substring: O(n)
+                repeated_string = substring * (len(s) // i)  # i = 1, "aaaa" -> i = 2, "abab"
+                # Compare the recovered string with the original string: O(n)
+                if repeated_string == s:
+                    return True
+        return False
 
 
 # Unit Test: Input: s = "abab", Output: True
@@ -40,5 +32,8 @@ assert Solution.repeatedSubstringPattern("abcabcabcabc") is True
 
 # Unit Test: Input: s = "abaababaab", Output: True
 assert Solution.repeatedSubstringPattern("abaababaab") is True
+
+# Unit Test: Input: s = "ababba", Output: False
+assert Solution.repeatedSubstringPattern("ababba") is False
 
 print("All unit tests are passed")
