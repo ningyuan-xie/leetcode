@@ -5,16 +5,17 @@
 
 class Solution:
     # Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
+    # Similar to 0190-Reverse-Bits.py and 0191-Number-of-1-Bits.py
     @staticmethod
     def hammingDistance(x: int, y: int) -> int:
         # Initialize the Hamming distance
         hamming_distance = 0
         # Calculate the XOR of x and y
-        xor = x ^ y
-        # Count the number of set bits in the XOR
+        xor = x ^ y  # E.g. x = 1 (0001), y = 4 (0100) -> xor = 5 (0101)
+        # Count the number of set bits in the XOR from RIGHT to LEFT
         while xor:
-            hamming_distance += xor & 1
-            xor >>= 1
+            hamming_distance += xor & 1  # Add the rightmost bit of the XOR to the Hamming distance
+            xor >>= 1  # Shift the xor to the right by 1, removing the bit just added
         return hamming_distance
 
 

@@ -9,7 +9,7 @@ class Solution:
     def hammingWeight(n: int) -> int:
         # Initialize the number of '1' bits
         count = 0
-        # Traverse the 32 bits of the given integer from right to left
+        # Traverse the 32 bits of the given integer from RIGHT to LEFT
         for i in range(32):
             # Check if the rightmost bit of n is 1
             # If it is, increment the count of '1' bits

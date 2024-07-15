@@ -9,7 +9,7 @@ class Solution:
     def reverseBits(n: int) -> int:
         # Initialize result in binary
         result = 0  # 00000000000000000000000000000000
-        # Traverse the 32 bits of the given integer from right to left
+        # Traverse the 32 bits of the given integer from RIGHT to LEFT
         for i in range(32):
             # Shift the result to the left by 1 bit, leaving room for the next bit to be added
             result <<= 1  # 001 -> 010 -> 100
