@@ -8,7 +8,7 @@ class Solution:
     @staticmethod
     def repeatedSubstringPattern(s: str) -> bool:
         # Substring's length ranges from 1 to len(s) // 2 + 1
-        for i in range(1, len(s) // 2 + 1):  # E.g. s = "abab", i = 1, 2. O(n/2)
+        for i in range(1, len(s) // 2 + 1):  # O(n/2). E.g. s = "abab", i = 1, 2
             # If the length of the substring divides the length of the string
             if len(s) % i == 0:
                 # Construct the substring by repeating the first i characters
