@@ -11,7 +11,8 @@ class Solution:
     @staticmethod
     def plusOne(digits: List[int]) -> List[int]:
         # Loop through the index of the numbers in the list in reverse order from RIGHT to LEFT
-        # -1: the stopping condition so loop will stop before -1 (at 0)
+        # 2nd parameter -1: the stopping condition so loop will stop before -1 (at 0)
+        # 3rd parameter -1: decrement by 1 each loop
         for i in range(len(digits) - 1, -1, -1):
             # If the number is less than 9, add 1 to the number and return the list
             if digits[i] < 9:

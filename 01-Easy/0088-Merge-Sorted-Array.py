@@ -17,7 +17,7 @@ class Solution:
         last = m + n - 1  # last index of the merged array nums1
 
         # Iterate the merged array in reverse order
-        for p in range(last, -1, -1):
+        for p in range(last, -1, -1):  # 3rd parameter -1: decrement by 1 each loop
             # If there are no more elements in nums2, break
             if p2 < 0:
                 break
