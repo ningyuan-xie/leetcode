@@ -41,17 +41,17 @@ class Solution:
 
         # Helper function: DFS
         def dfs(y_axis: int, x_axis: int) -> int:
-            # Base Case: If the cell is out of bounds or water
+            # Base Case: If the current cell is out of bounds or water, we have an edge = 1
             if (y_axis < 0 or y_axis >= len(grid)   # Out of upper or lower bounds
                     or x_axis < 0 or x_axis >= len(grid[0])   # Out of left or right bounds
                     or grid[y_axis][x_axis] == 0):  # Water
                 return 1
-            # Base Case: If the cell is already visited before
+            # Base Case: If the cell is already visited before, ignore it
             if (y_axis, x_axis) in visited:
                 return 0
-            # Mark the cell as visited
+            # Mark the current cell as visited
             visited.add((y_axis, x_axis))
-            # Recursive Case: Explore the neighbors: Up, Down, Left, and Right
+            # Recursive Case: Explore the current cell's neighbors: Up, Down, Left, and Right
             return (dfs(y_axis - 1, x_axis) + dfs(y_axis + 1, x_axis) +
                     dfs(y_axis, x_axis - 1) + dfs(y_axis, x_axis + 1))
 
@@ -59,7 +59,7 @@ class Solution:
         for i in range(len(grid)):
             # Inner loop: Iterate through the columns
             for j in range(len(grid[0])):
-                # If the cell is land
+                # If the current cell is land
                 if grid[i][j] == 1:
                     # Start DFS from the current cell
                     return dfs(y_axis=i, x_axis=j)
