@@ -22,13 +22,13 @@ class Solution:
         if not timeSeries:
             return 0
         total_poisoned_duration = 0
-        # Iterate through the time series for each attach at timeSeries[i - 1]
+        # Iterate through each current attack and its previous attack at timeSeries[i - 1]
         for i in range(1, len(timeSeries)):
             # Calculate the poisoned duration between two attacks, which is the min of:
             # 1. The time between the current and previous attacks (as attacks will reset the dot)
             # 2. The duration of the poison
             total_poisoned_duration += min(timeSeries[i] - timeSeries[i - 1], duration)
-        # Add the last attack's poisoned duration at timeSeries[-1]
+        # Add the last current attack's poisoned duration at timeSeries[i]
         total_poisoned_duration += duration
         return total_poisoned_duration
 
