@@ -17,11 +17,11 @@ class Solution:
         # Initialize the maximum profit to 0
         max_profit = 0
         # Iterate through the prices list
-        for price in prices:  # E.g. 7 -> 1 -> 5 -> 3 -> 6 -> 4
+        for current_price in prices:  # E.g. 7 -> 1 -> 5 -> 3 -> 6 -> 4
             # Update the minimum price if the current price is lower
-            min_price = min(min_price, price)  # E.g. 7 -> 1 -> 1 -> 1 -> 1 -> 1
+            min_price = min(min_price, current_price)  # E.g. 7 -> 1 -> 1 -> 1 -> 1 -> 1
             # Update the maximum profit if the current profit is higher
-            max_profit = max(max_profit, price - min_price)  # E.g. 0 -> 0 -> 4 -> 4 -> 5 -> 5
+            max_profit = max(max_profit, current_price - min_price)  # E.g. 0 -> 0 -> 4 -> 4 -> 5 -> 5
         return max_profit
 
 
