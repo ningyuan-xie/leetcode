@@ -4,7 +4,7 @@
 # and appending multiple copies of the substring together.
 
 class Solution:
-    # Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)
+    # Sub-Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)
     @staticmethod
     def repeatedSubstringPattern(s: str) -> bool:
         # Substring's length ranges from 1 to len(s) // 2 + 1

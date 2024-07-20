@@ -14,7 +14,8 @@ from typing import List
 
 
 class Solution:
-    # Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)
+    # Sub-Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)
+    # The order of nums1 does not matter so no need to loop it; the order of nums2 actually matters
     @staticmethod
     def nextGreaterElement(nums1: List[int], nums2: List[int]) -> List[int]:
         # Initialize a hashmap for nums1. E.g. nums1 = [4, 1, 2]
@@ -39,7 +40,7 @@ class Solution:
         return result
 
     # Optimal Solution: Monotonic Stack. Time Complexity: O(n), Space Complexity: O(n)
-    # Monotonic Stack will remember the elements in descending order, so multiple comparisons
+    # Monotonic Stack will remember the elements in descending order, allowing multiple comparisons
     @staticmethod
     def nextGreaterElementStack(nums1: List[int], nums2: List[int]) -> List[int]:
         # Initialize a hashmap for nums1. E.g. nums1 = [4, 1, 2]
