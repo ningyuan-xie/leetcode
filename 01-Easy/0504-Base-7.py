@@ -10,7 +10,7 @@ class Solution:
         # Base Case: If the number is 0, return "0"
         if num == 0:
             return "0"
-        # Initialize the sign and the result string
+        # Initialize the result string and the sign
         result = ""
         sign, num = ("-", -num) if num < 0 else ("", num)
         # Iterate through the iterative division process from RIGHT to LEFT

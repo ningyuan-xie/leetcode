@@ -9,24 +9,22 @@ class Solution:
     # Similar to 0168-Excel-Sheet-Column-Title.py
     @staticmethod
     def toHex(num: int) -> str:
-        # Edge case: if the number is 0, return "0"
+        # Base case: If the number is 0, return "0"
         if num == 0:
             return "0"
-        # Initialize a dictionary to map numbers to their hexadecimal representation
+        # Initialize the result and a dictionary to map numbers to their hexadecimal representation
+        result = ""
         hex_map = "0123456789abcdef"
-        # Initialize a variable to store the hexadecimal representation
-        hex_str = ""
         # Convert negative numbers to their two's complement representation
-        if num < 0:
-            num += 2 ** 32  # E.g., -1 = 2^32 - 1 = 4294967295 = 0xffffffff
+        num += 2 ** 32 if num < 0 else 0  # E.g., -1 = 2^32 - 1 = 4294967295 = 0xffffffff
         # Convert the number to its hexadecimal representation from RIGHT to LEFT
         while num > 0:
             remainder = num % 16
             # Add the remainder to the front of the string
-            hex_str = hex_map[remainder] + hex_str
+            result = hex_map[remainder] + result
             # Divide the number by 16 using floor division to move to the next digit on the left
             num //= 16
-        return hex_str
+        return result
 
 
 # Unit Test: Input: num = 26, Output: "1a"
