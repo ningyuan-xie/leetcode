@@ -5,7 +5,7 @@
 # -1 = 2^32 - 1 = 4294967295 = 0xffffffff; -2 = 2^32 - 2 = 4294967294 = 0xfffffffe
 
 class Solution:
-    # Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
+    # Optimal Solution: Iterative Division. Time Complexity: O(log(n)), Space Complexity: O(log(n))
     # Similar to 0168-Excel-Sheet-Column-Title.py
     @staticmethod
     def toHex(num: int) -> str:
