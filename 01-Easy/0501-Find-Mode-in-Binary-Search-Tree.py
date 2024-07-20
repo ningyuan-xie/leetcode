@@ -23,6 +23,7 @@ class Solution:
 
         # Helper function: Inorder DFS Traversal: left -> root -> right
         def inorder_dfs_traversal(node: TreeNode) -> None:
+            # nonlocal variables to access the outer scope immutable variables
             nonlocal modes, current_mode_value, current_mode_frequency, previous_mode_frequency
             # Base Case: If the current node is None, do nothing and return
             if not node:
@@ -34,15 +35,14 @@ class Solution:
             if node.val == current_mode_value:
                 current_mode_frequency += 1  # increment the frequency
             else:
-                current_mode_value = node.val  # update the current mode value
-                current_mode_frequency = 1  # reset the frequency to 1
+                # Update the current mode value and reset the frequency to 1
+                current_mode_value, current_mode_frequency = node.val, 1
             # Update the modes list: can return more than one mode
             if current_mode_frequency == previous_mode_frequency:  # pre_mode_freq is the current max
-                # If the tree has more than one mode, return them in any order
                 modes.append(current_mode_value)
             elif current_mode_frequency > previous_mode_frequency:
-                modes = [current_mode_value]  # reset the modes list
-                previous_mode_frequency = current_mode_frequency  # reset the previous mode frequency
+                # reset the modes list and increase the previous mode frequency
+                modes, previous_mode_frequency = [current_mode_value], current_mode_frequency
             # 3. Recursive Case: Traverse the right subtree
             inorder_dfs_traversal(node.right)
 
