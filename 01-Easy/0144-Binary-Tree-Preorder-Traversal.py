@@ -8,16 +8,21 @@ from package.data_structures import TreeNode
 
 class Solution:
     # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Similar to 0094-Binary-Tree-Inorder-Traversal.py
     @staticmethod
     def preorderTraversal(root: Optional[TreeNode]) -> List[int]:
         # Base case: if the tree root is None, return an empty list
         if not root:
             return []
         # Recursive preorder DFS traversal: root -> left -> right
-        else:
-            return ([root.val] +
-                    Solution.preorderTraversal(root.left) +
-                    Solution.preorderTraversal(root.right))
+        # 1. Root Case: Process the current node
+        root_value = [root.val]
+        # 2. Recursive Case: Traverse the left subtree
+        left_traversal = Solution.preorderTraversal(root.left)
+        # 3. Recursive Case: Traverse the right subtree
+        right_traversal = Solution.preorderTraversal(root.right)
+
+        return root_value + left_traversal + right_traversal
 
 
 # Unit Test: Input: root = [1,null,2,3], Output: [1,2,3]

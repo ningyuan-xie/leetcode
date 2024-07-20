@@ -28,17 +28,21 @@ class Solution:
         # Level order traversal list format: [0,-3,9,-10,null,5]
 
     # 0094-Binary-Tree-Inorder-Traversal.py
+    # Note: for BST, the inorder traversal will be in ascending order
     @staticmethod
     def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
         # Base case: if the tree root is None, return an empty list
         if not root:
             return []
         # Recursive inorder DFS traversal: left -> root -> right
-        # For BST, this will be in ascending order
-        else:
-            return (Solution.inorderTraversal(root.left) +
-                    [root.val] +
-                    Solution.inorderTraversal(root.right))
+        # 1. Recursive Case: Traverse the left subtree
+        left_traversal = Solution.inorderTraversal(root.left)
+        # 2. Root Case: Process the current node
+        root_value = [root.val]
+        # 3. Recursive Case: Traverse the right subtree
+        right_traversal = Solution.inorderTraversal(root.right)
+
+        return left_traversal + root_value + right_traversal
 
 
 # Unit Test: Input: nums = [-10,-3,0,5,9], Output: [0,-3,9,-10,null,5]

@@ -14,10 +14,14 @@ class Solution:
         if not root:
             return []
         # Recursive postorder DFS traversal: left -> right -> root
-        else:
-            return (Solution.postorderTraversal(root.left) +
-                    Solution.postorderTraversal(root.right) +
-                    [root.val])
+        # 1. Recursive Case: Traverse the left subtree
+        left_traversal = Solution.postorderTraversal(root.left)
+        # 2. Recursive Case: Traverse the right subtree
+        right_traversal = Solution.postorderTraversal(root.right)
+        # 3. Root Case: Process the current node
+        root_value = [root.val]
+
+        return left_traversal + right_traversal + root_value
 
 
 # Unit Test: Input: root = [1,null,2,3], Output: [3,2,1]
