@@ -1,5 +1,5 @@
 # Link: https://leetcode.com/problems/climbing-stairs/
-# Difficulty: Easy (Dynamic Programming)
+# Difficulty: Easy
 # Description: You are climbing a staircase. It takes n steps to reach the top.
 # Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
@@ -7,14 +7,15 @@ class Solution:
     # Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def climbStairs(n: int) -> int:
-        # Base case for "two": if currently at final stair, 1 way to reach the top
-        # Base case for "one": if currently at second to last stair, 1 way to reach the top
+        # Base case for "one": if currently at final stair, 1 way to reach the top
+        # Base case for "two": if currently at second to last stair, 1 way to reach the top
         one, two = 1, 1
-        # Fibonacci sequence going from back to beginning: f(n) = f(n-1) + f(n-2)
+        # Fibonacci sequence going from back to beginning: F(n) = F(n - 1) + F(n - 2)
         # as each PREVIOUS stair depends on the LATER two stairs: dynamic programming
+        # To get to the F(n) Fibonacci number, loop n - 1 times because we already have F(0) and F(1)
         for i in range(n - 1):  # E.g. if n = 5, have stair 5 and 4, need stair 3, 2, 1, 0
-            one, two = one + two, one
-        return one
+            one, two = two, one + two
+        return two
 
 
 # Unit Test: Input: n = 2, Output: 2
