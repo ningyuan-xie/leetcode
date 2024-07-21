@@ -6,7 +6,7 @@
 # Given n, calculate F(n).
 
 class Solution:
-    # Sub-Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n)
     # Similar to 0338-Counting-Bits.py
     @staticmethod
     def fib(n: int) -> int:
