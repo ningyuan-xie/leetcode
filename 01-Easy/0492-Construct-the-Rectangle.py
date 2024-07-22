@@ -16,14 +16,14 @@ class Solution:
     # The trick is to use square root as an upper bound for the shorter side of the rectangle
     @staticmethod
     def constructRectangle(area: int) -> List[int]:
-        # Calculate the square root of the area
-        sqrt_area = int(area ** 0.5)  # E.g. area = 37 -> sqrt_area = 6
+        # Calculate the square root of the area as the upper bound for width
+        width_upper_bound = int(area ** 0.5)  # E.g. area = 37 -> sqrt_area = 6
         # Iterate from the square root to 1
-        for i in range(sqrt_area, 0, -1):  # Stop at 1
+        for width in range(width_upper_bound, 0, -1):  # Stop at 1
             # If the area is divisible by the current number
-            if area % i == 0:
+            if area % width == 0:
                 # Return the length and width
-                return [area // i, i]
+                return [area // width, width]
 
 
 # Unit Test: Input: area = 4, Output: [2, 2]
