@@ -9,16 +9,20 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+    # Postorder because we need to traverse the left and right subtrees first before the root
     # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
     @staticmethod
     def minDepth(root: Optional[TreeNode]) -> int:
         # Base case: if the tree root is None, return 0
         if not root:
             return 0
-        # Recursive DFS traversal: return the minimum depth of the left and right subtrees
+        # Postorder DFS Traversal: return the minimum depth of the left and right subtrees
+        # 1. Recursive Case: Traverse the left subtree
         left_depth = Solution.minDepth(root.left)
+        # 2. Recursive Case: Traverse the right subtree
         right_depth = Solution.minDepth(root.right)
+        # 3. Root Case:
         # If either the left or right subtree is empty, return the non-empty subtree + 1
         # + 1 for the root node
         if not root.left or not root.right:

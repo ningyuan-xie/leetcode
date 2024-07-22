@@ -9,17 +9,22 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+    # Postorder because we need to traverse the left and right subtrees first before the root
     @staticmethod
     def maxDepth(root: Optional[TreeNode]) -> int:
         # Base case: if the tree root is None, return 0
         if not root:
             return 0
-        # Recursive DFS traversal: return the maximum depth of the left and right subtrees
-        # + 1 for every time we go down a level
+        # 1. Recursive Case: Traverse the left subtree
         left_depth = Solution.maxDepth(root.left)
+        # 2. Recursive Case: Traverse the right subtree
         right_depth = Solution.maxDepth(root.right)
-        return max(left_depth, right_depth) + 1
+        # 3. Root Case: Return the maximum depth of the left and right subtrees
+        # + 1 for every time we go down a level
+        root_depth = max(left_depth, right_depth) + 1
+
+        return root_depth
 
 
 # Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 3

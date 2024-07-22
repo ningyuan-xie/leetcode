@@ -14,14 +14,15 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+    # Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
     # Similar to 0094-Binary-Tree-Inorder-Traversal.py
-    # Note: for BST, the inorder traversal will be in ascending order
     @staticmethod
     def findMode(root: TreeNode) -> List[int]:
         modes, current_mode_value, current_mode_frequency, previous_mode_frequency = [], 0, 0, 0
 
         # Helper function: Inorder DFS Traversal: left -> root -> right
+        # Inorder because for BST, the inorder traversal will be in ascending order
+        # This sorted order allows us to find the mode(s) in a single traversal
         def inorder_dfs_traversal(node: TreeNode) -> None:
             # nonlocal variables to access the outer scope immutable variables
             nonlocal modes, current_mode_value, current_mode_frequency, previous_mode_frequency

@@ -7,16 +7,18 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+    # Preorder because we need to process the current node first before the left and right subtrees
     @staticmethod
     def invertTree(root: Optional[TreeNode]) -> Optional[TreeNode]:
         # Base case: if the tree root is None, return None
         if not root:
             return None
-        # Swap the left and right children of the current node
+        # 1. Root Case: Swap the left and right children of the current node
         root.left, root.right = root.right, root.left
-        # Recursive DFS traversal: invert the left and right subtrees
+        # 2. Recursive Case: Invert the left and right subtrees
         Solution.invertTree(root.left)
+        # 3. Recursive Case: Invert the right subtree
         Solution.invertTree(root.right)
         return root
 

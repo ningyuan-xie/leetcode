@@ -7,7 +7,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
     # Note: for BST, the inorder traversal will be in ascending order
     @staticmethod
     def inorderTraversal(root: Optional[TreeNode]) -> List[int]:

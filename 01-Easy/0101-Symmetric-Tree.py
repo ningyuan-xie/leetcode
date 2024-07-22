@@ -8,27 +8,33 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
     # Similar to 0100-Same-Tree.py, we need an inner helper DFS function to take two parameters
     @staticmethod
     def isSymmetric(root: Optional[TreeNode]) -> bool:  # only takes one parameter root
         # However, we need to compare the left and right subtrees simultaneously
         # Therefore, need an inner helper DFS function (like isSameTree) to take two parameters
-        def dfs(left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
+        # Preorder because we need to compare the roots first before the subtrees
+        def preorder_dfs_traversal(left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
             # Base case: if both trees are None, then they are the same
             if not left and not right:
                 return True
             # Base case: If one of the trees is None, then they are not the same
             if not left or not right:
                 return False
-            # Base case: If the values of the roots are not the same, then they are not the same
+            # 1. Root Case: If the values of the roots are not the same, then they are not the same
             if left.val != right.val:
                 return False
-            # DFS: Recursively check the left and right subtrees
-            return (dfs(left.left, right.right) and
-                    dfs(left.right, right.left))
-        # Start the DFS traversal
-        return dfs(root.left, root.right)
+            # 2. Recursive Case: Traverse the left subtrees
+            left_same = preorder_dfs_traversal(left.left, right.right)
+            # 3. Recursive Case: Traverse the right subtrees
+            right_same = preorder_dfs_traversal(left.right, right.left)
+
+            # Return the result of the recursive cases
+            return left_same and right_same
+
+        # Start the preorder traversal
+        return preorder_dfs_traversal(root.left, root.right)
 
 
 # Unit Test: Input: root = [1,2,2,3,4,4,3], Output: True

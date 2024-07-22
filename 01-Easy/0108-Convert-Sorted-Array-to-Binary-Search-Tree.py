@@ -8,19 +8,22 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+    # Preorder because we want to process the current node first
     # Reverse of 0094-Binary-Tree-Inorder-Traversal.py
     @staticmethod
     def sortedArrayToBST(nums: List[int]) -> Optional[TreeNode]:
         # Base case: if the array is empty, return None
         if not nums:
             return None
-        # Find the middle index of the array
+        # 1. Root Case: Find the middle index of the array
         mid = len(nums) // 2  # E.g. [-10,-3,0,5,9] -> mid = 2
         # Create a new node with the middle value
         root = TreeNode(nums[mid])  # E.g. [-10,-3,0,5,9] -> mid = 2, root = 0
         # Recursively build the left and right subtrees
+        # 2. Recursive Case: Traverse the left subtree
         root.left = Solution.sortedArrayToBST(nums[:mid])  # E.g. [-10,-3] -> mid = 1, root = -3
+        # 3. Recursive Case: Traverse the right subtree
         root.right = Solution.sortedArrayToBST(nums[mid + 1:])  # E.g. [5,9] -> mid = 1, root = 9
         # Note: for root.right, [-10][1] will return an error, but [-10][1:] will actually return []
         return root

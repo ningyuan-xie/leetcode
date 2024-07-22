@@ -8,7 +8,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+    # Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
     # Similar to 0501-Find-Mode-in-Binary-Search-Tree.py
     @staticmethod
     def getMinimumDifference(root: Optional[TreeNode]) -> int:
@@ -18,7 +18,9 @@ class Solution:
         prev_node = None
 
         # Helper function: Inorder DFS Traversal: left -> root -> right
-        def inorder_dfs_traversal(node):
+        # Inorder because for BST, the inorder traversal will be in ascending order
+        # This sorted order allows us to find the minimum absolute difference in a single traversal
+        def inorder_dfs_traversal(node: TreeNode) -> None:
             # nonlocal variables to access the outer scope immutable variables
             nonlocal min_absolute_diff, prev_node
             # Base Case: If the current node is None, do nothing and return

@@ -7,7 +7,7 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
     # Similar to 0101-Symmetric-Tree.py, we need an inner helper DFS function to take two parameters
     @staticmethod
     def binaryTreePaths(root: Optional[TreeNode]) -> List[str]:
@@ -19,21 +19,24 @@ class Solution:
         # don't need to declare it as nonlocal since list is mutable (can change in place),
         # so modifications to the list will be reflected in the outer scope
 
-        # Helper function to traverse the binary tree and find the root-to-leaf paths
-        def dfs_paths(node: TreeNode, path: Optional[str]) -> None:
-            # Base case: if the node is a leaf node, append the path to the list of paths
+        # Helper function: Preorder DFS Traversal: root -> left -> right
+        # Preorder because we want to append the current node's value to the path first
+        def preorder_dfs_path(node: TreeNode, path: Optional[str]) -> None:
+            # 1. Root case: if the node is a leaf node, append the path to the list of paths
             if not node.left and not node.right:
                 result.append(path + str(node.val))
                 return
             # Recursive case: traverse the left and right subtrees
             # and update path along the way using current node's value
+            # 2. Recursive Case: Traverse the left subtree
             if node.left:
-                dfs_paths(node=node.left, path=path + str(node.val) + "->")
+                preorder_dfs_path(node=node.left, path=path + str(node.val) + "->")
+            # 3. Recursive Case: Traverse the right subtree
             if node.right:
-                dfs_paths(node=node.right, path=path + str(node.val) + "->")
+                preorder_dfs_path(node=node.right, path=path + str(node.val) + "->")
 
         # Start the DFS traversal from the root node
-        dfs_paths(node=root, path="")
+        preorder_dfs_path(node=root, path="")
         return result
 
 

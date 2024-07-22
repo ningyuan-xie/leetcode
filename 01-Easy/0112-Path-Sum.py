@@ -8,18 +8,22 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+    # Preorder because we need to process the current node first before the left and right subtrees
     @staticmethod
     def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
         # Base case: if the tree root is None, return False
         if not root:
             return False
-        # Base case: if the node is a leaf node, check if the sum is equal to the target sum
+        # 1. Root case: if the node is a leaf node, check if the sum is equal to the target sum
         if not root.left and not root.right:
             return root.val == targetSum
         # Recursively check if the left or right subtree has a path sum equal to the target sum
+        # 2. Recursive Case: Traverse the left subtree
         left_path_sum = Solution.hasPathSum(root.left, targetSum - root.val)
+        # 3. Recursive Case: Traverse the right subtree
         right_path_sum = Solution.hasPathSum(root.right, targetSum - root.val)
+
         # Return True if either the left or right subtree has a path sum equal to the target sum
         return left_path_sum or right_path_sum
 

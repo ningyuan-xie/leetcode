@@ -9,28 +9,34 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def isBalanced(root: Optional[TreeNode]) -> bool:
-        # Helper function 1 to calculate the height of the tree
+        # Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+        # Postorder because we need to traverse the left and right subtrees first before the root
         # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
         def height(node: Optional[TreeNode]) -> int:
             # Base case: if the node is None, height is -1
             if not node:
                 return -1
             # Recursively calculate the height of the left and right subtrees
+            # 1. Recursive Case: Traverse the left subtree
             left_height = height(node.left)
+            # 2. Recursive Case: Traverse the right subtree
             right_height = height(node.right)
-            # Return the maximum height of the left and right subtrees
+            # 3. Root Case: Return the maximum height of the left and right subtrees
             # + 1 for every time we go down a level
             return max(left_height, right_height) + 1
 
-        # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
-        # Helper function 2 to check if the tree is balanced
+        # Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+        # Postorder because we need to traverse the left and right subtrees first before the root
         def is_balanced(node: Optional[TreeNode]) -> bool:
             # Base case: if the node is None, return True
             if not node:
                 return True
             # Recursively check if the left and right subtrees are balanced
+            # 1. Recursive Case: Traverse the left subtree
             left_balanced = is_balanced(node.left)
+            # 2. Recursive Case: Traverse the right subtree
             right_balanced = is_balanced(node.right)
+            # 3. Root Case: Check if the tree is balanced
             # If either subtree is not balanced, return False
             if not left_balanced or not right_balanced:
                 return False

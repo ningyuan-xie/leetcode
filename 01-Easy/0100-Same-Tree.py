@@ -8,7 +8,8 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Recursive DFS. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+    # Preorder because we need to compare the roots first before the subtrees
     @staticmethod
     def isSameTree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         # Base case: if both trees are None, then they are the same
@@ -17,12 +18,16 @@ class Solution:
         # Base case: If one of the trees is None, then they are not the same
         if not p or not q:
             return False
-        # Base case: If the values of the roots are not the same, then they are not the same
+        # 1. Root Case: If the values of the roots are not the same, then they are not the same
         if p.val != q.val:
             return False
-        # DFS: Recursively check the left and right subtrees
-        return (Solution.isSameTree(p.left, q.left) and
-                Solution.isSameTree(p.right, q.right))
+        # 2. Recursive Case: Check if the left subtrees are the same
+        left_same = Solution.isSameTree(p.left, q.left)
+        # 3. Recursive Case: Check if the right subtrees are the same
+        right_same = Solution.isSameTree(p.right, q.right)
+
+        # Return the result of the recursive cases
+        return left_same and right_same
 
 
 # Unit Test: Input: p = [1,2,3], q = [1,2,3], Output: True
