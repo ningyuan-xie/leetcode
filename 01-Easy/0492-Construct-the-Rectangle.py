@@ -22,7 +22,7 @@ class Solution:
         for width in range(width_upper_bound, 0, -1):  # Stop at 1
             # If the area is divisible by the current number
             if area % width == 0:
-                # Return the length and width
+                # Return the length and width immediately as W and L would be the closest
                 return [area // width, width]
 
 
