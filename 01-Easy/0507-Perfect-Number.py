@@ -6,6 +6,7 @@
 
 class Solution:
     # Optimal Solution: Brute Force. Time Complexity: O(sqrt(n)), Space Complexity: O(1)
+    # Similar to 0492-Construct-the-Rectangle.py: use square root as an upper bound
     @staticmethod
     def checkPerfectNumber(num: int) -> bool:
         # Return False if n is less than 2
