@@ -10,6 +10,7 @@ from package.data_structures import TreeNode
 
 class Solution:
     # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+    # The trick is while calculating the height, use height to also get the diameter
     # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
     @staticmethod
     def diameterOfBinaryTree(root: Optional[TreeNode]) -> int:
