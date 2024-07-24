@@ -27,16 +27,16 @@ class Solution:
             # Move the right pointer if the current char is a word
             if s[right] != ' ':
                 right += 1
-            # If the current char is a space, reverse the char including space
+            # If the current char is a space, reverse the char excluding the space
             else:
-                s[left:right] = reversed(s[left:right])
+                s[left:right] = reversed(s[left:right])  # skip the space
                 # Move the left and right pointers to the next word
-                left, right = right + 1, left
+                left, right = right + 1, left  # left skips the space here
         # When the loop ends, there is still one word left to reverse
         # because there is no space at the end
         s[left:right] = reversed(s[left:right])
         # Convert the list of characters back into a string without spaces
-        # because the spaces were reversed as well
+        # because the spaces were untouched during the iteration
         return ''.join(s)
 
 
