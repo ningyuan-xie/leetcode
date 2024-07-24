@@ -32,11 +32,10 @@ class Solution:
                 s[left:right] = reversed(s[left:right])  # skip the space
                 # Move the left and right pointers to the next word
                 left, right = right + 1, left  # left skips the space here
-        # When the loop ends, there is still one word left to reverse
-        # because there is no space at the end
+        # When the loop ends, still one word left to reverse, because there is no space at the end
         s[left:right] = reversed(s[left:right])
-        # Convert the list of characters back into a string without spaces
-        # because the spaces were untouched during the iteration
+        # Convert the list of characters back into a string without spaces, because the spaces were
+        # untouched during the iteration
         return ''.join(s)
 
 
