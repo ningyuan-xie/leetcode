@@ -14,7 +14,7 @@ class Solution:
     def arrayPairSum(nums: List[int]) -> int:
         # Sort the array in ascending order: This ensures that when we form pairs, the smallest elements
         # are always paired with the next smallest elements, so we don't waste the bigger elements
-        nums.sort()  # [1, 4, 3, 2] -> [1, 2, 3, 4]
+        nums.sort()  # [1, 4, 3, 2] -> [1, 2, 3, 4]. Sorting takes O(nlog(n)) because divide and conquer
         # Initialize the sum variable
         sum_min_pairs = 0
         # Iterate through the sorted array by 2
