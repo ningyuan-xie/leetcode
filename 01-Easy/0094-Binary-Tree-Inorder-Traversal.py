@@ -26,14 +26,15 @@ class Solution:
 
 
 # Unit Test: Input: root = [1,null,2,3], Output: [1,3,2]
-# The input [1,null,2,3] = serialized format of a binary tree using level order traversal,
-# where null = a path terminator where no node exists below
-assert Solution.inorderTraversal(TreeNode(1, None, TreeNode(2, TreeNode(3)))) == [1, 3, 2]
+root_test = TreeNode.build_binary_tree([1, None, 2, 3])
+assert Solution.inorderTraversal(root_test) == [1, 3, 2]
 
 # Unit Test: Input: root = [], Output: []
-assert Solution.inorderTraversal(None) == []
+root_test = TreeNode.build_binary_tree([])
+assert Solution.inorderTraversal(root_test) == []
 
 # Unit Test: Input: root = [1], Output: [1]
-assert Solution.inorderTraversal(TreeNode(1)) == [1]
+root_test = TreeNode.build_binary_tree([1])
+assert Solution.inorderTraversal(root_test) == [1]
 
 print("All unit tests are passed")

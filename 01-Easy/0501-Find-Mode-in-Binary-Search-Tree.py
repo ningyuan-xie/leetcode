@@ -53,15 +53,15 @@ class Solution:
 
 
 # Unit Test: Input: root = [1,null,2,2], Output: [2]
-root_test = TreeNode(1, right=TreeNode(2, left=TreeNode(2)))
+root_test = TreeNode.build_binary_tree([1, None, 2, 2])
 assert Solution.findMode(root_test) == [2]
 
 # Unit Test: Input: root = [0], Output: [0]
-root_test = TreeNode(0)
+root_test = TreeNode.build_binary_tree([0])
 assert Solution.findMode(root_test) == [0]
 
 # Unit Test: Input: root = [1,1,2], Output: [1]
-root_test = TreeNode(1, left=TreeNode(1), right=TreeNode(2))
+root_test = TreeNode.build_binary_tree([1, 1, 2])
 assert Solution.findMode(root_test) == [1]
 
 print("All unit tests are passed")

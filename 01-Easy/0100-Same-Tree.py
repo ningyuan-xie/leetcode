@@ -31,18 +31,18 @@ class Solution:
 
 
 # Unit Test: Input: p = [1,2,3], q = [1,2,3], Output: True
-# The input [1,2,3] = serialized format of a binary tree using level order traversal
-assert Solution.isSameTree(TreeNode(1, TreeNode(2), TreeNode(3)),
-                           TreeNode(1, TreeNode(2), TreeNode(3))) == True
+root_test_1 = TreeNode.build_binary_tree([1, 2, 3])
+root_test_2 = TreeNode.build_binary_tree([1, 2, 3])
+assert Solution.isSameTree(root_test_1, root_test_2) == True
 
 # Unit Test: Input: p = [1,2], q = [1,null,2], Output: False
-# The input [1,2] = serialized format of a binary tree using level order traversal
-assert Solution.isSameTree(TreeNode(1, TreeNode(2)),
-                           TreeNode(1, None, TreeNode(2))) == False
+root_test_1 = TreeNode.build_binary_tree([1, 2])
+root_test_2 = TreeNode.build_binary_tree([1, None, 2])
+assert Solution.isSameTree(root_test_1, root_test_2) == False
 
 # Unit Test: Input: p = [1,2,1], q = [1,1,2], Output: False
-# The input [1,2,1] = serialized format of a binary tree using level order traversal
-assert Solution.isSameTree(TreeNode(1, TreeNode(2), TreeNode(1)),
-                           TreeNode(1, TreeNode(1), TreeNode(2))) == False
+root_test_1 = TreeNode.build_binary_tree([1, 2, 1])
+root_test_2 = TreeNode.build_binary_tree([1, 1, 2])
+assert Solution.isSameTree(root_test_1, root_test_2) == False
 
 print("All unit tests are passed")

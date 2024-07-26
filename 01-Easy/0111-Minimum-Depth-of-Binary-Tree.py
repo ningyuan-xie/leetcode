@@ -33,23 +33,23 @@ class Solution:
 
 
 # Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 2
-assert Solution.minDepth(TreeNode(3,
-                                  TreeNode(9), TreeNode(20,
-                                                        TreeNode(15), TreeNode(7)))) == 2
+root_test = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
+assert Solution.minDepth(root_test) == 2
 
 # Unit Test: Input: root = [2,null,3,null,4,null,5,null,6], Output: 5
-assert Solution.minDepth(TreeNode(2, None,
-                                  TreeNode(3, None,
-                                           TreeNode(4, None,
-                                                    TreeNode(5, None, TreeNode(6)))))) == 5
+root_test = TreeNode.build_binary_tree([2, None, 3, None, 4, None, 5, None, 6])
+assert Solution.minDepth(root_test) == 5
 
 # Unit Test: Input: root = [1,2], Output: 2
-assert Solution.minDepth(TreeNode(1, TreeNode(2))) == 2
+root_test = TreeNode.build_binary_tree([1, 2])
+assert Solution.minDepth(root_test) == 2
 
 # Unit Test: Input: root = [1,null,2], Output: 2
-assert Solution.minDepth(TreeNode(1, None, TreeNode(2))) == 2
+root_test = TreeNode.build_binary_tree([1, None, 2])
+assert Solution.minDepth(root_test) == 2
 
 # Unit Test: Input: root = [], Output: 0
-assert Solution.minDepth(None) == 0
+root_test = TreeNode.build_binary_tree([])
+assert Solution.minDepth(root_test) == 0
 
 print("All unit tests are passed")

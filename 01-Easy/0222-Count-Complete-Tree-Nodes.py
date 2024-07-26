@@ -27,12 +27,11 @@ class Solution:
 
 
 # Unit Test: Input: [1,2,3,4,5,6], Output: 6
-root_test = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3, TreeNode(6)))
+root_test = TreeNode.build_binary_tree([1, 2, 3, 4, 5, 6])
 assert Solution.countNodes(root_test) == 6
 
 # Unit Test: Input: [1,2,3,4,5,6,7], Output: 7
-root_test = TreeNode(1, TreeNode(2, TreeNode(4),
-                                 TreeNode(5)), TreeNode(3, TreeNode(6, TreeNode(7))))
+root_test = TreeNode.build_binary_tree([1, 2, 3, 4, 5, 6, 7])
 assert Solution.countNodes(root_test) == 7
 
 print("All unit tests are passed")

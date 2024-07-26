@@ -44,11 +44,11 @@ class Solution:
 
 
 # Unit Test: Input: root = [1, 2, 3, 4, 5], Output: 3
-root_test = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3))
+root_test = TreeNode.build_binary_tree([1, 2, 3, 4, 5])
 assert Solution.diameterOfBinaryTree(root_test) == 3
 
 # Unit Test: Input: root = [1, 2], Output: 1
-root_test = TreeNode(1, TreeNode(2))
+root_test = TreeNode.build_binary_tree([1, 2])
 assert Solution.diameterOfBinaryTree(root_test) == 1
 
 print("All unit tests are passed")

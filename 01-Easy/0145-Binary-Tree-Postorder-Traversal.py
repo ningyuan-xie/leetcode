@@ -25,12 +25,15 @@ class Solution:
 
 
 # Unit Test: Input: root = [1,null,2,3], Output: [3,2,1]
-assert Solution.postorderTraversal(TreeNode(1, None, TreeNode(2, TreeNode(3)))) == [3, 2, 1]
+root_test = TreeNode.build_binary_tree([1, None, 2, 3])
+assert Solution.postorderTraversal(root_test) == [3, 2, 1]
 
 # Unit Test: Input: root = [], Output: []
-assert Solution.postorderTraversal(None) == []
+root_test = TreeNode.build_binary_tree([])
+assert Solution.postorderTraversal(root_test) == []
 
 # Unit Test: Input: root = [1], Output: [1]
-assert Solution.postorderTraversal(TreeNode(1)) == [1]
+root_test = TreeNode.build_binary_tree([1])
+assert Solution.postorderTraversal(root_test) == [1]
 
 print("All unit tests are passed")

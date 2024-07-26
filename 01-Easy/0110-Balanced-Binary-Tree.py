@@ -51,21 +51,19 @@ class Solution:
 
 
 # Unit Test: Input: root = [3,9,20,null,null,15,7], Output: True
-# The input [3,9,20,null,null,15,7] = serialized format of a binary tree using level order traversal,
-assert Solution.isBalanced(TreeNode(3,
-                                    TreeNode(9), TreeNode(20,
-                                                          TreeNode(15), TreeNode(7)))) == True
+root_test = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
+assert Solution.isBalanced(root_test) == True
 
 # Unit Test: Input: root = [1,2,2,3,3,null,null,4,4], Output: False
-# The input [1,2,2,3,3,null,null,4,4] = serialized format of a binary tree using level order traversal,
-assert Solution.isBalanced(
-    TreeNode(1, TreeNode(2, TreeNode(3, TreeNode(4), TreeNode(4)),
-                         TreeNode(3)), TreeNode(2))) == False
+root_test = TreeNode.build_binary_tree([1, 2, 2, 3, 3, None, None, 4, 4])
+assert Solution.isBalanced(root_test) == False
 
 # Unit Test: Input: root = [], Output: True. An empty tree is considered balanced
-assert Solution.isBalanced(None) == True
+root_test = TreeNode.build_binary_tree([])
+assert Solution.isBalanced(root_test) == True
 
 # Unit Test: Input: root = [1], Output: True. A single node tree is considered balanced
-assert Solution.isBalanced(TreeNode(1)) == True
+root_test = TreeNode.build_binary_tree([1])
+assert Solution.isBalanced(root_test) == True
 
 print("All unit tests are passed")

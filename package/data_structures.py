@@ -47,7 +47,6 @@ class TreeNode:
     # E.g. [4, 2, 9, 3, 5, None, 7] -> pop 4, append 2, 9 -> pop 2, append 3, 5 -> pop 9, append 7
     @staticmethod
     def build_binary_tree(array):
-        # Base Case: If the array is empty, return None
         if not array:
             return None
 
@@ -61,13 +60,14 @@ class TreeNode:
             current = queue.pop(0)  # FIFO: 1st element is the new parent
 
             # Left child
-            if index < len(array) and array[index]:
+            if index < len(array) and array[index] is not None:
+                # cannot use "and array[index]" here, which will treat node 0 as False
                 current.left = TreeNode(array[index])
                 queue.append(current.left)
             index += 1
 
             # Right child
-            if index < len(array) and array[index]:
+            if index < len(array) and array[index] is not None:
                 current.right = TreeNode(array[index])
                 queue.append(current.right)
             index += 1
@@ -117,7 +117,7 @@ class Node:
             children = []
 
             # Inner loop: Process the current node's children
-            while index < len(array) and array[index]:  # Stop at None
+            while index < len(array) and array[index] is not None:  # Stop at None
                 child = Node(array[index])
                 children.append(child)
                 queue.append(child)  # Add child to the queue for future processing

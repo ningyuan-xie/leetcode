@@ -30,16 +30,17 @@ class Solution:
 # Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 3
 # The input [3,9,20,null,null,15,7] = serialized format of a binary tree using level order traversal
 # where null = a path terminator where no node exists below
-assert Solution.maxDepth(TreeNode(3,
-                                  TreeNode(9), TreeNode(20,
-                                                        TreeNode(15), TreeNode(7)))) == 3
+root_test = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
+assert Solution.maxDepth(root_test) == 3
 
 # Unit Test: Input: root = [1,null,2], Output: 2
 # The input [1,null,2] = serialized format of a binary tree using level order traversal
 # where null = a path terminator where no node exists below
-assert Solution.maxDepth(TreeNode(1, None, TreeNode(2))) == 2
+root_test = TreeNode.build_binary_tree([1, None, 2])
+assert Solution.maxDepth(root_test) == 2
 
 # Unit Test: Input: root = [], Output: 0
-assert Solution.maxDepth(None) == 0
+root_test = TreeNode.build_binary_tree([])
+assert Solution.maxDepth(root_test) == 0
 
 print("All unit tests are passed")

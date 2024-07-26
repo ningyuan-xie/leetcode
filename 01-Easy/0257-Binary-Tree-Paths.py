@@ -41,15 +41,15 @@ class Solution:
 
 
 # Unit Test: Input: root = [1,2,3,null,5], Output: ["1->2->5", "1->3"]
-root_test = TreeNode(1, TreeNode(2, None, TreeNode(5)), TreeNode(3))
+root_test = TreeNode.build_binary_tree([1, 2, 3, None, 5])
 assert Solution.binaryTreePaths(root_test) == ["1->2->5", "1->3"]
 
 # Unit Test: Input: root = [1], Output: ["1"]
-root_test = TreeNode(1)
+root_test = TreeNode.build_binary_tree([1])
 assert Solution.binaryTreePaths(root_test) == ["1"]
 
 # Unit Test: Input: root = [1,2], Output: ["1->2"]
-root_test = TreeNode(1, TreeNode(2))
+root_test = TreeNode.build_binary_tree([1, 2])
 assert Solution.binaryTreePaths(root_test) == ["1->2"]
 
 print("All unit tests are passed")

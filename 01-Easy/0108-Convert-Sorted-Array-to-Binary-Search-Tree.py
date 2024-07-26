@@ -49,7 +49,6 @@ class Solution:
 
 
 # Unit Test: Input: nums = [-10,-3,0,5,9], Output: [0,-3,9,-10,null,5]
-# The input [-10,-3,0,5,9] = a sorted array
 # Output: TreeNode(0, TreeNode(-3, TreeNode(-10)), TreeNode(9, TreeNode(5)))
 # Output (Level order traversal list format): [0,-3,9,-10,null,5]
 # Output (Inorder traversal list format): [-10,-3,0,5,9]
@@ -59,7 +58,6 @@ print(result)
 assert Solution.inorderTraversal(result) == [-10, -3, 0, 5, 9]
 
 # Unit Test: Input: nums = [1,3], Output: [3,1]
-# The input [1,3] = a sorted array
 # Output: TreeNode(3, TreeNode(1))
 # Output (Level order traversal list format): [3,1]
 # Output (Inorder traversal list format): [1,3]

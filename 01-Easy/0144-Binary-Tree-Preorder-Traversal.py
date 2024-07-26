@@ -26,12 +26,15 @@ class Solution:
 
 
 # Unit Test: Input: root = [1,null,2,3], Output: [1,2,3]
-assert Solution.preorderTraversal(TreeNode(1, None, TreeNode(2, TreeNode(3)))) == [1, 2, 3]
+root_test = TreeNode.build_binary_tree([1, None, 2, 3])
+assert Solution.preorderTraversal(root_test) == [1, 2, 3]
 
 # Unit Test: Input: root = [], Output: []
-assert Solution.preorderTraversal(None) == []
+root_test = TreeNode.build_binary_tree([])
+assert Solution.preorderTraversal(root_test) == []
 
 # Unit Test: Input: root = [1], Output: [1]
-assert Solution.preorderTraversal(TreeNode(1)) == [1]
+root_test = TreeNode.build_binary_tree([1])
+assert Solution.preorderTraversal(root_test) == [1]
 
 print("All unit tests are passed")
