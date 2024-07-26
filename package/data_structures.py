@@ -43,6 +43,37 @@ class TreeNode:
     def __str__(self):
         return f"TreeNode({self.val}, {self.left}, {self.right})"
 
+    # Helper function to build a binary tree from a list: level order traversal
+    # E.g. [4, 2, 9, 3, 5, None, 7] -> pop 4, append 2, 9 -> pop 2, append 3, 5 -> pop 9, append 7
+    @staticmethod
+    def build_binary_tree(array):
+        # Base Case: If the array is empty, return None
+        if not array:
+            return None
+
+        # Initialize the root node, the queue, and the index
+        root = TreeNode(array[0])
+        queue = [root]  # queue is FIFO
+        index = 1  # Start after the root element
+
+        # Get the current node (parent) and build its two children
+        while index < len(array):
+            current = queue.pop(0)  # FIFO: 1st element is the new parent
+
+            # Left child
+            if index < len(array) and array[index]:
+                current.left = TreeNode(array[index])
+                queue.append(current.left)
+            index += 1
+
+            # Right child
+            if index < len(array) and array[index]:
+                current.right = TreeNode(array[index])
+                queue.append(current.right)
+            index += 1
+
+        return root
+
 
 # 3. Definition for a Node
 class Node:
@@ -67,9 +98,10 @@ class Node:
         # child node, providing a clear and complete representation of the entire tree.
         return self.__str__()
 
-    # Helper function to build an N-ary tree from a list
+    # Helper function to build an N-ary tree from a list: level order traversal
+    # E.g. [1, None, 3, 2, 4, None, 5, 6] -> pop 1, append 3, 2, 4 -> pop 3, append 5, 6
     @staticmethod
-    def build_nary_tree(array):  # E.g. [1, None, 3, 2, 4, None, 5, 6]
+    def build_nary_tree(array):
         # Base Case: If the array is empty, return None
         if not array:
             return None
