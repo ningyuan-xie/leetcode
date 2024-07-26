@@ -12,8 +12,8 @@ class Solution:
     # Sort and Sum ensures that we maximize the sum of the minimum values of the pairs
     @staticmethod
     def arrayPairSum(nums: List[int]) -> int:
-        # Sort the array in ascending order. This ensures that when we form pairs,
-        # the smallest elements are always paired with the next smallest elements.
+        # Sort the array in ascending order: This ensures that when we form pairs, the smallest elements
+        # are always paired with the next smallest elements, so we don't waste the bigger elements
         nums.sort()  # [1, 4, 3, 2] -> [1, 2, 3, 4]
         # Initialize the sum variable
         sum_min_pairs = 0
