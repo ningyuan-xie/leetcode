@@ -23,15 +23,14 @@ class Solution:
             if not left or not right:
                 return False
             # 1. Root Case: If the values of the roots are not the same, then they are not the same
-            if left.val != right.val:
-                return False
+            root_same = left.val == right.val
             # 2. Recursive Case: Traverse the left subtrees
             left_same = preorder_dfs_traversal(left.left, right.right)
             # 3. Recursive Case: Traverse the right subtrees
             right_same = preorder_dfs_traversal(left.right, right.left)
 
             # Return the result of the recursive cases
-            return left_same and right_same
+            return root_same and left_same and right_same
 
         # Start the preorder traversal
         return preorder_dfs_traversal(root.left, root.right)
