@@ -15,7 +15,7 @@ class Solution:
         # Base case: if the tree root is None, return False
         if not root:
             return False
-        # 1. Root case: if the node is a leaf node, check if the sum is equal to the target sum
+        # 1. Root Case: if the node is a leaf node, check if the sum is equal to the target sum
         if not root.left and not root.right:
             return root.val == targetSum
         # Recursively check if the left or right subtree has a path sum equal to the target sum

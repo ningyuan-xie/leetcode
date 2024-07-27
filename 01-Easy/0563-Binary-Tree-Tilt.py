@@ -24,7 +24,7 @@ class Solution:
             left_sum, left_tilt = postorder_dfs_traversal(node.left)
             # 2. Recursive Case: Traverse the right subtree
             right_sum, right_tilt = postorder_dfs_traversal(node.right)
-            # 3. Root case: Calculate current node's tilt, cumulative node's tilt, and cumulative sum
+            # 3. Root Case: Calculate current node's tilt, cumulative node's tilt, and cumulative sum
             current_tilt = abs(left_sum - right_sum)  # from sum
             cumulative_tilt = current_tilt + left_tilt + right_tilt
             cumulative_sum = left_sum + right_sum + node.val

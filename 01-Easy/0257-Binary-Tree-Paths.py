@@ -22,11 +22,11 @@ class Solution:
         # Helper function: Preorder DFS Traversal: root -> left -> right
         # Preorder because we want to append the current node's value to the path first
         def preorder_dfs_path(node: TreeNode, path: Optional[str]) -> None:
-            # 1. Root case: if the node is a leaf node, append the path to the list of paths
+            # 1. Root Case: if the node is a leaf node, append the path to the list of paths
             if not node.left and not node.right:
                 result.append(path + str(node.val))
                 return
-            # Recursive case: traverse the left and right subtrees
+            # Recursive Case: traverse the left and right subtrees
             # and update path along the way using current node's value
             # 2. Recursive Case: Traverse the left subtree
             if node.left:
