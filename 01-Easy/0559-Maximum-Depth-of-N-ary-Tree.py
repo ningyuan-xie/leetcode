@@ -26,7 +26,7 @@ class Solution:
             # 1. Recursive Case: Traverse each child and store their depths
             child_depths.append(Solution.maxDepth(child))  # 3: [1, 1] and return 2; 1: [2, 1, 1]
         # 2. Root Case: After traversing all children, find the maximum depth among them,
-        # and add 1 to account for the current node
+        # and +1 to account for the current node
         return max(child_depths) + 1
 
 
