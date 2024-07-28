@@ -22,7 +22,7 @@ class Solution:
             # 2. Recursive Case: Traverse the right subtree
             right_height = height(node.right)
             # 3. Root Case: Return the maximum height of the left and right subtrees
-            # + 1 for every time we go down a level
+            # + 1 to account for the current node
             return max(left_height, right_height) + 1
 
         # Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
