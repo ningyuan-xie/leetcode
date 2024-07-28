@@ -80,7 +80,7 @@ class Node:
     # Constructor
     def __init__(self, val=None, children=None):
         self.val = val
-        self.children = children if children else []  # Ensure children is still iterable when it's None
+        self.children = children if children else []  # Ensure children is iterable even if it's None
 
     # Instance equality method: override the __eq__ method to compare two Node objects
     def __eq__(self, other):
