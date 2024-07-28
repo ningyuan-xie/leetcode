@@ -29,28 +29,24 @@ class Solution:
 
 
 # Unit Test: Input: root = [1, None, 3, 2, 4, None, 5, 6], Output: 3
-root_list = [1, None, 3, 2, 4, None, 5, 6]
-root_test = Node.build_nary_tree(root_list)
+root_test = Node.build_nary_tree([1, None, 3, 2, 4, None, 5, 6])
 print(root_test)
 assert Solution.maxDepth(root_test) == 3
 
 # Unit Test: Input: root = [1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10,
 # None, None, 11, None, 12, None, 13, None, None, 14], Output: 5
-root_list = [1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10,
-             None, None, 11, None, 12, None, 13, None, None, 14]
-root_test = Node.build_nary_tree(root_list)
+root_test = Node.build_nary_tree([1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10,
+                                  None, None, 11, None, 12, None, 13, None, None, 14])
 print(root_test)
 assert Solution.maxDepth(root_test) == 5
 
 # Unit Test: Input: root = [1, None, 2], Output: 2
-root_list = [1, None, 2]
-root_test = Node.build_nary_tree(root_list)
+root_test = Node.build_nary_tree([1, None, 2])
 print(root_test)
 assert Solution.maxDepth(root_test) == 2
 
 # Unit Test: Input: root = [], Output: 0
-root_list = []
-root_test = Node.build_nary_tree(root_list)
+root_test = Node.build_nary_tree([])
 assert Solution.maxDepth(root_test) == 0
 
 print("All unit tests are passed")
