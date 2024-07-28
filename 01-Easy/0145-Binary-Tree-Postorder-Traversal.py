@@ -21,6 +21,7 @@ class Solution:
         # 3. Root Case: Process the current node
         root_value = [root.val]
 
+        # Takes effect whenever the current parent and its children have been traversed
         return left_traversal + right_traversal + root_value
 
 

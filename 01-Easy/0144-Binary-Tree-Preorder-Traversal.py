@@ -22,6 +22,7 @@ class Solution:
         # 3. Recursive Case: Traverse the right subtree
         right_traversal = Solution.preorderTraversal(root.right)
 
+        # Takes effect whenever the current parent and its children have been traversed
         return root_value + left_traversal + right_traversal
 
 
