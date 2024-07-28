@@ -2,7 +2,7 @@
 # Difficulty: Easy
 # Description: Given the root of a binary tree, return its maximum depth.
 # A binary tree's maximum depth is the number of nodes along the longest path
-# from the root node down to the farthest leaf node. (!= height of the tree)
+# from the root node down to the farthest leaf node = height of the tree + 1
 
 from typing import Optional
 from package.data_structures import TreeNode
@@ -21,7 +21,7 @@ class Solution:
         # 2. Recursive Case: Traverse the right subtree
         right_depth = Solution.maxDepth(root.right)
         # 3. Root Case: Return the maximum depth of the left and right subtrees
-        # + 1 for every time we go down a level
+        # + 1 to account for the current node
         root_depth = max(left_depth, right_depth) + 1
 
         return root_depth

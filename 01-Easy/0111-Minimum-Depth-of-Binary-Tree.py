@@ -24,11 +24,11 @@ class Solution:
         right_depth = Solution.minDepth(root.right)
         # 3. Root Case:
         # If either the left or right subtree is empty, return the non-empty subtree + 1
-        # + 1 for the root node
+        # + 1 to account for the current node
         if not root.left or not root.right:
             return left_depth + right_depth + 1
         # Return the minimum depth of the left and right subtrees
-        # + 1 for every time we go down a level
+        # + 1 to account for the current node
         return min(left_depth, right_depth) + 1
 
 
