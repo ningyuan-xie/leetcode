@@ -12,7 +12,7 @@ from typing import List
 
 
 class Solution:
-    # Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)
+    # Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(n)
     # The trick is to use a set to store the unique candies and compare its length with n / 2
     @staticmethod
     def distributeCandies(candyType: List[int]) -> int:
