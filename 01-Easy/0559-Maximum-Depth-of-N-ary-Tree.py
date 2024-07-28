@@ -20,7 +20,9 @@ class Solution:
         # Initialize a list to store the depths of all children
         child_depths = []
         # Iterate over each child first before the root
-        for child in root.children:  # 1 -> 3 -> 5 -> 6 -> 2 -> 4
+        for child in root.children:
+            # Access order: [1, 3, 5, 6, 2, 4] -- the same as preorder traversal
+            # Actual depth calculation order: [5, 6, 3, 2, 4, 1] -- the actual postorder traversal
             # 1. Recursive Case: Traverse each child and store their depths
             child_depths.append(Solution.maxDepth(child))  # 3: [1, 1] and return 2; 1: [2, 1, 1]
         # 2. Root Case: After traversing all children, find the maximum depth among them,
