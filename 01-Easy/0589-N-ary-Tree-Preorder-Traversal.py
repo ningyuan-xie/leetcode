@@ -15,7 +15,8 @@ class Solution:
             return []
         # Root Case: Initialize an empty list and add the current parent whenever a new parent starts
         preorder_traversal = [root.val]
-        # Recursive Case: Add the current child
+        # Recursive Case: Takes effect whenever a new sibling starts
+        # When root = leaf nodes, the loop has no effect, so the list remains [root.val] and returns
         for child in root.children:
             preorder_traversal += Solution.preorder(child)
 

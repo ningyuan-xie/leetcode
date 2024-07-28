@@ -16,6 +16,7 @@ class Solution:
         # Initialize an empty list whenever a new parent starts
         postorder_traversal = []
         # Recursive Case: Takes effect after a sibling is traversed, so we add the current child
+        # When root = leaf nodes, the loop has no effect, so the list remains []
         for child in root.children:
             postorder_traversal += Solution.postorder(child)
         # Root Case: Takes effect after all children are traversed, so we add the current parent
