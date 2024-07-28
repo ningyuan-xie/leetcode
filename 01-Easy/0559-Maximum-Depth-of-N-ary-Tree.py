@@ -15,6 +15,7 @@ class Solution:
         if not root:
             return 0
         # Base Case: If the current node is a leaf node (no children), return 1 and go back up
+        # This base case is necessary since max() cannot take an empty list
         if not root.children:
             return 1
         # Initialize a list to store the depths of all children
