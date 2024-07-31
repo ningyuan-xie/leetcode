@@ -23,7 +23,6 @@ class Solution:
         if not root2:
             return root1
 
-        # Merge the two trees
         # Root Case: Sum the node values of the two
         root1.val += root2.val
         # Recursive Case: Merge the left and right subtrees
