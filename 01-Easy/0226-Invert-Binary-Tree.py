@@ -23,17 +23,14 @@ class Solution:
         return root
 
 
-# Unit Test: Input: [4, 2, 7, 1, 3, 6, 9]
+# Unit Test: Input: [4, 2, 7, 1, 3, 6, 9], Output: [4, 7, 2, 9, 6, 3, 1]
 root_test = TreeNode.build_binary_tree([4, 2, 7, 1, 3, 6, 9])
-result = Solution.invertTree(root_test)
-print(result)
-assert result == TreeNode(4, TreeNode(7, TreeNode(9), TreeNode(6)),
-                          TreeNode(2, TreeNode(3), TreeNode(1)))
+root_expected = TreeNode.build_binary_tree([4, 7, 2, 9, 6, 3, 1])
+assert Solution.invertTree(root_test) == root_expected
 
-# Unit Test: Input: [2, 1, 3]
+# Unit Test: Input: [2, 1, 3], Output: [2, 3, 1]
 root_test = TreeNode.build_binary_tree([2, 1, 3])
-result = Solution.invertTree(root_test)
-print(result)
-assert result == TreeNode(2, TreeNode(3), TreeNode(1))
+root_expected = TreeNode.build_binary_tree([2, 3, 1])
+assert Solution.invertTree(root_test) == root_expected
 
 print("All unit tests are passed")
