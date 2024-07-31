@@ -26,10 +26,10 @@ class Solution:
             if string in list2:
                 # Index sum = list1's index + list2's index
                 index_sum = i + list2.index(string)
-                # Update the minimum index sum
-                min_index_sum = min(min_index_sum, index_sum)
                 # Add the string to the hash map. E.g. {"happy": 1, "sad": 1}
                 common_index_sum[string] = index_sum
+                # Update the minimum index sum
+                min_index_sum = min(min_index_sum, index_sum)
 
         # Only collect the common strings with the minimum index sum
         for key, value in common_index_sum.items():  # .items() is key-value pair: ("happy", 1)
