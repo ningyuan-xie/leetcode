@@ -15,18 +15,17 @@ class Solution:
     def canPlaceFlowers(flowerbed: List[int], n: int) -> bool:
         # Initialize the number of flowers that can be planted
         flowers_planted = 0
-        # Initialize the length of the flowerbed
-        length = len(flowerbed)
-        # Initialize the index of the flowerbed
-        index = 0
+        # Initialize the length of the flowerbed and the index
+        length, index = len(flowerbed), 0
+
         # Iterate over the flowerbed
         while index < length:
             # If the current plot is empty
             if flowerbed[index] == 0:
-                # Check if the previous and next plots are empty
+                # Check if the previous and next plots are empty or out of bounds
                 prev_plot = flowerbed[index - 1] if index > 0 else 0
                 next_plot = flowerbed[index + 1] if index < length - 1 else 0
-                # If the previous and next plots are empty
+                # If the previous and next plots are empty or out of bounds
                 if prev_plot == 0 and next_plot == 0:
                     # Plant a flower
                     flowerbed[index] = 1
