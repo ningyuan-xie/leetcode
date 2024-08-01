@@ -9,35 +9,35 @@ from package.data_structures import TreeNode
 
 class Solution:
     # Optimal Solution: BFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+    # Similar to the reverse of TreeNode.build_binary_tree() method
+    # E.g. [3, 9, 20, None, None, 15, 7] -> pop 3, append 9, 20 -> pop 9, append 15, 7
     @staticmethod
     def averageOfLevels(root: TreeNode) -> List[float]:
-        # Initialize the list of average values
+        # Initialize the output list, and the queue for BFS traversal
         average_values = []
-        # Initialize the queue for BFS traversal
         queue = [root]
 
         # While the queue is not empty
         while queue:
-            # Initialize the sum of the node values
+            # Initialize the sum of the node values, and the number of nodes in the current level
             sum_values = 0
-            # Initialize the number of nodes
-            num_nodes = len(queue)
+            current_level_num_nodes = len(queue)
 
             # Traverse all the nodes in the current level
-            for _ in range(num_nodes):
+            for _ in range(current_level_num_nodes):
                 # Pop the first node in the queue
-                node = queue.pop(0)
+                current = queue.pop(0)  # FIFO: 1st element is the new parent
                 # Add the node value to the sum
-                sum_values += node.val
+                sum_values += current.val
 
                 # Add the left and right children to the queue
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
+                if current.left:
+                    queue.append(current.left)  # Append the left subtree
+                if current.right:
+                    queue.append(current.right)  # Append the right subtree
 
             # Calculate the average value of the current level
-            average_values.append(sum_values / num_nodes)
+            average_values.append(sum_values / current_level_num_nodes)
         return average_values
 
 
