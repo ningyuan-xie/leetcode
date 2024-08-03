@@ -10,7 +10,7 @@ than or equal to k characters, then reverse the first k characters and leave the
 class Solution:
     @staticmethod
     def reverseStr(s: str, k: int) -> str:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0344-Reverse-String.py"""
         # Convert the string to a list of characters
         s = list(s)

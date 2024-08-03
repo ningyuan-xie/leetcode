@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def containsNearbyDuplicate(nums: List[int], k: int) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n).
            Similar to 0001-Two-Sum.py"""
         # Initialize a dictionary to store the element and its index
         num_dict = {}

@@ -10,7 +10,7 @@ from package.data_structures import ListNode
 class Solution:
     @staticmethod
     def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0083-Remove-Duplicates-from-Sorted-List.py"""
         # Initialize a dummy node to avoid edge cases
         dummy = ListNode(0)

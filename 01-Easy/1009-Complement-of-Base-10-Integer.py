@@ -10,7 +10,7 @@ Given an integer n, return its complement."""
 class Solution:
     @staticmethod
     def bitwiseComplement(n: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
            Similar to 0476-Number-Complement.py"""
         # Base case: If the number is 0, return 1
         if n == 0:

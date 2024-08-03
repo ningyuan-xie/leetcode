@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findErrorNums(nums: List[int]) -> List[int]:
-        """Optimal Solution: Mark the visited number. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Mark the visited number. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0448-Find-All-Numbers-Disappeared-in-an-Array.py"""
         # Initialize the duplicate and missing numbers
         duplicate, missing = 0, 0

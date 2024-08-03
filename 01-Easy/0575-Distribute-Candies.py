@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def distributeCandies(candyType: List[int]) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n).
            The trick is to use a set to store the unique candies and compare its length with n / 2"""
         # Get the number of candies Alice can eat
         n = len(candyType)

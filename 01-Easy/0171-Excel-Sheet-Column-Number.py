@@ -8,7 +8,7 @@ as it appears in an Excel sheet, return its corresponding column number."""
 class Solution:
     @staticmethod
     def titleToNumber(columnTitle: str) -> int:
-        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1).
            Reverse of 0168-Excel-Sheet-Column-Title.py"""
         # Initialize the column number
         column_number = 0

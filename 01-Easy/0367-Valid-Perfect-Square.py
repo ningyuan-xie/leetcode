@@ -8,7 +8,7 @@ if num is a perfect square else False."""
 class Solution:
     @staticmethod
     def isPerfectSquare(num: int) -> bool:
-        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1).
            Similar to 0069-Sqrt(x).py"""
         # Base case: 0 and 1 are perfect squares
         if num < 2:

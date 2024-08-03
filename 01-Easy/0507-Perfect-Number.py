@@ -9,7 +9,7 @@ Given an integer n, return true if n is a perfect number, otherwise return false
 class Solution:
     @staticmethod
     def checkPerfectNumber(num: int) -> bool:
-        """Optimal Solution: Brute Force. Time Complexity: O(sqrt(n)), Space Complexity: O(1)
+        """Optimal Solution: Brute Force. Time Complexity: O(sqrt(n)), Space Complexity: O(1).
            Similar to 0492-Construct-the-Rectangle.py: use square root as an upper bound"""
         # Return False if n is less than 2
         if num < 2:

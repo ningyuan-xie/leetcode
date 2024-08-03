@@ -8,7 +8,7 @@ Two strings s and t are isomorphic if the characters in s can be replaced to get
 class Solution:
     @staticmethod
     def isIsomorphic(s: str, t: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n).
            Similar to 0290-Word-Pattern.py"""
         # Initialize two dictionaries to store the mapping of characters
         s2t = {}

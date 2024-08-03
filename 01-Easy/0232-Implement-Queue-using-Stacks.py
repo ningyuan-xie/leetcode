@@ -7,7 +7,7 @@ The implemented queue should support all the functions of a normal queue (push, 
 
 # Similar to 0225-Implement-Stack-using-Queues.py, we can implement a queue using two stacks.
 class MyQueue:
-    """Similar to 0225-Implement-Stack-using-Queues.py, we can implement a queue using two stacks."""
+    """Similar to 0225-Implement-Stack-using-Queues.py, we can implement a queue using two stacks"""
 
     def __init__(self):
         """Constructor: instance variable stack1 and stack2 are lists"""

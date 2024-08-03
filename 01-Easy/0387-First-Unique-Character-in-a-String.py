@@ -8,7 +8,7 @@ in it and return its index. If it does not exist, return -1."""
 class Solution:
     @staticmethod
     def firstUniqChar(s: str) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0383-Ransom-Note.py"""
         # Initialize a hash table to store the frequency of characters in the string
         char_freq = {}

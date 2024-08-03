@@ -7,7 +7,7 @@ Description: Reverse bits of a given 32 bits unsigned integer."""
 class Solution:
     @staticmethod
     def reverseBits(n: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
            Similar to the reverse method in 02-Medium/0007-Reverse-Integer.py"""
         # Initialize result in binary
         result = 0  # 00000000000000000000000000000000

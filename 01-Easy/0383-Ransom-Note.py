@@ -9,7 +9,7 @@ Each letter in magazine can only be used once in ransomNote."""
 class Solution:
     @staticmethod
     def canConstruct(ransomNote: str, magazine: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0350-Intersection-of-Two-Arrays-II.py"""
         # Create a hash table to store the frequency of each character in the magazine
         char_freq = {}

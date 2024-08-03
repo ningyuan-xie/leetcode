@@ -7,7 +7,7 @@ Description: Given two binary strings a and b, return their sum as a binary stri
 class Solution:
     @staticmethod
     def addBinary(a: str, b: str) -> str:
-        """Optimal Solution: Math. Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m)
+        """Optimal Solution: Math. Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m)).
            Similar to 0066-Plus-One.py"""
         # Initialize result and carry
         result, carry = [], 0

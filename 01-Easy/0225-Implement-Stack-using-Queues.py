@@ -8,7 +8,7 @@ from collections import deque
 
 
 class MyStack:
-    """Similar to 0232-Implement-Queue-using-Stacks.py, we can implement a stack using one queue."""
+    """Similar to 0232-Implement-Queue-using-Stacks.py, we can implement a stack using one queue"""
 
     def __init__(self):
         """Constructor: instance variable queue is a double-ended queue"""

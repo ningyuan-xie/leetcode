@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def readBinaryWatch(turnedOn: int) -> List[str]:
-        """Optimal Solution: Brute Force. Time Complexity: O(1), Space Complexity: O(1)
+        """Optimal Solution: Brute Force. Time Complexity: O(1), Space Complexity: O(1).
            Constant time/space complexity because the number of possible times is fixed"""
         # Initialize a list to store the possible times
         times = []

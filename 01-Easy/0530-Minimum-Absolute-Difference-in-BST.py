@@ -11,7 +11,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def getMinimumDifference(root: Optional[TreeNode]) -> int:
-        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0501-Find-Mode-in-Binary-Search-Tree.py"""
         # Initialize the minimum absolute difference
         min_absolute_diff = float("inf")  # positive infinity

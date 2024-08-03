@@ -10,7 +10,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
-        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n).
            Note: for BST, the inorder traversal will be in ascending order"""
         # Base case: if the tree root is None, return an empty list
         if not root:

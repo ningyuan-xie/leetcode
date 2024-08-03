@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countBits(n: int) -> List[int]:
-        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n).
            Using the previous results to calculate the new results:
            1 (0001) -> 1 + dp[n - 1] = 1 + dp[0] = 1;
            2 (0010) -> 1 + dp[n - 2] = 1 + dp[0] = 1; 3 (0011) -> 1 + dp[n - 2] = 1 + dp[1] = 1 + 1 = 2;

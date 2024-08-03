@@ -10,7 +10,7 @@ Given n, calculate F(n)."""
 class Solution:
     @staticmethod
     def fib(n: int) -> int:
-        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n).
            Similar to 0338-Counting-Bits.py"""
         # Initialize a list to store the Fibonacci numbers with length n + 1
         fibonacci = [0, 1] + [0] * (n - 1)

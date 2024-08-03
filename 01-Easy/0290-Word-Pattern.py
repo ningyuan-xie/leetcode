@@ -7,7 +7,7 @@ Description: Given a pattern and a string s, find if s follows the same pattern.
 class Solution:
     @staticmethod
     def wordPattern(pattern: str, s: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n).
            Similar to 0205-Isomorphic-Strings.py"""
         # Split the string into a list of words
         words = s.split()  # E.g. "dog cat cat dog" -> ["dog", "cat", "cat", "dog"]

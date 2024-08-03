@@ -13,9 +13,10 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def findTilt(root: Optional[TreeNode]) -> int:
-        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-           The trick is while calculating the sum, use sum to also get the tilt
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
+           The trick is while calculating the sum, use sum to also get the tilt.
            Similar to 0543-Diameter-of-Binary-Tree.py"""
+
         def postorder_dfs_traversal(node):
             """Helper function to calculate tilt and sum of subtree"""
             if not node:  # A leaf node's node.left and node.right are both None and return 0, 0

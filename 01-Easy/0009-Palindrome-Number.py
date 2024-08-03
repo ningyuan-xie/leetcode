@@ -7,7 +7,7 @@ Description: Given an integer x, return true if x is palindrome integer."""
 class Solution:
     @staticmethod
     def isPalindrome(x: int) -> bool:
-        """Optimal Solution: Convert to String. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Convert to String. Time Complexity: O(n), Space Complexity: O(n).
            Alternative methods in 0344-Reverse-String.py: Two Pointers, Stack, Recursion"""
         # Convert integer to string
         x = str(x)

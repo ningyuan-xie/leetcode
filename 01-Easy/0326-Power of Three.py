@@ -8,14 +8,14 @@ Follow up: Could you solve it without loops/recursion?"""
 class Solution:
     @staticmethod
     def isPowerOfThree(n: int) -> bool:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1).
            Similar to 0231-Power-of-Two.py"""
         # The maximum power of 3 that can be stored in a 32-bit integer is 3^19 = 1162261467
         return n > 0 and (3**19) % n == 0
 
     @staticmethod
     def isPowerOfThreeRecursion(n: int) -> bool:
-        """Alternative Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))
+        """Alternative Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n)).
            Similar to 0231-Power-of-Two.py"""
         # Base case: if n is less than or equal to 0, return False
         if n <= 0:

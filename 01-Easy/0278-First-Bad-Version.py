@@ -19,7 +19,7 @@ def isBadVersion(version: int) -> bool:
 class Solution:
     @staticmethod
     def firstBadVersion(n: int) -> int:
-        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1).
            Similar to 0069-Sqrt(x).py and 0367-Valid-Perfect-Square.py"""
         # Initialize the left and right pointers
         left, right = 1, n

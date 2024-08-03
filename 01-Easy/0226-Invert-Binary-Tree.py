@@ -10,7 +10,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def invertTree(root: Optional[TreeNode]) -> Optional[TreeNode]:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
            Preorder because need to process the current node first before the left and right subtrees"""
         # Base case: if the tree root is None, return None
         if not root:

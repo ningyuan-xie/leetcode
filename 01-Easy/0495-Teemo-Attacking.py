@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findPoisonedDuration(timeSeries: List[int], duration: int) -> int:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0121-Best-Time-to-Buy-and-Sell-Stock.py"""
         # Base Case: If the time series is empty, return 0
         if not timeSeries:

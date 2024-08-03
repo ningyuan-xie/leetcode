@@ -10,7 +10,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def sumOfLeftLeaves(root: Optional[TreeNode]) -> int:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0101-Symmetric-Tree.py and 0257-Binary-Tree-Paths.py,
            we need an inner helper DFS function to take two parameters"""
         # Initialize the sum of left leaves

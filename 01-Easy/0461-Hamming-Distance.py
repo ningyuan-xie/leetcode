@@ -8,7 +8,7 @@ at which the corresponding bits are different."""
 class Solution:
     @staticmethod
     def hammingDistance(x: int, y: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
            Similar to 0190-Reverse-Bits.py and 0191-Number-of-1-Bits.py"""
         # Initialize the Hamming distance
         hamming_distance = 0

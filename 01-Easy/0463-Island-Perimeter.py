@@ -37,12 +37,13 @@ class Solution:
 
     @staticmethod
     def islandPerimeterDFS(grid: List[List[int]]) -> int:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(m * n), Space Complexity: O(m * n)
+        """Optimal Solution: Preorder DFS Traversal.
+           Time Complexity: O(m * n), Space Complexity: O(m * n).
            Preorder because we want to explore and record the current cell first"""
         visited = set()  # Memory Complexity: O(m * n)
 
-        # Helper function: DFS
         def preorder_dfs(y_axis: int, x_axis: int) -> int:
+            """Helper function to perform preorder DFS traversal"""
             # Base Case: If the current cell is out of bounds or water, we have an edge = 1
             if (y_axis < 0 or y_axis >= len(grid)   # Out of upper or lower bounds
                     or x_axis < 0 or x_axis >= len(grid[0])   # Out of left or right bounds

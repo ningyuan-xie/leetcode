@@ -10,7 +10,7 @@ Given the integer n, return the number of complete rows of the staircase you wil
 class Solution:
     @staticmethod
     def arrangeCoins(n: int) -> int:
-        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1).
            Similar to 0374-Guess-Number-Higher-or-Lower.py"""
         # Initialize the left and right pointers
         left, right = 0, n  # upper bound is n itself

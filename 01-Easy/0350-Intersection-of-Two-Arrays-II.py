@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
-        """Optimal Solution: Hash Table. Time Complexity: O(n + m), Space Complexity: O(n)
+        """Optimal Solution: Hash Table. Time Complexity: O(n + m), Space Complexity: O(n).
            Similar to 0242-Valid-Anagram.py"""
         # Initialize a hash table to store the frequency of each element in nums1
         num_freq = {}

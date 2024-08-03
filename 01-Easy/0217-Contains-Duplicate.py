@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def containsDuplicate(nums: List[int]) -> bool:
-        """Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n).
            Similar to 0202-Happy-Number.py"""
         # Initialize a set to store the UNIQUE elements
         unique_set = set()

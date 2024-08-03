@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def reverseString(s: List[str]) -> None:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0283-Move-Zeroes.py"""
         # Initialize two pointers: left and right
         left, right = 0, len(s) - 1
@@ -26,7 +26,7 @@ class Solution:
 
     @staticmethod
     def reverseStringStack(s: List[str]) -> None:
-        """Alternative Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)
+        """Alternative Solution: Stack. Time Complexity: O(n), Space Complexity: O(n).
            Similar to 0232-Implement-Queue-Using-Stacks.py"""
         # Initialize a stack to store the characters of s
         stack = []

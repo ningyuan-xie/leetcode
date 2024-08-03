@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def missingNumber(nums: List[int]) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1).
            Similar to the XOR operation in 0136-Single-Number.py"""
         # Initialize the missing number as the length of the array because:
         # 1. Ensure that the highest possible number (could be the missing one) is included in the XOR

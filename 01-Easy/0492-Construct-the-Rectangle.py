@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def constructRectangle(area: int) -> List[int]:
-        """Optimal Solution: Iteration. Time Complexity: O(sqrt(n)), Space Complexity: O(1)
+        """Optimal Solution: Iteration. Time Complexity: O(sqrt(n)), Space Complexity: O(1).
            The trick is to use square root as an upper bound for the shorter side of the rectangle"""
         # Calculate the square root of the area as the upper bound for width
         width_upper_bound = int(area ** 0.5)  # E.g. area = 37 -> sqrt_area = 6

@@ -11,10 +11,10 @@ The one who removes the last stone is the winner."""
 class Solution:
     @staticmethod
     def canWinNim(n: int) -> bool:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
-        # The player who removes the last stone wins the game
-        # The player who removes the stone(s) such that the remaining stones are multiples of 4 wins
-        # The player will win as long as the remaining stones are not multiples of 4
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)
+        The player who removes the last stone wins the game.
+        The player who removes the stone(s) such that the remaining stones are multiples of 4 wins.
+        The player will win as long as the remaining stones are not multiples of 4"""
         return n % 4 != 0
 
 

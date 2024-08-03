@@ -12,7 +12,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def maxDepth(root: Optional[TreeNode]) -> int:
-        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
            Postorder because we need to traverse the left and right subtrees first before the root"""
         # Base case: if the tree root is None, return 0
         if not root:

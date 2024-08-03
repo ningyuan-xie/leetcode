@@ -10,7 +10,7 @@ from package.data_structures import Node
 class Solution:
     @staticmethod
     def maxDepth(root: Optional[Node]) -> int:
-        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0104-Maximum-Depth-of-Binary-Tree.py and 0543-Diameter-of-Binary-Tree.py"""
         # Base Case: If the current node is None, return 0
         if not root:

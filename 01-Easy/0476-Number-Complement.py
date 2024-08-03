@@ -8,7 +8,7 @@ The complement strategy is to flip the bits of its binary representation."""
 class Solution:
     @staticmethod
     def findComplement(num: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
            Similar to 0190-Reverse-Bits.py"""
         # Find the number of bits in the number
         num_bits = num.bit_length()  # E.g. num = 5 (101) -> num_bits = 3

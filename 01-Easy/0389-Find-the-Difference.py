@@ -9,7 +9,7 @@ Return the letter that was added to t."""
 class Solution:
     @staticmethod
     def findTheDifference(s: str, t: str) -> str:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0383-Ransom-Note.py"""
         # Initialize a hash table to store the frequency of characters in string s
         char_freq = {}

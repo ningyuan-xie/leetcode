@@ -10,7 +10,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def preorderTraversal(root: Optional[TreeNode]) -> List[int]:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n).
            Similar to 0094-Binary-Tree-Inorder-Traversal.py"""
         # Base case: if the tree root is None, return an empty list
         if not root:

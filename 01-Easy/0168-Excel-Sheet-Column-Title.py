@@ -8,7 +8,7 @@ return its corresponding column title as it appears in an Excel sheet."""
 class Solution:
     @staticmethod
     def convertToTitle(columnNumber: int) -> str:
-        """Optimal Solution: Math. Time Complexity: O(log(columnNumber)), Space Complexity: O(1)
+        """Optimal Solution: Math. Time Complexity: O(log(columnNumber)), Space Complexity: O(1).
            Similar to 0067-Add-Binary.py"""
         result = ""
         # Title will be filled from RIGHT to LEFT

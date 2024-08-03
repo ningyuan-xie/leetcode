@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:  # merge nums2 into nums1
-        """Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1)
+        """Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1).
            Merge nums2 into nums1 in-place."""
         # Initialize the pointers for nums1 and nums2
         p1 = m - 1  # last index of current nums1

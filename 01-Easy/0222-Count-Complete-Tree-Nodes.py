@@ -10,8 +10,8 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def countNodes(root: Optional[TreeNode]) -> int:
-        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-           Postorder because we need to traverse the left and right subtrees first before the root
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
+           Postorder because we need to traverse the left and right subtrees first before the root.
            Similar to 0104-Maximum-Depth-of-Binary-Tree.py"""
         # Base case: if the root is None, return 0
         if not root:

@@ -12,8 +12,8 @@ from typing import List
 class Solution:
     @staticmethod
     def findDisappearedNumbers(nums: List[int]) -> List[int]:
-        """Optimal Solution: Mark the visited number. Time Complexity: O(n), Space Complexity: O(1)
-           The trick is to utilize the input array itself for marking the presence of numbers
+        """Optimal Solution: Mark the visited number. Time Complexity: O(n), Space Complexity: O(1).
+           The trick is to utilize the input array itself for marking the presence of numbers.
            Logic: input number -> -1 becomes index -> +1 becomes output number"""
         # The 1st loop marks index's number as negative to denote the presence of each number
         for num in nums:  # E.g. [1, 2, 2, 4], missing numbers: [3]
