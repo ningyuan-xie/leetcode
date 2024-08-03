@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findRelativeRanks(score: List[int]) -> List[str]:
-        """Optimal Solution: Sorting. Time Complexity: O(n log n), Space Complexity: O(n)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(n)"""
         # Sort the scores in descending order
         sorted_score = sorted(score, reverse=True)  # [10, 3, 8, 9, 4] -> [10, 9, 8, 4, 3]
         # Initialize the result array

@@ -1,8 +1,8 @@
 """101. Symmetric Tree
 Link: https://leetcode.com/problems/symmetric-tree/
 Difficulty: Easy
-Description: Given the root of a binary tree,
-check whether it is a mirror of itself (i.e., symmetric around its center)."""
+Description: Given the root of a binary tree, check whether it is a mirror of itself
+(i.e., symmetric around its center)."""
 
 from typing import Optional
 from package.data_structures import TreeNode
@@ -12,7 +12,7 @@ class Solution:
     @staticmethod
     def isSymmetric(root: Optional[TreeNode]) -> bool:
         """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
-           Similar to 0100-Same-Tree.py, we need an inner helper DFS function to take two parameters
+           Similar to 0100-Same-Tree.py, we need an inner helper DFS function to take two parameters.
            This function only takes one parameter root, but we need to compare the left and right
            subtrees simultaneously. Therefore, we need an inner helper DFS function (like isSameTree)
            to take two parameters"""

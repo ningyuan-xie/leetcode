@@ -7,11 +7,9 @@ then return 0."""
 
 
 class Solution:
-    # Optimal Solution: Math. Time Complexity: O(log(x)), Space Complexity: O(1)
-    # Similar to the reverseBits method in 01-Easy/0190-Reverse-Bits.py
     @staticmethod
     def reverse(x: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(log(x)), Space Complexity: O(1)
+        """Optimal Solution: Math. Time Complexity: O(log(x)), Space Complexity: O(1).
            Similar to the reverseBits method in 01-Easy/0190-Reverse-Bits.py"""
         # Initialize the reversed integer
         reversed_x = 0

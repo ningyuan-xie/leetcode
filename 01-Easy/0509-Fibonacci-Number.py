@@ -23,7 +23,7 @@ class Solution:
 
     @staticmethod
     def fibOptimal(n: int) -> int:
-        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)
+        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0070-Climbing-Stairs.py"""
         # Base case for "one": if n = 0, return 0
         if n == 0:

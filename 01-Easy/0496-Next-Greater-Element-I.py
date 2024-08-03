@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def nextGreaterElement(nums1: List[int], nums2: List[int]) -> List[int]:
-        """Sub-Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n).w
+        """Sub-Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n).
            The order of nums1 does not matter so no need to loop it; the order of nums2 matters"""
         # Initialize a hashmap for nums1. E.g. nums1 = [4, 1, 2]
         num1_index = {n: i for i, n in enumerate(nums1)}  # [4, 1, 2] -> {4: 0, 1: 1, 2: 2}
