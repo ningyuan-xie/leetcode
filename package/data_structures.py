@@ -12,15 +12,13 @@ class ListNode:
         self.next = next
 
     # Class attributes to control different equality behavior
-    identity_check = False  # Default version: check the value of the node
-    single_value_check = False  # Default version: check the full value of the node
+    identity_check = False  # Default version: check the full value of the node
 
     def __eq__(self, other):
         """Instance equality method: override the __eq__ method to compare two ListNode objects"""
-        if ListNode.identity_check:  # 0160-Intersection-of-Two-Linked-Lists.py
+        if ListNode.identity_check:
+            # 0141-Linked-List-Cycle.py, 0160-Intersection-of-Two-Linked-Lists.py
             return self is other if isinstance(other, ListNode) else False
-        if ListNode.single_value_check:  # 0141-Linked-List-Cycle.py
-            return self.val == other.val if isinstance(other, ListNode) else False
         return (self.val == other.val
                 and self.next == other.next) if isinstance(other, ListNode) else False
 
@@ -36,9 +34,7 @@ class ListNode:
             return None
 
         # Initialize the head node and the current node
-        head = ListNode(array[0])
-        current = head
-
+        current = head = ListNode(array[0])
         # Traverse the rest of the elements
         for val in array[1:]:
             current.next = ListNode(val)
@@ -67,7 +63,7 @@ class TreeNode:
         """Instance equality method: override the __eq__ method to compare two TreeNode objects"""
         return (self.val == other.val
                 and self.left == other.left
-                and self.right == other.right) if other else False
+                and self.right == other.right) if isinstance(other, TreeNode) else False
 
     def __str__(self):
         """Instance description method: override the __str__ method"""
@@ -117,7 +113,7 @@ class Node:
     def __eq__(self, other):
         """Instance equality method: override the __eq__ method to compare two Node objects"""
         return (self.val == other.val
-                and self.children == other.children) if other else False
+                and self.children == other.children) if isinstance(other, Node) else False
 
     def __str__(self):
         """Instance description method: override the __str__ method"""

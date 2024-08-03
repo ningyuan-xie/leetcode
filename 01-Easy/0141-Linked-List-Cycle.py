@@ -17,7 +17,7 @@ class Solution:
         slow, fast = head, head
 
         # Temporarily enable single value check for cycle detection
-        ListNode.single_value_check = True
+        ListNode.identity_check = True
 
         # Traverse the linked list
         while fast and fast.next:  # make sure fast.next also exists as we shift fast by two nodes
@@ -30,7 +30,7 @@ class Solution:
                 return True
 
         # Disable single value check after cycle detection
-        ListNode.single_value_check = False
+        ListNode.identity_check = False
         return False
 
 
