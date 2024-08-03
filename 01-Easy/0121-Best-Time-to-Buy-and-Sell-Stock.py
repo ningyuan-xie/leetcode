@@ -1,17 +1,18 @@
-# Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-# Difficulty: Easy
-# Description: You are given an array prices where prices[i] is
-# the price of a given stock on the ith day.
-# You want to maximize your profit by choosing a single day to buy one stock
-# and choosing a different day in the future to sell that stock.
+"""121. Best Time to Buy and Sell Stock
+Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+Difficulty: Easy
+Description: You are given an array prices where prices[i] is
+the price of a given stock on the ith day.
+You want to maximize your profit by choosing a single day to buy one stock
+and choosing a different day in the future to sell that stock."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def maxProfit(prices: List[int]) -> int:
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize the minimum price to the maximum integer value
         min_price = float('inf')  # float('inf') is equivalent to sys.maxsize
         # Initialize the maximum profit to 0

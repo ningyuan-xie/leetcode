@@ -1,19 +1,20 @@
-# Link: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
-# Difficulty: Easy
-# Description: Given an array nums of n integers where nums[i] is in the range [1, n],
-# return an array of all the integers in the range [1, n] that do not appear in nums.
-# Follow up: Could you do it without extra space and in O(n) runtime?
-# You may assume the returned list does not count as extra space.
+"""448. Find All Numbers Disappeared in an Array" - Easy
+Link: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+Difficulty: Easy
+Description: Given an array nums of n integers where nums[i] is in the range [1, n],
+return an array of all the integers in the range [1, n] that do not appear in nums.
+Follow up: Could you do it without extra space and in O(n) runtime?
+You may assume the returned list does not count as extra space."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Mark the visited number. Time Complexity: O(n), Space Complexity: O(1)
-    # The trick is to utilize the input array itself for marking the presence of numbers
-    # Logic: input number -> -1 becomes index -> +1 becomes output number
     @staticmethod
     def findDisappearedNumbers(nums: List[int]) -> List[int]:
+        """Optimal Solution: Mark the visited number. Time Complexity: O(n), Space Complexity: O(1)
+           The trick is to utilize the input array itself for marking the presence of numbers
+           Logic: input number -> -1 becomes index -> +1 becomes output number"""
         # The 1st loop marks index's number as negative to denote the presence of each number
         for num in nums:  # E.g. [1, 2, 2, 4], missing numbers: [3]
             # Starts with the positive number
@@ -30,9 +31,9 @@ class Solution:
                 missing_nums.append(i + 1)
         return missing_nums
 
-    # Alternative Solution: Set. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def findDisappearedNumbersSet(nums: List[int]) -> List[int]:
+        """Alternative Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
         # Initialize the set of numbers
         nums_set = set(nums)
         # Initialize the list of missing numbers

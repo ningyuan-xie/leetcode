@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/maximum-subarray/
-# Difficulty: Medium
-# Description: Given an integer array nums, find the contiguous subarray
-# (containing at least one number) which has the largest sum and return its sum.
-# The solution must have a time complexity of O(n).
+"""53. Maximum Subarray
+Link: https://leetcode.com/problems/maximum-subarray/
+Difficulty: Medium
+Description: Given an integer array nums, find the contiguous subarray
+(containing at least one number) which has the largest sum and return its sum.
+The solution must have a time complexity of O(n)."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Kadane's Algorithm. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def maxSubArray(nums: List[int]) -> int:
+        """Optimal Solution: Kadane's Algorithm. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize the maximum sum and the current sum
         max_sum, current_sum = nums[0], 0
         # Sliding window: adjust the window size based on the current sum

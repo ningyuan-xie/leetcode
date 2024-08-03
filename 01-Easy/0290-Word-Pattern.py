@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/word-pattern/
-# Difficulty: Easy
-# Description: Given a pattern and a string s, find if s follows the same pattern.
+"""290. Word Pattern
+Link: https://leetcode.com/problems/word-pattern/
+Difficulty: Easy
+Description: Given a pattern and a string s, find if s follows the same pattern."""
+
 
 class Solution:
-    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
-    # Similar to 0205-Isomorphic-Strings.py
     @staticmethod
     def wordPattern(pattern: str, s: str) -> bool:
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
+           Similar to 0205-Isomorphic-Strings.py"""
         # Split the string into a list of words
         words = s.split()  # E.g. "dog cat cat dog" -> ["dog", "cat", "cat", "dog"]
         # If the length of the pattern and the number of words are not equal, return False

@@ -1,11 +1,13 @@
-# Link: https://leetcode.com/problems/sqrtx/
-# Difficulty: Easy
-# Description: Given a non-negative integer x, compute and return the square root of x.
+"""69. Sqrt(x)
+Link: https://leetcode.com/problems/sqrtx/
+Difficulty: Easy
+Description: Given a non-negative integer x, compute and return the square root of x."""
+
 
 class Solution:
-    # Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
     @staticmethod
     def mySqrt(x: int) -> int:
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)"""
         # Base case: if x is 0 or 1, return x
         if x == 0 or x == 1:
             return x

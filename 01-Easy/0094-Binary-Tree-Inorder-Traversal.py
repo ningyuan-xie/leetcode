@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/binary-tree-inorder-traversal/
-# Difficulty: Easy
-# Description: Given the root of a binary tree, return the inorder traversal of its nodes' values.
+"""94. Binary Tree Inorder Traversal
+Link: https://leetcode.com/problems/binary-tree-inorder-traversal/
+Difficulty: Easy
+Description: Given the root of a binary tree, return the inorder traversal of its nodes' values."""
 
 from typing import List, Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
-    # Note: for BST, the inorder traversal will be in ascending order
     @staticmethod
     def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
+        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+           Note: for BST, the inorder traversal will be in ascending order"""
         # Base case: if the tree root is None, return an empty list
         if not root:
             return []

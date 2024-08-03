@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/maximum-product-of-three-numbers/
-# Difficulty: Easy
-# Description: Given an integer array nums, find three numbers whose product is maximum and return
-# the maximum product.
+"""628. Maximum Product of Three Numbers
+Link: https://leetcode.com/problems/maximum-product-of-three-numbers/
+Difficulty: Easy
+Description: Given an integer array nums, find three numbers whose product is maximum and return
+the maximum product."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Sort the array. Time Complexity: O(nlog(n)), Space Complexity: O(1)
     @staticmethod
     def maximumProduct(nums: List[int]) -> int:
+        """Optimal Solution: Sort the array. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
         # Sort the array which takes O(nlog(n)) time
         nums.sort()
         # Product of the three largest numbers: largest if all positive

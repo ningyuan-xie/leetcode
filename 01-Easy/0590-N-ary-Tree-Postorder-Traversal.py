@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/n-ary-tree-postorder-traversal/
-# Difficulty: Easy
-# Description: Given the root of an n-ary tree, return the postorder traversal of its nodes' values.
+"""590. N-ary Tree Postorder Traversal
+Link: https://leetcode.com/problems/n-ary-tree-postorder-traversal/
+Difficulty: Easy
+Description: Given the root of an n-ary tree, return the postorder traversal of its nodes' values."""
 
 from typing import List
 from package.data_structures import Node
 
 
 class Solution:
-    # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def postorder(root: Node) -> List[int]:
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
         # Base Case
         if not root:
             return []

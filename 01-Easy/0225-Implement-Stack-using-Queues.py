@@ -1,32 +1,34 @@
-# Link: https://leetcode.com/problems/implement-stack-using-queues/
-# Difficulty: Easy
-# Description: Implement a last-in-first-out (LIFO) stack using only two queues.
-# The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
+"""225. Implement Stack using Queues
+Link: https://leetcode.com/problems/implement-stack-using-queues/
+Difficulty: Easy
+Description: Implement a last-in-first-out (LIFO) stack using only two queues.
+The implemented stack should support all the functions of a normal stack (push, top, pop, and empty)."""
 
 from collections import deque
 
 
-# Similar to 0232-Implement-Queue-using-Stacks.py, we can implement a stack using one queue.
 class MyStack:
-    # Constructor: instance variable queue is a double-ended queue
+    """Similar to 0232-Implement-Queue-using-Stacks.py, we can implement a stack using one queue."""
+
     def __init__(self):
+        """Constructor: instance variable queue is a double-ended queue"""
         self.queue = deque()
 
-    # Push: append an element to the stack.
-    # Last element in the list is the top of the stack
     def push(self, x: int) -> None:
+        """Push: append an element to the stack.
+           Last element in the list is the top of the stack"""
         self.queue.append(x)
 
-    # Pop: remove and return the last element in the stack
     def pop(self) -> int:
+        """Pop: remove and return the last element in the stack"""
         return self.queue.pop()
 
-    # Top: return the last element in the stack, which is the top of the stack
     def top(self) -> int:
+        """Top: return the last element in the stack, which is the top of the stack"""
         return self.queue[-1]
 
-    # Empty: check if the stack is empty by checking if the queue is empty
     def empty(self) -> bool:
+        """Empty: check if the stack is empty by checking if the queue is empty"""
         return len(self.queue) == 0
 
 

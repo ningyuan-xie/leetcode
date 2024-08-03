@@ -1,17 +1,18 @@
-# Link: https://leetcode.com/problems/same-tree/
-# Difficulty: Easy
-# Description: Given the roots of two binary trees p and q,
-# write a function to check if they are the same or not.
+"""100. Same Tree
+Link: https://leetcode.com/problems/same-tree/
+Difficulty: Easy
+Description: Given the roots of two binary trees p and q,
+write a function to check if they are the same or not."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Preorder because we need to compare the roots first before the subtrees
     @staticmethod
     def isSameTree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Preorder because we need to compare the roots first before the subtrees"""
         # Base case: if both trees are None, then they are the same
         if not p and not q:
             return True

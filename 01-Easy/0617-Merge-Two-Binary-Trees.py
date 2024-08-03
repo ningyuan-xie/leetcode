@@ -1,19 +1,20 @@
-# Link: https://leetcode.com/problems/merge-two-binary-trees/
-# Difficulty: Easy
-# Description: You are given two binary trees root1 and root2. Imagine that when you put one of
-# them to cover the other, some nodes of the two trees are overlapped while the others are not.
-# You need to merge the two trees into a new binary tree.
-# The merge rule is that if two nodes overlap, then sum node values up as the new value of
-# the merged node. Otherwise, the NOT null node will be used as the node of the new tree.
+"""617. Merge Two Binary Trees
+Link: https://leetcode.com/problems/merge-two-binary-trees/
+Difficulty: Easy
+Description: You are given two binary trees root1 and root2. Imagine that when you put one of
+them to cover the other, some nodes of the two trees are overlapped while the others are not.
+You need to merge the two trees into a new binary tree.
+The merge rule is that if two nodes overlap, then sum node values up as the new value of
+the merged node. Otherwise, the NOT null node will be used as the node of the new tree."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def mergeTrees(root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
         # Base case: If both trees are empty
         if not root1 and not root2:
             return None

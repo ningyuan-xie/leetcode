@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/contains-duplicate/
-# Difficulty: Easy
-# Description: Given an integer array nums, return true if any value
-# appears at least twice in the array, and return false if every element is distinct.
+"""217. Contains Duplicate
+Link: https://leetcode.com/problems/contains-duplicate/
+Difficulty: Easy
+Description: Given an integer array nums, return true if any value
+appears at least twice in the array, and return false if every element is distinct."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)
-    # Similar to 0202-Happy-Number.py
     @staticmethod
     def containsDuplicate(nums: List[int]) -> bool:
+        """Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)
+           Similar to 0202-Happy-Number.py"""
         # Initialize a set to store the UNIQUE elements
         unique_set = set()
         # Iterate through the list

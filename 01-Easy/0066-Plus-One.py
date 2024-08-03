@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/plus-one/
-# Difficulty: Easy
-# Description: Given a non-empty array of decimal digits representing a non-negative integer,
-# increment one to the integer.
+"""66. Plus One
+Link: https://leetcode.com/problems/plus-one/
+Difficulty: Easy
+Description: Given a non-empty array of decimal digits representing a non-negative integer,
+increment one to the integer."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def plusOne(digits: List[int]) -> List[int]:
+        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)"""
         # Loop through the index of the numbers in the list in reverse order from RIGHT to LEFT
         # 2nd parameter -1: the stopping condition so loop will stop before -1 (at 0)
         # 3rd parameter -1: decrement by 1 each loop

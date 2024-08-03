@@ -1,17 +1,18 @@
-# Link: https://leetcode.com/problems/two-sum/
-# Difficulty: Easy
-# Description: Given an array of integers nums and an integer target,
-# return indices of the two numbers such that they add up to target.
+"""1. Two Sum
+Link: https://leetcode.com/problems/two-sum/
+Difficulty: Easy
+Description: Given an array of integers nums and an integer target,
+return indices of the two numbers such that they add up to target."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
-    # static method: does not require access to class or instance, so does not need self
-    # instance method: needs access to class or instance, so needs self
     def twoSum(nums: List[int], target: int) -> List[int]:
+        """static method: does not require access to class or instance, so does not need self
+           instance method: needs access to class or instance, so needs self
+           Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
         # Create dictionary with key-value pairs to store the number and index
         num_dict = {}
 

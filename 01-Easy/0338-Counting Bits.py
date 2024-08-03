@@ -1,20 +1,21 @@
-# Link: https://leetcode.com/problems/counting-bits/
-# Difficulty: Easy
-# Description: Given an integer n, return an array ans of length n + 1
-# such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+"""338. Counting Bits
+Link: https://leetcode.com/problems/counting-bits/
+Difficulty: Easy
+Description: Given an integer n, return an array ans of length n + 1
+such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n)
-    # Use the previous results to calculate the new results:
-    # 1 (0001) -> 1 + dp[n - 1] = 1 + dp[0] = 1;
-    # 2 (0010) -> 1 + dp[n - 2] = 1 + dp[0] = 1; 3 (0011) -> 1 + dp[n - 2] = 1 + dp[1] = 1 + 1 = 2;
-    # 4 (0100) -> 1 + dp[n - 4] = 1 + dp[0] = 1; 6 (0110) -> 1 + dp[n - 4] = 1 + dp[2] = 1 + 1 = 2;
-    # 8 (1000) -> 1 + dp[n - 8] = 1 + dp[0] = 1
     @staticmethod
     def countBits(n: int) -> List[int]:
+        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n)
+           Using the previous results to calculate the new results:
+           1 (0001) -> 1 + dp[n - 1] = 1 + dp[0] = 1;
+           2 (0010) -> 1 + dp[n - 2] = 1 + dp[0] = 1; 3 (0011) -> 1 + dp[n - 2] = 1 + dp[1] = 1 + 1 = 2;
+           4 (0100) -> 1 + dp[n - 4] = 1 + dp[0] = 1; 6 (0110) -> 1 + dp[n - 4] = 1 + dp[2] = 1 + 1 = 2;
+           8 (1000) -> 1 + dp[n - 8] = 1 + dp[0] = 1"""
         # Initialize an array to store the number of 1's in the binary representation
         # of each number from 0 to n
         dp = [0] * (n + 1)

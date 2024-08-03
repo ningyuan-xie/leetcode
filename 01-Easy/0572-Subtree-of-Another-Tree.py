@@ -1,20 +1,22 @@
-# Link: https://leetcode.com/problems/subtree-of-another-tree/
-# Difficulty: Easy
-# Description: Given the roots of two binary trees root and subRoot, return true if there is a
-# subtree of root with the same structure and node values of subRoot and false otherwise.
-# A subtree of a binary tree is a tree that consists of a node in tree and
-# all of this node's descendants. The tree could also be considered as a subtree of itself.
+"""572. Subtree of Another Tree
+Link: https://leetcode.com/problems/subtree-of-another-tree/
+Difficulty: Easy
+Description: Given the roots of two binary trees root and subRoot, return true if there is a
+subtree of root with the same structure and node values of subRoot and false otherwise.
+A subtree of a binary tree is a tree that consists of a node in tree and
+all of this node's descendants. The tree could also be considered as a subtree of itself."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(m * n), Space Complexity: O(m + n)
     @staticmethod
     def isSubtree(root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
-        # Helper function: Preorder DFS Traversal. Same as 0100-Same-Tree.py
+        """Optimal Solution: Preorder DFS Traversal.
+           Time Complexity: O(m * n), Space Complexity: O(m + n)"""
         def is_same_tree(node1, node2):
+            """Helper function: Preorder DFS Traversal. Same as 0100-Same-Tree.py"""
             # Base Case
             if not node1 and not node2:
                 return True
@@ -26,8 +28,8 @@ class Solution:
                     and is_same_tree(node1.left, node2.left)
                     and is_same_tree(node1.right, node2.right))
 
-        # Helper function: Preorder DFS Traversal. Time Complexity: O(m * n), Space Complexity: O(m + n)
         def preorder_dfs_traversal(node):
+            """Helper function: Preorder DFS Traversal"""
             # Base Case
             if not node:
                 return False

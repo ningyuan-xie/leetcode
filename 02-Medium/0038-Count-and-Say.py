@@ -1,14 +1,15 @@
-# Link: https://leetcode.com/problems/count-and-say/
-# Difficulty: Medium
-# Description: The count-and-say sequence is a sequence of digit strings
-# defined by the recursive formula: countAndSay(1) = "1", countAndSay(2) = "11",
-# countAndSay(3) = "21", countAndSay(4) = "1211", ...
-# countAndSay(n) is the way you would "say" the digit string from countAndSay(n-1).
+"""38. Count and Say
+Link: https://leetcode.com/problems/count-and-say/
+Difficulty: Medium
+Description: The count-and-say sequence is a sequence of digit strings defined by the recursive
+formula: countAndSay(1) = "1", countAndSay(2) = "11", countAndSay(3) = "21", countAndSay(4) = "1211", ...
+countAndSay(n) is the way you would "say" the digit string from countAndSay(n-1)."""
+
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(2^n), Space Complexity: O(2^n)
     @staticmethod
     def countAndSay(n: int) -> str:
+        """Optimal Solution: Iteration. Time Complexity: O(2^n), Space Complexity: O(2^n)"""
         # Initialize the first digit string
         result = "1"
         for _ in range(n - 1):  # _ is a throwaway variable: 0 -> 1 -> 2, 3 loops to reach n = 4

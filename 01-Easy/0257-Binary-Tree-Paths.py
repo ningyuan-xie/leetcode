@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/binary-tree-paths/
-# Difficulty: Easy
-# Description: Given the root of a binary tree, return all root-to-leaf paths in any order.
+"""257. Binary Tree Paths
+Link: https://leetcode.com/problems/binary-tree-paths/
+Difficulty: Easy
+Description: Given the root of a binary tree, return all root-to-leaf paths in any order."""
 
 from typing import List, Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
-    # Similar to 0101-Symmetric-Tree.py, we need an inner helper DFS function to take two parameters
     @staticmethod
     def binaryTreePaths(root: Optional[TreeNode]) -> List[str]:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+           Similar to 0101-Symmetric-Tree.py, need an inner helper DFS function to take two parameters"""
         # Base case: if the root is None, return an empty list
         if not root:
             return []
@@ -19,9 +20,9 @@ class Solution:
         # don't need to declare it as nonlocal since list is mutable (can change in place),
         # so modifications to the list will be reflected in the outer scope
 
-        # Helper function: Preorder DFS Traversal: root -> left -> right
-        # Preorder because we want to append the current node's value to the path first
         def preorder_dfs_path(node: TreeNode, path: Optional[str]) -> None:
+            """Helper function: Preorder DFS Traversal: root -> left -> right
+               Preorder because we want to append the current node's value to the path first"""
             # 1. Root Case: if the node is a leaf node, append the path to the list of paths
             if not node.left and not node.right:
                 result.append(path + str(node.val))

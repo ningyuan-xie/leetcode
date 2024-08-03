@@ -1,22 +1,23 @@
-# Link: https://leetcode.com/problems/binary-tree-tilt/
-# Difficulty: Easy
-# Description: Given the root of a binary tree, return the sum of every tree node's tilt.
-# The tilt of a tree node is the absolute difference between the sum of all left subtree node values
-# and all right subtree node values. If a node does not have a left child, then the sum of
-# the left subtree node, and vice versa, is treated as 0. The sum of a leaf node is considered to be 0.
+"""563. Binary Tree Tilt
+Link: https://leetcode.com/problems/binary-tree-tilt/
+Difficulty: Easy
+Description: Given the root of a binary tree, return the sum of every tree node's tilt.
+The tilt of a tree node is the absolute difference between the sum of all left subtree node values
+and all right subtree node values. If a node does not have a left child, then the sum of
+the left subtree node, and vice versa, is treated as 0. The sum of a leaf node is considered to be 0."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # The trick is while calculating the sum, use sum to also get the tilt
-    # Similar to 0543-Diameter-of-Binary-Tree.py
     @staticmethod
     def findTilt(root: Optional[TreeNode]) -> int:
-        # Helper function to calculate tilt and sum of subtree
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           The trick is while calculating the sum, use sum to also get the tilt
+           Similar to 0543-Diameter-of-Binary-Tree.py"""
         def postorder_dfs_traversal(node):
+            """Helper function to calculate tilt and sum of subtree"""
             if not node:  # A leaf node's node.left and node.right are both None and return 0, 0
                 return 0, 0  # Base case: sum, tilt
 

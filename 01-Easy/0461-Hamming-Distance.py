@@ -1,13 +1,15 @@
-# Link: https://leetcode.com/problems/hamming-distance/
-# Difficulty: Easy
-# Description: The Hamming distance between two integers is the number of positions
-# at which the corresponding bits are different.
+"""461. Hamming Distance
+Link: https://leetcode.com/problems/hamming-distance/
+Difficulty: Easy
+Description: The Hamming distance between two integers is the number of positions
+at which the corresponding bits are different."""
+
 
 class Solution:
-    # Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
-    # Similar to 0190-Reverse-Bits.py and 0191-Number-of-1-Bits.py
     @staticmethod
     def hammingDistance(x: int, y: int) -> int:
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
+           Similar to 0190-Reverse-Bits.py and 0191-Number-of-1-Bits.py"""
         # Initialize the Hamming distance
         hamming_distance = 0
         # Calculate the XOR of x and y

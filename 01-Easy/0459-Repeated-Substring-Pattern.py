@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/repeated-substring-pattern/
-# Difficulty: Easy
-# Description: Given a string s, check if it can be constructed by taking a substring of it
-# and appending multiple copies of the substring together.
+"""459. Repeated Substring Pattern
+Link: https://leetcode.com/problems/repeated-substring-pattern/
+Difficulty: Easy
+Description: Given a string s, check if it can be constructed by taking a substring of it
+and appending multiple copies of the substring together."""
+
 
 class Solution:
-    # Sub-Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)
     @staticmethod
     def repeatedSubstringPattern(s: str) -> bool:
+        """Sub-Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)"""
         # Substring's length ranges from 1 to len(s) // 2 + 1
         for i in range(1, len(s) // 2 + 1):  # O(n/2). E.g. s = "abab", i = 1, 2
             # If the length of the substring divides the length of the string

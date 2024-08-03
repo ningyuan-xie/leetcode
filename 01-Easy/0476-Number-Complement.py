@@ -1,13 +1,15 @@
-# Link: https://leetcode.com/problems/number-complement/
-# Difficulty: Easy
-# Description: Given a positive integer num, output its complement number.
-# The complement strategy is to flip the bits of its binary representation.
+"""476. Number Complement
+Link: https://leetcode.com/problems/number-complement/
+Difficulty: Easy
+Description: Given a positive integer num, output its complement number.
+The complement strategy is to flip the bits of its binary representation."""
+
 
 class Solution:
-    # Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
-    # Similar to 0190-Reverse-Bits.py
     @staticmethod
     def findComplement(num: int) -> int:
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
+           Similar to 0190-Reverse-Bits.py"""
         # Find the number of bits in the number
         num_bits = num.bit_length()  # E.g. num = 5 (101) -> num_bits = 3
 

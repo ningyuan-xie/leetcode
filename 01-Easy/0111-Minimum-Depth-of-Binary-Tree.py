@@ -1,19 +1,20 @@
-# Link: https://leetcode.com/problems/minimum-depth-of-binary-tree/
-# Difficulty: Easy
-# Description: Given a binary tree, find its minimum depth.
-# The minimum depth is the number of nodes along the shortest path
-# from the root node down to the nearest leaf node.
+"""111. Minimum Depth of Binary Tree
+Link: https://leetcode.com/problems/minimum-depth-of-binary-tree/
+Difficulty: Easy
+Description: Given a binary tree, find its minimum depth.
+The minimum depth is the number of nodes along the shortest path
+from the root node down to the nearest leaf node."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Postorder because we need to traverse the left and right subtrees first before the root
-    # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
     @staticmethod
     def minDepth(root: Optional[TreeNode]) -> int:
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Postorder because we need to traverse the left and right subtrees first before the root
+           Similar to 0104-Maximum-Depth-of-Binary-Tree.py"""
         # Base case: if the tree root is None, return 0
         if not root:
             return 0

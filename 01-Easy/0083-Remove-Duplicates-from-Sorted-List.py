@@ -1,17 +1,18 @@
-# Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
-# Difficulty: Easy
-# Description: Given the head of a sorted linked list, 
-# delete all duplicates such that each element appears only once. 
-# Return the linked list sorted as well.
+"""83. Remove Duplicates from Sorted List
+Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+Difficulty: Easy
+Description: Given the head of a sorted linked list,
+delete all duplicates such that each element appears only once.
+Return the linked list sorted as well."""
 
 from typing import Optional
 from package.data_structures import ListNode
 
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def deleteDuplicates(head: Optional[ListNode]) -> Optional[ListNode]:
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
         # Base case: if the linked list is empty, return None
         if not head:
             return None

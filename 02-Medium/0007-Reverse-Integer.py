@@ -1,14 +1,18 @@
-# Link: https://leetcode.com/problems/reverse-integer/
-# Difficulty: Medium
-# Description: Given a signed 32-bit integer x, return x with its digits reversed.
-# If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1],
-# then return 0.
+"""7. Reverse Integer
+Link: https://leetcode.com/problems/reverse-integer/
+Difficulty: Medium
+Description: Given a signed 32-bit integer x, return x with its digits reversed.
+If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1],
+then return 0."""
+
 
 class Solution:
     # Optimal Solution: Math. Time Complexity: O(log(x)), Space Complexity: O(1)
     # Similar to the reverseBits method in 01-Easy/0190-Reverse-Bits.py
     @staticmethod
     def reverse(x: int) -> int:
+        """Optimal Solution: Math. Time Complexity: O(log(x)), Space Complexity: O(1)
+           Similar to the reverseBits method in 01-Easy/0190-Reverse-Bits.py"""
         # Initialize the reversed integer
         reversed_x = 0
         # Initialize the sign of the integer

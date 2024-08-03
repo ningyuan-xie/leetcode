@@ -1,15 +1,17 @@
-# Link: https://leetcode.com/problems/arranging-coins/
-# Difficulty: Easy
-# Description: You have n coins, and you want to build a staircase with these coins.
-# The staircase consists of k rows where the ith row has exactly i coins.
-# The last row of the staircase may be incomplete.
-# Given the integer n, return the number of complete rows of the staircase you will build.
+"""441. Arranging Coins
+Link: https://leetcode.com/problems/arranging-coins/
+Difficulty: Easy
+Description: You have n coins, and you want to build a staircase with these coins.
+The staircase consists of k rows where the ith row has exactly i coins.
+The last row of the staircase may be incomplete.
+Given the integer n, return the number of complete rows of the staircase you will build."""
+
 
 class Solution:
-    # Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
-    # Similar to 0374-Guess-Number-Higher-or-Lower.py
     @staticmethod
     def arrangeCoins(n: int) -> int:
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
+           Similar to 0374-Guess-Number-Higher-or-Lower.py"""
         # Initialize the left and right pointers
         left, right = 0, n  # upper bound is n itself
         # Binary search: loop until left pointer > right pointer

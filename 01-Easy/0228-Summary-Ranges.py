@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/summary-ranges/
-# Difficulty: Easy
-# Description: You are given a sorted unique integer array nums.
-# Return the smallest sorted list of ranges that cover all the numbers in the input array.
+"""228. Summary Ranges
+Link: https://leetcode.com/problems/summary-ranges/
+Difficulty: Easy
+Description: You are given a sorted unique integer array nums.
+Return the smallest sorted list of ranges that cover all the numbers in the input array."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def summaryRanges(nums: List[int]) -> List[str]:
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)"""
         # Base case: if the input list is empty, return an empty list
         if not nums:
             return []

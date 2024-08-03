@@ -1,18 +1,19 @@
-# Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/
-# Difficulty: Easy
-# Description: Given the root of a binary tree, return its maximum depth.
-# A binary tree's maximum depth is the number of nodes along the longest path
-# from the root node down to the farthest leaf node = height of the tree + 1
+"""104. Maximum Depth of Binary Tree
+Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+Difficulty: Easy
+Description: Given the root of a binary tree, return its maximum depth.
+A binary tree's maximum depth is the number of nodes along the longest path
+from the root node down to the farthest leaf node = height of the tree + 1"""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Postorder because we need to traverse the left and right subtrees first before the root
     @staticmethod
     def maxDepth(root: Optional[TreeNode]) -> int:
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Postorder because we need to traverse the left and right subtrees first before the root"""
         # Base case: if the tree root is None, return 0
         if not root:
             return 0

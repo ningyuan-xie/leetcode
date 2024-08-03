@@ -1,11 +1,13 @@
-# Link: https://leetcode.com/problems/guess-number-higher-or-lower/
-# Difficulty: Easy
-# Description: We are playing the Guess Game. The game is as follows:
-# I pick a number from 1 to n. You have to guess which number I picked.
-# Every time you guess wrong, I'll tell you whether the number is higher or lower.
+"""374. Guess Number Higher or Lower
+Link: https://leetcode.com/problems/guess-number-higher-or-lower/
+Difficulty: Easy
+Description: We are playing the Guess Game. The game is as follows:
+I pick a number from 1 to n. You have to guess which number I picked.
+Every time you guess wrong, I'll tell you whether the number is higher or lower."""
+
 
 def guess(num: int) -> int:
-    # Assume the number that I picked is 6
+    """Mock function for guessing the number: Assume the number that I picked is 6"""
     picked = 6
     if num == picked:
         return 0
@@ -16,10 +18,10 @@ def guess(num: int) -> int:
 
 
 class Solution:
-    # Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
-    # Similar to 0069-Sqrt(x).py and 0367-Valid-Perfect-Square.py
     @staticmethod
     def guessNumber(n: int) -> int:
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
+           Similar to 0069-Sqrt(x).py and 0367-Valid-Perfect-Square.py"""
         # Initialize the left and right pointers for binary search
         left, right = 1, n
         # Loop until left pointer > right pointer

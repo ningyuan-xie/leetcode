@@ -1,21 +1,24 @@
-# Link: https://leetcode.com/problems/symmetric-tree/
-# Difficulty: Easy
-# Description: Given the root of a binary tree,
-# check whether it is a mirror of itself (i.e., symmetric around its center).
+"""101. Symmetric Tree
+Link: https://leetcode.com/problems/symmetric-tree/
+Difficulty: Easy
+Description: Given the root of a binary tree,
+check whether it is a mirror of itself (i.e., symmetric around its center)."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0100-Same-Tree.py, we need an inner helper DFS function to take two parameters
     @staticmethod
-    def isSymmetric(root: Optional[TreeNode]) -> bool:  # only takes one parameter root
-        # However, we need to compare the left and right subtrees simultaneously
-        # Therefore, need an inner helper DFS function (like isSameTree) to take two parameters
-        # Preorder because we need to compare the roots first before the subtrees
+    def isSymmetric(root: Optional[TreeNode]) -> bool:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0100-Same-Tree.py, we need an inner helper DFS function to take two parameters
+           This function only takes one parameter root, but we need to compare the left and right
+           subtrees simultaneously. Therefore, we need an inner helper DFS function (like isSameTree)
+           to take two parameters."""
         def preorder_dfs_traversal(left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
+            """Helper DFS function to traverse the left and right subtrees simultaneously
+               Preorder because we need to compare the roots first before the subtrees"""
             # Base case: if both trees are None, then they are the same
             if not left and not right:
                 return True

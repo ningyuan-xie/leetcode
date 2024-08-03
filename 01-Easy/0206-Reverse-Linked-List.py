@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/reverse-linked-list/
-# Difficulty: Easy
-# Description: Reverse a singly linked list.
+"""206. Reverse Linked List
+Link: https://leetcode.com/problems/reverse-linked-list/
+Difficulty: Easy
+Description: Reverse a singly linked list."""
 
 from typing import Optional
 from package.data_structures import ListNode
 
 
 class Solution:
-    # Optimal Solution: Iterative. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
+        """Optimal Solution: Iterative. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize two pointers to store the previous and current nodes
         prev, current = None, head
         # Iterate through the linked list

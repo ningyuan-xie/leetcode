@@ -1,17 +1,19 @@
-# Link: https://leetcode.com/problems/power-of-two/
-# Difficulty: Easy
-# Description: Given an integer n, return true if it is a power of two. Otherwise, return false.
+"""231. Power of Two
+Link: https://leetcode.com/problems/power-of-two/
+Difficulty: Easy
+Description: Given an integer n, return true if it is a power of two. Otherwise, return false."""
+
 
 class Solution:
-    # Optimal Solution: Math (only for prime). Time Complexity: O(1), Space Complexity: O(1)
     @staticmethod
     def isPowerOfTwo(n: int) -> bool:
+        """Optimal Solution: Math (only for prime). Time Complexity: O(1), Space Complexity: O(1)"""
         # The maximum power of 2 that can be stored in a 32-bit integer is 2^30 = 1073741824
         return n > 0 and (2**30) % n == 0
 
-    # Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
     @staticmethod
     def isPowerOfTwoBit(n: int) -> bool:
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)"""
         # Base case: if n is less than or equal to 0, return False
         if n <= 0:
             return False
@@ -19,9 +21,9 @@ class Solution:
         # E.g. 4 (100) & 3 (011) = 0, 5 (101) & 4 (100) = 4 (100), 8 (1000) & 7 (0111) = 0
         return n & (n - 1) == 0
 
-    # Alternative Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))
     @staticmethod
     def isPowerOfTwoRecursion(n: int) -> bool:
+        """Alternative Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))"""
         # Base case: if n is less than or equal to 0, return False
         if n <= 0:
             return False

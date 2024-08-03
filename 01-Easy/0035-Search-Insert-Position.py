@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/search-insert-position/
-# Difficulty: Easy
-# Description: Given a sorted array of distinct integers and a target value,
-# return the index if the target is found.
-# If not, return the index where it would be if it were inserted in order.
+"""35. Search Insert Position
+Link: https://leetcode.com/problems/search-insert-position/
+Difficulty: Easy
+Description: Given a sorted array of distinct integers and a target value,
+return the index if the target is found.
+If not, return the index where it would be if it were inserted in order."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def searchInsert(nums: List[int], target: int) -> int:
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
         # Loop through the index of the numbers in the list
         for i in range(len(nums)):
             # If the target is found, return the index

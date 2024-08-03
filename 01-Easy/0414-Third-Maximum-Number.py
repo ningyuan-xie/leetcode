@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/third-maximum-number/
-# Difficulty: Easy
-# Description: Given integer array nums, return the third maximum number in this array.
-# If the third maximum does not exist, return the maximum number.
+"""414. Third Maximum Number
+Link: https://leetcode.com/problems/third-maximum-number/
+Difficulty: Easy
+Description: Given integer array nums, return the third maximum number in this array.
+If the third maximum does not exist, return the maximum number."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def thirdMax(nums: List[int]) -> int:
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
         # Remove duplicates by converting the list to a set
         nums = set(nums)
         # If there are less than 3 unique numbers, return the maximum number

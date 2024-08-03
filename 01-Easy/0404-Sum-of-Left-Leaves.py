@@ -1,25 +1,26 @@
-# Link: https://leetcode.com/problems/sum-of-left-leaves/
-# Difficulty: Easy
-# Description: Find the sum of all left leaves in a given binary tree.
+"""404. Sum of Left Leaves
+Link: https://leetcode.com/problems/sum-of-left-leaves/
+Difficulty: Easy
+Description: Find the sum of all left leaves in a given binary tree."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0101-Symmetric-Tree.py and 0257-Binary-Tree-Paths.py,
-    # we need an inner helper DFS function to take two parameters
     @staticmethod
     def sumOfLeftLeaves(root: Optional[TreeNode]) -> int:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0101-Symmetric-Tree.py and 0257-Binary-Tree-Paths.py,
+           we need an inner helper DFS function to take two parameters"""
         # Initialize the sum of left leaves
         sum_left_leaves = 0
         # need to declare it as nonlocal since int is immutable (cannot change in place),
         # so modifications to the integer will not be reflected in the outer scope
 
-        # Helper function: Preorder DFS Traversal: root -> left -> right
-        # Preorder because we want to process the current node first
         def preorder_dfs_path(node: Optional[TreeNode], is_left: bool) -> None:
+            """Helper function: Preorder DFS Traversal: root -> left -> right
+               Preorder because we want to process the current node first"""
             # Base Case: If the node is None, return
             if not node:
                 return

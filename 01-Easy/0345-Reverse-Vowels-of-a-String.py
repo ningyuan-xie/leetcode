@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/reverse-vowels-of-a-string/
-# Difficulty: Easy
-# Description: Write a function that takes a string as input and reverse only the vowels of a string.
+"""345. Reverse Vowels of a String
+Link: https://leetcode.com/problems/reverse-vowels-of-a-string/
+Difficulty: Easy
+Description: Write a function that takes a string as input and reverse only the vowels of a string."""
+
 
 class Solution:
-    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0344-Reverse-String.py
     @staticmethod
     def reverseVowels(s: str) -> str:
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0344-Reverse-String.py"""
         # Initialize a set of vowels
         vowels = set("aeiouAEIOU")
         # Convert the string into a list of characters

@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/add-binary/
-# Difficulty: Easy
-# Description: Given two binary strings a and b, return their sum as a binary string.
+"""67. Add Binary
+Link: https://leetcode.com/problems/add-binary/
+Difficulty: Easy
+Description: Given two binary strings a and b, return their sum as a binary string."""
+
 
 class Solution:
-    # Optimal Solution: Math. Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m))
-    # Similar to 0066-Plus-One.py
     @staticmethod
     def addBinary(a: str, b: str) -> str:
+        """Optimal Solution: Math. Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m)
+           Similar to 0066-Plus-One.py"""
         # Initialize result and carry
         result, carry = [], 0
         # Reverse the strings, so we can loop through the digits from RIGHT to LEFT

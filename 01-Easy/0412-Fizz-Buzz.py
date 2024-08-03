@@ -1,18 +1,19 @@
-# Link: https://leetcode.com/problems/fizz-buzz/
-# Difficulty: Easy
-# Description: Given an integer n, return a string array answer (1-indexed) where:
-# - answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
-# - answer[i] == "Fizz" if i is divisible by 3.
-# - answer[i] == "Buzz" if i is divisible by 5.
-# - answer[i] == i (as a string) if none of the above conditions are true.
+"""412. Fizz Buzz
+Link: https://leetcode.com/problems/fizz-buzz/
+Difficulty: Easy
+Description: Given an integer n, return a string array answer (1-indexed) where:
+- answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+- answer[i] == "Fizz" if i is divisible by 3.
+- answer[i] == "Buzz" if i is divisible by 5.
+- answer[i] == i (as a string) if none of the above conditions are true."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Modulo Operator. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def fizzBuzz(n: int) -> List[str]:
+        """Optimal Solution: Modulo Operator. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize the output list
         output = []
         # Iterate from 1 to n (inclusive)

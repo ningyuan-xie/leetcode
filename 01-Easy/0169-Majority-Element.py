@@ -1,18 +1,19 @@
-# Link: https://leetcode.com/problems/majority-element/
-# Difficulty: Easy
-# Description: Given an array nums of size n, return the majority element.
-# The majority element is the element that appears more than ⌊n / 2⌋ times.
-# Follow-up: Could you solve the problem in linear time and in O(1) space?
+"""169. Majority Element
+Link: https://leetcode.com/problems/majority-element/
+Difficulty: Easy
+Description: Given an array nums of size n, return the majority element.
+The majority element is the element that appears more than ⌊n / 2⌋ times.
+Follow-up: Could you solve the problem in linear time and in O(1) space?"""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Boyer-Moore Voting Algorithm. Time Complexity: O(n), Space Complexity: O(1)
-    # Because this majority element occurs more than n/2 (floor value) times,
-    # even if other elements will 'vote against it', it will win
     @staticmethod
     def majorityElement(nums: List[int]) -> int:
+        """Optimal Solution: Boyer-Moore Voting Algorithm. Time Complexity: O(n), Space Complexity: O(1)
+           Because this majority element occurs more than n/2 (floor value) times,
+           even if other elements will 'vote against it', it will win"""
         # Initialize the majority element and its count
         majority_element, majority_count = 0, 0
 

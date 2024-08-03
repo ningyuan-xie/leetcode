@@ -1,14 +1,15 @@
-# Link: https://leetcode.com/problems/max-consecutive-ones/
-# Difficulty: Easy
-# Description: Given a binary array, find the maximum number of consecutive 1s in this array.
+"""485. Max Consecutive Ones
+Link: https://leetcode.com/problems/max-consecutive-ones/
+Difficulty: Easy
+Description: Given a binary array, find the maximum number of consecutive 1s in this array."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def findMaxConsecutiveOnes(nums: List[int]) -> int:
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
         max_consecutive, current_consecutive = 0, 0
         for num in nums:
             if num == 1:

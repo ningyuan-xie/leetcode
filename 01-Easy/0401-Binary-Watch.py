@@ -1,19 +1,20 @@
-# Link: https://leetcode.com/problems/binary-watch/
-# Difficulty: Easy
-# Description: A binary watch has 4 LEDs on the top which represent the hours (0-11),
-# and the 6 LEDs on the bottom represent the minutes (0-59).
-# Each LED represents a zero or one, with the least significant bit on the right.
-# Given a non-negative integer n which represents the number of LEDs that are currently on,
-# return all possible times the watch could represent.
+"""401. Binary Watch
+Link: https://leetcode.com/problems/binary-watch/
+Difficulty: Easy
+Description: A binary watch has 4 LEDs on the top which represent the hours (0-11),
+and the 6 LEDs on the bottom represent the minutes (0-59).
+Each LED represents a zero or one, with the least significant bit on the right.
+Given a non-negative integer n which represents the number of LEDs that are currently on,
+return all possible times the watch could represent."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Brute Force. Time Complexity: O(1), Space Complexity: O(1)
-    # Constant time/space complexity because the number of possible times is fixed
     @staticmethod
     def readBinaryWatch(turnedOn: int) -> List[str]:
+        """Optimal Solution: Brute Force. Time Complexity: O(1), Space Complexity: O(1)
+           Constant time/space complexity because the number of possible times is fixed"""
         # Initialize a list to store the possible times
         times = []
         # Traverse the hours from 0 to 11

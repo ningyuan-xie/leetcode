@@ -1,4 +1,5 @@
-# This script prints the Python version information.
+"""This script prints the Python version information"""
+
 import sys
 
 

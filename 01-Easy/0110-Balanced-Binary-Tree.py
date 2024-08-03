@@ -1,6 +1,7 @@
-# Link: https://leetcode.com/problems/balanced-binary-tree/
-# Difficulty: Easy
-# Description: Given a binary tree, determine if it is height-balanced.
+"""110. Balanced Binary Tree
+Link: https://leetcode.com/problems/balanced-binary-tree/
+Difficulty: Easy
+Description: Given a binary tree, determine if it is height-balanced."""
 
 from typing import Optional
 from package.data_structures import TreeNode
@@ -9,10 +10,10 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def isBalanced(root: Optional[TreeNode]) -> bool:
-        # Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-        # Postorder because we need to traverse the left and right subtrees first before the root
-        # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
         def height(node: Optional[TreeNode]) -> int:
+            """Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+               Postorder because we need to traverse the left and right subtrees first before the root
+               Similar to 0104-Maximum-Depth-of-Binary-Tree.py"""
             # Base case: if the node is None, height is -1
             if not node:
                 return -1
@@ -25,9 +26,9 @@ class Solution:
             # + 1 to account for the current node
             return max(left_height, right_height) + 1
 
-        # Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
-        # Postorder because we need to traverse the left and right subtrees first before the root
         def is_balanced(node: Optional[TreeNode]) -> bool:
+            """Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+               Postorder because we need to traverse the left and right subtrees first before the root"""
             # Base case: if the node is None, return True
             if not node:
                 return True

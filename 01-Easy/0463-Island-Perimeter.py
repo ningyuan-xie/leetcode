@@ -1,20 +1,21 @@
-# Link: https://leetcode.com/problems/island-perimeter/
-# Difficulty: Easy
-# Description: You are given a map in form of a two-dimensional integer grid where 1 represents land
-# and 0 represents water. Grid cells are connected horizontally/vertically (not diagonally).
-# The grid is completely surrounded by water, and there is exactly one island
-# (i.e., one or more connected land cells).
-# The island doesn't have "lakes" (water inside that isn't connected to the water around the island).
-# One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100.
-# Determine the perimeter of the island.
+"""463. Island Perimeter
+Link: https://leetcode.com/problems/island-perimeter/
+Difficulty: Easy
+Description: You are given a map in form of a two-dimensional integer grid where 1 represents land
+and 0 represents water. Grid cells are connected horizontally/vertically (not diagonally).
+The grid is completely surrounded by water, and there is exactly one island
+(i.e., one or more connected land cells).
+The island doesn't have "lakes" (water inside that isn't connected to the water around the island).
+One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100.
+Determine the perimeter of the island."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Counting Edges. Time Complexity: O(m * n), Space Complexity: O(1)
     @staticmethod
     def islandPerimeter(grid: List[List[int]]) -> int:
+        """Optimal Solution: Counting Edges. Time Complexity: O(m * n), Space Complexity: O(1)"""
         perimeter = 0
         # Outer loop: Iterate through the rows
         for i in range(len(grid)):  # E.g. i = 0, 1, 2, 3
@@ -34,10 +35,10 @@ class Solution:
                         perimeter -= 2
         return perimeter
 
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(m * n), Space Complexity: O(m * n)
-    # Preorder because we want to explore and record the current cell first
     @staticmethod
     def islandPerimeterDFS(grid: List[List[int]]) -> int:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(m * n), Space Complexity: O(m * n)
+           Preorder because we want to explore and record the current cell first"""
         visited = set()  # Memory Complexity: O(m * n)
 
         # Helper function: DFS

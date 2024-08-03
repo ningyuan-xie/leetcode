@@ -1,18 +1,19 @@
-# Link: http://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-# Difficulty: Easy
-# Description: Given an integer array nums where the elements are sorted in ascending order,
-# convert it to a height-balanced binary search tree.
+"""108. Convert Sorted Array to Binary Search Tree
+Link: http://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+Difficulty: Easy
+Description: Given an integer array nums where the elements are sorted in ascending order,
+convert it to a height-balanced binary search tree."""
 
 from typing import List, Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
-    # Preorder because we want to process the current node first
-    # Reverse of 0094-Binary-Tree-Inorder-Traversal.py
     @staticmethod
     def sortedArrayToBST(nums: List[int]) -> Optional[TreeNode]:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+           Preorder because we want to process the current node first
+           Reverse of 0094-Binary-Tree-Inorder-Traversal.py"""
         # Base case: if the array is empty, return None
         if not nums:
             return None

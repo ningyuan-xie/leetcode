@@ -1,15 +1,17 @@
-# Link: https://leetcode.com/problems/remove-element/
-# Difficulty: Easy
-# Description: Given an integer array nums and an integer val,
-# remove all occurrences of val in nums in-place and return the new length.
+"""27. Remove Element
+Link: https://leetcode.com/problems/remove-element/
+Difficulty: Easy
+Description: Given an integer array nums and an integer val,
+remove all occurrences of val in nums in-place and return the new length."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def removeElement(nums: List[int], val: int) -> int:
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0026-Remove-Duplicates-from-Sorted-Array.py"""
         # Initialize the new length index to 0
         length_new = 0  # pointer one
         # Loop through the list

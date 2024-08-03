@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-# Difficulty: Easy
-# Description: Given a sorted array nums, remove the duplicates in-place
-# such that each element appears only once and returns the new length.
+"""26. Remove Duplicates from Sorted Array
+Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+Difficulty: Easy
+Description: Given a sorted array nums, remove the duplicates in-place
+such that each element appears only once and returns the new length."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def removeDuplicates(nums: List[int]) -> int:
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize unique numbers index to 0
         length_unique = 0  # pointer one
         # Loop begin from the second number

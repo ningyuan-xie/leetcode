@@ -1,13 +1,15 @@
-# Link: https://leetcode.com/problems/first-unique-character-in-a-string/
-# Difficulty: Easy
-# Description: Given a string s, return the first non-repeating character
-# in it and return its index. If it does not exist, return -1.
+"""387. First Unique Character in a String
+Link: https://leetcode.com/problems/first-unique-character-in-a-string/
+Difficulty: Easy
+Description: Given a string s, return the first non-repeating character
+in it and return its index. If it does not exist, return -1."""
+
 
 class Solution:
-    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0383-Ransom-Note.py
     @staticmethod
     def firstUniqChar(s: str) -> int:
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0383-Ransom-Note.py"""
         # Initialize a hash table to store the frequency of characters in the string
         char_freq = {}
         for char in s:

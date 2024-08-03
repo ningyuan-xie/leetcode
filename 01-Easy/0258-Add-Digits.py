@@ -1,21 +1,23 @@
-# Link: https://leetcode.com/problems/add-digits/
-# Difficulty: Easy
-# Description: Given an integer num, repeatedly add its digits
-# until the result has only one digit, and return it.
+"""258. Add Digits
+Link: https://leetcode.com/problems/add-digits/
+Difficulty: Easy
+Description: Given an integer num, repeatedly add its digits
+until the result has only one digit, and return it."""
+
 
 class Solution:
-    # Optimal Solution: Digital Root. Time Complexity: O(1), Space Complexity: O(1)
     @staticmethod
     def addDigits(n: int) -> int:
+        """Optimal Solution: Digital Root. Time Complexity: O(1), Space Complexity: O(1)"""
         # The digital root (dr) of a number is given by the formula:
         # dr(n) = 1 + ((n - 1) % 9)
         return 1 + ((n - 1) % 9) if n > 0 else 0
         # E.g. dr(38) = 1 + ((38 - 1) % 9) = 1 + (37 % 9) = 1 + 1 = 2
         # E.g. dr(0) = 1 + ((0 - 1) % 9) = 1 + (-1 % 9) = 1 + -1 = 0
 
-    # Alternative Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))
     @staticmethod
     def addDigitsRecursion(n: int) -> int:
+        """Alternative Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))"""
         # Base case: if the number is less than 10, return the number
         if n < 10:
             return n

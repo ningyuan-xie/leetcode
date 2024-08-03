@@ -1,15 +1,17 @@
-# Link: https://leetcode.com/problems/fibonacci-number/
-# Difficulty: Easy
-# Description: The Fibonacci numbers, commonly denoted F(n) form a sequence, called
-# the Fibonacci sequence, such that each number is the sum of the two preceding ones,
-# starting from 0 and 1. That is, F(0) = 0, F(1) = 1, F(n) = F(n - 1) + F(n - 2) for n > 1.
-# Given n, calculate F(n).
+"""509. Fibonacci Number
+Link: https://leetcode.com/problems/fibonacci-number/
+Difficulty: Easy
+Description: The Fibonacci numbers, commonly denoted F(n) form a sequence, called
+the Fibonacci sequence, such that each number is the sum of the two preceding ones,
+starting from 0 and 1. That is, F(0) = 0, F(1) = 1, F(n) = F(n - 1) + F(n - 2) for n > 1.
+Given n, calculate F(n)."""
+
 
 class Solution:
-    # Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n)
-    # Similar to 0338-Counting-Bits.py
     @staticmethod
     def fib(n: int) -> int:
+        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(n)
+           Similar to 0338-Counting-Bits.py"""
         # Initialize a list to store the Fibonacci numbers with length n + 1
         fibonacci = [0, 1] + [0] * (n - 1)
         # To get to the F(n) Fibonacci number, loop n - 1 times from 2 to n
@@ -19,10 +21,10 @@ class Solution:
         # Return the F(n) Fibonacci number
         return fibonacci[n]
 
-    # Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0070-Climbing-Stairs.py
     @staticmethod
     def fibOptimal(n: int) -> int:
+        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0070-Climbing-Stairs.py"""
         # Base case for "one": if n = 0, return 0
         if n == 0:
             return 0

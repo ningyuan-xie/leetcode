@@ -1,25 +1,28 @@
-# Link: https://leetcode.com/problems/diameter-of-binary-tree/
-# Difficulty: Easy
-# Description: Given the root of a binary tree, return the length of the diameter of the tree.
-# The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
-# This path may or may not pass through the root.
+"""543. Diameter of Binary Tree
+Link: https://leetcode.com/problems/diameter-of-binary-tree/
+Difficulty: Easy
+Description: Given the root of a binary tree, return the length of the diameter of the tree.
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
+This path may or may not pass through the root."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # The trick is while calculating the height, use height to also get the diameter
-    # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
     @staticmethod
     def diameterOfBinaryTree(root: Optional[TreeNode]) -> int:
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           The trick is while calculating the height, use height to also get the diameter
+           Similar to 0104-Maximum-Depth-of-Binary-Tree.py"""
         # Initialize the diameter of the binary tree
         diameter = 0
 
         # Helper function: Postorder DFS Traversal: left -> right -> root
         # Postorder because we need to calculate the height of the left and right subtrees first
         def postorder_dfs_traversal(node: TreeNode) -> int:
+            """Helper function: Postorder DFS Traversal: left -> right -> root
+               Postorder because we need to calculate the height of the left and right subtrees first"""
             # nonlocal variables to access the outer scope mutable variables
             nonlocal diameter
             # Base Case: If the current node is None, return -1

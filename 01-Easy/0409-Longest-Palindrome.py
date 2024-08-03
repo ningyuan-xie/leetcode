@@ -1,13 +1,15 @@
-# Link: https://leetcode.com/problems/longest-palindrome/
-# Difficulty: Easy
-# Description: Given a string s which consists of lowercase or uppercase letters,
-# return the length of the longest palindrome that can be built with those letters.
+"""409. Longest Palindrome
+Link: https://leetcode.com/problems/longest-palindrome/
+Difficulty: Easy
+Description: Given a string s which consists of lowercase or uppercase letters,
+return the length of the longest palindrome that can be built with those letters."""
+
 
 class Solution:
-    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0389-Find-the-Difference.py
     @staticmethod
     def longestPalindrome(s: str) -> int:
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0389-Find-the-Difference.py"""
         # Initialize a dictionary to store the frequency of each character
         char_freq = {}
         # Initialize a variable to store the length of the longest palindrome

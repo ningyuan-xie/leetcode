@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/binary-tree-postorder-traversal/
-# Difficulty: Easy
-# Description: Given the root of a binary tree, return the postorder traversal of its nodes' values.
+"""145. Binary Tree Postorder Traversal
+Link: https://leetcode.com/problems/binary-tree-postorder-traversal/
+Difficulty: Easy
+Description: Given the root of a binary tree, return the postorder traversal of its nodes' values."""
 
 from typing import List, Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def postorderTraversal(root: Optional[TreeNode]) -> List[int]:
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
         # Base case: if the tree root is None, return an empty list
         if not root:
             return []

@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/missing-number/
-# Difficulty: Easy
-# Description: Given an array nums containing n distinct numbers in the range [0, n],
-# return the only number in the range that is missing from the array.
+"""268. Missing Number
+Link: https://leetcode.com/problems/missing-number/
+Difficulty: Easy
+Description: Given an array nums containing n distinct numbers in the range [0, n],
+return the only number in the range that is missing from the array."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to the XOR operation in 0136-Single-Number.py
     @staticmethod
     def missingNumber(nums: List[int]) -> int:
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to the XOR operation in 0136-Single-Number.py"""
         # Initialize the missing number as the length of the array because:
         # 1. Ensure that the highest possible number (could be the missing one) is included in the XOR
         # 2. Index i won't reach the max number, requiring the length to cancel out the max number
@@ -23,9 +24,9 @@ class Solution:
             # Ideally if no missing number: (0 ^ 3) ^ (1 ^ 0) ^ (2 ^ 1) ^ (3 ^ 2) = 0
         return missing_number
 
-    # Optimal Solution: Gauss's Formula. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def missingNumberSumFormula(nums: List[int]) -> int:
+        """Optimal Solution: Gauss's Formula. Time Complexity: O(n), Space Complexity: O(1)"""
         # Calculate the sum of the numbers from 0 to n using the formula: sum = n * (n + 1) / 2
         n = len(nums)
         expected_sum = n * (n + 1) // 2

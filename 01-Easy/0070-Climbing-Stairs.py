@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/climbing-stairs/
-# Difficulty: Easy
-# Description: You are climbing a staircase. It takes n steps to reach the top.
-# Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+"""70. Climbing Stairs
+Link: https://leetcode.com/problems/climbing-stairs/
+Difficulty: Easy
+Description: You are climbing a staircase. It takes n steps to reach the top.
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?"""
+
 
 class Solution:
-    # Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def climbStairs(n: int) -> int:
+        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)"""
         # Base case for "one": if currently at final stair, 1 way to reach the top
         # Base case for "two": if currently at second to last stair, 1 way to reach the top
         one, two = 1, 1

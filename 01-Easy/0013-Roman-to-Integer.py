@@ -1,11 +1,13 @@
-# Link: https://leetcode.com/problems/roman-to-integer/
-# Difficulty: Easy
-# Description: Given a roman numeral, convert it to an integer.
+"""13. Roman to Integer
+Link: https://leetcode.com/problems/roman-to-integer/
+Difficulty: Easy
+Description: Given a roman numeral, convert it to an integer."""
+
 
 class Solution:
-    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def romanToInt(s: str) -> int:
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
         # Create dictionary with key-value pairs
         roman_dict = {
             "I": 1,

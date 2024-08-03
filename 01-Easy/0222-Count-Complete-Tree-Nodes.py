@@ -1,17 +1,18 @@
-# Link: https://leetcode.com/problems/count-complete-tree-nodes/
-# Difficulty: Easy
-# Description: Given the root of a complete binary tree, return the number of the nodes in the tree.
+"""222. Count Complete Tree Nodes
+Link: https://leetcode.com/problems/count-complete-tree-nodes/
+Difficulty: Easy
+Description: Given the root of a complete binary tree, return the number of the nodes in the tree."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Postorder because we need to traverse the left and right subtrees first before the root
-    # Similar to 0104-Maximum-Depth-of-Binary-Tree.py
     @staticmethod
     def countNodes(root: Optional[TreeNode]) -> int:
+        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Postorder because we need to traverse the left and right subtrees first before the root
+           Similar to 0104-Maximum-Depth-of-Binary-Tree.py"""
         # Base case: if the root is None, return 0
         if not root:
             return 0

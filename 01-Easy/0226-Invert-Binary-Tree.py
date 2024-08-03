@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/invert-binary-tree/
-# Difficulty: Easy
-# Description: Invert a binary tree.
+"""226. Invert Binary Tree
+Link: https://leetcode.com/problems/invert-binary-tree/
+Difficulty: Easy
+Description: Invert a binary tree."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Preorder because we need to process the current node first before the left and right subtrees
     @staticmethod
     def invertTree(root: Optional[TreeNode]) -> Optional[TreeNode]:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Preorder because need to process the current node first before the left and right subtrees"""
         # Base case: if the tree root is None, return None
         if not root:
             return None

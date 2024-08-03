@@ -1,14 +1,15 @@
-# Link: https://leetcode.com/problems/pascals-triangle-ii/
-# Difficulty: Easy
-# Description: Given an integer rowIndex, return the rowIndexth row of the Pascal's triangle.
+"""119. Pascal's Triangle II
+Link: https://leetcode.com/problems/pascals-triangle-ii/
+Difficulty: Easy
+Description: Given an integer rowIndex, return the rowIndexth row of the Pascal's triangle."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(n^2), Space Complexity: O(n)
     @staticmethod
     def getRow(rowIndex: int) -> List[int]:
+        """Optimal solution: Iteration. Time complexity: O(n^2), Space complexity: O(n)"""
         # Initialize the result list with the first row of Pascal's triangle
         result = [[1]]
         # Generate the subsequent (numRows - 1) rows of Pascal's triangle

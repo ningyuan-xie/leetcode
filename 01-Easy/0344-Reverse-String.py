@@ -1,17 +1,18 @@
-# Link: https://leetcode.com/problems/reverse-string/
-# Difficulty: Easy
-# Description: Write a function that reverses a string.
-# The input string is given as an array of characters s.
-# You must do this by modifying the input array in-place with O(1) extra memory.
+"""344. Reverse String
+Link: https://leetcode.com/problems/reverse-string/
+Difficulty: Easy
+Description: Write a function that reverses a string.
+The input string is given as an array of characters s.
+You must do this by modifying the input array in-place with O(1) extra memory."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0283-Move-Zeroes.py
     @staticmethod
     def reverseString(s: List[str]) -> None:
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0283-Move-Zeroes.py"""
         # Initialize two pointers: left and right
         left, right = 0, len(s) - 1
         # Loop until left pointer >= right pointer
@@ -23,10 +24,10 @@ class Solution:
             # Move the right pointer to the left
             right -= 1
 
-    # Alternative Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)
-    # Similar to 0232-Implement-Queue-Using-Stacks.py
     @staticmethod
     def reverseStringStack(s: List[str]) -> None:
+        """Alternative Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)
+           Similar to 0232-Implement-Queue-Using-Stacks.py"""
         # Initialize a stack to store the characters of s
         stack = []
         # Push each character of s into the stack
@@ -36,9 +37,9 @@ class Solution:
         for i in range(len(s)):
             s[i] = stack.pop()
 
-    # Alternative Solution: Recursion. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def reverseStringRecursion(s: List[str]) -> None:
+        """Alternative Solution: Recursion. Time Complexity: O(n), Space Complexity: O(n)"""
         # Base case: if the length of s is less than or equal to 1, return
         if len(s) <= 1:
             return

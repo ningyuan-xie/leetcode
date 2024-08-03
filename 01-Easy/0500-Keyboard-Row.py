@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/keyboard-row/
-# Difficulty: Easy
-# Description: Given a List of words, return the words that can be typed using letters of
-# alphabet on only one row's of American keyboard like the image below.
+"""500. Keyboard Row
+Link: https://leetcode.com/problems/keyboard-row/
+Difficulty: Easy
+Description: Given a List of words, return the words that can be typed using letters of
+alphabet on only one row's of American keyboard like the image below."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def findWords(words: List[str]) -> List[str]:
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize the keyboard rows
         keyboard_rows = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
         # Initialize the list of words that can be typed using one row

@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/intersection-of-two-arrays/
-# Difficulty: Easy
-# Description: Given two integer arrays nums1 and nums2, return an array of their intersection.
-# Each element in the result must be unique and you may return the result in any order.
+"""349. Intersection of Two Arrays
+Link: https://leetcode.com/problems/intersection-of-two-arrays/
+Difficulty: Easy
+Description: Given two integer arrays nums1 and nums2, return an array of their intersection.
+Each element in the result must be unique and you may return the result in any order."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Two Sets. Time Complexity: O(n + m), Space Complexity: O(n + m)
     @staticmethod
     def intersection(nums1: List[int], nums2: List[int]) -> List[int]:
+        """Optimal Solution: Two Sets. Time Complexity: O(n + m), Space Complexity: O(n + m)"""
         # Initialize two sets to store the unique elements of nums1 and nums2
         set1, set2 = set(nums1), set(nums2)
         # Initialize a list to store the intersection of nums1 and nums2

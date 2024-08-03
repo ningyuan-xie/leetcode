@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/binary-tree-preorder-traversal/
-# Difficulty: Easy
-# Description: Given the root of a binary tree, return the preorder traversal of its nodes' values.
+"""144. Binary Tree Preorder Traversal
+Link: https://leetcode.com/problems/binary-tree-preorder-traversal/
+Difficulty: Easy
+Description: Given the root of a binary tree, return the preorder traversal of its nodes' values."""
 
 from typing import List, Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
-    # Similar to 0094-Binary-Tree-Inorder-Traversal.py
     @staticmethod
     def preorderTraversal(root: Optional[TreeNode]) -> List[int]:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
+           Similar to 0094-Binary-Tree-Inorder-Traversal.py"""
         # Base case: if the tree root is None, return an empty list
         if not root:
             return []

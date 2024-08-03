@@ -1,14 +1,16 @@
-# Link: https://leetcode.com/problems/perfect-number/
-# Difficulty: Easy
-# Description: A perfect number is a positive integer that is equal to the sum of its positive divisors,
-# excluding itself. A divisor of an integer x is an integer that can divide x evenly.
-# Given an integer n, return true if n is a perfect number, otherwise return false.
+"""507. Perfect Number
+Link: https://leetcode.com/problems/perfect-number/
+Difficulty: Easy
+Description: A perfect number is a positive integer that is equal to the sum of its positive divisors,
+excluding itself. A divisor of an integer x is an integer that can divide x evenly.
+Given an integer n, return true if n is a perfect number, otherwise return false."""
+
 
 class Solution:
-    # Optimal Solution: Brute Force. Time Complexity: O(sqrt(n)), Space Complexity: O(1)
-    # Similar to 0492-Construct-the-Rectangle.py: use square root as an upper bound
     @staticmethod
     def checkPerfectNumber(num: int) -> bool:
+        """Optimal Solution: Brute Force. Time Complexity: O(sqrt(n)), Space Complexity: O(1)
+           Similar to 0492-Construct-the-Rectangle.py: use square root as an upper bound"""
         # Return False if n is less than 2
         if num < 2:
             return False

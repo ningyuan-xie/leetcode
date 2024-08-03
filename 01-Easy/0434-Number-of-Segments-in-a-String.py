@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/number-of-segments-in-a-string/
-# Difficulty: Easy
-# Description: You are given a string s, return the number of segments in the string.
-# A segment is defined to be a contiguous sequence of non-space characters.
+"""434. Number of Segments in a String
+Link: https://leetcode.com/problems/number-of-segments-in-a-string/
+Difficulty: Easy
+Description: You are given a string s, return the number of segments in the string.
+A segment is defined to be a contiguous sequence of non-space characters."""
+
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def countSegments(s: str) -> int:
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize the count of segments
         count = 0
         # Iterate through the string

@@ -1,17 +1,18 @@
-# Link: https://leetcode.com/problems/intersection-of-two-linked-lists/
-# Difficulty: Easy
-# Description: Given the heads of two singly linked-lists headA and headB,
-# return the node at which the two lists intersect.
-# If the two linked lists have no intersection at all, return null.
+"""160. Intersection of Two Linked Lists
+Link: https://leetcode.com/problems/intersection-of-two-linked-lists/
+Difficulty: Easy
+Description: Given the heads of two singly linked-lists headA and headB,
+return the node at which the two lists intersect.
+If the two linked lists have no intersection at all, return null."""
 
 from typing import Optional
 from package.data_structures import ListNode
 
 
 class Solution:
-    # Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1)
     @staticmethod
     def getIntersectionNode(headA: Optional[ListNode], headB: Optional[ListNode]) -> Optional[ListNode]:
+        """Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1)"""
         # Base case: if either of the linked lists is empty, return None
         if not headA or not headB:
             return None

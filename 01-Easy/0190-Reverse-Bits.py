@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/reverse-bits/
-# Difficulty: Easy
-# Description: Reverse bits of a given 32 bits unsigned integer.
+"""190. Reverse Bits
+Link: https://leetcode.com/problems/reverse-bits/
+Difficulty: Easy
+Description: Reverse bits of a given 32 bits unsigned integer."""
+
 
 class Solution:
-    # Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
-    # Similar to the reverse method in 02-Medium/0007-Reverse-Integer.py
     @staticmethod
     def reverseBits(n: int) -> int:
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
+           Similar to the reverse method in 02-Medium/0007-Reverse-Integer.py"""
         # Initialize result in binary
         result = 0  # 00000000000000000000000000000000
         # Traverse the 32 bits of the given integer from RIGHT to LEFT

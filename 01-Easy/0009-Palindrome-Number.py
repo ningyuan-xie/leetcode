@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/palindrome-number/
-# Difficulty: Easy
-# Description: Given an integer x, return true if x is palindrome integer.
+"""9. Palindrome Number
+Link: https://leetcode.com/problems/palindrome-number/
+Difficulty: Easy
+Description: Given an integer x, return true if x is palindrome integer."""
+
 
 class Solution:
-    # Optimal Solution: Convert to String. Time Complexity: O(n), Space Complexity: O(n)
-    # Alternative methods in 0344-Reverse-String.py: Two Pointers, Stack, Recursion
     @staticmethod
     def isPalindrome(x: int) -> bool:
+        """Optimal Solution: Convert to String. Time Complexity: O(n), Space Complexity: O(n)
+           Alternative methods in 0344-Reverse-String.py: Two Pointers, Stack, Recursion"""
         # Convert integer to string
         x = str(x)
         # Compare string with reversed string

@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/n-ary-tree-preorder-traversal/
-# Difficulty: Easy
-# Description: Given the root of an n-ary tree, return the preorder traversal of its nodes' values.
+"""589. N-ary Tree Preorder Traversal
+Link: https://leetcode.com/problems/n-ary-tree-preorder-traversal/
+Difficulty: Easy
+Description: Given the root of an n-ary tree, return the preorder traversal of its nodes' values."""
 
 from typing import List
 from package.data_structures import Node
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def preorder(root: Node) -> List[int]:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
         # Base Case
         if not root:
             return []

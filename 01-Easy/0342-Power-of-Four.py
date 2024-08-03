@@ -1,13 +1,15 @@
-# Link: https://leetcode.com/problems/power-of-four/
-# Difficulty: Easy
-# Description: Given an integer n, return true if it is a power of four. Otherwise, return false.
-# Follow up: Could you solve it without loops/recursion?
+"""342. Power of Four
+Link: https://leetcode.com/problems/power-of-four/
+Difficulty: Easy
+Description: Given an integer n, return true if it is a power of four. Otherwise, return false.
+Follow up: Could you solve it without loops/recursion?"""
+
 
 class Solution:
-    # Optimal Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))
-    # Similar to 0231-Power-of-Two.py and 0326-Power-of-Three.py
-    # Written in instance method format instead of static method format
     def isPowerOfFour(self, n: int) -> bool:
+        """Optimal Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))
+           Similar to 0231-Power-of-Two.py and 0326-Power-of-Three.py
+           Written in instance method format instead of static method format"""
         # Base case: if n is less than or equal to 0, return False
         if n <= 0:
             return False

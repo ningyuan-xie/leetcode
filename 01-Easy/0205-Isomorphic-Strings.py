@@ -1,13 +1,15 @@
-# Link: https://leetcode.com/problems/isomorphic-strings/
-# Difficulty: Easy
-# Description: Given two strings s and t, determine if they are isomorphic.
-# Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+"""205. Isomorphic Strings
+Link: https://leetcode.com/problems/isomorphic-strings/
+Difficulty: Easy
+Description: Given two strings s and t, determine if they are isomorphic.
+Two strings s and t are isomorphic if the characters in s can be replaced to get t."""
+
 
 class Solution:
-    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
-    # Similar to 0290-Word-Pattern.py
     @staticmethod
     def isIsomorphic(s: str, t: str) -> bool:
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
+           Similar to 0290-Word-Pattern.py"""
         # Initialize two dictionaries to store the mapping of characters
         s2t = {}
         t2s = {}

@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/contains-duplicate-ii/
-# Difficulty: Easy
-# Description: Given an integer array nums and an integer k, return true if there
-# are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+"""219. Contains Duplicate II
+Link: https://leetcode.com/problems/contains-duplicate-ii/
+Difficulty: Easy
+Description: Given an integer array nums and an integer k, return true if there
+are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
-    # Similar to 0001-Two-Sum.py
     @staticmethod
     def containsNearbyDuplicate(nums: List[int], k: int) -> bool:
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)
+           Similar to 0001-Two-Sum.py"""
         # Initialize a dictionary to store the element and its index
         num_dict = {}
         # Iterate through the list

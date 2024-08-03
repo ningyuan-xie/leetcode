@@ -1,13 +1,15 @@
-# Link: https://leetcode.com/problems/excel-sheet-column-number/
-# Difficulty: Easy
-# Description: Given a string columnTitle that represents the column title
-# as it appears in an Excel sheet, return its corresponding column number.
+"""171. Excel Sheet Column Number
+Link: https://leetcode.com/problems/excel-sheet-column-number/
+Difficulty: Easy
+Description: Given a string columnTitle that represents the column title
+as it appears in an Excel sheet, return its corresponding column number."""
+
 
 class Solution:
-    # Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)
-    # Reverse of 0168-Excel-Sheet-Column-Title.py
     @staticmethod
     def titleToNumber(columnTitle: str) -> int:
+        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)
+           Reverse of 0168-Excel-Sheet-Column-Title.py"""
         # Initialize the column number
         column_number = 0
         # Traverse the column title from LEFT to RIGHT

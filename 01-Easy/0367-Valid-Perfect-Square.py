@@ -1,13 +1,15 @@
-# Link: https://leetcode.com/problems/valid-perfect-square/
-# Difficulty: Easy
-# Description: Given a positive integer num, write a function which returns True
-# if num is a perfect square else False.
+"""367. Valid Perfect Square
+Link: https://leetcode.com/problems/valid-perfect-square/
+Difficulty: Easy
+Description: Given a positive integer num, write a function which returns True
+if num is a perfect square else False."""
+
 
 class Solution:
-    # Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
-    # Similar to 0069-Sqrt(x).py
     @staticmethod
     def isPerfectSquare(num: int) -> bool:
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)
+           Similar to 0069-Sqrt(x).py"""
         # Base case: 0 and 1 are perfect squares
         if num < 2:
             return True

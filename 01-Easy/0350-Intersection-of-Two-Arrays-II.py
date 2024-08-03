@@ -1,17 +1,18 @@
-# Link: https://leetcode.com/problems/intersection-of-two-arrays-ii/
-# Difficulty: Easy
-# Description: Given two integer arrays nums1 and nums2, return an array of their intersection.
-# Each element in the result should appear as many times as it shows in both arrays,
-# and you may return the result in any order.
+"""350. Intersection of Two Arrays II
+Link: https://leetcode.com/problems/intersection-of-two-arrays-ii/
+Difficulty: Easy
+Description: Given two integer arrays nums1 and nums2, return an array of their intersection.
+Each element in the result should appear as many times as it shows in both arrays,
+and you may return the result in any order."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Hash Table. Time Complexity: O(n + m), Space Complexity: O(n)
-    # Similar to 0242-Valid-Anagram.py
     @staticmethod
     def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
+        """Optimal Solution: Hash Table. Time Complexity: O(n + m), Space Complexity: O(n)
+           Similar to 0242-Valid-Anagram.py"""
         # Initialize a hash table to store the frequency of each element in nums1
         num_freq = {}
         for num in nums1:

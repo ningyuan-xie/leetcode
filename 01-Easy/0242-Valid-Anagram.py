@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/valid-anagram/
-# Difficulty: Easy
-# Description: Given two strings s and t, return true if t is an anagram of s, and false otherwise.
-# An anagram is a word formed by rearranging the letters of another, such as cinema, formed from iceman.
+"""242. Valid Anagram
+Link: https://leetcode.com/problems/valid-anagram/
+Difficulty: Easy
+Description: Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+An anagram is a word formed by rearranging the letters of another, such as cinema, formed from iceman."""
+
 
 class Solution:
-    # Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def isAnagram(s: str, t: str) -> bool:
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
         # Base case: if the lengths of two strings are different, return False
         if len(s) != len(t):
             return False

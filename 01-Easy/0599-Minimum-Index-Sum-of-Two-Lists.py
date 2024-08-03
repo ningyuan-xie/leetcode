@@ -1,19 +1,20 @@
-# Link: https://leetcode.com/problems/minimum-index-sum-of-two-lists/
-# Difficulty: Easy
-# Description: Given two arrays of strings list1 and list2, find the common strings with the
-# least index sum. A common string is a string that appeared in both list1 and list2.
-# A common string with the least index sum is a common string such that if it appeared at
-# list1[i] and list2[j] then i + j should be the minimum value among all the other common strings.
-# Return all the common strings with the least index sum. Return the answer in any order.
+"""599. Minimum Index Sum of Two Lists
+Link: https://leetcode.com/problems/minimum-index-sum-of-two-lists/
+Difficulty: Easy
+Description: Given two arrays of strings list1 and list2, find the common strings with the
+least index sum. A common string is a string that appeared in both list1 and list2.
+A common string with the least index sum is a common string such that if it appeared at
+list1[i] and list2[j] then i + j should be the minimum value among all the other common strings.
+Return all the common strings with the least index sum. Return the answer in any order."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Hash Map. Time Complexity: O(n + m), Space Complexity: O(n)
     @staticmethod
     def findRestaurant(list1: List[str], list2: List[str]) -> List[str]:
-        # Initialize a hash map to store the index sum of each common string
+        """Optimal Solution: Hash Table. Time Complexity: O(n + m), Space Complexity: O(n)"""
+        # Initialize a hash table to store the index sum of each common string
         common_index_sum = {}
         # Initialize the minimum index sum
         min_index_sum = float('inf')
@@ -26,7 +27,7 @@ class Solution:
             if string in list2:
                 # Index sum = list1's index + list2's index
                 index_sum = i + list2.index(string)
-                # Add the string to the hash map. E.g. {"happy": 1, "sad": 1}
+                # Add the string to the hash table. E.g. {"happy": 1, "sad": 1}
                 common_index_sum[string] = index_sum
                 # Update the minimum index sum
                 min_index_sum = min(min_index_sum, index_sum)

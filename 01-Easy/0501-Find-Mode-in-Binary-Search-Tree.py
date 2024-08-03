@@ -1,12 +1,13 @@
-# Link: https://leetcode.com/problems/find-mode-in-binary-search-tree/
-# Difficulty: Easy
-# Description: Given the root of a binary search tree (BST) with duplicates,
-# return all the mode(s) (i.e., the most frequently occurred element) in it.
-# If the tree has more than one mode, return them in any order.
-# Assume a BST is defined as follows:
-# - The left subtree of a node contains only nodes with keys less than or equal to the node's key.
-# - The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
-# - Both the left and right subtrees must also be binary search trees.
+"""501. Find Mode in Binary Search Tree
+Link: https://leetcode.com/problems/find-mode-in-binary-search-tree/
+Difficulty: Easy
+Description: Given the root of a binary search tree (BST) with duplicates,
+return all the mode(s) (i.e., the most frequently occurred element) in it.
+If the tree has more than one mode, return them in any order.
+Assume a BST is defined as follows:
+- The left subtree of a node contains only nodes with keys less than or equal to the node's key.
+- The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
+- Both the left and right subtrees must also be binary search trees."""
 
 
 from typing import List
@@ -14,16 +15,17 @@ from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0094-Binary-Tree-Inorder-Traversal.py
     @staticmethod
     def findMode(root: TreeNode) -> List[int]:
+        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0094-Binary-Tree-Inorder-Traversal.py"""
         modes, current_mode_value, current_mode_frequency, previous_mode_frequency = [], 0, 0, 0
 
-        # Helper function: Inorder DFS Traversal: left -> root -> right
-        # Inorder because for BST, the inorder traversal will be in ascending order
-        # This sorted order allows us to find the mode(s) in a single traversal
         def inorder_dfs_traversal(node: TreeNode) -> None:
+            """Helper function: Inorder DFS Traversal: left -> root -> right
+            Inorder because for BST, the inorder traversal will be in ascending order
+            This sorted order allows us to find the mode(s) in a single traversal"""
+
             # nonlocal variables to access the outer scope immutable variables
             nonlocal modes, current_mode_value, current_mode_frequency, previous_mode_frequency
             # Base Case: If the current node is None, do nothing and return

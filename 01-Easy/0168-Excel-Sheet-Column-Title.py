@@ -1,13 +1,15 @@
-# Link: https://leetcode.com/problems/excel-sheet-column-title/
-# Difficulty: Easy
-# Description: Given an integer columnNumber,
-# return its corresponding column title as it appears in an Excel sheet.
+"""168. Excel Sheet Column Title
+Link: https://leetcode.com/problems/excel-sheet-column-title/
+Difficulty: Easy
+Description: Given an integer columnNumber,
+return its corresponding column title as it appears in an Excel sheet."""
+
 
 class Solution:
-    # Optimal Solution: Math. Time Complexity: O(log(columnNumber)), Space Complexity: O(1)
-    # Similar to 0067-Add-Binary.py
     @staticmethod
     def convertToTitle(columnNumber: int) -> str:
+        """Optimal Solution: Math. Time Complexity: O(log(columnNumber)), Space Complexity: O(1)
+           Similar to 0067-Add-Binary.py"""
         result = ""
         # Title will be filled from RIGHT to LEFT
         while columnNumber > 0:

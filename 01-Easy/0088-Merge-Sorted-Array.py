@@ -1,16 +1,18 @@
-# Link: https://leetcode.com/problems/merge-sorted-array/
-# Difficulty: Easy
-# Description: You are given two integer arrays nums1 and nums2, sorted in non-decreasing order,
-# and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
-# Merge nums1 and nums2 into a single array sorted in non-decreasing order.
+"""88. Merge Sorted Array
+Link: https://leetcode.com/problems/merge-sorted-array/
+Difficulty: Easy
+Description: You are given two integer arrays nums1 and nums2, sorted in non-decreasing order,
+and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+Merge nums1 and nums2 into a single array sorted in non-decreasing order."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1)
     @staticmethod
     def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:  # merge nums2 into nums1
+        """Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1)
+           Merge nums2 into nums1 in-place."""
         # Initialize the pointers for nums1 and nums2
         p1 = m - 1  # last index of current nums1
         p2 = n - 1  # last index of nums2

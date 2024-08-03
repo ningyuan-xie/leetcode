@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/length-of-last-word/
-# Difficulty: Easy
-# Description: Given a string s consisting of some words separated by some number of spaces,
-# return the length of the last word in the string.
+"""58. Length of Last Word
+Link: https://leetcode.com/problems/length-of-last-word/
+Difficulty: Easy
+Description: Given a string s consisting of some words separated by some number of spaces,
+return the length of the last word in the string."""
+
 
 class Solution:
-    # Optimal Solution: Split. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def lengthOfLastWord(s: str) -> int:
+        """Optimal Solution: Split. Time Complexity: O(n), Space Complexity: O(n)"""
         # Split the string by space
         words = s.split()  # E.g. "Hello World" -> ["Hello", "World"]
         # If the list is empty, return 0

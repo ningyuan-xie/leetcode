@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/valid-palindrome/
-# Difficulty: Easy
-# Description: Given a string s, determine if it is a palindrome,
-# considering only alphanumeric characters and ignoring cases.
+"""125. Valid Palindrome
+Link: https://leetcode.com/problems/valid-palindrome/
+Difficulty: Easy
+Description: Given a string s, determine if it is a palindrome,
+considering only alphanumeric characters and ignoring cases."""
+
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def isPalindrome(s: str) -> bool:
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
         # Convert the string to lowercase and remove non-alphanumeric characters
         # isalnum() checks if the character is an alphabet or a digit: a-z, A-Z, 0-9
         # ''.join([]) concatenates list of str into str without spaces

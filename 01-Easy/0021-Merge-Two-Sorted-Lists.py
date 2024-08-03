@@ -1,15 +1,16 @@
-# Link: https://leetcode.com/problems/merge-two-sorted-lists/
-# Difficulty: Easy
-# Description: Merge two sorted linked lists and return it as a sorted list.
-# The list should be made by splicing together the nodes of the first two lists.
+"""21. Merge Two Sorted Lists
+Link: https://leetcode.com/problems/merge-two-sorted-lists/
+Difficulty: Easy
+Description: Merge two sorted linked lists and return it as a sorted list.
+The list should be made by splicing together the nodes of the first two lists."""
 
 from package.data_structures import ListNode
 
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(n + m), Space Complexity: O(1)
     @staticmethod
     def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
+        """Optimal Solution: Iteration. Time Complexity: O(n + m), Space Complexity: O(1)"""
         # Dummy node to keep track of the head of the linked list
         dummy = ListNode()  # dummy: 0 -> None
         # Tail node to keep track of the last node of the linked list

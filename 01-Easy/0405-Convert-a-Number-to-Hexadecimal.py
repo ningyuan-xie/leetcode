@@ -1,14 +1,16 @@
-# Link: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
-# Difficulty: Easy
-# Description: Given an integer num, return a string representing its hexadecimal representation.
-# For negative integers, two’s complement method is used. For example:
-# -1 = 2^32 - 1 = 4294967295 = 0xffffffff; -2 = 2^32 - 2 = 4294967294 = 0xfffffffe
+"""405. Convert a Number to Hexadecimal
+Link: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
+Difficulty: Easy
+Description: Given an integer num, return a string representing its hexadecimal representation.
+For negative integers, two’s complement method is used. For example:
+-1 = 2^32 - 1 = 4294967295 = 0xffffffff; -2 = 2^32 - 2 = 4294967294 = 0xfffffffe"""
+
 
 class Solution:
-    # Optimal Solution: Iterative Division. Time Complexity: O(log(n)), Space Complexity: O(log(n))
-    # Similar to 0168-Excel-Sheet-Column-Title.py
     @staticmethod
     def toHex(num: int) -> str:
+        """Optimal Solution: Iterative Division. Time Complexity: O(log(n)), Space Complexity: O(log(n))
+           Similar to 0168-Excel-Sheet-Column-Title.py"""
         # Base case: If the number is 0, return "0"
         if num == 0:
             return "0"

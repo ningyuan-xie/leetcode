@@ -1,17 +1,18 @@
-# Link: https://leetcode.com/problems/path-sum/
-# Difficulty: Easy
-# Description: Given the root of a binary tree and an integer targetSum, return true
-# if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum.
+"""112. Path Sum
+Link: https://leetcode.com/problems/path-sum/
+Difficulty: Easy
+Description: Given the root of a binary tree and an integer targetSum, return true if the tree
+has a root-to-leaf path such that adding up all the values along the path equals targetSum."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Preorder because we need to process the current node first before the left and right subtrees
     @staticmethod
     def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Preorder because we need to process the current node first before left and right subtrees"""
         # Base case: if the tree root is None, return False
         if not root:
             return False
@@ -30,24 +31,22 @@ class Solution:
 
 # Unit Test: Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22, Output: True
 # The tree has a root-to-leaf path 5->4->11->2 which sums up to 22
-assert Solution.hasPathSum(TreeNode(5,
-                                    TreeNode(4,
-                                             TreeNode(11,
-                                                      TreeNode(7), TreeNode(2))),
-                                    TreeNode(8,
-                                             TreeNode(13), TreeNode(4, None, TreeNode(1)))),
-                           22) == True
+root_test = TreeNode.build_binary_tree([5, 4, 8, 11, None, 13, 4, 7, 2, None, None, None, 1])
+assert Solution.hasPathSum(root_test, 22) == True
 
 # Unit Test: Input: root = [1,2,3], targetSum = 5, Output: False
 # The tree has no root-to-leaf path that sums up to 5
-assert Solution.hasPathSum(TreeNode(1, TreeNode(2), TreeNode(3)), 5) == False
+root_test = TreeNode.build_binary_tree([1, 2, 3])
+assert Solution.hasPathSum(root_test, 5) == False
 
 # Unit Test: Input: root = [1,2], targetSum = 0, Output: False
 # The tree has no root-to-leaf path that sums up to 0
-assert Solution.hasPathSum(TreeNode(1, TreeNode(2)), 0) == False
+root_test = TreeNode.build_binary_tree([1, 2])
+assert Solution.hasPathSum(root_test, 0) == False
 
 # Unit Test: Input: root = [], targetSum = 0, Output: False
 # The tree is empty
-assert Solution.hasPathSum(None, 0) == False
+root_test = None
+assert Solution.hasPathSum(root_test, 0) == False
 
 print("All unit tests are passed")

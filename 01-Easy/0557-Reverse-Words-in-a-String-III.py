@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/reverse-words-in-a-string-iii/
-# Difficulty: Easy
-# Description: Given a string s, reverse the order of characters in each word within a sentence
-# while still preserving whitespace and initial word order.
+"""557. Reverse Words in a String III
+Link: https://leetcode.com/problems/reverse-words-in-a-string-iii/
+Difficulty: Easy
+Description: Given a string s, reverse the order of characters in each word within a sentence
+while still preserving whitespace and initial word order."""
+
 
 class Solution:
-    # Optimal Solution: Split, Reverse, and Join. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def reverseWords(s: str) -> str:
+        """Optimal Solution: Split, Reverse, and Join. Time Complexity: O(n), Space Complexity: O(n)"""
         # Split the string into words
         words = s.split()
         # Reverse each word in the list
@@ -14,10 +16,10 @@ class Solution:
         # Join the reversed words into a single string separated by space
         return ' '.join(reversed_words)
 
-    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)
-    # Similar to 0344-Reverse-String.py and 0541-Reverse-String-II.py
     @staticmethod
     def reverseWordsTwoPointers(s: str) -> str:
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)
+           Similar to 0344-Reverse-String.py and 0541-Reverse-String-II.py"""
         # Convert the string into a list of characters
         s = list(s)
         # Initialize the left and right pointers

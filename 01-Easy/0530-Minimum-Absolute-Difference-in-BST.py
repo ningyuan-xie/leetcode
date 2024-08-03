@@ -1,26 +1,27 @@
-# Link: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
-# Difficulty: Easy
-# Description: Given the root of a Binary Search Tree (BST),
-# return the minimum absolute difference between the values of any two different nodes in the tree.
+"""530. Minimum Absolute Difference in BST
+Link: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
+Difficulty: Easy
+Description: Given the root of a Binary Search Tree (BST),
+return the minimum absolute difference between the values of any two different nodes in the tree."""
 
 from typing import Optional
 from package.data_structures import TreeNode
 
 
 class Solution:
-    # Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
-    # Similar to 0501-Find-Mode-in-Binary-Search-Tree.py
     @staticmethod
     def getMinimumDifference(root: Optional[TreeNode]) -> int:
+        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1)
+           Similar to 0501-Find-Mode-in-Binary-Search-Tree.py"""
         # Initialize the minimum absolute difference
         min_absolute_diff = float("inf")  # positive infinity
         # Initialize the previous node
         prev_node = None
 
-        # Helper function: Inorder DFS Traversal: left -> root -> right
-        # Inorder because for BST, the inorder traversal will be in ascending order
-        # This sorted order allows us to find the minimum absolute difference in a single traversal
         def inorder_dfs_traversal(node: TreeNode) -> None:
+            """Helper function: Inorder DFS Traversal: left -> root -> right
+               Inorder because for BST, the inorder traversal will be in ascending order,
+               which allows us to find the minimum absolute difference in a single traversal"""
             # nonlocal variables to access the outer scope immutable variables
             nonlocal min_absolute_diff, prev_node
             # Base Case: If the current node is None, do nothing and return

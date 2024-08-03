@@ -1,23 +1,24 @@
-# Link: https://leetcode.com/problems/palindrome-linked-list/
-# Difficulty: Easy
-# Description: Given the head of a singly linked list, return true if it is a palindrome.
-# Follow up: Could you do it in O(n) time and O(1) space?
+"""234. Palindrome Linked List
+Link: https://leetcode.com/problems/palindrome-linked-list/
+Difficulty: Easy
+Description: Given the head of a singly linked list, return true if it is a palindrome.
+Follow up: Could you do it in O(n) time and O(1) space?"""
 
 from typing import Optional
 from package.data_structures import ListNode
 
 
 class Solution:
-    # Optimal Solution: Reverse the second half of the linked list and compare
-    # the first half and the second half. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def isPalindrome(head: Optional[ListNode]) -> bool:
+        """Optimal Solution: Reverse the second half of the linked list and compare
+           the first half and the second half. Time Complexity: O(n), Space Complexity: O(1)"""
         # Base case: if head is None or head.next is None, return True
         if not head or not head.next:
             return True
 
-        # Helper function to reverse a linked list: same as 0206-Reverse-Linked-List.py
         def reverse_linked_list(node: ListNode) -> ListNode:
+            """Helper function to reverse a linked list: same as 0206-Reverse-Linked-List.py"""
             prev = None
             while node:
                 next_node = node.next  # Save the next node for the next iteration

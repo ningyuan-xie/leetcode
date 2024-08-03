@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/ugly-number/
-# Difficulty: Easy
-# Description: Write a program to check whether a given number is an ugly number.
-# An ugly number is a positive number whose prime factors only include 2, 3, and/or 5.
+"""263. Ugly Number
+Link: https://leetcode.com/problems/ugly-number/
+Difficulty: Easy
+Description: Write a program to check whether a given number is an ugly number.
+An ugly number is a positive number whose prime factors only include 2, 3, and/or 5."""
+
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(log(n)), Space Complexity: O(1)
     @staticmethod
     def isUgly(n: int) -> bool:
+        """Optimal Solution: Iteration. Time Complexity: O(log(n)), Space Complexity: O(1)"""
         # Base case: if the number is less than or equal to 0, return False
         if n <= 0:
             return False

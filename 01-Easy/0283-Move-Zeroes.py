@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/move-zeroes/
-# Difficulty: Easy
-# Description: Given an integer array nums, move all 0's to the end of it
-# while maintaining the relative order of the non-zero elements.
-# Note that you must do this in-place without making a copy of the array.
+"""283. Move Zeroes
+Link: https://leetcode.com/problems/move-zeroes/
+Difficulty: Easy
+Description: Given an integer array nums, move all 0's to the end of it
+while maintaining the relative order of the non-zero elements.
+Note that you must do this in-place without making a copy of the array."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def moveZeroes(nums: List[int]) -> None:
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize the left and right pointers
         left, right = 0, 0
         # Move the right pointer to the end of the array

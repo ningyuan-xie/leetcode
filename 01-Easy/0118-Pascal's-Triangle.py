@@ -1,14 +1,15 @@
-# Link: https://leetcode.com/problems/pascals-triangle/
-# Difficulty: Easy
-# Description: Given an integer numRows, return the first numRows of Pascal's triangle.
+"""118. Pascal's Triangle
+Link: https://leetcode.com/problems/pascals-triangle/
+Difficulty: Easy
+Description: Given an integer numRows, return the first numRows of Pascal's triangle."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Iteration. Time Complexity: O(numRows^2), Space Complexity: O(numRows^2)
     @staticmethod
     def generate(numRows: int) -> List[List[int]]:
+        """Optimal Solution: Iteration. Time Complexity: O(numRows^2), Space Complexity: O(numRows^2)"""
         # Initialize the result list with the first row of Pascal's triangle
         result = [[1]]
         # Generate the subsequent (numRows - 1) rows of Pascal's triangle

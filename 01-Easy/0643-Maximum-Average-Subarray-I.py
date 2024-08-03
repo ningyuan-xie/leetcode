@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/maximum-average-subarray-i/
-# Difficulty: Easy
-# Description: You are given an integer array nums consisting of n elements, and an integer k.
-# Find a contiguous subarray whose length is equal to k that has the maximum average value and
-# return this value. Any answer with a calculation error less than 10^-5 will be accepted.
+"""643. Maximum Average Subarray I
+Link: https://leetcode.com/problems/maximum-average-subarray-i/
+Difficulty: Easy
+Description: You are given an integer array nums consisting of n elements, and an integer k.
+Find a contiguous subarray whose length is equal to k that has the maximum average value and
+return this value. Any answer with a calculation error less than 10^-5 will be accepted."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)
     @staticmethod
     def findMaxAverage(nums: List[int], k: int) -> float:
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize the sum of the first k elements
         max_sum = sum(nums[:k])
         current_sum = max_sum

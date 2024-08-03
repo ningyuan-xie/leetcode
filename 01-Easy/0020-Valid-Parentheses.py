@@ -1,12 +1,14 @@
-# Link: https://leetcode.com/problems/valid-parentheses/
-# Difficulty: Easy
-# Description: Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
-# determine if the input string is valid.
+"""20. Valid Parentheses
+Link: https://leetcode.com/problems/valid-parentheses/
+Difficulty: Easy
+Description: Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+determine if the input string is valid."""
+
 
 class Solution:
-    # Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)
     @staticmethod
     def isValid(s: str) -> bool:
+        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)"""
         # Create dictionary with key-value pairs
         bracket_dict = {
             "(": ")",

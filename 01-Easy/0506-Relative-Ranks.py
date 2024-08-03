@@ -1,16 +1,17 @@
-# Link: https://leetcode.com/problems/relative-ranks/
-# Difficulty: Easy
-# Description: You are given an integer array score of size n, where score[i] is the
-# score of the ith athlete in a competition. All the scores are guaranteed to be unique.
-# Return an array answer of size n where answer[i] is the ith athlete's rank.
+"""506. Relative Ranks
+Link: https://leetcode.com/problems/relative-ranks/
+Difficulty: Easy
+Description: You are given an integer array score of size n, where score[i] is the
+score of the ith athlete in a competition. All the scores are guaranteed to be unique.
+Return an array answer of size n where answer[i] is the ith athlete's rank."""
 
 from typing import List
 
 
 class Solution:
-    # Optimal Solution: Sorting. Time Complexity: O(n log n), Space Complexity: O(n)
     @staticmethod
     def findRelativeRanks(score: List[int]) -> List[str]:
+        """Optimal Solution: Sorting. Time Complexity: O(n log n), Space Complexity: O(n)"""
         # Sort the scores in descending order
         sorted_score = sorted(score, reverse=True)  # [10, 3, 8, 9, 4] -> [10, 9, 8, 4, 3]
         # Initialize the result array
