@@ -17,6 +17,9 @@ class Solution:
         if not headA or not headB:
             return None
 
+        # Temporarily enable identity check for intersection detection
+        ListNode.identity_check = True
+
         # Initialize two pointers to the heads of the linked lists
         pointerA, pointerB = headA, headB
 
@@ -28,22 +31,31 @@ class Solution:
             # If pointerB reaches the end of the linked list, reset it to the head of the other list
             pointerB = pointerB.next if pointerB else headA
 
+        # Disable identity check after intersection detection
+        ListNode.identity_check = False
         return pointerA
 
 
 # Unit Test: Input: headA = [4,1,8,4,5], headB = [5,0,1,8,4,5], Output: ListNode(8)
-headA_test = ListNode(4, ListNode(1, ListNode(8, ListNode(4, ListNode(5)))))
-headB_test = ListNode(5, ListNode(0, ListNode(1, headA_test.next.next)))
-assert Solution.getIntersectionNode(headA_test, headB_test) == headA_test.next.next
+intersection = ListNode.build_linked_list([8, 4, 5])
+headA_test = ListNode.build_linked_list([4, 1])
+headA_test.next.next = intersection
+headB_test = ListNode.build_linked_list([5, 0, 1])
+headB_test.next.next.next = intersection
+assert Solution.getIntersectionNode(headA_test, headB_test) == intersection
 
 # Unit Test: Input: headA = [2,6,4], headB = [1,5], Output: None
-headA_test = ListNode(2, ListNode(6, ListNode(4)))
-headB_test = ListNode(1, ListNode(5))
-assert Solution.getIntersectionNode(headA_test, headB_test) is None
+intersection = ListNode.build_linked_list([])
+headA_test = ListNode.build_linked_list([2, 6, 4])
+headB_test = ListNode.build_linked_list([1, 5])
+assert Solution.getIntersectionNode(headA_test, headB_test) == intersection
 
 # Unit Test: Input: headA = [1,9,1,2,4], headB = [3,2,4], Output: ListNode(2)
-headA_test = ListNode(1, ListNode(9, ListNode(1, ListNode(2, ListNode(4)))))
-headB_test = ListNode(3, headA_test.next.next.next)
-assert Solution.getIntersectionNode(headA_test, headB_test) == headA_test.next.next.next
+intersection = ListNode.build_linked_list([2, 4])
+headA_test = ListNode.build_linked_list([1, 9, 1])
+headA_test.next.next.next = intersection
+headB_test = ListNode.build_linked_list([3])
+headB_test.next = intersection
+assert Solution.getIntersectionNode(headA_test, headB_test) == intersection
 
 print("All unit tests are passed")

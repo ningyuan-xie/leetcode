@@ -11,15 +11,39 @@ class ListNode:
         self.val = val
         self.next = next
 
-    # Instance equality method: override the __eq__ method to compare two ListNode objects
+    # Class attributes to control different equality behavior
+    identity_check = False  # Default version: check the value of the node
+    single_value_check = False  # Default version: check the full value of the node
+
     def __eq__(self, other):
         """Instance equality method: override the __eq__ method to compare two ListNode objects"""
+        if ListNode.identity_check:  # 0160-Intersection-of-Two-Linked-Lists.py
+            return self is other if isinstance(other, ListNode) else False
+        if ListNode.single_value_check:  # 0141-Linked-List-Cycle.py
+            return self.val == other.val if isinstance(other, ListNode) else False
         return (self.val == other.val
-                and self.next == other.next) if other else False
+                and self.next == other.next) if isinstance(other, ListNode) else False
 
     def __str__(self):
         """Instance description method: override the __str__ method"""
         return f"ListNode({self.val}, {self.next})"
+
+    @staticmethod
+    def build_linked_list(array: List) -> Optional['ListNode']:
+        """Helper function to build a linked list from a list"""
+        # Base Case: If the array is empty, return None
+        if not array:
+            return None
+
+        # Initialize the head node and the current node
+        head = ListNode(array[0])
+        current = head
+
+        # Traverse the rest of the elements
+        for val in array[1:]:
+            current.next = ListNode(val)
+            current = current.next
+        return head
 
     @staticmethod
     def printLinkedList(head):

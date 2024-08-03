@@ -27,21 +27,18 @@ class Solution:
 
 
 # Unit Test: Input: head = [1,2,3,4,5], Output: [5,4,3,2,1]
-head_test = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-result = Solution.reverseList(head_test)
-print(result)
-assert result == ListNode(5, ListNode(4, ListNode(3, ListNode(2, ListNode(1)))))
+head_test = ListNode.build_linked_list([1, 2, 3, 4, 5])
+head_expected = ListNode.build_linked_list([5, 4, 3, 2, 1])
+assert Solution.reverseList(head_test) == head_expected
 
 # Unit Test: Input: head = [1,2], Output: [2,1]
-head_test = ListNode(1, ListNode(2))
-result = Solution.reverseList(head_test)
-print(result)
-assert result == ListNode(2, ListNode(1))
+head_test = ListNode.build_linked_list([1, 2])
+head_expected = ListNode.build_linked_list([2, 1])
+assert Solution.reverseList(head_test) == head_expected
 
 # Unit Test: Input: head = [], Output: []
-head_test = None
-result = Solution.reverseList(head_test)
-print(result)
-assert result is None
+head_test = ListNode.build_linked_list([])
+head_expected = ListNode.build_linked_list([])
+assert Solution.reverseList(head_test) == head_expected
 
 print("All unit tests are passed")

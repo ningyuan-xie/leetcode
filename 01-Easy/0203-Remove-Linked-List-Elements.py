@@ -29,23 +29,18 @@ class Solution:
 
 
 # Unit Test: Input: head = [1,2,6,3,4,5,6], val = 6, Output: [1,2,3,4,5]
-head_test = ListNode(1, ListNode(2, ListNode(6,
-                                             ListNode(3, ListNode(4,
-                                                                  ListNode(5, ListNode(6)))))))
-result = Solution.removeElements(head_test, 6)
-print(result)
-assert result == ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+head_test = ListNode.build_linked_list([1, 2, 6, 3, 4, 5, 6])
+head_expected = ListNode.build_linked_list([1, 2, 3, 4, 5])
+assert Solution.removeElements(head_test, 6) == head_expected
 
 # Unit Test: Input: head = [], val = 1, Output: []
-head_test = None
-result = Solution.removeElements(head_test, 1)
-print(result)
-assert result is None
+head_test = ListNode.build_linked_list([])
+head_expected = ListNode.build_linked_list([])
+assert Solution.removeElements(head_test, 1) == head_expected
 
 # Unit Test: Input: head = [7,7,7,7], val = 7, Output: []
-head_test = ListNode(7, ListNode(7, ListNode(7, ListNode(7))))
-result = Solution.removeElements(head_test, 7)
-print(result)
-assert result is None
+head_test = ListNode.build_linked_list([7, 7, 7, 7])
+head_expected = ListNode.build_linked_list([])
+assert Solution.removeElements(head_test, 7) == head_expected
 
 print("All unit tests are passed")

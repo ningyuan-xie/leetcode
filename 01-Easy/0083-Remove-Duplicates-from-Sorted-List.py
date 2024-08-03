@@ -30,11 +30,8 @@ class Solution:
 
 
 # Unit Test: Input: head = [1,1,2], Output: [1,2]
-head_test = ListNode(1, ListNode(1, ListNode(2)))
-result = Solution.deleteDuplicates(head_test)
-# Two ways to print the linked list result
-print(result)
-ListNode.printLinkedList(result)
-assert result == ListNode(1, ListNode(2))
+head_test = ListNode.build_linked_list([1, 1, 2])
+head_expected = ListNode.build_linked_list([1, 2])
+assert Solution.deleteDuplicates(head_test) == head_expected
 
 print("All unit tests are passed")

@@ -15,6 +15,10 @@ class Solution:
            Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize two pointers: slow and fast
         slow, fast = head, head
+
+        # Temporarily enable single value check for cycle detection
+        ListNode.single_value_check = True
+
         # Traverse the linked list
         while fast and fast.next:  # make sure fast.next also exists as we shift fast by two nodes
             # Move slow pointer by one node
@@ -24,24 +28,27 @@ class Solution:
             # If there is a cycle, the slow and fast pointers will meet
             if slow == fast:
                 return True
+
+        # Disable single value check after cycle detection
+        ListNode.single_value_check = False
         return False
 
 
 # Unit Test: Input: head = [3,2,0,-4], pos = 1, Output: True
 # There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
-head1 = ListNode(3, ListNode(2, ListNode(0, ListNode(-4))))
+head1 = ListNode.build_linked_list([3, 2, 0, -4])
 head1.next.next.next.next = head1.next  # Connect the tail to the 1st node
 assert Solution.hasCycle(head1) == True
 
 # Unit Test: Input: head = [1,2], pos = 0, Output: True
 # There is a cycle in the linked list, where the tail connects to the 0th node (0-indexed).
-head2 = ListNode(1, ListNode(2))
+head2 = ListNode.build_linked_list([1, 2])
 head2.next.next = head2  # Connect the tail to the 0th node
 assert Solution.hasCycle(head2) == True
 
 # Unit Test: Input: head = [1], pos = -1, Output: False
 # There is no cycle in the linked list.
-head3 = ListNode(1)
+head3 = ListNode.build_linked_list([1])
 assert Solution.hasCycle(head3) == False
 
 print("All unit tests are passed")
