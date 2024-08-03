@@ -2,8 +2,8 @@
 Link: https://leetcode.com/problems/linked-list-cycle/
 Difficulty: Easy
 Description: Given head, the head of a linked list, determine if the linked list has a cycle in it.
-There is a cycle in a linked list if there is some node in the list that can be
-reached again by continuously following the next pointer."""
+There is a cycle in a linked list if there is some node in the list that can be reached again by
+continuously following the next pointer."""
 
 from package.data_structures import ListNode
 
@@ -11,7 +11,7 @@ from package.data_structures import ListNode
 class Solution:
     @staticmethod
     def hasCycle(head: ListNode) -> bool:
-        """Optimal Solution: Floyd's Tortoise and Hare (Cycle Detection) Algorithm
+        """Optimal Solution: Floyd's Tortoise and Hare (Cycle Detection) Algorithm.
            Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize two pointers: slow and fast
         slow, fast = head, head

@@ -1,9 +1,8 @@
 """160. Intersection of Two Linked Lists
 Link: https://leetcode.com/problems/intersection-of-two-linked-lists/
 Difficulty: Easy
-Description: Given the heads of two singly linked-lists headA and headB,
-return the node at which the two lists intersect.
-If the two linked lists have no intersection at all, return null."""
+Description: Given the heads of two singly linked-lists headA and headB, return the node at which
+the two lists intersect. If the two linked lists have no intersection at all, return null."""
 
 from typing import Optional
 from package.data_structures import ListNode
@@ -12,7 +11,10 @@ from package.data_structures import ListNode
 class Solution:
     @staticmethod
     def getIntersectionNode(headA: Optional[ListNode], headB: Optional[ListNode]) -> Optional[ListNode]:
-        """Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1)
+           Intuition: make the two pointers pass the same total distance (maximum distance = m + n),
+           and they will certainly meet at an intersection node or at the final node None
+           Similar to 0141-Linked-List-Cycle.py"""
         # Base case: if either of the linked lists is empty, return None
         if not headA or not headB:
             return None
@@ -22,9 +24,7 @@ class Solution:
 
         # Initialize two pointers to the heads of the linked lists
         pointerA, pointerB = headA, headB
-
         # Traverse the linked lists until the two pointers meet at intersection or meet at None
-        # Intuition: make the two pointers pass the same total distance, and they will certainly meet
         while pointerA != pointerB:
             # If pointerA reaches the end of the linked list, reset it to the head of the other list
             pointerA = pointerA.next if pointerA else headB
