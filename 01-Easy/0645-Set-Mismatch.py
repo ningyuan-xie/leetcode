@@ -35,7 +35,6 @@ class Solution:
                 # Get missing number from index
                 missing = i + 1
                 break
-
         return [duplicate, missing]
 
 
