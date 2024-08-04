@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def findTarget(root: TreeNode, k: int) -> bool:
         """Optimal Solution: Inorder DFS + Two Pointers. Time Complexity: O(n), Space Complexity: O(n)"""
-        def inorder(node):
+        def inorder(node: TreeNode) -> list[int]:
             """Helper function: same as 0094-Binary-Tree-Inorder-Traversal.py"""
             if node is None:
                 return []
