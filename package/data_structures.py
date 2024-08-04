@@ -15,7 +15,7 @@ class ListNode:
     identity_check = False  # Default version: check the full value of the node
 
     def __eq__(self, other):
-        """Instance equality method: override the __eq__ method to compare two ListNode objects"""
+        """Instance equality method: overload the __eq__ method to compare two ListNode objects"""
         if ListNode.identity_check:
             # 0141-Linked-List-Cycle.py, 0160-Intersection-of-Two-Linked-Lists.py
             return self is other if isinstance(other, ListNode) else False
