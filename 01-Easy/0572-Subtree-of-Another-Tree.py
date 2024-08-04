@@ -15,7 +15,6 @@ class Solution:
     def isSubtree(root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
         """Optimal Solution: Preorder DFS Traversal.
            Time Complexity: O(m * n), Space Complexity: O(m + n)"""
-
         def is_same_tree(node1, node2):
             """Helper function: Preorder DFS Traversal. Same as 0100-Same-Tree.py"""
             # Base Case

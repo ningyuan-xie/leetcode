@@ -10,7 +10,6 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def isBalanced(root: Optional[TreeNode]) -> bool:
-
         def height(node: Optional[TreeNode]) -> int:
             """Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
                Postorder because we need to traverse the left and right subtrees first before the root.
