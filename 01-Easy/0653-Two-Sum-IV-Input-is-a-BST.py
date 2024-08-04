@@ -23,7 +23,6 @@ class Solution:
 
         # Initialize two pointers for the two-pointer technique
         left, right = 0, len(sorted_elements) - 1
-
         while left < right:
             # Calculate the sum of the elements at the two pointers
             current_sum = sorted_elements[left] + sorted_elements[right]
@@ -33,7 +32,6 @@ class Solution:
                 left += 1  # Increase the sum by moving the left pointer to the right
             else:
                 right -= 1  # Decrease the sum by moving the right pointer to the left
-
         return False  # No pair found that adds up to k
 
 
