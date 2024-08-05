@@ -24,7 +24,7 @@ class Solution:
 
         # Check if the string s is a palindrome
         while left < right:
-            # Skip all the non-alphanumeric characters
+            # Skip all the non-alphanumeric characters and go to the next while loop
             if not s[left].isalnum():
                 left += 1
             elif not s[right].isalnum():
