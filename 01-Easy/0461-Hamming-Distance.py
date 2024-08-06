@@ -9,6 +9,8 @@ class Solution:
     @staticmethod
     def hammingDistance(x: int, y: int) -> int:
         """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
+           Bitwise XOR operator ^ : 1 ^ 1 = 0, 1 ^ 0 = 1, 0 ^ 0 = 0.
+           Bitwise AND operator & : 1 & 1 = 1, 1 & 0 = 0, 0 & 0 = 0.
            Similar to 0190-Reverse-Bits.py and 0191-Number-of-1-Bits.py"""
         # Initialize the Hamming distance
         hamming_distance = 0

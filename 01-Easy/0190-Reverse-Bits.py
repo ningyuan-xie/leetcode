@@ -8,6 +8,8 @@ class Solution:
     @staticmethod
     def reverseBits(n: int) -> int:
         """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
+           Bitwise AND operator & : 1 & 1 = 1, 1 & 0 = 0, 0 & 0 = 0.
+           Bitwise Assignment operator |=: similar to += for addition.
            Similar to the reverse method in 02-Medium/0007-Reverse-Integer.py"""
         # Initialize result in binary
         result = 0  # 00000000000000000000000000000000
@@ -17,7 +19,7 @@ class Solution:
             result <<= 1  # 001 -> 010 -> 100
             # n & 1 extracts the rightmost bit of n, as 1 in binary only has its rightmost bit = 1
             # result |= n & 1 adds this rightmost bit of the given integer to the result
-            result |= n & 1  # |= is the bitwise OR assignment operator, similar to += for addition
+            result |= n & 1
             # n is shifted to the right by 1 bit, removing the bit just added to result
             n >>= 1  # 100 -> 010 -> 001 -> 000
 

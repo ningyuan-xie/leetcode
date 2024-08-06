@@ -1,14 +1,15 @@
 """191. Number of 1 Bits
 Link: https://leetcode.com/problems/number-of-1-bits/
 Difficulty: Easy
-Description: Write a function that takes an unsigned integer
-and returns the number of '1' bits it has (also known as the Hamming weight)."""
+Description: Write a function that takes an unsigned integer and returns the number of '1'
+bits it has (also known as the Hamming weight)."""
 
 
 class Solution:
     @staticmethod
     def hammingWeight(n: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
+           Bitwise AND operator & : 1 & 1 = 1, 1 & 0 = 0, 0 & 0 = 0."""
         # Initialize the number of '1' bits
         count = 0
         # Traverse the 32 bits of the given integer from RIGHT to LEFT

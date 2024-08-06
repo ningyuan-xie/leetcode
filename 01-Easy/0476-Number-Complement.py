@@ -9,12 +9,12 @@ class Solution:
     @staticmethod
     def findComplement(num: int) -> int:
         """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
+           Bitwise XOR operator ^ : 1 ^ 1 = 0, 1 ^ 0 = 1, 0 ^ 0 = 0.
            Similar to 0190-Reverse-Bits.py"""
         # Find the number of bits in the number
         num_bits = num.bit_length()  # E.g. num = 5 (101) -> num_bits = 3
 
         # Construct a mask with all bits set to 1, which can be used to flip all the bits
-        # Logic: 1 ^ 0 = 1, 1 ^ 1 = 0
         # Shift 1 to the left by the number of bits and subtract 1
         mask = (1 << num_bits) - 1  # 1000 -1 = 111
 
