@@ -12,7 +12,6 @@ class Solution:
            Bitwise XOR operator ^ : 1 ^ 1 = 0, 1 ^ 0 = 1, 0 ^ 0 = 0.
            Bitwise AND operator & : 1 & 1 = 1, 1 & 0 = 0, 0 & 0 = 0.
            Similar to 0231-Power-of-Two.py"""
-        # XOR n with (n right-shifted by 1 bit):
         # If n has alternating bits like 101, n >> 1 = 10, x = 101 ^ 10 = 111
         # If n has non-alternating bits like 111, n >> 1 = 11, x = 111 ^ 11 = 100
         x = n ^ (n >> 1)
