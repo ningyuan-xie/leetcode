@@ -27,7 +27,7 @@ class Solution:
             count += min(prev_count, j - i)
             # Update the previous count (initially at 0)
             prev_count = j - i
-            # Update the two pointers and move on to the next group
+            # Update the starting pointer and move on to the next group
             i = j
 
         return count
