@@ -12,7 +12,7 @@ class Solution:
     @staticmethod
     def findShortestSubArray(nums: List[int]) -> int:
         """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
-        # Initialize the hash table
+        # Initialize the three hash tables
         freq, first, last = {}, {}, {}
 
         # Iterate through the list of numbers and update the three hash tables
@@ -37,5 +37,8 @@ assert Solution.findShortestSubArray([1, 2, 2, 3, 1]) == 2
 
 # Unit Test: Input: nums = [1, 2, 2, 3, 1, 4, 2], Output: 6
 assert Solution.findShortestSubArray([1, 2, 2, 3, 1, 4, 2]) == 6
+
+# Unit Test: Input: nums = [1, 2, 2, 3, 1, 4, 2, 1], Output: 6
+assert Solution.findShortestSubArray([1, 2, 2, 3, 1, 4, 2, 1]) == 6
 
 print("All unit tests are passed")
