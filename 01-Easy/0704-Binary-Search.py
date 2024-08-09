@@ -22,12 +22,12 @@ class Solution:
             # If the target is found, return the index
             if nums[mid] == target:
                 return mid
-            # If the target is less than the middle element, move the right pointer
-            elif target < nums[mid]:
-                right = mid - 1
-            # If the target is greater than the middle element, move the left pointer
-            else:
+            # If the middle element is less than the target, move the right pointer
+            elif nums[mid] < target:
                 left = mid + 1
+            # If the middle element is greater than the target, move the left pointer
+            else:
+                right = mid - 1
 
         # If the target is not found, return -1
         return -1
