@@ -13,7 +13,8 @@ class MyHashSet:
         """Constructor: Initialize the instance variable"""
         # The number of buckets; each represents a portion of the range of possible keys
         self.buckets = 1000
-        # Number of items each bucket can hold; prime number to reduce collisions in the hash function
+        # Number of items each bucket can hold;
+        # use prime number to spread out the bucket_item_index, reducing collisions within each bucket
         self.bucket_items: int = 1001
         # A list of buckets; each bucket is a list of booleans indicating whether a key is present
         self.hash_set: List[Optional[List[bool]]] = [None] * self.buckets
