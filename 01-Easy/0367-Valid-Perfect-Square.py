@@ -17,7 +17,7 @@ class Solution:
         left, right = 2, num  # E.g., num = 16 -> left = 2, right = 16
         # Loop until left pointer > right pointer
         while left <= right:
-            mid = (left + right) // 2
+            mid = left + (right - left) // 2
             # Calculate the square of the middle pointer
             mid_squared = mid ** 2
             if mid_squared == num:

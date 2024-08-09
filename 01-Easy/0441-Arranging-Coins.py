@@ -17,7 +17,7 @@ class Solution:
         # Binary search: loop until left pointer > right pointer
         while left <= right:
             # Calculate the middle row
-            mid = (left + right) // 2
+            mid = left + (right - left) // 2
             # Gauss' formula to calculate the total number of coins in the middle row
             total = mid * (mid + 1) // 2
             # The total number of coins is less than n, so the number of rows is on the right side

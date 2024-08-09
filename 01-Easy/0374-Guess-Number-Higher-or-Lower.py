@@ -26,7 +26,7 @@ class Solution:
         left, right = 1, n
         # Loop until left pointer > right pointer
         while left <= right:
-            mid = (left + right) // 2
+            mid = left + (right - left) // 2
             # Make a guess
             result = guess(mid)
             if result == 0:

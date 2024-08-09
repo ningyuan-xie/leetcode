@@ -16,7 +16,7 @@ class Solution:
         # Loop until left pointer > right pointer
         while left <= right:
             # Calculate the middle value
-            mid = (left + right) // 2
+            mid = left + (right - left) // 2
             # Calculate the square of the middle value
             mid_squared = mid ** 2
             if mid_squared == x:

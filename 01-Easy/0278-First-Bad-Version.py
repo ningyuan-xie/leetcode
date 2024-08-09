@@ -25,7 +25,7 @@ class Solution:
         left, right = 1, n
         # Perform binary search to find the first bad version
         while left < right:
-            mid = (left + right) // 2
+            mid = left + (right - left) // 2
             # If the middle version is a bad version, then the first bad version is on the left side
             if isBadVersion(mid):
                 right = mid
