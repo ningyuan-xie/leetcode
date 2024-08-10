@@ -16,7 +16,8 @@ class MyHashMap:
         self.buckets = [[] for _ in range(self.size)]
 
     def _hash_and_bucket(self, key):
-        """Helper function to compute the hash value and find the bucket"""
+        """Helper function to compute the hash value and find the bucket.
+           Encapsulation: this is a private method and should not be called outside the class"""
         # Compute the hash value using modulo operation with a prime size
         hash_value = key % self.size
         # Find the bucket at the computed hash value
