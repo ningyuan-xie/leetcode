@@ -3,8 +3,6 @@ Link: https://leetcode.com/problems/design-hashmap/
 Difficulty: Easy
 Description: Design a HashMap without using any built-in hash table libraries."""
 
-from typing import Optional, List, Tuple
-
 
 class MyHashMap:
     """Optimal Solution: List of Buckets. Time Complexity: O(n), Space Complexity: O(n).
