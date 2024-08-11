@@ -2,12 +2,14 @@
 Link: https://leetcode.com/problems/implement-queue-using-stacks/
 Difficulty: Easy
 Description: Implement a first in first out (FIFO) queue using only two stacks.
-The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty)."""
+The implemented queue should support all the functions of a normal queue
+(push, peek, pop, and empty)."""
 
 
 # Similar to 0225-Implement-Stack-using-Queues.py, we can implement a queue using two stacks.
 class MyQueue:
-    """Similar to 0225-Implement-Stack-using-Queues.py, we can implement a queue using two stacks"""
+    """Optimal Solution: Two Stacks. Time Complexity: O(n), Space Complexity: O(n).
+       Similar to 0225-Implement-Stack-using-Queues.py, we can implement a queue using two stacks"""
 
     def __init__(self):
         """Constructor: instance variable stack1 and stack2 are lists"""

@@ -2,13 +2,15 @@
 Link: https://leetcode.com/problems/implement-stack-using-queues/
 Difficulty: Easy
 Description: Implement a last-in-first-out (LIFO) stack using only two queues.
-The implemented stack should support all the functions of a normal stack (push, top, pop, and empty)."""
+The implemented stack should support all the functions of a normal stack
+(push, top, pop, and empty)."""
 
 from collections import deque
 
 
 class MyStack:
-    """Similar to 0232-Implement-Queue-using-Stacks.py, we can implement a stack using one queue"""
+    """Optimal Solution: One Queue. Time Complexity: O(n), Space Complexity: O(n).
+       Similar to 0232-Implement-Queue-using-Stacks.py, we can implement a stack using one queue"""
 
     def __init__(self):
         """Constructor: instance variable queue is a double-ended queue"""
