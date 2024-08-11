@@ -14,19 +14,25 @@ from typing import List
 class Solution:
     @staticmethod
     def findContentChildren(g: List[int], s: List[int]) -> int:
-        """Optimal Solution: Greedy Algorithm. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Algorithm. Time Complexity: O(nlog(n)), Space Complexity: O(1).
+           The solution uses a greedy approach by matching the smallest available cookie to
+           the smallest possible greed factor, ensuring each decision maximizes the number
+           of content children."""
         # Sort the greed factors and cookie sizes in ascending order
         g.sort()
         s.sort()
         # Initialize two pointers for the greed factors (children) and cookie sizes
         i, j = 0, 0
-        # Iterate through the greed factors and cookie sizes
+
+        # Greedy approach: the algorithm assigns each cookie to the first child it can satisfy,
+        # without reconsidering past assignments or backtracking
         while i < len(g) and j < len(s):
             # If the cookie satisfies the greed factor
             if s[j] >= g[i]:
                 # Assign the cookie to the child and move to the next child
                 i += 1
-            # Move to the next cookie
+            # Regardless of whether the current cookie satisfies the current child,
+            # the cookie pointer j is incremented to consider the next available cookie
             j += 1
         return i
 
