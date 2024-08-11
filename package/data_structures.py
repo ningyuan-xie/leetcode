@@ -108,7 +108,7 @@ class Node:
     def __init__(self, val=None, children=None):
         """Constructor for an N-ary tree node"""
         self.val = val
-        self.children = children if children else []  # Ensure children is still iterable when it's None
+        self.children = children if children else []  # Still iterable when children is None
 
     def __eq__(self, other):
         """Instance equality method: override the __eq__ method to compare two Node objects"""
