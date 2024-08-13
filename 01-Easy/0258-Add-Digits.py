@@ -1,8 +1,8 @@
 """258. Add Digits
 Link: https://leetcode.com/problems/add-digits/
 Difficulty: Easy
-Description: Given an integer num, repeatedly add its digits
-until the result has only one digit, and return it."""
+Description: Given an integer num, repeatedly add its digits until the result has only
+one digit, and return it."""
 
 
 class Solution:
@@ -17,7 +17,8 @@ class Solution:
 
     @staticmethod
     def addDigitsRecursion(n: int) -> int:
-        """Alternative Solution: Recursion. Time Complexity: O(log(n)), Space Complexity: O(log(n))"""
+        """Alternative Solution: Recursion.
+           Time Complexity: O(log(n)), Space Complexity: O(log(n))"""
         # Base case: if the number is less than 10, return the number
         if n < 10:
             return n

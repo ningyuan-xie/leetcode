@@ -2,7 +2,8 @@
 Link: https://leetcode.com/problems/valid-anagram/
 Difficulty: Easy
 Description: Given two strings s and t, return true if t is an anagram of s, and false otherwise.
-An anagram is a word formed by rearranging the letters of another, such as cinema, formed from iceman."""
+An anagram is a word formed by rearranging the letters of another, such as cinema,
+formed from iceman."""
 
 
 class Solution:

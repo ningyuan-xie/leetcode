@@ -3,7 +3,8 @@ Link: https://leetcode.com/problems/next-greater-element-i/
 Difficulty: Easy
 Description: The next greater element of some element x in an array
 is the first greater element that is to the right of x in the same array.
-You are given two distinct 0-indexed integer arrays nums1 and nums2, where nums1 is a subset of nums2.
+You are given two distinct 0-indexed integer arrays nums1 and nums2,
+where nums1 is a subset of nums2.
 For each 0 <= i < nums1.length, find the index j such that nums1[i] == nums2[j]
 and determine the next greater element of nums2[j] in nums2.
 If there is no next greater element, then the answer for this query is -1.
@@ -43,7 +44,7 @@ class Solution:
     @staticmethod
     def nextGreaterElementStack(nums1: List[int], nums2: List[int]) -> List[int]:
         """Optimal Solution: Monotonic Stack. Time Complexity: O(n), Space Complexity: O(n)
-           Monotonic Stack remembers the elements in descending order, allowing multiple comparisons"""
+           Monotonic Stack remembers elements in descending order, allowing multiple comparisons"""
         # Initialize a hashmap for nums1. E.g. nums1 = [4, 1, 2]
         num1_index = {n: i for i, n in enumerate(nums1)}  # [4, 1, 2] -> {4: 0, 1: 1, 2: 2}
         result = [-1] * len(nums1)  # [-1, -1, -1]

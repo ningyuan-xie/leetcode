@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def invertTree(root: Optional[TreeNode]) -> Optional[TreeNode]:
         """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
-           Preorder because need to process the current node first before the left and right subtrees"""
+           Preorder because need to process the current node before the left and right subtrees"""
         # Base case: if the tree root is None, return None
         if not root:
             return None

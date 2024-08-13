@@ -8,7 +8,8 @@ return the sum of num1 and num2 as a string."""
 class Solution:
     @staticmethod
     def addStrings(num1: str, num2: str) -> str:
-        """Optimal Solution: Two Pointers. Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m)).
+        """Optimal Solution: Two Pointers.
+           Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m)).
            Similar to 0067-Add-Binary.py"""
         # Initialize the sum and carry
         sum_str, carry = "", 0

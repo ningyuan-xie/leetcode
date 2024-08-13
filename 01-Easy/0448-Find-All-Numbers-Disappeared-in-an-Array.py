@@ -1,4 +1,4 @@
-"""448. Find All Numbers Disappeared in an Array" - Easy
+"""448. Find All Numbers Disappeared in an Array
 Link: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 Difficulty: Easy
 Description: Given an array nums of n integers where nums[i] is in the range [1, n],

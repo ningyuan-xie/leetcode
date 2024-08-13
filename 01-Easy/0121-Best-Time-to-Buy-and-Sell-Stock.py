@@ -20,9 +20,11 @@ class Solution:
         # Iterate through the prices list
         for current_price in prices:  # E.g. 7 -> 1 -> 5 -> 3 -> 6 -> 4
             # Update the minimum price if the current price is lower
-            min_price = min(min_price, current_price)  # E.g. 7 -> 1 -> 1 -> 1 -> 1 -> 1
+            # E.g. 7 -> 1 -> 1 -> 1 -> 1 -> 1
+            min_price = min(min_price, current_price)
             # Update the maximum profit if the current profit is higher
-            max_profit = max(max_profit, current_price - min_price)  # E.g. 0 -> 0 -> 4 -> 4 -> 5 -> 5
+            # E.g. 0 -> 0 -> 4 -> 4 -> 5 -> 5
+            max_profit = max(max_profit, current_price - min_price)
         return max_profit
 
 

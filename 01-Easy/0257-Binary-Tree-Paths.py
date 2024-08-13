@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def binaryTreePaths(root: Optional[TreeNode]) -> List[str]:
         """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n).
-           Similar to 0101-Symmetric-Tree.py, need an inner helper DFS function to take two parameters"""
+           Similar to 0101-Symmetric-Tree.py, need a helper DFS function to take two parameters"""
         # Base case: if the root is None, return an empty list
         if not root:
             return []

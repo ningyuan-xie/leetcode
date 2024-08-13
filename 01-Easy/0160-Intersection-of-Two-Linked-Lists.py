@@ -10,7 +10,8 @@ from package.data_structures import ListNode
 
 class Solution:
     @staticmethod
-    def getIntersectionNode(headA: Optional[ListNode], headB: Optional[ListNode]) -> Optional[ListNode]:
+    def getIntersectionNode(headA: Optional[ListNode], headB: Optional[ListNode]) \
+            -> Optional[ListNode]:
         """Optimal Solution: Two Pointers. Time Complexity: O(m + n), Space Complexity: O(1).
            Intuition: make the two pointers pass the same total distance (maximum distance = m + n),
            and they will certainly meet at an intersection node or at the final node None.

@@ -22,7 +22,7 @@ class Solution:
                 # n = 1, new_subsets: [[1]]
                 # n = 2, new_subsets: [[2]] -> [[2], [1, 2]]
                 # n = 3, new_subsets: [[3]] -> [[3], [1, 3]] -> ... -> [[3], [1, 3], [2, 3], [1, 2, 3]]
-            # Result's size doubles: it duplicates itself and adds the new number to duplicated subsets
+            # Result's size doubles: duplicates itself and adds the new number to duplicated subsets
             result += new_subsets
             # n = 1, result: [[], [1]]
             # n = 2, result: [[], [1], [2], [1, 2]]

@@ -9,7 +9,8 @@ For negative integers, two’s complement method is used. For example:
 class Solution:
     @staticmethod
     def toHex(num: int) -> str:
-        """Optimal Solution: Iterative Division. Time Complexity: O(log(n)), Space Complexity: O(log(n)).
+        """Optimal Solution: Iterative Division.
+           Time Complexity: O(log(n)), Space Complexity: O(log(n)).
            Similar to 0168-Excel-Sheet-Column-Title.py"""
         # Base case: If the number is 0, return "0"
         if num == 0:

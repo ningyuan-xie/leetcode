@@ -23,7 +23,7 @@ class Solution:
             for minute in range(60):
                 # Count the number of LEDs that are currently on
                 if bin(hour).count('1') + bin(minute).count('1') == turnedOn:
-                    # Hour 3 in binary is 0011 (2 LEDs on) and minute 15 in binary is 1111 (4 LEDs on)
+                    # Hour 3 in binary is 0011 (2 LEDs) and minute 15 in binary is 1111 (4 LEDs)
                     # bin(3) = '0b11' and bin(15) = '0b1111'
                     # bin(3).count('1') = 2 and bin(15).count('1') = 4
                     times.append(f"{hour}:{minute:02d}")

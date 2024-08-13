@@ -5,8 +5,8 @@ Description: You are given a license key represented as a string S which consist
 alphanumeric character and dashes. The string is separated into N+1 groups by N dashes.
 You are also given an integer k.
 We want to reformat the string s such that each group contains exactly k characters,
-except for the first group, which could be shorter than k but still must contain at least one character.
-Furthermore, there must be a dash inserted between two groups,
+except for the first group, which could be shorter than k but still must contain at least
+one character. Furthermore, there must be a dash inserted between two groups,
 and you should convert all lowercase letters to uppercase. Return the reformatted license key."""
 
 

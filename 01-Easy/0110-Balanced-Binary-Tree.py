@@ -11,8 +11,9 @@ class Solution:
     @staticmethod
     def isBalanced(root: Optional[TreeNode]) -> bool:
         def height(node: Optional[TreeNode]) -> int:
-            """Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
-               Postorder because we need to traverse the left and right subtrees first before the root.
+            """Helper function: Postorder DFS Traversal.
+               Time Complexity: O(n), Space Complexity: O(1).
+               Postorder because we need to traverse the left and right subtrees before the root.
                Similar to 0104-Maximum-Depth-of-Binary-Tree.py"""
             # Base case: if the node is None, height is -1
             if not node:
@@ -27,8 +28,9 @@ class Solution:
             return max(left_height, right_height) + 1
 
         def is_balanced(node: Optional[TreeNode]) -> bool:
-            """Helper function: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n).
-               Postorder because we need to traverse the left and right subtrees first before the root"""
+            """Helper function: Postorder DFS Traversal.
+               Time Complexity: O(n), Space Complexity: O(n).
+               Postorder because we need to traverse the left and right subtrees before the root"""
             # Base case: if the node is None, return True
             if not node:
                 return True

@@ -12,7 +12,7 @@ class Solution:
     @staticmethod
     def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
         """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
-           Preorder because we need to process the current node first before left and right subtrees"""
+           Preorder because we need to process the current node before left and right subtrees"""
         # Base case: if the tree root is None, return False
         if not root:
             return False

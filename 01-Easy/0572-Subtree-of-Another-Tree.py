@@ -48,7 +48,8 @@ root_test = TreeNode.build_binary_tree([3, 4, 5, 1, 2])
 sub_root_test = TreeNode.build_binary_tree([4, 1, 2])
 assert Solution.isSubtree(root_test, sub_root_test) is True
 
-# Unit Test: Input: root = [3, 4, 5, 1, 2, None, None, None, None, 0], subRoot = [4, 1, 2], Output: False
+# Unit Test: Input: root = [3, 4, 5, 1, 2, None, None, None, None, 0], subRoot = [4, 1, 2],
+# Output: False
 root_test = TreeNode.build_binary_tree([3, 4, 5, 1, 2, None, None, None, None, 0])
 sub_root_test = TreeNode.build_binary_tree([4, 1, 2])
 assert Solution.isSubtree(root_test, sub_root_test) is False

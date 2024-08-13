@@ -14,7 +14,7 @@ class Solution:
         s2t = {}
         t2s = {}
         # Iterate through the strings
-        for c1, c2 in zip(s, t):  # zip function is used to iterate through two strings simultaneously
+        for c1, c2 in zip(s, t):  # zip() is used to iterate through two strings simultaneously
             # Check if the mutual mapping is violated
             if (c1 in s2t and s2t[c1] != c2) or (c2 in t2s and t2s[c2] != c1):
                 return False

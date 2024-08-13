@@ -2,7 +2,8 @@
 Link: https://leetcode.com/problems/count-and-say/
 Difficulty: Medium
 Description: The count-and-say sequence is a sequence of digit strings defined by the recursive
-formula: countAndSay(1) = "1", countAndSay(2) = "11", countAndSay(3) = "21", countAndSay(4) = "1211", ...
+formula: countAndSay(1) = "1", countAndSay(2) = "11", countAndSay(3) = "21",
+countAndSay(4) = "1211", ...
 countAndSay(n) is the way you would "say" the digit string from countAndSay(n-1)."""
 
 

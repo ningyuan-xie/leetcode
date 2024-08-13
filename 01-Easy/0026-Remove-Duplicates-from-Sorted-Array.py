@@ -15,11 +15,12 @@ class Solution:
         length_unique = 0  # pointer one
         # Loop begin from the second number
         for i in range(1, len(nums)):  # pointer two: index i
-            # If the current number nums[i] != previous number nums[length_unique], unique number found
+            # If the current number nums[i] != previous number nums[length_unique],
+            # unique number found
             if nums[i] != nums[length_unique]:
                 # Increase the length of the unique numbers
                 length_unique += 1
-                # Replace nums[length_unique] with the unique number to compared with the next nums[i]
+                # Replace nums[length_unique] with the unique number to compared with next nums[i]
                 nums[length_unique] = nums[i]
         # Return the length of the list with unique numbers, minimal length is 1
         return length_unique + 1

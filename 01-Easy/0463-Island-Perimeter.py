@@ -27,11 +27,11 @@ class Solution:
                     perimeter += 4
                     # Check the cell above
                     if i > 0 and grid[i - 1][j] == 1:
-                        # Subtract 2 from the perimeter since the top and current cells share an edge
+                        # Subtract 2 from the perimeter as the top and current cells share an edge
                         perimeter -= 2
                     # Check the cell to the left
                     if j > 0 and grid[i][j - 1] == 1:  # Check the cell to the left
-                        # Subtract 2 from the perimeter since the left and current cells share an edge
+                        # Subtract 2 from the perimeter as the left and current cells share an edge
                         perimeter -= 2
         return perimeter
 

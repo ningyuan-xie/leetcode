@@ -9,7 +9,8 @@ from typing import List
 class Solution:
     @staticmethod
     def generate(numRows: int) -> List[List[int]]:
-        """Optimal Solution: Iteration. Time Complexity: O(numRows^2), Space Complexity: O(numRows^2)"""
+        """Optimal Solution: Iteration.
+           Time Complexity: O(numRows^2), Space Complexity: O(numRows^2)"""
         # Initialize the result list with the first row of Pascal's triangle
         result = [[1]]
         # Generate the subsequent (numRows - 1) rows of Pascal's triangle

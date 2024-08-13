@@ -11,7 +11,8 @@ from typing import List
 class Solution:
     @staticmethod
     def majorityElement(nums: List[int]) -> int:
-        """Optimal Solution: Boyer-Moore Voting Algorithm. Time Complexity: O(n), Space Complexity: O(1).
+        """Optimal Solution: Boyer-Moore Voting Algorithm.
+           Time Complexity: O(n), Space Complexity: O(1).
            Because this majority element occurs more than n/2 (floor value) times,
            even if other elements will 'vote against it', it will win"""
         # Initialize the majority element and its count

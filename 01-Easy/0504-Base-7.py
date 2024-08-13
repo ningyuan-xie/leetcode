@@ -7,7 +7,8 @@ Description: Given an integer num, return a string of its base 7 representation.
 class Solution:
     @staticmethod
     def convertToBase7(num: int) -> str:
-        """Optimal Solution: Iterative Division. Time Complexity: O(log(n)), Space Complexity: O(log(n)).
+        """Optimal Solution: Iterative Division.
+           Time Complexity: O(log(n)), Space Complexity: O(log(n)).
            Similar to 0405-Convert-a-Number-to-Hexadecimal.py"""
         # Base Case: If the number is 0, return "0"
         if num == 0:

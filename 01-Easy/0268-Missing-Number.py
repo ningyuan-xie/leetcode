@@ -14,7 +14,7 @@ class Solution:
            Bitwise XOR operator ^ : 1 ^ 1 = 0, 1 ^ 0 = 1, 0 ^ 0 = 0.
            Similar to the XOR operation in 0136-Single-Number.py"""
         # Initialize the missing number as the length of the array because:
-        # 1. Ensure that the highest possible number (could be the missing one) is included in the XOR
+        # 1. Ensure that the highest possible number (could be the missing one) is included in XOR
         # 2. Index i won't reach the max number, requiring the length to cancel out the max number
         missing_number = len(nums)
         # XOR operation will cancel out all the numbers that appear both

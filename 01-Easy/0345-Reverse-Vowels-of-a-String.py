@@ -1,7 +1,8 @@
 """345. Reverse Vowels of a String
 Link: https://leetcode.com/problems/reverse-vowels-of-a-string/
 Difficulty: Easy
-Description: Write a function that takes a string as input and reverse only the vowels of a string."""
+Description: Write a function that takes a string as input and reverse only the vowels of
+a string."""
 
 
 class Solution:
@@ -17,10 +18,10 @@ class Solution:
         left, right = 0, len(s) - 1
         # Loop until left pointer >= right pointer
         while left < right:
-            # If the character at the left pointer is not a vowel, move the left pointer to the right
+            # If the character at the left pointer is not a vowel, move the left pointer
             if s[left] not in vowels:
                 left += 1
-            # If the character at the right pointer is not a vowel, move the right pointer to the left
+            # If the character at the right pointer is not a vowel, move the right pointer
             elif s[right] not in vowels:
                 right -= 1
             # If both characters at the left and right pointers are vowels, swap them
