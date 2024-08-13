@@ -8,7 +8,8 @@ all the versions after a bad version are also bad.
 Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one,
 which causes all the following ones to be bad.
 You are given an API bool isBadVersion(version) which returns whether version is bad.
-Implement a function to find the first bad version. You should minimize the number of calls to the API."""
+Implement a function to find the first bad version.
+You should minimize the number of calls to the API."""
 
 
 def isBadVersion(version: int) -> bool:
@@ -24,14 +25,15 @@ class Solution:
         # Initialize the left and right pointers
         left, right = 1, n
         # Perform binary search to find the first bad version
-        while left < right:
+        while left <= right:
             mid = left + (right - left) // 2
-            # If the middle version is a bad version, then the first bad version is on the left side
-            if isBadVersion(mid):
-                right = mid
-            # If the middle version is not a bad version, then the first bad version is on the right side
-            else:
+
+            # If the middle version is not bad, move the left pointer to the right
+            if not isBadVersion(mid):
                 left = mid + 1
+            # Otherwise, move the right pointer to the left
+            else:
+                right = mid - 1
         # Can return either left or right since they are equal
         return left
 

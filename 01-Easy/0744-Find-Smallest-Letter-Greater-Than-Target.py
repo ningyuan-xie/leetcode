@@ -22,7 +22,7 @@ class Solution:
             return letters[0]
 
         # Perform binary search
-        while left < right:
+        while left <= right:
             # Calculate the middle index
             mid = left + (right - left) // 2
 
@@ -32,7 +32,7 @@ class Solution:
                 left = mid + 1
             # Otherwise, move the right pointer to the left
             else:
-                right = mid
+                right = mid - 1
 
         # Return the smallest character that is larger than the target
         return letters[left]
