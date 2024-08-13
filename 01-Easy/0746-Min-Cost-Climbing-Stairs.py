@@ -12,7 +12,8 @@ class Solution:
     @staticmethod
     def min_cost_climbing_stairs(cost: List[int]) -> int:
         """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1).
-           Similar to 0070-Climbing-Stairs.py, but this question assumes a top after the last step"""
+           Similar to 0070-Climbing-Stairs.py, but this question assumes the beginning is already
+           at a step (not ground), and after the last step there is a top"""
         # Initialization: Assume we are standing at 2nd step cost[1], which is the current step
         # first_cost = the minimum cost to climb from the step before the current step;
         # second_cost = the minimum cost to climb from the current step
