@@ -14,7 +14,7 @@ class Solution:
         """Optimal Solution: Sort and Sum. Time Complexity: O(nlog(n)), Space Complexity: O(1).
            Sort the array in ascending order: This ensures that when we form pairs, the smallest ones
            are always paired with the next smallest ones, so we don't waste the bigger ones"""
-        nums.sort()  # [1, 4, 3, 2] -> [1, 2, 3, 4]. Sorting takes O(nlog(n)) because divide and conquer
+        nums.sort()  # [1, 4, 3, 2] -> [1, 2, 3, 4]. .sort() takes O(nlog(n)) because divide & conquer
         # Initialize the sum variable
         sum_min_pairs = 0
         # Iterate through the sorted array by 2

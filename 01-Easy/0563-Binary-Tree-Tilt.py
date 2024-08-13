@@ -4,7 +4,8 @@ Difficulty: Easy
 Description: Given the root of a binary tree, return the sum of every tree node's tilt.
 The tilt of a tree node is the absolute difference between the sum of all left subtree node values
 and all right subtree node values. If a node does not have a left child, then the sum of
-the left subtree node, and vice versa, is treated as 0. The sum of a leaf node is considered to be 0."""
+the left subtree node, and vice versa, is treated as 0.
+The sum of a leaf node is considered to be 0."""
 
 from typing import Optional
 from package.data_structures import TreeNode

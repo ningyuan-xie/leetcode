@@ -20,7 +20,7 @@ class Solution:
 
         def postorder_dfs_traversal(node: TreeNode) -> int:
             """Helper function: Postorder DFS Traversal: left -> right -> root.
-               Postorder because we need to calculate the height of the left and right subtrees first"""
+               Postorder because we need to calculate the height of the left and right subtrees"""
             # nonlocal variables to access the outer scope mutable variables
             nonlocal diameter
             # Base Case: If the current node is None, return -1

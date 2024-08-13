@@ -29,7 +29,7 @@ class Solution:
                 nonlocal sum_left_leaves  # nonlocal keyword to access the variable in the outer scope
                 sum_left_leaves += node.val
             # 2. Recursive Case: Traverse the left subtree
-            preorder_dfs_path(node=node.left, is_left=True)  # specify parameter name to avoid confusion
+            preorder_dfs_path(node=node.left, is_left=True)  # specify parameter name here
             # 3. Recursive Case: Traverse the right subtree
             preorder_dfs_path(node=node.right, is_left=False)
 

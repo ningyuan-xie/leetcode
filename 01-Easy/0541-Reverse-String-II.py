@@ -3,8 +3,9 @@ Link: https://leetcode.com/problems/reverse-string-ii/
 Difficulty: Easy
 Description: Given a string s and an integer k, reverse the first k characters for every 2k
 characters counting from the start of the string.
-If there are fewer than k characters left, reverse all of them. If there are less than 2k but greater
-than or equal to k characters, then reverse the first k characters and leave the other as original."""
+If there are fewer than k characters left, reverse all of them. If there are less than 2k but
+greater than or equal to k characters, then reverse the first k characters and leave the other
+as original."""
 
 
 class Solution:
@@ -21,7 +22,7 @@ class Solution:
             # Update both pointers
             left, right = right, min(right + k, len(s))
             # Reverse the first k characters
-            # Remember that s[0:2] only picks the first 2 characters, while s[2] picks the 3rd character
+            # Remember that s[0:2] only picks the first 2 chars, while s[2] picks the 3rd char
             s[left:right] = s[left:right][::-1]
             # Skip the next k characters by moving the right pointer to the right by k
             right += k

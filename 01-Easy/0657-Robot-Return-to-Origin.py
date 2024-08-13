@@ -8,7 +8,8 @@ Given a sequence of its moves, judge if this robot ends up at (0, 0) after it co
 class Solution:
     @staticmethod
     def judgeCircle(moves: str) -> bool:
-        """Optimal Solution: Count the number of moves. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Count the number of moves.
+           Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialize the counts of the four moves
         up = down = left = right = 0
 

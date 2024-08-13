@@ -13,7 +13,7 @@ class Solution:
     def averageOfLevels(root: TreeNode) -> List[float]:
         """Optimal Solution: BFS Traversal. Time Complexity: O(n), Space Complexity: O(n).
            Similar to the reverse of TreeNode.build_binary_tree() method.
-           E.g. [3, 9, 20, None, None, 15, 7] -> pop 3, append 9, 20 -> pop 9 -> pop 20, append 15, 7"""
+           [3, 9, 20, None, None, 15, 7] -> pop 3, append 9, 20 -> pop 9 -> pop 20, append 15, 7"""
         # Initialize the output list, and the queue for BFS traversal
         average_values = []
         queue = [root]
