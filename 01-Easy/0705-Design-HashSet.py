@@ -14,7 +14,7 @@ class MyHashSet:
         # Create a huge list of 1001 empty buckets (lists) to store the keys
         self.buckets = [[] for _ in range(self.size)]
 
-    def _hash_and_bucket(self, key):
+    def __hash_and_bucket(self, key):
         """Helper function to compute the hash value and find the bucket.
            Encapsulation: this is a private method and should not be called outside the class"""
         # Compute the hash value using modulo operation with a prime size
@@ -25,7 +25,7 @@ class MyHashSet:
     def add(self, key: int) -> None:
         """Add the key to the hash set"""
         # Get the hash value and find the bucket
-        bucket = self._hash_and_bucket(key)
+        bucket = self.__hash_and_bucket(key)
 
         # Check if the key is already present: if so, do nothing
         if key not in bucket:
@@ -35,7 +35,7 @@ class MyHashSet:
     def remove(self, key: int) -> None:
         """Remove the key from the hash set"""
         # Get the hash value and find the bucket
-        bucket = self._hash_and_bucket(key)
+        bucket = self.__hash_and_bucket(key)
 
         # Check if the key is present in the bucket: if not, do nothing
         if key in bucket:
@@ -45,7 +45,7 @@ class MyHashSet:
     def contains(self, key: int) -> bool:
         """Check if the key is in the hash set"""
         # Get the hash value and find the bucket
-        bucket = self._hash_and_bucket(key)
+        bucket = self.__hash_and_bucket(key)
 
         # Return True if the key is found in the bucket
         return key in bucket

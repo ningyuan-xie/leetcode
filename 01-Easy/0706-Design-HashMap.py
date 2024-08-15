@@ -15,7 +15,7 @@ class MyHashMap:
         # Create a huge list of 1001 empty buckets (lists) to store the key-value pairs
         self.buckets = [[] for _ in range(self.size)]
 
-    def _hash_and_bucket(self, key):
+    def __hash_and_bucket(self, key):
         """Helper function to compute the hash value and find the bucket.
            Encapsulation: this is a private method and should not be called outside the class"""
         # Compute the hash value using modulo operation with a prime size
@@ -26,7 +26,7 @@ class MyHashMap:
     def put(self, key: int, value: int) -> None:
         """Put the key-value pair in the hash map"""
         # Get the hash value and find the bucket
-        bucket = self._hash_and_bucket(key)
+        bucket = self.__hash_and_bucket(key)
 
         # First, check if the key already exists in the bucket
         for i, (k, _) in enumerate(bucket):
@@ -41,7 +41,7 @@ class MyHashMap:
     def get(self, key: int) -> int:
         """Get the value of the key from the hash map"""
         # Get the hash value and find the bucket
-        bucket = self._hash_and_bucket(key)
+        bucket = self.__hash_and_bucket(key)
 
         # Find the key in the bucket
         for (k, v) in bucket:
@@ -55,7 +55,7 @@ class MyHashMap:
     def remove(self, key: int) -> None:
         """Remove the key-value pair from the hash map"""
         # Get the hash value and find the bucket
-        bucket = self._hash_and_bucket(key)
+        bucket = self.__hash_and_bucket(key)
 
         # Check if the key is present in the bucket: if not, do nothing
         for (k, v) in bucket:
