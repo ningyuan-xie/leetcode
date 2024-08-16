@@ -1,8 +1,8 @@
-"""530. Minimum Absolute Difference in BST
-Link: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
+"""783. Minimum Distance Between BST Nodes
+Link: https://leetcode.com/problems/minimum-distance-between-bst-nodes/
 Difficulty: Easy
-Description: Given the root of a Binary Search Tree (BST), return the minimum absolute
-difference between the values of any two different nodes in the tree."""
+Description: Given the root of a Binary Search Tree (BST), return the minimum difference between
+the values of any two different nodes in the tree."""
 
 from typing import Optional
 from package.data_structures import TreeNode
@@ -10,9 +10,9 @@ from package.data_structures import TreeNode
 
 class Solution:
     @staticmethod
-    def getMinimumDifference(root: Optional[TreeNode]) -> int:
+    def minDiffInBST(root: Optional[TreeNode]) -> int:
         """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
-           Similar to 0501-Find-Mode-in-Binary-Search-Tree.py"""
+           Same as 0530-Minimum-Absolute-Difference-in-BST.py"""
         # Initialize the minimum absolute difference
         min_absolute_diff = float("inf")  # positive infinity
         # Initialize the previous node
@@ -46,14 +46,18 @@ class Solution:
 
 # Unit Test: Input: root = [4, 2, 6, 1, 3], Output: 1
 root_test = TreeNode.build_binary_tree([4, 2, 6, 1, 3])
-assert Solution.getMinimumDifference(root_test) == 1
+assert Solution.minDiffInBST(root_test) == 1
 
 # Unit Test: Input: root = [1, 0, 48, None, None, 12, 49], Output: 1
 root_test = TreeNode.build_binary_tree([1, 0, 48, None, None, 12, 49])
-assert Solution.getMinimumDifference(root_test) == 1
+assert Solution.minDiffInBST(root_test) == 1
 
 # Unit Test: Input: root = [1, None, 5, 3], Output: 2
 root_test = TreeNode.build_binary_tree([1, None, 5, 3])
-assert Solution.getMinimumDifference(root_test) == 2
+assert Solution.minDiffInBST(root_test) == 2
+
+# Unit Test: Input: root = [0,null,2236,1277,2776,519], Output: 519
+root_test = TreeNode.build_binary_tree([0, None, 2236, 1277, 2776, 519])
+assert Solution.minDiffInBST(root_test) == 519
 
 print("All unit tests are passed")
