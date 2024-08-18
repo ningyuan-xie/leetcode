@@ -1,8 +1,9 @@
 """804. Unique Morse Code Words
 Link: https://leetcode.com/problems/unique-morse-code-words/
 Difficulty: Easy
-Description: International Morse Code defines a standard encoding where each letter is mapped to a series
-of dots and dashes. Return the number of different transformations among all words we have."""
+Description: International Morse Code defines a standard encoding where each letter is mapped
+to a series of dots and dashes. Return the number of different transformations among
+all words we have."""
 
 from typing import List
 
