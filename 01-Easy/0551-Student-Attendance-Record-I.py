@@ -14,7 +14,8 @@ Return true if the student is eligible for an attendance award, or false otherwi
 class Solution:
     @staticmethod
     def checkRecord(s: str) -> bool:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1).
+           Linear Scan: Iterate exactly once through the attendance record"""
         # Initialize the absent and late counters
         absent_count, late_count = 0, 0
         # Iterate through the attendance record

@@ -16,7 +16,8 @@ from typing import List
 class Solution:
     @staticmethod
     def matrixReshape(mat: List[List[int]], r: int, c: int) -> List[List[int]]:
-        """Optimal Solution: Linear Scan. Time Complexity: O(m * n), Space Complexity: O(m * n)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(m * n), Space Complexity: O(m * n).
+           Linear Scan: Iterate exactly once through the original matrix"""
         # Get the number of rows and columns of the original matrix
         m, n = len(mat), len(mat[0])  # E.g. [[1, 2], [3, 4]] -> m = 2, n = 2
         # If the reshape operation is not possible, return the original matrix

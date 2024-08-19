@@ -18,7 +18,8 @@ from typing import List
 class Solution:
     @staticmethod
     def numberOfLines(widths: List[int], s: str) -> List[int]:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1).
+           Linear Scan: Iterate exactly once through the string s and calculate the number of lines"""
         # Initialize the number of lines and the width of the current line
         num_lines = 1
         line_width = 0
