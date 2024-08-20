@@ -20,11 +20,10 @@ class Solution:
         result = []
         # Initialize the pointers
         start, end = 0, 0
-        n = len(s)
 
-        while end < n:
+        while start < len(s):
             # Move the end pointer to the end of the current group
-            while end < n and s[end] == s[start]:
+            while end < len(s) and s[end] == s[start]:
                 end += 1
             # Check if the current group is a large group
             if end - start >= 3:
