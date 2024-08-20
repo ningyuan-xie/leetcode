@@ -10,7 +10,7 @@ For example, if s = "abcde", then it will be "bcdea" after one shift."""
 class Solution:
     @staticmethod
     def rotateString(s: str, goal: str) -> bool:
-        """Optimal Solution: String Concatenation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)"""
         return len(s) == len(goal) and goal in s + s
 
 
