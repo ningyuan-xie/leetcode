@@ -18,7 +18,7 @@ class Solution:
 
         # Check if the two strings are equal
         if s == goal:
-            # Check if there are at least two identical characters in the string
+            # Check if there are at least two identical characters to swap in the string
             return len(set(s)) < len(s)
 
         # Find the two characters that are different
