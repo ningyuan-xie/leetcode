@@ -17,6 +17,7 @@ class Solution:
     @staticmethod
     def findSecondMinimumValue(root: Optional[TreeNode]) -> int:
         """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(n)"""
+
         def preorder(node: Optional[TreeNode]) -> None:
             """Helper function: Preorder DFS to find the second minimum value"""
             if node is None:

@@ -10,6 +10,7 @@ class Solution:
     def validPalindrome(s: str) -> bool:
         """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1).
            Similar to 0125-Valid-Palindrome.py"""
+
         def is_palindrome(l: int, r: int) -> bool:
             """Helper function: Check if the substring s[left:right+1] is a palindrome"""
             while l < r:
