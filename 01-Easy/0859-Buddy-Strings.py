@@ -23,8 +23,8 @@ class Solution:
 
         # Find the two characters that are different
         diff = [(x, y) for x, y in zip(s, goal) if x != y]
-        # Check if there are exactly two different characters,
-        # and the two characters can be swapped to make the two strings equal
+        # Check if there are exactly two different characters, and the two characters can be
+        # swapped to make the two strings equal, such as [(a, b), (b, a)]
         return len(diff) == 2 and diff[0] == diff[1][::-1]
 
 
