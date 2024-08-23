@@ -15,7 +15,9 @@ from typing import List
 class Solution:
     @staticmethod
     def lemonadeChange(bills: List[int]) -> bool:
-        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1).
+           The solution uses a greedy approach by always prioritizing larger denominations
+           ($10 over $5) when giving change"""
         # Initialize the number of $5 and $10 bills
         five, ten = 0, 0
 
