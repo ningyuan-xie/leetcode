@@ -15,29 +15,27 @@ class Solution:
     def leafSimilar(root1: TreeNode, root2: TreeNode) -> bool:
         """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
 
-        def get_leaf_sequence(root: TreeNode) -> List[int]:
-            """Helper function to get the leaf value sequence of a binary tree"""
-            # Initialize the leaf value sequence
-            leaf_sequence = []
+        def get_leaf_sequence(node: TreeNode, leaf_sequence: List[int]) -> None:
+            """Helper function to get the leaf value sequence of a binary tree using DFS"""
+            # If the node is a leaf, append the value to the leaf value sequence
+            if not node.left and not node.right:
+                leaf_sequence.append(node.val)
+            # Otherwise, recursively traverse the left and right children
+            else:
+                if node.left:
+                    get_leaf_sequence(node.left, leaf_sequence)
+                if node.right:
+                    get_leaf_sequence(node.right, leaf_sequence)
 
-            def preorder_dfs_traversal(node: TreeNode) -> None:
-                """Helper function to traverse the binary tree in preorder depth-first search"""
-                # If the node is a leaf, append the value to the leaf value sequence
-                if not node.left and not node.right:
-                    leaf_sequence.append(node.val)
-                # Otherwise, recursively traverse the left and right children
-                else:
-                    if node.left:
-                        preorder_dfs_traversal(node.left)
-                    if node.right:
-                        preorder_dfs_traversal(node.right)
+        # Initialize the leaf sequences for both trees
+        leaf_sequence1, leaf_sequence2 = [], []
 
-            # Start the depth-first search
-            preorder_dfs_traversal(root)
-            return leaf_sequence
+        # Get the leaf value sequences of the two binary trees
+        get_leaf_sequence(root1, leaf_sequence1)
+        get_leaf_sequence(root2, leaf_sequence2)
 
-        # Get the leaf value sequence of the two binary trees and compare them
-        return get_leaf_sequence(root1) == get_leaf_sequence(root2)
+        # Compare the leaf value sequences
+        return leaf_sequence1 == leaf_sequence2
 
 
 # Unit Test: Input: root1 = [3,5,1,6,2,9,8,null,null,7,4],
