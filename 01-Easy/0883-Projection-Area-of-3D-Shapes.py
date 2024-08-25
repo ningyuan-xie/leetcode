@@ -15,7 +15,8 @@ from typing import List
 class Solution:
     @staticmethod
     def projectionArea(grid: List[List[int]]) -> int:
-        """Optimal Solution: Matrix Transposition. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: Matrix Transposition & Generator Expression.
+           Time Complexity: O(n^2), Space Complexity: O(1)"""
         # Top view is viewing from above
         top_view = sum(v > 0 for row in grid for v in row)
 
