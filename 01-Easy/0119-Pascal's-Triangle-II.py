@@ -9,7 +9,7 @@ from typing import List
 class Solution:
     @staticmethod
     def getRow(rowIndex: int) -> List[int]:
-        """Optimal solution: Iteration. Time complexity: O(n^2), Space complexity: O(n)"""
+        """Optimal Solution: Iteration. Time complexity: O(n^2), Space complexity: O(n)"""
         # Initialize the result list with the first row of Pascal's triangle
         result = [[1]]
         # Generate the subsequent (numRows - 1) rows of Pascal's triangle
