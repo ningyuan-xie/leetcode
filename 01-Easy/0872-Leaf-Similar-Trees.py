@@ -15,13 +15,13 @@ class Solution:
     def leafSimilar(root1: TreeNode, root2: TreeNode) -> bool:
         """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
 
-        # Helper function to get the leaf value sequence of a binary tree
         def get_leaf_sequence(root: TreeNode) -> List[int]:
+            """Helper function to get the leaf value sequence of a binary tree"""
             # Initialize the leaf value sequence
             leaf_sequence = []
 
-            # Helper function to traverse the binary tree
             def preorder_dfs_traversal(node: TreeNode) -> None:
+                """Helper function to traverse the binary tree in preorder depth-first search"""
                 # If the node is a leaf, append the value to the leaf value sequence
                 if not node.left and not node.right:
                     leaf_sequence.append(node.val)
