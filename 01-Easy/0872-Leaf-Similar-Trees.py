@@ -13,10 +13,13 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def leafSimilar(root1: TreeNode, root2: TreeNode) -> bool:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Preorder DFS Traversal.
+           Time Complexity: O(n), Space Complexity: O(n)"""
 
         def get_leaf_sequence(node: TreeNode, leaf_sequence: List[int]) -> None:
-            """Helper function to get the leaf value sequence of a binary tree using DFS"""
+            """Helper function to get the leaf value sequence of a binary tree using preorder DFS.
+               Note that this version returns None instead of List[int],
+               unlike 0144-Binary-Tree-Preorder-Traversal.py"""
             # If the node is a leaf, append the value to the leaf value sequence
             if not node.left and not node.right:
                 leaf_sequence.append(node.val)

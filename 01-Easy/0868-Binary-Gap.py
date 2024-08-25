@@ -8,8 +8,8 @@ adjacent 1's in the binary representation of n. If there are no two adjacent 1's
 class Solution:
     @staticmethod
     def binaryGap(n: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(log(n)), Space Complexity: O(1)
-           Bitwise AND operator & : 1 & 1 = 1, 1 & 0 = 0, 0 & 0 = 0."""
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(log(n)), Space Complexity: O(1).
+           Bitwise AND operator & : 1 & 1 = 1, 1 & 0 = 0, 0 & 0 = 0"""
         # Initialize the longest distance between two adjacent 1's
         longest_distance = 0
         # Initialize the previous position of 1 as -1
@@ -18,7 +18,7 @@ class Solution:
         # Iterate through the bits of n
         for i in range(32):
             # If the i-th bit is 1
-            if (n >> i) & 1:  # n >> i shifts the bits of n to the right by i positions: 101 >> 1 = 10
+            if (n >> i) & 1:  # n >> i shifts the bits of n to the right by i: 101 >> 1 = 10
                 # If the previous position is not -1, update the longest distance
                 if prev_position != -1:
                     longest_distance = max(longest_distance, i - prev_position)
