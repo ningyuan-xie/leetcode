@@ -1,6 +1,7 @@
 """This script prints the Python version information"""
 
 import sys
+import torch
 
 
 def main():
@@ -11,6 +12,9 @@ def main():
     # ".".join() concatenates the iterable into a string with "." as the separator
     version = ".".join(map(str, version_info[:3]))
     print("Python version:", version)
+
+    # Check if PyTorch is installed
+    print("PyTorch version:", torch.__version__)
 
 
 if __name__ == "__main__":
