@@ -21,11 +21,14 @@ class Solution:
         for row in image:  # E.g. [1, 1, 0], [1, 0, 1], [0, 0, 0]
             # Initialize the pointers
             left, right = 0, n - 1
-            # Flip the row horizontally and invert it
-            while left <= right:
-                row[left], row[right] = 1 - row[right], 1 - row[left]
+            # Flip the row horizontally first
+            while left < right:
+                row[left], row[right] = row[right], row[left]
                 left += 1
                 right -= 1
+
+            # Next, invert the row
+            row[:] = [1 - pixel for pixel in row]
 
         return image
 
