@@ -14,7 +14,8 @@ class Solution:
     def increasingBST(root: Optional[TreeNode]) -> Optional[TreeNode]:
         """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
 
-        def inorder_traversal(node: Optional[TreeNode]) -> List[Optional[TreeNode]]:
+        def inorder_traversal(node: Optional[TreeNode]) \
+                -> List[Optional[TreeNode]]:
             """Helper function to perform in-order traversal on the binary search tree.
                Similar to 0094-Binary-Tree-Inorder-Traversal.py,
                but returns the nodes instead of values"""
@@ -25,15 +26,13 @@ class Solution:
         # Perform in-order traversal on the binary search tree
         nodes = inorder_traversal(root)
 
-        # Right now, nodes is a list of nodes in ascending order with original children,
+        # nodes is now a list of nodes in ascending order with original children;
         # reconstruct each node (except the last) with no left child and only one right child
         for i in range(len(nodes) - 1):
-            nodes[i].left = None
-            nodes[i].right = nodes[i + 1]
+            nodes[i].left, nodes[i].right = None, nodes[i + 1]
 
         # The last node in the list should have no left or right child
-        nodes[-1].left = None
-        nodes[-1].right = None
+        nodes[-1].left, nodes[-1].right = None, None
 
         return nodes[0]
 
