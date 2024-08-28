@@ -1,7 +1,6 @@
 """This script prints the Python version information"""
 
 import sys
-import torch
 
 
 def main():
@@ -14,7 +13,11 @@ def main():
     print("Python version:", version)
 
     # Check if PyTorch is installed
-    print("PyTorch version:", torch.__version__)
+    try:
+        import torch
+        print("PyTorch version:", torch.__version__)
+    except ImportError:
+        print("PyTorch is not installed in this environment.")
 
 
 if __name__ == "__main__":
