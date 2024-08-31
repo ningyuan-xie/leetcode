@@ -15,7 +15,7 @@ class Solution:
         # Initialize the two pointers
         name_pointer, typed_pointer = 0, 0
 
-        # Compare the chars of the name and typed strings
+        # Loop through the typed string because it is the longer string
         while typed_pointer < len(typed):
             # If name_pointer is within bounds and the characters at the two pointers are the same
             if name_pointer < len(name) and name[name_pointer] == typed[typed_pointer]:
@@ -29,7 +29,7 @@ class Solution:
             else:
                 return False
 
-        # Return True if both pointers are at the end of the name and typed strings
+        # Return True if both pointers are at the end of strings
         return name_pointer == len(name) and typed_pointer == len(typed)
 
 
@@ -47,6 +47,9 @@ assert Solution.isLongPressedName("laiden", "laiden") is True
 
 # Unit Test: Input: name = "vtkgn", typed = "vttkgnn", Output: True
 assert Solution.isLongPressedName("vtkgn", "vttkgnn") is True
+
+# Unit Test: Input: name = "alex", typed = "aaleexa", Output: False
+assert Solution.isLongPressedName("alex", "aaleexa") is False
 
 print("All unit tests are passed")
 
