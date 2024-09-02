@@ -17,6 +17,7 @@ class Solution:
         slow, fast = head, head
 
         # Temporarily enable single value check for cycle detection
+        # In LeetCode environment, Python will dynamically create this class attribute on the fly
         ListNode.identity_check = True
 
         # Traverse the linked list

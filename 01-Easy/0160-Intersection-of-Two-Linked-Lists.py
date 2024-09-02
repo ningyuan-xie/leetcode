@@ -21,6 +21,7 @@ class Solution:
             return None
 
         # Temporarily enable identity check for intersection detection
+        # In LeetCode environment, Python will dynamically create this class attribute on the fly
         ListNode.identity_check = True
 
         # Initialize two pointers to the heads of the linked lists
