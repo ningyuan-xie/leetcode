@@ -8,7 +8,7 @@ return the sum of num1 and num2 as a string."""
 class Solution:
     @staticmethod
     def addStrings(num1: str, num2: str) -> str:
-        """Optimal Solution: Two Pointers.
+        """Optimal Solution: Two Pointers and Math.
            Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m)).
            Similar to 0067-Add-Binary.py"""
         # Initialize the sum and carry
@@ -23,11 +23,12 @@ class Solution:
             # Calculate the total and get the remainder and carry
             total = digit1 + digit2 + carry
             remainder, carry = total % 10, total // 10
-            # Add the remainder to the front of the string
-            sum_str = str(remainder) + sum_str
+            # Add the remainder to the front of the string as a new digit
+            sum_str = str(remainder) + sum_str  # E.g. "4" + "" -> "4", "3" + "4" -> "34"
             # Move the pointers to the left
             i, j = i - 1, j - 1
-        # If there is a carry left, add it to the front of the string
+
+        # If there is a carry left, add it to the front of the string as a new digit
         return str(carry) + sum_str if carry else sum_str
 
 
