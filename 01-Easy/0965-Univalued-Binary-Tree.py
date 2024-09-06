@@ -15,7 +15,7 @@ class Solution:
         # Initialize the value of the root node
         val = root.val
 
-        def preorder_dfs(node: Optional[TreeNode]) -> bool:
+        def preorder_dfs_not_equal(node: Optional[TreeNode]) -> bool:
             """Helper function to traverse the tree in preorder DFS"""
             # If the node is None, return True
             if not node:
@@ -26,10 +26,24 @@ class Solution:
                 return False
 
             # Recursively check the left and right subtrees
-            return preorder_dfs(node.left) and preorder_dfs(node.right)
+            return preorder_dfs_not_equal(node.left) and preorder_dfs_not_equal(node.right)
+
+        def preorder_dfs_equal(node: Optional[TreeNode]) -> bool:
+            """Helper function (alternative) to traverse the tree in preorder DFS"""
+            # If the node is None, return True (empty subtree is considered univalued)
+            if not node:
+                return True
+
+            # Check if the current node matches the value
+            if node.val == val:
+                # Recursively check the left and right subtrees
+                return preorder_dfs_equal(node.left) and preorder_dfs_equal(node.right)
+
+            # If the current node's value doesn't match, return False
+            return False
 
         # Return the result
-        return preorder_dfs(root)
+        return preorder_dfs_equal(root)
 
 
 # Unit Test: Input: [1,1,1,1,1,None,1], Output: True
