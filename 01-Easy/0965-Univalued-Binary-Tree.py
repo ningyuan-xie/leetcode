@@ -17,7 +17,7 @@ class Solution:
 
         def preorder_dfs_not_equal(node: Optional[TreeNode]) -> bool:
             """Helper function to traverse the tree in preorder DFS"""
-            # If the node is None, return True
+            # If the node is None, return True (empty subtree is considered univalued)
             if not node:
                 return True
 
