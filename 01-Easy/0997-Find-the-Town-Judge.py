@@ -18,7 +18,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findJudge(n: int, trust: List[List[int]]) -> int:
-        """Optimal Solution: Counting Indegree and Outdegree.
+        """Optimal Solution: Indegree and Outdegree.
            Time Complexity: O(n), Space Complexity: O(n)"""
         # indegree: how many people trust the person; if n - 1, then everyone trusts the person
         # outdegree: how many people the person trusts; if 0, then the person trusts nobody
