@@ -19,7 +19,7 @@ class Solution:
 
         # Iterate through the binary array
         for num in nums:
-            # prefix_sum * 2 in binary is equivalent to prefix_sum << 1, % 5 here because:
+            # prefix_sum * 2 is equivalent to (prefix_sum << 1), % 5 here because:
             # 1. Check if the prefix sum is divisible by 5 without growing too large;
             # 2. We don't care about the actual value, just the remainder:
             # E.g. 11 % 5 = 1 % 5 -> 22 % 5 = 2 % 5 -> 44 % 5 = 4 % 5
