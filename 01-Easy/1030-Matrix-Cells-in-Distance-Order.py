@@ -33,14 +33,19 @@ class Solution:
 
 
 # Unit Test: rows = 1, cols = 2, rCenter = 0, cCenter = 0, Output: [[0, 0], [0, 1]]
+# Matrix: [[0, 0], [0, 1]], Center: [0, 0]
 assert Solution.allCellsDistOrder(1, 2, 0, 0) == [[0, 0], [0, 1]]
 
 # Unit Test: rows = 2, cols = 2, rCenter = 0, cCenter = 1, Output: [[0, 1], [0, 0], [1, 1], [1, 0]]
+# Matrix: [[0, 0], [0, 1],
+#          [1, 0], [1, 1]], Center: [0, 1]
 assert (Solution.allCellsDistOrder(2, 2, 0, 1)
         == [[0, 1], [0, 0], [1, 1], [1, 0]])
 
 # Unit Test: rows = 2, cols = 3, rCenter = 1, cCenter = 2,
 # Output: [[1, 2], [0, 2], [1, 1], [0, 1], [1, 0], [0, 0]]
+# Matrix: [[0, 0], [0, 1], [0, 2],
+#          [1, 0], [1, 1], [1, 2]], Center: [1, 2]
 assert (Solution.allCellsDistOrder(2, 3, 1, 2)
         == [[1, 2], [0, 2], [1, 1], [0, 1], [1, 0], [0, 0]])
 
