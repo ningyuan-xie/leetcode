@@ -34,4 +34,3 @@ assert Solution.searchInsert([1, 3, 5, 6], 2) == 1
 assert Solution.searchInsert([1, 3, 5, 6], 7) == 4
 
 print("All unit tests are passed")
-
