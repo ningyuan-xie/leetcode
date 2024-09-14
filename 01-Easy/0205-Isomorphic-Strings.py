@@ -25,12 +25,12 @@ class Solution:
 
 
 # Unit Test: Input: s = "egg", t = "add", Output: True
-assert Solution.isIsomorphic("egg", "add") == True
+assert Solution.isIsomorphic("egg", "add") is True
 
 # Unit Test: Input: s = "foo", t = "bar", Output: False
-assert Solution.isIsomorphic("foo", "bar") == False
+assert Solution.isIsomorphic("foo", "bar") is False
 
 # Unit Test: Input: s = "paper", t = "title", Output: True
-assert Solution.isIsomorphic("paper", "title") == True
+assert Solution.isIsomorphic("paper", "title") is True
 
 print("All unit tests are passed")

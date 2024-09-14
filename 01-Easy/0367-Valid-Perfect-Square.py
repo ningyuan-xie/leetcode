@@ -33,14 +33,14 @@ class Solution:
 
 # Unit Test: Input: num = 16, Output: True
 # Explanation: 16 is a perfect square because 4 * 4 = 16
-assert Solution.isPerfectSquare(16) == True
+assert Solution.isPerfectSquare(16) is True
 
 # Unit Test: Input: num = 14, Output: False
 # Explanation: 14 is not a perfect square
-assert Solution.isPerfectSquare(14) == False
+assert Solution.isPerfectSquare(14) is False
 
 # Unit Test: Input: num = 1, Output: True
 # Explanation: 1 is a perfect square because 1 * 1 = 1
-assert Solution.isPerfectSquare(1) == True
+assert Solution.isPerfectSquare(1) is True
 
 print("All unit tests are passed")

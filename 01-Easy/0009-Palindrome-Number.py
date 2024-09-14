@@ -19,12 +19,12 @@ class Solution:
 
 
 # Unit Test: Input: x = 121, Output: True
-assert Solution.isPalindrome(121) == True
+assert Solution.isPalindrome(121) is True
 
 # Unit Test: Input: x = -121, Output: False
-assert Solution.isPalindrome(-121) == False
+assert Solution.isPalindrome(-121) is False
 
 # Unit Test: Input: x = 10, Output: False
-assert Solution.isPalindrome(10) == False
+assert Solution.isPalindrome(10) is False
 
 print("All unit tests are passed")

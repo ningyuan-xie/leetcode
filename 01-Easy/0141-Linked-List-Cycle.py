@@ -39,17 +39,17 @@ class Solution:
 # There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
 head1 = ListNode.build_linked_list([3, 2, 0, -4])
 head1.next.next.next.next = head1.next  # Connect the tail to the 1st node
-assert Solution.hasCycle(head1) == True
+assert Solution.hasCycle(head1) is True
 
 # Unit Test: Input: head = [1,2], pos = 0, Output: True
 # There is a cycle in the linked list, where the tail connects to the 0th node (0-indexed).
 head2 = ListNode.build_linked_list([1, 2])
 head2.next.next = head2  # Connect the tail to the 0th node
-assert Solution.hasCycle(head2) == True
+assert Solution.hasCycle(head2) is True
 
 # Unit Test: Input: head = [1], pos = -1, Output: False
 # There is no cycle in the linked list.
 head3 = ListNode.build_linked_list([1])
-assert Solution.hasCycle(head3) == False
+assert Solution.hasCycle(head3) is False
 
 print("All unit tests are passed")

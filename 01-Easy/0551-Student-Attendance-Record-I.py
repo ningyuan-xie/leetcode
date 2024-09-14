@@ -37,12 +37,12 @@ class Solution:
 
 
 # Unit Test: Input: s = "PPALLP", Output: True
-assert Solution.checkRecord("PPALLP") == True
+assert Solution.checkRecord("PPALLP") is True
 
 # Unit Test: Input: s = "PPALLL", Output: False
-assert Solution.checkRecord("PPALLL") == False
+assert Solution.checkRecord("PPALLL") is False
 
 # Unit Test: Input: s = "PPALLL", Output: False
-assert Solution.checkRecord("PPALLL") == False
+assert Solution.checkRecord("PPALLL") is False
 
 print("All unit tests are passed")

@@ -20,12 +20,12 @@ class Solution:
 
 
 # Unit Test: Input = "USA", Output = True
-assert Solution.detectCapitalUse("USA") == True
+assert Solution.detectCapitalUse("USA") is True
 
 # Unit Test: Input = "FlaG", Output = False
-assert Solution.detectCapitalUse("FlaG") == False
+assert Solution.detectCapitalUse("FlaG") is False
 
 # Unit Test: Input = "leetcode", Output = True
-assert Solution.detectCapitalUse("leetcode") == True
+assert Solution.detectCapitalUse("leetcode") is True
 
 print("All unit tests are passed")

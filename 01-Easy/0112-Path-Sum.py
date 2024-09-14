@@ -32,21 +32,21 @@ class Solution:
 # Unit Test: Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22, Output: True
 # The tree has a root-to-leaf path 5->4->11->2 which sums up to 22
 root_test = TreeNode.build_binary_tree([5, 4, 8, 11, None, 13, 4, 7, 2, None, None, None, 1])
-assert Solution.hasPathSum(root_test, 22) == True
+assert Solution.hasPathSum(root_test, 22) is True
 
 # Unit Test: Input: root = [1,2,3], targetSum = 5, Output: False
 # The tree has no root-to-leaf path that sums up to 5
 root_test = TreeNode.build_binary_tree([1, 2, 3])
-assert Solution.hasPathSum(root_test, 5) == False
+assert Solution.hasPathSum(root_test, 5) is False
 
 # Unit Test: Input: root = [1,2], targetSum = 0, Output: False
 # The tree has no root-to-leaf path that sums up to 0
 root_test = TreeNode.build_binary_tree([1, 2])
-assert Solution.hasPathSum(root_test, 0) == False
+assert Solution.hasPathSum(root_test, 0) is False
 
 # Unit Test: Input: root = [], targetSum = 0, Output: False
 # The tree is empty
 root_test = None
-assert Solution.hasPathSum(root_test, 0) == False
+assert Solution.hasPathSum(root_test, 0) is False
 
 print("All unit tests are passed")

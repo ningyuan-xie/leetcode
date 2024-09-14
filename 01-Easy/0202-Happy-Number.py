@@ -35,9 +35,9 @@ class Solution:
 
 
 # Unit Test: Input: n = 19, Output: True
-assert Solution.isHappy(19) == True
+assert Solution.isHappy(19) is True
 
 # Unit Test: Input: n = 2, Output: False
-assert Solution.isHappy(2) == False
+assert Solution.isHappy(2) is False
 
 print("All unit tests are passed")

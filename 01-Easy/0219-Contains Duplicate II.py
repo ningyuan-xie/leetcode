@@ -26,12 +26,12 @@ class Solution:
 
 
 # Unit Test: Input: nums = [1,2,3,1], k = 3, Output: True
-assert Solution.containsNearbyDuplicate([1, 2, 3, 1], 3) == True
+assert Solution.containsNearbyDuplicate([1, 2, 3, 1], 3) is True
 
 # Unit Test: Input: nums = [1,0,1,1], k = 1, Output: True
-assert Solution.containsNearbyDuplicate([1, 0, 1, 1], 1) == True
+assert Solution.containsNearbyDuplicate([1, 0, 1, 1], 1) is True
 
 # Unit Test: Input: nums = [1,2,3,1,2,3], k = 2, Output: False
-assert Solution.containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2) == False
+assert Solution.containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2) is False
 
 print("All unit tests are passed")

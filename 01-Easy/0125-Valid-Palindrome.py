@@ -39,18 +39,18 @@ class Solution:
 
 
 # Unit Test: Input: s = "A man, a plan, a canal: Panama", Output: True
-assert Solution.isPalindrome("A man, a plan, a canal: Panama") == True
+assert Solution.isPalindrome("A man, a plan, a canal: Panama") is True
 
 # Unit Test: Input: s = "race a car", Output: False
-assert Solution.isPalindromeTwoPointers("race a car") == False
+assert Solution.isPalindromeTwoPointers("race a car") is False
 
 # Unit Test: Input: s = "a", Output: True
-assert Solution.isPalindrome("a") == True
+assert Solution.isPalindrome("a") is True
 
 # Unit Test: Input: s = "ab", Output: False
-assert Solution.isPalindromeTwoPointers("ab") == False
+assert Solution.isPalindromeTwoPointers("ab") is False
 
 # Unit Test: Input: s = "a.", Output: True
-assert Solution.isPalindrome("a.") == True
+assert Solution.isPalindrome("a.") is True
 
 print("All unit tests are passed")

@@ -31,15 +31,15 @@ class Solution:
 
 
 # Unit Test: Input: s = "()", Output: True
-assert Solution.isValid("()") == True
+assert Solution.isValid("()") is True
 
 # Unit Test: Input: s = "()[]{}", Output: True
-assert Solution.isValid("()[]{}") == True
+assert Solution.isValid("()[]{}") is True
 
 # Unit Test: Input: s = "(]", Output: False
-assert Solution.isValid("(]") == False
+assert Solution.isValid("(]") is False
 
 # Unit Test: Input: s = "]", Output: False
-assert Solution.isValid("]") == False
+assert Solution.isValid("]") is False
 
 print("All unit tests are passed")
