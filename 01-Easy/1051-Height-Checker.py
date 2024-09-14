@@ -28,7 +28,7 @@ class Solution:
         # Compare actual heights with expected sorted order
         for h in heights:
             while count[expected] == 0:
-                # Skip the current expected height if it is not present
+                # Skip the current expected height until we find a student with that height
                 expected += 1
             if h != expected:
                 mismatch_count += 1
