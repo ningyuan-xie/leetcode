@@ -1,9 +1,10 @@
 """1078. Occurrences After Bigram
 Link: https://leetcode.com/problems/occurrences-after-bigram/
 Difficulty: Easy
-Description: Given words first and second, consider occurrences in some text of the form "first
-second third", where second comes immediately after first, and third comes immediately after second.
-For each such occurrence,add "third" to the answer, and return the answer."""
+Description: Given two strings first and second, consider occurrences in some text of the form
+"first second third", where second comes immediately after first, and third comes immediately
+after second.
+Return an array of all the words third for each occurrence of "first second third"."""
 
 from typing import List
 
