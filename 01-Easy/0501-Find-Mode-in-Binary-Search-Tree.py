@@ -9,7 +9,6 @@ Assume a BST is defined as follows:
 - The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
 - Both the left and right subtrees must also be binary search trees."""
 
-
 from typing import List
 from package.data_structures import TreeNode
 
