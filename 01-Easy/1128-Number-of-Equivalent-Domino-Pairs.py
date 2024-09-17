@@ -22,7 +22,7 @@ class Solution:
             # Sort the domino to ensure the internal order does not matter
             domino.sort()  # [1, 2] -> [1, 2], [2, 1] -> [1, 2]
 
-            # Convert the sorted domino to a tuple to use as a key in the dictionary
+            # Convert the sorted domino to tuple to use as key in the dictionary (list is unhashable)
             domino_key = tuple(domino)  # [1, 2] -> (1, 2)
 
             # Increment the count of equivalent domino pairs
