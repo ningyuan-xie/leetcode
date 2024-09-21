@@ -18,6 +18,7 @@ class Solution:
             freq[num] = freq.get(num, 0) + 1
 
         # Check if the number of occurrences of each value in arr is unique
+        # freq.values(): dict_values([3, 2, 1])
         return len(freq) == len(set(freq.values()))
 
 
