@@ -46,4 +46,3 @@ assert Solution.minCostToMoveChips([2, 2, 2, 3, 3]) == 2
 assert Solution.minCostToMoveChips([1, 1000000000]) == 1
 
 print("All unit tests are passed")
-
