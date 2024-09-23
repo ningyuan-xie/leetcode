@@ -11,8 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isBoomerang(points: List[List[int]]) -> bool:
-        """Optimal Solution: Check the slope of the first two points.
-           Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Slope Calculation. Time Complexity: O(1), Space Complexity: O(1)"""
         # Ensure that no two points are identical
         if points[0] == points[1] or points[0] == points[2] or points[1] == points[2]:
             return False
