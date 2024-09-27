@@ -16,7 +16,7 @@ class Solution:
     def tictactoe(moves: List[List[int]]) -> str:
         """Optimal Solution: Simulation. Time Complexity: O(1), Space Complexity: O(1)"""
         # Initialize the board
-        board = [[''] * 3 for _ in range(3)]
+        board = [[''] * 3 for _ in range(3)]  # [['', '', ''], ['', '', ''], ['', '', '']]
 
         # Fill the board with the moves
         for i, (r, c) in enumerate(moves):
