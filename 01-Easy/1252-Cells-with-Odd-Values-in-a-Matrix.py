@@ -7,8 +7,8 @@ operations on the matrix.
 For each location indices[i], do both of the following:
 Increment all the cells on row ri.
 Increment all the cells on column ci.
-Given m, n, and indices, return the number of odd-valued cells in the matrix after applying the increment
-to all locations in indices."""
+Given m, n, and indices, return the number of odd-valued cells in the matrix after applying the
+increment to all locations in indices."""
 
 from typing import List
 

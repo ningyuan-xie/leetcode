@@ -1,7 +1,8 @@
 """1295. Find Numbers with Even Number of Digits
 Link: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 Difficulty: Easy
-Description: Given an array nums of integers, return how many of them contain an even number of digits."""
+Description: Given an array nums of integers, return how many of them contain an even number of
+digits."""
 
 from typing import List
 

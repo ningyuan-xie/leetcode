@@ -22,8 +22,8 @@ class Solution:
         # Flatten the grid into a 1D list
         flat_grid = [grid[i][j] for i in range(m) for j in range(n)]
 
-        # Since shifting the grid m * n times results in the same grid, the effective number of shifts
-        # needed is k % (m * n)
+        # Since shifting the grid m * n times results in the same grid, the effective number of
+        # shifts needed is k % (m * n)
         k %= m * n
 
         # Perform the shift
@@ -33,7 +33,7 @@ class Solution:
         # Reshape the 1D list back to a 2D grid: grid[i][j] = flat_grid[i * n + j]
         for i in range(m):  # E.g. m = 3: i = 0, 1, 2
             for j in range(n):  # E.g. n = 3: j = 0, 1, 2
-                grid[i][j] = flat_grid[i * n + j]  # E.g. grid[1][2] = flat_grid[1 * 3 + 2] = flat_grid[5]
+                grid[i][j] = flat_grid[i * n + j]  # E.g. grid[1][2] = flat_grid[1 * 3 + 2]
         return grid
 
 
