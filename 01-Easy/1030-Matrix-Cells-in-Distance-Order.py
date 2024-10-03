@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def allCellsDistOrder(rows: int, cols: int, rCenter: int, cCenter: int) -> List[List[int]]:
-        """Optimal Solution: Sorting.
+        """Optimal Solution: Sorting with lambda function.
            Time Complexity: O(rows * cols), Space Complexity: O(rows * cols)"""
         # Initialize the result list
         result = []
