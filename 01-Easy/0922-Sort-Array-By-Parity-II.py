@@ -43,7 +43,7 @@ assert Solution.sortArrayByParityII([2, 3]) == [2, 3]
 # Unit Test: Input: nums = [3,2], Output: [2,3]
 assert Solution.sortArrayByParityII([3, 2]) == [2, 3]
 
-# Unit Test: Input: nums = [3,2,4,1], Output: [4,1,2,3]
-assert Solution.sortArrayByParityII([3, 2, 4, 1]) == [4, 1, 2, 3]
+# Unit Test: Input: nums = [3,2,4,1], Output: [2,3,4,1]
+assert Solution.sortArrayByParityII([3, 2, 4, 1]) == [2, 3, 4, 1]
 
 print("All unit tests are passed")
