@@ -15,8 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def kWeakestRows(mat: List[List[int]], k: int) -> List[int]:
-        """Optimal Solution: Count the number of soldiers in each row
-           and sort the rows based on the number of soldiers.
+        """Optimal Solution: Tuple sorting.
            Time Complexity: O(m * n + m * log(m)), Space Complexity: O(m)"""
         # Count the number of soldiers in each row
         # E.g. [(2, 0), (3, 1), (1, 2), (2, 3), (5, 4)]
