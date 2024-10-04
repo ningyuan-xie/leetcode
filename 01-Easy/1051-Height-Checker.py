@@ -14,26 +14,28 @@ from typing import List
 class Solution:
     @staticmethod
     def heightChecker(heights: List[int]) -> int:
-        """Optimal Solution: Height Distribution Check. Time Complexity: O(n), Space Complexity: O(1).
+        """Optimal Solution: Counting Sort. Time Complexity: O(n), Space Complexity: O(1).
            Analyzing the distribution of heights and checking how far off they are from their
            expected order"""
         count = [0] * 101  # Count of heights (range 1-100)
 
-        # Build frequency count for heights
+        # Build frequency count for heights: each height has a count of how many students have it
         for h in heights:
             count[h] += 1  # E.g. [1, 1, 4, 2, 1, 3] -> [0, 3, 1, 1, 1, 0, ..., 0]
 
-        mismatch_count, expected = 0, 0
+        mismatch_count, expected_height = 0, 0
 
         # Compare actual heights with expected sorted order
         for h in heights:
-            while count[expected] == 0:
-                # Skip the current expected height until we find a student with that height
-                expected += 1
-            if h != expected:
+            # Skip the current expected height until we find a student with that height
+            while count[expected_height] == 0:
+                expected_height += 1
+            # Compare the actual height with the expected height
+            if h != expected_height:
                 mismatch_count += 1
-            # Reduce the count of the expected height
-            count[expected] -= 1
+            # After comparing once, reduce the count of the expected height by 1;
+            # so that when its count reaches 0, we can move on to the next expected height
+            count[expected_height] -= 1
 
         return mismatch_count
 
