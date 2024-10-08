@@ -16,6 +16,7 @@ class Solution:
         for num in arr:
             frequency[num] = frequency.get(num, 0) + 1
         lucky_numbers = [key for (key, value) in frequency.items() if key == value]
+
         return max(lucky_numbers) if lucky_numbers else -1
 
 
