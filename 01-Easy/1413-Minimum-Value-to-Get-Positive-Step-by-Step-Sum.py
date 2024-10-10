@@ -17,8 +17,8 @@ class Solution:
 
         # Greedy Approach: Find the min sum during the iteration to get the min positive value
         for num in nums:
-            current_sum += num  # E.g. [-3, 2, -3, 4, 2] -> [-3, -1, -4, 0, 2]
-            min_sum = min(min_sum, current_sum)  # -3, -3, -4, -4, -4
+            current_sum += num  # E.g. [-3, 2, -3, 4, 2]: -3 -> -1 -> -4 -> 0 -> 2
+            min_sum = min(min_sum, current_sum)  # E.g. -3 -> -3 -> -4 -> -4 -> -4
         # min positive value + min_sum = 1
         return 1 - min_sum
 
