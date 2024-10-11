@@ -21,10 +21,10 @@ class Solution:
         # Iterate through the middle string to update zeros and ones:
         # Each loop, we assume left substring's len + 1, and right substring's len - 1
         for char in s[1:-1]:  # s[1:-1] is the middle part of the string
-            # Increment zeros if the character is "0"
+            # Increment zeros if the character is "0", since we allocate it to the left substring
             if char == "0":
                 zeros += 1
-            # Decrement ones if the character is "1", since it is already counted in the right substring
+            # Decrement ones if the character is "1", since we allocate it to the left substring
             else:
                 ones -= 1
             max_score = max(max_score, zeros + ones)
