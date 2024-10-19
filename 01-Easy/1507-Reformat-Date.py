@@ -11,8 +11,6 @@ Convert the date string to the format YYYY-MM-DD, where:
 - MM denotes the 2 digit month.
 - DD denotes the 2 digit day."""
 
-from typing import List
-
 
 class Solution:
     @staticmethod
