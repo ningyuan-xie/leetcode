@@ -7,8 +7,6 @@ and walk on the path specified by path.
 Return true if the path crosses itself at any point, that is, if at any time you are on a location
 you have previously visited. Return false otherwise."""
 
-from typing import List
-
 
 class Solution:
     @staticmethod
