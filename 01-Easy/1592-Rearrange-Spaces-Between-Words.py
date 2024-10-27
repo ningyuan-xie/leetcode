@@ -22,7 +22,7 @@ class Solution:
         space_between_words = space_count // (len(words) - 1) if len(words) > 1 else 0  # 9 // 3 = 3
         space_at_end = space_count % (len(words) - 1) if len(words) > 1 else space_count  # 9 % 3 = 0
 
-        # Construct the reordered text
+        # Construct the reordered text: join words with spaces between and at the end
         return (' ' * space_between_words).join(words) + ' ' * space_at_end
 
 
