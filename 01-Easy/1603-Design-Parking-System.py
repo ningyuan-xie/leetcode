@@ -11,8 +11,9 @@ to get into the parking lot. carType can be of three kinds: big, medium, or smal
 represented by 1, 2, and 3 respectively. A car can only park in a parking space of its carType.
 If there is no space available, return false, else park the car in that size space and return true."""
 
+
 class ParkingSystem:
-    """Optimal Solution: Count Decrease. Time Complexity: O(1), Space Complexity: O(1)"""
+    """Optimal Solution: Object-Oriented Design. Time Complexity: O(1), Space Complexity: O(1)"""
 
     def __init__(self, big: int, medium: int, small: int):
         """Constructor: Initialize the parking system with the number of parking spaces
