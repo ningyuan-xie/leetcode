@@ -23,7 +23,7 @@ class Solution:
 
 
 # Unit Test: Input: n = 2, Output: False
-solution = Solution()
+solution = Solution()  # Instantiate a Solution class to call the instance method
 assert solution.isPowerOfFour(2) is False
 
 # Unit Test: Input: n = 8, Output: False
