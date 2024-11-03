@@ -35,4 +35,3 @@ assert Solution.max_repeating("ababc", "ac") == 0
 assert Solution.max_repeating("aaabaaaabaaabaaaabaaaabaaaabaaaaba", "aaaba") == 5
 
 print("All unit tests are passed")
-
