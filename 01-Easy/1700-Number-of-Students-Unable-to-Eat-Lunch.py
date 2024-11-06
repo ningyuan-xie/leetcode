@@ -24,7 +24,7 @@ class Solution:
     def count_students(students: List[int], sandwiches: List[int]) -> int:
         """Optimal Solution: Preference Counting. Time Complexity: O(n), Space Complexity: O(1).
            Since students will go to the end of the queue if they don't get their preferred sandwich,
-           we can iterate through the stack of sandwiches and check if any student wants the sandwich"""
+           the order of students doesn't matter, but the order of sandwiches does"""
         # Count preferences for each type of sandwich
         count_0 = students.count(0)  # Number of students who prefer type 0
         count_1 = students.count(1)  # Number of students who prefer type 1
