@@ -9,8 +9,6 @@ previous Monday.
 Given n, return the total amount of money he will have in the Leetcode bank at the end of the
 nth day."""
 
-from typing import List
-
 
 class Solution:
     @staticmethod
