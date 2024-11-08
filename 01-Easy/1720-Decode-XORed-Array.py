@@ -14,8 +14,10 @@ from typing import List
 class Solution:
     @staticmethod
     def decode(encoded: List[int], first: int) -> List[int]:
-        """Optimal Solution: XOR Properties. Time Complexity: O(n), Space Complexity: O(1)"""
-        # Initialize the decoded array with the first element
+        """Optimal Solution: XOR Properties. Time Complexity: O(n), Space Complexity: O(1).
+           XOR reversible property: a ^ b = c -> a ^ c = b and b ^ c = a.
+           Since encoded[i] = arr[i] ^ arr[i + 1], arr[i + 1] = arr[i] ^ encoded[i]"""
+        # Initialize the decoded array with the first element of the original array
         decoded = [first]
 
         # Decode the rest of the array
@@ -29,8 +31,8 @@ class Solution:
 # Unit Test: encoded = [1, 2, 3], first = 1, Output: [1, 0, 2, 1]
 assert Solution.decode([1, 2, 3], 1) == [1, 0, 2, 1]
 
-# Unit Test: encoded = [6, 2, 7, 3], first = 4, Output: [4, 2, 0, 7, 3]
-assert Solution.decode([6, 2, 7, 3], 4) == [4, 2, 0, 7, 3]
+# Unit Test: encoded = [6, 2, 7, 3], first = 4, Output: [4, 2, 0, 7, 4]
+assert Solution.decode([6, 2, 7, 3], 4) == [4, 2, 0, 7, 4]
 
 # Unit Test: encoded = [1], first = 1, Output: [1, 0]
 assert Solution.decode([1], 1) == [1, 0]
