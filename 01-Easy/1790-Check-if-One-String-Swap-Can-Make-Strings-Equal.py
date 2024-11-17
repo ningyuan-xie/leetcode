@@ -7,8 +7,6 @@ these indices.
 Return true if it is possible to make both strings equal by performing at most one string swap on
 exactly one of the strings. Otherwise, return false."""
 
-from typing import List
-
 
 class Solution:
     @staticmethod
