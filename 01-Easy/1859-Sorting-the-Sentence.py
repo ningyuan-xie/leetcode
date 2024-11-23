@@ -14,7 +14,7 @@ sentence."""
 class Solution:
     @staticmethod
     def sortSentence(s: str) -> str:
-        """Sort the shuffled sentence based on the numbers at the end of each word.
+        """Optimal Solution: Sort the shuffled sentence based on the numbers at the end of each word.
            Time Complexity: O(n), Space Complexity: O(n)"""
         # Split the input sentence into words
         # E.g. "is2 sentence4 This1 a3" -> ["is2", "sentence4", "This1", "a3"]
