@@ -14,13 +14,16 @@ class Solution:
     @staticmethod
     def isCovered(ranges: List[List[int]], left: int, right: int) -> bool:
         """Optimal Solution: Brute Force. Time Complexity: O(n * m), Space Complexity: O(1)"""
-        # Check if each integer is covered by at least one interval
         for x in range(left, right + 1):
             covered = False
+
+            # Check if the integer is covered by at least one interval
             for (left_i, right_i) in ranges:
                 if left_i <= x <= right_i:
                     covered = True
                     break  # Skip the rest of the intervals and move to the next integer
+
+            # The integer is not covered by any interval
             if not covered:
                 return False
         return True
