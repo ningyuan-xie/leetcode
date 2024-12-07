@@ -11,7 +11,8 @@ from typing import List
 class Solution:
     @staticmethod
     def maximumDifference(nums: List[int]) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1).
+           Similar to 0121-Best-Time-to-Buy-and-Sell-Stock.py"""
         # Initialize the maximum difference
         max_diff = -1
         # Initialize the minimum number encountered so far
