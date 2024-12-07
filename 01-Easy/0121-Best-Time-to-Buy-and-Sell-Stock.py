@@ -12,19 +12,19 @@ from typing import List
 class Solution:
     @staticmethod
     def maxProfit(prices: List[int]) -> int:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
-        # Initialize the minimum price to the maximum integer value
-        min_price = float('inf')  # float('inf') is equivalent to sys.maxsize
-        # Initialize the maximum profit to 0
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1).
+           Similar to 2016-Maximum-Difference-Between-Increasing-Elements.py"""
+        # Initialize the maximum profit
         max_profit = 0
-        # Iterate through the prices list
-        for current_price in prices:  # E.g. 7 -> 1 -> 5 -> 3 -> 6 -> 4
-            # Update the minimum price if the current price is lower
-            # E.g. 7 -> 1 -> 1 -> 1 -> 1 -> 1
-            min_price = min(min_price, current_price)
-            # Update the maximum profit if the current profit is higher
-            # E.g. 0 -> 0 -> 4 -> 4 -> 5 -> 5
-            max_profit = max(max_profit, current_price - min_price)
+        # Initialize the minimum price encountered so far
+        min_price = prices[0]
+
+        for i in range(1, len(prices)):
+            # Update the maximum profit
+            max_profit = max(max_profit, prices[i] - min_price)
+            # Update the minimum price encountered so far
+            min_price = min(min_price, prices[i])
+
         return max_profit
 
 
