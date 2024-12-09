@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def trimMean(arr: List[int]) -> float:
-        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
         # Sort the array in ascending order
         arr.sort()
 
