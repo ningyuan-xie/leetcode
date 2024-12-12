@@ -1,5 +1,5 @@
 """2057. Smallest Index With Equal Value
-Link: https://binarysearch.com/problems/Smallest-Index-With-Equal-Value
+Link: https://leetcode.com/problems/Smallest-Index-With-Equal-Value
 Difficulty: Easy
 Description: Given a 0-indexed integer array nums, return the smallest index i of nums such
 that i mod 10 == nums[i], or -1 if such index does not exist.
