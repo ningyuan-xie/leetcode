@@ -1,6 +1,6 @@
 """2062. Count Vowel Substrings of a String
 Link: https://leetcode.com/problems/count-vowel-substrings-of-a-string/
-Difficulty: Medium
+Difficulty: Easy
 Description: A substring is a contiguous (non-empty) sequence of characters within a string.
 A vowel substring is a substring that only consists of vowels ('a', 'e', 'i', 'o', and 'u') and
 has all five vowels present in it.
