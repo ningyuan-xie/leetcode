@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def dominant_index(nums: List[int]) -> int:
-        """Optimal Solution: Two Pass. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Passes. Time Complexity: O(n), Space Complexity: O(1)"""
         # Initialization: Assume the largest number is the first number
         largest_index, largest_num = 0, nums[0]
 
