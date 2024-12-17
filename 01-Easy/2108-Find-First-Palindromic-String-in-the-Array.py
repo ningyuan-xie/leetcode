@@ -12,7 +12,9 @@ class Solution:
     @staticmethod
     def firstPalindrome(words: List[str]) -> str:
         """Optimal Solution: Palindrome Check. Time Complexity: O(n), Space Complexity: O(1)"""
+
         def is_palindrome(s: str) -> bool:
+            """Helper function to check if the string is palindrome"""
             return s == s[::-1]
 
         for word in words:
