@@ -1,8 +1,8 @@
 """2154. Keep Multiplying Found Values by Two
 Link: https://www.leetcode.com/problems/keep-multiplying-found-values-by-two
 Difficulty: Easy
-Description: You are given an array of integers nums. You are also given an integer
-original which is the first number that needs to be searched for in nums.
+Description: You are given an array of integers nums. You are also given an integer original
+which is the first number that needs to be searched for in nums.
 You then do the following steps:
 1. If original is found in nums, multiply it by two (i.e., set original = 2 * original).
 2. Otherwise, stop the process.

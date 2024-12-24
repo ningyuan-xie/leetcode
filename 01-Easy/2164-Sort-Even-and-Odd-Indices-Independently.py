@@ -1,11 +1,11 @@
 """2164. Sort Even and Odd Indices Independently
 Link: https://www.leetcode.com/problems/sort-even-and-odd-indices-independently
 Difficulty: Easy
-Description: You are given a 0-indexed integer array nums. Rearrange the values of
-nums according to the following rules:
+Description: You are given a 0-indexed integer array nums. Rearrange the values of nums according
+to the following rules:
 1. Sort the values at odd indices of nums in non-increasing order.
-- For example, if nums = [4,1,2,3] before this step, it becomes [4,3,2,1] after.
-The values at odd indices 1 and 3 are sorted in non-increasing order.
+- For example, if nums = [4,1,2,3] before this step, it becomes [4,3,2,1] after. The values at
+odd indices 1 and 3 are sorted in non-increasing order.
 2. Sort the values at even indices of nums in non-decreasing order.
 - For example, if nums = [4,1,2,3] before this step, it becomes [2,1,4,3] after.
 The values at even indices 0 and 2 are sorted in non-decreasing order.
