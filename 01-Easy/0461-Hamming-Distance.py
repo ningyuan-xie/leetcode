@@ -1,8 +1,9 @@
 """461. Hamming Distance
 Link: https://leetcode.com/problems/hamming-distance/
 Difficulty: Easy
-Description: The Hamming distance between two integers is the number of positions
-at which the corresponding bits are different."""
+Description: The Hamming distance between two integers is the number of positions at which the
+corresponding bits are different.
+Given two integers x and y, return the Hamming distance between them."""
 
 
 class Solution:
