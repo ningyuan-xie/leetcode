@@ -12,8 +12,6 @@ group can be smaller than k.
 than k, repeat from step 1.
 Return s after all rounds have been completed."""
 
-from typing import List
-
 
 class Solution:
     @staticmethod
