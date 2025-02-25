@@ -1,8 +1,8 @@
 """2833. Furthest Point From Origin
 Link: https://leetcode.com/problems/furthest-point-from-origin/
 Difficulty: Easy
-Description: You are given a string moves of length n consisting only of characters 'L', 'R', and '_'. The
-string represents your movement on a number line starting from the origin 0.
+Description: You are given a string moves of length n consisting only of characters 'L', 'R',
+and '_'. The string represents your movement on a number line starting from the origin 0.
 In the ith move, you can choose one of the following directions:
 - move to the left if moves[i] = 'L' or moves[i] = '_'
 - move to the right if moves[i] = 'R' or moves[i] = '_'
