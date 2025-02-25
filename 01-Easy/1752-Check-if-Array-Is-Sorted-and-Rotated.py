@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def check(nums: List[int]) -> bool:
-        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(1).
+        """Optimal Solution: Rotations. Time Complexity: O(n), Space Complexity: O(1).
            The main idea is to detect points in the array where an element is greater than the
            next one, indicating a descending transition. In a sorted rotated array, at most one
            such descending transition is allowed"""
