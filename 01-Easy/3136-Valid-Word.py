@@ -12,8 +12,6 @@ Notes:
 - 'a', 'e', 'i', 'o', 'u', and their uppercases are vowels.
 - A consonant is an English letter that is not a vowel."""
 
-from typing import List
-
 
 class Solution:
     @staticmethod
