@@ -1,5 +1,5 @@
 """3194. Minimum Average of Smallest and Largest Elements
-Link: https://leetcode-cn.com/problems/minimum-average-of-smallest-and-largest-elements
+Link: https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements
 Difficulty: Easy
 Description: You have an array of floating point numbers averages which is initially empty. You
 are given an array nums of n integers where n is even.

@@ -1,5 +1,5 @@
 """3184. Count Pairs That Form a Complete Day I
-Link: https://leetcode-cn.com/problems/Count-Pairs-That-Form-a-Complete-Day-I
+Link: https://leetcode.com/problems/Count-Pairs-That-Form-a-Complete-Day-I
 Difficulty: Easy
 Description: Given an integer array hours representing times in hours, return an integer
 denoting the number of pairs i, j where i < j and hours[i] + hours[j] forms a complete day.
@@ -23,7 +23,6 @@ class Solution:
             remainder = hour % 24
             # Calculate the difference between the remainder and 24
             diff = 24 - remainder if remainder != 0 else 0
-            print(hour, diff)
 
             # If the difference is in the dictionary, add the count of the difference to the total count
             if diff in remainder_dict:

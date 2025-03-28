@@ -1,5 +1,5 @@
 """3190. Find Minimum Operations to Make All Elements Divisible by Three
-Link: https://leetcode-cn.com/problems/Find-Minimum-Operations-to-Make-All-Elements-Divisible-by-Three
+Link: https://leetcode.com/problems/Find-Minimum-Operations-to-Make-All-Elements-Divisible-by-Three
 Difficulty: Easy
 Description: You are given an integer array nums. In one operation, you can add or subtract 1
 from any element of nums.

@@ -1,5 +1,5 @@
 """3200. Maximum Height of a Triangle
-Link: https://leetcode-cn.com/problems/maximum-height-of-a-triangle
+Link: https://leetcode.com/problems/maximum-height-of-a-triangle
 Difficulty: Easy
 Description: You are given two integers red and blue representing the count of red and blue
 colored balls. You have to arrange these balls to form a triangle such that the 1st row will
