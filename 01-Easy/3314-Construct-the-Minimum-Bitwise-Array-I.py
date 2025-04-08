@@ -37,10 +37,14 @@ class Solution:
         return ans
 
 
-# Unit Test: nums = [2,3,5,7], Output: [-1,1,4,3]
-assert Solution.minBitwiseArray([2, 3, 5, 7]) == [-1, 1, 4, 3]
+def unit_tests():
+    # Unit Test: nums = [2,3,5,7], Output: [-1,1,4,3]
+    assert Solution.minBitwiseArray([2, 3, 5, 7]) == [-1, 1, 4, 3]
 
-# Unit Test: nums = [11,13,31], Output: [9,12,15]
-assert Solution.minBitwiseArray([11, 13, 31]) == [9, 12, 15]
+    # Unit Test: nums = [11,13,31], Output: [9,12,15]
+    assert Solution.minBitwiseArray([11, 13, 31]) == [9, 12, 15]
 
-print("All unit tests are passed")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed")

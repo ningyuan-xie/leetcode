@@ -24,10 +24,14 @@ class Solution:
         return even_sum == odd_sum
 
 
-# Unit Test: num = "1234", Output: False
-assert Solution.isBalanced("1234") is False
+def unit_tests():
+    # Unit Test: num = "1234", Output: False
+    assert Solution.isBalanced("1234") is False
 
-# Unit Test: num = "24123", Output: True
-assert Solution.isBalanced("24123") is True
+    # Unit Test: num = "24123", Output: True
+    assert Solution.isBalanced("24123") is True
 
-print("All unit tests are passed")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed")

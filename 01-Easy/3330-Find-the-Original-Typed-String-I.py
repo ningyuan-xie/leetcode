@@ -28,16 +28,20 @@ class Solution:
         return result
 
 
-# Unit Test: word = "abbcccc", Output: 5
-assert Solution.possibleStringCount("abbcccc") == 5
+def unit_tests():
+    # Unit Test: word = "abbcccc", Output: 5
+    assert Solution.possibleStringCount("abbcccc") == 5
 
-# Unit Test: word = "abcd", Output: 1
-assert Solution.possibleStringCount("abcd") == 1
+    # Unit Test: word = "abcd", Output: 1
+    assert Solution.possibleStringCount("abcd") == 1
 
-# Unit Test: word = "aaaa", Output: 4
-assert Solution.possibleStringCount("aaaa") == 4
+    # Unit Test: word = "aaaa", Output: 4
+    assert Solution.possibleStringCount("aaaa") == 4
 
-# Unit Test: word = "ere", Output: 1
-assert Solution.possibleStringCount("ere") == 1
+    # Unit Test: word = "ere", Output: 1
+    assert Solution.possibleStringCount("ere") == 1
 
-print("All unit tests are passed")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed")

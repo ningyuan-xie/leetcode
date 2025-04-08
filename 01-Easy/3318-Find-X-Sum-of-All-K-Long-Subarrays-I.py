@@ -51,10 +51,14 @@ class Solution:
         return result
     
 
-# Unit Test: nums = [1,1,2,2,3,4,2,3], k = 6, x = 2, Output: [6,10,12]
-assert Solution.findXSum([1, 1, 2, 2, 3, 4, 2, 3], 6, 2) == [6, 10, 12]
+def unit_tests():
+    # Unit Test: nums = [1,1,2,2,3,4,2,3], k = 6, x = 2, Output: [6,10,12]
+    assert Solution.findXSum([1, 1, 2, 2, 3, 4, 2, 3], 6, 2) == [6, 10, 12]
 
-# Unit Test: nums = [3,8,7,8,7,5], k = 2, x = 2, Output: [11,15,15,15,12]
-assert Solution.findXSum([3, 8, 7, 8, 7, 5], 2, 2) == [11, 15, 15, 15, 12]
+    # Unit Test: nums = [3,8,7,8,7,5], k = 2, x = 2, Output: [11,15,15,15,12]
+    assert Solution.findXSum([3, 8, 7, 8, 7, 5], 2, 2) == [11, 15, 15, 15, 12]
 
-print("All unit tests are passed")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed")
