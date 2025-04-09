@@ -1,9 +1,10 @@
-"""This script prints the Python version information"""
+"""This script prints the Python version information."""
 
 import sys
 
 
-def main():
+def version_checker():
+    """Helper function to print Python version information."""
     # major, minor, micro, releaselevel, serial
     version_info = sys.version_info
     # version_info[:3] returns a tuple which is an iterable: (major, minor, micro)
@@ -21,4 +22,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    version_checker()

@@ -1,4 +1,4 @@
-"""This script stores the data structures used in the LeetCode problems"""
+"""This script stores the data structures used in the LeetCode problems."""
 
 from typing import List, Optional
 
