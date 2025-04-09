@@ -25,10 +25,10 @@ class Solution:
 
 
 def unit_tests():
-    # Unit Test: num = "1234", Output: False
+    # Input: num = "1234", Output: False
     assert Solution.isBalanced("1234") is False
 
-    # Unit Test: num = "24123", Output: True
+    # Input: num = "24123", Output: True
     assert Solution.isBalanced("24123") is True
 
 
