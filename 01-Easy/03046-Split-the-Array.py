@@ -33,4 +33,4 @@ assert Solution.isPossibleToSplit([1, 1, 2, 2, 3, 4]) is True
 # Unit Test: nums = [1,1,1,1], Output = False
 assert Solution.isPossibleToSplit([1, 1, 1, 1]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

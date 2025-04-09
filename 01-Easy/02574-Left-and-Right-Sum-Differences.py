@@ -41,4 +41,4 @@ assert Solution.leftRigthDifference([10, 4, 8, 3]) == [15, 1, 11, 22]
 # Unit Test: nums = [1], Output: [0]
 assert Solution.leftRigthDifference([1]) == [0]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

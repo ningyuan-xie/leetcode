@@ -26,10 +26,10 @@ class Solution:
         return transposed
 
 
-# Unit Test: Input: [[1, 2, 3], [4, 5, 6], [7, 8, 9]], Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+# Input: [[1, 2, 3], [4, 5, 6], [7, 8, 9]], Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 assert Solution.transpose([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) == [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 
-# Unit Test: Input: [[1, 2, 3], [4, 5, 6]], Output: [[1, 4], [2, 5], [3, 6]]
+# Input: [[1, 2, 3], [4, 5, 6]], Output: [[1, 4], [2, 5], [3, 6]]
 assert Solution.transpose([[1, 2, 3], [4, 5, 6]]) == [[1, 4], [2, 5], [3, 6]]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -46,21 +46,21 @@ class Solution:
         return shortest_word
 
 
-# Unit Test: Input: license_plate = "1s3 PSt", words = ["step", "steps", "stripe", "stepple"],
+# Input: license_plate = "1s3 PSt", words = ["step", "steps", "stripe", "stepple"],
 # Output: "steps"
 assert Solution.shortest_completing_word("1s3 PSt",
                                          ["step", "steps", "stripe", "stepple"]) == "steps"
 
-# Unit Test: Input: license_plate = "1s3 456", words = ["looks", "pest", "stew", "show"],
+# Input: license_plate = "1s3 456", words = ["looks", "pest", "stew", "show"],
 # Output: "pest"
 assert Solution.shortest_completing_word("1s3 456",
                                          ["looks", "pest", "stew", "show"]) == "pest"
 
-# Unit Test: Input: license_plate = "Ah71752", words = ["suggest", "letter", "of", "husband", "easy",
+# Input: license_plate = "Ah71752", words = ["suggest", "letter", "of", "husband", "easy",
 # "education", "drug", "prevent", "writer", "old"], Output: "husband"
 assert (Solution.shortest_completing_word("Ah71752",
                                           ["suggest", "letter", "of", "husband", "easy",
                                            "education", "drug", "prevent", "writer", "old"])
         == "husband")
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

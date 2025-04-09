@@ -34,4 +34,4 @@ assert Solution.findDifference([1, 2, 3, 3], [1, 1, 2, 2]) == [[3], []]
 assert (Solution.findDifference([-68, -80, -19, -94, 82, 21, -43], [-63])
         == [[-94, -19, -80, 82, 21, -43, -68], [-63]])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

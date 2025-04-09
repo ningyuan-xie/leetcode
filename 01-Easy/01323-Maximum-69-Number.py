@@ -23,4 +23,4 @@ assert Solution.maximum69Number(9996) == 9999
 # Unit Test: num = 9999, Output: 9999
 assert Solution.maximum69Number(9999) == 9999
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

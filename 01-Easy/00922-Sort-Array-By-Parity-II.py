@@ -34,16 +34,16 @@ class Solution:
         return nums
 
 
-# Unit Test: Input: nums = [4,2,5,7], Output: [4,5,2,7]
+# Input: nums = [4,2,5,7], Output: [4,5,2,7]
 assert Solution.sortArrayByParityII([4, 2, 5, 7]) == [4, 5, 2, 7]
 
-# Unit Test: Input: nums = [2,3], Output: [2,3]
+# Input: nums = [2,3], Output: [2,3]
 assert Solution.sortArrayByParityII([2, 3]) == [2, 3]
 
-# Unit Test: Input: nums = [3,2], Output: [2,3]
+# Input: nums = [3,2], Output: [2,3]
 assert Solution.sortArrayByParityII([3, 2]) == [2, 3]
 
-# Unit Test: Input: nums = [3,2,4,1], Output: [2,3,4,1]
+# Input: nums = [3,2,4,1], Output: [2,3,4,1]
 assert Solution.sortArrayByParityII([3, 2, 4, 1]) == [2, 3, 4, 1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

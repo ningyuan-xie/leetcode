@@ -24,16 +24,16 @@ class Solution:
         return result
 
 
-# Unit Test: Input: columnNumber = 1, Output: "A"
+# Input: columnNumber = 1, Output: "A"
 assert Solution.convertToTitle(1) == "A"
 
-# Unit Test: Input: columnNumber = 28, Output: "AB"
+# Input: columnNumber = 28, Output: "AB"
 assert Solution.convertToTitle(28) == "AB"
 
-# Unit Test: Input: columnNumber = 701, Output: "ZY"
+# Input: columnNumber = 701, Output: "ZY"
 assert Solution.convertToTitle(701) == "ZY"
 
-# Unit Test: Input: columnNumber = 2147483647, Output: "FXSHRXW"
+# Input: columnNumber = 2147483647, Output: "FXSHRXW"
 assert Solution.convertToTitle(2147483647) == "FXSHRXW"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

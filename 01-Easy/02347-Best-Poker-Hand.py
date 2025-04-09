@@ -45,4 +45,4 @@ assert Solution.bestHand([4, 4, 2, 4, 4], ["d", "a", "a", "b", "c"]) == "Three o
 # Unit Test: ranks = [10,10,2,12,9], suits = ["a","b","c","a","d"], Output: "Pair"
 assert Solution.bestHand([10, 10, 2, 12, 9], ["a", "b", "c", "a", "d"]) == "Pair"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

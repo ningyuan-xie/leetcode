@@ -70,4 +70,4 @@ assert Solution.isWinner([2, 3], [4, 1]) == 0
 assert Solution.isWinner([1, 1, 1, 10, 10, 10, 10],
                          [10, 10, 10, 10, 1, 1, 1]) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

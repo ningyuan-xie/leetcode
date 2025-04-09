@@ -39,4 +39,4 @@ assert Solution.sumBase(42, 2) == 3
 # 8 in base 2 is 1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 0 * 2^0 = 8
 assert Solution.sumBase(8, 2) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -25,3 +25,5 @@ assert (Solution.sortPeople(["Mary", "John", "Emma"], [180, 165, 170])
 # Unit Test: names = ["Alice","Bob","Bob"], heights = [155,185,150], Output: ["Bob","Alice","Bob"]
 assert (Solution.sortPeople(["Alice", "Bob", "Bob"], [155, 185, 150])
         == ["Bob", "Alice", "Bob"])
+
+print("All unit tests are passed.")

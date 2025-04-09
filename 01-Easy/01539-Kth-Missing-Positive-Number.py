@@ -40,4 +40,4 @@ assert Solution.findKthPositive([2, 3, 4, 7, 11], 5) == 9
 # Explanation: The missing numbers are [5, 6, 7, ...], hence the 2nd missing number is 6
 assert Solution.findKthPositive([1, 2, 3, 4], 2) == 6
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

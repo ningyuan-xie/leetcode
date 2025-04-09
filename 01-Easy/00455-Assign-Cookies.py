@@ -37,13 +37,13 @@ class Solution:
         return i
 
 
-# Unit Test: Input: g = [1, 2, 3], s = [1, 1], Output: 1
+# Input: g = [1, 2, 3], s = [1, 1], Output: 1
 assert Solution.findContentChildren([1, 2, 3], [1, 1]) == 1
 
-# Unit Test: Input: g = [1, 2], s = [1, 2, 3], Output: 2
+# Input: g = [1, 2], s = [1, 2, 3], Output: 2
 assert Solution.findContentChildren([1, 2], [1, 2, 3]) == 2
 
-# Unit Test: Input: g = [1, 2, 3], s = [3], Output: 1
+# Input: g = [1, 2, 3], s = [3], Output: 1
 assert Solution.findContentChildren([1, 2, 3], [3]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

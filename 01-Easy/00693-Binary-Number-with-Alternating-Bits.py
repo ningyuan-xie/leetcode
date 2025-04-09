@@ -20,19 +20,19 @@ class Solution:
         return (x & (x + 1)) == 0
 
 
-# Unit Test: Input: n = 5, Output: True
+# Input: n = 5, Output: True
 assert Solution.hasAlternatingBits(5) is True
 
-# Unit Test: Input: n = 7, Output: False
+# Input: n = 7, Output: False
 assert Solution.hasAlternatingBits(7) is False
 
-# Unit Test: Input: n = 11, Output: False
+# Input: n = 11, Output: False
 assert Solution.hasAlternatingBits(11) is False
 
-# Unit Test: Input: n = 10, Output: True
+# Input: n = 10, Output: True
 assert Solution.hasAlternatingBits(10) is True
 
-# Unit Test: Input: n = 4, Output: False
+# Input: n = 4, Output: False
 assert Solution.hasAlternatingBits(4) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

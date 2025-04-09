@@ -42,4 +42,4 @@ assert Solution.countTestedDevices([1, 1, 2, 1, 3]) == 3
 # Unit Test: batteryPercentages = [0,1,2], Output: 2
 assert Solution.countTestedDevices([0, 1, 2]) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

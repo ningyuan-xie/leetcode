@@ -30,6 +30,6 @@ assert Solution.differenceOfSum([1, 15, 6, 3]) == 9
 # Unit Test: nums = [1,2,3,4], Output: 0
 assert Solution.differenceOfSum([1, 2, 3, 4]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")
 
 

@@ -41,4 +41,4 @@ assert Solution.minMovesToSeat([4, 1, 5, 9], [1, 3, 2, 6]) == 7
 # Unit Test: seats = [2, 2, 6, 6], students = [1, 3, 2, 6], Output: 4
 assert Solution.minMovesToSeat([2, 2, 6, 6], [1, 3, 2, 6]) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

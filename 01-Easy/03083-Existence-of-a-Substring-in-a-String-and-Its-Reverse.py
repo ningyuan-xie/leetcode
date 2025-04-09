@@ -32,4 +32,4 @@ assert Solution.isSubstringPresent("abcba") is True
 # Unit Test: s = "abcd", Output = False
 assert Solution.isSubstringPresent("abcd") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

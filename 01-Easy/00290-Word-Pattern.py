@@ -30,16 +30,16 @@ class Solution:
         return True
 
 
-# Unit Test: Input: pattern = "abba", s = "dog cat cat dog", Output: True
+# Input: pattern = "abba", s = "dog cat cat dog", Output: True
 assert Solution.wordPattern("abba", "dog cat cat dog") is True
 
-# Unit Test: Input: pattern = "abba", s = "dog cat cat fish", Output: False
+# Input: pattern = "abba", s = "dog cat cat fish", Output: False
 assert Solution.wordPattern("abba", "dog cat cat fish") is False
 
-# Unit Test: Input: pattern = "aaaa", s = "dog cat cat dog", Output: False
+# Input: pattern = "aaaa", s = "dog cat cat dog", Output: False
 assert Solution.wordPattern("aaaa", "dog cat cat dog") is False
 
-# Unit Test: Input: pattern = "abba", s = "dog dog dog dog", Output: False
+# Input: pattern = "abba", s = "dog dog dog dog", Output: False
 assert Solution.wordPattern("abba", "dog dog dog dog") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

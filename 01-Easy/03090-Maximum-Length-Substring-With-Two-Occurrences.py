@@ -35,4 +35,4 @@ assert Solution.maximumLengthSubstring("bcbbbcba") == 4
 # Unit Test: s = "aaaa", Output = 2
 assert Solution.maximumLengthSubstring("aaaa") == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

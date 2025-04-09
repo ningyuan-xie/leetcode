@@ -38,4 +38,4 @@ assert Solution.minimumCost([6, 5, 7, 9, 2, 2]) == 23
 # Unit Test: cost = [5,5], Output: 10
 assert Solution.minimumCost([5, 5]) == 10
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

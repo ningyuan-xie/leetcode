@@ -24,4 +24,4 @@ assert Solution.scoreOfString("hello") == 13
 # Unit Test: s = "zaz", Output = 50
 assert Solution.scoreOfString("zaz") == 50
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

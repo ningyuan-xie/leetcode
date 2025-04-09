@@ -28,13 +28,13 @@ class Solution:
         return up == down and left == right
 
 
-# Unit Test: Input: moves = "UD", Output: True
+# Input: moves = "UD", Output: True
 assert Solution.judgeCircle("UD") is True
 
-# Unit Test: Input: moves = "LL", Output: False
+# Input: moves = "LL", Output: False
 assert Solution.judgeCircle("LL") is False
 
-# Unit Test: Input: moves = "UDLR", Output: True
+# Input: moves = "UDLR", Output: True
 assert Solution.judgeCircle("UDLR") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

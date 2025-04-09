@@ -21,13 +21,13 @@ class Solution:
         return max(max_consecutive, current_consecutive)
 
 
-# Unit Test: Input: [1, 1, 0, 1, 1, 1], Output: 3
+# Input: [1, 1, 0, 1, 1, 1], Output: 3
 assert Solution.findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]) == 3
 
-# Unit Test: Input: [1, 0, 1, 1, 0, 1], Output: 2
+# Input: [1, 0, 1, 1, 0, 1], Output: 2
 assert Solution.findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1]) == 2
 
-# Unit Test: Input: [1, 1, 1, 1, 1, 1], Output: 6
+# Input: [1, 1, 1, 1, 1, 1], Output: 6
 assert Solution.findMaxConsecutiveOnes([1, 1, 1, 1, 1, 1]) == 6
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

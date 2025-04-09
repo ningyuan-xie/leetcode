@@ -35,4 +35,4 @@ assert Solution.maximumStrongPairXor([10, 100]) == 0
 # Unit Test: nums = [5,6,25,30], Output: 7
 assert Solution.maximumStrongPairXor([5, 6, 25, 30]) == 7
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

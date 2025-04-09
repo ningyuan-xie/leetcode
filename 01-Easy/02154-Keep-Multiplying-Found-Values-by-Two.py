@@ -27,4 +27,4 @@ assert Solution.findFinalValue([5, 3, 6, 1, 12], 3) == 24
 # Unit Test: nums = [2,7,9], original = 4, Output: 4
 assert Solution.findFinalValue([2, 7, 9], 4) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

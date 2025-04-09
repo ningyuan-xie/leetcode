@@ -36,4 +36,4 @@ assert Solution.minimumSubarrayLength([2, 1, 8], 10) == 3
 # Unit Test: nums = [1,2], k = 0, Output = 1
 assert Solution.minimumSubarrayLength([1, 2], 0) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

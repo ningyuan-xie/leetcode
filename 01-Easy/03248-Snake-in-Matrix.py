@@ -31,4 +31,4 @@ assert Solution.finalPositionOfSnake(2, ["RIGHT", "DOWN"]) == 3
 # Unit Test: n = 3, commands = ["DOWN","RIGHT","UP"], Output: 1
 assert Solution.finalPositionOfSnake(3, ["DOWN", "RIGHT", "UP"]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

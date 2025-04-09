@@ -22,13 +22,13 @@ class Solution:
         return 100 - roundedAmount
 
 
-# Unit Test: Input: purchaseAmount = 9, Output: 90
+# Input: purchaseAmount = 9, Output: 90
 assert Solution.accountBalanceAfterPurchase(9) == 90
 
-# Unit Test: Input: purchaseAmount = 15, Output: 80
+# Input: purchaseAmount = 15, Output: 80
 assert Solution.accountBalanceAfterPurchase(15) == 80
 
-# Unit Test: Input: purchaseAmount = 10, Output: 90
+# Input: purchaseAmount = 10, Output: 90
 assert Solution.accountBalanceAfterPurchase(10) == 90
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

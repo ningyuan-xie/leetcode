@@ -30,4 +30,4 @@ assert Solution.percentageLetter("foobar", "o") == 33
 # Unit Test: s = "jjjj", letter = "k", Output: 0
 assert Solution.percentageLetter("jjjj", "k") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

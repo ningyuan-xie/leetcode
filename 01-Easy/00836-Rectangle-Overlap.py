@@ -24,13 +24,13 @@ class Solution:
                     rec1[1] >= rec2[3])  # rec1 is above rec2
 
 
-# Unit Test: Input: rec1 = [0, 0, 2, 2], rec2 = [1, 1, 3, 3], Output: True
+# Input: rec1 = [0, 0, 2, 2], rec2 = [1, 1, 3, 3], Output: True
 assert Solution.isRectangleOverlap([0, 0, 2, 2], [1, 1, 3, 3]) is True
 
-# Unit Test: Input: rec1 = [0, 0, 1, 1], rec2 = [1, 0, 2, 1], Output: False
+# Input: rec1 = [0, 0, 1, 1], rec2 = [1, 0, 2, 1], Output: False
 assert Solution.isRectangleOverlap([0, 0, 1, 1], [1, 0, 2, 1]) is False
 
-# Unit Test: Input: rec1 = [0, 0, 1, 1], rec2 = [2, 2, 3, 3], Output: False
+# Input: rec1 = [0, 0, 1, 1], rec2 = [2, 2, 3, 3], Output: False
 assert Solution.isRectangleOverlap([0, 0, 1, 1], [2, 2, 3, 3]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -28,19 +28,19 @@ class Solution:
         return dummy.next  # dummy: 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> None
 
 
-# Unit Test: Input: head = [1,2,6,3,4,5,6], val = 6, Output: [1,2,3,4,5]
+# Input: head = [1,2,6,3,4,5,6], val = 6, Output: [1,2,3,4,5]
 head_test = ListNode.build_linked_list([1, 2, 6, 3, 4, 5, 6])
 head_expected = ListNode.build_linked_list([1, 2, 3, 4, 5])
 assert Solution.removeElements(head_test, 6) == head_expected
 
-# Unit Test: Input: head = [], val = 1, Output: []
+# Input: head = [], val = 1, Output: []
 head_test = ListNode.build_linked_list([])
 head_expected = ListNode.build_linked_list([])
 assert Solution.removeElements(head_test, 1) == head_expected
 
-# Unit Test: Input: head = [7,7,7,7], val = 7, Output: []
+# Input: head = [7,7,7,7], val = 7, Output: []
 head_test = ListNode.build_linked_list([7, 7, 7, 7])
 head_expected = ListNode.build_linked_list([])
 assert Solution.removeElements(head_test, 7) == head_expected
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

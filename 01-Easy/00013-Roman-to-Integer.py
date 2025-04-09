@@ -33,13 +33,13 @@ class Solution:
         return sum_num
 
 
-# Unit Test: Input: s = "III", Output: 3
+# Input: s = "III", Output: 3
 assert Solution.romanToInt("III") == 3
 
-# Unit Test: Input: s = "IV", Output: 4
+# Input: s = "IV", Output: 4
 assert Solution.romanToInt("IV") == 4
 
-# Unit Test: Input: s = "IX", Output: 9
+# Input: s = "IX", Output: 9
 assert Solution.romanToInt("IX") == 9
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

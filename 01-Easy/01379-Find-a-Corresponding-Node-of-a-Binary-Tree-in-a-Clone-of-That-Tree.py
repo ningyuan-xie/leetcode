@@ -42,4 +42,4 @@ cloned_test = TreeNode.build_binary_tree([7])
 target_test = original_test
 assert Solution.getTargetCopy(original_test, cloned_test, target_test) == cloned_test
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

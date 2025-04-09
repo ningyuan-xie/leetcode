@@ -28,22 +28,22 @@ class Solution:
         return 0 < left == right < len(arr) - 1
 
 
-# Unit Test: Input: [2,1], Output: False
+# Input: [2,1], Output: False
 assert Solution.validMountainArray([2, 1]) is False
 
-# Unit Test: Input: [3,5,5], Output: False
+# Input: [3,5,5], Output: False
 assert Solution.validMountainArray([3, 5, 5]) is False
 
-# Unit Test: Input: [0,3,2,1], Output: True
+# Input: [0,3,2,1], Output: True
 assert Solution.validMountainArray([0, 3, 2, 1]) is True
 
-# Unit Test: Input: [0,1,2,3,4,5,6,7,8,9], Output: False
+# Input: [0,1,2,3,4,5,6,7,8,9], Output: False
 assert Solution.validMountainArray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) is False
 
-# Unit Test: Input: [9,8,7,6,5,4,3,2,1,0], Output: False
+# Input: [9,8,7,6,5,4,3,2,1,0], Output: False
 assert Solution.validMountainArray([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]) is False
 
-# Unit Test: Input: [0,1,2,3,4,5,4,3,2,1,0], Output: True
+# Input: [0,1,2,3,4,5,4,3,2,1,0], Output: True
 assert Solution.validMountainArray([0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

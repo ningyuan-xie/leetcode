@@ -29,4 +29,4 @@ assert Solution.isSumEqual(root_test) is True
 root_test = TreeNode.build_binary_tree([5, 3, 1])
 assert Solution.isSumEqual(root_test) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

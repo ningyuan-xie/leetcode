@@ -26,13 +26,13 @@ class Solution:
         return length_new
 
 
-# Unit Test: Input: nums = [3,2,2,3], val = 3, Output: 2; nums = [2,2,_,_]
+# Input: nums = [3,2,2,3], val = 3, Output: 2; nums = [2,2,_,_]
 assert Solution.removeElement([3, 2, 2, 3], 3) == 2
 
-# Unit Test: Input: nums = [0,1,2,2,3,0,4,2], val = 2, Output: 5; nums = [0,1,3,0,4,_]
+# Input: nums = [0,1,2,2,3,0,4,2], val = 2, Output: 5; nums = [0,1,3,0,4,_]
 assert Solution.removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2) == 5
 
-# Unit Test: Input: nums = [1], val = 1, Output: 0; nums = []
+# Input: nums = [1], val = 1, Output: 0; nums = []
 assert Solution.removeElement([1], 1) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

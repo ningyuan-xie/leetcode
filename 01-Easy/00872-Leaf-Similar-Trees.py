@@ -41,21 +41,21 @@ class Solution:
         return leaf_sequence1 == leaf_sequence2
 
 
-# Unit Test: Input: root1 = [3,5,1,6,2,9,8,null,null,7,4],
+# Input: root1 = [3,5,1,6,2,9,8,null,null,7,4],
 # root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8], Output: true
 root1_test = TreeNode.build_binary_tree([3, 5, 1, 6, 2, 9, 8, None, None, 7, 4])
 root2_test = TreeNode.build_binary_tree(
     [3, 5, 1, 6, 7, 4, 2, None, None, None, None, None, None, 9, 8])
 assert Solution.leafSimilar(root1_test, root2_test) is True
 
-# Unit Test: Input: root1 = [1], root2 = [1], Output: true
+# Input: root1 = [1], root2 = [1], Output: true
 root1_test = TreeNode.build_binary_tree([1])
 root2_test = TreeNode.build_binary_tree([1])
 assert Solution.leafSimilar(root1_test, root2_test) is True
 
-# Unit Test: Input: root1 = [1], root2 = [2], Output: false
+# Input: root1 = [1], root2 = [2], Output: false
 root1_test = TreeNode.build_binary_tree([1])
 root2_test = TreeNode.build_binary_tree([2])
 assert Solution.leafSimilar(root1_test, root2_test) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

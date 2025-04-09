@@ -27,4 +27,4 @@ assert Solution.winningPlayer(2, 7) == "Alice"
 # Unit Test: x = 4, y = 11, Output: "Bob"
 assert Solution.winningPlayer(4, 11) == "Bob"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

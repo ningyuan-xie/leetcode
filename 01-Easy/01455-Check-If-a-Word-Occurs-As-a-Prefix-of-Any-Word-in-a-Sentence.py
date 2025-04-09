@@ -46,4 +46,4 @@ assert Solution.isPrefixOfWord("i use triple pillow", "pill") == 4
 # Unit Test: sentence = "hello from the other side", searchWord = "they", Output: -1
 assert Solution.isPrefixOfWord("hello from the other side", "they") == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

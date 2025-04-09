@@ -52,4 +52,4 @@ assert Solution.findTheLongestBalancedSubstring("") == 0
 # Unit Test: s= "10", Output: 0
 assert Solution.findTheLongestBalancedSubstring("10") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

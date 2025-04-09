@@ -36,4 +36,4 @@ assert Solution.minSumOfMountainTriplets([5, 4, 8, 7, 10, 2]) == 13
 # Unit Test: nums = [6,5,4,3,4,5], Output: -1
 assert Solution.minSumOfMountainTriplets([6, 5, 4, 3, 4, 5]) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -36,4 +36,4 @@ assert Solution.checkXMatrix([[2, 0, 0, 1], [0, 3, 1, 0], [0, 5, 2, 0], [4, 0, 0
 # Unit Test: grid = [[5,7,0],[0,3,1],[0,5,0]], Output: False
 assert Solution.checkXMatrix([[5, 7, 0], [0, 3, 1], [0, 5, 0]]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

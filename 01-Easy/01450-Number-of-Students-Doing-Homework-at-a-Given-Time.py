@@ -37,4 +37,4 @@ assert Solution.busyStudent([4], [4], 5) == 0
 # Unit Test: startTime = [1, 1, 1, 1], endTime = [1, 3, 2, 4], queryTime = 7, Output: 0
 assert Solution.busyStudent([1, 1, 1, 1], [1, 3, 2, 4], 7) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

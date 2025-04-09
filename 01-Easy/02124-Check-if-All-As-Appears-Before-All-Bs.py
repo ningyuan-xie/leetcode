@@ -26,4 +26,4 @@ assert Solution.allAsBeforeBs("abab") is False
 # Unit Test: s = "bbb", Output: True
 assert Solution.allAsBeforeBs("bbb") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -44,4 +44,4 @@ assert Solution.minimumBoxes([1, 8, 3, 3, 5], [3, 9, 5, 1, 9]) == 3
 # Unit Test: apple = [9,8,8,2,3,1,6], capacity = [10,1,4,10,8,5], Output = 5
 assert Solution.minimumBoxes([9, 8, 8, 2, 3, 1, 6], [10, 1, 4, 10, 8, 5]) == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

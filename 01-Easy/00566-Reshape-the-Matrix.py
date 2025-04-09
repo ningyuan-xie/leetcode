@@ -36,13 +36,13 @@ class Solution:
         return reshaped_mat
 
 
-# Unit Test: Input: mat = [[1, 2], [3, 4]], r = 1, c = 4, Output: [[1, 2, 3, 4]]
+# Input: mat = [[1, 2], [3, 4]], r = 1, c = 4, Output: [[1, 2, 3, 4]]
 assert Solution.matrixReshape([[1, 2], [3, 4]], 1, 4) == [[1, 2, 3, 4]]
 
-# Unit Test: Input: mat = [[1, 2], [3, 4]], r = 2, c = 4, Output: [[1, 2], [3, 4]]
+# Input: mat = [[1, 2], [3, 4]], r = 2, c = 4, Output: [[1, 2], [3, 4]]
 assert Solution.matrixReshape([[1, 2], [3, 4]], 2, 4) == [[1, 2], [3, 4]]
 
-# Unit Test: Input: mat = [[1, 2], [3, 4]], r = 4, c = 1, Output: [[1], [2], [3], [4]]
+# Input: mat = [[1, 2], [3, 4]], r = 4, c = 1, Output: [[1], [2], [3], [4]]
 assert Solution.matrixReshape([[1, 2], [3, 4]], 4, 1) == [[1], [2], [3], [4]]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

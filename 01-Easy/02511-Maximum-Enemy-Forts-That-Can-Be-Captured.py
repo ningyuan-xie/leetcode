@@ -47,4 +47,4 @@ assert Solution.captureForts([1, 0, 0, -1, 0, 0, 0, 0, 1]) == 4
 # Unit Test: forts = [0,0,1,-1], Output: 0
 assert Solution.captureForts([0, 0, 1, -1]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -51,4 +51,4 @@ assert Solution.maxProductDifference([4, 2, 5, 9, 7, 4, 8]) == 64
 # Unit Test: nums = [3, 4, 5, 2], Output: 14
 assert Solution.maxProductDifferenceLinear([3, 4, 5, 2]) == 14
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

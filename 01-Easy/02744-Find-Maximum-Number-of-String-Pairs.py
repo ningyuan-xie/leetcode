@@ -42,4 +42,4 @@ assert Solution.maximumNumberOfStringPairs(["ab", "ba", "cc"]) == 1
 # Unit Test: words = ["aa","ab"], Output: 0
 assert Solution.maximumNumberOfStringPairs(["aa", "ab"]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

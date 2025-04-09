@@ -32,13 +32,13 @@ class Solution:
         return right
 
 
-# Unit Test: Input: n = 5, Output: 2
+# Input: n = 5, Output: 2
 assert Solution.arrangeCoins(5) == 2
 
-# Unit Test: Input: n = 8, Output: 3
+# Input: n = 8, Output: 3
 assert Solution.arrangeCoins(8) == 3
 
-# Unit Test: Input: n = 0, Output: 0
+# Input: n = 0, Output: 0
 assert Solution.arrangeCoins(0) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

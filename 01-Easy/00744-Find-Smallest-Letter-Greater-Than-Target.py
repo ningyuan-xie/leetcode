@@ -38,19 +38,19 @@ class Solution:
         return letters[left]
 
 
-# Unit Test: Input: letters = ["c", "f", "j"], target = "a", Output: "c"
+# Input: letters = ["c", "f", "j"], target = "a", Output: "c"
 assert Solution.next_greatest_letter(["c", "f", "j"], "a") == "c"
 
-# Unit Test: Input: letters = ["c", "f", "j"], target = "c", Output: "f"
+# Input: letters = ["c", "f", "j"], target = "c", Output: "f"
 assert Solution.next_greatest_letter(["c", "f", "j"], "c") == "f"
 
-# Unit Test: Input: letters = ["c", "f", "j"], target = "d", Output: "f"
+# Input: letters = ["c", "f", "j"], target = "d", Output: "f"
 assert Solution.next_greatest_letter(["c", "f", "j"], "d") == "f"
 
-# Unit Test: Input: letters = ["c", "f", "j"], target = "g", Output: "j"
+# Input: letters = ["c", "f", "j"], target = "g", Output: "j"
 assert Solution.next_greatest_letter(["c", "f", "j"], "g") == "j"
 
-# Unit Test: Input: letters = ["c", "f", "j"], target = "k", Output: "c"
+# Input: letters = ["c", "f", "j"], target = "k", Output: "c"
 assert Solution.next_greatest_letter(["c", "f", "j"], "k") == "c"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

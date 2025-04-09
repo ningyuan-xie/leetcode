@@ -26,13 +26,13 @@ class Solution:
         return True
 
 
-# Unit Test: Input: ransomNote = "a", magazine = "b", Output: False
+# Input: ransomNote = "a", magazine = "b", Output: False
 assert Solution.canConstruct("a", "b") is False
 
-# Unit Test: Input: ransomNote = "aa", magazine = "ab", Output: False
+# Input: ransomNote = "aa", magazine = "ab", Output: False
 assert Solution.canConstruct("aa", "ab") is False
 
-# Unit Test: Input: ransomNote = "aa", magazine = "aab", Output: True
+# Input: ransomNote = "aa", magazine = "aab", Output: True
 assert Solution.canConstruct("aa", "aab") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

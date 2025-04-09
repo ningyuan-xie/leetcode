@@ -31,4 +31,4 @@ assert Solution.numberOfSteps(8) == 4
 # Unit Test: num = 123, Output: 12
 assert Solution.numberOfSteps(123) == 12
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

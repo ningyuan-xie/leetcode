@@ -26,19 +26,19 @@ class Solution:
         return is_increasing or is_decreasing
 
 
-# Unit Test: Input: nums = [1,2,2,3], Output: True
+# Input: nums = [1,2,2,3], Output: True
 assert Solution.isMonotonic([1, 2, 2, 3]) is True
 
-# Unit Test: Input: nums = [6,5,4,4], Output: True
+# Input: nums = [6,5,4,4], Output: True
 assert Solution.isMonotonic([6, 5, 4, 4]) is True
 
-# Unit Test: Input: nums = [1,3,2], Output: False
+# Input: nums = [1,3,2], Output: False
 assert Solution.isMonotonic([1, 3, 2]) is False
 
-# Unit Test: Input: nums = [1,2,4,5], Output: True
+# Input: nums = [1,2,4,5], Output: True
 assert Solution.isMonotonic([1, 2, 4, 5]) is True
 
-# Unit Test: Input: nums = [1,1,1], Output: True
+# Input: nums = [1,1,1], Output: True
 assert Solution.isMonotonic([1, 1, 1]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

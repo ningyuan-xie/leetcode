@@ -45,4 +45,4 @@ assert Solution.interpret("G()()()()(al)") == "Gooooal"
 # Unit Test: command = "(al)G(al)()()G", Output: "alGalooG"
 assert Solution.interpret("(al)G(al)()()G") == "alGalooG"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

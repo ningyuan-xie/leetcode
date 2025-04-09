@@ -33,14 +33,14 @@ class Solution:
         return image
 
 
-# Unit Test: Input: image = [[1, 1, 0], [1, 0, 1], [0, 0, 0]],
+# Input: image = [[1, 1, 0], [1, 0, 1], [0, 0, 0]],
 # Output: [[1, 0, 0], [0, 1, 0], [1, 1, 1]]
 assert (Solution.flipAndInvertImage([[1, 1, 0], [1, 0, 1], [0, 0, 0]]) ==
         [[1, 0, 0], [0, 1, 0], [1, 1, 1]])
 
-# Unit Test: Input: image = [[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]],
+# Input: image = [[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]],
 # Output: [[1, 1, 0, 0], [0, 1, 1, 0], [0, 0, 0, 1], [1, 0, 1, 0]]
 assert (Solution.flipAndInvertImage([[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]]) ==
         [[1, 1, 0, 0], [0, 1, 1, 0], [0, 0, 0, 1], [1, 0, 1, 0]])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

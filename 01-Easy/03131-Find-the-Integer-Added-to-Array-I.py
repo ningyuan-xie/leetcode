@@ -27,4 +27,4 @@ assert Solution.addedInteger([10], [5]) == -5
 # Unit Test: nums1 = [1,1,1,1], nums2 = [1,1,1,1], Output = 0
 assert Solution.addedInteger([1, 1, 1, 1], [1, 1, 1, 1]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

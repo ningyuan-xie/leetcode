@@ -40,4 +40,4 @@ assert Solution.incremovableSubarrayCount([6, 5, 7, 8]) == 7
 # Unit Test: nums = [8,7,6,6], Output:3
 assert Solution.incremovableSubarrayCount([8, 7, 6, 6]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -31,13 +31,13 @@ class Solution:
         return i == len(bits) - 1
 
 
-# Unit Test: Input: bits = [1, 0, 0], Output: True
+# Input: bits = [1, 0, 0], Output: True
 assert Solution.is_one_bit_character([1, 0, 0]) is True
 
-# Unit Test: Input: bits = [1, 1, 1, 0], Output: False
+# Input: bits = [1, 1, 1, 0], Output: False
 assert Solution.is_one_bit_character([1, 1, 1, 0]) is False
 
-# Unit Test: Input: bits = [0], Output: True
+# Input: bits = [0], Output: True
 assert Solution.is_one_bit_character([0]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

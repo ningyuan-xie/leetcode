@@ -41,4 +41,4 @@ assert Solution.isFascinating(100) is False
 # Unit Test: n = 783, Output: False
 assert Solution.isFascinating(783) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

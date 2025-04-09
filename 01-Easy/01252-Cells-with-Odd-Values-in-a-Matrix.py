@@ -46,4 +46,4 @@ assert Solution.oddCells(2, 3, [[0, 1], [1, 1]]) == 6
 # Unit Test: m = 2, n = 2, indices = [[1, 1], [0, 0]], Output: 0
 assert Solution.oddCells(2, 2, [[1, 1], [0, 0]]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

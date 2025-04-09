@@ -29,4 +29,4 @@ assert Solution.vowelStrings(["are", "amy", "u"], 0, 2) == 2
 # Unit Test: words = ["hey","aeo","mucoo","ooo","artro"], left = 1, right = 4, Output: 3
 assert Solution.vowelStrings(["hey", "aeo", "mucoo", "ooo", "artro"], 1, 4) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

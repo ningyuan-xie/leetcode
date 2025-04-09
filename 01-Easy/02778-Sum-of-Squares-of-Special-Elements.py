@@ -24,4 +24,4 @@ assert Solution.sumOfSquares([1, 2, 3, 4]) == 21
 # Unit Test: nums = [2,7,1,19,18,3], Output: 63
 assert Solution.sumOfSquares([2, 7, 1, 19, 18, 3]) == 63
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

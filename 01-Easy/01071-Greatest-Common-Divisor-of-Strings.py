@@ -56,4 +56,4 @@ assert Solution.gcdOfStringsRecursion("LEET", "CODE") == ""
 assert Solution.gcdOfStringsRecursion("TAUXXTAUXXTAUXXTAUXXTAUXX",
                                       "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX") == "TAUXX"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

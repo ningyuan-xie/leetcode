@@ -40,18 +40,18 @@ class Solution:
         return most_common_word
 
 
-# Unit Test: Input: paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.",
+# Input: paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.",
 # banned = ["hit"], Output: "ball"
 assert Solution.mostCommonWord("Bob hit a ball, the hit BALL flew far after it was hit.",
                                ["hit"]) == "ball"
 
-# Unit Test: Input: paragraph = "a.", banned = [], Output: "a"
+# Input: paragraph = "a.", banned = [], Output: "a"
 assert Solution.mostCommonWord("a.", []) == "a"
 
-# Unit Test: Input: paragraph = "a, a, a, a, b,b,b,c, c", banned = ["a"], Output: "b"
+# Input: paragraph = "a, a, a, a, b,b,b,c, c", banned = ["a"], Output: "b"
 assert Solution.mostCommonWord("a, a, a, a, b,b,b,c, c", ["a"]) == "b"
 
-# Unit Test: Input: paragraph = "Bob. hIt, baLl", banned = ["bob", "hit"], Output: "ball"
+# Input: paragraph = "Bob. hIt, baLl", banned = ["bob", "hit"], Output: "ball"
 assert Solution.mostCommonWord("Bob. hIt, baLl", ["bob", "hit"]) == "ball"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -37,4 +37,4 @@ assert Solution.largestInteger(1234) == 3412
 # Unit Test: num = 65875, Output: 87655
 assert Solution.largestInteger(65875) == 87655
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

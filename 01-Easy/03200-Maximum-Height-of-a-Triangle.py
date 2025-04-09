@@ -57,4 +57,4 @@ assert Solution.maxHeightOfTriangle(1, 1) == 1
 # Unit Test: red = 10, blue = 1, Output = 2
 assert Solution.maxHeightOfTriangle(10, 1) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

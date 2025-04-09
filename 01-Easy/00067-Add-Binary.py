@@ -29,13 +29,13 @@ class Solution:
         return "".join(result[::-1])
 
 
-# Unit Test: Input: a = "11", b = "1", Output: "100"
+# Input: a = "11", b = "1", Output: "100"
 assert Solution.addBinary("11", "1") == "100"
 
-# Unit Test: Input: a = "1010", b = "1011", Output: "10101"
+# Input: a = "1010", b = "1011", Output: "10101"
 assert Solution.addBinary("1010", "1011") == "10101"
 
-# Unit Test: Input: a = "1", b = "0", Output: "1"
+# Input: a = "1", b = "0", Output: "1"
 assert Solution.addBinary("1", "0") == "1"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

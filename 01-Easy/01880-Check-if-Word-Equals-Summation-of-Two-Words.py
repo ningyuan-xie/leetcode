@@ -34,4 +34,4 @@ assert Solution.isSumEqual("acb", "cba", "cdb") is True
 # Unit Test: firstWord = "aaa", secondWord = "a", targetWord = "aab", Output: False
 assert Solution.isSumEqual("aaa", "a", "aab") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

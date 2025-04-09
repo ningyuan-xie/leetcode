@@ -34,17 +34,17 @@ class Solution:
         return total_poisoned_duration
 
 
-# Unit Test: Input: time_series = [1, 4], duration = 2, Output: 4
+# Input: time_series = [1, 4], duration = 2, Output: 4
 # Poisoned Duration: attacks at 1 -> [1, 2] -> attacks at 4 -> [4, 5] -> 4 seconds
 assert Solution.findPoisonedDuration([1, 4], 2) == 4
 
-# Unit Test: Input: time_series = [1, 2], duration = 2, Output: 3
+# Input: time_series = [1, 2], duration = 2, Output: 3
 # Poisoned Duration: attacks at 1 -> [1, 2] -> attacks at 2 -> [2, 3] -> 3 seconds
 assert Solution.findPoisonedDuration([1, 2], 2) == 3
 
-# Unit Test: Input: time_series = [1, 2, 5, 10], duration = 3, Output: 10
+# Input: time_series = [1, 2, 5, 10], duration = 3, Output: 10
 # Poisoned Duration: attacks at 1 -> [1, 2, 3] -> attacks at 2 -> [2, 3, 4] ->
 # attacks at 5 -> [5, 6, 7] -> attacks at 10 -> [10, 11, 12] -> 10 seconds
 assert Solution.findPoisonedDuration([1, 2, 5, 10], 3) == 10
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

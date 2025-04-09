@@ -22,16 +22,16 @@ class Solution:
         return -1
 
 
-# Unit Test: Input: haystack = "hello", needle = "ll", Output: 2
+# Input: haystack = "hello", needle = "ll", Output: 2
 assert Solution.strStr("hello", "ll") == 2
 
-# Unit Test: Input: haystack = "hello", needle = "lll", Output: -1
+# Input: haystack = "hello", needle = "lll", Output: -1
 assert Solution.strStr("hello", "lll") == -1
 
-# Unit Test: Input: haystack = "aaaaa", needle = "bba", Output: -1
+# Input: haystack = "aaaaa", needle = "bba", Output: -1
 assert Solution.strStr("aaaaa", "bba") == -1
 
-# Unit Test: Input: haystack = "", needle = "", Output: 0
+# Input: haystack = "", needle = "", Output: 0
 assert Solution.strStr("", "") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

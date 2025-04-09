@@ -32,10 +32,10 @@ class Solution:
         return dummy.next  # dummy: 0 -> 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> None
 
 
-# Unit Test: Input: l1 = [1,2,4], l2 = [1,3,4], Output: [1,1,2,3,4,4]
+# Input: l1 = [1,2,4], l2 = [1,3,4], Output: [1,1,2,3,4,4]
 list1 = ListNode.build_linked_list([1, 2, 4])
 list2 = ListNode.build_linked_list([1, 3, 4])
 list_expected = ListNode.build_linked_list([1, 1, 2, 3, 4, 4])
 assert Solution.mergeTwoLists(list1, list2) == list_expected
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

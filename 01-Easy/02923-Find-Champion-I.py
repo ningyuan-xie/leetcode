@@ -31,4 +31,4 @@ assert Solution.findChampion([[0, 1], [0, 0]]) == 0
 # Unit Test: grid = [[0,0,1],[1,0,1],[0,0,0]], Output: 1
 assert Solution.findChampion([[0, 0, 1], [1, 0, 1], [0, 0, 0]]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

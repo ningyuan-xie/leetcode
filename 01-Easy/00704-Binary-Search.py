@@ -33,13 +33,13 @@ class Solution:
         return -1
 
 
-# Unit Test: Input: nums = [-1, 0, 3, 5, 9, 12], target = 9, Output: 4
+# Input: nums = [-1, 0, 3, 5, 9, 12], target = 9, Output: 4
 assert Solution.search([-1, 0, 3, 5, 9, 12], 9) == 4
 
-# Unit Test: Input: nums = [-1, 0, 3, 5, 9, 12], target = 2, Output: -1
+# Input: nums = [-1, 0, 3, 5, 9, 12], target = 2, Output: -1
 assert Solution.search([-1, 0, 3, 5, 9, 12], 2) == -1
 
-# Unit Test: Input: nums = [5], target = 5, Output: 0
+# Input: nums = [5], target = 5, Output: 0
 assert Solution.search([5], 5) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -46,4 +46,4 @@ assert (Solution.decodeMessage("eljuxhpwnyrdgtqkviszcfmabo",
                                "zwx hnfx lqantp mnoeius ycgk vcnjrdb")
         == "the five boxing wizards jump quickly")
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

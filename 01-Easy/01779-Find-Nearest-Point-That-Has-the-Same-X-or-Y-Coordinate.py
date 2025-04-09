@@ -43,4 +43,4 @@ assert Solution.nearestValidPoint(3, 4, [[3, 4]]) == 0
 # Unit Test: x = 3, y = 4, points = [[2, 3]], Output: -1
 assert Solution.nearestValidPoint(3, 4, [[2, 3]]) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

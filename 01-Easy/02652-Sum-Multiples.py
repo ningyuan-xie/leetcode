@@ -30,4 +30,4 @@ assert Solution.sumOfMultiples(10) == 40
 # Unit Test: n = 9, Output: 30
 assert Solution.sumOfMultiples(9) == 30
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

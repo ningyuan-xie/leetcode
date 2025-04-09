@@ -65,4 +65,4 @@ assert hash_set.contains(2)
 hash_set.remove(2)
 assert not hash_set.contains(2)
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

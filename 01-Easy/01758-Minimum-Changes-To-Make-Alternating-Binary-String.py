@@ -42,4 +42,4 @@ assert Solution.min_operations("10") == 0
 # Unit Test: s = "1111", Output: 2
 assert Solution.min_operations("1111") == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

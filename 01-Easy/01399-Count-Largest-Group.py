@@ -37,4 +37,4 @@ assert Solution.countLargestGroup(15) == 6
 # Unit Test: n = 24, Output: 5
 assert Solution.countLargestGroup(24) == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

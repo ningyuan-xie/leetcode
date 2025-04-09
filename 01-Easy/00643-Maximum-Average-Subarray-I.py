@@ -27,13 +27,13 @@ class Solution:
         return max_sum / k
 
 
-# Unit Test: Input: nums = [1, 12, -5, -6, 50, 3], k = 4, Output: 12.75 = (12 - 5 - 6 + 50) / 4
+# Input: nums = [1, 12, -5, -6, 50, 3], k = 4, Output: 12.75 = (12 - 5 - 6 + 50) / 4
 assert Solution.findMaxAverage([1, 12, -5, -6, 50, 3], 4) == 12.75
 
-# Unit Test: Input: nums = [5], k = 1, Output: 5.0
+# Input: nums = [5], k = 1, Output: 5.0
 assert Solution.findMaxAverage([5], 1) == 5.0
 
-# Unit Test: Input: nums = [0, 1, 1, 3, 3], k = 4, Output: 2.0
+# Input: nums = [0, 1, 1, 3, 3], k = 4, Output: 2.0
 assert Solution.findMaxAverage([0, 1, 1, 3, 3], 4) == 2.0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

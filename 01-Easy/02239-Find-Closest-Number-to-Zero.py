@@ -28,4 +28,4 @@ assert Solution.findClosestNumber([-4, -2, 1, 4, 8]) == 1
 # Unit Test: nums = [2,-1,1], Output: 1
 assert Solution.findClosestNumber([2, -1, 1]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

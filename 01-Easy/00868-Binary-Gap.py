@@ -28,16 +28,16 @@ class Solution:
         return longest_distance
 
 
-# Unit Test: Input: 22, Output: 2. Explanation: 22 in binary is 10110, so the longest distance is 2
+# Input: 22, Output: 2. Explanation: 22 in binary is 10110, so the longest distance is 2
 assert Solution.binaryGap(22) == 2
 
-# Unit Test: Input: 5, Output: 2. Explanation: 5 in binary is 101, so the longest distance is 2
+# Input: 5, Output: 2. Explanation: 5 in binary is 101, so the longest distance is 2
 assert Solution.binaryGap(5) == 2
 
-# Unit Test: Input: 6, Output: 1. Explanation: 6 in binary is 110, so the longest distance is 1
+# Input: 6, Output: 1. Explanation: 6 in binary is 110, so the longest distance is 1
 assert Solution.binaryGap(6) == 1
 
-# Unit Test: Input: 8, Output: 0. Explanation: 8 in binary is 1000, so there are no two adjacent 1's
+# Input: 8, Output: 0. Explanation: 8 in binary is 1000, so there are no two adjacent 1's
 assert Solution.binaryGap(8) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

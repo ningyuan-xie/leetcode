@@ -28,10 +28,10 @@ class Solution:
         return max_length
 
 
-# Unit Test: Input: nums = [1, 3, 5, 4, 7], Output: 3
+# Input: nums = [1, 3, 5, 4, 7], Output: 3
 assert Solution.findLengthOfLCIS([1, 3, 5, 4, 7]) == 3
 
-# Unit Test: Input: nums = [2, 2, 2, 2, 2], Output: 1
+# Input: nums = [2, 2, 2, 2, 2], Output: 1
 assert Solution.findLengthOfLCIS([2, 2, 2, 2, 2]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

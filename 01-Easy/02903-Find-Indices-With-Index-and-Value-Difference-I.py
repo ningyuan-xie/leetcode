@@ -37,4 +37,4 @@ assert Solution.findIndices([2, 1], 0, 0) == [0, 0]
 # Unit Test: nums = [1,2,3], indexDifference = 2, valueDifference = 4, Output: [-1, -1]
 assert Solution.findIndices([1, 2, 3], 2, 4) == [-1, -1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

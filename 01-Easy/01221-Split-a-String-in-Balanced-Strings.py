@@ -44,4 +44,4 @@ assert Solution.balancedStringSplit("LLLLRRRR") == 1
 # Unit Test: s = "RLRRRLLRLL", Output: 2
 assert Solution.balancedStringSplit("RLRRRLLRLL") == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

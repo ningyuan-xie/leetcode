@@ -36,4 +36,4 @@ assert Solution.xorOperation(1, 7) == 7
 # Unit Test: n = 10, start = 5, Output: 2
 assert Solution.xorOperation(10, 5) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

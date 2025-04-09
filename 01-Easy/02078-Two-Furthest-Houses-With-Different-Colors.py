@@ -30,16 +30,16 @@ class Solution:
         return max(max_dist1, max_dist2)
 
 
-# Unit Test: Input: colors = [1,1,1,6,1,1,1], Output: 3
+# Input: colors = [1,1,1,6,1,1,1], Output: 3
 assert Solution.maxDistance([1, 1, 1, 6, 1, 1, 1]) == 3
 
-# Unit Test: Input: colors = [1,8,3,8,3], Output: 4
+# Input: colors = [1,8,3,8,3], Output: 4
 assert Solution.maxDistance([1, 8, 3, 8, 3]) == 4
 
-# Unit Test: Input: colors = [0,1], Output: 1
+# Input: colors = [0,1], Output: 1
 assert Solution.maxDistance([0, 1]) == 1
 
-# Unit Test: Input: colors = [4,4,4,11,4,4,11,4,4,4,4,4], Output: 8
+# Input: colors = [4,4,4,11,4,4,11,4,4,4,4,4], Output: 8
 assert Solution.maxDistance([4, 4, 4, 11, 4, 4, 11, 4, 4, 4, 4, 4]) == 8
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

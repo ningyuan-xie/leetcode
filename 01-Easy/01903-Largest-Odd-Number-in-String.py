@@ -27,4 +27,4 @@ assert Solution.largestOddNumber("4206") == ""
 # Unit Test: num = "35427", Output: "35427"
 assert Solution.largestOddNumber("35427") == "35427"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

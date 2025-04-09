@@ -22,13 +22,13 @@ class Solution:
         return count
 
 
-# Unit Test: Input: n = 11 (00000000000000000000000000001011), Output: 3
+# Input: n = 11 (00000000000000000000000000001011), Output: 3
 assert Solution.hammingWeight(11) == 3
 
-# Unit Test: Input: n = 128 (00000000000000000000000010000000), Output: 1
+# Input: n = 128 (00000000000000000000000010000000), Output: 1
 assert Solution.hammingWeight(128) == 1
 
-# Unit Test: Input: n = 2147483647 (01111111111111111111111111111111), Output: 31
+# Input: n = 2147483647 (01111111111111111111111111111111), Output: 31
 assert Solution.hammingWeight(2147483647) == 31
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

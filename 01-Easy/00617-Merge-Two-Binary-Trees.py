@@ -32,22 +32,22 @@ class Solution:
         return root1
 
 
-# Unit Test: Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7], Output: [3,4,5,5,4,null,7]
+# Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7], Output: [3,4,5,5,4,null,7]
 root_test1 = TreeNode.build_binary_tree([1, 3, 2, 5])
 root_test2 = TreeNode.build_binary_tree([2, 1, 3, None, 4, None, 7])
 root_expected = TreeNode.build_binary_tree([3, 4, 5, 5, 4, None, 7])
 assert Solution.mergeTrees(root_test1, root_test2) == root_expected
 
-# Unit Test: Input: root1 = [1], root2 = [1, 2], Output: [2, 2]
+# Input: root1 = [1], root2 = [1, 2], Output: [2, 2]
 root_test1 = TreeNode.build_binary_tree([1])
 root_test2 = TreeNode.build_binary_tree([1, 2])
 root_expected = TreeNode.build_binary_tree([2, 2])
 assert Solution.mergeTrees(root_test1, root_test2) == root_expected
 
-# Unit Test: Input: root1 = [1, 2, 3], root2 = [1, 2, 3], Output: [2, 4, 6]
+# Input: root1 = [1, 2, 3], root2 = [1, 2, 3], Output: [2, 4, 6]
 root_test1 = TreeNode.build_binary_tree([1, 2, 3])
 root_test2 = TreeNode.build_binary_tree([1, 2, 3])
 root_expected = TreeNode.build_binary_tree([2, 4, 6])
 assert Solution.mergeTrees(root_test1, root_test2) == root_expected
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -21,13 +21,13 @@ class Solution:
         return -1
 
 
-# Unit Test: Input: s = "leetcode", Output: 0
+# Input: s = "leetcode", Output: 0
 assert Solution.firstUniqChar("leetcode") == 0
 
-# Unit Test: Input: s = "loveleetcode", Output: 2
+# Input: s = "loveleetcode", Output: 2
 assert Solution.firstUniqChar("loveleetcode") == 2
 
-# Unit Test: Input: s = "aabb", Output: -1
+# Input: s = "aabb", Output: -1
 assert Solution.firstUniqChar("aabb") == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -27,4 +27,4 @@ assert Solution.getFinalState([2, 1, 3, 5, 6], 5, 2) == [8, 4, 6, 5, 6]
 # Unit Test: nums = [1,2], k = 3, multiplier = 4, Output: [16,8]
 assert Solution.getFinalState([1, 2], 3, 4) == [16, 8]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

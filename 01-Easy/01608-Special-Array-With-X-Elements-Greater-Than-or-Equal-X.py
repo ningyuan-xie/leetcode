@@ -46,4 +46,4 @@ assert Solution.specialArray([0, 0]) == -1
 # count = [0, 0, 0, 0, 0, 0] -> [2, 0, 0, 1, 2, 0], x in range(5, 0, -1) -> x = 3
 assert Solution.specialArray([0, 4, 3, 0, 4]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

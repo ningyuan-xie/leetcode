@@ -74,4 +74,4 @@ board_test = [[".", ".", ".", ".", ".", ".", ".", "."],
               [".", ".", ".", ".", ".", ".", ".", "."]]
 assert Solution.numRookCaptures(board_test) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

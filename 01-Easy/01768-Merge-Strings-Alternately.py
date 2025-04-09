@@ -37,4 +37,4 @@ assert Solution.merge_alternately("ab", "pqrs") == "apbqrs"
 # Unit Test: word1 = "abcd", word2 = "pq", Output: "apbqcd"
 assert Solution.merge_alternately("abcd", "pq") == "apbqcd"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

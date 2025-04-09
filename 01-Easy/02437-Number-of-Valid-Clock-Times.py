@@ -40,4 +40,4 @@ assert Solution.countTime("0?:0?") == 100
 # Unit Test: time = "??:??", Output: 1440
 assert Solution.countTime("??:??") == 1440
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -24,10 +24,10 @@ class Solution:
         return i == len(s)
 
 
-# Unit Test: Input: s = "abc", t = "ahbgdc", Output: True
+# Input: s = "abc", t = "ahbgdc", Output: True
 assert Solution.isSubsequence("abc", "ahbgdc") is True
 
-# Unit Test: Input: s = "axc", t = "ahbgdc", Output: False
+# Input: s = "axc", t = "ahbgdc", Output: False
 assert Solution.isSubsequence("axc", "ahbgdc") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

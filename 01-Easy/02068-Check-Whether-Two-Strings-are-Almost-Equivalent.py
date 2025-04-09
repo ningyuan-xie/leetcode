@@ -30,4 +30,4 @@ class Solution:
 # Unit Test: word1 = "aaaa", word2 = "bccb", Output: False
 assert Solution.areAlmostEquivalent("aaaa", "bccb") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

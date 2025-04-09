@@ -30,4 +30,4 @@ assert Solution.divisorGame(3) is False
 # Explanation: Alice chooses 1, Bob chooses 1, Alice chooses 1, Bob cannot make a move.
 assert Solution.divisorGame(4) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

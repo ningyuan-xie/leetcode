@@ -17,13 +17,13 @@ class Solution:
         return max(len(a), len(b)) if a != b else -1
 
 
-# Unit Test: Input = "aba", "cdc", Output = 3
+# Input = "aba", "cdc", Output = 3
 assert Solution.findLUSlength("aba", "cdc") == 3
 
-# Unit Test: Input = "aaa", "aaa", Output = -1
+# Input = "aaa", "aaa", Output = -1
 assert Solution.findLUSlength("aaa", "aaa") == -1
 
-# Unit Test: Input = "aefawfawfawfaw", "aefawfeawfwafwaef", Output = 17
+# Input = "aefawfawfawfaw", "aefawfeawfwafwaef", Output = 17
 assert Solution.findLUSlength("aefawfawfawfaw", "aefawfeawfwafwaef") == 17
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

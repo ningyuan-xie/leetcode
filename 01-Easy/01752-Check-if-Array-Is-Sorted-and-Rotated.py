@@ -40,4 +40,4 @@ assert Solution.check([2, 1, 3, 4]) is False
 # Unit Test: nums = [1, 2, 3], Output: True
 assert Solution.check([1, 2, 3]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

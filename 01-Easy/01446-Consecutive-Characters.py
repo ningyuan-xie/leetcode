@@ -42,4 +42,4 @@ assert Solution.maxPower("hooraaaaaaaaaaay") == 11
 # Unit Test: s = "tourist", Output: 1
 assert Solution.maxPower("tourist") == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

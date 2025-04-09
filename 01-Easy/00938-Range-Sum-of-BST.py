@@ -72,12 +72,12 @@ class Solution:
         return sum_value
 
 
-# Unit Test: Input: root = [10,5,15,3,7,null,18], low = 7, high = 15, Output: 32
+# Input: root = [10,5,15,3,7,null,18], low = 7, high = 15, Output: 32
 root_test = TreeNode.build_binary_tree([10, 5, 15, 3, 7, None, 18])
 assert Solution.rangeSumBST(root_test, 7, 15) == 32
 
-# Unit Test: Input: root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10, Output: 23
+# Input: root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10, Output: 23
 root_test = TreeNode.build_binary_tree([10, 5, 15, 3, 7, 13, 18, 1, None, 6])
 assert Solution.rangeSumBSTnonlocal(root_test, 6, 10) == 23
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

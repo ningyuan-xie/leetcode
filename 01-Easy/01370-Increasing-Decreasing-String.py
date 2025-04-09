@@ -64,4 +64,4 @@ assert Solution.sortString("ggggggg") == "ggggggg"
 # Unit Test: s = "spo", Output: "ops"
 assert Solution.sortString("spo") == "ops"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

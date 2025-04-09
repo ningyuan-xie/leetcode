@@ -18,16 +18,16 @@ class Solution:
         return n % 4 != 0
 
 
-# Unit Test: Input: n = 4, Output: False
+# Input: n = 4, Output: False
 assert Solution.canWinNim(4) is False
 
-# Unit Test: Input: n = 1, Output: True
+# Input: n = 1, Output: True
 assert Solution.canWinNim(1) is True
 
-# Unit Test: Input: n = 2, Output: True
+# Input: n = 2, Output: True
 assert Solution.canWinNim(2) is True
 
-# Unit Test: Input: n = 7, Output: True
+# Input: n = 7, Output: True
 assert Solution.canWinNim(7) is True  # The player can remove 3 stones, so the remaining stones are 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -44,4 +44,4 @@ assert Solution.isGood([1, 1]) is True
 # Unit Test: nums = [3, 4, 4, 1, 2, 1], Output: false
 assert Solution.isGood([3, 4, 4, 1, 2, 1]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

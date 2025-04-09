@@ -37,4 +37,4 @@ assert Solution.checkZeroOnes("1101") is True
 # Unit Test: s = "111000", Output: False
 assert Solution.checkZeroOnes("111000") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

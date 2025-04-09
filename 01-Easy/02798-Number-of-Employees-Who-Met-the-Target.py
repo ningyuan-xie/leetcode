@@ -29,4 +29,4 @@ assert Solution.numberOfEmployeesWhoMetTarget([0, 1, 2, 3, 4], 2) == 3
 # Unit Test: hours = [5,1,4,2,2], target = 6, Output: 0
 assert Solution.numberOfEmployeesWhoMetTarget([5, 1, 4, 2, 2], 6) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

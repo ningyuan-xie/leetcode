@@ -56,4 +56,4 @@ assert Solution.dayOfTheWeek(18, 7, 1999) == "Sunday"
 # Unit Test: day = 15, month = 8, year = 1993, Output: "Sunday"
 assert Solution.dayOfTheWeekDateTime(15, 8, 1993) == "Sunday"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -30,4 +30,4 @@ assert Solution.numOfStrings(["a", "b", "c"], "aaaa") == 1
 # Unit Test: patterns = ["a", "a", "a"], word = "ab", Output: 3
 assert Solution.numOfStrings(["a", "a", "a"], "ab") == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

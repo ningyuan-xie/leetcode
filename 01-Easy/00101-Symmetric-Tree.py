@@ -40,9 +40,9 @@ class Solution:
         return preorder_dfs_traversal(root.left, root.right)
 
 
-# Unit Test: Input: root = [1,2,2,3,4,4,3], Output: True
+# Input: root = [1,2,2,3,4,4,3], Output: True
 # The input [1,2,2,3,4,4,3] = serialized format of a binary tree using level order traversal
 root_test = TreeNode.build_binary_tree([1, 2, 2, 3, 4, 4, 3])
 assert Solution.isSymmetric(root_test) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

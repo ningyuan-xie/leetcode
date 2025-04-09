@@ -39,4 +39,4 @@ assert Solution.max_ascending_sum([10, 20, 30, 40, 50]) == 150
 # Unit Test: nums = [12, 17, 15, 13, 10, 11, 12], Output: 33
 assert Solution.max_ascending_sum([12, 17, 15, 13, 10, 11, 12]) == 33
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

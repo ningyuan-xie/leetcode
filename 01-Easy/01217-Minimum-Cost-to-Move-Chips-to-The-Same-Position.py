@@ -45,4 +45,4 @@ assert Solution.minCostToMoveChips([2, 2, 2, 3, 3]) == 2
 # Explanation: Move the chip at position 1 to position 1000000000 with cost = 1.
 assert Solution.minCostToMoveChips([1, 1000000000]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

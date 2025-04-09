@@ -29,4 +29,4 @@ assert Solution.alternatingDigitSum(111) == 1
 # Unit Test: n = 886996, Output: 0
 assert Solution.alternatingDigitSum(886996) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

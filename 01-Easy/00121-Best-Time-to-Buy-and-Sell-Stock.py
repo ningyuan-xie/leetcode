@@ -28,24 +28,24 @@ class Solution:
         return max_profit
 
 
-# Unit Test: Input: prices = [7,1,5,3,6,4], Output: 5
+# Input: prices = [7,1,5,3,6,4], Output: 5
 # Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5
 assert Solution.maxProfit([7, 1, 5, 3, 6, 4]) == 5
 
-# Unit Test: Input: prices = [7,6,4,3,1], Output: 0
+# Input: prices = [7,6,4,3,1], Output: 0
 # Explanation: In this case, no transactions are done and the max profit = 0
 assert Solution.maxProfit([7, 6, 4, 3, 1]) == 0
 
-# Unit Test: Input: prices = [1,2], Output: 1
+# Input: prices = [1,2], Output: 1
 # Explanation: Buy on day 1 (price = 1) and sell on day 2 (price = 2), profit = 2-1 = 1
 assert Solution.maxProfit([1, 2]) == 1
 
-# Unit Test: Input: prices = [2,4,1], Output: 2
+# Input: prices = [2,4,1], Output: 2
 # Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2
 assert Solution.maxProfit([2, 4, 1]) == 2
 
-# Unit Test: Input: prices = [2,1,2,0,1], Output: 1
+# Input: prices = [2,1,2,0,1], Output: 1
 # Explanation: Buy on day 2 (price = 1) and sell on day 4 (price = 2), profit = 2-1 = 1
 assert Solution.maxProfit([2, 1, 2, 0, 1]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

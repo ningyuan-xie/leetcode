@@ -34,4 +34,4 @@ assert Solution.findNonMinOrMax([1, 2]) == -1
 # Unit Test: nums = [2,1,3], Output: 2
 assert Solution.findNonMinOrMax([2, 1, 3]) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -40,4 +40,4 @@ assert Solution.replaceDigits("a1c1e1") == "abcdef"
 # Unit Test: s = "a1b2c3d4e", Output: "abbdcfdhe"
 assert Solution.replaceDigits("a1b2c3d4e") == "abbdcfdhe"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

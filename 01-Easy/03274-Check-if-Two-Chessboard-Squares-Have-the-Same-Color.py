@@ -30,4 +30,4 @@ assert Solution.checkTwoChessboards("a1", "c3") is True
 # Unit Test: coordinate1 = "a1", coordinate2 = "h3", Output: False
 assert Solution.checkTwoChessboards("a1", "h3") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

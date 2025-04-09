@@ -31,16 +31,16 @@ class Solution:
         return len(unique_transformations)
 
 
-# Unit Test: Input: words = ["gin", "zen", "gig", "msg"], Output: 2
+# Input: words = ["gin", "zen", "gig", "msg"], Output: 2
 assert Solution.uniqueMorseRepresentations(["gin", "zen", "gig", "msg"]) == 2
 
-# Unit Test: Input: words = ["a"], Output: 1
+# Input: words = ["a"], Output: 1
 assert Solution.uniqueMorseRepresentations(["a"]) == 1
 
-# Unit Test: Input: words = ["b"], Output: 1
+# Input: words = ["b"], Output: 1
 assert Solution.uniqueMorseRepresentations(["b"]) == 1
 
-# Unit Test: Input: words = ["a", "b"], Output: 2
+# Input: words = ["a", "b"], Output: 2
 assert Solution.uniqueMorseRepresentations(["a", "b"]) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

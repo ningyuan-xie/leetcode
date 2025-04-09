@@ -30,4 +30,4 @@ assert Solution.buildArray([5, 0, 1, 2, 3, 4]) == [4, 5, 0, 1, 2, 3]
 # Unit Test: nums = [0, 1, 2, 3, 4], Output: [0, 1, 2, 3, 4]
 assert Solution.buildArray([0, 1, 2, 3, 4]) == [0, 1, 2, 3, 4]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

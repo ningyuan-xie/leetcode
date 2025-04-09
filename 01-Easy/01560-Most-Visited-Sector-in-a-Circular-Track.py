@@ -41,4 +41,4 @@ assert Solution.mostVisited(2, [2, 1, 2, 1, 2, 1, 2, 1, 2]) == [2]
 # Unit Test: n = 7, rounds = [1, 3, 5, 7], Output: [1, 2, 3, 4, 5, 6, 7]
 assert Solution.mostVisited(7, [1, 3, 5, 7]) == [1, 2, 3, 4, 5, 6, 7]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

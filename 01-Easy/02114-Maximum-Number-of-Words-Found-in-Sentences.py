@@ -25,4 +25,4 @@ assert Solution.mostWordsFound(["alice and bob love leetcode", "i think so too",
 # Unit Test: sentences = ["please wait", "continue to fight", "continue to win"], Output: 3
 assert Solution.mostWordsFound(["please wait", "continue to fight", "continue to win"]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

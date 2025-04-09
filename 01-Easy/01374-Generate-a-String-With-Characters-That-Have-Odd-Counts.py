@@ -25,4 +25,4 @@ assert Solution.generateTheString(2) == "ab"
 # Unit Test: n = 7, Output: "aaaaaaa"
 assert Solution.generateTheString(7) == "aaaaaaa"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

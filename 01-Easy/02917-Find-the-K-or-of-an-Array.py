@@ -38,4 +38,4 @@ assert Solution.findKOr([2, 12, 1, 11, 4, 5], 6) == 0
 # Unit Test: nums = [10,8,5,9,11,6,8], k = 1, Output: 15
 assert Solution.findKOr([10, 8, 5, 9, 11, 6, 8], 1) == 15
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

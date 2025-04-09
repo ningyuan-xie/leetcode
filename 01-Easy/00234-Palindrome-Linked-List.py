@@ -43,16 +43,16 @@ class Solution:
         return True
 
 
-# Unit Test: Input: head = [1, 2, 2, 1]
+# Input: head = [1, 2, 2, 1]
 head_test = ListNode.build_linked_list([1, 2, 2, 1])
 assert Solution.isPalindrome(head_test) is True
 
-# Unit Test: Input: head = [1, 2]
+# Input: head = [1, 2]
 head_test = ListNode.build_linked_list([1, 2])
 assert Solution.isPalindrome(head_test) is False
 
-# Unit Test: Input: head = [1, 2, 3, 2, 1]
+# Input: head = [1, 2, 3, 2, 1]
 head_test = ListNode.build_linked_list([1, 2, 3, 2, 1])
 assert Solution.isPalindrome(head_test) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

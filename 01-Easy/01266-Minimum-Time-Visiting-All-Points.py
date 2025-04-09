@@ -53,4 +53,4 @@ assert Solution.minTimeToVisitAllPoints([[1, 1], [3, 4], [-1, 0]]) == 7
 # One optimal path is: [3, 2] -> [2, 2] -> [1, 2] -> [0, 2] -> [-1, 2] -> [-2, 2]
 assert Solution.minTimeToVisitAllPoints([[3, 2], [-2, 2]]) == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

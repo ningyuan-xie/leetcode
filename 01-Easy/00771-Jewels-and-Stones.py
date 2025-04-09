@@ -26,10 +26,10 @@ class Solution:
         return count
 
 
-# Unit Test: Input: jewels = "aA", stones = "aAAbbbb", Output: 3
+# Input: jewels = "aA", stones = "aAAbbbb", Output: 3
 assert Solution.num_jewels_in_stones("aA", "aAAbbbb") == 3
 
-# Unit Test: Input: jewels = "z", stones = "ZZ", Output: 0
+# Input: jewels = "z", stones = "ZZ", Output: 0
 assert Solution.num_jewels_in_stones("z", "ZZ") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

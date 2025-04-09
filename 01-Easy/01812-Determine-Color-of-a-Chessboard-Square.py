@@ -31,4 +31,4 @@ assert Solution.square_is_white("h3") is True
 # Unit Test: coordinates = "c7", Output: False
 assert Solution.square_is_white("c7") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

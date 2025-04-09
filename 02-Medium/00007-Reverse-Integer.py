@@ -29,16 +29,16 @@ class Solution:
         return sign * reversed_x if reversed_x <= 2 ** 31 - 1 else 0
 
 
-# Unit Test: Input: x = 123, Output: 321
+# Input: x = 123, Output: 321
 assert Solution.reverse(123) == 321
 
-# Unit Test: Input: x = -123, Output: -321
+# Input: x = -123, Output: -321
 assert Solution.reverse(-123) == -321
 
-# Unit Test: Input: x = 120, Output: 21
+# Input: x = 120, Output: 21
 assert Solution.reverse(120) == 21
 
-# Unit Test: Input: x = 0, Output: 0
+# Input: x = 0, Output: 0
 assert Solution.reverse(0) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

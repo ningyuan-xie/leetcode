@@ -36,4 +36,4 @@ assert Solution.diagonalSum([[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1,
 # Unit Test: mat = [[5]], Output: 5
 assert Solution.diagonalSum([[5]]) == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

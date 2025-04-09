@@ -20,4 +20,4 @@ assert Solution.checkIfPangram("thequickbrownfoxjumpsoverthelazydog") is True
 # Unit Test: sentence = "leetcode", Output: False
 assert Solution.checkIfPangram("leetcode") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

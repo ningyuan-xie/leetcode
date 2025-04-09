@@ -33,12 +33,12 @@ class Solution:
         return count
 
 
-# Unit Test: Input: s = "00110011", Output: 6
+# Input: s = "00110011", Output: 6
 # Explanation: There are 6 valid substrings: "0011", "01", "1100", "10", "0011", and "01"
 assert Solution.countBinarySubstrings("00110011") == 6
 
-# Unit Test: Input: s = "10101", Output: 4
+# Input: s = "10101", Output: 4
 # Explanation: There are 4 valid substrings: "10", "01", "10", and "01"
 assert Solution.countBinarySubstrings("10101") == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

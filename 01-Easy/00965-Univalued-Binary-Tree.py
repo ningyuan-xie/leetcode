@@ -46,20 +46,20 @@ class Solution:
         return preorder_dfs_equal(root)
 
 
-# Unit Test: Input: [1,1,1,1,1,None,1], Output: True
+# Input: [1,1,1,1,1,None,1], Output: True
 root_test = TreeNode.build_binary_tree([1, 1, 1, 1, 1, None, 1])
 assert Solution.isUnivalTree(root_test) is True
 
-# Unit Test: Input: [2,2,2,5,2], Output: False
+# Input: [2,2,2,5,2], Output: False
 root_test = TreeNode.build_binary_tree([2, 2, 2, 5, 2])
 assert Solution.isUnivalTree(root_test) is False
 
-# Unit Test: Input: [1,1,1,1,1,None,1], Output: True
+# Input: [1,1,1,1,1,None,1], Output: True
 root_test = TreeNode.build_binary_tree([1, 1, 1, 1, 1, None, 1])
 assert Solution.isUnivalTree(root_test) is True
 
-# Unit Test: Input: [9,9,9,9,9,9,9], Output: True
+# Input: [9,9,9,9,9,9,9], Output: True
 root_test = TreeNode.build_binary_tree([9, 9, 9, 9, 9, 9, 9])
 assert Solution.isUnivalTree(root_test) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

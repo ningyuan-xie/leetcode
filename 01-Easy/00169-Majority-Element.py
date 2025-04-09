@@ -31,13 +31,13 @@ class Solution:
         return majority_element
 
 
-# Unit Test: Input: nums = [3,2,3], Output: 3
+# Input: nums = [3,2,3], Output: 3
 assert Solution.majorityElement([3, 2, 3]) == 3
 
-# Unit Test: Input: nums = [2,2,1,1,1,2,2], Output: 2
+# Input: nums = [2,2,1,1,1,2,2], Output: 2
 assert Solution.majorityElement([2, 2, 1, 1, 1, 2, 2]) == 2
 
-# Unit Test: Input: nums = [1], Output: 1
+# Input: nums = [1], Output: 1
 assert Solution.majorityElement([1]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

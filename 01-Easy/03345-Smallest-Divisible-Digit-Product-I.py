@@ -36,4 +36,4 @@ def unit_tests():
 
 if __name__ == "__main__":
     unit_tests()
-    print("All unit tests are passed")
+    print("All unit tests are passed.")

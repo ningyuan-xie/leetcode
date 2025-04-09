@@ -39,4 +39,4 @@ assert Solution.isCircularSentence("eetcode") is True
 # Unit Test: sentence = "Leetcode is cool", Output: False
 assert Solution.isCircularSentence("Leetcode is cool") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

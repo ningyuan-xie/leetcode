@@ -26,19 +26,19 @@ class Solution:
         # [1 -> 2 -> 3 -> None] becomes [None <- 1 <- 2 <- 3]
 
 
-# Unit Test: Input: head = [1,2,3,4,5], Output: [5,4,3,2,1]
+# Input: head = [1,2,3,4,5], Output: [5,4,3,2,1]
 head_test = ListNode.build_linked_list([1, 2, 3, 4, 5])
 head_expected = ListNode.build_linked_list([5, 4, 3, 2, 1])
 assert Solution.reverseList(head_test) == head_expected
 
-# Unit Test: Input: head = [1,2], Output: [2,1]
+# Input: head = [1,2], Output: [2,1]
 head_test = ListNode.build_linked_list([1, 2])
 head_expected = ListNode.build_linked_list([2, 1])
 assert Solution.reverseList(head_test) == head_expected
 
-# Unit Test: Input: head = [], Output: []
+# Input: head = [], Output: []
 head_test = ListNode.build_linked_list([])
 head_expected = ListNode.build_linked_list([])
 assert Solution.reverseList(head_test) == head_expected
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

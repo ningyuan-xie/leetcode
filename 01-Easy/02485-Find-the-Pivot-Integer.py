@@ -40,4 +40,4 @@ assert Solution.pivotInteger(1) == 1
 # Unit Test: n = 4, Output: -1
 assert Solution.pivotInteger(4) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

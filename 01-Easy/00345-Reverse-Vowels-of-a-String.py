@@ -33,13 +33,13 @@ class Solution:
         return "".join(s)
 
 
-# Unit Test: Input: s = "hello", Output: "holle"
+# Input: s = "hello", Output: "holle"
 assert Solution.reverseVowels("hello") == "holle"
 
-# Unit Test: Input: s = "leetcode", Output: "leotcede"
+# Input: s = "leetcode", Output: "leotcede"
 assert Solution.reverseVowels("leetcode") == "leotcede"
 
-# Unit Test: Input: s = "aA", Output: "Aa"
+# Input: s = "aA", Output: "Aa"
 assert Solution.reverseVowels("aA") == "Aa"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

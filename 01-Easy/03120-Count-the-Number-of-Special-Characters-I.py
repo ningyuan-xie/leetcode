@@ -30,4 +30,4 @@ assert Solution.numberOfSpecialChars("abc") == 0
 # Unit Test: word = "abBCab", Output = 1
 assert Solution.numberOfSpecialChars("abBCab") == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -37,16 +37,16 @@ class Solution:
         return False  # No pair found that adds up to k
 
 
-# Unit Test: Input: root = [5, 3, 6, 2, 4, None, 7], k = 9, Output: True
+# Input: root = [5, 3, 6, 2, 4, None, 7], k = 9, Output: True
 root_test = TreeNode.build_binary_tree([5, 3, 6, 2, 4, None, 7])
 assert Solution.findTarget(root_test, 9) is True
 
-# Unit Test: Input: root = [5, 3, 6, 2, 4, None, 7], k = 28, Output: False
+# Input: root = [5, 3, 6, 2, 4, None, 7], k = 28, Output: False
 root_test = TreeNode.build_binary_tree([5, 3, 6, 2, 4, None, 7])
 assert Solution.findTarget(root_test, 28) is False
 
-# Unit Test: Input: root = [2, 1, 3], k = 4, Output: True
+# Input: root = [2, 1, 3], k = 4, Output: True
 root_test = TreeNode.build_binary_tree([2, 1, 3])
 assert Solution.findTarget(root_test, 4) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

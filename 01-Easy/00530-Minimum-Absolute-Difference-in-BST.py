@@ -46,20 +46,20 @@ class Solution:
         return int(min_absolute_diff)
 
 
-# Unit Test: Input: root = [4, 2, 6, 1, 3], Output: 1
+# Input: root = [4, 2, 6, 1, 3], Output: 1
 root_test = TreeNode.build_binary_tree([4, 2, 6, 1, 3])
 assert Solution.getMinimumDifference(root_test) == 1
 
-# Unit Test: Input: root = [1, 0, 48, None, None, 12, 49], Output: 1
+# Input: root = [1, 0, 48, None, None, 12, 49], Output: 1
 root_test = TreeNode.build_binary_tree([1, 0, 48, None, None, 12, 49])
 assert Solution.getMinimumDifference(root_test) == 1
 
-# Unit Test: Input: root = [1, None, 5, 3], Output: 2
+# Input: root = [1, None, 5, 3], Output: 2
 root_test = TreeNode.build_binary_tree([1, None, 5, 3])
 assert Solution.getMinimumDifference(root_test) == 2
 
-# Unit Test: Input: root = [0,null,2236,1277,2776,519], Output: 519
+# Input: root = [0,null,2236,1277,2776,519], Output: 519
 root_test = TreeNode.build_binary_tree([0, None, 2236, 1277, 2776, 519])
 assert Solution.getMinimumDifference(root_test) == 519
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

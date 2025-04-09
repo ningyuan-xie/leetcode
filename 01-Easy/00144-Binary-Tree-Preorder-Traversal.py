@@ -27,16 +27,16 @@ class Solution:
         return root_value + left_traversal + right_traversal
 
 
-# Unit Test: Input: root = [1,null,2,3], Output: [1,2,3]
+# Input: root = [1,null,2,3], Output: [1,2,3]
 root_test = TreeNode.build_binary_tree([1, None, 2, 3])
 assert Solution.preorderTraversal(root_test) == [1, 2, 3]
 
-# Unit Test: Input: root = [], Output: []
+# Input: root = [], Output: []
 root_test = TreeNode.build_binary_tree([])
 assert Solution.preorderTraversal(root_test) == []
 
-# Unit Test: Input: root = [1], Output: [1]
+# Input: root = [1], Output: [1]
 root_test = TreeNode.build_binary_tree([1])
 assert Solution.preorderTraversal(root_test) == [1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

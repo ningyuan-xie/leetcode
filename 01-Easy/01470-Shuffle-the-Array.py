@@ -34,4 +34,4 @@ assert Solution.shuffle([1, 2, 3, 4, 4, 3, 2, 1], 4) == [1, 4, 2, 3, 3, 2, 4, 1]
 # Unit Test: nums = [1, 1, 2, 2], n = 2, Output: [1, 2, 1, 2]
 assert Solution.shuffle([1, 1, 2, 2], 2) == [1, 2, 1, 2]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

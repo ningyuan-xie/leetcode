@@ -34,4 +34,4 @@ assert Solution.countPairs([-1, 1, 2, 3, 1], 2) == 3
 # Unit Test: nums = [-6,2,5,-2,-7,-1,3], target = -2, Output: 10
 assert Solution.countPairs([-6, 2, 5, -2, -7, -1, 3], -2) == 10
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

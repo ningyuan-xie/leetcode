@@ -38,4 +38,4 @@ assert Solution.count_consistent_strings("abc", ["a", "b", "c", "ab",
 assert Solution.count_consistent_strings("cad", ["cc", "acd", "b", "ba",
                                                  "bac", "bad", "ac", "d"]) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

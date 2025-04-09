@@ -39,4 +39,4 @@ assert Solution.semiOrderedPermutation([2, 4, 1, 3]) == 3
 # Unit Test: nums = [1,3,4,2,5], Output: 0
 assert Solution.semiOrderedPermutation([1, 3, 4, 2, 5]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

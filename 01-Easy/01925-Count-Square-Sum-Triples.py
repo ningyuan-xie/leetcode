@@ -36,4 +36,4 @@ assert Solution.countTriples(10) == 4
 # Unit Test: n = 1, Output: 0
 assert Solution.countTriples(1) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

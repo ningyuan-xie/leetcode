@@ -51,4 +51,4 @@ assert Solution.haveConflict(["06:35", "07:15"], ["16:41", "19:36"]) is False
 # Unit Test: event1 = ["14:13", "22:08"], event2 = ["02:40","08:08"], Output: False
 assert Solution.haveConflict(["14:13", "22:08"], ["02:40", "08:08"]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -38,4 +38,4 @@ assert Solution.splitWordsBySeparator(["$easy$", "$problem$"], "$") == ["easy", 
 # Unit Test: words = ["|||"], separator = "|", Output: []
 assert Solution.splitWordsBySeparator(["|||"], "|") == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

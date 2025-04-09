@@ -42,4 +42,4 @@ assert Solution.countPairs([1, 2, 3, 4], 1) == 0
 assert Solution.countPairs([5, 5, 9, 2, 5, 5, 9, 2, 2, 5, 5,
                             6, 2, 2, 5, 2, 5, 4, 3], 7) == 18
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

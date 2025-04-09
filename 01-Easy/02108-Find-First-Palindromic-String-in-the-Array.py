@@ -32,4 +32,4 @@ assert Solution.firstPalindrome(["notapalindrome", "racecar"]) == "racecar"
 # Unit Test: words = ["def","ghi"], Output: ""
 assert Solution.firstPalindrome(["def", "ghi"]) == ""
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

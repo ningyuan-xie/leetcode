@@ -44,4 +44,4 @@ assert Solution.maxScore("1111") == 3
 # Unit Test: s = "00", Output: 1
 assert Solution.maxScore("00") == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

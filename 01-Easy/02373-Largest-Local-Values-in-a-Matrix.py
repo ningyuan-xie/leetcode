@@ -40,4 +40,4 @@ assert (Solution.largestLocal([[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 2, 1, 1]
                                [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]])
         == [[2, 2, 2], [2, 2, 2], [2, 2, 2]])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

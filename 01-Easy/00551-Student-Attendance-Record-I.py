@@ -36,13 +36,13 @@ class Solution:
         return True
 
 
-# Unit Test: Input: s = "PPALLP", Output: True
+# Input: s = "PPALLP", Output: True
 assert Solution.checkRecord("PPALLP") is True
 
-# Unit Test: Input: s = "PPALLL", Output: False
+# Input: s = "PPALLL", Output: False
 assert Solution.checkRecord("PPALLL") is False
 
-# Unit Test: Input: s = "PPALLL", Output: False
+# Input: s = "PPALLL", Output: False
 assert Solution.checkRecord("PPALLL") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

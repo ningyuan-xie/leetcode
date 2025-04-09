@@ -37,4 +37,4 @@ assert Solution.maxOperations([1, 5, 3, 3, 4, 1, 3, 2, 2, 3]) == 2
 # Unit Test: nums = [5,3], Output = 1
 assert Solution.maxOperations([5, 3]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

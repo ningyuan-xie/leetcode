@@ -34,13 +34,13 @@ class Solution:
         return largest_index
 
 
-# Unit Test: Input: nums = [3, 6, 1, 0], Output: 1
+# Input: nums = [3, 6, 1, 0], Output: 1
 assert Solution.dominant_index([3, 6, 1, 0]) == 1
 
-# Unit Test: Input: nums = [1, 2, 3, 4], Output: -1
+# Input: nums = [1, 2, 3, 4], Output: -1
 assert Solution.dominant_index([1, 2, 3, 4]) == -1
 
-# Unit Test: Input: nums = [1], Output: 0
+# Input: nums = [1], Output: 0
 assert Solution.dominant_index([1]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

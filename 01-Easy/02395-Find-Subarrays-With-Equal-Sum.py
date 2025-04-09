@@ -32,4 +32,4 @@ assert Solution.findSubarrays([1, 2, 3, 4, 5]) is False
 # Unit Test: nums = [0,0,0], Output: true
 assert Solution.findSubarrays([0, 0, 0]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -34,4 +34,4 @@ assert Solution.trimMean([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]) == 1.00000
 # Unit Test: arr = [6, 2, 7, 5, 1, 2, 0, 3, 10, 2, 5, 0, 5, 5, 0, 8, 7, 6, 8, 0], Output: 4.00000
 assert Solution.trimMean([6, 2, 7, 5, 1, 2, 0, 3, 10, 2, 5, 0, 5, 5, 0, 8, 7, 6, 8, 0]) == 4.00000
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

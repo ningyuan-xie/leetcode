@@ -39,16 +39,16 @@ class Solution:
         return overall_tilt
 
 
-# Unit Test: Input: root = [1, 2, 3], Output: 1
+# Input: root = [1, 2, 3], Output: 1
 root_test = TreeNode.build_binary_tree([1, 2, 3])
 assert Solution.findTilt(root_test) == 1
 
-# Unit Test: Input: root = [4, 2, 9, 3, 5, None, 7], Output: 15
+# Input: root = [4, 2, 9, 3, 5, None, 7], Output: 15
 root_test = TreeNode.build_binary_tree([4, 2, 9, 3, 5, None, 7])
 assert Solution.findTilt(root_test) == 15
 
-# Unit Test: Input: root = [21, 7, 14, 1, 1, 2, 2, 3, 3], Output: 9
+# Input: root = [21, 7, 14, 1, 1, 2, 2, 3, 3], Output: 9
 root_test = TreeNode.build_binary_tree([21, 7, 14, 1, 1, 2, 2, 3, 3])
 assert Solution.findTilt(root_test) == 9
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

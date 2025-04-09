@@ -36,4 +36,4 @@ assert Solution.maxDepth("1+(2*3)/(2-1)") == 1
 # Unit Test: s = "1", Output: 0
 assert Solution.maxDepth("1") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

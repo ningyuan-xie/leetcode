@@ -37,16 +37,16 @@ class Solution:
         return n % 2 == 0 and Solution.isPowerOfTwoRecursion(n // 2)
 
 
-# Unit Test: Input: 1
+# Input: 1
 assert Solution.isPowerOfTwo(1) is True
 
-# Unit Test: Input: 16
+# Input: 16
 assert Solution.isPowerOfTwo(16) is True
 
-# Unit Test: Input: 3
+# Input: 3
 assert Solution.isPowerOfTwoBit(3) is False
 
-# Unit Test: Input: 4
+# Input: 4
 assert Solution.isPowerOfTwoRecursion(4) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

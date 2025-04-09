@@ -31,4 +31,4 @@ assert Solution.numberOfCuts(4) == 2
 # Unit Test: n = 3, Output: 3
 assert Solution.numberOfCuts(3) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

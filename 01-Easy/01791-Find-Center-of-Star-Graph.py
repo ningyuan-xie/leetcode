@@ -25,4 +25,4 @@ assert Solution.findCenter([[1, 2], [5, 1], [1, 3], [1, 4]]) == 1
 # Unit Test: edges = [[1, 2], [2, 3]], Output: 2
 assert Solution.findCenter([[1, 2], [2, 3]]) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

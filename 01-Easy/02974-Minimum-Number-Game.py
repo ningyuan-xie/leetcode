@@ -33,4 +33,4 @@ assert Solution.numberGame([5, 4, 2, 3]) == [3, 2, 5, 4]
 # Unit Test: nums = [2,5], Output: [5,2]
 assert Solution.numberGame([2, 5]) == [5, 2]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

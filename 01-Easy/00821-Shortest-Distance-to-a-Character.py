@@ -37,13 +37,13 @@ class Solution:
         return result
 
 
-# Unit Test: Input: s = "loveleetcode", c = "e", Output: [3,2,1,0,1,0,0,1,2,2,1,0]
+# Input: s = "loveleetcode", c = "e", Output: [3,2,1,0,1,0,0,1,2,2,1,0]
 assert Solution.shortestToChar("loveleetcode", "e") == [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
 
-# Unit Test: Input: s = "aaab", c = "b", Output: [3,2,1,0]
+# Input: s = "aaab", c = "b", Output: [3,2,1,0]
 assert Solution.shortestToChar("aaab", "b") == [3, 2, 1, 0]
 
-# Unit Test: Input: s = "aaba", c = "b", Output: [2,1,0,1]
+# Input: s = "aaba", c = "b", Output: [2,1,0,1]
 assert Solution.shortestToChar("aaba", "b") == [2, 1, 0, 1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

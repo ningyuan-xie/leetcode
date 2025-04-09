@@ -14,16 +14,16 @@ class Solution:
         return len(s) == len(goal) and goal in s + s
 
 
-# Unit Test: Input: s = 'abcde', goal = 'cdeab', Output: True
+# Input: s = 'abcde', goal = 'cdeab', Output: True
 assert Solution.rotateString('abcde', 'cdeab') is True
 
-# Unit Test: Input: s = 'abcde', goal = 'abced', Output: False
+# Input: s = 'abcde', goal = 'abced', Output: False
 assert Solution.rotateString('abcde', 'abced') is False
 
-# Unit Test: Input: s = 'abcde', goal = 'abcde', Output: True
+# Input: s = 'abcde', goal = 'abcde', Output: True
 assert Solution.rotateString('abcde', 'abcde') is True
 
-# Unit Test: Input: s = 'abcde', goal = 'abcdeabcde', Output: False
+# Input: s = 'abcde', goal = 'abcdeabcde', Output: False
 assert Solution.rotateString('abcde', 'abcdeabcde') is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

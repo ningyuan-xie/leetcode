@@ -42,4 +42,4 @@ assert Solution.minSubsequence([4, 4, 7, 6, 7]) == [7, 7, 6]
 # Unit Test: nums = [6], Output: [6]
 assert Solution.minSubsequence([6]) == [6]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

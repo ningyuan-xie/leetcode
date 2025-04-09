@@ -34,13 +34,13 @@ class Solution:
         return True
 
 
-# Unit Test: Input: s = "aba", Output: True
+# Input: s = "aba", Output: True
 assert Solution.validPalindrome("aba") is True
 
-# Unit Test: Input: s = "abca", Output: True
+# Input: s = "abca", Output: True
 assert Solution.validPalindrome("abca") is True
 
-# Unit Test: Input: s = "abc", Output: False
+# Input: s = "abc", Output: False
 assert Solution.validPalindrome("abc") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

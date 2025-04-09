@@ -42,4 +42,4 @@ assert Solution.prefixesDivBy5([1, 1, 1]) == [False, False, False]
 # Unit Test: nums = [0, 1, 1, 1, 1, 1], Output: [True, False, False, False, True, False]
 assert Solution.prefixesDivBy5([0, 1, 1, 1, 1, 1]) == [True, False, False, False, True, False]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

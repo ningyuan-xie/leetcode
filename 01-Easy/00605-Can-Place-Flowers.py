@@ -37,16 +37,16 @@ class Solution:
         return flowers_planted >= n
 
 
-# Unit Test: Input: flowerbed = [1,0,0,0,1], n = 1, Output: True
+# Input: flowerbed = [1,0,0,0,1], n = 1, Output: True
 assert Solution.canPlaceFlowers([1, 0, 0, 0, 1], 1) is True
 
-# Unit Test: Input: flowerbed = [1,0,0,0,1], n = 2, Output: False
+# Input: flowerbed = [1,0,0,0,1], n = 2, Output: False
 assert Solution.canPlaceFlowers([1, 0, 0, 0, 1], 2) is False
 
-# Unit Test: Input: flowerbed = [0,0,1,0,0], n = 1, Output: True
+# Input: flowerbed = [0,0,1,0,0], n = 1, Output: True
 assert Solution.canPlaceFlowers([0, 0, 1, 0, 0], 1) is True
 
-# Unit Test: Input: flowerbed = [0,0,1,0,0], n = 2, Output: True
+# Input: flowerbed = [0,0,1,0,0], n = 2, Output: True
 assert Solution.canPlaceFlowers([0, 0, 1, 0, 0], 2) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

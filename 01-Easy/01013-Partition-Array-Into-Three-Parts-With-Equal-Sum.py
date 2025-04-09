@@ -53,4 +53,4 @@ assert Solution.canThreePartsEqualSum([0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1]) is Fa
 # Unit Test: arr = [3, 3, 6, 5, -2, 2, 5, 1, -9, 4], Output: True
 assert Solution.canThreePartsEqualSum([3, 3, 6, 5, -2, 2, 5, 1, -9, 4]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

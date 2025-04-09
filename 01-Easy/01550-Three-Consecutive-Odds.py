@@ -35,4 +35,4 @@ assert Solution.threeConsecutiveOdds([2, 6, 4, 1]) is False
 # Unit Test: arr = [1, 2, 34, 3, 4, 5, 7, 23, 12], Output: True
 assert Solution.threeConsecutiveOdds([1, 2, 34, 3, 4, 5, 7, 23, 12]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

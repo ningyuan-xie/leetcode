@@ -25,13 +25,13 @@ class Solution:
         return distinct[k - 1] if k <= len(distinct) else ""
 
 
-# Unit Test: Input: arr = ["d","b","c","b","c","a"], k = 2, Output: "a"
+# Input: arr = ["d","b","c","b","c","a"], k = 2, Output: "a"
 assert Solution.kthDistinct(["d", "b", "c", "b", "c", "a"], 2) == "a"
 
-# Unit Test: Input: arr = ["aaa","aa","a"], k = 1, Output: "aaa"
+# Input: arr = ["aaa","aa","a"], k = 1, Output: "aaa"
 assert Solution.kthDistinct(["aaa", "aa", "a"], 1) == "aaa"
 
-# Unit Test: Input: arr = ["a","b","a"], k = 3, Output: ""
+# Input: arr = ["a","b","a"], k = 3, Output: ""
 assert Solution.kthDistinct(["a", "b", "a"], 3) == ""
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

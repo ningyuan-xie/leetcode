@@ -39,4 +39,4 @@ assert Solution.furthestDistanceFromOrigin("_R__LL_") == 5
 # Unit Test: moves = "_______", Output: 7
 assert Solution.furthestDistanceFromOrigin("_______") == 7
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

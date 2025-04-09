@@ -37,4 +37,4 @@ assert Solution.findMinimumOperations("a", "a", "a") == 0
 # Unit Test: s1 = "a", s2 = "aabc", s3 = "a", Output: 3
 assert Solution.findMinimumOperations("a", "aabc", "a") == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

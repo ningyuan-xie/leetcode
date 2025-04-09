@@ -42,4 +42,4 @@ assert Solution.areSimilar([[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], 2) is Tru
 # Unit Test: mat = [[2,2],[2,2]], k = 3, Output: True
 assert Solution.areSimilar([[2, 2], [2, 2]], 3) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

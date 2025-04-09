@@ -52,4 +52,4 @@ assert Solution.circularGameLosers(5, 2) == [4, 5]
 # Unit Test: n = 4, k = 4, Output: [1]
 # assert Solution.circularGameLosers(4, 4) == [1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

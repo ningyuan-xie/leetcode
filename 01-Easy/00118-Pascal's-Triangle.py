@@ -25,13 +25,13 @@ class Solution:
         return result
 
 
-# Unit Test: Input: numRows = 5, Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+# Input: numRows = 5, Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 assert Solution.generate(5) == [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
 
-# Unit Test: Input: numRows = 1, Output: [[1]]
+# Input: numRows = 1, Output: [[1]]
 assert Solution.generate(1) == [[1]]
 
-# Unit Test: Input: numRows = 2, Output: [[1],[1,1]]
+# Input: numRows = 2, Output: [[1],[1,1]]
 assert Solution.generate(2) == [[1], [1, 1]]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

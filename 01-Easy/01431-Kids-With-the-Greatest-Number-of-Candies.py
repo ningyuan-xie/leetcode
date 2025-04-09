@@ -33,4 +33,4 @@ assert (Solution.kidsWithCandies([4, 2, 1, 1, 2], 1)
 # Unit Test: candies = [12, 1, 12], extraCandies = 10, Output: [True, False, True]
 assert Solution.kidsWithCandies([12, 1, 12], 10) == [True, False, True]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

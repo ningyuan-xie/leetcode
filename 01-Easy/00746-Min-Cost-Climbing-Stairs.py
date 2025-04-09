@@ -33,10 +33,10 @@ class Solution:
         return min(first_cost, second_cost)
 
 
-# Unit Test: Input: cost = [10, 15, 20], Output: 15
+# Input: cost = [10, 15, 20], Output: 15
 assert Solution.min_cost_climbing_stairs([10, 15, 20]) == 15
 
-# Unit Test: Input: cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1], Output: 6
+# Input: cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1], Output: 6
 assert Solution.min_cost_climbing_stairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]) == 6
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

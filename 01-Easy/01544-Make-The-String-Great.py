@@ -41,4 +41,4 @@ assert Solution.makeGood("abBAcC") == ""
 # Unit Test: s = "s", Output: "s"
 assert Solution.makeGood("s") == "s"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

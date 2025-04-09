@@ -24,13 +24,13 @@ class Solution:
         return hamming_distance
 
 
-# Unit Test: Input: x = 1, y = 4, Output: 2
+# Input: x = 1, y = 4, Output: 2
 assert Solution.hammingDistance(1, 4) == 2
 
-# Unit Test: Input: x = 3, y = 1, Output: 1
+# Input: x = 3, y = 1, Output: 1
 assert Solution.hammingDistance(3, 1) == 1
 
-# Unit Test: Input: x = 0, y = 0, Output: 0
+# Input: x = 0, y = 0, Output: 0
 assert Solution.hammingDistance(0, 0) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

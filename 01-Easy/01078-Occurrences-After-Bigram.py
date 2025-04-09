@@ -32,4 +32,4 @@ assert Solution.findOcurrences("alice is a good girl she is a good student",
 assert Solution.findOcurrences("we will we will rock you",
                                "we", "will") == ["we", "rock"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -23,4 +23,4 @@ assert Solution.commonFactors(12, 6) == 4
 # Unit Test: a = 25, b = 30, Output: 2
 assert Solution.commonFactors(25, 30) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -26,13 +26,13 @@ class Solution:
         return length_unique + 1
 
 
-# Unit Test: Input: nums = [1,1,2], Output: 2
+# Input: nums = [1,1,2], Output: 2
 assert Solution.removeDuplicates([1, 1, 2]) == 2
 
-# Unit Test: Input: nums = [0,0,1,1,1,2,2,3,3,4], Output: 5
+# Input: nums = [0,0,1,1,1,2,2,3,3,4], Output: 5
 assert Solution.removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]) == 5
 
-# Unit Test: Input: nums = [1,2,3], Output: 3
+# Input: nums = [1,2,3], Output: 3
 assert Solution.removeDuplicates([1, 2, 3]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

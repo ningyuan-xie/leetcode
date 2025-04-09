@@ -40,4 +40,4 @@ assert Solution.maxDivScore([2, 9, 15, 50], [5, 3, 7, 2]) == 2
 # Unit Test: nums = [4,7,9,3,9], divisors = [5,2,3], Output: 3
 assert Solution.maxDivScore([4, 7, 9, 3, 9], [5, 2, 3]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

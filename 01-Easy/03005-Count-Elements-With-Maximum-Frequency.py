@@ -30,4 +30,4 @@ assert Solution.maxFrequency([1, 2, 2, 3, 1, 4]) == 4
 # Unit Test: nums = [1,2,3,4,5], Output = 5
 assert Solution.maxFrequency([1, 2, 3, 4, 5]) == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

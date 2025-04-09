@@ -37,16 +37,16 @@ class Solution:
         return expected_sum - actual_sum
 
 
-# Unit Test: Input: nums = [3,0,1], n = 3 since there are 3 numbers,
+# Input: nums = [3,0,1], n = 3 since there are 3 numbers,
 # so all numbers are in range [0, 3]. 2 is the missing number.
 assert Solution.missingNumber([3, 0, 1]) == 2
 
-# Unit Test: Input: nums = [0,1], n = 2 since there are 2 numbers,
+# Input: nums = [0,1], n = 2 since there are 2 numbers,
 # so all numbers are in range [0, 2]. 2 is the missing number.
 assert Solution.missingNumberSumFormula([0, 1]) == 2  # 2 ^ (0 ^ 2) ^ (1 ^ 0) = 2
 
-# Unit Test: Input: nums = [9,6,4,2,3,5,7,0,1], n = 9 since there are 9 numbers,
+# Input: nums = [9,6,4,2,3,5,7,0,1], n = 9 since there are 9 numbers,
 # so all numbers are in range [0, 9]. 8 is the missing number.
 assert Solution.missingNumberSumFormula([9, 6, 4, 2, 3, 5, 7, 0, 1]) == 8
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

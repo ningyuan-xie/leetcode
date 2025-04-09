@@ -27,16 +27,16 @@ class Solution:
         return min(n_eat, n_unique)
 
 
-# Unit Test: Input: candyType = [1, 1, 2, 2, 3, 3], Output: 3
+# Input: candyType = [1, 1, 2, 2, 3, 3], Output: 3
 assert Solution.distributeCandies([1, 1, 2, 2, 3, 3]) == 3
 
-# Unit Test: Input: candyType = [1, 1, 2, 3], Output: 2
+# Input: candyType = [1, 1, 2, 3], Output: 2
 assert Solution.distributeCandies([1, 1, 2, 3]) == 2
 
-# Unit Test: Input: candyType = [6, 6, 6, 6], Output: 1
+# Input: candyType = [6, 6, 6, 6], Output: 1
 assert Solution.distributeCandies([6, 6, 6, 6]) == 1
 
-# Unit Test: Input: candyType = [1, 1, 1, 1, 2, 2, 2, 3, 3, 3], Output: 3
+# Input: candyType = [1, 1, 1, 1, 2, 2, 2, 3, 3, 3], Output: 3
 assert Solution.distributeCandies([1, 1, 1, 1, 2, 2, 2, 3, 3, 3]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

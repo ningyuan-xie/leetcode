@@ -45,4 +45,4 @@ assert Solution.minimumRightShifts([1, 3, 5]) == 0
 # Unit Test: nums = [2,1,4], Output: -1
 assert Solution.minimumRightShifts([2, 1, 4]) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

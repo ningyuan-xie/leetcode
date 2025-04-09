@@ -24,10 +24,10 @@ class Solution:
         return sum_min_pairs
 
 
-# Unit Test: Input: nums = [1, 4, 3, 2], Output: 4
+# Input: nums = [1, 4, 3, 2], Output: 4
 assert Solution.arrayPairSum([1, 4, 3, 2]) == 4
 
-# Unit Test: Input: nums = [6, 2, 6, 5, 1, 2], Output: 9
+# Input: nums = [6, 2, 6, 5, 1, 2], Output: 9
 assert Solution.arrayPairSum([6, 2, 6, 5, 1, 2]) == 9
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -50,4 +50,4 @@ assert Solution.countVowelSubstrings("unicornarihan") == 0
 # Unit Test: word = "cuaieuouac", Output: 7
 assert Solution.countVowelSubstrings("cuaieuouac") == 7
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

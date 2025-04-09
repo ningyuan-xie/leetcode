@@ -40,4 +40,4 @@ assert Solution.canBeIncreasing([2, 3, 1, 2]) is False
 # Unit Test: nums = [1, 1, 1], Output: False
 assert Solution.canBeIncreasing([1, 1, 1]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

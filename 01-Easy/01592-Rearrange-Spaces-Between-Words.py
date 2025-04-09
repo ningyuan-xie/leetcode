@@ -35,4 +35,4 @@ assert Solution.reorderSpaces(" practice   makes   perfect") == "practice   make
 # Unit Test: text = "hello", Output: "hello"
 assert Solution.reorderSpaces("hello") == "hello"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

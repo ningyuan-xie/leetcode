@@ -40,4 +40,4 @@ assert Solution.canMakeArithmeticProgression([1, 2, 3]) == True
 # Unit Test: arr = [1, 2, 4, 5], Output: False
 assert Solution.canMakeArithmeticProgression([1, 2, 4, 5]) == False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

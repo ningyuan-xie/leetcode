@@ -50,4 +50,4 @@ assert Solution.findThreeDigitEvenNumbers([2, 2, 8, 8, 2]) == [222, 228, 282, 28
 # Unit Test: digits = [3,7,5], Output: []
 assert Solution.findThreeDigitEvenNumbers([3, 7, 5]) == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

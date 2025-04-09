@@ -39,4 +39,4 @@ assert Solution.countKDifference([1, 3], 3) == 0
 # Unit Test: nums = [3, 2, 1, 5, 4], k = 2, Output: 3
 assert Solution.countKDifference([3, 2, 1, 5, 4], 2) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

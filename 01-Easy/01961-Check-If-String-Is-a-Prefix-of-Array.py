@@ -39,4 +39,4 @@ assert Solution.isPrefixString("iloveleetcode", ["apples", "i", "love", "leetcod
 # Unit Test: s = "a", words = ["a", "aa", "aaa"], Output: True
 assert Solution.isPrefixString("a", ["a", "aa", "aaa"]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -28,10 +28,10 @@ class Solution:
         return intersection
 
 
-# Unit Test: Input: nums1 = [1, 2, 2, 1], nums2 = [2, 2], Output: [2, 2]
+# Input: nums1 = [1, 2, 2, 1], nums2 = [2, 2], Output: [2, 2]
 assert Solution.intersect([1, 2, 2, 1], [2, 2]) == [2, 2]
 
-# Unit Test: Input: nums1 = [4, 9, 5], nums2 = [9, 4, 9, 8, 4], Output: [9, 4]
+# Input: nums1 = [4, 9, 5], nums2 = [9, 4, 9, 8, 4], Output: [9, 4]
 assert Solution.intersect([4, 9, 5], [9, 4, 9, 8, 4]) == [9, 4]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

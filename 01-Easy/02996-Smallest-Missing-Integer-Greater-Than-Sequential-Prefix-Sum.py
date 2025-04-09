@@ -36,4 +36,4 @@ assert Solution.missingInteger([1, 2, 3, 2, 5]) == 6
 # Unit Test: nums = [3,4,5,1,12,14,13], Output: 15
 assert Solution.missingInteger([3, 4, 5, 1, 12, 14, 13]) == 15
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

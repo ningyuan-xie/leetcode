@@ -40,4 +40,4 @@ assert Solution.freqAlphabets("1326#") == "acz"
 # Unit Test: s = "25#", Output: "y"
 assert Solution.freqAlphabets("25#") == "y"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -48,16 +48,16 @@ class Solution:
         return x_info[0] == y_info[0] and x_info[1] != y_info[1]
 
 
-# Unit Test: Input: [1,2,3,4], x = 4, y = 3, Output: False
+# Input: [1,2,3,4], x = 4, y = 3, Output: False
 root_test = TreeNode.build_binary_tree([1, 2, 3, 4])
 assert Solution.isCousins(root_test, 4, 3) is False
 
-# Unit Test: Input: [1,2,3,None,4,None,5], x = 5, y = 4, Output: True
+# Input: [1,2,3,None,4,None,5], x = 5, y = 4, Output: True
 root_test = TreeNode.build_binary_tree([1, 2, 3, None, 4, None, 5])
 assert Solution.isCousins(root_test, 5, 4) is True
 
-# Unit Test: Input: [1,2,3,None,4], x = 2, y = 3, Output: False
+# Input: [1,2,3,None,4], x = 2, y = 3, Output: False
 root_test = TreeNode.build_binary_tree([1, 2, 3, None, 4])
 assert Solution.isCousins(root_test, 2, 3) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

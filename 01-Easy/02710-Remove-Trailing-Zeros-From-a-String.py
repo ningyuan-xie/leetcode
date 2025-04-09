@@ -30,4 +30,4 @@ assert Solution.removeTrailingZeros("51230100") == "512301"
 # Unit Test: num = "123", Output: "123"
 assert Solution.removeTrailingZeros("123") == "123"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

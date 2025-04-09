@@ -39,4 +39,4 @@ assert Solution.removeAnagrams(["a", "b", "c", "d"]) == ["a", "b", "c", "d"]
 # Unit Test: words = ["a","b","a"], Output: ["a","b","a"]
 assert Solution.removeAnagrams(["a", "b", "a"]) == ["a", "b", "a"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -43,4 +43,4 @@ assert Solution.largestSumAfterKNegations([3, -1, 0, 2], 3) == 6
 # Unit Test: nums = [2, -3, -1, 5, -4], k = 2, Output: 13
 assert Solution.largestSumAfterKNegations([2, -3, -1, 5, -4], 2) == 13
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

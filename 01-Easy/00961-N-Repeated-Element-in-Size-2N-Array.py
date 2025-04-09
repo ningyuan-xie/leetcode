@@ -29,13 +29,13 @@ class Solution:
         return -1
 
 
-# Unit Test: Input: [1,2,3,3], Output: 3
+# Input: [1,2,3,3], Output: 3
 assert Solution.repeatedNTimes([1, 2, 3, 3]) == 3
 
-# Unit Test: Input: [2,1,2,5,3,2], Output: 2
+# Input: [2,1,2,5,3,2], Output: 2
 assert Solution.repeatedNTimes([2, 1, 2, 5, 3, 2]) == 2
 
-# Unit Test: Input: [5,1,5,2,5,3,5,4], Output: 5
+# Input: [5,1,5,2,5,3,5,4], Output: 5
 assert Solution.repeatedNTimes([5, 1, 5, 2, 5, 3, 5, 4]) == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

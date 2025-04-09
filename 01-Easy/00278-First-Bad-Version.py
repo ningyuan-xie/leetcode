@@ -38,10 +38,10 @@ class Solution:
         return left
 
 
-# Unit Test: Input: n = 5, bad = 4, Output: 4. Explanation: The first bad version is 4
+# Input: n = 5, bad = 4, Output: 4. Explanation: The first bad version is 4
 assert Solution.firstBadVersion(5) == 4
 
-# Unit Test: Input: n = 10, bad = 4, Output: 4. Explanation: The first bad version is 4
+# Input: n = 10, bad = 4, Output: 4. Explanation: The first bad version is 4
 assert Solution.firstBadVersion(10) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

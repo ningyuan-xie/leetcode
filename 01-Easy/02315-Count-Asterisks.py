@@ -33,4 +33,4 @@ assert Solution.countAsterisks("iamprogrammer") == 0
 # Unit Test: s = "yo|uar|e**|b|e***au|tifu|l", Output: 5
 assert Solution.countAsterisks("yo|uar|e**|b|e***au|tifu|l") == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -43,12 +43,12 @@ class Solution:
         return smoothed_img
 
 
-# Unit Test: Input: img = [[1, 1, 1], [1, 0, 1], [1, 1, 1]], Output: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+# Input: img = [[1, 1, 1], [1, 0, 1], [1, 1, 1]], Output: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 assert Solution.imageSmoother([[1, 1, 1], [1, 0, 1], [1, 1, 1]]) == [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
-# Unit Test: Input: img = [[100,200,100],[200,50,200],[100,200,100]],
+# Input: img = [[100,200,100],[200,50,200],[100,200,100]],
 # Output: [[137, 141, 137], [141, 138, 141], [137, 141, 137]]
 assert (Solution.imageSmoother([[100, 200, 100], [200, 50, 200], [100, 200, 100]]) ==
         [[137, 141, 137], [141, 138, 141], [137, 141, 137]])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

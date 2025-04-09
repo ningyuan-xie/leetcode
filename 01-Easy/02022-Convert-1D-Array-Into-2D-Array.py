@@ -38,4 +38,4 @@ assert Solution.construct2DArray([1, 2, 3], 1, 3) == [[1, 2, 3]]
 # Unit Test: original = [1, 2], m = 1, n = 1, Output: []
 assert Solution.construct2DArray([1, 2], 1, 1) == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

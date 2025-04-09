@@ -40,4 +40,4 @@ assert Solution.largestGoodInteger("2300019") == "000"
 # Unit Test: num = "42352338", Output: ""
 assert Solution.largestGoodInteger("42352338") == ""
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

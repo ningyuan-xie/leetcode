@@ -28,4 +28,4 @@ assert Solution.number_of_matches(14) == 13
 # Unit Test: n = 9, Output: 8
 assert Solution.number_of_matches(9) == 8
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

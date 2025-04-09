@@ -34,4 +34,4 @@ assert Solution.largest_altitude([-4, -3, -2, -1, 4, 3, 2]) == 0
 # Unit Test: gain = [1, 2, 3, 4, 5], Output: 15
 assert Solution.largest_altitude([1, 2, 3, 4, 5]) == 15
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

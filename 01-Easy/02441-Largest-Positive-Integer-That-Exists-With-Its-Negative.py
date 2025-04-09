@@ -32,4 +32,4 @@ assert Solution.findMaxK([-1, 10, 6, 7, -7, -6, 5]) == 7
 # Unit Test: nums = [-10, 8, 6, 7, -2, -3], Output: -1
 assert Solution.findMaxK([-10, 8, 6, 7, -2, -3]) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -30,13 +30,13 @@ class Solution:
         return result
 
 
-# Unit Test: Input: num = 26, Output: "1a"
+# Input: num = 26, Output: "1a"
 assert Solution.toHex(26) == "1a"  # hex_str: hex_map[1] + hex_map[10] = "1a"
 
-# Unit Test: Input: num = -1, Output: "ffffffff"
+# Input: num = -1, Output: "ffffffff"
 assert Solution.toHex(-1) == "ffffffff"
 
-# Unit Test: Input: num = 0, Output: "0"
+# Input: num = 0, Output: "0"
 assert Solution.toHex(0) == "0"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -49,14 +49,14 @@ class Solution:
         Solution.reverseStringRecursion(s[1:-1])
 
 
-# Unit Test: Input: s = ["h", "e", "l", "l", "o"], Output: ["o", "l", "l", "e", "h"]
+# Input: s = ["h", "e", "l", "l", "o"], Output: ["o", "l", "l", "e", "h"]
 s_test = ["h", "e", "l", "l", "o"]
 Solution.reverseString(s_test)
 assert s_test == ["o", "l", "l", "e", "h"]
 
-# Unit Test: Input: s = ["H", "a", "n", "n", "a", "h"], Output: ["h", "a", "n", "n", "a", "H"]
+# Input: s = ["H", "a", "n", "n", "a", "h"], Output: ["h", "a", "n", "n", "a", "H"]
 s_test = ["H", "a", "n", "n", "a", "h"]
 Solution.reverseStringRecursion(s_test)
 assert s_test == ["h", "a", "n", "n", "a", "H"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

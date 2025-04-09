@@ -44,4 +44,4 @@ assert Solution.makeSmallestPalindrome("abcd") == "abba"
 # Unit Test: s = "seven", Output: "neven"
 assert Solution.makeSmallestPalindrome("seven") == "neven"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

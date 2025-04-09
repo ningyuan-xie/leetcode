@@ -50,4 +50,4 @@ assert os.insert(2, "bbbb") == ["bbbb", "ccccc"]
 assert os.insert(5, "eeeee") == []
 assert os.insert(4, "ddddd") == ["ddddd", "eeeee"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

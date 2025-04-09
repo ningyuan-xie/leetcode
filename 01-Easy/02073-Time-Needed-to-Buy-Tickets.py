@@ -35,10 +35,10 @@ class Solution:
                         return time
 
 
-# Unit Test: Input: tickets = [2,3,2], k = 2, Output: 6
+# Input: tickets = [2,3,2], k = 2, Output: 6
 assert Solution.timeRequiredToBuy([2, 3, 2], 2) == 6
 
-# Unit Test: Input: tickets = [5,1,1,1], k = 0, Output: 8
+# Input: tickets = [5,1,1,1], k = 0, Output: 8
 assert Solution.timeRequiredToBuy([5, 1, 1, 1], 0) == 8
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

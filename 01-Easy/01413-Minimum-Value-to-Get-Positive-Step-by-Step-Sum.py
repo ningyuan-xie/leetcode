@@ -32,4 +32,4 @@ assert Solution.minStartValue([1, 2]) == 1
 # Unit Test: nums = [1, -2, -3], Output: 5
 assert Solution.minStartValue([1, -2, -3]) == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

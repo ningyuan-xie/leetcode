@@ -44,4 +44,4 @@ assert Solution.smallerNumbersThanCurrent([6, 5, 4, 8]) == [2, 1, 0, 3]
 # Unit Test: nums = [7, 7, 7, 7], Output: [0, 0, 0, 0]
 assert Solution.smallerNumbersThanCurrent([7, 7, 7, 7]) == [0, 0, 0, 0]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

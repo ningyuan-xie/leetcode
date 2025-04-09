@@ -44,4 +44,4 @@ assert Solution.canMakeSquare([["B", "W", "B"], ["W", "B", "W"], ["B", "W", "B"]
 # Unit Test: grid = [["B","W","B"],["B","W","W"],["B","W","W"]], Output = True
 assert Solution.canMakeSquare([["B", "W", "B"], ["B", "W", "W"], ["B", "W", "W"]]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

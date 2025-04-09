@@ -30,7 +30,7 @@ class ParkingSystem:
             return False
 
 
-# Unit Test: Input: ["ParkingSystem", "addCar", "addCar", "addCar", "addCar"]
+# Input: ["ParkingSystem", "addCar", "addCar", "addCar", "addCar"]
 # [[1, 1, 0], [1], [2], [3], [1]]
 # Output: [null, true, true, false, false]
 parking_system = ParkingSystem(1, 1, 0)
@@ -39,4 +39,4 @@ assert parking_system.addCar(2) is True
 assert parking_system.addCar(3) is False
 assert parking_system.addCar(1) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

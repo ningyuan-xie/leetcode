@@ -44,20 +44,20 @@ class Solution:
         return preorder_dfs_traversal(root)
 
 
-# Unit Test: Input: root = [3, 4, 5, 1, 2], subRoot = [4, 1, 2], Output: True
+# Input: root = [3, 4, 5, 1, 2], subRoot = [4, 1, 2], Output: True
 root_test = TreeNode.build_binary_tree([3, 4, 5, 1, 2])
 sub_root_test = TreeNode.build_binary_tree([4, 1, 2])
 assert Solution.isSubtree(root_test, sub_root_test) is True
 
-# Unit Test: Input: root = [3, 4, 5, 1, 2, None, None, None, None, 0], subRoot = [4, 1, 2],
+# Input: root = [3, 4, 5, 1, 2, None, None, None, None, 0], subRoot = [4, 1, 2],
 # Output: False
 root_test = TreeNode.build_binary_tree([3, 4, 5, 1, 2, None, None, None, None, 0])
 sub_root_test = TreeNode.build_binary_tree([4, 1, 2])
 assert Solution.isSubtree(root_test, sub_root_test) is False
 
-# Unit Test: Input: root = [1, 2, 3], subRoot = [2], Output: True
+# Input: root = [1, 2, 3], subRoot = [2], Output: True
 root_test = TreeNode.build_binary_tree([1, 2, 3])
 sub_root_test = TreeNode.build_binary_tree([2])
 assert Solution.isSubtree(root_test, sub_root_test) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

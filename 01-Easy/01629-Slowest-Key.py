@@ -44,4 +44,4 @@ assert Solution.slowestKey([9, 29, 49, 50], "cbcd") == "c"
 # Unit Test: releaseTimes = [12, 23, 36, 46, 62], keys = "spuda", Output: "a"
 assert Solution.slowestKey([12, 23, 36, 46, 62], "spuda") == "a"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

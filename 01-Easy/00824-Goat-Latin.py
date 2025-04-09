@@ -39,14 +39,14 @@ class Solution:
         return " ".join(result)
 
 
-# Unit Test: Input: sentence = "I speak Goat Latin", Output: "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
+# Input: sentence = "I speak Goat Latin", Output: "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
 assert Solution.toGoatLatin("I speak Goat Latin") == "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
 
-# Unit Test: Input: sentence = "The quick brown fox jumped over the lazy dog",
+# Input: sentence = "The quick brown fox jumped over the lazy dog",
 # Output: "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa
 # overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
 assert Solution.toGoatLatin("The quick brown fox jumped over the lazy dog") == \
        ("heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa "
         "overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa")
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

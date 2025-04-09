@@ -52,4 +52,4 @@ assert Solution.finalPrices([10, 1, 1, 6]) == [9, 0, 1, 6]
 # Unit Test: prices = [10, 1, 1, 6, 3], Output: [9, 0, 1, 3, 3]
 assert Solution.finalPrices([10, 1, 1, 6, 3]) == [9, 0, 1, 3, 3]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

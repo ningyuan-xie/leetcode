@@ -34,7 +34,7 @@ class MyStack:
         return len(self.queue) == 0
 
 
-# Unit Test: Input: ["MyStack", "push", "push", "top", "pop", "empty"]
+# Input: ["MyStack", "push", "push", "top", "pop", "empty"]
 stack = MyStack()
 assert stack.push(1) is None
 assert stack.push(2) is None
@@ -42,4 +42,4 @@ assert stack.top() == 2
 assert stack.pop() == 2
 assert not stack.empty()
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

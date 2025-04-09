@@ -39,4 +39,4 @@ assert Solution.longestNiceSubstring("Bb") == "Bb"
 # Unit Test: s = "c", Output: ""
 assert Solution.longestNiceSubstring("c") == ""
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

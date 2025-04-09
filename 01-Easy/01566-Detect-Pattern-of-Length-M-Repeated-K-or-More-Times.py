@@ -46,4 +46,4 @@ assert Solution.containsPattern([1, 2, 1, 2, 1, 1, 1, 3], 2, 2) is True
 # Unit Test: arr = [1, 2, 1, 2, 1, 3], m = 2, k = 3, Output: False
 assert Solution.containsPattern([1, 2, 1, 2, 1, 3], 2, 3) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -33,4 +33,4 @@ assert Solution.maximumValue(["alic3", "bob", "3", "4", "00000"]) == 5
 # Unit Test: words = ["1", "01", "001", "0001"], Output: 1
 assert Solution.maximumValue(["1", "01", "001", "0001"]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

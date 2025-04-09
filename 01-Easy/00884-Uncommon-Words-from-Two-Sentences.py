@@ -26,11 +26,11 @@ class Solution:
         return [word for word in freq if freq[word] == 1]
 
 
-# Unit Test: Input: A = "this apple is sweet", B = "this apple is sour", Output: ["sweet","sour"]
+# Input: A = "this apple is sweet", B = "this apple is sour", Output: ["sweet","sour"]
 assert Solution.uncommonFromSentences("this apple is sweet",
                                       "this apple is sour") == ["sweet", "sour"]
 
-# Unit Test: Input: A = "apple apple", B = "banana", Output: ["banana"]
+# Input: A = "apple apple", B = "banana", Output: ["banana"]
 assert Solution.uncommonFromSentences("apple apple", "banana") == ["banana"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

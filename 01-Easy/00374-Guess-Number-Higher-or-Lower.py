@@ -39,10 +39,10 @@ class Solution:
                 right = mid - 1
 
 
-# Unit Test: Input: n = 10, Output: 6. Explanation: The number that I picked is 6
+# Input: n = 10, Output: 6. Explanation: The number that I picked is 6
 assert Solution.guessNumber(10) == 6
 
-# Unit Test: Input: n = 20, Output: 6. Explanation: The number that I picked is 6
+# Input: n = 20, Output: 6. Explanation: The number that I picked is 6
 assert Solution.guessNumber(20) == 6
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -27,4 +27,4 @@ assert Solution.convertTemperature(36.50) == [309.65000, 97.70000]
 # Unit Test: celsius = 122.11, Output: [395.26000, 251.79800]
 assert Solution.convertTemperature(122.11) == [395.26000, 251.79800]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

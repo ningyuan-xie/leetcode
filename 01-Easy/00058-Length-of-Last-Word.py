@@ -18,17 +18,17 @@ class Solution:
         return len(words[-1])
 
 
-# Unit Test: Input: s = "Hello World", Output: 5
+# Input: s = "Hello World", Output: 5
 assert Solution.lengthOfLastWord("Hello World") == 5
 
-# Unit Test: Input: s = "   fly me to   the moon  ", Output: 4
+# Input: s = "   fly me to   the moon  ", Output: 4
 assert Solution.lengthOfLastWord("   fly me to   the moon  ") == 4
 
-# Unit Test: Input: s = "luffy is still joyboy", Output: 6
+# Input: s = "luffy is still joyboy", Output: 6
 assert Solution.lengthOfLastWord("luffy is still joyboy") == 6
 
-# Unit Test: Input: s = "a", Output: 1
+# Input: s = "a", Output: 1
 assert Solution.lengthOfLastWord("a") == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")
 

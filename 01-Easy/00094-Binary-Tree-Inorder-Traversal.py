@@ -38,16 +38,16 @@ class Solution:
                 Solution.inorderTraversalShort(root.right))
 
 
-# Unit Test: Input: root = [1,null,2,3], Output: [1,3,2]
+# Input: root = [1,null,2,3], Output: [1,3,2]
 root_test = TreeNode.build_binary_tree([1, None, 2, 3])
 assert Solution.inorderTraversal(root_test) == [1, 3, 2]
 
-# Unit Test: Input: root = [], Output: []
+# Input: root = [], Output: []
 root_test = TreeNode.build_binary_tree([])
 assert Solution.inorderTraversalShort(root_test) == []
 
-# Unit Test: Input: root = [1], Output: [1]
+# Input: root = [1], Output: [1]
 root_test = TreeNode.build_binary_tree([1])
 assert Solution.inorderTraversalShort(root_test) == [1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

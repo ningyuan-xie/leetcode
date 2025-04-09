@@ -31,13 +31,13 @@ class Solution:
         return prefix
 
 
-# Unit Test: Input: strs = ["flower", "flow", "flight"], Output: "fl"
+# Input: strs = ["flower", "flow", "flight"], Output: "fl"
 assert Solution.longestCommonPrefix(["flower", "flow", "flight"]) == "fl"
 
-# Unit Test: Input: strs = ["dog", "racecar", "car"], Output: ""
+# Input: strs = ["dog", "racecar", "car"], Output: ""
 assert Solution.longestCommonPrefix(["dog", "racecar", "car"]) == ""
 
-# Unit Test: Input: strs = ["c","acc","ccc"], Output: ""
+# Input: strs = ["c","acc","ccc"], Output: ""
 assert Solution.longestCommonPrefix(["c", "acc", "ccc"]) == ""
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

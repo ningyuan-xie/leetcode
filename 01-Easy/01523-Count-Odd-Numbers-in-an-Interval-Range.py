@@ -26,4 +26,4 @@ assert Solution.countOdds(8, 10) == 1
 # Unit Test: low = 1, high = 1, Output: 1
 assert Solution.countOdds(1, 1) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

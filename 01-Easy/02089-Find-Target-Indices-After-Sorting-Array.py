@@ -30,4 +30,4 @@ assert Solution.findTargetIndices([1, 2, 5, 2, 3], 3) == [3]
 # Unit Test: nums = [1,2,5,2,3], target = 5, Output: [4]
 assert Solution.findTargetIndices([1, 2, 5, 2, 3], 5) == [4]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

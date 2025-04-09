@@ -28,4 +28,4 @@ assert Solution.countEven(4) == 2
 # Unit Test: num = 30, Output: 14
 assert Solution.countEven(30) == 14
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

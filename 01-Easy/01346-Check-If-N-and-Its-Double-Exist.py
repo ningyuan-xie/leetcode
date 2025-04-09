@@ -36,4 +36,4 @@ assert Solution.checkIfExist([7, 1, 14, 11]) is True
 # Unit Test: arr = [3, 1, 7, 11], Output: False
 assert Solution.checkIfExist([3, 1, 7, 11]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

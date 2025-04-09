@@ -31,4 +31,4 @@ assert Solution.daysBetweenDates("2020-01-15", "2019-12-31") == 15
 # Unit Test: date1 = "2020-01-15", date2 = "2019-12-31", Output: 15
 assert Solution.daysBetweenDates("2020-01-15", "2019-12-31") == 15
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

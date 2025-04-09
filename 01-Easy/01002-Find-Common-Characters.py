@@ -33,4 +33,4 @@ assert Solution.commonChars(["bella", "label", "roller"]) == ["e", "l", "l"]
 # Unit Test: words = ["cool","lock","cook"], Output: ["c","o"]
 assert Solution.commonChars(["cool", "lock", "cook"]) == ["c", "o"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

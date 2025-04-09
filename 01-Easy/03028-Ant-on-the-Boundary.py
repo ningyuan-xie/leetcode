@@ -40,4 +40,4 @@ assert Solution.returnToBoundaryCount([2, 3, -5]) == 1
 # Unit Test: nums = [3,2,-3,-4], Output = 0
 assert Solution.returnToBoundaryCount([3, 2, -3, -4]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

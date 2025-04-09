@@ -37,4 +37,4 @@ assert Solution.decode([6, 2, 7, 3], 4) == [4, 2, 0, 7, 4]
 # Unit Test: encoded = [1], first = 1, Output: [1, 0]
 assert Solution.decode([1], 1) == [1, 0]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

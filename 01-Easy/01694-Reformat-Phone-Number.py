@@ -56,4 +56,4 @@ assert Solution.reformat_number("123 4-5678") == "123-456-78"
 # Unit Test: number = "12", Output: "12"
 assert Solution.reformat_number("12") == "12"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

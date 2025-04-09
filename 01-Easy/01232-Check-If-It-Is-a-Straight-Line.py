@@ -38,4 +38,4 @@ assert Solution.checkStraightLine([[1, 1], [2, 2], [3, 4], [4, 5], [5, 6], [7, 7
 # Unit Test: coordinates = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6]], Output: True
 assert Solution.checkStraightLine([[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6]]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

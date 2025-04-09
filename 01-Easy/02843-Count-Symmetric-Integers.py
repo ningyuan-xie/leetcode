@@ -36,4 +36,4 @@ assert Solution.countSymmetricIntegers(1, 100) == 9
 # Unit Test: low = 1200, high = 1230, Output: 4
 assert Solution.countSymmetricIntegers(1200, 1230) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

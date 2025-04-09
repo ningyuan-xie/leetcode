@@ -56,4 +56,4 @@ assert Solution.count_students([1, 1, 0, 0], [0, 1, 0, 1]) == 0
 # Unit Test: students = [1, 1, 1, 0, 0, 1], sandwiches = [1, 0, 0, 0, 1, 1], Output: 3
 assert Solution.count_students([1, 1, 1, 0, 0, 1], [1, 0, 0, 0, 1, 1]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

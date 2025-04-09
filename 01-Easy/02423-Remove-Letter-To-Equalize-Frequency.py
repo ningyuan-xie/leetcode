@@ -65,4 +65,4 @@ assert Solution.equalFrequency("zz") is True
 # Unit Test: word = "bac", Output: True
 assert Solution.equalFrequency("bac") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

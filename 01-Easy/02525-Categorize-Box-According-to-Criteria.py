@@ -44,4 +44,4 @@ assert Solution.categorizeBox(1000, 35, 700, 300) == "Heavy"
 # Input: length = 200, width = 50, height = 800, mass = 50, Output: "Neither"
 assert Solution.categorizeBox(200, 50, 800, 50) == "Neither"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

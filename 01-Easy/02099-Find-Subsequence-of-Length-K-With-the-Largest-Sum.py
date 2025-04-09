@@ -38,4 +38,4 @@ assert Solution.maxSubsequenceSum([-1, -2, 3, 4], 3) == [-1, 3, 4]
 # Unit Test: nums = [3,4,3,3], k = 2, Output: [3,4]
 assert Solution.maxSubsequenceSum([3, 4, 3, 3], 2) == [3, 4]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

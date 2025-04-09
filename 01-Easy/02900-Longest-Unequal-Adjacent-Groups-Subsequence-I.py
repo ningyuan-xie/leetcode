@@ -39,4 +39,4 @@ assert (Solution.getLongestSubsequence(["e", "a", "b"], [0, 0, 1])
 assert (Solution.getLongestSubsequence(["a", "b", "c", "d"], [1, 0, 1, 1])
         in [["a", "b", "c"], ["a", "b", "d"]])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

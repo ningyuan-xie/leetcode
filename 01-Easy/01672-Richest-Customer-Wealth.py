@@ -36,4 +36,4 @@ assert Solution.maximumWealth([[1, 5], [7, 3], [3, 5]]) == 10
 # Unit Test: accounts = [[2, 8, 7], [7, 1, 3], [1, 9, 5]], Output: 17
 assert Solution.maximumWealth([[2, 8, 7], [7, 1, 3], [1, 9, 5]]) == 17
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

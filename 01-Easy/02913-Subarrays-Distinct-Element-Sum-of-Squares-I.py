@@ -37,4 +37,4 @@ assert Solution.sumCounts([1, 2, 1]) == 15
 # Unit Test: nums = [1,1], Output: 3
 assert Solution.sumCounts([1, 1]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

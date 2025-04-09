@@ -39,4 +39,4 @@ assert Solution.canFormArray([49, 18, 16], [[16, 18, 49]]) is False
 # Unit Test: arr = [91, 4, 64, 78], pieces = [[78], [4, 64], [91]], Output: True
 assert Solution.canFormArray([91, 4, 64, 78], [[78], [4, 64], [91]]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

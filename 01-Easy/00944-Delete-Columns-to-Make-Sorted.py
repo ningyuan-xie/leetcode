@@ -35,13 +35,13 @@ class Solution:
         return count
 
 
-# Unit Test: Input: ["cba","daf","ghi"], Output: 1
+# Input: ["cba","daf","ghi"], Output: 1
 assert Solution.minDeletionSize(["cba", "daf", "ghi"]) == 1
 
-# Unit Test: Input: ["a","b"], Output: 0
+# Input: ["a","b"], Output: 0
 assert Solution.minDeletionSize(["a", "b"]) == 0
 
-# Unit Test: Input: ["zyx","wvu","tsr"], Output: 3
+# Input: ["zyx","wvu","tsr"], Output: 3
 assert Solution.minDeletionSize(["zyx", "wvu", "tsr"]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

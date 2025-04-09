@@ -42,16 +42,16 @@ class Solution:
         return []
 
 
-# Unit Test: Input: aliceSizes = [1,1], bobSizes = [2,2], Output: [1,2]
+# Input: aliceSizes = [1,1], bobSizes = [2,2], Output: [1,2]
 assert Solution.fairCandySwap([1, 1], [2, 2]) == [1, 2]
 
-# Unit Test: Input: aliceSizes = [1,2], bobSizes = [2,3], Output: [1,2]
+# Input: aliceSizes = [1,2], bobSizes = [2,3], Output: [1,2]
 assert Solution.fairCandySwap([1, 2], [2, 3]) == [1, 2]
 
-# Unit Test: Input: aliceSizes = [2], bobSizes = [1,3], Output: [2,3]
+# Input: aliceSizes = [2], bobSizes = [1,3], Output: [2,3]
 assert Solution.fairCandySwap([2], [1, 3]) == [2, 3]
 
-# Unit Test: Input: aliceSizes = [1,2,5], bobSizes = [2,4], Output: [5,4]
+# Input: aliceSizes = [1,2,5], bobSizes = [2,4], Output: [5,4]
 assert Solution.fairCandySwap([1, 2, 5], [2, 4]) == [5, 4]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

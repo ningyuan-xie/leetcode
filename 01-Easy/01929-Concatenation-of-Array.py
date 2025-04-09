@@ -25,4 +25,4 @@ assert Solution.getConcatenation([1, 3, 2, 1]) == [1, 3, 2, 1, 1, 3, 2, 1]
 # Unit Test: nums = [1, 2, 3, 4], Output: [1, 2, 3, 4, 1, 2, 3, 4]
 assert Solution.getConcatenation([1, 2, 3, 4]) == [1, 2, 3, 4, 1, 2, 3, 4]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

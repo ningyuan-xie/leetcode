@@ -24,23 +24,23 @@ class Solution:
         return preorder_traversal
 
 
-# Unit Test: Input: root = [1, None, 3, 2, 4, None, 5, 6], Output: [1, 3, 5, 6, 2, 4]
+# Input: root = [1, None, 3, 2, 4, None, 5, 6], Output: [1, 3, 5, 6, 2, 4]
 root_test = Node.build_nary_tree([1, None, 3, 2, 4, None, 5, 6])
 assert Solution.preorder(root_test) == [1, 3, 5, 6, 2, 4]
 
-# Unit Test: Input: root = [1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10,
+# Input: root = [1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10,
 # None, None, 11, None, 12, None, 13, None, None, 14],
 # Output: [1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]
 root_test = Node.build_nary_tree([1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10,
                                   None, None, 11, None, 12, None, 13, None, None, 14])
 assert Solution.preorder(root_test) == [1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]
 
-# Unit Test: Input: root = [1, None, 2], Output: [1, 2]
+# Input: root = [1, None, 2], Output: [1, 2]
 root_test = Node.build_nary_tree([1, None, 2])
 assert Solution.preorder(root_test) == [1, 2]
 
-# Unit Test: Input: root = [], Output: []
+# Input: root = [], Output: []
 root_test = Node.build_nary_tree([])
 assert Solution.preorder(root_test) == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

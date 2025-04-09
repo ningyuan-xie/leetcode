@@ -37,4 +37,4 @@ assert Solution.clearDigits("abc") == "abc"
 # Unit Test: s = "cb34", Output = ""
 assert Solution.clearDigits("cb34") == ""
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

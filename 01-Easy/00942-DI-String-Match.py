@@ -38,13 +38,13 @@ class Solution:
         return perm
 
 
-# Unit Test: Input: "IDID", Output: [0,4,1,3,2]
+# Input: "IDID", Output: [0,4,1,3,2]
 assert Solution.diStringMatch("IDID") == [0, 4, 1, 3, 2]
 
-# Unit Test: Input: "III", Output: [0,1,2,3]
+# Input: "III", Output: [0,1,2,3]
 assert Solution.diStringMatch("III") == [0, 1, 2, 3]
 
-# Unit Test: Input: "DDI", Output: [3,2,0,1]
+# Input: "DDI", Output: [3,2,0,1]
 assert Solution.diStringMatch("DDI") == [3, 2, 0, 1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

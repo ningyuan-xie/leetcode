@@ -39,4 +39,4 @@ assert Solution.removeDigit("551", "5") == "51"
 # Unit Test: number = "939", digit = "9", Output: "93"
 assert Solution.removeDigit("939", "9") == "93"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

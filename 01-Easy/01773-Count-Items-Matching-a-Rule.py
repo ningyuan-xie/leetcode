@@ -47,4 +47,4 @@ assert Solution.count_matches([["phone", "blue", "pixel"],
                                ["computer", "silver", "phone"],
                                ["phone", "gold", "iphone"]], "type", "phone") == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

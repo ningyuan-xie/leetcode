@@ -33,23 +33,23 @@ class Solution:
         return name_pointer == len(name) and typed_pointer == len(typed)
 
 
-# Unit Test: Input: name = "alex", typed = "aaleex", Output: True
+# Input: name = "alex", typed = "aaleex", Output: True
 assert Solution.isLongPressedName("alex", "aaleex") is True
 
-# Unit Test: Input: name = "saeed", typed = "ssaaedd", Output: False
+# Input: name = "saeed", typed = "ssaaedd", Output: False
 assert Solution.isLongPressedName("saeed", "ssaaedd") is False
 
-# Unit Test: Input: name = "leelee", typed = "lleeelee", Output: True
+# Input: name = "leelee", typed = "lleeelee", Output: True
 assert Solution.isLongPressedName("leelee", "lleeelee") is True
 
-# Unit Test: Input: name = "laiden", typed = "laiden", Output: True
+# Input: name = "laiden", typed = "laiden", Output: True
 assert Solution.isLongPressedName("laiden", "laiden") is True
 
-# Unit Test: Input: name = "vtkgn", typed = "vttkgnn", Output: True
+# Input: name = "vtkgn", typed = "vttkgnn", Output: True
 assert Solution.isLongPressedName("vtkgn", "vttkgnn") is True
 
-# Unit Test: Input: name = "alex", typed = "aaleexa", Output: False
+# Input: name = "alex", typed = "aaleexa", Output: False
 assert Solution.isLongPressedName("alex", "aaleexa") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")
 

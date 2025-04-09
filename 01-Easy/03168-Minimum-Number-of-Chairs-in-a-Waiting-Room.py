@@ -38,4 +38,4 @@ assert Solution.minimumChairs("ELELEEL") == 2
 # Unit Test: s = "ELEELEELLL", Output = 3
 assert Solution.minimumChairs("ELEELEELLL") == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -20,4 +20,4 @@ assert Solution.theMaximumAchievableX(4, 1) == 6
 # Unit Test: num = 3, t = 2, Output: 7
 assert Solution.theMaximumAchievableX(3, 2) == 7
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

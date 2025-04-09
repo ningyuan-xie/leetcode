@@ -36,4 +36,4 @@ assert Solution.numberOfPairs([1, 3, 2, 1, 3, 2, 2]) == [3, 1]
 # Unit Test: nums = [1,1], Output: [1,0]
 assert Solution.numberOfPairs([1, 1]) == [1, 0]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

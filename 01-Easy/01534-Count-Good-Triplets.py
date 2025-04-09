@@ -43,4 +43,4 @@ assert Solution.countGoodTriplets([1, 1, 2, 2, 3], 0, 0, 1) == 0
 # Unit Test: arr = [7, 3, 7, 3, 12, 1, 12, 2, 3], a = 5, b = 8, c = 1, Output: 12
 assert Solution.countGoodTriplets([7, 3, 7, 3, 12, 1, 12, 2, 3], 5, 8, 1) == 12
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

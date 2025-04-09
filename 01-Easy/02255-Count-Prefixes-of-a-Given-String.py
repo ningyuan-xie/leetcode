@@ -28,4 +28,4 @@ assert Solution.countPrefixes(["a", "b", "c", "ab", "bc", "abc"], "abc") == 3
 # Unit Test: words = ["a","a"], s = "aa", Output: 2
 assert Solution.countPrefixes(["a", "a"], "aa") == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

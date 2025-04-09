@@ -24,4 +24,4 @@ assert Solution.findWordsContaining(["abc", "bcd", "aaaa", "cbc"], "a") == [0, 2
 # Unit Test: words = ["abc","bcd","aaaa","cbc"], x = "z", Output: []
 assert Solution.findWordsContaining(["abc", "bcd", "aaaa", "cbc"], "z") == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -35,13 +35,13 @@ class Solution:
         return result
 
 
-# Unit Test: Input: s = "abbxxxxzyy", Output: [[3, 6]]
+# Input: s = "abbxxxxzyy", Output: [[3, 6]]
 assert Solution.largeGroupPositions("abbxxxxzyy") == [[3, 6]]
 
-# Unit Test: Input: s = "abc", Output: []
+# Input: s = "abc", Output: []
 assert Solution.largeGroupPositions("abc") == []
 
-# Unit Test: Input: s = "abcdddeeeeaabbbcd", Output: [[3, 5], [6, 9], [12, 14]]
+# Input: s = "abcdddeeeeaabbbcd", Output: [[3, 5], [6, 9], [12, 14]]
 assert Solution.largeGroupPositions("abcdddeeeeaabbbcd") == [[3, 5], [6, 9], [12, 14]]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -25,13 +25,13 @@ class Solution:
         return [1] + digits  # E.g. [9, 9, 9] -> [0, 0, 0] -> [1, 0, 0, 0]
 
 
-# Unit Test: Input: digits = [1, 2, 3], Output: [1, 2, 4]
+# Input: digits = [1, 2, 3], Output: [1, 2, 4]
 assert Solution.plusOne([1, 2, 3]) == [1, 2, 4]
 
-# Unit Test: Input: digits = [4, 3, 2, 1], Output: [4, 3, 2, 2]
+# Input: digits = [4, 3, 2, 1], Output: [4, 3, 2, 2]
 assert Solution.plusOne([4, 3, 2, 1]) == [4, 3, 2, 2]
 
-# Unit Test: Input: digits = [0], Output: [1]
+# Input: digits = [0], Output: [1]
 assert Solution.plusOne([0]) == [1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

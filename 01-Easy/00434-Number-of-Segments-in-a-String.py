@@ -20,13 +20,13 @@ class Solution:
         return count
 
 
-# Unit Test: Input: s = "Hello, my name is John", Output: 5
+# Input: s = "Hello, my name is John", Output: 5
 assert Solution.countSegments("Hello, my name is John") == 5
 
-# Unit Test: Input: s = "Hello", Output: 1
+# Input: s = "Hello", Output: 1
 assert Solution.countSegments("Hello") == 1
 
-# Unit Test: Input: s = "love live! mu'sic forever", Output: 4
+# Input: s = "love live! mu'sic forever", Output: 4
 assert Solution.countSegments("love live! mu'sic forever") == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

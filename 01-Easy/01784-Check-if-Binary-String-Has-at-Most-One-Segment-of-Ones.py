@@ -24,4 +24,4 @@ assert Solution.check_ones_segment("110") is True
 # Unit Test: s = "1", Output: True
 assert Solution.check_ones_segment("1") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

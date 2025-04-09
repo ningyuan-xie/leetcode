@@ -36,4 +36,4 @@ assert (Solution.modifiedMatrix([[1, 2, -1], [4, -1, 6], [7, 8, 9]])
 # Unit Test: matrix = [[3,-1],[5,2]], Output: [[3,2],[5,2]]
 assert (Solution.modifiedMatrix([[3, -1], [5, 2]]) == [[3, 2], [5, 2]])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

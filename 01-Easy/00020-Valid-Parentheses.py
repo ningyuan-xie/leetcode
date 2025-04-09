@@ -30,16 +30,16 @@ class Solution:
         return True if not stack else False
 
 
-# Unit Test: Input: s = "()", Output: True
+# Input: s = "()", Output: True
 assert Solution.isValid("()") is True
 
-# Unit Test: Input: s = "()[]{}", Output: True
+# Input: s = "()[]{}", Output: True
 assert Solution.isValid("()[]{}") is True
 
-# Unit Test: Input: s = "(]", Output: False
+# Input: s = "(]", Output: False
 assert Solution.isValid("(]") is False
 
-# Unit Test: Input: s = "]", Output: False
+# Input: s = "]", Output: False
 assert Solution.isValid("]") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

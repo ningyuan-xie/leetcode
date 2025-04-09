@@ -28,22 +28,22 @@ class Solution:
         return len(diff) == 2 and diff[0] == diff[1][::-1]
 
 
-# Unit Test: Input: a = "ab", b = "ba", Output: True
+# Input: a = "ab", b = "ba", Output: True
 assert Solution.buddyStrings("ab", "ba") is True
 
-# Unit Test: Input: a = "ab", b = "ab", Output: False
+# Input: a = "ab", b = "ab", Output: False
 assert Solution.buddyStrings("ab", "ab") is False
 
-# Unit Test: Input: a = "aa", b = "aa", Output: True
+# Input: a = "aa", b = "aa", Output: True
 assert Solution.buddyStrings("aa", "aa") is True
 
-# Unit Test: Input: a = "aaaaaaabc", b = "aaaaaaacb", Output: True
+# Input: a = "aaaaaaabc", b = "aaaaaaacb", Output: True
 assert Solution.buddyStrings("aaaaaaabc", "aaaaaaacb") is True
 
-# Unit Test: Input: a = "", b = "aa", Output: False
+# Input: a = "", b = "aa", Output: False
 assert Solution.buddyStrings("", "aa") is False
 
-# Unit Test: Input: a = "abcaa", b = "abcbb", Output: False
+# Input: a = "abcaa", b = "abcbb", Output: False
 assert Solution.buddyStrings("abcaa", "abcbb") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

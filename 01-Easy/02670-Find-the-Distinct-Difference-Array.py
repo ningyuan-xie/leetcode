@@ -35,4 +35,4 @@ assert Solution.distinctDifferenceArray([1, 2, 3, 4, 5]) == [-3, -1, 1, 3, 5]
 # Unit Test: nums = [3,2,3,4,2], Output: [-2,-1,0,2,3]
 assert Solution.distinctDifferenceArray([3, 2, 3, 4, 2]) == [-2, -1, 0, 2, 3]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

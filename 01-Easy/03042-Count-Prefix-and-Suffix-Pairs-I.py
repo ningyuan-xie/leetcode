@@ -43,4 +43,4 @@ assert Solution.countPrefixSuffixPairs(["pa", "papa", "ma", "mama"]) == 2
 # Unit Test: words = ["abab","ab"], Output = 0
 assert Solution.countPrefixSuffixPairs(["abab", "ab"]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

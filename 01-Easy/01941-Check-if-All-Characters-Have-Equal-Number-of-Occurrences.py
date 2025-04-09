@@ -28,4 +28,4 @@ assert Solution.areOccurrencesEqual("aaabb") is False
 # Unit Test: s = "a", Output: True
 assert Solution.areOccurrencesEqual("a") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

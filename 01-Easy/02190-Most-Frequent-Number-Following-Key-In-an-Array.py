@@ -37,4 +37,4 @@ assert Solution.mostFrequent([1, 100, 200, 1, 100], 1) == 100
 # Unit Test: nums = [2,2,2,2,3], key = 2, Output: 2
 assert Solution.mostFrequent([2, 2, 2, 2, 3], 2) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

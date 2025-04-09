@@ -29,13 +29,13 @@ class Solution:
         return count
 
 
-# Unit Test: Input: left = 6, right = 10, Output: 4
+# Input: left = 6, right = 10, Output: 4
 assert Solution.count_prime_set_bits(6, 10) == 4
 
-# Unit Test: Input: left = 10, right = 15, Output: 5
+# Input: left = 10, right = 15, Output: 5
 assert Solution.count_prime_set_bits(10, 15) == 5
 
-# Unit Test: Input: left = 10, right = 20, Output: 9
+# Input: left = 10, right = 20, Output: 9
 assert Solution.count_prime_set_bits(10, 20) == 9
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

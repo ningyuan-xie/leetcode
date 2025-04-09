@@ -29,16 +29,16 @@ class Solution:
         return process_string(s) == process_string(t)
 
 
-# Unit Test: Input: s = "ab#c", t = "ad#c", Output: True
+# Input: s = "ab#c", t = "ad#c", Output: True
 assert Solution.backspaceCompare("ab#c", "ad#c") is True
 
-# Unit Test: Input: s = "ab##", t = "c#d#", Output: True
+# Input: s = "ab##", t = "c#d#", Output: True
 assert Solution.backspaceCompare("ab##", "c#d#") is True
 
-# Unit Test: Input: s = "a##c", t = "#a#c", Output: True
+# Input: s = "a##c", t = "#a#c", Output: True
 assert Solution.backspaceCompare("a##c", "#a#c") is True
 
-# Unit Test: Input: s = "a#c", t = "b", Output: False
+# Input: s = "a#c", t = "b", Output: False
 assert Solution.backspaceCompare("a#c", "b") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

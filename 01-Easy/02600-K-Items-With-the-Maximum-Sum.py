@@ -36,4 +36,4 @@ assert Solution.kItemsWithMaximumSum(3, 2, 0, 2) == 2
 # Unit Test: numOnes = 3, numZeros = 2, numNegOnes = 0, k = 4, Output: 3
 assert Solution.kItemsWithMaximumSum(3, 2, 0, 4) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

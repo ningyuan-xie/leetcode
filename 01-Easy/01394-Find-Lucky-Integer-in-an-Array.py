@@ -35,4 +35,4 @@ assert Solution.findLucky([5]) == -1
 # Unit Test: arr = [7, 7, 7, 7, 7, 7, 7], Output: 7
 assert Solution.findLucky([7, 7, 7, 7, 7, 7, 7]) == 7
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

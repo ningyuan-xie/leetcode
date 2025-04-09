@@ -38,4 +38,4 @@ assert Solution.numberOfPairs([1, 3, 4], [1, 3, 4], 1) == 5
 # Unit Test: nums1 = [1,2,4,12], nums2 = [2,4], k = 3, Output: 2
 assert Solution.numberOfPairs([1, 2, 4, 12], [2, 4], 3) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

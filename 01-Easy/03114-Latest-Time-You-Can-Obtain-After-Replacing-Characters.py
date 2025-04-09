@@ -45,4 +45,4 @@ assert Solution.findLatestTime("?3:12") == "03:12"
 # Unit Test: s = "??:1?", Output = "11:19"
 assert Solution.findLatestTime("??:1?") == "11:19"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -39,4 +39,4 @@ assert Solution.evenOddBit(50) == [1, 2]
 # Explanation: Binary representation of 2 is 10. It contains 1 on index 1.
 assert Solution.evenOddBit(2) == [0, 1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

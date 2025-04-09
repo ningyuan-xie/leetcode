@@ -54,4 +54,4 @@ assert Solution.tictactoe([[0, 0], [2, 0], [1, 1], [2, 1], [2, 2]]) == "A"
 # Unit Test: moves = [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]], Output: "B"
 assert Solution.tictactoe([[0, 0], [1, 1], [0, 1], [0, 2], [1, 0], [2, 0]]) == "B"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

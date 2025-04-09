@@ -53,20 +53,20 @@ class Solution:
         return is_balanced(root)
 
 
-# Unit Test: Input: root = [3,9,20,null,null,15,7], Output: True
+# Input: root = [3,9,20,null,null,15,7], Output: True
 root_test = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
 assert Solution.isBalanced(root_test) is True
 
-# Unit Test: Input: root = [1,2,2,3,3,null,null,4,4], Output: False
+# Input: root = [1,2,2,3,3,null,null,4,4], Output: False
 root_test = TreeNode.build_binary_tree([1, 2, 2, 3, 3, None, None, 4, 4])
 assert Solution.isBalanced(root_test) is False
 
-# Unit Test: Input: root = [], Output: True. An empty tree is considered balanced
+# Input: root = [], Output: True. An empty tree is considered balanced
 root_test = TreeNode.build_binary_tree([])
 assert Solution.isBalanced(root_test) is True
 
-# Unit Test: Input: root = [1], Output: True. A single node tree is considered balanced
+# Input: root = [1], Output: True. A single node tree is considered balanced
 root_test = TreeNode.build_binary_tree([1])
 assert Solution.isBalanced(root_test) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

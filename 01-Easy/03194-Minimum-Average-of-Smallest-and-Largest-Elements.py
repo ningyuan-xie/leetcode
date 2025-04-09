@@ -42,4 +42,4 @@ assert Solution.minimumAverage([1, 9, 8, 3, 10, 5]) == 5.5
 # Unit Test: nums = [1,2,3,7,8,9], Output = 5.0
 assert Solution.minimumAverage([1, 2, 3, 7, 8, 9]) == 5.0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

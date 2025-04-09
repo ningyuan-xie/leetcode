@@ -36,4 +36,4 @@ assert Solution.passThePillow(4, 5) == 2
 # Unit Test: n = 3, time = 2, Output: 3
 assert Solution.passThePillow(3, 2) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

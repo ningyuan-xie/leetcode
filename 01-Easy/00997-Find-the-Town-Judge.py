@@ -37,16 +37,16 @@ class Solution:
         return -1
 
 
-# Unit Test: Input: n = 2, trust = [[1,2]], Output: 2
+# Input: n = 2, trust = [[1,2]], Output: 2
 assert Solution.findJudge(2, [[1, 2]]) == 2
 
-# Unit Test: Input: n = 3, trust = [[1,3],[2,3]], Output: 3
+# Input: n = 3, trust = [[1,3],[2,3]], Output: 3
 assert Solution.findJudge(3, [[1, 3], [2, 3]]) == 3
 
-# Unit Test: Input: n = 3, trust = [[1,3],[2,3],[3,1]], Output: -1
+# Input: n = 3, trust = [[1,3],[2,3],[3,1]], Output: -1
 assert Solution.findJudge(3, [[1, 3], [2, 3], [3, 1]]) == -1
 
-# Unit Test: Input: n = 3, trust = [[1,2],[2,3]], Output: -1
+# Input: n = 3, trust = [[1,2],[2,3]], Output: -1
 assert Solution.findJudge(3, [[1, 2], [2, 3]]) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

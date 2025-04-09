@@ -27,4 +27,4 @@ assert Solution.countGoodSubstrings("xyzzaz") == 1
 # Unit Test: s = "aababcabc", Output: 4
 assert Solution.countGoodSubstrings("aababcabc") == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -28,17 +28,17 @@ class Solution:
         return dp
 
 
-# Unit Test: Input: n = 2, Output: [0, 1, 1]
+# Input: n = 2, Output: [0, 1, 1]
 # Explanation: 0 -> 0, 1 -> 1, 2 -> 10
 assert Solution.countBits(2) == [0, 1, 1]
 
-# Unit Test: Input: n = 5, Output: [0, 1, 1, 2, 1, 2]
+# Input: n = 5, Output: [0, 1, 1, 2, 1, 2]
 # Explanation: 0 -> 0, 1 -> 1, 2 -> 10, 3 -> 11, 4 -> 100, 5 -> 101
 assert Solution.countBits(5) == [0, 1, 1, 2, 1, 2]
 
-# Unit Test: Input: n = 10, Output: [0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2]
+# Input: n = 10, Output: [0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2]
 # Explanation: 0 -> 0, 1 -> 1, 2 -> 10, 3 -> 11, 4 -> 100, 5 -> 101,
 # 6 -> 110, 7 -> 111, 8 -> 1000, 9 -> 1001, 10 -> 1010
 assert Solution.countBits(10) == [0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -26,13 +26,13 @@ class Solution:
         return ""
 
 
-# Unit Test: Input: s = "abcd", t = "abcde", Output: "e"
+# Input: s = "abcd", t = "abcde", Output: "e"
 assert Solution.findTheDifference("abcd", "abcde") == "e"
 
-# Unit Test: Input: s = "", t = "y", Output: "y"
+# Input: s = "", t = "y", Output: "y"
 assert Solution.findTheDifference("", "y") == "y"
 
-# Unit Test: Input: s = "a", t = "aa", Output: "a"
+# Input: s = "a", t = "aa", Output: "a"
 assert Solution.findTheDifference("a", "aa") == "a"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

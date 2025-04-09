@@ -54,4 +54,4 @@ assert Solution.maxSum([2536, 1613, 3366, 162]) == 5902
 # Unit Test: nums = [51,71,17,24,42], Output: 88
 assert Solution.maxSum([51, 71, 17, 24, 42]) == 88
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

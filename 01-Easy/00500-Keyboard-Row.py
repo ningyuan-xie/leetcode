@@ -32,13 +32,13 @@ class Solution:
         return one_row_words
 
 
-# Unit Test: Input: words = ["Hello", "Alaska", "Dad", "Peace"], Output: ["Alaska", "Dad"]
+# Input: words = ["Hello", "Alaska", "Dad", "Peace"], Output: ["Alaska", "Dad"]
 assert Solution.findWords(["Hello", "Alaska", "Dad", "Peace"]) == ["Alaska", "Dad"]
 
-# Unit Test: Input: words = ["omk"], Output: []
+# Input: words = ["omk"], Output: []
 assert Solution.findWords(["omk"]) == []
 
-# Unit Test: Input: words = ["adsdf", "sfd"], Output: ["adsdf", "sfd"]
+# Input: words = ["adsdf", "sfd"], Output: ["adsdf", "sfd"]
 assert Solution.findWords(["adsdf", "sfd"]) == ["adsdf", "sfd"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

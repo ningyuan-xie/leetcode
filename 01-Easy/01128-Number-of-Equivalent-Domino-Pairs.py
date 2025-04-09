@@ -44,4 +44,4 @@ assert Solution.numEquivDominoPairs([[1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2,
 assert (Solution.numEquivDominoPairs([[1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1]])
         == 28)
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

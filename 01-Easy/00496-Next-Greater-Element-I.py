@@ -72,13 +72,13 @@ class Solution:
         return result
 
 
-# Unit Test: Input: nums1 = [4,1,2], nums2 = [1,3,4,2], Output: [-1,3,-1]
+# Input: nums1 = [4,1,2], nums2 = [1,3,4,2], Output: [-1,3,-1]
 assert Solution.nextGreaterElement([4, 1, 2], [1, 3, 4, 2]) == [-1, 3, -1]
 
-# Unit Test: Input: nums1 = [2,4], nums2 = [1,2,3,4], Output: [3,-1]
+# Input: nums1 = [2,4], nums2 = [1,2,3,4], Output: [3,-1]
 assert Solution.nextGreaterElement([2, 4], [1, 2, 3, 4]) == [3, -1]
 
-# Unit Test: Input: nums1 = [4,1,2], nums2 = [2,1,3,4], Output: [-1,3,3]
+# Input: nums1 = [4,1,2], nums2 = [2,1,3,4], Output: [-1,3,3]
 assert Solution.nextGreaterElementStack([4, 1, 2], [2, 1, 3, 4]) == [-1, 3, 3]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

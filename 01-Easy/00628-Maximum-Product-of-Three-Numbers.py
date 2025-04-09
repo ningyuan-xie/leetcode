@@ -21,13 +21,13 @@ class Solution:
         return max(product1, product2)
 
 
-# Unit Test: Input: nums = [1,2,3], Output: 6
+# Input: nums = [1,2,3], Output: 6
 assert Solution.maximumProduct([1, 2, 3]) == 6
 
-# Unit Test: Input: nums = [1,2,3,4], Output: 24
+# Input: nums = [1,2,3,4], Output: 24
 assert Solution.maximumProduct([1, 2, 3, 4]) == 24
 
-# Unit Test: Input: nums = [-1,-2,-3], Output: -6
+# Input: nums = [-1,-2,-3], Output: -6
 assert Solution.maximumProduct([-1, -2, -3]) == -6
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

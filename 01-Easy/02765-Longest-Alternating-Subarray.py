@@ -73,4 +73,4 @@ assert Solution.alternatingSubarraySlidingWindow([21, 9, 5]) == -1
 # Unit Test: nums = [1,2,3,4], Output: 2
 assert Solution.alternatingSubarraySlidingWindow([1, 2, 3, 4]) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

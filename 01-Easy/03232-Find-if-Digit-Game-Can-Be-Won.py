@@ -40,4 +40,4 @@ assert Solution.canAliceWin([1, 2, 3, 4, 5, 14]) is True
 # Unit Test: nums = [5,5,5,25], Output: True
 assert Solution.canAliceWin([5, 5, 5, 25]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

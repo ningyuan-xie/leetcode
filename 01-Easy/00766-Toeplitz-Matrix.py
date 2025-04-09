@@ -30,13 +30,13 @@ class Solution:
         return True
 
 
-# Unit Test: Input: matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]], Output: True
+# Input: matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]], Output: True
 assert Solution.is_toeplitz_matrix([[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]]) is True
 
-# Unit Test: Input: matrix = [[1, 2], [2, 2]], Output: False
+# Input: matrix = [[1, 2], [2, 2]], Output: False
 assert Solution.is_toeplitz_matrix([[1, 2], [2, 2]]) is False
 
-# Unit Test: Input: matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2], [1, 9, 5, 1]], Output: True
+# Input: matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2], [1, 9, 5, 1]], Output: True
 assert Solution.is_toeplitz_matrix([[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2], [1, 9, 5, 1]]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

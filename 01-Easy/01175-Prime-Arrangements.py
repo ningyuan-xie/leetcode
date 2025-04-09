@@ -51,4 +51,4 @@ assert Solution.numPrimeArrangements(5) == 12
 # prime permutations = 25!, non-prime permutations = 75!, total permutations = 25! * 75! = 682289015
 assert Solution.numPrimeArrangements(100) == 682289015
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

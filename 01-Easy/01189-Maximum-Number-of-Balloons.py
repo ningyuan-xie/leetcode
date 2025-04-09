@@ -35,4 +35,4 @@ assert Solution.maxNumberOfBalloons("loonbalxballpoon") == 2
 # Explanation: "balloon" cannot be formed using the characters in text.
 assert Solution.maxNumberOfBalloons("leetcode") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

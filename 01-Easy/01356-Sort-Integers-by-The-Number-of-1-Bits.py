@@ -33,4 +33,4 @@ assert Solution.sortByBits([10000, 10000]) == [10000, 10000]
 # Unit Test: arr = [2, 3, 5, 7, 11, 13, 17, 19], Output: [2, 3, 5, 17, 7, 11, 13, 19]
 assert Solution.sortByBits([2, 3, 5, 7, 11, 13, 17, 19]) == [2, 3, 5, 17, 7, 11, 13, 19]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

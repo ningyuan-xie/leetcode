@@ -52,7 +52,7 @@ class NeighborSum:
         return diagonal_sum
 
 
-# Unit Test: Input: ["NeighborSum", "adjacentSum", "adjacentSum", "diagonalSum", "diagonalSum"]
+# Input: ["NeighborSum", "adjacentSum", "adjacentSum", "diagonalSum", "diagonalSum"]
 # [[[[0, 1, 2], [3, 4, 5], [6, 7, 8]]], [1], [4], [4], [8]]
 # Output: [null, 6, 16, 16, 4]
 ns = NeighborSum([[0, 1, 2], [3, 4, 5], [6, 7, 8]])
@@ -61,11 +61,11 @@ assert ns.adjacentSum(4) == 16
 assert ns.diagonalSum(4) == 16
 assert ns.diagonalSum(8) == 4
 
-# Unit Test: Input: ["NeighborSum", "adjacentSum", "diagonalSum"]
+# Input: ["NeighborSum", "adjacentSum", "diagonalSum"]
 # [[[[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]]], [15], [9]]
 # Output: [null, 23, 45]
 ns = NeighborSum([[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]])
 assert ns.adjacentSum(15) == 23
 assert ns.diagonalSum(9) == 45
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

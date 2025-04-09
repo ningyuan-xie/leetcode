@@ -37,4 +37,4 @@ assert Solution.triangleType([3, 3, 3]) == "Equilateral"
 # Unit Test: nums = [3,4,5], Output = "Scalene"
 assert Solution.triangleType([3, 4, 5]) == "Scalene"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

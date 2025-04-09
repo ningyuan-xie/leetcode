@@ -22,4 +22,4 @@ assert Solution.separateDigits([13, 25, 83, 77]) == [1, 3, 2, 5, 8, 3, 7, 7]
 # Unit Test: nums = [7,1,3,9], Output: [7,1,3,9]
 assert Solution.separateDigits([7, 1, 3, 9]) == [7, 1, 3, 9]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

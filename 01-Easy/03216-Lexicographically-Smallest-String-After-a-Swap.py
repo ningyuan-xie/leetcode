@@ -46,4 +46,4 @@ assert Solution.getSmallestString("001") == "001"
 # Unit Test: s = "20", Output: "02"
 assert Solution.getSmallestString("20") == "02"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

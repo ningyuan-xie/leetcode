@@ -38,4 +38,4 @@ assert (Solution.countDaysTogether("08-15", "08-18", "08-16", "08-19")
 assert (Solution.countDaysTogether("10-01", "10-31", "11-01", "12-31")
         == 0)
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

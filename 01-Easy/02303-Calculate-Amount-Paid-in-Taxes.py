@@ -43,4 +43,4 @@ assert Solution.calculateTax([[1, 0], [4, 25], [5, 50]], 2) == 0.25
 # Unit Test: brackets = [[2,50]], income = 0, Output: 0
 assert Solution.calculateTax([[2, 50]], 0) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

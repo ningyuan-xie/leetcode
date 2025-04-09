@@ -49,4 +49,4 @@ assert Solution.areNumbersAscending("hello world 5 x 5") is False
 assert Solution.areNumbersAscending("sunset is at 7 51 pm overnight lows will be in the low 50 "
                                     "and 60 s") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

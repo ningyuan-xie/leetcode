@@ -37,4 +37,4 @@ assert Solution.minDifference([9, 4, 1, 7], 2) == 2
 # Unit Test: nums = [9, 4, 1, 7], k = 4, Output: 8
 assert Solution.minDifference([9, 4, 1, 7], 4) == 8
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

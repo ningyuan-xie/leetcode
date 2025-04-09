@@ -56,4 +56,4 @@ assert Solution.decrypt([1, 2, 3, 4], 0) == [0, 0, 0, 0]
 # Unit Test: code = [2, 4, 9, 3], k = -2, Output: [12, 5, 6, 13]
 assert Solution.decrypt([2, 4, 9, 3], -2) == [12, 5, 6, 13]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

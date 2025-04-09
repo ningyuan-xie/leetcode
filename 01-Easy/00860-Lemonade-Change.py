@@ -46,16 +46,16 @@ class Solution:
         return True
 
 
-# Unit Test: Input: [5, 5, 5, 10, 20], Output: True
+# Input: [5, 5, 5, 10, 20], Output: True
 assert Solution.lemonadeChange([5, 5, 5, 10, 20]) is True
 
-# Unit Test: Input: [5, 5, 10], Output: True
+# Input: [5, 5, 10], Output: True
 assert Solution.lemonadeChange([5, 5, 10]) is True
 
-# Unit Test: Input: [10, 10], Output: False
+# Input: [10, 10], Output: False
 assert Solution.lemonadeChange([10, 10]) is False
 
-# Unit Test: Input: [5, 5, 10, 10, 20], Output: False
+# Input: [5, 5, 10, 10, 20], Output: False
 assert Solution.lemonadeChange([5, 5, 10, 10, 20]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

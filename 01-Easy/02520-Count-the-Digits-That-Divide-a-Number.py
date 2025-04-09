@@ -31,4 +31,4 @@ assert Solution.countDividingDigits(121) == 2
 # Unit Test: n = 1248, Output: 4
 assert Solution.countDividingDigits(1248) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -38,7 +38,7 @@ class Solution:
         return pointerA
 
 
-# Unit Test: Input: headA = [4,1,8,4,5], headB = [5,0,1,8,4,5], Output: ListNode(8)
+# Input: headA = [4,1,8,4,5], headB = [5,0,1,8,4,5], Output: ListNode(8)
 intersection = ListNode.build_linked_list([8, 4, 5])
 headA_test = ListNode.build_linked_list([4, 1])
 headA_test.next.next = intersection
@@ -46,13 +46,13 @@ headB_test = ListNode.build_linked_list([5, 0, 1])
 headB_test.next.next.next = intersection
 assert Solution.getIntersectionNode(headA_test, headB_test) == intersection
 
-# Unit Test: Input: headA = [2,6,4], headB = [1,5], Output: None
+# Input: headA = [2,6,4], headB = [1,5], Output: None
 intersection = ListNode.build_linked_list([])
 headA_test = ListNode.build_linked_list([2, 6, 4])
 headB_test = ListNode.build_linked_list([1, 5])
 assert Solution.getIntersectionNode(headA_test, headB_test) == intersection
 
-# Unit Test: Input: headA = [1,9,1,2,4], headB = [3,2,4], Output: ListNode(2)
+# Input: headA = [1,9,1,2,4], headB = [3,2,4], Output: ListNode(2)
 intersection = ListNode.build_linked_list([2, 4])
 headA_test = ListNode.build_linked_list([1, 9, 1])
 headA_test.next.next.next = intersection
@@ -60,4 +60,4 @@ headB_test = ListNode.build_linked_list([3])
 headB_test.next = intersection
 assert Solution.getIntersectionNode(headA_test, headB_test) == intersection
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -54,4 +54,4 @@ assert Solution.isPathCrossing("NESW") == True
 # Unit Test: path = "NESWW", Output: True
 assert Solution.isPathCrossing("NESWW") == True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

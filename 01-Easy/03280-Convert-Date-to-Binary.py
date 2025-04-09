@@ -32,4 +32,4 @@ assert Solution.convertDateToBinary("2080-02-29") == "100000100000-10-11101"
 # Unit Test: date = "1900-01-01", Output: "11101101100-1-1"
 assert Solution.convertDateToBinary("1900-01-01") == "11101101100-1-1"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

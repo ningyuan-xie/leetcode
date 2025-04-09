@@ -40,7 +40,7 @@ class MyQueue:
         return not self.stack1 and not self.stack2
 
 
-# Unit Test: Input: ["MyQueue", "push", "push", "peek", "pop", "empty"]
+# Input: ["MyQueue", "push", "push", "peek", "pop", "empty"]
 queue = MyQueue()
 assert queue.push(1) is None
 assert queue.push(2) is None
@@ -48,4 +48,4 @@ assert queue.peek() == 1
 assert queue.pop() == 1
 assert not queue.empty()
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

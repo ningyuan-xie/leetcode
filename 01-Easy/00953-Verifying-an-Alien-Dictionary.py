@@ -29,24 +29,24 @@ class Solution:
         return all(compare(words[i], words[i + 1]) for i in range(len(words) - 1))
 
 
-# Unit Test: Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz",
+# Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz",
 # Output: True
 assert Solution.isAlienSorted(["hello", "leetcode"],
                               "hlabcdefgijkmnopqrstuvwxyz") is True
 
-# Unit Test: Input: words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz",
+# Input: words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz",
 # Output: False
 assert Solution.isAlienSorted(["word", "world", "row"],
                               "worldabcefghijkmnpqstuvxyz") is False
 
-# Unit Test: Input: words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz", Output: False
+# Input: words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz", Output: False
 assert Solution.isAlienSorted(["apple", "app"], "abcdefghijklmnopqrstuvwxyz") is False
 
-# Unit Test: Inputs: words = ["fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx",
+# Inputs: words = ["fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx",
 # "sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"], order = "zkgwaverfimqxbnctdplsjyohu",
 # Output: False
 assert Solution.isAlienSorted(["fxasxpc", "dfbdrifhp", "nwzgs", "cmwqriv", "ebulyfyve",
                                "miracx", "sxckdwzv", "dtijzluhts", "wwbmnge", "qmjwymmyox"],
                               "zkgwaverfimqxbnctdplsjyohu") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

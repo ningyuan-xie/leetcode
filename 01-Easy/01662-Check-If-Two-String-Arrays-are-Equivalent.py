@@ -24,4 +24,4 @@ assert Solution.array_strings_are_equal(["a", "cb"], ["ab", "c"]) is False
 # Unit Test: word1 = ["abc", "d", "defg"], word2 = ["abcddefg"], Output: True
 assert Solution.array_strings_are_equal(["abc", "d", "defg"], ["abcddefg"]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

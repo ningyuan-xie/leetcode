@@ -37,16 +37,16 @@ class Solution:
         return nodes[0]
 
 
-# Unit Test: Input: root = [5,3,6,2,4,null,8,1,null,null,null,7,9],
+# Input: root = [5,3,6,2,4,null,8,1,null,null,null,7,9],
 # Output: [1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]
 root_test = TreeNode.build_binary_tree([5, 3, 6, 2, 4, None, 8, 1, None, None, None, 7, 9])
 root_expected = TreeNode.build_binary_tree([1, None, 2, None, 3, None, 4, None, 5, None, 6, None,
                                             7, None, 8, None, 9])
 assert Solution.increasingBST(root_test) == root_expected
 
-# Unit Test: Input: root = [5,1,7], Output: [1,null,5,null,7]
+# Input: root = [5,1,7], Output: [1,null,5,null,7]
 root_test = TreeNode.build_binary_tree([5, 1, 7])
 root_expected = TreeNode.build_binary_tree([1, None, 5, None, 7])
 assert Solution.increasingBST(root_test) == root_expected
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

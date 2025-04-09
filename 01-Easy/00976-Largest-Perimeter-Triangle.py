@@ -27,16 +27,16 @@ class Solution:
         return 0
 
 
-# Unit Test: Input: [2,1,2], Output: 5
+# Input: [2,1,2], Output: 5
 assert Solution.largestPerimeter([2, 1, 2]) == 5
 
-# Unit Test: Input: [1,2,1], Output: 0
+# Input: [1,2,1], Output: 0
 assert Solution.largestPerimeter([1, 2, 1]) == 0
 
-# Unit Test: Input: [3,2,3,4], Output: 10
+# Input: [3,2,3,4], Output: 10
 assert Solution.largestPerimeter([3, 2, 3, 4]) == 10
 
-# Unit Test: Input: [3,6,2,3], Output: 8
+# Input: [3,6,2,3], Output: 8
 assert Solution.largestPerimeter([3, 6, 2, 3]) == 8
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

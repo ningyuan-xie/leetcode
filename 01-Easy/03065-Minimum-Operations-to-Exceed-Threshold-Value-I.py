@@ -33,4 +33,4 @@ assert Solution.minOperations([1, 1, 2, 4, 9], 1) == 0
 # Unit Test: nums = [1,1,2,4,9], k = 9, Output = 4
 assert Solution.minOperations([1, 1, 2, 4, 9], 9) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

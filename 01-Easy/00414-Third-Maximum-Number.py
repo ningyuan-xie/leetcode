@@ -21,13 +21,13 @@ class Solution:
         return sorted(nums)[-3]
 
 
-# Unit Test: Input: nums = [3, 2, 1], Output: 1
+# Input: nums = [3, 2, 1], Output: 1
 assert Solution.thirdMax([3, 2, 1]) == 1
 
-# Unit Test: Input: nums = [1, 2], Output: 2
+# Input: nums = [1, 2], Output: 2
 assert Solution.thirdMax([1, 2]) == 2
 
-# Unit Test: Input: nums = [2, 2, 3, 1], Output: 1
+# Input: nums = [2, 2, 3, 1], Output: 1
 assert Solution.thirdMax([2, 2, 3, 1]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

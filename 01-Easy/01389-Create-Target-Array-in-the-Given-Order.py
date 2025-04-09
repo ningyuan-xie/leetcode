@@ -31,4 +31,4 @@ assert Solution.createTargetArray([1, 2, 3, 4, 0], [0, 1, 2, 3, 0]) == [0, 1, 2,
 # Unit Test: nums = [1], index = [0], Output: [1]
 assert Solution.createTargetArray([1], [0]) == [1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -33,4 +33,4 @@ assert Solution.stableMountains([10, 1, 10, 1, 10], 3) == [1, 3]
 # Unit Test: height = [10,1,10,1,10], threshold = 10, Output: []
 assert Solution.stableMountains([10, 1, 10, 1, 10], 10) == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

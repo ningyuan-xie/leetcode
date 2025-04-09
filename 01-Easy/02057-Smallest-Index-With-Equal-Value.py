@@ -27,4 +27,4 @@ assert Solution.smallestIndex([4, 3, 2, 1]) == 2
 # Unit Test: nums = [1,2,3,4,5,6,7,8,9,0], Output: -1
 assert Solution.smallestIndex([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

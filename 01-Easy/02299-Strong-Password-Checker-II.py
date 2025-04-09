@@ -47,4 +47,4 @@ assert Solution.strongPasswordCheckerII("Me+You--IsMyDream") is False
 # Unit Test: password = "1aB!", Output: False
 assert Solution.strongPasswordCheckerII("1aB!") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

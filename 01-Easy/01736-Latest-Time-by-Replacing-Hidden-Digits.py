@@ -38,5 +38,5 @@ assert Solution.maximum_time("0?:3?") == "09:39"
 # Unit Test: time = "1?:22", Output: "19:22"
 assert Solution.maximum_time("1?:22") == "19:22"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")
 

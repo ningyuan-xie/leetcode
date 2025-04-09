@@ -53,4 +53,4 @@ assert Solution.isValidWord("a3$e") is False
 # Unit Test: word = "Ya$", Output = False
 assert Solution.isValidWord("Ya$") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

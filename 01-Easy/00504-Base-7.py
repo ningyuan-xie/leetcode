@@ -27,13 +27,13 @@ class Solution:
         return sign + result
 
 
-# Unit Test: Input: num = 100, Output: "202". Explanation: 100 = 2*7^2 + 0*7^1 + 2*7^0 = 202
+# Input: num = 100, Output: "202". Explanation: 100 = 2*7^2 + 0*7^1 + 2*7^0 = 202
 assert Solution.convertToBase7(100) == "202"
 
-# Unit Test: Input: num = -7, Output: "-10". Explanation: -7 = -1*7^1 + 0*7^0 = -10
+# Input: num = -7, Output: "-10". Explanation: -7 = -1*7^1 + 0*7^0 = -10
 assert Solution.convertToBase7(-7) == "-10"
 
-# Unit Test: Input: num = 0, Output: "0". Explanation: 0 = 0*7^0 = 0
+# Input: num = 0, Output: "0". Explanation: 0 = 0*7^0 = 0
 assert Solution.convertToBase7(0) == "0"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

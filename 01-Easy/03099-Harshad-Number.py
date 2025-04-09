@@ -21,4 +21,4 @@ assert Solution.sumOfTheDigitsOfHarshadNumber(18) == 9
 # Unit Test: x = 23, Output = -1
 assert Solution.sumOfTheDigitsOfHarshadNumber(23) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

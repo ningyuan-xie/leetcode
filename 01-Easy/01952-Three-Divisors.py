@@ -31,4 +31,4 @@ assert Solution.isThree(4) is True
 # Unit Test: n = 5, Output: False
 assert Solution.isThree(5) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

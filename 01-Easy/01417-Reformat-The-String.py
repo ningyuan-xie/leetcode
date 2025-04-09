@@ -45,4 +45,4 @@ assert Solution.reformat("1229857369") == ""
 # Unit Test: s = "ab123", Output: "1a2b3"
 assert Solution.reformat("ab123") == "1a2b3"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

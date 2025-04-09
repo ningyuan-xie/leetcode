@@ -39,13 +39,13 @@ class Solution:
         return two
 
 
-# Unit Test: Input = 2, Output = 1
+# Input = 2, Output = 1
 assert Solution.fib(2) == 1
 
-# Unit Test: Input = 3, Output = 2
+# Input = 3, Output = 2
 assert Solution.fib(3) == 2
 
-# Unit Test: Input = 4, Output = 3
+# Input = 4, Output = 3
 assert Solution.fibOptimal(4) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

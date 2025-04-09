@@ -42,4 +42,4 @@ assert Solution.halves_are_alike("MerryChristmas") is False
 # Unit Test: s = "AbCdEfGh", Output: True
 assert Solution.halves_are_alike("AbCdEfGh") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

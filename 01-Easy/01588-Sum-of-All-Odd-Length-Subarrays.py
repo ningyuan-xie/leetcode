@@ -41,4 +41,4 @@ assert Solution.sumOddLengthSubarrays([1, 2]) == 3
 # Unit Test: arr = [10, 11, 12], Output: 66
 assert Solution.sumOddLengthSubarrays([10, 11, 12]) == 66
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

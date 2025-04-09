@@ -44,4 +44,4 @@ assert Solution.getDecimalValue(head_test) == 0
 head_test = ListNode.build_linked_list([1])
 assert Solution.getDecimalValue(head_test) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

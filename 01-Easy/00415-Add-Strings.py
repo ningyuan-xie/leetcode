@@ -32,13 +32,13 @@ class Solution:
         return str(carry) + sum_str if carry else sum_str
 
 
-# Unit Test: Input: num1 = "11", num2 = "123", Output: "134"
+# Input: num1 = "11", num2 = "123", Output: "134"
 assert Solution.addStrings("11", "123") == "134"
 
-# Unit Test: Input: num1 = "456", num2 = "77", Output: "533"
+# Input: num1 = "456", num2 = "77", Output: "533"
 assert Solution.addStrings("456", "77") == "533"
 
-# Unit Test: Input: num1 = "0", num2 = "0", Output: "0"
+# Input: num1 = "0", num2 = "0", Output: "0"
 assert Solution.addStrings("0", "0") == "0"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

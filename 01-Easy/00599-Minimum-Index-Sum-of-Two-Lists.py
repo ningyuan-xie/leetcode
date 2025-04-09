@@ -41,16 +41,16 @@ class Solution:
         return common_strings_with_min_index_sum
 
 
-# Unit Test: Input: list1 = ["Shogun", "Tapioca Express", "Burger King", "KFC"],
+# Input: list1 = ["Shogun", "Tapioca Express", "Burger King", "KFC"],
 # list2 = ["Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"],
 # Output: ["Shogun"]
 assert Solution.findRestaurant(
     ["Shogun", "Tapioca Express", "Burger King", "KFC"],
     ["Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"]) == ["Shogun"]
 
-# Unit Test: Input: list1 = ["happy","sad","good"], list2 = ["sad","happy","good"],
+# Input: list1 = ["happy","sad","good"], list2 = ["sad","happy","good"],
 # Output: ["sad","happy"]
 assert Solution.findRestaurant(["happy", "sad", "good"],
                                ["sad", "happy", "good"]) == ["happy", "sad"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

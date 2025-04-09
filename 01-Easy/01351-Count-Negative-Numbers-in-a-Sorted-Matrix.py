@@ -45,4 +45,4 @@ assert Solution.countNegatives([[1, -1], [-1, -1]]) == 3
 # Unit Test: grid = [[-1]], Output: 1
 assert Solution.countNegatives([[-1]]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -27,4 +27,4 @@ assert Solution.capitalizeTitle("First leTTeR of EACH Word") == "First Letter of
 # Unit Test: title = "i lOve leetcode", Output: "i Love Leetcode"
 assert Solution.capitalizeTitle("i lOve leetcode") == "i Love Leetcode"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

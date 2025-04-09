@@ -36,4 +36,4 @@ assert Solution.canBeTypedWords("leet code", "lt") == 1
 # Unit Test: text = "leet code", brokenLetters = "e", Output: 0
 assert Solution.canBeTypedWords("leet code", "e") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

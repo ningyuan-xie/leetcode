@@ -27,13 +27,13 @@ class Solution:
         return nums
 
 
-# Unit Test: Input: nums = [3,1,2,4], Output: [4,2,1,3]
+# Input: nums = [3,1,2,4], Output: [4,2,1,3]
 assert Solution.sortArrayByParity([3, 1, 2, 4]) == [4, 2, 1, 3]
 
-# Unit Test: Input: nums = [0], Output: [0]
+# Input: nums = [0], Output: [0]
 assert Solution.sortArrayByParity([0]) == [0]
 
-# Unit Test: Input: nums = [1], Output: [1]
+# Input: nums = [1], Output: [1]
 assert Solution.sortArrayByParity([1]) == [1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -24,13 +24,13 @@ class Solution:
         return False
 
 
-# Unit Test: Input: nums = [1,2,3,1], Output: True
+# Input: nums = [1,2,3,1], Output: True
 assert Solution.containsDuplicate([1, 2, 3, 1]) is True
 
-# Unit Test: Input: nums = [1,2,3,4], Output: False
+# Input: nums = [1,2,3,4], Output: False
 assert Solution.containsDuplicate([1, 2, 3, 4]) is False
 
-# Unit Test: Input: nums = [1,1,1,3,3,4,3,2,4,2], Output: True
+# Input: nums = [1,1,1,3,3,4,3,2,4,2], Output: True
 assert Solution.containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

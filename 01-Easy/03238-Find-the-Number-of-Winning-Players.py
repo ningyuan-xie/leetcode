@@ -46,4 +46,4 @@ assert Solution.winningPlayerCount(5, [[1, 1], [1, 2], [1, 3], [1, 4]]) == 0
 # Unit Test: n = 5, pick = [[1,1],[2,4],[2,4],[2,4]], Output: 1
 assert Solution.winningPlayerCount(5, [[1, 1], [2, 4], [2, 4], [2, 4]]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

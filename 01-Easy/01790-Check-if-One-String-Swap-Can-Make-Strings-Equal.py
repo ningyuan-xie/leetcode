@@ -33,4 +33,4 @@ assert Solution.can_strings_equal("attack", "defend") is False
 # Unit Test: s1 = "kelb", s2 = "kelb", Output: True
 assert Solution.can_strings_equal("kelb", "kelb") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

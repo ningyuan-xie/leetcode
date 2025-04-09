@@ -39,4 +39,4 @@ assert Solution.thousandSeparator(1234) == "1.234"
 # Unit Test: n = 123456789, Output: "123.456.789"
 assert Solution.thousandSeparator(123456789) == "123.456.789"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -40,4 +40,4 @@ assert Solution.findGCD([7, 5, 6, 8, 3]) == 1
 # Unit Test: nums = [3, 3], Output: 3
 assert Solution.findGCD([3, 3]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

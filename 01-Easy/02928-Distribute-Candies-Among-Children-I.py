@@ -28,4 +28,4 @@ assert Solution.distributeCandies(5, 2) == 3
 # Unit Test: n = 3, limit = 3, Output: 10
 assert Solution.distributeCandies(3, 3) == 10
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

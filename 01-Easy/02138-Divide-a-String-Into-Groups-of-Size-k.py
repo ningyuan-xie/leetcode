@@ -33,4 +33,4 @@ assert Solution.divideString("abcdefghi", 3, "x") == ["abc", "def", "ghi"]
 # Unit Test: ss = "abcdefghij", k = 3, fill = "x", Output: ["abc","def","ghi","jxx"]
 assert Solution.divideString("abcdefghij", 3, "x") == ["abc", "def", "ghi", "jxx"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

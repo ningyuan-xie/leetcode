@@ -46,13 +46,13 @@ class Solution:
         return missing_nums
 
 
-# Unit Test: Input: nums = [4, 3, 2, 7, 8, 2, 3, 1], Output: [5, 6]
+# Input: nums = [4, 3, 2, 7, 8, 2, 3, 1], Output: [5, 6]
 assert Solution.findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]) == [5, 6]
 
-# Unit Test: Input: nums = [1, 1], Output: [2]
+# Input: nums = [1, 1], Output: [2]
 assert Solution.findDisappearedNumbersSet([1, 1]) == [2]
 
-# Unit Test: Input: nums = [1], Output: []
+# Input: nums = [1], Output: []
 assert Solution.findDisappearedNumbersSet([1]) == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

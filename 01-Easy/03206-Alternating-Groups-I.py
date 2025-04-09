@@ -33,4 +33,4 @@ assert Solution.numberOfAlternatingGroups([1, 1, 1]) == 0
 # Unit Test: colors = [0,1,0,0,1], Output = 3
 assert Solution.numberOfAlternatingGroups([0, 1, 0, 0, 1]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

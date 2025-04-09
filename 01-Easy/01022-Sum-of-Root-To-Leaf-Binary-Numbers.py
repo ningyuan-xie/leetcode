@@ -50,4 +50,4 @@ assert Solution.sumRootToLeaf(root_test) == 22
 root_test = TreeNode.build_binary_tree([1])
 assert Solution.sumRootToLeaf(root_test) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

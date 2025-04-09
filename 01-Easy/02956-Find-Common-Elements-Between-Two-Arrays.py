@@ -29,4 +29,4 @@ assert Solution.findIntersectionValues([4, 3, 2, 3, 1], [2, 2, 5, 2, 3, 6]) == [
 # Unit Test: nums1 = [3,4,2,3], nums2 = [1,5], Output: [0,0]
 assert Solution.findIntersectionValues([3, 4, 2, 3], [1, 5]) == [0, 0]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

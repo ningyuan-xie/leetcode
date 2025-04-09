@@ -32,17 +32,17 @@ class Solution:
         return result
 
 
-# Unit Test: Input: score = [5, 4, 3, 2, 1],
+# Input: score = [5, 4, 3, 2, 1],
 # Output: ["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
 assert (Solution.findRelativeRanks([5, 4, 3, 2, 1]) ==
         ["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"])
 
-# Unit Test: Input: score = [10, 3, 8, 9, 4],
+# Input: score = [10, 3, 8, 9, 4],
 # Output: ["Gold Medal", "5", "Bronze Medal", "Silver Medal", "4"]
 assert (Solution.findRelativeRanks([10, 3, 8, 9, 4]) ==
         ["Gold Medal", "5", "Bronze Medal", "Silver Medal", "4"])
 
-# Unit Test: Input: score = [1], Output: ["Gold Medal"]
+# Input: score = [1], Output: ["Gold Medal"]
 assert Solution.findRelativeRanks([1]) == ["Gold Medal"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

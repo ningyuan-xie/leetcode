@@ -33,4 +33,4 @@ assert Solution.sortEvenOdd([4, 1, 2, 3]) == [2, 3, 4, 1]
 # Unit Test: nums = [2,1], Output: [2,1]
 assert Solution.sortEvenOdd([2, 1]) == [2, 1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

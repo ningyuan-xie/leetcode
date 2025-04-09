@@ -41,13 +41,13 @@ class Solution:
         return len(unique_emails)
 
 
-# Unit Test: Input: emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com",
+# Input: emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com",
 # "testemail+david@lee.tcode.com"], Output: 2
 assert Solution.numUniqueEmails(["test.email+alex@leetcode.com",
                                  "test.e.mail+bob.cathy@leetcode.com",
                                  "testemail+david@lee.tcode.com"]) == 2
 
-# Unit Test: Input: emails = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"], Output: 3
+# Input: emails = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"], Output: 3
 assert Solution.numUniqueEmails(["a@leetcode.com", "b@leetcode.com", "c@leetcode.com"]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

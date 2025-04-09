@@ -38,4 +38,4 @@ assert Solution.total_money(10) == 37
 # Unit Test: n = 20, Output: 96
 assert Solution.total_money(20) == 96
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

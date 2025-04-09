@@ -25,4 +25,4 @@ assert Solution.digitCount("1210") is True
 # Unit Test: num = "030", Output: False
 assert Solution.digitCount("030") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

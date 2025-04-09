@@ -53,4 +53,4 @@ assert Solution.distMoney(8, 2) == 0
 # Unit Test: money = 23, children = 2, Output: 1
 assert Solution.distMoney(23, 2) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

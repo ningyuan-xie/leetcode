@@ -37,4 +37,4 @@ assert Solution.canBeEqual("abcdba", "cabdab") is True
 # Unit Test: s1 = "abe", s2 = "bea", Output: False
 assert Solution.canBeEqual("abe", "bea") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

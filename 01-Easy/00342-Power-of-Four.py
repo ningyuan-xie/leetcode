@@ -22,23 +22,23 @@ class Solution:
         return n % 4 == 0 and self.isPowerOfFour(n // 4)
 
 
-# Unit Test: Input: n = 2, Output: False
+# Input: n = 2, Output: False
 solution = Solution()  # Instantiate a Solution class to call the instance method
 assert solution.isPowerOfFour(2) is False
 
-# Unit Test: Input: n = 8, Output: False
+# Input: n = 8, Output: False
 assert solution.isPowerOfFour(8) is False
 
-# Unit Test: Input: n = 16, Output: True
+# Input: n = 16, Output: True
 assert solution.isPowerOfFour(16) is True
 
-# Unit Test: Input: n = 5, Output: False
+# Input: n = 5, Output: False
 assert solution.isPowerOfFour(5) is False
 
-# Unit Test: Input: n = 1, Output: True
+# Input: n = 1, Output: True
 assert solution.isPowerOfFour(1) is True
 
-# Unit Test: Input: n = 0, Output: False
+# Input: n = 0, Output: False
 assert solution.isPowerOfFour(0) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

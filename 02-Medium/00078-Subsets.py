@@ -30,10 +30,10 @@ class Solution:
         return result
 
 
-# Unit Test: Input: nums = [1,2,3], Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+# Input: nums = [1,2,3], Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
 assert Solution.subsets([1, 2, 3]) == [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
 
-# Unit Test: Input: nums = [0], Output: [[],[0]]
+# Input: nums = [0], Output: [[],[0]]
 assert Solution.subsets([0]) == [[], [0]]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

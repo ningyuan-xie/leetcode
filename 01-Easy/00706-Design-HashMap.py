@@ -64,7 +64,7 @@ class MyHashMap:
                 bucket.remove((k, v))
 
 
-# Unit Test: Input: ["MyHashMap", "put", "put", "get", "get", "put", "get", "remove", "get"],
+# Input: ["MyHashMap", "put", "put", "get", "get", "put", "get", "remove", "get"],
 # Output: [null, null, null, 2, -1, null, 2, null, -1]
 hash_map = MyHashMap()  # [[], [], [], ..., []]
 hash_map.put(1, 1)  # [[], [(1, 1)], [], ..., []]
@@ -76,4 +76,4 @@ assert hash_map.get(2) == 1
 hash_map.remove(2)
 assert hash_map.get(2) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

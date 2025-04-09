@@ -32,4 +32,4 @@ assert Solution.countKeyChanges("aAbBcC") == 2
 # Unit Test: s = "AaAaAaaA", Output = 0
 assert Solution.countKeyChanges("AaAaAaaA") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

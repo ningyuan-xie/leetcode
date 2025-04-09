@@ -26,4 +26,4 @@ assert Solution.maximumOddBinaryNumber("010") == "001"
 # Unit Test: s = "0101", Output: "1001"
 assert Solution.maximumOddBinaryNumber("0101") == "1001"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

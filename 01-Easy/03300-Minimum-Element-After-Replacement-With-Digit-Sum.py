@@ -35,4 +35,4 @@ assert Solution.minElement([1,2,3,4]) == 1
 # Unit Test: nums = [999,19,199], Output: 10
 assert Solution.minElement([999,19,199]) == 10
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

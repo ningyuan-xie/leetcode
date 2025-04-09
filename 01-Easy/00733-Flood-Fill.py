@@ -54,19 +54,19 @@ class Solution:
         Solution.preorder_dfs_traversal(image, r, c + 1, original_color, new_color)  # Right
 
 
-# Unit Test: Input: image = [[1, 1, 1], [1, 1, 0], [1, 0, 1]], sr = 1, sc = 1, newColor = 2,
+# Input: image = [[1, 1, 1], [1, 1, 0], [1, 0, 1]], sr = 1, sc = 1, newColor = 2,
 # Output: [[2, 2, 2], [2, 2, 0], [2, 0, 1]]
 assert (Solution.flood_fill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], 1, 1, 2)
         == [[2, 2, 2], [2, 2, 0], [2, 0, 1]])
 
-# Unit Test: Input: image = [[0, 0, 0], [0, 1, 1]], sr = 1, sc = 1, newColor = 1,
+# Input: image = [[0, 0, 0], [0, 1, 1]], sr = 1, sc = 1, newColor = 1,
 # Output: [[0, 0, 0], [0, 1, 1]]
 assert (Solution.flood_fill([[0, 0, 0], [0, 1, 1]], 1, 1, 1)
         == [[0, 0, 0], [0, 1, 1]])
 
-# Unit Test: Input: image = [[0, 0, 0], [0, 1, 1]], sr = 1, sc = 1, newColor = 2,
+# Input: image = [[0, 0, 0], [0, 1, 1]], sr = 1, sc = 1, newColor = 2,
 # Output: [[0, 0, 0], [0, 2, 2]]
 assert (Solution.flood_fill([[0, 0, 0], [0, 1, 1]], 1, 1, 2)
         == [[0, 0, 0], [0, 2, 2]])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

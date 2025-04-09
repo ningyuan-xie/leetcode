@@ -41,4 +41,4 @@ assert Solution.rearrangeCharacters("abcba", "abc") == 1
 # Unit Test: s = "abbaccaddaeea", target = "aaaaa", Output: 1
 assert Solution.rearrangeCharacters("abbaccaddaeea", "aaaaa") == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

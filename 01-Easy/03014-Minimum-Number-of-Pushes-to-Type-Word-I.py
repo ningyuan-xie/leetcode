@@ -45,4 +45,4 @@ assert Solution.minimumPushes("abcde") == 5
 # Unit Test: word = "xycdefghij", Output = 12
 assert Solution.minimumPushes("xycdefghij") == 12
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

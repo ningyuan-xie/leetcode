@@ -30,4 +30,4 @@ assert Solution.findKDistantIndices([3, 4, 9, 1, 3, 9, 5], 9, 1) == [1, 2, 3, 4,
 # Unit Test: nums = [2,2,2,2,2], key = 2, k = 2, Output: [0,1,2,3,4]
 assert Solution.findKDistantIndices([2, 2, 2, 2, 2], 2, 2) == [0, 1, 2, 3, 4]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

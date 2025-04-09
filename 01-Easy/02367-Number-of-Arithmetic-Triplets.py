@@ -32,4 +32,4 @@ assert Solution.arithmeticTriplets([0, 1, 4, 6, 7, 10], 3) == 2
 # Unit Test: nums = [4,5,6,7,8,9], diff = 2, Output: 2
 assert Solution.arithmeticTriplets([4, 5, 6, 7, 8, 9], 2) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -39,4 +39,4 @@ assert Solution.splitNum(4325) == 59
 # Unit Test: num = 687, Output: 75
 assert Solution.splitNum(687) == 75
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

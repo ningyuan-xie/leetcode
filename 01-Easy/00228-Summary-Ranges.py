@@ -39,16 +39,16 @@ class Solution:
         return result
 
 
-# Unit Test: Input: [0, 1, 2, 4, 5, 7]
+# Input: [0, 1, 2, 4, 5, 7]
 nums_test = [0, 1, 2, 4, 5, 7]
 assert Solution.summaryRanges(nums_test) == ["0->2", "4->5", "7"]
 
-# Unit Test: Input: [0, 2, 3, 4, 6, 8, 9]
+# Input: [0, 2, 3, 4, 6, 8, 9]
 nums_test = [0, 2, 3, 4, 6, 8, 9]
 assert Solution.summaryRanges(nums_test) == ["0", "2->4", "6", "8->9"]
 
-# Unit Test: Input: []
+# Input: []
 nums_test = []
 assert Solution.summaryRanges(nums_test) == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

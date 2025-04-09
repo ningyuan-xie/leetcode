@@ -34,4 +34,4 @@ assert Solution.getMinDistance([1, 2, 3, 4, 5], 5, 3) == 1
 # Unit Test: nums = [1], target = 1, start = 0, Output: 0
 assert Solution.getMinDistance([1], 1, 0) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -31,13 +31,13 @@ class Solution:
         return longest_harmonious_subsequence
 
 
-# Unit Test: Input: nums = [1, 3, 2, 2, 5, 2, 3, 7], Output: 5
+# Input: nums = [1, 3, 2, 2, 5, 2, 3, 7], Output: 5
 assert Solution.findLHS([1, 3, 2, 2, 5, 2, 3, 7]) == 5
 
-# Unit Test: Input: nums = [1, 2, 3, 4], Output: 2
+# Input: nums = [1, 2, 3, 4], Output: 2
 assert Solution.findLHS([1, 2, 3, 4]) == 2
 
-# Unit Test: Input: nums = [1, 1, 1, 1], Output: 0
+# Input: nums = [1, 1, 1, 1], Output: 0
 assert Solution.findLHS([1, 1, 1, 1]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -44,4 +44,4 @@ assert Solution.checkDistances("aa",
                                [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -33,4 +33,4 @@ assert Solution.reversePrefix("xyxzxe", "z") == "zxyxxe"
 # Unit Test: word = "abcd", ch = "z", Output: "abcd"
 assert Solution.reversePrefix("abcd", "z") == "abcd"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

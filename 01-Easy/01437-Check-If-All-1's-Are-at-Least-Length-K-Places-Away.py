@@ -39,4 +39,4 @@ assert Solution.kLengthApart([1, 1, 1, 1, 1], 0) == True
 # Unit Test: nums = [0, 1, 0, 1], k = 1, Output: True
 assert Solution.kLengthApart([0, 1, 0, 1], 1) == True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

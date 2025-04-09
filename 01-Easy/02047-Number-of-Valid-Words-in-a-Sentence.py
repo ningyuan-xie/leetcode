@@ -41,4 +41,4 @@ assert Solution.countValidWords("alice and  bob are playing stone-game10") == 5
 # Unit Test: sentence = ""he bought 2 pencils, 3 erasers, and 1  pencil-sharpener.", Output: 6
 assert Solution.countValidWords("he bought 2 pencils, 3 erasers, and 1  pencil-sharpener.") == 6
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

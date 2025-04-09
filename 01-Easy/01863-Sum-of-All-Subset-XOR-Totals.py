@@ -43,4 +43,4 @@ assert Solution.subsetXORSum([1, 3]) == 6
 # Unit Test: nums = [5, 1, 6], Output: 28
 assert Solution.subsetXORSum([5, 1, 6]) == 28
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

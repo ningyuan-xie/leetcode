@@ -28,4 +28,4 @@ assert Solution.sumOfEncryptedInt([1, 2, 3]) == 6
 # Unit Test: nums = [10,21,31], Output = 66
 assert Solution.sumOfEncryptedInt([10, 21, 31]) == 66
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

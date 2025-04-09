@@ -36,4 +36,4 @@ assert Solution.maximumDifference([9, 4, 3, 2]) == -1
 # Unit Test: nums = [1, 5, 2, 10], Output: 9
 assert Solution.maximumDifference([1, 5, 2, 10]) == 9
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

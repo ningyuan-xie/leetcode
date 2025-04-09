@@ -38,19 +38,19 @@ class Solution:
         return True
 
 
-# Unit Test: Input: s = "A man, a plan, a canal: Panama", Output: True
+# Input: s = "A man, a plan, a canal: Panama", Output: True
 assert Solution.isPalindrome("A man, a plan, a canal: Panama") is True
 
-# Unit Test: Input: s = "race a car", Output: False
+# Input: s = "race a car", Output: False
 assert Solution.isPalindromeTwoPointers("race a car") is False
 
-# Unit Test: Input: s = "a", Output: True
+# Input: s = "a", Output: True
 assert Solution.isPalindrome("a") is True
 
-# Unit Test: Input: s = "ab", Output: False
+# Input: s = "ab", Output: False
 assert Solution.isPalindromeTwoPointers("ab") is False
 
-# Unit Test: Input: s = "a.", Output: True
+# Input: s = "a.", Output: True
 assert Solution.isPalindrome("a.") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

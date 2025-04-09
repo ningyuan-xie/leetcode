@@ -24,7 +24,7 @@ class Solution:
         return reversed2 == num
 
 
-# Unit Test: Input: num = 526, Output: True
+# Input: num = 526, Output: True
 assert Solution.doubleReversal(526) is True
 
 # Unit Test: num = 1800, Output: False
@@ -33,4 +33,4 @@ assert Solution.doubleReversal(1800) is False
 # Unit Test: num = 0, Output: True
 assert Solution.doubleReversal(0) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

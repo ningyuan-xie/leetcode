@@ -26,4 +26,4 @@ assert Solution.isAcronym(["an", "apple"], "a") is False
 # Unit Test: words = ["never","gonna","give","up","on","you"], s = "ngguoy", Output: True
 assert Solution.isAcronym(["never", "gonna", "give", "up", "on", "you"], "ngguoy") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

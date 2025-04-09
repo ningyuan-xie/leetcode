@@ -27,4 +27,4 @@ assert Solution.finalValueAfterOperations(["++X", "++X", "X++"]) == 3
 # Unit Test: operations = ["X++", "++X", "--X", "X--"], Output: 0
 assert Solution.finalValueAfterOperations(["X++", "++X", "--X", "X--"]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

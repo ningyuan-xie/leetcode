@@ -36,4 +36,4 @@ assert Solution.isCovered([[1, 2], [3, 4], [5, 6]], 2, 5) is True
 # Unit Test: ranges = [[1, 10], [10, 20]], left = 21, right = 21, Output: False
 assert Solution.isCovered([[1, 10], [10, 20]], 21, 21) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

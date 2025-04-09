@@ -35,4 +35,4 @@ assert Solution.distinctAverages([4, 1, 4, 0, 3, 5]) == 2
 # Unit Test: nums = [1,1000000], Output: 1
 assert Solution.distinctAverages([1, 1000000]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

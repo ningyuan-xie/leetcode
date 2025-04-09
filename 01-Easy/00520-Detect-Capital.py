@@ -19,13 +19,13 @@ class Solution:
                 or (capital_count == 1 and word[0].isupper()))
 
 
-# Unit Test: Input = "USA", Output = True
+# Input = "USA", Output = True
 assert Solution.detectCapitalUse("USA") is True
 
-# Unit Test: Input = "FlaG", Output = False
+# Input = "FlaG", Output = False
 assert Solution.detectCapitalUse("FlaG") is False
 
-# Unit Test: Input = "leetcode", Output = True
+# Input = "leetcode", Output = True
 assert Solution.detectCapitalUse("leetcode") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

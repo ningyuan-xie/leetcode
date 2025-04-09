@@ -23,14 +23,14 @@ class Solution:
         return Solution.searchBST(root.right, val)
 
 
-# Unit Test: Input: root = [4, 2, 7, 1, 3], val = 2, Output: [2, 1, 3]
+# Input: root = [4, 2, 7, 1, 3], val = 2, Output: [2, 1, 3]
 root_test = TreeNode.build_binary_tree([4, 2, 7, 1, 3])
 root_expected = TreeNode.build_binary_tree([2, 1, 3])
 assert Solution.searchBST(root_test, 2) == root_expected
 
-# Unit Test: Input: root = [4, 2, 7, 1, 3], val = 5, Output: None
+# Input: root = [4, 2, 7, 1, 3], val = 5, Output: None
 root_test = TreeNode.build_binary_tree([4, 2, 7, 1, 3])
 root_expected = TreeNode.build_binary_tree([])
 assert Solution.searchBST(root_test, 5) == root_expected
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

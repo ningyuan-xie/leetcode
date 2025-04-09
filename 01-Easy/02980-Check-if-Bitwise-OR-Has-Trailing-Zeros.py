@@ -36,4 +36,4 @@ assert Solution.hasTrailingZeros([2, 4, 8, 16]) is True
 # Unit Test: nums = [1,3,5,7,9], Output: False
 assert Solution.hasTrailingZeros([1, 3, 5, 7, 9]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

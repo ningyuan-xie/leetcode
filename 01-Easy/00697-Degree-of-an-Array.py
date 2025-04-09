@@ -32,13 +32,13 @@ class Solution:
         return min(last[num] - first[num] + 1 for num in freq if freq[num] == degree)
 
 
-# Unit Test: Input: nums = [1, 2, 2, 3, 1], Output: 2
+# Input: nums = [1, 2, 2, 3, 1], Output: 2
 assert Solution.findShortestSubArray([1, 2, 2, 3, 1]) == 2
 
-# Unit Test: Input: nums = [1, 2, 2, 3, 1, 4, 2], Output: 6
+# Input: nums = [1, 2, 2, 3, 1, 4, 2], Output: 6
 assert Solution.findShortestSubArray([1, 2, 2, 3, 1, 4, 2]) == 6
 
-# Unit Test: Input: nums = [1, 2, 2, 3, 1, 4, 2, 1], Output: 6
+# Input: nums = [1, 2, 2, 3, 1, 4, 2, 1], Output: 6
 assert Solution.findShortestSubArray([1, 2, 2, 3, 1, 4, 2, 1]) == 6
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -32,4 +32,4 @@ assert Solution.stringMatching(["leetcode", "et", "code"]) == ["et", "code"]
 # Unit Test: words = ["blue", "green", "bu"], Output: []
 assert Solution.stringMatching(["blue", "green", "bu"]) == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

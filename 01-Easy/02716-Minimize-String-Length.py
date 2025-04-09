@@ -26,4 +26,4 @@ assert Solution.minimizedStringLength("cbbd") == 3
 # Unit Test: s = "baadccab", Output: 4
 assert Solution.minimizedStringLength("baadccab") == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

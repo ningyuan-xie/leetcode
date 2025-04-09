@@ -33,4 +33,4 @@ assert Solution.maximumTripletValue([1, 10, 3, 4, 19]) == 133
 # Unit Test: nums = [1,2,3], Output: 0
 assert Solution.maximumTripletValue([1, 2, 3]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

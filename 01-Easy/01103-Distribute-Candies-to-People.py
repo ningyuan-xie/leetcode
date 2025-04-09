@@ -54,4 +54,4 @@ assert Solution.distributeCandies(10, 3) == [5, 2, 3]
 # Unit Test: candies = 60, num_people = 4, Output: [15, 18, 15, 12]
 assert Solution.distributeCandies(60, 4) == [15, 18, 15, 12]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

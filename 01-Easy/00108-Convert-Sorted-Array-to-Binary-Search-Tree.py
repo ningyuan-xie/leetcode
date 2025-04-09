@@ -32,14 +32,14 @@ class Solution:
         # Level order traversal list format: [0,-3,9,-10,null,5]
 
 
-# Unit Test: Input: nums = [-10,-3,0,5,9], Output: [0,-3,9,-10,null,5]
+# Input: nums = [-10,-3,0,5,9], Output: [0,-3,9,-10,null,5]
 root_test = [-10, -3, 0, 5, 9]
 root_expected = TreeNode.build_binary_tree([0, -3, 9, -10, None, 5])
 assert Solution.sortedArrayToBST(root_test) == root_expected
 
-# Unit Test: Input: nums = [1,3], Output: [3,1]
+# Input: nums = [1,3], Output: [3,1]
 root_test = [1, 3]
 root_expected = TreeNode.build_binary_tree([3, 1])
 assert Solution.sortedArrayToBST(root_test) == root_expected
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

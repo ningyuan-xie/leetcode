@@ -47,4 +47,4 @@ assert Solution.countKConstraintSubstrings("1010101", 2) == 25
 # Unit Test: s = "11111", k = 1, Output: 15
 assert Solution.countKConstraintSubstrings("11111", 1) == 15
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

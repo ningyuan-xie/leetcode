@@ -28,13 +28,13 @@ class Solution:
                 return [area // width, width]
 
 
-# Unit Test: Input: area = 4, Output: [2, 2]
+# Input: area = 4, Output: [2, 2]
 assert Solution.constructRectangle(4) == [2, 2]
 
-# Unit Test: Input: area = 37, Output: [37, 1]
+# Input: area = 37, Output: [37, 1]
 assert Solution.constructRectangle(37) == [37, 1]
 
-# Unit Test: Input: area = 122122, Output: [427, 286]
+# Input: area = 122122, Output: [427, 286]
 assert Solution.constructRectangle(122122) == [427, 286]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

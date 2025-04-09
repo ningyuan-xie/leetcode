@@ -37,4 +37,4 @@ assert Solution.distanceBetweenBusStops([1, 2, 3, 4], 0, 2) == 3
 # Unit Test: distance = [1, 2, 3, 4], start = 0, destination = 3, Output: 4
 assert Solution.distanceBetweenBusStops([1, 2, 3, 4], 0, 3) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

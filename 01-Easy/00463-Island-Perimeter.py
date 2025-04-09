@@ -68,13 +68,13 @@ class Solution:
                     return preorder_dfs(y_axis=i, x_axis=j)
 
 
-# Unit Test: Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
+# Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
 assert Solution.islandPerimeter([[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]]) == 16
 
-# Unit Test: Input: grid = [[1]], Output: 4
+# Input: grid = [[1]], Output: 4
 assert Solution.islandPerimeterDFS([[1]]) == 4
 
-# Unit Test: Input: grid = [[1, 0]], Output: 4
+# Input: grid = [[1, 0]], Output: 4
 assert Solution.islandPerimeterDFS([[1, 0]]) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

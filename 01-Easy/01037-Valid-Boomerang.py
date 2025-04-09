@@ -40,4 +40,4 @@ assert Solution.isBoomerang([[1, 1], [2, 2], [3, 3]]) is False
 # Explanation: The points are not distinct.
 assert Solution.isBoomerang([[1, 1], [2, 2], [1, 1]]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -32,7 +32,7 @@ class NumArray:
         return right_sum - left_sum
 
 
-# Unit Test: Input:
+# Input:
 # ["NumArray", "sumRange", "sumRange", "sumRange"], [[[-2, 0, 3, -5, 2, -1]], [0, 2], [2, 5], [0, 5]]
 # Output: [null, 1, -1, -3]
 num_array = NumArray([-2, 0, 3, -5, 2, -1])
@@ -40,4 +40,4 @@ assert num_array.sumRange(0, 2) == 1
 assert num_array.sumRange(2, 5) == -1
 assert num_array.sumRange(0, 5) == -3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

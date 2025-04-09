@@ -44,4 +44,4 @@ assert Solution.distanceTraveled(1, 2) == 10
 # Unit Test: mainTank = 7, additionalTank = 1, Output: 80
 assert Solution.distanceTraveled(7, 1) == 80
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

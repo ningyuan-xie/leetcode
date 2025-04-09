@@ -33,4 +33,4 @@ assert Solution.removePalindromeSub("baabb") == 2
 # Explanation: The string is already empty.
 assert Solution.removePalindromeSub("") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

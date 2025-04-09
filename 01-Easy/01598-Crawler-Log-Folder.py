@@ -48,4 +48,4 @@ assert Solution.minOperations(["d1/", "d2/", "./", "d3/", "../", "d31/"]) == 3
 # Unit Test: logs = ["d1/", "../", "../", "../"], Output: 0
 assert Solution.minOperations(["d1/", "../", "../", "../"]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

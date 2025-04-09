@@ -40,4 +40,4 @@ assert Solution.countQuadruplets([1, 1, 1, 3, 5]) == 4
 # Unit Test: nums = [56,50,33,1,86,80,85,42,90], Output: 1
 assert Solution.countQuadruplets([56, 50, 33, 1, 86, 80, 85, 42, 90]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

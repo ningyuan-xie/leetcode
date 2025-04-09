@@ -42,4 +42,4 @@ assert Solution.countBeautifulPairs([2, 5, 1, 4]) == 5
 # Unit Test: nums = [11,21,12], Output: 2
 assert Solution.countBeautifulPairs([11, 21, 12]) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -60,19 +60,19 @@ class Solution:
         return top_view + front_view + side_view
 
 
-# Unit Test: Input: grid = [[1,2],[3,4]], Output: 17
+# Input: grid = [[1,2],[3,4]], Output: 17
 assert Solution.projectionAreaMath([[1, 2], [3, 4]]) == 17
 
-# Unit Test: Input: grid = [[2]], Output: 5
+# Input: grid = [[2]], Output: 5
 assert Solution.projectionArea([[2]]) == 5
 
-# Unit Test: Input: grid = [[1,2],[0,0]], Output: 7
+# Input: grid = [[1,2],[0,0]], Output: 7
 assert Solution.projectionArea([[1, 2], [0, 0]]) == 7
 
-# Unit Test: Input: grid = [[1,0],[0,2]], Output: 8
+# Input: grid = [[1,0],[0,2]], Output: 8
 assert Solution.projectionAreaMath([[1, 0], [0, 2]]) == 8
 
-# Unit Test: Input: grid = [[1,1,1],[1,0,1],[1,1,1]], Output: 14
+# Input: grid = [[1,1,1],[1,0,1],[1,1,1]], Output: 14
 assert Solution.projectionAreaMath([[1, 1, 1], [1, 0, 1], [1, 1, 1]]) == 14
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

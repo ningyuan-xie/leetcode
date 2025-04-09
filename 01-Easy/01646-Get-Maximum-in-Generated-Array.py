@@ -32,13 +32,13 @@ class Solution:
         return max(nums)
 
 
-# Unit Test: Input: n = 7, Output: 3
+# Input: n = 7, Output: 3
 assert Solution.getMaximumGenerated(7) == 3
 
-# Unit Test: Input: n = 2, Output: 1
+# Input: n = 2, Output: 1
 assert Solution.getMaximumGenerated(2) == 1
 
-# Unit Test: Input: n = 3, Output: 2
+# Input: n = 3, Output: 2
 assert Solution.getMaximumGenerated(3) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

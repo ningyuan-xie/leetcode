@@ -44,4 +44,4 @@ assert Solution.longestMonotonicSubarray([3, 3, 3, 3]) == 1
 # Unit Test: nums = [3,2,1], Output = 3
 assert Solution.longestMonotonicSubarray([3, 2, 1]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

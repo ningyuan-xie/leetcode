@@ -22,13 +22,13 @@ class Solution:
         return n == 1
 
 
-# Unit Test: Input: num = 6, Output: True
+# Input: num = 6, Output: True
 assert Solution.isUgly(6) is True
 
-# Unit Test: Input: num = 8, Output: True
+# Input: num = 8, Output: True
 assert Solution.isUgly(8) is True
 
-# Unit Test: Input: num = 14, Output: False
+# Input: num = 14, Output: False
 assert Solution.isUgly(14) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

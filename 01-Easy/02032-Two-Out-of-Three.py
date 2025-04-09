@@ -38,4 +38,4 @@ assert Solution.twoOutOfThree([3, 1], [2, 3], [1, 2]) == [1, 2, 3]
 # Unit Test: nums1 = [1, 2, 2], nums2 = [4, 3, 3], nums3 = [5], Output: []
 assert Solution.twoOutOfThree([1, 2, 2], [4, 3, 3], [5]) == []
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

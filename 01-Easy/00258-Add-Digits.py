@@ -37,13 +37,13 @@ class Solution:
         return Solution.addDigitsRecursion(sum_digits)
 
 
-# Unit Test: Input: num = 38, Output: 2
+# Input: num = 38, Output: 2
 assert Solution.addDigits(38) == 2
 
-# Unit Test: Input: num = 0, Output: 0
+# Input: num = 0, Output: 0
 assert Solution.addDigitsRecursion(0) == 0
 
-# Unit Test: Input: num = 9, Output: 9
+# Input: num = 9, Output: 9
 assert Solution.addDigitsRecursion(9) == 9
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -28,13 +28,13 @@ class Solution:
         return True
 
 
-# Unit Test: Input: s = "anagram", t = "nagaram"
+# Input: s = "anagram", t = "nagaram"
 assert Solution.isAnagram("anagram", "nagaram") is True
 
-# Unit Test: Input: s = "rat", t = "car"
+# Input: s = "rat", t = "car"
 assert Solution.isAnagram("rat", "car") is False
 
-# Unit Test: Input: s = "a", t = "ab"
+# Input: s = "a", t = "ab"
 assert Solution.isAnagram("a", "ab") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

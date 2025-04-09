@@ -36,4 +36,4 @@ assert Solution.removeDuplicates("azxxzy") == "ay"
 # Unit Test: s = "a", Output: "a"
 assert Solution.removeDuplicates("a") == "a"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

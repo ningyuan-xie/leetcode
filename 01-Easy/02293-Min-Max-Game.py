@@ -42,4 +42,4 @@ assert Solution.minMaxGame([1, 3, 5, 2, 4, 8, 2, 2]) == 1
 # Unit Test: nums = [3], Output: 3
 assert Solution.minMaxGame([3]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

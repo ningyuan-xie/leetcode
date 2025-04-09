@@ -44,4 +44,4 @@ assert Solution.destCity([["A", "Z"]]) == "Z"
 # Unit Test: paths = [["A", "B"], ["B", "C"], ["C", "D"], ["D", "E"], ["E", "F"]], Output: "F"
 assert Solution.destCity([["A", "B"], ["B", "C"], ["C", "D"], ["D", "E"], ["E", "F"]]) == "F"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

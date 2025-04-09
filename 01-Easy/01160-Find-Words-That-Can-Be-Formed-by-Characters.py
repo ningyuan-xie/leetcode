@@ -52,4 +52,4 @@ assert Solution.countCharacters(["hello", "world", "leetcode"], "welldonehoneyr"
 # Unit Test: words = ["cat", "bt", "hat", "tree"], chars = "atach", Output: 6
 assert Solution.countCharacters(["cat", "bt", "hat", "tree"], "atach") == 6
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

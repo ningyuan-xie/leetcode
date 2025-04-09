@@ -30,4 +30,4 @@ assert (Solution.truncateSentence("What is the solution to this problem", 4)
 # Unit Test: s = "chopper is not a tanuki", k = 5, Output: "chopper is not a tanuki"
 assert Solution.truncateSentence("chopper is not a tanuki", 5) == "chopper is not a tanuki"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -44,4 +44,4 @@ assert Solution.getLucky("leetcode", 2) == 6
 # Unit Test: s = "zbax", k = 2, Output: 8
 assert Solution.getLucky("zbax", 2) == 8
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

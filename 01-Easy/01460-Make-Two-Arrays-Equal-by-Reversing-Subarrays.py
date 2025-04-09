@@ -35,4 +35,4 @@ assert Solution.canBeEqual([3, 7, 9], [3, 7, 11]) is False
 # Unit Test: target = [1, 1, 1, 1, 1], arr = [1, 1, 1, 1, 1], Output: True
 assert Solution.canBeEqual([1, 1, 1, 1, 1], [1, 1, 1, 1, 1]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -38,4 +38,4 @@ assert Solution.greatestLetter("arRAzFif") == "R"
 # Unit Test: s = "AbCdEfGhIjK", Output: ""
 assert Solution.greatestLetter("AbCdEfGhIjK") == ""
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

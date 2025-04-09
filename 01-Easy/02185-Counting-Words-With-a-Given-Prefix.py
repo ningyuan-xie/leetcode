@@ -25,4 +25,4 @@ assert Solution.countWords(["pay", "attention", "practice", "attend"], "at") == 
 # Unit Test: words = ["leetcode","win","loops","success"], pref = "code", Output: 0
 assert Solution.countWords(["leetcode", "win", "loops", "success"], "code") == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

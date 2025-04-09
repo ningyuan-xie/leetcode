@@ -23,13 +23,13 @@ class Solution:
         return min_row * min_col
 
 
-# Unit Test: Input: m = 3, n = 3, ops = [[2, 2], [3, 3]], Output: 4
+# Input: m = 3, n = 3, ops = [[2, 2], [3, 3]], Output: 4
 assert Solution.maxCount(3, 3, [[2, 2], [3, 3]]) == 4
 
-# Unit Test: Input: m = 3, n = 3, ops = [[2, 2], [3, 3], [3, 3]], Output: 4
+# Input: m = 3, n = 3, ops = [[2, 2], [3, 3], [3, 3]], Output: 4
 assert Solution.maxCount(3, 3, [[2, 2], [3, 3], [3, 3]]) == 4
 
-# Unit Test: Input: m = 3, n = 3, ops = [], Output: 9
+# Input: m = 3, n = 3, ops = [], Output: 9
 assert Solution.maxCount(3, 3, []) == 9
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

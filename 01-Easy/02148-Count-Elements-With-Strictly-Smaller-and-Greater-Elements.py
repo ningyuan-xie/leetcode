@@ -27,4 +27,4 @@ assert Solution.countElements([11, 7, 2, 15]) == 2
 # Unit Test: nums = [-3,3,3,90], Output: 2
 assert Solution.countElements([-3, 3, 3, 90]) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

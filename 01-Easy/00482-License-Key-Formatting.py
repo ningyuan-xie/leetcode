@@ -29,12 +29,12 @@ class Solution:
         return license_key
 
 
-# Unit Test: Input: s = "5F3Z-2e-9-w", k = 4, Output: "5F3Z-2E9W"
+# Input: s = "5F3Z-2e-9-w", k = 4, Output: "5F3Z-2E9W"
 # First Group: "", Remaining Groups: "5F3Z", "2E9W"
 assert Solution.licenseKeyFormatting("5F3Z-2e-9-w", 4) == "5F3Z-2E9W"
 
-# Unit Test: Input: s = "2-5g-3-J", k = 2, Output: "2-5G-3J"
+# Input: s = "2-5g-3-J", k = 2, Output: "2-5G-3J"
 # First Group: "2", Remaining Groups: "5G", "3J"
 assert Solution.licenseKeyFormatting("2-5g-3-J", 2) == "2-5G-3J"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -18,4 +18,4 @@ assert Solution.smallestEvenMultiple(5) == 10
 # Unit Test: n = 6, Output: 6
 assert Solution.smallestEvenMultiple(6) == 6
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -27,13 +27,13 @@ class Solution:
         return t2
 
 
-# Unit Test: Input = 4, Output = 4
+# Input = 4, Output = 4
 assert Solution.tribonacci(4) == 4
 
-# Unit Test: Input = 25, Output = 1389537
+# Input = 25, Output = 1389537
 assert Solution.tribonacci(25) == 1389537
 
-# Unit Test: Input = 37, Output = 2082876103
+# Input = 37, Output = 2082876103
 assert Solution.tribonacci(37) == 2082876103
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -36,16 +36,16 @@ class Solution:
         return -1 if second_min[0] == float('inf') else second_min[0]
 
 
-# Unit Test: Input: root = [2, 2, 5, None, None, 5, 7], Output: 5
+# Input: root = [2, 2, 5, None, None, 5, 7], Output: 5
 root_test = TreeNode.build_binary_tree([2, 2, 5, None, None, 5, 7])
 assert Solution.findSecondMinimumValue(root_test) == 5
 
-# Unit Test: Input: root = [2, 2, 2], Output: -1
+# Input: root = [2, 2, 2], Output: -1
 root_test = TreeNode.build_binary_tree([2, 2, 2])
 assert Solution.findSecondMinimumValue(root_test) == -1
 
-# Unit Test: Input: root = [2, 2, 2, 2, 2, 2, 2], Output: -1
+# Input: root = [2, 2, 2, 2, 2, 2, 2], Output: -1
 root_test = TreeNode.build_binary_tree([2, 2, 2, 2, 2, 2, 2])
 assert Solution.findSecondMinimumValue(root_test) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

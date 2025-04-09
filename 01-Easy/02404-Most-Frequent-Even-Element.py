@@ -35,4 +35,4 @@ assert Solution.mostFrequentEven([4, 4, 4, 9, 2, 4]) == 4
 # Unit Test: nums = [29,47,21,41,13,37,25,7], Output: -1
 assert Solution.mostFrequentEven([29, 47, 21, 41, 13, 37, 25, 7]) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

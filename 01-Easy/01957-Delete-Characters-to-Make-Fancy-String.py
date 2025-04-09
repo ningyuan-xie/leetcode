@@ -36,4 +36,4 @@ assert Solution.makeFancyString("aaabaaaa") == "aabaa"
 # Unit Test: s = "aab", Output: "aab"
 assert Solution.makeFancyString("aab") == "aab"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

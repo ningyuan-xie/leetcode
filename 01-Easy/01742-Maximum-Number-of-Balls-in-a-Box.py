@@ -35,4 +35,4 @@ assert Solution.count_balls(5, 15) == 2
 # Unit Test: low_limit = 19, high_limit = 28, Output: 2
 assert Solution.count_balls(19, 28) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

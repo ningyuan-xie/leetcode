@@ -47,4 +47,4 @@ assert (Solution.shiftGrid([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1)
 assert (Solution.shiftGrid([[3, 8, 1, 9], [19, 7, 2, 5], [4, 6, 11, 10], [12, 0, 21, 13]], 4)
         == [[12, 0, 21, 13], [3, 8, 1, 9], [19, 7, 2, 5], [4, 6, 11, 10]])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

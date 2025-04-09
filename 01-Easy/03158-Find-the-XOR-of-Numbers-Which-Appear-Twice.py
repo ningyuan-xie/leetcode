@@ -39,4 +39,4 @@ assert Solution.findXOR([1, 2, 3]) == 0
 # Unit Test: nums = [1,2,2,1], Output = 3
 assert Solution.findXOR([1, 2, 2, 1]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

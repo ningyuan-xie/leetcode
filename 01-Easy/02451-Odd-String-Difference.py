@@ -44,4 +44,4 @@ assert Solution.oddString(["adc", "wzy", "abc"]) == "abc"
 # Unit Test: words = ["aaa", "bob", "ccc", "ddd"], Output: "bob"
 assert Solution.oddString(["aaa", "bob", "ccc", "ddd"]) == "bob"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

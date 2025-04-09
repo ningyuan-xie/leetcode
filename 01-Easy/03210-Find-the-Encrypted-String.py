@@ -28,4 +28,4 @@ assert Solution.getEncryptedString("dart", 3) == "tdar"
 # Unit Test: s = "aaa", k = 1, Output = "aaa"
 assert Solution.getEncryptedString("aaa", 1) == "aaa"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -42,4 +42,4 @@ assert Solution.minMaxDifference(11891) == 99009
 # Unit Test: num = 90, Output: 99
 assert Solution.minMaxDifference(90) == 99
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

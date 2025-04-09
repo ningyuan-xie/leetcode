@@ -43,4 +43,4 @@ assert Solution.modifyString("ubv?w") == "ubvaw"
 # Unit Test: s = "j?qg??b", Output: "jaqgacb"
 assert Solution.modifyString("j?qg??b") == "jaqgacb"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

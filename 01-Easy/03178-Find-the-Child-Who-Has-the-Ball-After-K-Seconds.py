@@ -39,4 +39,4 @@ assert Solution.numberOfChild(5, 6) == 2
 # Unit Test: n = 4, k = 2, Output = 2
 assert Solution.numberOfChild(4, 2) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

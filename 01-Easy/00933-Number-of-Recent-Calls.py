@@ -36,7 +36,7 @@ class RecentCounter:
         return len(self.requests)
 
 
-# Unit Test: Input: ["RecentCounter","ping","ping","ping","ping"], [[],[1],[100],[3001],[3002]]
+# Input: ["RecentCounter","ping","ping","ping","ping"], [[],[1],[100],[3001],[3002]]
 # Output: [null,1,2,3,3]
 recent_counter = RecentCounter()
 assert recent_counter.ping(1) == 1
@@ -44,4 +44,4 @@ assert recent_counter.ping(100) == 2
 assert recent_counter.ping(3001) == 3
 assert recent_counter.ping(3002) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

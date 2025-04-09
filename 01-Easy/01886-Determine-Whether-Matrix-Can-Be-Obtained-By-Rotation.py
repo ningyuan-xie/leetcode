@@ -41,4 +41,4 @@ assert Solution.findRotation([[0, 1], [1, 0]], [[1, 0], [0, 1]]) is True
 # Unit Test: mat = [[0, 1], [1, 1]], target = [[1, 0], [0, 1]], Output: False
 assert Solution.findRotation([[0, 1], [1, 1]], [[1, 0], [0, 1]]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

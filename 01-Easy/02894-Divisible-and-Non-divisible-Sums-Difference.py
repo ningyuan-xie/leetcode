@@ -32,4 +32,4 @@ assert Solution.differenceOfSums(5, 6) == 15
 # Unit Test: n = 5, m = 1, Output: -15
 assert Solution.differenceOfSums(5, 1) == -15
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

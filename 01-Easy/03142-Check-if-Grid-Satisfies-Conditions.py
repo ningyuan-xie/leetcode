@@ -44,4 +44,4 @@ assert Solution.checkGrid([[1, 1, 1], [0, 0, 0]]) is False
 # Unit Test: grid = [[1],[2],[3]], Output = False
 assert Solution.checkGrid([[1], [2], [3]]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -36,23 +36,23 @@ class Solution:
         return False
 
 
-# Unit Test: Input: deck = [1,2,3,4,4,3,2,1], Output: True
+# Input: deck = [1,2,3,4,4,3,2,1], Output: True
 # Explanation: Possible partition [1,1], [2,2], [3,3], [4,4]
 assert Solution.hasGroupsSizeX([1, 2, 3, 4, 4, 3, 2, 1])
 
-# Unit Test: Input: deck = [1,1,1,2,2,2,3,3], Output: False
+# Input: deck = [1,1,1,2,2,2,3,3], Output: False
 # Explanation: No possible partition
 assert not Solution.hasGroupsSizeX([1, 1, 1, 2, 2, 2, 3, 3])
 
-# Unit Test: Input: deck = [1], Output: False
+# Input: deck = [1], Output: False
 assert not Solution.hasGroupsSizeX([1])
 
-# Unit Test: Input: desk = [1, 1, 2, 2, 2, 2], Output: True
+# Input: desk = [1, 1, 2, 2, 2, 2], Output: True
 # Explanation: Possible partition [1,1], [2,2], [2,2]
 assert Solution.hasGroupsSizeX([1, 1, 2, 2, 2, 2])
 
-# Unit Test: Input: desk = [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3], Output: True
+# Input: desk = [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3], Output: True
 # Explanation: Possible partition [1,1,1], [2,2,2], [3,3,3], [3,3,3]
 assert Solution.hasGroupsSizeX([1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

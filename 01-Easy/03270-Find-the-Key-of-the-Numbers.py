@@ -38,4 +38,4 @@ assert Solution.generateKey(987, 879, 798) == 777
 # Unit Test: num1 = 1, num2 = 2, num3 = 3, Output: 1
 assert Solution.generateKey(1, 2, 3) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

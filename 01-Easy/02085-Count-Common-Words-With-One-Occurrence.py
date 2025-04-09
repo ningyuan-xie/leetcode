@@ -35,4 +35,4 @@ assert Solution.countCommonWords(["leetcode", "is", "amazing", "as", "is"],
 # Unit Test: words1 =["b","bb","bbb"], words2 = ["a","aa","aaa"], Output: 0
 assert Solution.countCommonWords(["b", "bb", "bbb"], ["a", "aa", "aaa"]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

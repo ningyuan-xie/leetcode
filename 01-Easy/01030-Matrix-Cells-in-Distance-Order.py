@@ -49,4 +49,4 @@ assert (Solution.allCellsDistOrder(2, 2, 0, 1)
 assert (Solution.allCellsDistOrder(2, 3, 1, 2)
         == [[1, 2], [0, 2], [1, 1], [0, 1], [1, 0], [0, 0]])
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

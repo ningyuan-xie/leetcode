@@ -24,13 +24,13 @@ class Solution:
         return True
 
 
-# Unit Test: Input: s = "egg", t = "add", Output: True
+# Input: s = "egg", t = "add", Output: True
 assert Solution.isIsomorphic("egg", "add") is True
 
-# Unit Test: Input: s = "foo", t = "bar", Output: False
+# Input: s = "foo", t = "bar", Output: False
 assert Solution.isIsomorphic("foo", "bar") is False
 
-# Unit Test: Input: s = "paper", t = "title", Output: True
+# Input: s = "paper", t = "title", Output: True
 assert Solution.isIsomorphic("paper", "title") is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

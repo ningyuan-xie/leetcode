@@ -29,13 +29,13 @@ class Solution:
         return longest_palindrome
 
 
-# Unit Test: Input: s = "abccccdd", Output: 7
+# Input: s = "abccccdd", Output: 7
 assert Solution.longestPalindrome("abccccdd") == 7
 
-# Unit Test: Input: s = "a", Output: 1
+# Input: s = "a", Output: 1
 assert Solution.longestPalindrome("a") == 1
 
-# Unit Test: Input: s = "bb", Output: 2
+# Input: s = "bb", Output: 2
 assert Solution.longestPalindrome("bb") == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

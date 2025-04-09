@@ -33,24 +33,24 @@ class Solution:
         return min(left_depth, right_depth) + 1
 
 
-# Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 2
+# Input: root = [3,9,20,null,null,15,7], Output: 2
 root_test = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
 assert Solution.minDepth(root_test) == 2
 
-# Unit Test: Input: root = [2,null,3,null,4,null,5,null,6], Output: 5
+# Input: root = [2,null,3,null,4,null,5,null,6], Output: 5
 root_test = TreeNode.build_binary_tree([2, None, 3, None, 4, None, 5, None, 6])
 assert Solution.minDepth(root_test) == 5
 
-# Unit Test: Input: root = [1,2], Output: 2
+# Input: root = [1,2], Output: 2
 root_test = TreeNode.build_binary_tree([1, 2])
 assert Solution.minDepth(root_test) == 2
 
-# Unit Test: Input: root = [1,null,2], Output: 2
+# Input: root = [1,null,2], Output: 2
 root_test = TreeNode.build_binary_tree([1, None, 2])
 assert Solution.minDepth(root_test) == 2
 
-# Unit Test: Input: root = [], Output: 0
+# Input: root = [], Output: 0
 root_test = TreeNode.build_binary_tree([])
 assert Solution.minDepth(root_test) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -35,4 +35,4 @@ assert Solution.sumZero(3) == [0, 1, -1]
 # Unit Test: n = 1, Output: [0]
 assert Solution.sumZero(1) == [0]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

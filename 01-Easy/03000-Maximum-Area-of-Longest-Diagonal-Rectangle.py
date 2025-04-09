@@ -42,4 +42,4 @@ assert Solution.areaOfMaxDiagonal([[9, 3], [8, 6]]) == 48
 # Unit Test: dimensions = [[3,4],[4,3]], Output = 12
 assert Solution.areaOfMaxDiagonal([[3, 4], [4, 3]]) == 12
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

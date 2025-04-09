@@ -35,4 +35,4 @@ assert Solution.second_largest_digit("abc1111") == -1
 # Unit Test: s = "abc", Output: -1
 assert Solution.second_largest_digit("abc") == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

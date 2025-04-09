@@ -51,4 +51,4 @@ assert Solution.removeOuterParentheses("(()())(())(()(()))") == "()()()()(())"
 # Explanation: primitive decomposition: "()" + "()" -> ""
 assert Solution.removeOuterParentheses("()()") == ""
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

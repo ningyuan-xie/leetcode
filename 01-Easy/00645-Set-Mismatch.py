@@ -39,13 +39,13 @@ class Solution:
         return [duplicate, missing]
 
 
-# Unit Test: Input: nums = [1, 2, 2, 4], Output: [2, 3]
+# Input: nums = [1, 2, 2, 4], Output: [2, 3]
 assert Solution.findErrorNums([1, 2, 2, 4]) == [2, 3]
 
-# Unit Test: Input: nums = [1, 1], Output: [1, 2]
+# Input: nums = [1, 1], Output: [1, 2]
 assert Solution.findErrorNums([1, 1]) == [1, 2]
 
-# Unit Test: Input: nums = [2, 2], Output: [2, 1]
+# Input: nums = [2, 2], Output: [2, 1]
 assert Solution.findErrorNums([2, 2]) == [2, 1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

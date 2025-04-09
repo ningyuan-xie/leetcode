@@ -33,16 +33,16 @@ class Solution:
         return output
 
 
-# Unit Test: Input = 3, Output = ["1", "2", "Fizz"]
+# Input = 3, Output = ["1", "2", "Fizz"]
 assert Solution.fizzBuzz(3) == ["1", "2", "Fizz"]
 
-# Unit Test: Input = 5, Output = ["1", "2", "Fizz", "4", "Buzz"]
+# Input = 5, Output = ["1", "2", "Fizz", "4", "Buzz"]
 assert Solution.fizzBuzz(5) == ["1", "2", "Fizz", "4", "Buzz"]
 
-# Unit Test: Input = 15,
+# Input = 15,
 # Output = ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
 assert Solution.fizzBuzz(15) == ["1", "2", "Fizz", "4", "Buzz",
                                  "Fizz", "7", "8", "Fizz", "Buzz",
                                  "11", "Fizz", "13", "14", "FizzBuzz"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

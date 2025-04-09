@@ -48,4 +48,4 @@ assert Solution.rowAndMaximumOnes([[0, 0], [1, 1], [0, 0]]) == [1, 2]
 # Unit Test: mat = [[0],[0]], Output: [0, 0]
 assert Solution.rowAndMaximumOnes([[0], [0]]) == [0, 0]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

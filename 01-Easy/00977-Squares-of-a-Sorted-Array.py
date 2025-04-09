@@ -36,10 +36,10 @@ class Solution:
         return result
 
 
-# Unit Test: Input: [-4,-1,0,3,10], Output: [0,1,9,16,100]
+# Input: [-4,-1,0,3,10], Output: [0,1,9,16,100]
 assert Solution.sortedSquares([-4, -1, 0, 3, 10]) == [0, 1, 9, 16, 100]
 
-# Unit Test: Input: [-7,-3,2,3,11], Output: [4,9,9,49,121]
+# Input: [-7,-3,2,3,11], Output: [4,9,9,49,121]
 assert Solution.sortedSquares([-7, -3, 2, 3, 11]) == [4, 9, 9, 49, 121]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

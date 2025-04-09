@@ -33,4 +33,4 @@ assert Solution.makeEqual(["abc", "aabc", "bc"]) is True
 # Unit Test: words = ["ab", "a"], Output: False
 assert Solution.makeEqual(["ab", "a"]) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

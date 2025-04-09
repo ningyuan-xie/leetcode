@@ -25,4 +25,4 @@ assert Solution.countSeniors(["7868190130M7522", "5303914400F9211", "9273338290F
 # Unit Test: details = ["1313579440F2036","2921522980M5644"], Output: 0
 assert Solution.countSeniors(["1313579440F2036", "2921522980M5644"]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

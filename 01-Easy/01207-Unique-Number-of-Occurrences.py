@@ -31,5 +31,5 @@ assert Solution.uniqueOccurrences([1, 2]) is False
 # Unit Test: arr = [-3, 0, 1, -3, 1, 1, 1, -3, 10, 0], Output: True
 assert Solution.uniqueOccurrences([-3, 0, 1, -3, 1, 1, 1, -3, 10, 0]) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")
 

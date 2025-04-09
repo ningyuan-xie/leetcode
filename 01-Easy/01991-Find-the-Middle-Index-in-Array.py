@@ -44,4 +44,4 @@ assert Solution.findMiddleIndex([1, -1, 4]) == 2
 # Unit Test: nums = [2, 5], Output: -1
 assert Solution.findMiddleIndex([2, 5]) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

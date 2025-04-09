@@ -35,4 +35,4 @@ assert Solution.reverseBits(43261596) == 964176192
 # 4294967293 (00000011111111111111111111111101) -> 3221225471 (10111111111111111111111111111111)
 assert Solution.reverseBits(4294967293) == 3221225471
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

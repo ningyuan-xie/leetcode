@@ -51,4 +51,4 @@ assert Solution.reformatDate("26th May 1960") == "1960-05-26"
 # Unit Test: date = "1st Jan 2000", Output: "2000-01-01"
 assert Solution.reformatDate("1st Jan 2000") == "2000-01-01"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

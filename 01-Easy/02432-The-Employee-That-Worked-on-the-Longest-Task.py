@@ -42,4 +42,4 @@ assert Solution.hardestWorker([[1, 1], [3, 7], [2, 12], [7, 17]]) == 3
 # Unit Test: n = 2, logs = [[0,10],[1,20]], Output: 0
 assert Solution.hardestWorker([[0, 10], [1, 20]]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

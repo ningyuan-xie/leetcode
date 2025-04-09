@@ -42,4 +42,4 @@ assert Solution.minTimeToType("bza") == 7
 # Unit Test: word = "z", Output: 2
 assert Solution.minTimeToType("z") == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

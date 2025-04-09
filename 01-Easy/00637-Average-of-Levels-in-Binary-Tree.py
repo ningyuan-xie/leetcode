@@ -42,16 +42,16 @@ class Solution:
         return average_values
 
 
-# Unit Test: Input: root = [3, 9, 20, None, None, 15, 7], Output: [3.0, 14.5, 11.0]
+# Input: root = [3, 9, 20, None, None, 15, 7], Output: [3.0, 14.5, 11.0]
 root_test = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
 assert Solution.averageOfLevels(root_test) == [3.0, 14.5, 11.0]
 
-# Unit Test: Input: root = [3, 9, 20, 15, 7], Output: [3.0, 14.5, 11.0]
+# Input: root = [3, 9, 20, 15, 7], Output: [3.0, 14.5, 11.0]
 root_test = TreeNode.build_binary_tree([3, 9, 20, 15, 7])
 assert Solution.averageOfLevels(root_test) == [3.0, 14.5, 11.0]
 
-# Unit Test: Input: root = [3, 9, 20, 15, 7, 10, 5], Output: [3.0, 14.5, 9.25]
+# Input: root = [3, 9, 20, 15, 7, 10, 5], Output: [3.0, 14.5, 9.25]
 root_test = TreeNode.build_binary_tree([3, 9, 20, 15, 7, 10, 5])
 assert Solution.averageOfLevels(root_test) == [3.0, 14.5, 9.25]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

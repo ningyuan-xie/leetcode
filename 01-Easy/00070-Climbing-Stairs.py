@@ -20,13 +20,13 @@ class Solution:
         return two
 
 
-# Unit Test: Input: n = 2, Output: 2
+# Input: n = 2, Output: 2
 assert Solution.climbStairs(2) == 2
 
-# Unit Test: Input: n = 3, Output: 3
+# Input: n = 3, Output: 3
 assert Solution.climbStairs(3) == 3
 
-# Unit Test: Input: n = 4, Output: 5
+# Input: n = 4, Output: 5
 assert Solution.climbStairs(4) == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

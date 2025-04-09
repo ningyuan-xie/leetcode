@@ -38,4 +38,4 @@ assert Solution.minLength("ABFCACDB") == 2
 # Unit Test: s = "ACBBD", Output: 5
 assert Solution.minLength("ACBBD") == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

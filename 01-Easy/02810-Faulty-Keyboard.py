@@ -26,4 +26,4 @@ assert Solution.finalString("string") == "rtsng"
 # Unit Test: s = "poiinter", Output: "ponter"
 assert Solution.finalString("poiinter") == "ponter"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

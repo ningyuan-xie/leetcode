@@ -37,4 +37,4 @@ assert Solution.maxLengthBetweenEqualCharacters("abca") == 2
 # Unit Test: s = "cbzxy", Output: -1
 assert Solution.maxLengthBetweenEqualCharacters("cbzxy") == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

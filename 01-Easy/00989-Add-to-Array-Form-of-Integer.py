@@ -36,13 +36,13 @@ class Solution:
         return num
 
 
-# Unit Test: Input: A = [1,2,0,0], K = 34, Output: [1,2,3,4]
+# Input: A = [1,2,0,0], K = 34, Output: [1,2,3,4]
 assert Solution.addToArrayForm([1, 2, 0, 0], 34) == [1, 2, 3, 4]
 
-# Unit Test: Input: A = [2,7,4], K = 181, Output: [4,5,5]
+# Input: A = [2,7,4], K = 181, Output: [4,5,5]
 assert Solution.addToArrayForm([2, 7, 4], 181) == [4, 5, 5]
 
-# Unit Test: Input: A = [2,1,5], K = 806, Output: [1,0,2,1]
+# Input: A = [2,1,5], K = 806, Output: [1,0,2,1]
 assert Solution.addToArrayForm([2, 1, 5], 806) == [1, 0, 2, 1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -27,16 +27,16 @@ class Solution:
         return n % 3 == 0 and Solution.isPowerOfThreeRecursion(n // 3)
 
 
-# Unit Test: Input: n = 27, Output: True
+# Input: n = 27, Output: True
 assert Solution.isPowerOfThree(27) is True
 
-# Unit Test: Input: n = 0, Output: False
+# Input: n = 0, Output: False
 assert Solution.isPowerOfThree(0) is False
 
-# Unit Test: Input: n = 9, Output: True
+# Input: n = 9, Output: True
 assert Solution.isPowerOfThreeRecursion(9) is True
 
-# Unit Test: Input: n = 45, Output: False
+# Input: n = 45, Output: False
 assert Solution.isPowerOfThreeRecursion(45) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

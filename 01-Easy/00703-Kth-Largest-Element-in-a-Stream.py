@@ -37,7 +37,7 @@ class KthLargest:
         return self.min_heap[0]
 
 
-# Unit Test: Input: k = 3, nums = [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]],
+# Input: k = 3, nums = [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]],
 # Output: [null, 4, 5, 5, 8, 8]
 kth_largest = KthLargest(3, [4, 5, 8, 2])  # [4, 5, 8, 2] -> [2, 4, 8, 5] -> [4, 5, 8]
 assert kth_largest.add(3) == 4  # [4, 5, 8, 3] -> [3, 4, 8, 5] -> [4, 5, 8], returns 4
@@ -47,11 +47,11 @@ assert kth_largest.add(9) == 8  # [5, 10, 8, 9] -> [5, 9, 8, 10] -> [8, 9, 10], 
 assert kth_largest.add(4) == 8  # [8, 9, 10, 4] -> [4, 8, 10, 9] -> [8, 9, 10], returns 8
 # Since k = 3, the heap always contain the 3 largest elements: [8, 9, 10]
 
-# Unit Test: Input: k = 1, nums = [[1, []], [-3], [-2], [-4]], Output: [-3, -2, -2]
+# Input: k = 1, nums = [[1, []], [-3], [-2], [-4]], Output: [-3, -2, -2]
 kth_largest = KthLargest(1, [])  # []
 assert kth_largest.add(-3) == -3  # [-3], returns -3
 assert kth_largest.add(-2) == -2  # [-3, -2] -> [-2], returns -2
 assert kth_largest.add(-4) == -2  # [-2, -4] -> [-4, -2] -> [-2], returns -2
 # Since k = 1, the heap always contain the 1 largest element: [-2]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

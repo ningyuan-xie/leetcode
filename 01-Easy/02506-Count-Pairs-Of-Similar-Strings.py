@@ -39,4 +39,4 @@ assert Solution.similarPairs(["aabb", "ab", "ba"]) == 3
 # Unit Test: words = ["nba", "cba", "dba"], Output: 0
 assert Solution.similarPairs(["nba", "cba", "dba"]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

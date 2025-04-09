@@ -30,19 +30,19 @@ class Solution:
         return root_same and left_same and right_same
 
 
-# Unit Test: Input: p = [1,2,3], q = [1,2,3], Output: True
+# Input: p = [1,2,3], q = [1,2,3], Output: True
 root_test_1 = TreeNode.build_binary_tree([1, 2, 3])
 root_test_2 = TreeNode.build_binary_tree([1, 2, 3])
 assert Solution.isSameTree(root_test_1, root_test_2) is True
 
-# Unit Test: Input: p = [1,2], q = [1,null,2], Output: False
+# Input: p = [1,2], q = [1,null,2], Output: False
 root_test_1 = TreeNode.build_binary_tree([1, 2])
 root_test_2 = TreeNode.build_binary_tree([1, None, 2])
 assert Solution.isSameTree(root_test_1, root_test_2) is False
 
-# Unit Test: Input: p = [1,2,1], q = [1,1,2], Output: False
+# Input: p = [1,2,1], q = [1,1,2], Output: False
 root_test_1 = TreeNode.build_binary_tree([1, 2, 1])
 root_test_2 = TreeNode.build_binary_tree([1, 1, 2])
 assert Solution.isSameTree(root_test_1, root_test_2) is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

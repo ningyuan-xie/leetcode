@@ -30,4 +30,4 @@ assert Solution.maxProduct([3, 7]) == 12
 # Unit Test: nums = [10, 2, 5, 2], Output: 36
 assert Solution.maxProduct([10, 2, 5, 2]) == 36
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

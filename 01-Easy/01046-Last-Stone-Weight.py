@@ -46,4 +46,4 @@ assert Solution.lastStoneWeight([1, 3]) == 2
 # Unit Test: stones = [2, 2], Output: 0
 assert Solution.lastStoneWeight([2, 2]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

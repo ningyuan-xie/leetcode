@@ -22,14 +22,14 @@ class Solution:
         return slow
 
 
-# Unit Test: Input: head = [1,2,3,4,5], Output: [3,4,5]
+# Input: head = [1,2,3,4,5], Output: [3,4,5]
 head_test = ListNode.build_linked_list([1, 2, 3, 4, 5])
 head_expected = ListNode.build_linked_list([3, 4, 5])
 assert Solution.middleNode(head_test) == head_expected
 
-# Unit Test: Input: head = [1,2,3,4,5,6], Output: [4,5,6]
+# Input: head = [1,2,3,4,5,6], Output: [4,5,6]
 head_test = ListNode.build_linked_list([1, 2, 3, 4, 5, 6])
 head_expected = ListNode.build_linked_list([4, 5, 6])
 assert Solution.middleNode(head_test) == head_expected
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -28,19 +28,19 @@ class Solution:
         return n ^ mask
 
 
-# Unit Test: Input: n = 5 (101), Output: 2 (010)
+# Input: n = 5 (101), Output: 2 (010)
 assert Solution.bitwiseComplement(5) == 2
 
-# Unit Test: Input: n = 1, Output: 0
+# Input: n = 1, Output: 0
 assert Solution.bitwiseComplement(1) == 0
 
-# Unit Test: Input: n = 7, Output: 0
+# Input: n = 7, Output: 0
 assert Solution.bitwiseComplement(7) == 0
 
-# Unit Test: Input: n = 10, Output: 5
+# Input: n = 10, Output: 5
 assert Solution.bitwiseComplement(10) == 5
 
-# Unit Test: Input: n = 0, Output: 1
+# Input: n = 0, Output: 1
 assert Solution.bitwiseComplement(0) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

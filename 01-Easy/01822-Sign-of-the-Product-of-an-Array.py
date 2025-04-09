@@ -35,4 +35,4 @@ assert Solution.arraySign([1, 2, 3, -4]) == -1
 # Unit Test: nums = [-1, 1, -1, 1, -1], Output: -1
 assert Solution.arraySign([-1, 1, -1, 1, -1]) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

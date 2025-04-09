@@ -39,4 +39,4 @@ assert Solution.countCompleteDayPairs([12, 12, 30, 24, 24]) == 2
 # Unit Test: hours = [72,48,24,3], Output = 3
 assert Solution.countCompleteDayPairs([72, 48, 24, 3]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

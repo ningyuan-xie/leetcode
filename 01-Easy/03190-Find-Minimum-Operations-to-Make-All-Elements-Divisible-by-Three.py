@@ -22,4 +22,4 @@ assert Solution.minimumOperations([1, 2, 3, 4]) == 3
 # Unit Test: nums = [3,6,9], Output = 0
 assert Solution.minimumOperations([3, 6, 9]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

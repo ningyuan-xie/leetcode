@@ -43,10 +43,10 @@ class Solution:
         return True
 
 
-# Unit Test: Input: left = 1, right = 22, Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
+# Input: left = 1, right = 22, Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
 assert Solution.selfDividingNumbers(1, 22) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
 
-# Unit Test: Input: left = 47, right = 85, Output: [48, 55, 66, 77]
+# Input: left = 47, right = 85, Output: [48, 55, 66, 77]
 assert Solution.selfDividingNumbers(47, 85) == [48, 55, 66, 77]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

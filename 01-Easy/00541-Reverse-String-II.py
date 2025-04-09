@@ -30,10 +30,10 @@ class Solution:
         return "".join(s)
 
 
-# Unit Test: Input: s = "abcdefg", k = 2, Output: "bacdfeg"
+# Input: s = "abcdefg", k = 2, Output: "bacdfeg"
 assert Solution.reverseStr("abcdefg", 2) == "bacdfeg"
 
-# Unit Test: Input: s = "abcd", k = 2, Output: "bacd"
+# Input: s = "abcd", k = 2, Output: "bacd"
 assert Solution.reverseStr("abcd", 2) == "bacd"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

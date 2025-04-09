@@ -41,10 +41,10 @@ class Solution:
         return ''.join(s)
 
 
-# Unit Test: Input: s = "Let's take LeetCode contest", Output: "s'teL ekat edoCteeL tsetnoc"
+# Input: s = "Let's take LeetCode contest", Output: "s'teL ekat edoCteeL tsetnoc"
 assert Solution.reverseWords("Let's take LeetCode contest") == "s'teL ekat edoCteeL tsetnoc"
 
-# Unit Test: Input: s = "God Ding", Output: "doG gniD"
+# Input: s = "God Ding", Output: "doG gniD"
 assert Solution.reverseWordsTwoPointers("God Ding") == "doG gniD"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

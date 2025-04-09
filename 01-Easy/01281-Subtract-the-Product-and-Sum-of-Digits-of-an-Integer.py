@@ -28,4 +28,4 @@ assert Solution.subtractProductAndSum(234) == 15
 # Unit Test: n = 4421, Output: 21
 assert Solution.subtractProductAndSum(4421) == 21
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

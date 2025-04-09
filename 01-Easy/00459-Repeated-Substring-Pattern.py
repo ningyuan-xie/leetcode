@@ -23,19 +23,19 @@ class Solution:
         return False
 
 
-# Unit Test: Input: s = "abab", Output: True
+# Input: s = "abab", Output: True
 assert Solution.repeatedSubstringPattern("abab") is True
 
-# Unit Test: Input: s = "aba", Output: False
+# Input: s = "aba", Output: False
 assert Solution.repeatedSubstringPattern("aba") is False
 
-# Unit Test: Input: s = "abcabcabcabc", Output: True
+# Input: s = "abcabcabcabc", Output: True
 assert Solution.repeatedSubstringPattern("abcabcabcabc") is True
 
-# Unit Test: Input: s = "abaababaab", Output: True
+# Input: s = "abaababaab", Output: True
 assert Solution.repeatedSubstringPattern("abaababaab") is True
 
-# Unit Test: Input: s = "ababba", Output: False
+# Input: s = "ababba", Output: False
 assert Solution.repeatedSubstringPattern("ababba") is False
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

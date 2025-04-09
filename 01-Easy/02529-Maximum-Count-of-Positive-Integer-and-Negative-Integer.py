@@ -35,4 +35,4 @@ assert Solution.maxCount([-3, -2, -1, 0, 0, 1, 2]) == 3
 # Unit Test: nums = [5,20,66,1314], Output: 4
 assert Solution.maxCount([5, 20, 66, 1314]) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -33,4 +33,4 @@ assert Solution.replaceElements([400]) == [-1]
 # Unit Test: arr = [1, 2, 3, 4, 5], Output: [5, 5, 5, 5, -1]
 assert Solution.replaceElements([1, 2, 3, 4, 5]) == [5, 5, 5, 5, -1]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

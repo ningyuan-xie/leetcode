@@ -60,4 +60,4 @@ assert Solution.numberOfLines(
      10, 10, 10, 10, 10, 10],
     "bbbcccdddaaa") == [2, 4]  # 98 + 4 pixels wide
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

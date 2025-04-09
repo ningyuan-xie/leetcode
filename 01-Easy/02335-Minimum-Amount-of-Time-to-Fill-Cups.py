@@ -32,4 +32,4 @@ assert Solution.fillCups([1, 4, 2]) == 4
 # Unit Test: amount = [5,4,4], Output: 7
 assert Solution.fillCups([5, 4, 4]) == 7
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -33,13 +33,13 @@ class Solution:
         return "".join(s)
 
 
-# Unit Test: Input: s = "ab-cd", Output: "dc-ba"
+# Input: s = "ab-cd", Output: "dc-ba"
 assert Solution.reverseOnlyLetters("ab-cd") == "dc-ba"
 
-# Unit Test: Input: s = "a-bC-dEf-ghIj", Output: "j-Ih-gfE-dCba"
+# Input: s = "a-bC-dEf-ghIj", Output: "j-Ih-gfE-dCba"
 assert Solution.reverseOnlyLetters("a-bC-dEf-ghIj") == "j-Ih-gfE-dCba"
 
-# Unit Test: Input: s = "Test1ng-Leet=code-Q!", Output: "Qedo1ct-eeLg=ntse-T!"
+# Input: s = "Test1ng-Leet=code-Q!", Output: "Qedo1ct-eeLg=ntse-T!"
 assert Solution.reverseOnlyLetters("Test1ng-Leet=code-Q!") == "Qedo1ct-eeLg=ntse-T!"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

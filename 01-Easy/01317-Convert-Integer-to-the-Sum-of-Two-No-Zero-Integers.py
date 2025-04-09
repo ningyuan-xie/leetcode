@@ -32,4 +32,4 @@ assert Solution.getNoZeroIntegers(11) == [2, 9]
 # Unit Test: n = 10000, Output: [1, 9999]
 assert Solution.getNoZeroIntegers(10000) == [1, 9999]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -32,4 +32,4 @@ assert Solution.minChanges(21, 21) == 0
 # Unit Test: n = 14, k = 13, Output: -1
 assert Solution.minChanges(14, 13) == -1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -54,4 +54,4 @@ assert Solution.distinctIntegersRecursion(3) == 2
 # Unit Test: n = 1, Output: 1
 assert Solution.distinctIntegers(1) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

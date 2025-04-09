@@ -35,4 +35,4 @@ assert Solution.convertTime("02:30", "04:35") == 3
 # Unit Test: current = "11:00", correct = "11:01", Output: 1
 assert Solution.convertTime("11:00", "11:01") == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

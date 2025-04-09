@@ -52,4 +52,4 @@ assert Solution.heightChecker([5, 1, 2, 3, 4]) == 5
 # Explanation: The expected order is [1, 2, 3, 4, 5], so all indices match.
 assert Solution.heightChecker([1, 2, 3, 4, 5]) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

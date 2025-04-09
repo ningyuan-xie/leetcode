@@ -53,4 +53,4 @@ arr_test = [0, 0, 0, 0, 0, 0, 0]
 Solution.duplicateZeros(arr_test)
 assert arr_test == [0, 0, 0, 0, 0, 0, 0]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

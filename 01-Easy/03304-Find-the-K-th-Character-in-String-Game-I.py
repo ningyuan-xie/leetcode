@@ -40,4 +40,4 @@ assert Solution.kthCharacter(5) == 'b'
 # Unit Test: k = 10, Output: 'c'
 assert Solution.kthCharacter(10) == 'c'
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -63,4 +63,4 @@ assert Solution.validPath(3, [[0, 1], [1, 2], [2, 0]], 0, 2) is True
 # Unit Test: n = 1, edges = [], source = 0, destination = 0, Output: True
 # assert Solution.validPath(1, [], 0, 0) is True
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

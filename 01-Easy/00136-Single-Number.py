@@ -25,13 +25,13 @@ class Solution:
         return result
 
 
-# Unit Test: Input: nums = [2,2,1], Output: 1
+# Input: nums = [2,2,1], Output: 1
 assert Solution.singleNumber([2, 2, 1]) == 1
 
-# Unit Test: Input: nums = [4,1,2,1,2], Output: 4
+# Input: nums = [4,1,2,1,2], Output: 4
 assert Solution.singleNumber([4, 1, 2, 1, 2]) == 4
 
-# Unit Test: Input: nums = [1], Output: 1
+# Input: nums = [1], Output: 1
 assert Solution.singleNumber([1]) == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -28,4 +28,4 @@ assert Solution.buyChoco([1, 2, 2], 3) == 0
 # Unit Test: prices = [3,2,3], money = 3, Output: 3
 assert Solution.buyChoco([3, 2, 3], 3) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

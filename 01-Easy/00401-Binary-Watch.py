@@ -30,15 +30,15 @@ class Solution:
         return times
 
 
-# Unit Test: Input: turnedOn = 1,
+# Input: turnedOn = 1,
 # Output: ["0:01","0:02","0:04","0:08","0:16","0:32","1:00","2:00","4:00","8:00"]
 assert Solution.readBinaryWatch(1) == ["0:01", "0:02", "0:04", "0:08", "0:16",
                                        "0:32", "1:00", "2:00", "4:00", "8:00"]
 
-# Unit Test: Input: turnedOn = 9, Output: []
+# Input: turnedOn = 9, Output: []
 assert Solution.readBinaryWatch(9) == []
 
-# Unit Test: Input: turnedOn = 0, Output: ["0:00"]
+# Input: turnedOn = 0, Output: ["0:00"]
 assert Solution.readBinaryWatch(0) == ["0:00"]
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

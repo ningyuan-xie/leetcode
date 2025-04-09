@@ -22,16 +22,16 @@ class Solution:
         return num ^ mask
 
 
-# Unit Test: Input: num = 5 (101), Output: 2 (010)
+# Input: num = 5 (101), Output: 2 (010)
 assert Solution.findComplement(5) == 2
 
-# Unit Test: Input: num = 1, Output: 0
+# Input: num = 1, Output: 0
 assert Solution.findComplement(1) == 0
 
-# Unit Test: Input: num = 7, Output: 0
+# Input: num = 7, Output: 0
 assert Solution.findComplement(7) == 0
 
-# Unit Test: Input: num = 10, Output: 5
+# Input: num = 10, Output: 5
 assert Solution.findComplement(10) == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

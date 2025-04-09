@@ -38,4 +38,4 @@ assert Solution.num_different_integers("leet1234code234") == 2
 # Unit Test: word = "a1b01c001", Output: 1
 assert Solution.num_different_integers("a1b01c001") == 1
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

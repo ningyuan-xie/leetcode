@@ -32,4 +32,4 @@ assert Solution.sum_of_unique([1, 1, 1, 1, 1]) == 0
 # Unit Test: nums = [1, 2, 3, 4, 5], Output: 15
 assert Solution.sum_of_unique([1, 2, 3, 4, 5]) == 15
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

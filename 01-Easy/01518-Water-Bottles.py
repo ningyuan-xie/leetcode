@@ -39,4 +39,4 @@ assert Solution.numWaterBottles(5, 5) == 6
 # Unit Test: numBottles = 2, numExchange = 3, Output: 2
 assert Solution.numWaterBottles(2, 3) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

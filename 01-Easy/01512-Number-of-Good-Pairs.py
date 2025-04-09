@@ -43,4 +43,4 @@ assert Solution.numIdenticalPairs([1, 2, 3]) == 0
 # Unit Test: nums = [1, 1, 1, 1, 1], Output: 10
 assert Solution.numIdenticalPairs([1, 1, 1, 1, 1]) == 10
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

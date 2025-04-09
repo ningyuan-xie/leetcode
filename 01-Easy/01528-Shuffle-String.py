@@ -37,4 +37,4 @@ assert Solution.restoreString("aiohn", [3, 1, 4, 2, 0]) == "nihao"
 # Unit Test: s = "aaiougrt", indices = [4, 0, 2, 6, 7, 3, 1, 5], Output: "arigatou"
 assert Solution.restoreString("aaiougrt", [4, 0, 2, 6, 7, 3, 1, 5]) == "arigatou"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

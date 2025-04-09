@@ -39,16 +39,16 @@ class Solution:
         return total_area
 
 
-# Unit Test: Input: grid = [[2]], Output: 10
+# Input: grid = [[2]], Output: 10
 assert Solution.surfaceArea([[2]]) == 10
 
-# Unit Test: Input: grid = [[1,2],[3,4]], Output: 34
+# Input: grid = [[1,2],[3,4]], Output: 34
 assert Solution.surfaceArea([[1, 2], [3, 4]]) == 34
 
-# Unit Test: Input: grid = [[1,0],[0,2]], Output: 16
+# Input: grid = [[1,0],[0,2]], Output: 16
 assert Solution.surfaceArea([[1, 0], [0, 2]]) == 16
 
-# Unit Test: Input: grid = [[1,1,1],[1,0,1],[1,1,1]], Output: 32
+# Input: grid = [[1,1,1],[1,0,1],[1,1,1]], Output: 32
 assert Solution.surfaceArea([[1, 1, 1], [1, 0, 1], [1, 1, 1]]) == 32
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

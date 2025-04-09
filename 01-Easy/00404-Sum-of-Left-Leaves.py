@@ -38,16 +38,16 @@ class Solution:
         return sum_left_leaves
 
 
-# Unit Test: Input: root = [3,9,20,null,null,15,7], Output: 24
+# Input: root = [3,9,20,null,null,15,7], Output: 24
 root_test = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
 assert Solution.sumOfLeftLeaves(root_test) == 24
 
-# Unit Test: Input: root = [1], Output: 0
+# Input: root = [1], Output: 0
 root_test = TreeNode.build_binary_tree([1])
 assert Solution.sumOfLeftLeaves(root_test) == 0
 
-# Unit Test: Input: root = [], Output: 0
+# Input: root = [], Output: 0
 root_test = TreeNode.build_binary_tree([])
 assert Solution.sumOfLeftLeaves(root_test) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

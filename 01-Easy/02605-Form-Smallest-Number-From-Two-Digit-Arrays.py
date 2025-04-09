@@ -32,4 +32,4 @@ assert Solution.minNumber([4, 1, 3], [5, 7]) == 15
 # Unit Test: nums1 = [3, 5, 2, 6], nums2 = [3, 1, 7], Output: 3
 assert Solution.minNumber([3, 5, 2, 6], [3, 1, 7]) == 3
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -24,13 +24,13 @@ class Solution:
         return len(nums)
 
 
-# Unit Test: Input: nums = [1, 3, 5, 6], target = 5, Output: 2
+# Input: nums = [1, 3, 5, 6], target = 5, Output: 2
 assert Solution.searchInsert([1, 3, 5, 6], 5) == 2
 
-# Unit Test: Input: nums = [1, 3, 5, 6], target = 2, Output: 1
+# Input: nums = [1, 3, 5, 6], target = 2, Output: 1
 assert Solution.searchInsert([1, 3, 5, 6], 2) == 1
 
-# Unit Test: Input: nums = [1, 3, 5, 6], target = 7, Output: 4
+# Input: nums = [1, 3, 5, 6], target = 7, Output: 4
 assert Solution.searchInsert([1, 3, 5, 6], 7) == 4
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

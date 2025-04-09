@@ -34,4 +34,4 @@ assert Solution.max_repeating("ababc", "ac") == 0
 # Unit Test: sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba", word = "aaaba", Output: 5
 assert Solution.max_repeating("aaabaaaabaaabaaaabaaaabaaaabaaaaba", "aaaba") == 5
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

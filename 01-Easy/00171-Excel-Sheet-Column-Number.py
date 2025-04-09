@@ -24,16 +24,16 @@ class Solution:
         return column_number
 
 
-# Unit Test: Input: columnTitle = "A", Output: 1
+# Input: columnTitle = "A", Output: 1
 assert Solution.titleToNumber("A") == 1
 
-# Unit Test: Input: columnTitle = "AB", Output: 28
+# Input: columnTitle = "AB", Output: 28
 assert Solution.titleToNumber("AB") == 28
 
-# Unit Test: Input: columnTitle = "ZY", Output: 701
+# Input: columnTitle = "ZY", Output: 701
 assert Solution.titleToNumber("ZY") == 701
 
-# Unit Test: Input: columnTitle = "FXSHRXW", Output: 2147483647
+# Input: columnTitle = "FXSHRXW", Output: 2147483647
 assert Solution.titleToNumber("FXSHRXW") == 2147483647
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

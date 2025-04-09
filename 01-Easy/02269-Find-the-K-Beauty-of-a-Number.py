@@ -42,4 +42,4 @@ assert Solution.divisorSubstrings(240, 2) == 2
 # Unit Test: num = 430043, k = 2, Output: 2
 assert Solution.divisorSubstrings(430043, 2) == 2
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

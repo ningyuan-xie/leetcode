@@ -23,13 +23,13 @@ class Solution:
         return max(0, diff - 2 * k)
 
 
-# Unit Test: Input: nums = [1], k = 0, Output: 0
+# Input: nums = [1], k = 0, Output: 0
 assert Solution.smallestRangeI([1], 0) == 0
 
-# Unit Test: Input: nums = [0, 10], k = 2, Output: 6
+# Input: nums = [0, 10], k = 2, Output: 6
 assert Solution.smallestRangeI([0, 10], 2) == 6
 
-# Unit Test: Input: nums = [1, 3, 6], k = 3, Output: 0
+# Input: nums = [1, 3, 6], k = 3, Output: 0
 assert Solution.smallestRangeI([1, 3, 6], 3) == 0
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

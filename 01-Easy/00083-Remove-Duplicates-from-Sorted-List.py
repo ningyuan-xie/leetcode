@@ -29,9 +29,9 @@ class Solution:
         return head
 
 
-# Unit Test: Input: head = [1,1,2], Output: [1,2]
+# Input: head = [1,1,2], Output: [1,2]
 head_test = ListNode.build_linked_list([1, 1, 2])
 head_expected = ListNode.build_linked_list([1, 2])
 assert Solution.deleteDuplicates(head_test) == head_expected
 
-print("All unit tests are passed")
+print("All unit tests are passed.")

@@ -39,4 +39,4 @@ assert Solution.digitSum("11111222223", 3) == "135"
 # Unit Test: s = "00000000", k = 3, Output: "000"
 assert Solution.digitSum("00000000", 3) == "000"
 
-print("All unit tests are passed")
+print("All unit tests are passed.")
