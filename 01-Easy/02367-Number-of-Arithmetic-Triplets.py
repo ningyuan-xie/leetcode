@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def arithmeticTriplets(nums: List[int], diff: int) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)."""
         # Create a set to store the elements in nums
         num_set = set(nums)
         count = 0

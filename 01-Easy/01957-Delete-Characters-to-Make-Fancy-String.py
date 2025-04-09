@@ -9,7 +9,7 @@ Return the final string after the deletion. It can be shown that the answer will
 class Solution:
     @staticmethod
     def makeFancyString(s: str) -> str:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the result string as the first character
         result, count = s[0], 1
 

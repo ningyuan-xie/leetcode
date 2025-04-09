@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findClosestNumber(nums: List[int]) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         closest_number = float("inf")
 
         # Update if closer to zero or if there's a tie and num > closest

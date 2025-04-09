@@ -13,7 +13,7 @@ given constraints."""
 class Solution:
     @staticmethod
     def modifyString(s: str) -> str:
-        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(n)."""
         # Convert the string into a list of characters
         s = list(s)  # E.g. "?zs" -> ['?', 'z', 's']
 

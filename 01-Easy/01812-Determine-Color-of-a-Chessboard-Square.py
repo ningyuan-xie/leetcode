@@ -12,7 +12,7 @@ letter first, and the number second."""
 class Solution:
     @staticmethod
     def square_is_white(coordinates: str) -> bool:
-        """Optimal Solution: Check Coordinates. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Check Coordinates. Time Complexity: O(1), Space Complexity: O(1)."""
         # Convert column to a numeric value ('a' -> 1, 'b' -> 2, ..., 'h' -> 8)
         col = ord(coordinates[0]) - ord('a') + 1
         # Convert row to an integer

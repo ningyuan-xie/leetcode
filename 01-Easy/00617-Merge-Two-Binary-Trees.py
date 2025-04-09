@@ -14,7 +14,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def mergeTrees(root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)."""
         # Base case: If both trees are empty
         if not root1 and not root2:
             return None

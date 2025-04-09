@@ -15,7 +15,7 @@ every 5 liters consumed."""
 class Solution:
     @staticmethod
     def distanceTraveled(mainTank: int, additionalTank: int) -> int:
-        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the distance and the fuel in the main tank
         distance = 0
 

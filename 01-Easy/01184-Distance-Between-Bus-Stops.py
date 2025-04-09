@@ -14,7 +14,7 @@ class Solution:
     @staticmethod
     def distanceBetweenBusStops(distance: List[int], start: int, destination: int) -> int:
         """Optimal Solution: Calculate the total distance and the clockwise distance.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Calculate the total distance
         total_distance = sum(distance)  # 1 + 2 + 3 + 4 = 10
 

@@ -9,7 +9,7 @@ An alphanumeric string is a string consisting of lowercase English letters and d
 class Solution:
     @staticmethod
     def second_largest_digit(s: str) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize a set to store unique digits
         digits = set()
 

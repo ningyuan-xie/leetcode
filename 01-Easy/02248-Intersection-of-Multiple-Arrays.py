@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def intersection(nums: List[List[int]]) -> List[int]:
-        """Optimal Solution: Set Intersection. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set Intersection. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the result with the first set of numbers
         result = set(nums[0])  # {1, 2, 3, 4, 5}
 

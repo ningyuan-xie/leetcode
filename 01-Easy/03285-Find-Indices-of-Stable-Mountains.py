@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def stableMountains(height: List[int], threshold: int) -> List[int]:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize an empty list to store the indices of stable mountains
         stable_mountains = []
 

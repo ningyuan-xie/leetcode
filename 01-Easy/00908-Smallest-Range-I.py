@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def smallestRangeI(nums: List[int], k: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)."""
         # Calculate the difference between the maximum and minimum values of nums
         diff = max(nums) - min(nums)
 

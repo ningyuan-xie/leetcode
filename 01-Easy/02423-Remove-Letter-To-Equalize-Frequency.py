@@ -14,7 +14,7 @@ Note:
 class Solution:
     @staticmethod
     def equalFrequency(word: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Count the frequency of each character in the word
         freq = {}
         for ch in word:

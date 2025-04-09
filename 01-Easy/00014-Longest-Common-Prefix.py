@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def longestCommonPrefix(strs: List[str]) -> str:
         """Optimal Solution: Horizontal Scanning.
-           Time Complexity: O(n * m), Space Complexity: O(1)"""
+           Time Complexity: O(n * m), Space Complexity: O(1)."""
         # Initialize prefix
         prefix = ""
         # If the list is empty, return an empty string

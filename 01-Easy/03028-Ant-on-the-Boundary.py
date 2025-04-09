@@ -19,7 +19,7 @@ from typing import List
 class Solution:
     @staticmethod
     def returnToBoundaryCount(nums: List[int]) -> int:
-        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the number of times the ant returns to the boundary
         n = len(nums)
         boundary_count = 0

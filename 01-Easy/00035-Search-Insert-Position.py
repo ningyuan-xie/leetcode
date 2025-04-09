@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def searchInsert(nums: List[int], target: int) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Loop through the index of the numbers in the list
         for i in range(len(nums)):
             # If the target is found, return the index

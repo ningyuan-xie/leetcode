@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def applyOperations(nums: List[int]) -> List[int]:
-        """Optimal Solution: Array. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Array. Time Complexity: O(n), Space Complexity: O(n)."""
         n = len(nums)
         for i in range(n - 1):
             if nums[i] == nums[i + 1]:

@@ -20,7 +20,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minOperations(logs: List[str]) -> int:
-        """Optimal Solution: Depth Tracking. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Depth Tracking. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the depth of the current folder
         depth = 0
 

@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findSubarrays(nums: List[int]) -> bool:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)."""
         seen = set()
         # Iterate through the array and check if the sum of two consecutive elements is already seen
         for i in range(len(nums) - 1):

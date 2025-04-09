@@ -18,7 +18,7 @@ from typing import List
 class Solution:
     @staticmethod
     def calculateTax(brackets: List[List[int]], income: int) -> float:
-        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)."""
         tax_paid = 0.0
         previous_limit = 0  # Start from the lower limit of the first bracket
 

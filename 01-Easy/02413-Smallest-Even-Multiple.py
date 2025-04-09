@@ -8,7 +8,7 @@ both 2 and n."""
 class Solution:
     @staticmethod
     def smallestEvenMultiple(n: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         return n if n % 2 == 0 else n * 2
 
 

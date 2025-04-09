@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def min_operations(s: str) -> int:
-        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(1)."""
         pattern0_operations = 0  # Mismatches for "010101..."
         pattern1_operations = 0  # Mismatches for "101010..."
 

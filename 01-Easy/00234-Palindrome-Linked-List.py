@@ -12,7 +12,7 @@ class Solution:
     @staticmethod
     def isPalindrome(head: Optional[ListNode]) -> bool:
         """Optimal Solution: Reverse the second half of the linked list and compare
-           the first half and the second half. Time Complexity: O(n), Space Complexity: O(1)"""
+           the first half and the second half. Time Complexity: O(n), Space Complexity: O(1)."""
         # Base case: if head is None or head.next is None, return True
         if not head or not head.next:
             return True

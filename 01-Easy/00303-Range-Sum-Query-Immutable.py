@@ -12,10 +12,10 @@ from typing import List
 
 
 class NumArray:
-    """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(n)"""
+    """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(n)."""
 
     def __init__(self, nums: List[int]):
-        """Constructor: Time Complexity: O(n), Space Complexity: O(n)"""
+        """Constructor: Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the prefix sum array to store the sum of the elements of nums
         self.prefix_sum, current_sum = [], 0
         for num in nums:
@@ -25,7 +25,7 @@ class NumArray:
         # prefix_sum = [-2, -2, 1, -4, -2, -3]
 
     def sumRange(self, left: int, right: int) -> int:
-        """Time Complexity: O(1), Space Complexity: O(1)"""
+        """Time Complexity: O(1), Space Complexity: O(1)."""
         # [left -1] because final result is left inclusive
         left_sum = self.prefix_sum[left - 1] if left > 0 else 0
         right_sum = self.prefix_sum[right]

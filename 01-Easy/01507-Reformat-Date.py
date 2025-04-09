@@ -15,7 +15,7 @@ Convert the date string to the format YYYY-MM-DD, where:
 class Solution:
     @staticmethod
     def reformatDate(date: str) -> str:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Define a mapping for month names to their respective numeric values
         months = {
             "Jan": "01", "Feb": "02", "Mar": "03", "Apr": "04",

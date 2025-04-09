@@ -13,7 +13,7 @@ Given a string word, return the minimum number of seconds to type out the charac
 class Solution:
     @staticmethod
     def minTimeToType(word: str) -> int:
-        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1)."""
         # Start at 'a'
         current_pos = 'a'
         total_time = 0

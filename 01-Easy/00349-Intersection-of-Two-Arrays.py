@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def intersection(nums1: List[int], nums2: List[int]) -> List[int]:
-        """Optimal Solution: Two Sets. Time Complexity: O(n + m), Space Complexity: O(n + m)"""
+        """Optimal Solution: Two Sets. Time Complexity: O(n + m), Space Complexity: O(n + m)."""
         # Initialize two sets to store the unique elements of nums1 and nums2
         set1, set2 = set(nums1), set(nums2)
         # Initialize a list to store the intersection of nums1 and nums2

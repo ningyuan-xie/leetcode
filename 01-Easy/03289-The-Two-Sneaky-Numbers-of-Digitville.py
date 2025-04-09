@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def getSneakyNumbers(nums: List[int]) -> List[int]:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Create a dictionary to count the occurrences of each number
         count = {}
         

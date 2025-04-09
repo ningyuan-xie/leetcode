@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def canBeEqual(target: List[int], arr: List[int]) -> bool:
-        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         # Sort the target and arr arrays
         target.sort()
         arr.sort()

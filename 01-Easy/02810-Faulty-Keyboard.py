@@ -10,7 +10,7 @@ Return the final string that will be present on your laptop screen."""
 class Solution:
     @staticmethod
     def finalString(s: str) -> str:
-        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)."""
         stack = []
         for char in s:
             if char == 'i':

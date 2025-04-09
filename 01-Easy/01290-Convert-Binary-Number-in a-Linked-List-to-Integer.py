@@ -13,7 +13,7 @@ from package.data_structures import ListNode
 class Solution:
     @staticmethod
     def getDecimalValue(head: ListNode) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the result
         result = 0
 

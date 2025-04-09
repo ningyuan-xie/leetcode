@@ -9,7 +9,7 @@ An integer m is a divisor of n if there exists an integer k such that n = k * m.
 class Solution:
     @staticmethod
     def isThree(n: int) -> bool:
-        """Optimal Solution: Math. Time Complexity: O(sqrt(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(sqrt(n)), Space Complexity: O(1)."""
         # Count the number of divisors
         count = 0
         for i in range(1, int(n ** 0.5) + 1):

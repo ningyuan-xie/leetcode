@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxProduct(nums: List[int]) -> int:
-        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         # Sort the nums array
         nums.sort()
 

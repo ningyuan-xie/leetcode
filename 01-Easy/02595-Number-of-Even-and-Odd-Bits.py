@@ -11,7 +11,7 @@ Return the array [even, odd]."""
 class Solution:
     @staticmethod
     def evenOddBit(n: int) -> list[int]:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         # Initialize counters for even and odd bits
         even_count = 0
         odd_count = 0

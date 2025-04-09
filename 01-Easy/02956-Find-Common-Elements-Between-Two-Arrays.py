@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findIntersectionValues(nums1: List[int], nums2: List[int]) -> List[int]:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         answer1 = sum(1 for num in nums1 if num in nums2)
         answer2 = sum(1 for num in nums2 if num in nums1)
 

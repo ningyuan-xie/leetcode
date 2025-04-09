@@ -12,7 +12,7 @@ class Solution:
     @staticmethod
     def doubleReversal(num: int) -> int:
         """Optimal Solution: Reversing the Number.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
 
         def reverse(n: int) -> int:
             """Helper function to reverse the number:

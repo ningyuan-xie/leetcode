@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def leftRigthDifference(nums: List[int]) -> List[int]:
-        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(n)."""
         n = len(nums)
         left_sum = [0] * n
         right_sum = [0] * n

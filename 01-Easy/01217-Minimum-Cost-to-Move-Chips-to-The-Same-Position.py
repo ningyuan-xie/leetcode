@@ -15,7 +15,7 @@ class Solution:
     @staticmethod
     def minCostToMoveChips(position: List[int]) -> int:
         """Optimal Solution: Counting Odd and Even Positions.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the number of chips at odd and even positions
         odd_count, even_count = 0, 0
 

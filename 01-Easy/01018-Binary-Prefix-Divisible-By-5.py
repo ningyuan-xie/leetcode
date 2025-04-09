@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def prefixesDivBy5(nums: List[int]) -> List[bool]:
-        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the prefix sum and the result
         prefix_sum, result = 0, []
 

@@ -8,7 +8,7 @@ while still preserving whitespace and initial word order."""
 class Solution:
     @staticmethod
     def reverseWords(s: str) -> str:
-        """Optimal Solution: Split, Reverse, and Join. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Split, Reverse, and Join. Time Complexity: O(n), Space Complexity: O(n)."""
         # Split the string into words
         words = s.split()
         # Reverse each word in the list

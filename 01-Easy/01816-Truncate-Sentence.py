@@ -12,7 +12,7 @@ first k words. Return s after truncating it."""
 class Solution:
     @staticmethod
     def truncateSentence(s: str, k: int) -> str:
-        """Optimal Solution: Split and Join. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Split and Join. Time Complexity: O(n), Space Complexity: O(n)."""
         # Split the sentence into words
         words = s.split()
 

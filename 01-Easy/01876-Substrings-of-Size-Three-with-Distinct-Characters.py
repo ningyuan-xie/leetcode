@@ -10,7 +10,7 @@ A substring is a contiguous sequence of characters in a string."""
 class Solution:
     @staticmethod
     def countGoodSubstrings(s: str) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         count = 0
 
         for i in range(len(s) - 2):

@@ -14,7 +14,7 @@ import bisect
 class Solution:
     @staticmethod
     def answerQueries(nums: List[int], queries: List[int]) -> List[int]:
-        """Optimal Solution: Prefix Sum. Time Complexity: O(nlog(n)), Space Complexity: O(n)"""
+        """Optimal Solution: Prefix Sum. Time Complexity: O(nlog(n)), Space Complexity: O(n)."""
         # Sort the nums array to consider the smallest elements first to maximize the subsequence length
         nums.sort()  # E.g. [4,5,2,1] -> [1,2,4,5]
 

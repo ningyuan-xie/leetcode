@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def moveZeroes(nums: List[int]) -> None:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the left and right pointers
         left, right = 0, 0
         # Move the right pointer to the end of the array

@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def averageValue(nums: List[int]) -> int:
-        """Optimal Solution: Array. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Array. Time Complexity: O(n), Space Complexity: O(1)."""
         current_sum = 0
         count = 0
         for num in nums:

@@ -9,7 +9,7 @@ The digit sum of a positive integer is the sum of all its digits."""
 class Solution:
     @staticmethod
     def countEven(num: int) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)."""
 
         def digitSum(n: int) -> int:
             """Helper Function: Calculate the sum of digits of a number"""

@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def restoreString(s: str, indices: List[int]) -> str:
-        """Optimal Solution: List Manipulation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: List Manipulation. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the list to store the shuffled characters
         shuffled = [''] * len(s)
 

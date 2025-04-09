@@ -10,7 +10,7 @@ Given a string word, return the number of vowel substrings in word."""
 class Solution:
     @staticmethod
     def countVowelSubstrings(word: str) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n^2), Space Complexity: O(1)."""
 
         def is_vowel(c):
             """Helper function to check if a character is a vowel"""

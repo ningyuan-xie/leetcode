@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def search(nums: List[int], target: int) -> int:
-        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         # Initialize the two pointers
         left, right = 0, len(nums) - 1
 

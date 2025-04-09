@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minStartValue(nums: List[int]) -> int:
-        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1)."""
         min_sum, current_sum = 0, 0
 
         # Greedy Approach: Find the min sum during the iteration to get the min positive value

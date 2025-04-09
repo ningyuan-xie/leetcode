@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def lastVisitedIntegers(nums: List[int]) -> List[int]:
-        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(n)."""
         seen, ans = [], []
 
         k = 0

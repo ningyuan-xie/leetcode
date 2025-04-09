@@ -22,7 +22,7 @@ class Solution:
     @staticmethod
     def numUniqueEmails(emails: List[str]) -> int:
         """Optimal Solution: Hash Set and String Manipulation.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize a hash set to store the unique email addresses
         unique_emails = set()
 

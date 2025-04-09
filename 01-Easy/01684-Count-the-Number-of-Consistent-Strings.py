@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def count_consistent_strings(allowed: str, words: List[str]) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the result counter
         result = 0
 

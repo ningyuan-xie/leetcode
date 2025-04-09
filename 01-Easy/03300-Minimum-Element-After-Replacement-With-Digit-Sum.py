@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minElement(nums: List[int]) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the minimum element to the first element in nums
         min_element = nums[0]
         

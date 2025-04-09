@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def winningPlayerCount(n: int, pick: List[List[int]]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize a dictionary to count the number of balls picked by each player
         player_count = {i: {} for i in range(n)}
 

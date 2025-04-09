@@ -19,7 +19,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minMaxGame(nums: List[int]) -> int:
-        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(n)."""
         # Iterate through the array
         while len(nums) > 1:
             new_nums = []

@@ -14,7 +14,7 @@ class Solution:
     @staticmethod
     def maxWidthOfVerticalArea(points: List[List[int]]) -> int:
         """Optimal Solution: Sort and Find Maximum Difference.
-           Time Complexity: O(nlog(n)), Space Complexity: O(n)"""
+           Time Complexity: O(nlog(n)), Space Complexity: O(n)."""
         # Sort the points by x-coordinate (y-coordinates are not useful)
         points.sort()  # [[8, 7], [9, 9], [7, 4], [9, 7]] -> [[7, 4], [8, 7], [9, 7], [9, 9]]
 

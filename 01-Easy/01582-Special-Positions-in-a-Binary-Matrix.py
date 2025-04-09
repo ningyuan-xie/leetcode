@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numSpecial(mat: List[List[int]]) -> int:
-        """Optimal Solution: Matrix Traversal. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: Matrix Traversal. Time Complexity: O(n^2), Space Complexity: O(1)."""
         # Initialize the number of special positions
         special_positions = 0
 

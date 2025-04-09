@@ -11,7 +11,7 @@ Return the reformatted string or return an empty string if it is impossible to r
 class Solution:
     @staticmethod
     def reformat(s: str) -> str:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize two lists for letters and digits
         letters = [char for char in s if char.isalpha()]
         digits = [char for char in s if char.isdigit()]

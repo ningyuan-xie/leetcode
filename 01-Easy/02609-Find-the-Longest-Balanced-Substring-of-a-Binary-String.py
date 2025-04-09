@@ -12,7 +12,7 @@ A substring is a contiguous sequence of characters within a string."""
 class Solution:
     @staticmethod
     def findTheLongestBalancedSubstring(s: str) -> int:
-        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize variables to track the count of zeroes and ones
         max_length = 0
         i = 0

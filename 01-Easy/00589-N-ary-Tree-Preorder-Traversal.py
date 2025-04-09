@@ -10,7 +10,7 @@ from package.data_structures import Node
 class Solution:
     @staticmethod
     def preorder(root: Node) -> List[int]:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)."""
         # Base Case
         if not root:
             return []

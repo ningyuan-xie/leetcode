@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minimumAverage(nums: List[int]) -> float:
-        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(1)."""
         # Sort the list of numbers
         nums.sort()
 

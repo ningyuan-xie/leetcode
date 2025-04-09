@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def countNegatives(grid: List[List[int]]) -> int:
         """Optimal Solution: Start from the bottom-left corner of the matrix.
-           Time Complexity: O(m + n), Space Complexity: O(1)"""
+           Time Complexity: O(m + n), Space Complexity: O(1)."""
         # Initialize the number of negative numbers to 0
         count = 0
 

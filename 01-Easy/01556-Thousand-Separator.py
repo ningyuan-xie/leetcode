@@ -8,7 +8,7 @@ format."""
 class Solution:
     @staticmethod
     def thousandSeparator(n: int) -> str:
-        """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         # Convert the integer to a string
         n_str = str(abs(n))  # Handle the absolute value to ignore negative sign for now
 

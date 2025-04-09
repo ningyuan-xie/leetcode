@@ -8,7 +8,7 @@ An ugly number is a positive number whose prime factors only include 2, 3, and/o
 class Solution:
     @staticmethod
     def isUgly(n: int) -> bool:
-        """Optimal Solution: Iteration. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Iteration. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         # Base case: if the number is less than or equal to 0, return False
         if n <= 0:
             return False

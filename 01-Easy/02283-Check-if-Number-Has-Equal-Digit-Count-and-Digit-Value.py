@@ -9,7 +9,7 @@ otherwise return false."""
 class Solution:
     @staticmethod
     def digitCount(num: str) -> bool:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Iterate through the string
         for index in range(len(num)):
             # Check if the digit index occurs num[index] times in num

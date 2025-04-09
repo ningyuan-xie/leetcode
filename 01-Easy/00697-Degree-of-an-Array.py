@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findShortestSubArray(nums: List[int]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the three hash tables
         freq, first, last = {}, {}, {}
 

@@ -20,7 +20,7 @@ class Solution:
     @staticmethod
     def minNumberOfHours(initialEnergy: int, initialExperience: int, energy: List[int],
                          experience: List[int]) -> int:
-        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the total training hours needed
         training_hours = 0
 

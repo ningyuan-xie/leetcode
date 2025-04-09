@@ -10,7 +10,7 @@ the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" i
 class Solution:
     @staticmethod
     def isSubsequence(s: str, t: str) -> bool:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize two pointers to traverse the strings s and t
         i, j = 0, 0
         # Traverse the strings s and t to check if s is a subsequence of t

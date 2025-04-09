@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minimumBoxes(apple: List[int], capacity: List[int]) -> int:
-        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(1)."""
         # Sort the capacity array in descending order
         capacity.sort(reverse=True)  # [3,9,5,1,9] -> [9,9,5,3,1]
 

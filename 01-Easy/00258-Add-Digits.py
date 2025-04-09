@@ -8,7 +8,7 @@ one digit, and return it."""
 class Solution:
     @staticmethod
     def addDigits(n: int) -> int:
-        """Optimal Solution: Digital Root. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Digital Root. Time Complexity: O(1), Space Complexity: O(1)."""
         # The digital root (dr) of a number is given by the formula:
         # dr(n) = 1 + ((n - 1) % 9)
         return 1 + ((n - 1) % 9) if n > 0 else 0
@@ -18,7 +18,7 @@ class Solution:
     @staticmethod
     def addDigitsRecursion(n: int) -> int:
         """Alternative Solution: Recursion.
-           Time Complexity: O(log(n)), Space Complexity: O(log(n))"""
+           Time Complexity: O(log(n)), Space Complexity: O(log(n))."""
         # Base case: if the number is less than 10, return the number
         if n < 10:
             return n

@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findRestaurant(list1: List[str], list2: List[str]) -> List[str]:
-        """Optimal Solution: Hash Table. Time Complexity: O(n + m), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n + m), Space Complexity: O(n)."""
         # Initialize a hash table to store the index sum of each common string
         common_index_sum = {}
         # Initialize the minimum index sum

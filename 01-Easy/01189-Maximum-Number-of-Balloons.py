@@ -10,7 +10,7 @@ formed."""
 class Solution:
     @staticmethod
     def maxNumberOfBalloons(text: str) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the frequency of each character in text
         freq = {c: 0 for c in "balon"}  # {b: 0, a: 0, l: 0, o: 0, n: 0}
 

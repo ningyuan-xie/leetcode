@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def frequencySort(nums: List[int]) -> List[int]:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize frequency dictionary
         count = {}
 

@@ -11,7 +11,7 @@ It can be proven that the answer is unique."""
 class Solution:
     @staticmethod
     def removeDuplicates(s: str) -> str:
-        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the stack
         stack = []
 

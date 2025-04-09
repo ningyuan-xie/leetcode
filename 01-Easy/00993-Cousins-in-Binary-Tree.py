@@ -15,7 +15,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def isCousins(root: Optional[TreeNode], x: int, y: int) -> bool:
-        """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(n)."""
         # Variables to store the depth and parent of x and y
         x_info, y_info = [-1, None], [-1, None]  # [depth, parent]
 

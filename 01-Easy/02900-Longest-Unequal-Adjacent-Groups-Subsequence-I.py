@@ -19,7 +19,7 @@ from typing import List
 class Solution:
     @staticmethod
     def getLongestSubsequence(words: List[str], groups: List[int]) -> List[str]:
-        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(n)."""
         n = len(words)
         subsequence_index = [0]  # Add the 1st index to the subsequence
 

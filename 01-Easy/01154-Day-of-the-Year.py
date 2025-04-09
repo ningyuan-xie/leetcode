@@ -8,7 +8,7 @@ return the day number of the year."""
 class Solution:
     @staticmethod
     def dayOfYear(date: str) -> int:
-        """Optimal Solution: Calculate day. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Calculate day. Time Complexity: O(1), Space Complexity: O(1)."""
         # Initialize the number of days in each month
         days_in_month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 

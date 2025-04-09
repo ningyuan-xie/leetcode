@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findMissingAndRepeatedValues(grid: List[List[int]]) -> List[int]:
-        """Optimal Solution: Counting Sort. Time Complexity: O(n^2), Space Complexity: O(n)"""
+        """Optimal Solution: Counting Sort. Time Complexity: O(n^2), Space Complexity: O(n)."""
         n = len(grid)
         N = n * n  # Maximum value in the grid
 

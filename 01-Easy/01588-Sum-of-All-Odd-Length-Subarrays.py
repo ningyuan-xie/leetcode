@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def sumOddLengthSubarrays(arr: List[int]) -> int:
-        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the sum of all odd-length subarrays
         odd_length_subarray_sum = 0
 

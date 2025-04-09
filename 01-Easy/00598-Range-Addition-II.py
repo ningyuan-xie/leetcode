@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxCount(m: int, n: int, ops: List[List[int]]) -> int:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the minimum row and column
         min_row = m
         min_col = n

@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def distinctAverages(nums: List[int]) -> int:
-        """Optimal Solution: Hash Set. Time Complexity: O(nlogn), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Set. Time Complexity: O(nlogn), Space Complexity: O(n)."""
         nums.sort()  # E.g. [4, 1, 4, 0, 3, 5] -> [0, 1, 3, 4, 4, 5]
         n = len(nums)
         distinct_averages = set()

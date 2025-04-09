@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxProductDifference(nums: List[int]) -> int:
-        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         nums.sort()  # Sort the array
         largest = nums[-1] * nums[-2]  # Product of two largest numbers
         smallest = nums[0] * nums[1]  # Product of two smallest numbers
@@ -22,7 +22,7 @@ class Solution:
 
     @staticmethod
     def maxProductDifferenceLinear(nums: List[int]) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         max1 = max2 = float('-inf')
         min1 = min2 = float('inf')
 

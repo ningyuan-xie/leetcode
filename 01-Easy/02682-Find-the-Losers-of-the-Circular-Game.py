@@ -25,7 +25,7 @@ from typing import List
 class Solution:
     @staticmethod
     def circularGameLosers(n: int, k: int) -> List[int]:
-        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the list to track the friends
         friends = list(range(1, n + 1))  # n = 5, friends = [1, 2, 3, 4, 5]
         # Initialize the set to track the friends who have received the ball

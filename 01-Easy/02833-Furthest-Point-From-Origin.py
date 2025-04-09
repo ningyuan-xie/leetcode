@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def furthestDistanceFromOrigin(moves: str) -> int:
-        """Optimal Solution: Count L and R Moves. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Count L and R Moves. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of L and R moves
         count_L, count_R = 0, 0
         count__ = moves.count('_')

@@ -16,7 +16,7 @@ Return s after all rounds have been completed."""
 class Solution:
     @staticmethod
     def digitSum(s: str, k: int) -> str:
-        """Optimal Solution: While Loop. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: While Loop. Time Complexity: O(n), Space Complexity: O(1)."""
         while len(s) > k:
             # For each round, initialize a new string to store the results
             new_s = []

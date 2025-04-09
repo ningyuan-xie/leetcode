@@ -10,7 +10,7 @@ Return the latest valid time you can get from time by replacing the hidden digit
 class Solution:
     @staticmethod
     def maximum_time(time: str) -> str:
-        """Optimal Solution: Maximize digits. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Maximize digits. Time Complexity: O(1), Space Complexity: O(1)."""
         # Convert the time string to a list of characters
         time = list(time)
 

@@ -13,7 +13,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def isSumEqual(root: Optional[TreeNode]) -> bool:
-        """Optimal Solution: Subtree Sum. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Subtree Sum. Time Complexity: O(n), Space Complexity: O(n)."""
         # Base case: If the root is None, return False
         if root is None:
             return False

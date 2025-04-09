@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maximizeSum(nums: List[int], k: int) -> int:
-        """Optimal Solution: Summation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Summation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Find the current max element in the array
         current_max = max(nums)
 

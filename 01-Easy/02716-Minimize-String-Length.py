@@ -13,7 +13,7 @@ Return an integer denoting the length of the minimized string.g"""
 class Solution:
     @staticmethod
     def minimizedStringLength(s: str) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)."""
         return len(set(s))
 
 

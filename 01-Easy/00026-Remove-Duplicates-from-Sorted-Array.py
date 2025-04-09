@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def removeDuplicates(nums: List[int]) -> int:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize unique numbers index to 0
         length_unique = 0  # pointer one
         # Loop begin from the second number

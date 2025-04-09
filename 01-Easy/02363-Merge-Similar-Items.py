@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def mergeSimilarItems(items1: List[List[int]], items2: List[List[int]]) -> List[List[int]]:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Create a hash table to store the sum of weights for each value
         value_weight = {}
         for (value, weight) in items1 + items2:

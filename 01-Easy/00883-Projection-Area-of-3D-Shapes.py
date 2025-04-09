@@ -16,7 +16,7 @@ class Solution:
     @staticmethod
     def projectionArea(grid: List[List[int]]) -> int:
         """Optimal Solution: Generator Expression & Math.
-           Time Complexity: O(n^2), Space Complexity: O(1)"""
+           Time Complexity: O(n^2), Space Complexity: O(1)."""
         # Top view is viewing from above
         top_view = sum(v > 0 for row in grid for v in row)
 
@@ -34,7 +34,7 @@ class Solution:
 
     @staticmethod
     def projectionAreaMath(grid: List[List[int]]) -> int:
-        """Alternative Solution: Math. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Alternative Solution: Math. Time Complexity: O(n^2), Space Complexity: O(1)."""
         top_view, front_view, side_view = 0, 0, 0
 
         # Traverse each cell in the grid

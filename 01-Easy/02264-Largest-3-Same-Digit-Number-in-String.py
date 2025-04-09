@@ -14,7 +14,7 @@ Note:
 class Solution:
     @staticmethod
     def largestGoodInteger(num: str) -> str:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the window size and the maximum good integer
         window_size = 3
         max_good_integer = ""

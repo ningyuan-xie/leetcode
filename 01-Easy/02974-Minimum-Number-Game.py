@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numberGame(nums: List[int]) -> List[int]:
-        """Optimal Solution: Simulation. Time Complexity: O(nlog(n)), Space Complexity: O(n)"""
+        """Optimal Solution: Simulation. Time Complexity: O(nlog(n)), Space Complexity: O(n)."""
         nums.sort()  # [5,4,2,3] -> [2,3,4,5]
         arr, alice, bob = [], [], []
 

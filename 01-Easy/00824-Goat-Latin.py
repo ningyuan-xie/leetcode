@@ -17,7 +17,7 @@ and so on. Return the final sentence representing the conversion from sentence t
 class Solution:
     @staticmethod
     def toGoatLatin(sentence: str) -> str:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the vowels set
         vowels = set("aeiouAEIOU")
         # Split the sentence into a list of words

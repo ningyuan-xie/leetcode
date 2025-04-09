@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findOcurrences(text: str, first: str, second: str) -> List[str]:
-        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(n)."""
         words = text.split()
         n, result = len(words), []
 

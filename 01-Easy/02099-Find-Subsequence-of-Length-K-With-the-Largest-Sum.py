@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxSubsequenceSum(nums: List[int], k: int) -> List[int]:
-        """Optimal Solution: Sorting by Value & Index. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting by Value & Index. Time Complexity: O(n), Space Complexity: O(1)."""
         # Get the largest `k` elements with their indices
         # E.g. nums = [2, 1, 3, 3], k = 2 -> [(3, 2), (3, 3)]
         largest_k = sorted([(num, i)

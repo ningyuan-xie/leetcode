@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def sortArrayByParity(nums: List[int]) -> List[int]:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the two pointers
         left, right = 0, len(nums) - 1
 

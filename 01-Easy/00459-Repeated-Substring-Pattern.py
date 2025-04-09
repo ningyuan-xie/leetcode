@@ -8,7 +8,7 @@ and appending multiple copies of the substring together."""
 class Solution:
     @staticmethod
     def repeatedSubstringPattern(s: str) -> bool:
-        """Sub-Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)"""
+        """Sub-Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)."""
         # Substring's length ranges from 1 to len(s) // 2 + 1
         for i in range(1, len(s) // 2 + 1):  # O(n/2). E.g. s = "abab", i = 1, 2
             # If the length of the substring divides the length of the string

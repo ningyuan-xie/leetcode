@@ -8,7 +8,7 @@ equal letter rounded down to the nearest whole percent."""
 class Solution:
     @staticmethod
     def percentageLetter(s: str, letter: str) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of the specific letter
         count_letter = 0
 

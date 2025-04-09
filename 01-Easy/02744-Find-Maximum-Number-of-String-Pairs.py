@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maximumNumberOfStringPairs(words: List[str]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the count and the hash map
         count = 0
         word_map = {}

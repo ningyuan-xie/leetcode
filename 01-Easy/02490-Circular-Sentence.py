@@ -18,7 +18,7 @@ Given a string sentence, return true if it is circular. Otherwise, return false.
 class Solution:
     @staticmethod
     def isCircularSentence(sentence: str) -> bool:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Split the sentence into words
         words = sentence.split()  # E.g. ["leetcode", "exercises", "sound", "delightful"]
 

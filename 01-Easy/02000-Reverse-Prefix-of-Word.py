@@ -12,7 +12,7 @@ Return the resulting string."""
 class Solution:
     @staticmethod
     def reversePrefix(word: str, ch: str) -> str:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)."""
         # Find the first occurrence of the target character
         index = word.find(ch)
 

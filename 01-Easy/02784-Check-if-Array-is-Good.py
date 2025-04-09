@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isGood(nums: List[int]) -> bool:
-        """Optimal Solution: Frequency Count. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Frequency Count. Time Complexity: O(n), Space Complexity: O(1)."""
         max_num = max(nums)
         count = [0] * (max_num + 1)
 

@@ -19,7 +19,7 @@ class Solution:
     @staticmethod
     def fairCandySwap(aliceSizes: List[int], bobSizes: List[int]) -> List[int]:
         """Optimal Solution: Hash Set Lookup and Target Difference Calculation.
-           Time Complexity: O(n+m), Space Complexity: O(n)"""
+           Time Complexity: O(n+m), Space Complexity: O(n)."""
         # Calculate the total number of candies for Alice and Bob
         total_alice, total_bob = sum(aliceSizes), sum(bobSizes)
 

@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countSeniors(details: List[str]) -> int:
-        """Optimal Solution: String Parsing. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Parsing. Time Complexity: O(n), Space Complexity: O(1)."""
         return sum(int(detail[11:13]) > 60 for detail in details)
 
 

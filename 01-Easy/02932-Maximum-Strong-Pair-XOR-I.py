@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maximumStrongPairXor(nums: List[int]) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)."""
         max_xor = 0
 
         for i in range(len(nums)):

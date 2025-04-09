@@ -10,7 +10,7 @@ returned in base 10."""
 class Solution:
     @staticmethod
     def sumBase(n: int, k: int) -> int:
-        """Optimal Solution: Base Conversion. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Base Conversion. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         # Initialize the sum of digits in base k
         digit_sum = 0
 

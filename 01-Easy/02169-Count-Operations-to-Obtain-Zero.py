@@ -12,7 +12,7 @@ Return the number of operations required to make either num1 = 0 or num2 = 0."""
 class Solution:
     @staticmethod
     def countOperations(num1: int, num2: int) -> int:
-        """Optimal Solution: While Loop. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: While Loop. Time Complexity: O(1), Space Complexity: O(1)."""
         count = 0
         while num1 > 0 and num2 > 0:
             if num1 >= num2:

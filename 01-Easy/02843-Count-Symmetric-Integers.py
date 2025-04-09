@@ -10,7 +10,7 @@ Return the number of symmetric integers in the range [low, high]."""
 class Solution:
     @staticmethod
     def countSymmetricIntegers(low: int, high: int) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of symmetric integers
         count = 0
 

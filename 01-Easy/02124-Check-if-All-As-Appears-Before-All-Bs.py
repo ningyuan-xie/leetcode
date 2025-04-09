@@ -8,7 +8,7 @@ Description: Given a string s consisting of only the characters 'a' and 'b', ret
 class Solution:
     @staticmethod
     def allAsBeforeBs(s: str) -> bool:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(s)
 
         for i in range(n - 1):

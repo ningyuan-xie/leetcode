@@ -19,7 +19,7 @@ class Solution:
     @staticmethod
     def cellsInRange(s: str) -> List[str]:
         """Optimal Solution: chr() and ord() functions.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Parse the range string
         start_col, start_row, end_col, end_row = s[0], s[1], s[3], s[4]
 

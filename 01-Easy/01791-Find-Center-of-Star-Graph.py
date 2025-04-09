@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findCenter(edges: List[List[int]]) -> int:
-        """Optimal Solution: Find Common Node. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Find Common Node. Time Complexity: O(1), Space Complexity: O(1)."""
         # The center node of the star graph will be the only node that appears in first two edges
         return edges[0][0] if edges[0][0] in edges[1] else edges[0][1]
 

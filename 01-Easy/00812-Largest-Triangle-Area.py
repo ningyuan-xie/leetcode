@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def largestTriangleArea(points: List[List[int]]) -> float:
-        """Optimal Solution: Shoelace Formula. Time Complexity: O(n^3), Space Complexity: O(1)"""
+        """Optimal Solution: Shoelace Formula. Time Complexity: O(n^3), Space Complexity: O(1)."""
         # Initialize the maximum area
         max_area = 0
 

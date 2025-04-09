@@ -17,7 +17,7 @@ class Solution:
     @staticmethod
     def countPrefixSuffixPairs(words: List[str]) -> int:
         """Optimal Solution: Prefix and Suffix.
-           Time Complexity: O(n^2), Space Complexity: O(1)"""
+           Time Complexity: O(n^2), Space Complexity: O(1)."""
         # Initialize the count of prefix and suffix pairs
         count = 0
 

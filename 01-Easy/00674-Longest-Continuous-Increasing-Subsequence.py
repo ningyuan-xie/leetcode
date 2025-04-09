@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findLengthOfLCIS(nums: List[int]) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         # Base case: If the input array is empty
         if not nums:
             return 0

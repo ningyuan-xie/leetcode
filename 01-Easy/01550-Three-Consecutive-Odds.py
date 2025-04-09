@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def threeConsecutiveOdds(arr: List[int]) -> bool:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of consecutive odd numbers
         count_of_consecutive_odds = 0
 

@@ -8,7 +8,7 @@ An integer x is a common factor of a and b if x divides both a and b."""
 class Solution:
     @staticmethod
     def commonFactors(a: int, b: int) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(min(a, b)), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(min(a, b)), Space Complexity: O(1)."""
         # Count the number of common factors
         common_factors = 0
         for i in range(1, min(a, b) + 1):

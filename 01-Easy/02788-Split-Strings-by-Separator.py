@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def splitWordsBySeparator(words: List[str], separator: str) -> List[str]:
-        """Optimal Solution: Split. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Split. Time Complexity: O(n), Space Complexity: O(n)."""
         result = []
 
         for word in words:

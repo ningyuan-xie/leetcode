@@ -13,7 +13,7 @@ class Solution:
     @staticmethod
     def modifiedMatrix(matrix: List[List[int]]) -> List[List[int]]:
         """Optimal Solution: Matrix Manipulation.
-           Time Complexity: O(mn), Space Complexity: O(1)"""
+           Time Complexity: O(mn), Space Complexity: O(1)."""
         # Get the number of rows and columns
         row, col = len(matrix), len(matrix[0])
 

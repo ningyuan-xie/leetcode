@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def is_toeplitz_matrix(matrix: List[List[int]]) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(m*n), Space Complexity: O(m+n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(m*n), Space Complexity: O(m+n)."""
         # Initialize the dictionary to store the elements of each diagonal
         diagonals = {}
 

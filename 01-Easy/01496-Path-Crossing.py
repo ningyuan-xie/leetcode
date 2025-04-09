@@ -11,7 +11,7 @@ you have previously visited. Return false otherwise."""
 class Solution:
     @staticmethod
     def isPathCrossing(path: str) -> bool:
-        """Optimal Solution: Set Tracking. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set Tracking. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the set to store the visited points
         visited = set()
         # Initialize the current point

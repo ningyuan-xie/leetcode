@@ -10,7 +10,7 @@ A substring is a contiguous sequence of characters within a string."""
 class Solution:
     @staticmethod
     def largestOddNumber(num: str) -> str:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Find the largest odd number
         for i in range(len(num) - 1, -1, -1):
             if int(num[i]) % 2 == 1:

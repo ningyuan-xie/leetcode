@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countWords(words: List[str], pref: str) -> int:
-        """Optimal Solution: .startswith(). Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: .startswith(). Time Complexity: O(n), Space Complexity: O(1)."""
         count = 0
         for word in words:
             if word.startswith(pref):

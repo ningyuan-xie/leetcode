@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def bestHand(ranks: List[int], suits: List[str]) -> str:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Create a hash table to store the frequency of each rank and suit
         rank_frequency, suit_frequency = {}, {}
         for i in range(5):

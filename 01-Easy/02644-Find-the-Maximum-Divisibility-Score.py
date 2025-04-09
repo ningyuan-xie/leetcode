@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxDivScore(nums: List[int], divisors: List[int]) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize variables to track the maximum divisibility score and the corresponding divisor
         max_score = 0
         max_divisor = float('inf')

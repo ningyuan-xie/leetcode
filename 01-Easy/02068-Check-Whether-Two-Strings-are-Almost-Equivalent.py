@@ -11,7 +11,7 @@ The frequency of a letter x is the number of times it occurs in the string."""
 class Solution:
     @staticmethod
     def areAlmostEquivalent(word1: str, word2: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Use dictionaries to store the frequencies of each letter in the two strings
         freq1, freq2 = {}, {}
         for c1, c2 in zip(word1, word2):

@@ -9,7 +9,7 @@ more than limit candies."""
 class Solution:
     @staticmethod
     def distributeCandies(n: int, limit: int) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)."""
         count = 0
 
         # Iterate through all possible ways to distribute candies among 3 children

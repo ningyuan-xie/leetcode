@@ -12,7 +12,7 @@ Return the permutation difference between s and t."""
 class Solution:
     @staticmethod
     def permutationDifference(s: str, t: str) -> int:
-        """Optimal Solution: .index() method. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: .index() method. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the result variable
         result = 0
         # Iterate through each character in the first string

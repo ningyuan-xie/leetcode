@@ -5,7 +5,7 @@ Description: Design a HashSet without using any built-in hash table libraries.""
 
 
 class MyHashSet:
-    """Optimal Solution: List of Buckets. Time Complexity: O(n), Space Complexity: O(n)"""
+    """Optimal Solution: List of Buckets. Time Complexity: O(n), Space Complexity: O(n)."""
 
     def __init__(self):
         """Constructor: Initialize the instance variable"""

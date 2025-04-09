@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def next_greatest_letter(letters: List[str], target: str) -> str:
-        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         # Initialize the left and right pointers
         left, right = 0, len(letters) - 1
 

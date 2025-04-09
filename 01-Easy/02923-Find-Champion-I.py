@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findChampion(grid: List[List[int]]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n^2), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n^2), Space Complexity: O(n)."""
         n = len(grid)
         teams = {}
 

@@ -12,7 +12,7 @@ Those numbers for which this process ends in 1 are happy."""
 class Solution:
     @staticmethod
     def isHappy(n: int) -> bool:
-        """Optimal Solution: Hash Set. Time Complexity: O(log(n)), Space Complexity: O(log(n))"""
+        """Optimal Solution: Hash Set. Time Complexity: O(log(n)), Space Complexity: O(log(n))."""
         # Initialize a set to store UNIQUE sum of squares of digits
         seen = set()
         # Continue the process until the sum of squares of digits is 1

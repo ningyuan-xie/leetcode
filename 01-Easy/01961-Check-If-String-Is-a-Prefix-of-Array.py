@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isPrefixString(s: str, words: List[str]) -> bool:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the result string
         result = ""
 

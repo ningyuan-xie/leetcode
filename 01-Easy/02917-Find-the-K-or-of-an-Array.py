@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findKOr(nums: List[int], k: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         or_result = 0
 
         # Iterate through each bit position from least significant bit to most significant bit

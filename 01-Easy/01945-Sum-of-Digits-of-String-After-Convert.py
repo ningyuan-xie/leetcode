@@ -19,7 +19,7 @@ Return the resulting integer after performing the operations described above."""
 class Solution:
     @staticmethod
     def getLucky(s: str, k: int) -> int:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Convert s to a string of digits
         digits = ""
         for char in s:

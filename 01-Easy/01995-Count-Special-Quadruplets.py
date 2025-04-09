@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countQuadruplets(nums: List[int]) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^4), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^4), Space Complexity: O(1)."""
         # Initialize the count of special quadruplets
         count = 0
 

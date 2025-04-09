@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def mostWordsFound(sentences: List[str]) -> int:
-        """Optimal Solution: Splitting by Space. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Splitting by Space. Time Complexity: O(n), Space Complexity: O(1)."""
         return max(len(sentence.split())
                    for sentence in sentences)
 

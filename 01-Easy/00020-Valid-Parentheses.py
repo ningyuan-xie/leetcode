@@ -8,7 +8,7 @@ determine if the input string is valid."""
 class Solution:
     @staticmethod
     def isValid(s: str) -> bool:
-        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)."""
         # Create dictionary with key-value pairs
         bracket_dict = {
             "(": ")",

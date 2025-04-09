@@ -11,7 +11,7 @@ Return an integer denoting the number of substrings of s that satisfy the k-cons
 class Solution:
     @staticmethod
     def countKConstraintSubstrings(s: str, k: int) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(s)
         count = 0
         left = 0

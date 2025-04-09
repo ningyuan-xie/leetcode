@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def duplicateZeros(arr: List[int]) -> None:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Count the number of zeros in the array
         zero_count = arr.count(0)
 

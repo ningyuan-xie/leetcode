@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def sumZero(n: int) -> List[int]:
         """Optimal Solution: Construct the array with alternating positive and negative numbers.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the array
         arr = []
 

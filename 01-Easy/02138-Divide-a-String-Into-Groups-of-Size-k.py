@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def divideString(s: str, k: int, fill: str) -> List[str]:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(s)
         # If the length of s is not divisible by k, fill the last group with fill
         if n % k != 0:

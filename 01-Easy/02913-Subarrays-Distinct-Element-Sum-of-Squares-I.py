@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def sumCounts(nums: List[int]) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n^2), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n^2), Space Complexity: O(n)."""
         n = len(nums)
         ans = 0
 

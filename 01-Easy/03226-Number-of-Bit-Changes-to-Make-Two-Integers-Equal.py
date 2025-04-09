@@ -9,7 +9,7 @@ Return the number of changes needed to make n equal to k. If it is impossible, r
 class Solution:
     @staticmethod
     def minChanges(n: int, k: int) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(1), Space Complexity: O(1)."""
         count = 0
         for i in range(32):
             # Check if the i-th bit of n and k are different

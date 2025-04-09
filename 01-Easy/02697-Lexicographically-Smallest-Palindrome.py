@@ -16,7 +16,7 @@ Return the resulting palindrome string."""
 class Solution:
     @staticmethod
     def makeSmallestPalindrome(s: str) -> str:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the list to track the characters
         chars = list(s)
         # Initialize the pointers to track the characters

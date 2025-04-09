@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def hardestWorker(logs: List[List[int]]) -> int:
-        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(n)."""
         max_duration, employee_id, prev_end_time = 0, 0, 0
 
         # Find the employee with the longest task duration

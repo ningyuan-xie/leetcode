@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def canMakeSquare(grid: List[List[str]]) -> bool:
-        """Optimal Solution: Linear Scan. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(1), Space Complexity: O(1)."""
         rows, cols = len(grid), len(grid[0])
 
         def isSquareOfSameColor(r, c):

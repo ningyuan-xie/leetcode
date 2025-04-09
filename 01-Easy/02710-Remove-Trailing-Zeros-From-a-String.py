@@ -8,7 +8,7 @@ trailing zeros as a string."""
 class Solution:
     @staticmethod
     def removeTrailingZeros(num: str) -> str:
-        """Optimal Solution: Reverse Traversal. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Reverse Traversal. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the index to track the last non-zero character
         index = len(num) - 1
 

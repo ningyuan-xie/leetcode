@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def array_strings_are_equal(word1: List[str], word2: List[str]) -> bool:
-        """Optimal Solution: Join and Compare. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Join and Compare. Time Complexity: O(n), Space Complexity: O(n)."""
         return "".join(word1) == "".join(word2)
 
 

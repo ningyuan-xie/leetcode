@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def stringMatching(words: List[str]) -> List[str]:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)."""
         substrings = []
         for i in range(len(words)):
             for j in range(len(words)):

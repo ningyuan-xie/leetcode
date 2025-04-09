@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minDifference(nums: List[int], k: int) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         # Sort the scores in ascending order
         nums.sort()  # E.g. nums = [9, 4, 1, 7] -> nums = [1, 4, 7, 9]
 

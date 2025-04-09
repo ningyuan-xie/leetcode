@@ -11,7 +11,7 @@ Return the name of the player who wins the game if both players play optimally."
 class Solution:
     @staticmethod
     def winningPlayer(x: int, y: int) -> str:
-        """Optimal Solution: Greedy Approach. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Approach. Time Complexity: O(1), Space Complexity: O(1)."""
         # Each player has to pick 1 coin of 75 and 4 coins of 10 to make 115
         turn_x = x // 1
         turn_y = y // 4

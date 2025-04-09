@@ -9,7 +9,7 @@ or -1 if needle is not part of haystack."""
 class Solution:
     @staticmethod
     def strStr(haystack: str, needle: str) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         # If needle is empty, return 0
         if not needle:
             return 0

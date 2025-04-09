@@ -8,7 +8,7 @@ same string in lowercase."""
 class Solution:
     @staticmethod
     def to_lower_case(s: str) -> str:
-        """Optimal Solution: Convert to Lowercase. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Convert to Lowercase. Time Complexity: O(n), Space Complexity: O(n)."""
         return s.lower()
 
 

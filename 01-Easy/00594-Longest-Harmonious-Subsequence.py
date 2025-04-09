@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findLHS(nums: List[int]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize a dictionary to store the frequency of each number
         num_freq = {}
         for num in nums:

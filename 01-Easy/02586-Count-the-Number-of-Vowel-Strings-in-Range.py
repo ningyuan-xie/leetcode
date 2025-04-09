@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def vowelStrings(words: List[str], left: int, right: int) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         vowels = set("aeiou")
         count = 0
 

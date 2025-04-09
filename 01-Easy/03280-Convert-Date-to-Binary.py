@@ -13,7 +13,7 @@ class Solution:
     @staticmethod
     def convertDateToBinary(date: str) -> str:
         """Optimal Solution: String Manipulation & bin() function.
-           Time Complexity: O(1), Space Complexity: O(1)"""
+           Time Complexity: O(1), Space Complexity: O(1)."""
         # Split the date string into year, month, and day
         year, month, day = date.split('-')
 

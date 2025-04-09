@@ -11,7 +11,7 @@ have the letter first (indicating its column), and the number second (indicating
 class Solution:
     @staticmethod
     def checkTwoChessboards(coordinate1: str, coordinate2: str) -> bool: 
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # Convert the column letter to a number (1-8)
         col1 = ord(coordinate1[0]) - ord('a') + 1
         col2 = ord(coordinate2[0]) - ord('a') + 1

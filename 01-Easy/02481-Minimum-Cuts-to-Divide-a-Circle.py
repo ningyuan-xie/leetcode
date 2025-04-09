@@ -13,7 +13,7 @@ Given the integer n, return the minimum number of cuts needed to divide a circle
 class Solution:
     @staticmethod
     def numberOfCuts(n: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # Base case: no cuts needed for 1 slice
         if n == 1:
             return 0

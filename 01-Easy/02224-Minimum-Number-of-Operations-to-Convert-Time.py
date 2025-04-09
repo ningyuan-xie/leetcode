@@ -12,7 +12,7 @@ Return the minimum number of operations needed to convert current to correct."""
 class Solution:
     @staticmethod
     def convertTime(current: str, correct: str) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # Convert the time strings to minutes
         current_minutes = int(current[:2]) * 60 + int(current[3:])  # E.g. "02:30" -> 150
         correct_minutes = int(correct[:2]) * 60 + int(correct[3:])  # E.g. "04:35" -> 275

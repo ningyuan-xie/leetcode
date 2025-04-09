@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minSubsequence(nums: List[int]) -> List[int]:
-        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n*log(n)), Space Complexity: O(n)"""
+        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n*log(n)), Space Complexity: O(n)."""
         # Sort the array in non-increasing order and sum all the elements
         nums.sort(reverse=True)  # E.g. [4, 3, 10, 9, 8] -> [10, 9, 8, 4, 3]
         total_sum = sum(nums)

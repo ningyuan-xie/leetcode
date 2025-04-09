@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def calPoints(operations: List[str]) -> int:
-        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the stack
         stack = []
 

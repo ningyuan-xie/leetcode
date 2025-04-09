@@ -10,7 +10,7 @@ to make them equal, return -1."""
 class Solution:
     @staticmethod
     def findMinimumOperations(s1: str, s2: str, s3: str) -> int:
-        """Optimal Solution: Longest Common Prefix. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Longest Common Prefix. Time Complexity: O(n), Space Complexity: O(1)."""
         # Find the minimum length of s1, s2, and s3
         n = min(len(s1), len(s2), len(s3))
         longest_common = 0

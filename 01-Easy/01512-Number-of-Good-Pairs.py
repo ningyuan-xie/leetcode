@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numIdenticalPairs(nums: List[int]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the count of good pairs
         count = 0
         # Initialize the dictionary to store the frequency of each number

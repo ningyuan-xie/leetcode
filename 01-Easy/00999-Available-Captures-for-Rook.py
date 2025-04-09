@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numRookCaptures(board: List[List[str]]) -> int:
-        """Optimal Solution: Simulation. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Simulation. Time Complexity: O(1), Space Complexity: O(1)."""
         # Find the rook's position on the board:
         # next() returns the first element that satisfies the condition
         rook_row, rook_col = next((i, j) for i in range(8) for j in range(8) if board[i][j] == 'R')

@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def largestInteger(num: int) -> int:
-        """Optimal Solution: Parity Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(n)"""
+        """Optimal Solution: Parity Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(n)."""
         # Convert the number to a list of digits
         digits = list(map(int, str(num)))  # E.g. 1234 -> [1, 2, 3, 4]
 

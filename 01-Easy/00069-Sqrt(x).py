@@ -7,7 +7,7 @@ Description: Given a non-negative integer x, compute and return the square root 
 class Solution:
     @staticmethod
     def mySqrt(x: int) -> int:
-        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         # Base case: if x is 0 or 1, return x
         if x == 0 or x == 1:
             return x

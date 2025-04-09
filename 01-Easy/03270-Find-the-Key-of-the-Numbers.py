@@ -12,7 +12,7 @@ Return the key of the three numbers without leading zeros (if any)."""
 class Solution:
     @staticmethod
     def generateKey(num1: int, num2: int, num3: int) -> int:
-        """Optimal Solution: String Manipulation. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(1), Space Complexity: O(1)."""
         # Convert numbers to strings and pad with leading zeros
         num1_str = str(num1).zfill(4)
         num2_str = str(num2).zfill(4)

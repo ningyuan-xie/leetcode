@@ -8,10 +8,10 @@ import heapq  # Priority Queue (Heap) Module
 
 
 class KthLargest:
-    """Optimal Solution: Min Heap. Time Complexity: O(nlog(k)), Space Complexity: O(k)"""
+    """Optimal Solution: Min Heap. Time Complexity: O(nlog(k)), Space Complexity: O(k)."""
 
     def __init__(self, k: int, nums: list[int]):
-        """Constructor: Initialize the instance variables. Time Complexity: O(nlog(k))"""
+        """Constructor: Initialize the instance variables. Time Complexity: O(nlog(k))."""
         # Initialize the two variables
         self.k = k
         self.min_heap = []
@@ -22,7 +22,7 @@ class KthLargest:
 
     def add(self, val: int) -> int:
         """Add the number to the min heap and return the kth largest element through
-           heappush and heappop operations. Time Complexity: O(log(k))"""
+           heappush and heappop operations. Time Complexity: O(log(k))."""
         # heappush (insert): add the new element to the end of the list, and then "bubbles up" this
         # element to its correct position to maintain the min heap property
         heapq.heappush(self.min_heap, val)

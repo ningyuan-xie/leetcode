@@ -9,7 +9,7 @@ class Solution:
     @staticmethod
     def judgeCircle(moves: str) -> bool:
         """Optimal Solution: Count the number of moves.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the counts of the four moves
         up = down = left = right = 0
 

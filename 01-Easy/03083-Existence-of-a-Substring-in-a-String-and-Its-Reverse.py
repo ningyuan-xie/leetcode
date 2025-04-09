@@ -9,7 +9,7 @@ Return true if such a substring exists, and false otherwise."""
 class Solution:
     @staticmethod
     def isSubstringPresent(s: str) -> bool:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Base case: If the string is empty, then return False
         if not s:
             return False

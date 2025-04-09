@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def flipAndInvertImage(image: List[List[int]]) -> List[List[int]]:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Get the length of the image
         n = len(image)
         # Iterate through each row

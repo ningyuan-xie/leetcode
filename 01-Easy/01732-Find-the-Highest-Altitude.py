@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def largest_altitude(gain: List[int]) -> int:
-        """Optimal Solution: Cumulative Sum. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Cumulative Sum. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the highest altitude and the current altitude
         highest_altitude = current_altitude = 0
 

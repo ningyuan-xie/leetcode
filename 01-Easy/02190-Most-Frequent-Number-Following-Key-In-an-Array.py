@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def mostFrequent(nums: List[int], key: int) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Count occurrences of targets following the key
         target_count = {}
         for i in range(len(nums) - 1):

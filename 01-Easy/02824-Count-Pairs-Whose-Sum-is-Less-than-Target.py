@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countPairs(nums: List[int], target: int) -> int:
-        """Optimal Solution: Two Pointers. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         # Sort the array
         nums.sort()
         # Initialize the count of pairs

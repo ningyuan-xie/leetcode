@@ -28,7 +28,7 @@ class Solution:
 
     @staticmethod
     def inorderTraversalShort(root: Optional[TreeNode]) -> List[int]:
-        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)."""
         # Base case: if the tree root is None, return an empty list
         if not root:
             return []

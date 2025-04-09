@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def unequalTriplets(nums: List[int]) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)."""
         count = 0
         n = len(nums)
 

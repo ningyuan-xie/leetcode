@@ -9,7 +9,7 @@ class Solution:
     @staticmethod
     def maximum69Number(num: int) -> int:
         """Optimal Solution: Convert the number to a string and replace the first '6' with '9'.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         # Only replace the first '6' with '9' to get the maximum number
         return int(str(num).replace('6', '9', 1))
 

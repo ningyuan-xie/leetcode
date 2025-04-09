@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def sumIndicesWithKSetBits(nums: List[int], k: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the sum of elements with k set bits
         sum_elements = 0
 

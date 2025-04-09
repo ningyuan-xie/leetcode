@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def checkDistances(s: str, distance: List[int]) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Dictionary to store the first occurrence of each character
         first_occurrence = {}
 

@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def busyStudent(startTime: List[int], endTime: List[int], queryTime: int) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of students doing homework at the query time
         count = 0
 

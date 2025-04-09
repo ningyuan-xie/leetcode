@@ -9,7 +9,7 @@ Return the number of groups that have the largest size."""
 class Solution:
     @staticmethod
     def countLargestGroup(n: int) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
 
         def sum_of_digits(num: int) -> int:
             """Helper function to calculate the sum of digits of a number"""

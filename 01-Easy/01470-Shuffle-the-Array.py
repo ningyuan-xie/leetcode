@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def shuffle(nums: List[int], n: int) -> List[int]:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the shuffled array
         shuffled = []
 

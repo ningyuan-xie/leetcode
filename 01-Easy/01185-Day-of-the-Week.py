@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def dayOfTheWeek(day: int, month: int, year: int) -> str:
         """Optimal Solution: Zeller's Congruence (used to calculate the day of the week for any date).
-           Time Complexity: O(1), Space Complexity: O(1)"""
+           Time Complexity: O(1), Space Complexity: O(1)."""
         # Initialize the days of the week, starting from Saturday
         days_of_week = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
@@ -37,7 +37,7 @@ class Solution:
 
     @staticmethod
     def dayOfTheWeekDateTime(day: int, month: int, year: int) -> str:
-        """Alternative Solution: datetime module. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Alternative Solution: datetime module. Time Complexity: O(1), Space Complexity: O(1)."""
         import datetime
 
         days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]

@@ -12,7 +12,7 @@ class Solution:
     @staticmethod
     def can_strings_equal(s1: str, s2: str) -> bool:
         """Optimal Solution: Check for exactly two differences.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # If strings are already equal, no swap is needed
         if s1 == s2:
             return True

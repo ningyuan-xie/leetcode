@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def convertTemperature(celsius: float) -> List[float]:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         kelvin = celsius + 273.15
         fahrenheit = celsius * 1.80 + 32.00
         return [kelvin, fahrenheit]

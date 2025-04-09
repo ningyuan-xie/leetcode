@@ -17,7 +17,7 @@ Return the phone number after formatting."""
 class Solution:
     @staticmethod
     def reformat_number(number: str) -> str:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)."""
         # Remove all spaces and hyphens
         number = number.replace(" ", "").replace("-", "")
 

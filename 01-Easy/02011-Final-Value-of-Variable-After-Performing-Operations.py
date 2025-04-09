@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def finalValueAfterOperations(operations: List[str]) -> int:
-        """Optimal Solution: One-Liner. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: One-Liner. Time Complexity: O(n), Space Complexity: O(1)."""
         return sum(1 if "++" in operation else -1 for operation in operations)
 
 

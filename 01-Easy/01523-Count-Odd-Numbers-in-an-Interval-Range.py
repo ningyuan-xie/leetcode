@@ -8,7 +8,7 @@ low and high (inclusive)."""
 class Solution:
     @staticmethod
     def countOdds(low: int, high: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # Calculate the number of odd numbers between 0 and high
         count_high = (high + 1) // 2  # E.g. high = 7 -> count_high = 4; high = 10 -> count_high = 5
         # Calculate the number of odd numbers between 0 and low - 1

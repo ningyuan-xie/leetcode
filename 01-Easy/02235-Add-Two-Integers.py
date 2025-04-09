@@ -7,7 +7,7 @@ Description: Given two integers num1 and num2, return the sum of the two integer
 class Solution:
     @staticmethod
     def sum(num1: int, num2: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         return num1 + num2
 
 

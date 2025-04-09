@@ -10,7 +10,7 @@ class Solution:
     @staticmethod
     def maxPower(s: str) -> int:
         """Optimal Solution: Single Pass (Linear Scan): iterate the string just once.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the power and the count of the current character
         power, count = 1, 1
 

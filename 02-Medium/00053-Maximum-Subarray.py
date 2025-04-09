@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxSubArray(nums: List[int]) -> int:
-        """Optimal Solution: Kadane's Algorithm. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Kadane's Algorithm. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the maximum sum and the current sum
         max_sum, current_sum = nums[0], 0
         # Sliding window: adjust the window size based on the current sum

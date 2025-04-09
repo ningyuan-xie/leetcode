@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findMaxAverage(nums: List[int], k: int) -> float:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the sum of the first k elements
         max_sum = sum(nums[:k])
         current_sum = max_sum

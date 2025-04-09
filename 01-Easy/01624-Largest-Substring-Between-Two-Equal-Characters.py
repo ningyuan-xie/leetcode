@@ -9,7 +9,7 @@ A substring is a contiguous sequence of characters within a string."""
 class Solution:
     @staticmethod
     def maxLengthBetweenEqualCharacters(s: str) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the maximum length of the substring between two equal characters
         max_length = -1
 

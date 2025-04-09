@@ -19,7 +19,7 @@ class Solution:
     @staticmethod
     def findJudge(n: int, trust: List[List[int]]) -> int:
         """Optimal Solution: Indegree and Outdegree.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         # indegree: how many people trust the person; if n - 1, then everyone trusts the person
         # outdegree: how many people the person trusts; if 0, then the person trusts nobody
         indegree, outdegree = [0] * (n + 1), [0] * (n + 1)  # n + 1 as people are labeled from 1 to n

@@ -13,7 +13,7 @@ are different."""
 class Solution:
     @staticmethod
     def num_different_integers(word: str) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize a set to store unique integers
         integers = set()
 

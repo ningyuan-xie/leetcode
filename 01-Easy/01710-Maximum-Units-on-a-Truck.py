@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maximum_units(boxTypes: List[List[int]], truckSize: int) -> int:
-        """Optimal Solution: Greedy Algorithm. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Algorithm. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         # Sort box types by units/box in descending order: higher units/box first
         boxTypes.sort(key=lambda x: x[1], reverse=True)
 

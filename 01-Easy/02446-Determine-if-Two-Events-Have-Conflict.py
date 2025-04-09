@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def haveConflict(event1: List[str], event2: List[str]) -> bool:
-        """Optimal Solution: String Manipulation. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(1), Space Complexity: O(1)."""
 
         def convert_to_minutes(time: str) -> int:
             """Helper function to convert time to minutes"""

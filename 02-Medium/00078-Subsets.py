@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def subsets(nums: List[int]) -> List[List[int]]:
-        """Optimal Solution: Iteration. Time Complexity: O(2^n), Space Complexity: O(2^n)"""
+        """Optimal Solution: Iteration. Time Complexity: O(2^n), Space Complexity: O(2^n)."""
         # Initialize the result list with an empty subset
         result = [[]]
         # Iterate through the numbers

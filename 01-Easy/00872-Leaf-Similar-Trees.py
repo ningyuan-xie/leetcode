@@ -14,7 +14,7 @@ class Solution:
     @staticmethod
     def leafSimilar(root1: TreeNode, root2: TreeNode) -> bool:
         """Optimal Solution: Preorder DFS Traversal.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
 
         def get_leaf_sequence(node: TreeNode, leaf_sequence: List[int]) -> None:
             """Helper function to get the leaf value sequence of a binary tree using preorder DFS.

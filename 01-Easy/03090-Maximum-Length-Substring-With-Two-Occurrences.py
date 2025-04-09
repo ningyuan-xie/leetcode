@@ -8,7 +8,7 @@ two occurrences of each character."""
 class Solution:
     @staticmethod
     def maximumLengthSubstring(s: str) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(1)."""
         max_length = 0
 
         def isSubstringValid(substring: str) -> bool:

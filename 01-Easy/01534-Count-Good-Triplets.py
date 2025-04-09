@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countGoodTriplets(arr: List[int], a: int, b: int, c: int) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)."""
         # Initialize the count of good triplets
         count = 0
 

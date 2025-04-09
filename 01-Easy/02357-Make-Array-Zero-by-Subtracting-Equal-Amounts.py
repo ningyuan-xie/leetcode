@@ -13,7 +13,7 @@ class Solution:
     @staticmethod
     def minimumOperations(nums: List[int]) -> int:
         """Optimal Solution: Return the number of unique non-zero numbers in nums.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         return len(set([num for num in nums if num > 0]))
 
 

@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countKDifference(nums: List[int], k: int) -> int:
-        """Optimal Solution: Frequency Dictionary. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Frequency Dictionary. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the count of pairs with absolute difference k
         count = 0
         # Initialize the frequency dict to store the frequency of each number encountered so far

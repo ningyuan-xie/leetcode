@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minOperations(nums: List[int]) -> int:
-        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the number of operations
         operations = 0
 

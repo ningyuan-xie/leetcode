@@ -9,7 +9,7 @@ Return the number of special letters in word."""
 class Solution:
     @staticmethod
     def numberOfSpecialChars(word: str) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)."""
         count = 0
 
         # Remove duplicate characters from the word

@@ -13,7 +13,7 @@ Note that the character 'z' can be changed to 'a' in the operation."""
 class Solution:
     @staticmethod
     def kthCharacter(k: int) -> str:
-        """Optimal Solution: Simulation. Time Complexity: O(k), Space Complexity: O(1)"""
+        """Optimal Solution: Simulation. Time Complexity: O(k), Space Complexity: O(1)."""
         # Initialize the string with the first character 'a'
         word = 'a'
 

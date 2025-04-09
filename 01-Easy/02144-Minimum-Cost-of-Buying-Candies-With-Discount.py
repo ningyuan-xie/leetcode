@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minimumCost(cost: List[int]) -> int:
-        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(1)."""
         cost.sort(reverse=True)  # [6,5,7,9,2,2] -> [9,7,6,5,2,2]
         n = len(cost)
         total = 0

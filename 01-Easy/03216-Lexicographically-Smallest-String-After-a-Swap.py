@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def getSmallestString(s: str) -> str:
-        """Optimal Solution: Greedy One-Pass. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Greedy One-Pass. Time Complexity: O(n), Space Complexity: O(n)."""
         n = len(s)
         chars = list(s)
         best_swap = None

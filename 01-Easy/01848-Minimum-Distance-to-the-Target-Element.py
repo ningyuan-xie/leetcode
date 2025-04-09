@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def getMinDistance(nums: List[int], target: int, start: int) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the minimum distance
         min_distance = float("inf")
 

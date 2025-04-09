@@ -8,7 +8,7 @@ and the sum of its digits."""
 class Solution:
     @staticmethod
     def subtractProductAndSum(n: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         # Initialize the product and sum of the digits
         product_of_digits, sum_of_digits = 1, 0
 

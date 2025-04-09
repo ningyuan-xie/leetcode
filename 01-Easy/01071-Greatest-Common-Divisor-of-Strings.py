@@ -9,7 +9,7 @@ Given two strings str1 and str2, return the largest string x such that x divides
 class Solution:
     @staticmethod
     def gcdOfStrings(str1: str, str2: str) -> str:
-        """Optimal Solution: Euclidean Algorithm. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Euclidean Algorithm. Time Complexity: O(n), Space Complexity: O(1)."""
         # If concatenating the two strings in different orders gives different results, no GCD exists
         if str1 + str2 != str2 + str1:
             return ""
@@ -29,7 +29,7 @@ class Solution:
 
     @staticmethod
     def gcdOfStringsRecursion(str1: str, str2: str) -> str:
-        """Alternative Solution: Euclidean Algorithm. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Alternative Solution: Euclidean Algorithm. Time Complexity: O(n), Space Complexity: O(1)."""
         # If concatenating the two strings in different orders gives different results, no GCD exists
         if str1 + str2 != str2 + str1:
             return ""

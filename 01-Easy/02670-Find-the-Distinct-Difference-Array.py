@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def distinctDifferenceArray(nums: List[int]) -> List[int]:
-        """Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize variables to track the number of distinct elements in the prefix and suffix
         distinct_diff = []
 

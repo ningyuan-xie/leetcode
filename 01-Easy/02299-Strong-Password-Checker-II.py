@@ -16,7 +16,7 @@ Given a string password, return true if it is a strong password. Otherwise, retu
 class Solution:
     @staticmethod
     def strongPasswordCheckerII(password: str) -> bool:
-        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)."""
         if len(password) < 8:
             return False
 

@@ -10,7 +10,7 @@ rearranging them."""
 class Solution:
     @staticmethod
     def rearrangeCharacters(s: str, target: str) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Create two dictionaries to store the frequency of each character in s and target
         frequency, target_frequency = {}, {}
         for char in s:

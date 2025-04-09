@@ -12,7 +12,7 @@ second occurrence of b.
 class Solution:
     @staticmethod
     def firstLetterToAppearTwice(s: str) -> str:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)."""
         seen = set()
         for char in s:
             if char in seen:
@@ -22,7 +22,7 @@ class Solution:
 
     @staticmethod
     def firstLetterToAppearTwiceDictionary(s: str) -> str:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         seen = {}
         for char in s:
             if char in seen:

@@ -33,7 +33,7 @@ class Solution:
 
     @staticmethod
     def findDisappearedNumbersSet(nums: List[int]) -> List[int]:
-        """Alternative Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Alternative Solution: Set. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the set of numbers
         nums_set = set(nums)
         # Initialize the list of missing numbers

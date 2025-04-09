@@ -11,7 +11,7 @@ who enters the waiting room given that it is initially empty."""
 class Solution:
     @staticmethod
     def minimumChairs(s: str) -> int:
-        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize a stack to keep track of chairs
         stack = []
         minimum_num_of_chairs = 0

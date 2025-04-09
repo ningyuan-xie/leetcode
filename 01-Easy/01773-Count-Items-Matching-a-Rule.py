@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def count_matches(items: List[List[str]], ruleKey: str, ruleValue: str) -> int:
-        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of items that match the rule
         count = 0
 

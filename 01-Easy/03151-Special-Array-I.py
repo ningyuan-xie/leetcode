@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isArraySpecial(nums: List[int]) -> bool:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the length of the array
         n = len(nums)
 

@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def missingInteger(nums: List[int]) -> int:
-        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)."""
         # Find the sum of the longest sequential prefix
         prefix_sum = 0
         for i, num in enumerate(nums):

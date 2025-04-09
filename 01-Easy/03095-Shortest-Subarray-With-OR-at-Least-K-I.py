@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minimumSubarrayLength(nums: List[int], k: int) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(1)."""
         min_length = float("inf")
 
         # Iterate through all possible subarrays and find the minimum length

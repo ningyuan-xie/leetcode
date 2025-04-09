@@ -12,7 +12,7 @@ Return the capitalized title."""
 class Solution:
     @staticmethod
     def capitalizeTitle(title: str) -> str:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         return " ".join([word.capitalize() if len(word) > 2
                          else word.lower()
                          for word in title.split()])

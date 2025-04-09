@@ -20,7 +20,7 @@ class Solution:
     @staticmethod
     def distributeCandies(candies: int, num_people: int) -> List[int]:
         """Optimal Solution: Step-based Distribution.
-           Time Complexity: O(sqrt(candies)), Space Complexity: O(n)"""
+           Time Complexity: O(sqrt(candies)), Space Complexity: O(n)."""
         # Initialize an array to store the candies for each person
         distribution = [0] * num_people
         # This is the step count, representing the current distribution

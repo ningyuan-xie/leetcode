@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countElements(nums: List[int]) -> int:
-        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(1)."""
         nums.sort()  # [11,7,2,15] -> [2,7,11,15]
         n = len(nums)
         count = 0

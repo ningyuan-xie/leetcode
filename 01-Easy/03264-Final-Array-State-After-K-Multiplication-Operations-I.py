@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def getFinalState(nums: List[int], k: int, multiplier: int) -> List[int]:
-        """Optimal Solution: Simulation. Time Complexity: O(n * k), Space Complexity: O(1)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n * k), Space Complexity: O(1)."""
         for _ in range(k):
             min_index = nums.index(min(nums))
             nums[min_index] *= multiplier

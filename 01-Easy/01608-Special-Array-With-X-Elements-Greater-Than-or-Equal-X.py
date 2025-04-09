@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def specialArray(nums: List[int]) -> int:
-        """Optimal Solution: Counting Sort. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Counting Sort. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the counting array with zeros
         count = [0] * (len(nums) + 1)  # E.g. nums = [3, 5] -> count = [0, 0, 0]
 

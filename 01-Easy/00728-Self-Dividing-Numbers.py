@@ -11,7 +11,7 @@ range [left, right]"""
 class Solution:
     @staticmethod
     def selfDividingNumbers(left: int, right: int):
-        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the result list
         result = []
         # Iterate through the range

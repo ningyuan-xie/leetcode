@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def replaceElements(arr: List[int]) -> List[int]:
-        """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the maximum value as -1
         max_value = -1
 

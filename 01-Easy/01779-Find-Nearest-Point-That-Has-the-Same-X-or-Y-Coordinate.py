@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def nearestValidPoint(x: int, y: int, points: List[List[int]]) -> int:
-        """Optimal Solution: Manhattan Distance. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Manhattan Distance. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the minimum distance and the index of the nearest valid point
         min_distance = float("inf")
         nearest_index = -1

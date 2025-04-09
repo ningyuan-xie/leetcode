@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findLucky(arr: List[int]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         frequency = {}
         for num in arr:
             frequency[num] = frequency.get(num, 0) + 1

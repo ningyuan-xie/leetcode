@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findNumbers(nums: List[int]) -> int:
-        """Optimal Solution: Counting Digits. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Counting Digits. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count
         count = 0
 

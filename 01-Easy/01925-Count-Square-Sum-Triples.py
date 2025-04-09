@@ -8,7 +8,7 @@ Given an integer n, return the number of square triples such that 1 <= a, b, c <
 class Solution:
     @staticmethod
     def countTriples(n: int) -> int:
-        """Optimal Solution: Iterative Check. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: Iterative Check. Time Complexity: O(n^2), Space Complexity: O(1)."""
         count = 0
 
         # Outer Loop: Iterate over c (the hypotenuse)

@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minMovesToSeat(seats: List[int], students: List[int]) -> int:
-        """Optimal Solution: Sort and Calculate. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sort and Calculate. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         # Sort the seats and students
         seats.sort()  # E.g. seats = [3, 1, 5] -> seats = [1, 3, 5]
         students.sort()  # E.g. students = [2, 7, 4] -> students = [2, 4, 7]

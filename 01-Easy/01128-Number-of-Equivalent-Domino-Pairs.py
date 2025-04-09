@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numEquivDominoPairs(dominoes: List[List[int]]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize a dictionary to store the count of equivalent domino pairs
         count, num_pairs = {}, 0
 

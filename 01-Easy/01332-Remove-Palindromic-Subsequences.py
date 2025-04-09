@@ -12,7 +12,7 @@ class Solution:
         """Optimal Solution: A string containing only 'a' and 'b' is a palindrome if it is empty,
            contains only 'a', or contains only 'b'. Thus, the minimum number of steps to make the
            string empty is 1 if the string is a palindrome and 2 otherwise.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Check if the string is empty, contains only 'a', or contains only 'b'
         return 0 if s == "" else 1 if s == s[::-1] else 2
 

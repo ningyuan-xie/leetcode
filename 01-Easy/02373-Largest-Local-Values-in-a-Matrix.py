@@ -19,7 +19,7 @@ class Solution:
         result = [[0] * (len(grid) - 2) for _ in range(len(grid) - 2)]
 
         def get_max_3x3(center_x: int, center_y: int) -> int:
-            """Helper function to get the maximum value in the 3x3 submatrix centered at (x, y)"""
+            """Helper function to get the maximum value in the 3x3 submatrix centered at (x, y)."""
             return max(grid[x][y] for x in range(center_x - 1, center_x + 2)
                        for y in range(center_y - 1, center_y + 2))
 

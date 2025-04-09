@@ -14,7 +14,7 @@ class Solution:
     @staticmethod
     def maxCount(nums: List[int]) -> int:
         """Optimal Solution: Count Positive and Negative Integers.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         pos, neg = 0, 0
 
         for num in nums:

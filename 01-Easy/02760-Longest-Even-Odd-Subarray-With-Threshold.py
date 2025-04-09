@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def longestAlternatingSubarray(nums: List[int], threshold: int) -> int:
-        """Sub-Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)"""
+        """Sub-Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)."""
         # Initialize the maximum length
         max_length = 0
         n = len(nums)
@@ -40,7 +40,7 @@ class Solution:
 
     @staticmethod
     def longestAlternatingSubarraySlidingWindow(nums: List[int], threshold: int) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         max_length = 0
         n = len(nums)
 

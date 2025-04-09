@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def getNoZeroIntegers(n: int) -> List[int]:
-        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(1)."""
         # Traverse all possible values of A from 1 to n - 1
         for A in range(1, n):
             # If A and n - A don't contain 0, then return [A, n - A]

@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minimumMoves(s: str) -> int:
-        """Optimal Solution: Greedy Approach. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Approach. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the number of moves required to convert the string
         moves = 0
         # Initialize the index to traverse the string

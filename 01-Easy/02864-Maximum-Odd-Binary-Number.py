@@ -12,7 +12,7 @@ Note that the resulting string can have leading zeros."""
 class Solution:
     @staticmethod
     def maximumOddBinaryNumber(s: str) -> str:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Find the number of 1's in the string
         count_1 = s.count('1')
 

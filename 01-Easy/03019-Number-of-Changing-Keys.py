@@ -13,7 +13,7 @@ changing of key."""
 class Solution:
     @staticmethod
     def countKeyChanges(s: str) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the number of key changes
         n = len(s)
         key_changes = 0

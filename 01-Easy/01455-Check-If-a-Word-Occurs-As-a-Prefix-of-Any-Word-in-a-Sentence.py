@@ -15,7 +15,7 @@ class Solution:
     @staticmethod
     def isPrefixOfWord(sentence: str, searchWord: str) -> int:
         """Optimal Solution: .split() method and .startswith() method.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the word index
         word_index = 1
 

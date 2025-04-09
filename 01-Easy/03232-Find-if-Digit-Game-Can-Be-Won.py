@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def canAliceWin(nums: List[int]) -> bool:
-        """Optimal Solution: Greedy Approach. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Approach. Time Complexity: O(n), Space Complexity: O(1)."""
         # Separate single-digit and double-digit numbers
         single_digit_sum = sum(num for num in nums if 1 <= num <= 9)
         double_digit_sum = sum(num for num in nums if 10 <= num <= 99)

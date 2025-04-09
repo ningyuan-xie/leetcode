@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countHillsAndValleys(nums: List[int]) -> int:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(nums)
         count = 0
 

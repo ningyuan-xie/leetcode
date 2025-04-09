@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minimumRightShifts(nums: List[int]) -> int:
-        """Optimal Solution: Drop Index. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Drop Index. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(nums)
 
         # Check if already sorted

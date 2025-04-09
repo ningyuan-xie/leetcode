@@ -8,7 +8,7 @@ return the length of the last word in the string."""
 class Solution:
     @staticmethod
     def lengthOfLastWord(s: str) -> int:
-        """Optimal Solution: Split. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Split. Time Complexity: O(n), Space Complexity: O(n)."""
         # Split the string by space
         words = s.split()  # E.g. "Hello World" -> ["Hello", "World"]
         # If the list is empty, return 0

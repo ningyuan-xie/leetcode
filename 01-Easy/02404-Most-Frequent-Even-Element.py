@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def mostFrequentEven(nums: List[int]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Dictionary to store the frequency of each even element
         frequency = {}
         for num in nums:

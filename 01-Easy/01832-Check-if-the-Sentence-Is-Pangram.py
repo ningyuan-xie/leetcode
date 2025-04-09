@@ -9,7 +9,7 @@ pangram, or false otherwise."""
 class Solution:
     @staticmethod
     def checkIfPangram(sentence: str) -> bool:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         # Return True if the number of unique characters is equal to 26
         return len(set(sentence)) == 26
 

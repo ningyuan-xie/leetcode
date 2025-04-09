@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def validMountainArray(arr: List[int]) -> bool:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the left and right pointers
         left, right = 0, len(arr) - 1
 

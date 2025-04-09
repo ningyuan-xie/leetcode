@@ -13,7 +13,7 @@ class Solution:
     @staticmethod
     def checkZeroOnes(s: str) -> bool:
         """Optimal Solution: Keep track of the current count of 1s and 0s and update the max count.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         max_ones = max_zeros = 0
         current_ones = current_zeros = 0
 

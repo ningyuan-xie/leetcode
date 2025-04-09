@@ -10,7 +10,7 @@ from package.data_structures import ListNode
 class Solution:
     @staticmethod
     def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
-        """Optimal Solution: Iteration. Time Complexity: O(n + m), Space Complexity: O(1)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n + m), Space Complexity: O(1)."""
         # Dummy node to keep track of the head of the linked list
         dummy = ListNode()  # dummy: 0 -> None
         # Tail node to keep track of the last node of the linked list

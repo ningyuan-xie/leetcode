@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def checkXMatrix(grid: List[List[int]]) -> bool:
-        """Optimal Solution: Matrix Traversal. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Matrix Traversal. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(grid)
 
         # Check the diagonals: All elements must be non-zero

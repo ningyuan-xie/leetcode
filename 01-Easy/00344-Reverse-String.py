@@ -39,7 +39,7 @@ class Solution:
 
     @staticmethod
     def reverseStringRecursion(s: List[str]) -> None:
-        """Alternative Solution: Recursion. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Alternative Solution: Recursion. Time Complexity: O(n), Space Complexity: O(n)."""
         # Base case: if the length of s is less than or equal to 1, return
         if len(s) <= 1:
             return

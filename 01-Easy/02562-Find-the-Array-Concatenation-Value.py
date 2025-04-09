@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findTheArrayConcVal(nums: List[int]) -> int:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         left, right = 0, len(nums) - 1
         total = 0
 

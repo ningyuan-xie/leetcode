@@ -10,7 +10,7 @@ Return the maximum number of balanced strings you can obtain."""
 class Solution:
     @staticmethod
     def balancedStringSplit(s: str) -> int:
-        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the number of balanced strings
         count = 0
 

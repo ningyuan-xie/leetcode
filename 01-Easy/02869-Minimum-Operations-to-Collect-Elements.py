@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minOperations(nums: List[int], k: int) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         count = 0
         target_list = list(range(1, k + 1))
         collection_list = []

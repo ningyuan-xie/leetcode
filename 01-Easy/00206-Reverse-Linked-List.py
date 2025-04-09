@@ -10,7 +10,7 @@ from package.data_structures import ListNode
 class Solution:
     @staticmethod
     def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
-        """Optimal Solution: Iterative. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Iterative. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize two pointers to store the previous and current nodes
         prev, current = None, head
         # Iterate through the linked list

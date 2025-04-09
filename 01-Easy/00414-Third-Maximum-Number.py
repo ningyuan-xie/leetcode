@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def thirdMax(nums: List[int]) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         # Remove duplicates by converting the list to a set
         nums = set(nums)
         # If there are less than 3 unique numbers, return the maximum number

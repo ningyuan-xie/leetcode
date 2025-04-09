@@ -16,7 +16,7 @@ Notes:
 class Solution:
     @staticmethod
     def isValidWord(word: str) -> bool:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         # Check if the word has at least 3 characters
         if len(word) < 3:
             return False

@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def smallestIndex(nums: List[int]) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         for i, num in enumerate(nums):
             if i % 10 == num:
                 return i

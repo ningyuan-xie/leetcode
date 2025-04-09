@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def repeatedNTimes(nums: List[int]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the hash table to store the frequency of each element in the array
         freq_map = {}
 

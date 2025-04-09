@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countPairs(nums: List[int], k: int) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Create a dictionary to group indices by value
         value_to_indices = {}
         for (i, num) in enumerate(nums):

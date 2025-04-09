@@ -12,7 +12,7 @@ class Solution:
     def generateTheString(n: int) -> str:
         """Optimal Solution: Construct the string with n-1 'a's and 1 'b' if n is even, otherwise
            construct the string with n 'a's.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         return "a" * (n - 1) + ("b" if n % 2 == 0 else "a")
 
 

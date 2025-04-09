@@ -23,7 +23,7 @@ class Solution:
 
     @staticmethod
     def distinctIntegersRecursion(n: int) -> int:
-        """Alternative Solution: Recursion. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Alternative Solution: Recursion. Time Complexity: O(n), Space Complexity: O(n)."""
         board = set()
 
         def updateBoard(x: int) -> None:

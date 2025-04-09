@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def canBeIncreasing(nums: List[int]) -> bool:
-        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(1)."""
 
         def is_strictly_increasing(arr: List[int]) -> bool:
             """Helper function to check if an array is strictly increasing."""

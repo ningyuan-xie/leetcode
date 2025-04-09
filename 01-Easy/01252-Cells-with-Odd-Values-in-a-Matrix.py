@@ -17,7 +17,7 @@ class Solution:
     @staticmethod
     def oddCells(m: int, n: int, indices: List[List[int]]) -> int:
         """Optimal Solution: Counters for Rows and Columns.
-           Time Complexity: O(m * n), Space Complexity: O(m + n)"""
+           Time Complexity: O(m * n), Space Complexity: O(m + n)."""
         # Initialize counters to keep track of how many times each row/column has been incremented
         row_counts = [0] * m  # E.g. m = 2: [0, 0]
         col_counts = [0] * n  # E.g. n = 3: [0, 0, 0]

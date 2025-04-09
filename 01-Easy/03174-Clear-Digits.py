@@ -12,7 +12,7 @@ to its left."""
 class Solution:
     @staticmethod
     def clearDigits(s: str) -> str:
-        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize a stack to keep track of characters
         stack = []
 

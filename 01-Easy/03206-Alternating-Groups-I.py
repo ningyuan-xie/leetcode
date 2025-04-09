@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numberOfAlternatingGroups(colors: List[int]) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         count = 0
         n = len(colors)
         for i in range(n):

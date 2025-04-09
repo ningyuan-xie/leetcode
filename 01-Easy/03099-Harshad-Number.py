@@ -9,7 +9,7 @@ otherwise, return -1."""
 class Solution:
     @staticmethod
     def sumOfTheDigitsOfHarshadNumber(x: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(log(x)), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(log(x)), Space Complexity: O(1)."""
         sum_of_digits = sum(int(digit) for digit in str(x))
 
         return sum_of_digits if x % sum_of_digits == 0 else -1

@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def relativeSortArray(arr1: List[int], arr2: List[int]) -> List[int]:
-        """Optimal Solution: Sort by Custom Order. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Sort by Custom Order. Time Complexity: O(n), Space Complexity: O(n)."""
         # Count the occurrences of each element in arr1
         count = {}
         for num in arr1:

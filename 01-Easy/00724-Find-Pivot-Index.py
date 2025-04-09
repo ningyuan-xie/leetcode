@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def pivot_index(nums: List[int]) -> int:
-        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Prefix Sum. Time Complexity: O(n), Space Complexity: O(1)."""
         # Compute the total sum of the array
         total_sum = sum(nums)
 

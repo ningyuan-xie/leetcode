@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def average(salary: List[int]) -> float:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the minimum and maximum salary
         min_salary, max_salary = float("inf"), float("-inf")
         # Initialize the sum

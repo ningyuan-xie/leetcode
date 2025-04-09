@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def kidsWithCandies(candies: List[int], extraCandies: int) -> List[bool]:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(n)."""
         # Find the current max number of candies
         max_candies = max(candies)
 

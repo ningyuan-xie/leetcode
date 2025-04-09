@@ -11,7 +11,7 @@ Return the encrypted string."""
 class Solution:
     @staticmethod
     def getEncryptedString(s: str, k: int) -> str:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(n)."""
         # Create a list to store the encrypted characters
         encrypted_chars = []
 

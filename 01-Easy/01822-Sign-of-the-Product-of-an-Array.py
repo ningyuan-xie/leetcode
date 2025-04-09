@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def arraySign(nums: List[int]) -> int:
-        """Optimal Solution: Count Negatives. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Count Negatives. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the product of the array
         product = 1
 

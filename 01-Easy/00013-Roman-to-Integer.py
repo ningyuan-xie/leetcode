@@ -7,7 +7,7 @@ Description: Given a roman numeral, convert it to an integer."""
 class Solution:
     @staticmethod
     def romanToInt(s: str) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Create dictionary with key-value pairs
         roman_dict = {
             "I": 1,

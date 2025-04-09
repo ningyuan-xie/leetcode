@@ -11,7 +11,7 @@ Return the integer num1 - num2."""
 class Solution:
     @staticmethod
     def differenceOfSums(n: int, m: int) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         num1, num2 = 0, 0
 
         for i in range(1, n+1):

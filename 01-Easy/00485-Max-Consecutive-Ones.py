@@ -9,7 +9,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findMaxConsecutiveOnes(nums: List[int]) -> int:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         max_consecutive, current_consecutive = 0, 0
         for num in nums:
             if num == 1:

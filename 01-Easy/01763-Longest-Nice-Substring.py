@@ -11,7 +11,7 @@ substring of the earliest occurrence. If there are none, return an empty string.
 class Solution:
     @staticmethod
     def longestNiceSubstring(s: str) -> str:
-        """Optimal Solution: Recursion. Time Complexity: O(n^2), Space Complexity: O(n^2)"""
+        """Optimal Solution: Recursion. Time Complexity: O(n^2), Space Complexity: O(n^2)."""
         # Base case: If the string has less than 2 characters, it can't be "nice"
         if len(s) < 2:
             return ""

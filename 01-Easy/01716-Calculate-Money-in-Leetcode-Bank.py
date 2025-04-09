@@ -13,7 +13,7 @@ nth day."""
 class Solution:
     @staticmethod
     def total_money(n: int) -> int:
-        """Optimal Solution: Arithmetic Progression. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Arithmetic Progression. Time Complexity: O(n), Space Complexity: O(1)."""
         # Calculate the number of full weeks and days
         weeks, days = n // 7, n % 7  # n = 4 -> weeks = 0, days = 4; n = 7 -> weeks = 1, days = 0
 

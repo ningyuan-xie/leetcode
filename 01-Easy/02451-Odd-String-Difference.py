@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def oddString(words: List[str]) -> str:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
 
         def get_diff(s: str) -> str:
             """Helper function to get the difference between adjacent characters"""

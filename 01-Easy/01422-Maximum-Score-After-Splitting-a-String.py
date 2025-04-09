@@ -10,7 +10,7 @@ ones in the right substring."""
 class Solution:
     @staticmethod
     def maxScore(s: str) -> int:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of zeros and ones in the string
         zeros = s[:1].count("0")  # s[:1] is the left substring (only the first char)
         ones = s[1:].count("1")  # s[1:] is the right substring (excluding the first char)

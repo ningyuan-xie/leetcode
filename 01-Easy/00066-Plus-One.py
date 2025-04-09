@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def plusOne(digits: List[int]) -> List[int]:
-        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)."""
         # Loop through the index of the numbers in the list in reverse order from RIGHT to LEFT
         # 2nd parameter -1: the stopping condition so loop will stop before -1 (at 0)
         # 3rd parameter -1: decrement by 1 each loop

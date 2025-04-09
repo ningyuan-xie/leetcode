@@ -16,7 +16,7 @@ on)."""
 class Solution:
     @staticmethod
     def accountBalanceAfterPurchase(purchaseAmount: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # The rounded amount is floor((purchaseAmount + 5) / 10) * 10
         roundedAmount = (purchaseAmount + 5) // 10 * 10
         return 100 - roundedAmount

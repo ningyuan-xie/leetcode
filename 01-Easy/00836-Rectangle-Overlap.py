@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isRectangleOverlap(rec1: List[int], rec2: List[int]) -> bool:
-        """Optimal Solution: Check for Non-Overlap. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Check for Non-Overlap. Time Complexity: O(1), Space Complexity: O(1)."""
         # Check non-overlap: either one situation below is true, then no overlap
         return not (rec1[2] <= rec2[0] or  # rec1 is to the left of rec2
                     rec1[3] <= rec2[1] or  # rec1 is below rec2

@@ -16,7 +16,7 @@ numerical value of targetWord, or false otherwise."""
 class Solution:
     @staticmethod
     def isSumEqual(firstWord: str, secondWord: str, targetWord: str) -> bool:
-        """Optimal Solution: Convert String and Sum. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Convert String and Sum. Time Complexity: O(n), Space Complexity: O(1)."""
 
         def get_numerical_value(word: str) -> int:
             """Helper function to convert a word to its numerical value.

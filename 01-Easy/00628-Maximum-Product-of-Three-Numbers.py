@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maximumProduct(nums: List[int]) -> int:
-        """Optimal Solution: Sort the array. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sort the array. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         # Sort the array which takes O(nlog(n)) time
         nums.sort()
         # Product of the three largest numbers: largest if all positive

@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findKDistantIndices(nums: List[int], key: int, k: int) -> List[int]:
-        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n), Space Complexity: O(n)."""
         # Find all k-distant indices
         k_distant_indices = []
         for i in range(len(nums)):

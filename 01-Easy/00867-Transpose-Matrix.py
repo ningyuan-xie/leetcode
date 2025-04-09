@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def transpose(matrix: List[List[int]]) -> List[List[int]]:
-        """Optimal Solution: Brute Force. Time Complexity: O(n*m), Space Complexity: O(n*m)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n*m), Space Complexity: O(n*m)."""
         # Get the number of rows and columns of the matrix
         rows, cols = len(matrix), len(matrix[0])
 

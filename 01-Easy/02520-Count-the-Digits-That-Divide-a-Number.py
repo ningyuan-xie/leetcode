@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countDividingDigits(num: int) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n * m), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n * m), Space Complexity: O(1)."""
         # Initialize the answer to 0
         ans = 0
         # Iterate through each digit of the number

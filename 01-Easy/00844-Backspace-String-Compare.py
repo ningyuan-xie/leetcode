@@ -9,7 +9,7 @@ Note that after backspacing an empty text, the text will continue empty."""
 class Solution:
     @staticmethod
     def backspaceCompare(s: str, t: str) -> bool:
-        """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(n)."""
 
         def process_string(string: str) -> str:
             """Helper function to process the string"""

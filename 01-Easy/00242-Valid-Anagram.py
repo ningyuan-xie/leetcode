@@ -9,7 +9,7 @@ formed from iceman."""
 class Solution:
     @staticmethod
     def isAnagram(s: str, t: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Base case: if the lengths of two strings are different, return False
         if len(s) != len(t):
             return False

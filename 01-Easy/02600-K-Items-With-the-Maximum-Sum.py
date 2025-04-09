@@ -14,7 +14,7 @@ written on the items."""
 class Solution:
     @staticmethod
     def kItemsWithMaximumSum(numOnes: int, numZeros: int, numNegOnes: int, k: int) -> int:
-        """Optimal Solution: Greedy. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy. Time Complexity: O(1), Space Complexity: O(1)."""
         # Pick all possible 1s
         ones_taken = min(k, numOnes)
         k -= ones_taken

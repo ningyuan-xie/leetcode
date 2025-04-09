@@ -17,7 +17,7 @@ of num."""
 class Solution:
     @staticmethod
     def splitNum(num: int) -> int:
-        """Optimal Solution: Sorting. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         # Sort the digits of num in non decreasing order
         digits = sorted(str(num))  # 4325 -> ['2', '3', '4', '5']
 

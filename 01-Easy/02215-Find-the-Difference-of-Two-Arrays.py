@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findDifference(nums1: List[int], nums2: List[int]) -> List[List[int]]:
-        """Optimal Solution: List & Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: List & Set. Time Complexity: O(n), Space Complexity: O(n)."""
         # Convert to set for faster lookup
         set1, set2 = set(nums1), set(nums2)
 

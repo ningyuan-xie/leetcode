@@ -12,7 +12,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def increasingBST(root: Optional[TreeNode]) -> Optional[TreeNode]:
-        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Inorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)."""
 
         def inorder_traversal(node: Optional[TreeNode]) \
                 -> List[Optional[TreeNode]]:

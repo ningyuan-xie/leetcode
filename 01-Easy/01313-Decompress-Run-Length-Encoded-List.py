@@ -15,7 +15,7 @@ class Solution:
     @staticmethod
     def decompressRLElist(nums: List[int]) -> List[int]:
         """Optimal Solution: list.extend() method.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the result
         result = []
 

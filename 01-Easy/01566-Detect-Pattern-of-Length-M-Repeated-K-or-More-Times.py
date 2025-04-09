@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def containsPattern(arr: List[int], m: int, k: int) -> bool:
-        """Optimal Solution: Pattern Matching. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Pattern Matching. Time Complexity: O(n), Space Complexity: O(1)."""
 
         def is_repeated_pattern(start: int, length: int, repeats: int) -> bool:
             """Helper function to check if the pattern starting at `start` repeats `k` times"""

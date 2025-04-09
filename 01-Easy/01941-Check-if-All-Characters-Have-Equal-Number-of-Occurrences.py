@@ -9,7 +9,7 @@ A string s is good if all the characters that appear in s have the same number o
 class Solution:
     @staticmethod
     def areOccurrencesEqual(s: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Count the frequency of each character
         freq = {}
         for char in s:

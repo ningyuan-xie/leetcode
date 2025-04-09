@@ -13,7 +13,7 @@ consecutive black blocks."""
 class Solution:
     @staticmethod
     def minimumRecolors(blocks: str, k: int) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the number of white blocks in the first window of size k
         white_count = sum(1 for i in range(k) if blocks[i] == 'W')
         min_recolors = white_count  # E.g. "WWBWWBBWBW" -> white_count = min_count = 3

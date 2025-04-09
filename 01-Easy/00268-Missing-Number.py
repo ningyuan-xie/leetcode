@@ -27,7 +27,7 @@ class Solution:
 
     @staticmethod
     def missingNumberSumFormula(nums: List[int]) -> int:
-        """Optimal Solution: Gauss's Formula. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Gauss's Formula. Time Complexity: O(n), Space Complexity: O(1)."""
         # Calculate the sum of the numbers from 0 to n using the formula: sum = n * (n + 1) / 2
         n = len(nums)
         expected_sum = n * (n + 1) // 2

@@ -9,7 +9,7 @@ Return the bitwise XOR of all elements of nums."""
 class Solution:
     @staticmethod
     def xorOperation(n: int, start: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the XOR
         xor = 0
 

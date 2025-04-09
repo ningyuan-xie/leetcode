@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def fizzBuzz(n: int) -> List[str]:
-        """Optimal Solution: Modulo Operator. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Modulo Operator. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the output list
         output = []
         # Iterate from 1 to n (inclusive)

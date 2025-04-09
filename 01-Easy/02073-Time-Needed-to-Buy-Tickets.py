@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def timeRequiredToBuy(tickets: List[int], k: int) -> int:
-        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)."""
         time = 0
         # Continue until the person at index k has finished
         while tickets[k] > 0:

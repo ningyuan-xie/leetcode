@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isAcronym(words: List[str], s: str) -> bool:
-        """Optimal Solution: String Concatenation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Concatenation. Time Complexity: O(n), Space Complexity: O(1)."""
         return s == ''.join([word[0] for word in words])
 
 

@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def sortedSquares(nums: List[int]) -> List[int]:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the result array
         result = [0] * len(nums)
 

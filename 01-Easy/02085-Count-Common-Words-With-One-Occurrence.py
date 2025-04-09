@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countCommonWords(words1: List[str], words2: List[str]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Use dictionaries to store the frequencies of each word in the two words
         freq1, freq2 = {}, {}
         for w1 in words1:

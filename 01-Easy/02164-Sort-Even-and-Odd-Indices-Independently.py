@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def sortEvenOdd(nums: List[int]) -> List[int]:
-        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(n)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(n)."""
         # Sort even-indexed elements (ascending)
         even = sorted(nums[::2])  # [4,1,2,3] -> [4,2] -> [2,4]
         # Sort odd-indexed elements (descending)

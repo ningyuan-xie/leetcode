@@ -12,7 +12,7 @@ substrings."""
 class Solution:
     @staticmethod
     def minLength(s: str) -> int:
-        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the stack to track the characters
         stack = []
 

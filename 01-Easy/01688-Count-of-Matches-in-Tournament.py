@@ -13,7 +13,7 @@ Return the number of matches played in the tournament until a winner is decided.
 class Solution:
     @staticmethod
     def number_of_matches(n: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # Rationale: Since only one team remains, all other teams (i.e., n - 1 teams) must be
         # eliminated, and each match eliminates exactly one team.
         return n - 1

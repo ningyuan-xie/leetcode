@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findMaxK(nums: List[int]) -> int:
-        """Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)."""
         # Find the largest positive integer that exists with its negative
         num_set = set(nums)
         max_k = -1

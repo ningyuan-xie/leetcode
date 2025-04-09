@@ -11,7 +11,7 @@ Return true if a and b are alike. Otherwise, return false."""
 class Solution:
     @staticmethod
     def halves_are_alike(s: str) -> bool:
-        """Optimal Solution: Count Vowels. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Count Vowels. Time Complexity: O(n), Space Complexity: O(1)."""
         # Define a set of vowels
         vowels = set("aeiouAEIOU")
 

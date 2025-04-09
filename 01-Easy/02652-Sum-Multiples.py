@@ -9,7 +9,7 @@ Return an integer denoting the sum of all numbers in the given range satisfying 
 class Solution:
     @staticmethod
     def sumOfMultiples(n: int) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize variable to track the sum of multiples
         sum_multiples = 0
 

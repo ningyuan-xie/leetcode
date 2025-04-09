@@ -14,7 +14,7 @@ balls."""
 class Solution:
     @staticmethod
     def count_balls(lowLimit: int, highLimit: int) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the number of balls in each box
         balls_in_box = {}
 

@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def sortPeople(names: List[str], heights: List[int]) -> List[str]:
-        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(n)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(n)."""
         # Sort the names in descending order by the people's heights
         names = [name for _, name in sorted(zip(heights, names), key=lambda x: x[0], reverse=True)]
         return names

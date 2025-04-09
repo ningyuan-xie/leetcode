@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def uniqueOccurrences(arr: List[int]) -> bool:
         """Optimal Solution: Hash Table & Set.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the frequency of each integer in arr
         freq = {}
         for num in arr:

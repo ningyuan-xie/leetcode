@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findFinalValue(nums: List[int], original: int) -> int:
-        """Optimal Solution: While Loop. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: While Loop. Time Complexity: O(n), Space Complexity: O(1)."""
         while original in nums:
             original *= 2
         return original

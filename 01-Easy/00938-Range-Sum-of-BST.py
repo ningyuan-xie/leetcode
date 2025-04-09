@@ -11,7 +11,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def rangeSumBST(root: Optional[TreeNode], low: int, high: int) -> int:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)."""
 
         def preorder_dfs_sum(node: Optional[TreeNode]) -> int:
             """Helper Function: Preorder DFS Traversal to calculate the sum of the node values;

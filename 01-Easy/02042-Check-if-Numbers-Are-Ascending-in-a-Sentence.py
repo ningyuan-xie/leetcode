@@ -15,7 +15,7 @@ Return true if so, or false otherwise."""
 class Solution:
     @staticmethod
     def areNumbersAscending(s: str) -> bool:
-        """Optimal Solution: Split and Check. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Split and Check. Time Complexity: O(n), Space Complexity: O(n)."""
         # Split the sentence into words
         words = s.split()
 

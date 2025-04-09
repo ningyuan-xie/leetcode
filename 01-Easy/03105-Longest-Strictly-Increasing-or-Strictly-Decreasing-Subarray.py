@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def longestMonotonicSubarray(nums: List[int]) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         max_length = 1
         current_length = 1
         increasing = True

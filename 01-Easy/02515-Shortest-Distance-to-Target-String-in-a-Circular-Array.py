@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def closetTarget(words: List[str], target: str, startIndex: int) -> int:
-        """Optimal Solution: Circular Distance. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Circular Distance. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(words)
         min_distance = float('inf')  # Initialize to a very large number
 

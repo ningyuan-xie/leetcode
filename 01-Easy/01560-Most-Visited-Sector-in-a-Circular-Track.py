@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def mostVisited(n: int, rounds: List[int]) -> List[int]:
-        """Optimal Solution: Circular Traversal. Time Complexity: O(m), Space Complexity: O(1)"""
+        """Optimal Solution: Circular Traversal. Time Complexity: O(m), Space Complexity: O(1)."""
         # Initialize the start and end sectors of the marathon
         start_sector = rounds[0]
         end_sector = rounds[-1]

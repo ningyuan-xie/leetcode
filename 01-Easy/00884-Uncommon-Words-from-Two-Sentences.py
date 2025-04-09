@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def uncommonFromSentences(s1: str, s2: str) -> List[str]:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Combine two sentences into one sentence
         sentences = s1.split() + s2.split()
         # Initialize a hash table to store the frequency of each word

@@ -10,7 +10,7 @@ An English letter b is greater than another letter a if b appears after a in the
 class Solution:
     @staticmethod
     def greatestLetter(s: str) -> str:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize a set to store the lowercase letters
         lower_case = set()
 

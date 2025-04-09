@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findColumnWidth(grid: List[List[int]]) -> List[int]:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize variables to track the number of rows and columns
         rows = len(grid)
         cols = len(grid[0])

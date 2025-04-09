@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countTime(time: str) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(1), Space Complexity: O(1)."""
         # Count the number of valid times
         count = 0
 

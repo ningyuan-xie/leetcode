@@ -8,7 +8,7 @@ A defanged IP address replaces every period "." with "[.]"."""
 class Solution:
     @staticmethod
     def defangIPaddr(address: str) -> str:
-        """Optimal Solution: Replace Method. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Replace Method. Time Complexity: O(n), Space Complexity: O(n)."""
         return address.replace(".", "[.]")
 
 

@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxOperations(nums: List[int]) -> int:
-        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the maximum number of operations
         max_ops = 1
         score = nums.pop(0) + nums.pop(0)

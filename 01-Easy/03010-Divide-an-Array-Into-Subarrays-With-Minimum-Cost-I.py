@@ -14,7 +14,7 @@ class Solution:
     @staticmethod
     def minimumCost(nums: List[int]) -> int:
         """Optimal Solution: Find the 2 smallest elements.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         first, second = float("inf"), float("inf")
         n = len(nums)
 

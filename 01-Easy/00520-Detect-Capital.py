@@ -9,7 +9,7 @@ class Solution:
     @staticmethod
     def detectCapitalUse(word: str) -> bool:
         """Optimal Solution: Count the number of capital letters in the word.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Count the number of capital letters in the word
         capital_count = sum(1 for char in word if char.isupper())
         # Return True if the word is all lowercase or all uppercase

@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def finalPrices(prices: List[int]) -> List[int]:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(n)."""
         # Initialize the final prices array
         final_prices = []
 

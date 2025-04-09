@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def mostCommonWord(paragraph: str, banned: List[str]) -> str:
-        """ Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """ Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Normalize the paragraph: Convert to lowercase and replace punctuations with spaces
         normalized_str = ''
         for char in paragraph:

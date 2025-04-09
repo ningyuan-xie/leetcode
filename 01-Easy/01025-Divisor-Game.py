@@ -13,7 +13,7 @@ Return true if and only if Alice wins the game, assuming both players play optim
 class Solution:
     @staticmethod
     def divisorGame(n: int) -> bool:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # Alice always wins if n is even
         return n % 2 == 0
 

@@ -17,7 +17,7 @@ Return the decoded message."""
 class Solution:
     @staticmethod
     def decodeMessage(key: str, message: str) -> str:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         alphabet = "abcdefghijklmnopqrstuvwxyz"
         mapping = {}
 

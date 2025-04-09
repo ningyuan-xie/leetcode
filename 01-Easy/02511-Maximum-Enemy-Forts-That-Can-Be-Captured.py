@@ -22,7 +22,7 @@ class Solution:
     def captureForts(forts: List[int]) -> int:
         """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1).
            Traverse the array, track the last non-zero fort (1 or -1), and calculate captured enemy
-           forts (0s) between valid fort pairs (1 and -1)"""
+           forts (0s) between valid fort pairs (1 and -1)."""
         max_captured = 0
         n = len(forts)
         prev = -1  # no fort seen yet

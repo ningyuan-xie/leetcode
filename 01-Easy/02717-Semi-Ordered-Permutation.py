@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def semiOrderedPermutation(nums: List[int]) -> int:
-        """Optimal Solution: Position Swap. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Position Swap. Time Complexity: O(n), Space Complexity: O(1)."""
         # Find the position of 1 and n
         n = len(nums)
         position_1 = nums.index(1)

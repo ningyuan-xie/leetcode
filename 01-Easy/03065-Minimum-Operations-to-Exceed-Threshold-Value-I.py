@@ -13,7 +13,7 @@ class Solution:
     @staticmethod
     def minOperations(nums: List[int], k: int) -> int:
         """Optimal Solution: Count the number of elements less than k.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the minimum number of operations
         ops = 0
 

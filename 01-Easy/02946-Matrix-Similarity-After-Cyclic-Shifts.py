@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def areSimilar(mat: List[List[int]], k: int) -> bool:
-        """Optimal Solution: Matrix Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Matrix Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         rows, cols = len(mat), len(mat[0])
 
         # Iterate through each element in the matrix

@@ -8,7 +8,7 @@ characters and ignoring cases."""
 class Solution:
     @staticmethod
     def isPalindrome(s: str) -> bool:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(n)."""
         # Convert the string to lowercase and remove non-alphanumeric characters
         # isalnum() checks if the character is an alphabet or a digit: a-z, A-Z, 0-9
         # ''.join([]) concatenates list of str into str without spaces
@@ -18,7 +18,7 @@ class Solution:
 
     @staticmethod
     def isPalindromeTwoPointers(s: str) -> bool:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the two pointers
         left, right = 0, len(s) - 1
 

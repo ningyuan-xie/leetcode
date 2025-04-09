@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def islandPerimeter(grid: List[List[int]]) -> int:
-        """Optimal Solution: Counting Edges. Time Complexity: O(m * n), Space Complexity: O(1)"""
+        """Optimal Solution: Counting Edges. Time Complexity: O(m * n), Space Complexity: O(1)."""
         perimeter = 0
         # Outer loop: Iterate through the rows
         for i in range(len(grid)):  # E.g. i = 0, 1, 2, 3

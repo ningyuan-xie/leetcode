@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def checkGrid(grid: List[List[int]]) -> bool:
-        """Optimal Solution: Matrix Manipulation. Time Complexity: O(m*n), Space Complexity: O(1)"""
+        """Optimal Solution: Matrix Manipulation. Time Complexity: O(m*n), Space Complexity: O(1)."""
         rows, cols = len(grid), len(grid[0])
 
         def is_valid(i: int, j: int) -> bool:

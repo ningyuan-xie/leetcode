@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def differenceOfSum(nums: List[int]) -> int:
-        """Optimal Solution: Int and String Conversion. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Int and String Conversion. Time Complexity: O(n), Space Complexity: O(1)."""
         element_sum = 0
         digit_sum = 0
 

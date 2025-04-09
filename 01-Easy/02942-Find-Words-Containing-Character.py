@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findWordsContaining(words: List[str], x: str) -> List[int]:
-        """Optimal Solution: String Matching. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Matching. Time Complexity: O(n), Space Complexity: O(1)."""
         return [i for i, word in enumerate(words) if x in word]
 
 

@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minNumber(nums1: List[int], nums2: List[int]) -> int:
-        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy. Time Complexity: O(n), Space Complexity: O(1)."""
         # Sort both arrays in ascending order
         nums1.sort()  # [4, 1, 3] -> [1, 3, 4]
         nums2.sort()  # [5, 7] -> [5, 7]

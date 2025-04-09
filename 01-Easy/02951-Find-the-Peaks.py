@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findPeaks(mountain: List[int]) -> List[int]:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(mountain)
         peaks = []
 

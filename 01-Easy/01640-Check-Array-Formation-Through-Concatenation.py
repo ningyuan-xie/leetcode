@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def canFormArray(arr: List[int], pieces: List[List[int]]) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Hash table to store the mapping from the first element of each piece to the piece itself:
         # E.g. [[16, 18, 49]] -> {16: [16, 18, 49]}
         # E.g. [[78], [4, 64], [91]] -> {78: [78], 4: [4, 64], 91: [91]}

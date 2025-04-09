@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def checkValid(matrix: List[List[int]]) -> bool:
-        """Optimal Solution: Matrix Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Matrix Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(matrix)
         # Check if every row and column contains all the integers from 1 to n
         for i in range(n):

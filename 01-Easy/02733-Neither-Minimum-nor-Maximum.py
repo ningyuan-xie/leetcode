@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findNonMinOrMax(nums: List[int]) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Find the minimum and maximum values
         min_value = min(nums)
         max_value = max(nums)

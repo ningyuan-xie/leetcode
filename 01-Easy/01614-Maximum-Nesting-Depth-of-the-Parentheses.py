@@ -8,7 +8,7 @@ The nesting depth is the maximum number of nested parentheses."""
 class Solution:
     @staticmethod
     def maxDepth(s: str) -> int:
-        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Algorithm. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the maximum depth and current depth
         max_depth, current_depth = 0, 0
 

@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def postorderTraversal(root: Optional[TreeNode]) -> List[int]:
         """Optimal Solution: Postorder DFS Traversal.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         # Base case: if the tree root is None, return an empty list
         if not root:
             return []

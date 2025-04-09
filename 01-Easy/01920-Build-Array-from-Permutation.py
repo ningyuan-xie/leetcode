@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def buildArray(nums: List[int]) -> List[int]:
-        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(n)."""
         n = len(nums)
         ans = [0] * n
 

@@ -13,7 +13,7 @@ and you should convert all lowercase letters to uppercase. Return the reformatte
 class Solution:
     @staticmethod
     def licenseKeyFormatting(s: str, k: int) -> str:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         # Remove the dashes and convert all lowercase letters to uppercase
         s = s.replace("-", "").upper()  # E.g. s = "5F3Z-2e-9-w" -> "5F3Z2E9W"
         # Calculate the length of the first group

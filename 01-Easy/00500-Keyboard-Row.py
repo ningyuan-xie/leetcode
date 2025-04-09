@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findWords(words: List[str]) -> List[str]:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the keyboard rows
         keyboard_rows = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
         # Initialize the list of words that can be typed using one row

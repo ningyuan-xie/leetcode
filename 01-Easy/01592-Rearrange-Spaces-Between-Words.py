@@ -13,7 +13,7 @@ Return the string after rearranging the spaces."""
 class Solution:
     @staticmethod
     def reorderSpaces(text: str) -> str:
-        """Optimal Solution: Count Spaces and Words. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Count Spaces and Words. Time Complexity: O(n), Space Complexity: O(n)."""
         # Count the number of spaces and words in the text
         space_count = text.count(' ')  # E.g. "  this   is  a sentence " -> 9
         words = text.split()  # "  this   is  a sentence " -> ['this', 'is', 'a', 'sentence']

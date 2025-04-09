@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def removeAnagrams(words: List[str]) -> List[str]:
-        """Optimal Solution: Ignore the Anagrams. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Ignore the Anagrams. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the resultant list with the first word
         result = [words[0]]  # ["abba"]
 

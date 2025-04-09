@@ -11,7 +11,7 @@ Return the sum of all digits with their corresponding sign."""
 class Solution:
     @staticmethod
     def alternatingDigitSum(n: int) -> int:
-        """Optimal Solution: Int and String Conversion. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Int and String Conversion. Time Complexity: O(n), Space Complexity: O(1)."""
         alternating_sum = 0
 
         for i, digit in enumerate(str(n)):

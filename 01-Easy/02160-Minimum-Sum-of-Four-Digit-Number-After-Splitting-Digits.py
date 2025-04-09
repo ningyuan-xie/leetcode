@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minimumSum(num: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # Convert num to a list of digits
         digits = [int(digit) for digit in str(num)]
         digits.sort()  # 2932 -> [2, 3, 9, 2] -> [2, 2, 3, 9]

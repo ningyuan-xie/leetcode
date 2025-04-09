@@ -14,7 +14,7 @@ the number of days per month can be represented as: [31, 28, 31, 30, 31, 30, 31,
 class Solution:
     @staticmethod
     def countDaysTogether(arriveAlice: str, leaveAlice: str, arriveBob: str, leaveBob: str) -> int:
-        """Optimal Solution: String Manipulation. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(1), Space Complexity: O(1)."""
         daysPerMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
         def getDays(date: str) -> int:

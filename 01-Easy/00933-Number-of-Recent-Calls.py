@@ -16,7 +16,7 @@ from collections import deque
 
 class RecentCounter:
     """Optimal Solution: Sliding Window with Deque.
-       Time Complexity: O(n), Space Complexity: O(n)"""
+       Time Complexity: O(n), Space Complexity: O(n)."""
 
     def __init__(self):
         """Constructor: Initialize the instance variable"""

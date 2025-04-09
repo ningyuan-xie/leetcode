@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def sumOfEncryptedInt(nums: List[int]) -> int:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
 
         def encrypt(x: int) -> int:
             """Helper function to encrypt the integer x"""

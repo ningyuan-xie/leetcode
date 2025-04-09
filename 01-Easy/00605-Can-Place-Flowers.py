@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def canPlaceFlowers(flowerbed: List[int], n: int) -> bool:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the number of flowers that can be planted
         flowers_planted = 0
         # Initialize the length of the flowerbed and the index

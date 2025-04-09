@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def getCommon(nums1: List[int], nums2: List[int]) -> int:
-        """Optimal Solution: Set Intersection. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set Intersection. Time Complexity: O(n), Space Complexity: O(n)."""
         set1 = set(nums1)
         set2 = set(nums2)
         common = set1.intersection(set2)

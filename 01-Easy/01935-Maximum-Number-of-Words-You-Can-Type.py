@@ -11,7 +11,7 @@ text you can fully type using this keyboard."""
 class Solution:
     @staticmethod
     def canBeTypedWords(text: str, brokenLetters: str) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         # Convert brokenLetters to a set
         broken = set(brokenLetters)  # E.g., "ad" -> {"a", "d"}
         words = text.split()

@@ -13,7 +13,7 @@ If there is no space available, return false, else park the car in that size spa
 
 
 class ParkingSystem:
-    """Optimal Solution: Object-Oriented Design. Time Complexity: O(1), Space Complexity: O(1)"""
+    """Optimal Solution: Object-Oriented Design. Time Complexity: O(1), Space Complexity: O(1)."""
 
     def __init__(self, big: int, medium: int, small: int):
         """Constructor: Initialize the parking system with the number of parking spaces

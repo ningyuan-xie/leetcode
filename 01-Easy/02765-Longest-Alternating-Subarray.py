@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def alternatingSubarray(nums: List[int]) -> int:
-        """Sub-Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)"""
+        """Sub-Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)."""
         # Initialize the maximum length
         max_length = -1
         n = len(nums)
@@ -40,7 +40,7 @@ class Solution:
 
     @staticmethod
     def alternatingSubarraySlidingWindow(nums: List[int]) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(nums)
         max_length = -1  # Default if no valid subarray is found
 

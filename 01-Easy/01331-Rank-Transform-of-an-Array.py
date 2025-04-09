@@ -14,7 +14,7 @@ class Solution:
     @staticmethod
     def arrayRankTransform(arr: List[int]) -> List[int]:
         """Optimal Solution: Sort the array and create a dictionary to store the rank of each element.
-           Time Complexity: O(nlog(n)), Space Complexity: O(n)"""
+           Time Complexity: O(nlog(n)), Space Complexity: O(n)."""
         rank = {}
 
         # Create sorted version of arr with unique values

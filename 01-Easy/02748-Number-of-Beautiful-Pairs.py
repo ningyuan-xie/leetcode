@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countBeautifulPairs(nums: List[int]) -> int:
-        """Optimal Solution: GCD. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: GCD. Time Complexity: O(n^2), Space Complexity: O(1)."""
         # Initialize the count
         count = 0
         n = len(nums)

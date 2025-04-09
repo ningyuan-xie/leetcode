@@ -8,7 +8,7 @@ class Solution:
     @staticmethod
     def isPowerOfTwo(n: int) -> bool:
         """Optimal Solution: Math (only for prime).
-           Time Complexity: O(1), Space Complexity: O(1)"""
+           Time Complexity: O(1), Space Complexity: O(1)."""
         # The maximum power of 2 that can be stored in a 32-bit integer is 2^30 = 1073741824
         return n > 0 and (2**30) % n == 0
 
@@ -26,7 +26,7 @@ class Solution:
     @staticmethod
     def isPowerOfTwoRecursion(n: int) -> bool:
         """Alternative Solution: Recursion.
-           Time Complexity: O(log(n)), Space Complexity: O(log(n))"""
+           Time Complexity: O(log(n)), Space Complexity: O(log(n))."""
         # Base case: if n is less than or equal to 0, return False
         if n <= 0:
             return False

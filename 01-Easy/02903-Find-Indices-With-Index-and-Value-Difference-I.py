@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findIndices(nums: List[int], indexDifference: int, valueDifference: int) -> List[int]:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(1)."""
         n = len(nums)
 
         for i in range(n):

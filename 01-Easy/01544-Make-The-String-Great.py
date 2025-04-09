@@ -15,7 +15,7 @@ Notice that an empty string is also good."""
 class Solution:
     @staticmethod
     def makeGood(s: str) -> str:
-        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Stack. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the stack to store the characters
         stack = []
 

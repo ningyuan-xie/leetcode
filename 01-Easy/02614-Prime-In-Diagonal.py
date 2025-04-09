@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def diagonalPrime(nums: List[List[int]]) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize variables to track the maximum prime number and its sum
         max_prime = 0
         n = len(nums)

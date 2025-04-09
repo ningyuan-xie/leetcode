@@ -15,7 +15,7 @@ Notes:
 class Solution:
     @staticmethod
     def minMaxDifference(num: int) -> int:
-        """Optimal Solution: Integer Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Integer Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Convert num to string for easy manipulation
         num_str = str(num)  # 11891 -> '11891'
 

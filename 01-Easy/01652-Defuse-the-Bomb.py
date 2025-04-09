@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def decrypt(code: List[int], k: int) -> List[int]:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the result array
         n = len(code)
         result = [0] * n

@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def addedInteger(nums1: List[int], nums2: List[int]) -> int:
-        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)."""
         return min(nums2) - min(nums1)
 
 

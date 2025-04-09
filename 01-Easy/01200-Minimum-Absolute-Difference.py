@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minimumAbsDifference(arr: List[int]) -> List[List[int]]:
-        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         # Sort the array in ascending order
         arr.sort()  # E.g. [4, 2, 1, 3] -> [1, 2, 3, 4]
 

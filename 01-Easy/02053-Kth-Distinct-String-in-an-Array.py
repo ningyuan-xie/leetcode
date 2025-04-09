@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def kthDistinct(arr: List[str], k: int) -> str:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize a dictionary to store the frequency of each string
         freq = {}
         for s in arr:

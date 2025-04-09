@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def luckyNumbers(matrix: List[List[int]]) -> List[int]:
-        """Optimal Solution: Brute Force. Time Complexity: O(m*n), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(m*n), Space Complexity: O(1)."""
         lucky_numbers = []
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):

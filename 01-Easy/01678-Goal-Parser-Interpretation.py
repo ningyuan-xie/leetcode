@@ -11,7 +11,7 @@ Given the string command, return the Goal Parser's interpretation of command."""
 class Solution:
     @staticmethod
     def interpret(command: str) -> str:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the result string
         result = ""
 

@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def deleteGreatestValue(grid: list[list[int]]) -> int:
-        """Optimal Solution: Sorting. Time Complexity: O(m * n * log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sorting. Time Complexity: O(m * n * log(n)), Space Complexity: O(1)."""
         # Sort each row in descending order
         for i in range(len(grid)):
             grid[i].sort(reverse=True)

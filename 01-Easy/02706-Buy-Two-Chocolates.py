@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def buyChoco(prices: List[int], money: int) -> int:
-        """Optimal Solution: Sort. Time Complexity: O(nlog(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Sort. Time Complexity: O(nlog(n)), Space Complexity: O(1)."""
         # Sort the prices
         prices.sort()
         money -= prices[0] + prices[1]

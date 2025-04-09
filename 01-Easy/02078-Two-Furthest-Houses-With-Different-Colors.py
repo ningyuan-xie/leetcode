@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxDistance(colors: List[int]) -> int:
-        """Optimal Solution: Two Passes. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Passes. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(colors)
         # Forward loop: Compare the first house to the farthest house with a different color
         max_dist1 = 0

@@ -17,7 +17,7 @@ class Solution:
     def getTargetCopy(original: Optional[TreeNode],
                       cloned: Optional[TreeNode],
                       target: Optional[TreeNode]) -> Optional[TreeNode]:
-        """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(n)."""
         # Base case: If the original tree is empty, return None
         if not original:
             return None

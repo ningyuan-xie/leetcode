@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def resultArray(nums: List[int]) -> List[int]:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the two arrays
         array1, array2 = [], []
         array1.append(nums[0])

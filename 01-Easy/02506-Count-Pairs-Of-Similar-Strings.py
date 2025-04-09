@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def similarPairs(words: List[str]) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n * m), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n * m), Space Complexity: O(n)."""
         # Transform each word into a set of characters
         words = [set(word) for word in words]  # {"a", "b"}, {"a", "b", "c"}, {"a", "b", "c", "d"}
 

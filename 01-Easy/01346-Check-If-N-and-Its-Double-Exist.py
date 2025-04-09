@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def checkIfExist(arr: List[int]) -> bool:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)."""
         # Use set because it has O(1) lookup time
         elements = set()
 

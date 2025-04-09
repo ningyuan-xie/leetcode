@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def runningSum(nums: List[int]) -> List[int]:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the running sum array and the current sum
         running_sum, current_sum = [], 0
 

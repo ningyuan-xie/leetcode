@@ -19,7 +19,7 @@ from package.data_structures import TreeNode
 
 class Solution:
     def evaluateTree(self, root: Optional[TreeNode]) -> bool:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n)."""
         # Base Case: Leaf Node's value is 0, return False
         if root.val == 0:
             return False

@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findXOR(nums: List[int]) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize a dictionary to count occurrences of each number
         count = {}
         # Iterate through the array and count occurrences

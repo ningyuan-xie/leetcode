@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def construct2DArray(original: List[int], m: int, n: int) -> List[List[int]]:
-        """Optimal Solution: 2D Array. Time Complexity: O(m * n), Space Complexity: O(m * n)"""
+        """Optimal Solution: 2D Array. Time Complexity: O(m * n), Space Complexity: O(m * n)."""
         # Check if the length of the original array is equal to m * n
         if len(original) != m * n:
             return []

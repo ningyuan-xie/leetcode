@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findTheDistanceValue(arr1: List[int], arr2: List[int], d: int) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^2), Space Complexity: O(1)."""
         count = 0
         for x in arr1:
             # Check if for every element y in arr2, the condition |x - y| > d holds

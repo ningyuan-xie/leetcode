@@ -12,7 +12,7 @@ class Solution:
     @staticmethod
     def hasCycle(head: ListNode) -> bool:
         """Optimal Solution: Floyd's Tortoise and Hare (Cycle Detection) Algorithm.
-           Time Complexity: O(n), Space Complexity: O(1)"""
+           Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize two pointers: slow and fast
         slow, fast = head, head
 

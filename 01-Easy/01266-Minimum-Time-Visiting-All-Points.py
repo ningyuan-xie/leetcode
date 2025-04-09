@@ -19,7 +19,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minTimeToVisitAllPoints(points: List[List[int]]) -> int:
-        """Optimal Solution: Greedy Approach. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Approach. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the total time
         total_time = 0
 

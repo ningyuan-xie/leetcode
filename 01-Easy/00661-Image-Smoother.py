@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def imageSmoother(img: List[List[int]]) -> List[List[int]]:
-        """Optimal Solution: 2D Convolution. Time Complexity: O(m * n), Space Complexity: O(m * n)"""
+        """Optimal Solution: 2D Convolution. Time Complexity: O(m * n), Space Complexity: O(m * n)."""
         # Get the dimensions of the image
         row, column = len(img), len(img[0])  # 3, 3
 

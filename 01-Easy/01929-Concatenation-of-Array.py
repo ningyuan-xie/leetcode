@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def getConcatenation(nums: List[int]) -> List[int]:
-        """Optimal Solution: Double the Array. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Double the Array. Time Complexity: O(n), Space Complexity: O(n)."""
         return nums + nums
 
 

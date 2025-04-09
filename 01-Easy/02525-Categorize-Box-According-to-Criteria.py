@@ -19,7 +19,7 @@ from typing import List
 class Solution:
     @staticmethod
     def categorizeBox(length: int, width: int, height: int, mass: int) -> str:
-        """Optimal Solution: If-Else. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: If-Else. Time Complexity: O(1), Space Complexity: O(1)."""
         # Initialize bulky and heavy to False
         bulky, heavy = False, False
 

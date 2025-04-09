@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def divideArray(nums: List[int]) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
         # Count the occurrences of each number
         num_count = {}
         for num in nums:

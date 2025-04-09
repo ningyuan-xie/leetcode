@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def canMakeArithmeticProgression(arr: List[int]) -> bool:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Sort the array
         arr.sort()
 

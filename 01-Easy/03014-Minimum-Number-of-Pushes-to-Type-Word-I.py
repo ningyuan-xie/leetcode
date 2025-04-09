@@ -18,7 +18,7 @@ An example mapping of letters to keys on a telephone keypad is given below. Note
 class Solution:
     @staticmethod
     def minimumPushes(word: str) -> int:
-        """Optimal Solution: While Loop. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: While Loop. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the total number of words and pushes
         n = len(word)
         push = 0

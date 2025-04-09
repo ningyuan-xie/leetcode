@@ -11,7 +11,7 @@ from collections import Counter
 class Solution:
     @staticmethod
     def commonChars(words: List[str]) -> List[str]:
-        """Optimal Solution: Counter. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Counter. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize a counter with the characters from the first word
         # E.g. words = ["bella", "label", "roller"] -> Counter({'b': 1, 'e': 1, 'l': 2, 'a': 1})
         common_count = Counter(words[0])

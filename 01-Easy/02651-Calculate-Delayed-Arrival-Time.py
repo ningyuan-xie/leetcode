@@ -10,7 +10,7 @@ Note that the time in this problem is in 24-hours format."""
 class Solution:
     @staticmethod
     def findDelayedArrivalTime(arrivalTime: int, delayedTime: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         return (arrivalTime + delayedTime) % 24
 
 

@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def diagonalSum(mat: List[List[int]]) -> int:
-        """Optimal Solution: Matrix Traversal. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Matrix Traversal. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the sum of the diagonals
         diagonal_sum = 0
 

@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def max_ascending_sum(nums: List[int]) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize variables to store the current and maximum ascending subarray sum
         current_sum = max_sum = nums[0]
 

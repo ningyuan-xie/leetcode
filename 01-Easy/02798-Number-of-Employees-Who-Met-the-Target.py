@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numberOfEmployeesWhoMetTarget(hours: List[int], target: int) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         count = 0
         for hour in hours:
             if hour >= target:

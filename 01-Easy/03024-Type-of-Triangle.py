@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def triangleType(nums: List[int]) -> str:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         a, b, c = sorted(nums)
 
         # Check if the triangle is valid

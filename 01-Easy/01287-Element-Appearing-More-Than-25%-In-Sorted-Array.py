@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findSpecialInteger(arr: List[int]) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the window size as 25% of the array length
         window_size = len(arr) // 4
 

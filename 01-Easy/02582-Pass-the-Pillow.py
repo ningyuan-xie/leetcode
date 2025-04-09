@@ -14,7 +14,7 @@ time seconds."""
 class Solution:
     @staticmethod
     def passThePillow(n: int, time: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # Calculate the number of complete rounds
         rounds = time // (n - 1)  # 5 // 3 = 1
 

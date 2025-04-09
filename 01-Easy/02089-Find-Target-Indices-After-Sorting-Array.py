@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findTargetIndices(nums: List[int], target: int) -> List[int]:
-        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(n)"""
+        """Optimal Solution: Sorting. Time Complexity: O(nlogn), Space Complexity: O(n)."""
         # Sort the list of integers
         sorted_nums = sorted(nums)  # [1, 2, 5, 2, 3] -> [1, 2, 2, 3, 5]
         # Find the indices of the target element in the sorted list

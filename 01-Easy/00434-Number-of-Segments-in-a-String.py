@@ -8,7 +8,7 @@ A segment is defined to be a contiguous sequence of non-space characters."""
 class Solution:
     @staticmethod
     def countSegments(s: str) -> int:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of segments
         count = 0
         # Iterate through the string

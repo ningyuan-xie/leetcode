@@ -10,7 +10,7 @@ countAndSay(n) is the way you would "say" the digit string from countAndSay(n-1)
 class Solution:
     @staticmethod
     def countAndSay(n: int) -> str:
-        """Optimal Solution: Iteration. Time Complexity: O(2^n), Space Complexity: O(2^n)"""
+        """Optimal Solution: Iteration. Time Complexity: O(2^n), Space Complexity: O(2^n)."""
         # Initialize the first digit string
         result = "1"
         for _ in range(n - 1):  # _ is a throwaway variable: 0 -> 1 -> 2, 3 loops to reach n = 4

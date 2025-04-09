@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maximumPopulation(logs: List[List[int]]) -> int:
-        """Optimal Solution: Range Count. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Range Count. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the population count: [0, 0, 0, ..., 0]
         population = [0] * 101
 

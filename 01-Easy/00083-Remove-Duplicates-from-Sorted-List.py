@@ -12,7 +12,7 @@ from package.data_structures import ListNode
 class Solution:
     @staticmethod
     def deleteDuplicates(head: Optional[ListNode]) -> Optional[ListNode]:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         # Base case: if the linked list is empty, return None
         if not head:
             return None

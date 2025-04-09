@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numberOfPoints(nums: List[List[int]]) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the set of points
         points = set()
 

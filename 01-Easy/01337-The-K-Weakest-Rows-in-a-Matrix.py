@@ -16,7 +16,7 @@ class Solution:
     @staticmethod
     def kWeakestRows(mat: List[List[int]], k: int) -> List[int]:
         """Optimal Solution: Tuple sorting.
-           Time Complexity: O(m * n + m * log(m)), Space Complexity: O(m)"""
+           Time Complexity: O(m * n + m * log(m)), Space Complexity: O(m)."""
         # Count the number of soldiers in each row
         # E.g. [(2, 0), (3, 1), (1, 2), (2, 3), (5, 4)]
         soldiers = [(sum(row), i) for (i, row) in enumerate(mat)]

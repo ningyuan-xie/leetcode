@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def fillCups(amount: List[int]) -> int:
-        """Optimal Solution: Greedy Approach. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Greedy Approach. Time Complexity: O(1), Space Complexity: O(1)."""
         # Sort the array to always work with the largest two values
         amount.sort()  # [1, 4, 2] -> [1, 2, 4]
 

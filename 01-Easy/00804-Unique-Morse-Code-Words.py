@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def uniqueMorseRepresentations(words: List[str]) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         # Morse code
         morse_codes = [".-", "-...", "-.-.", "-..", ".",  # a, b, c, d, e
                        "..-.", "--.", "....", "..", ".---",  # f, g, h, i, j

@@ -21,7 +21,7 @@ from typing import List
 class Solution:
     @staticmethod
     def slowestKey(releaseTimes: List[int], keysPressed: str) -> str:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the slowest key and the longest duration
         slowest_key, longest_duration = keysPressed[0], releaseTimes[0]
 

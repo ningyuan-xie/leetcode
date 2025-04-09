@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countCharacters(words: List[str], chars: str) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize a dictionary to store the count of characters in chars
         char_count = {}
         for char in chars:

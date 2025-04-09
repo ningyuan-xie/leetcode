@@ -11,7 +11,7 @@ can drink."""
 class Solution:
     @staticmethod
     def numWaterBottles(numBottles: int, numExchange: int) -> int:
-        """Optimal Solution: Simulation. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Simulation. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         # Initialize the total number of water bottles drunk
         total = numBottles
 

@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def sumOfSquares(nums: List[int]) -> int:
-        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)."""
         # enumerate(nums, 1) to start the index from 1
         return sum(num * num
                    for (index, num) in enumerate(nums, 1)

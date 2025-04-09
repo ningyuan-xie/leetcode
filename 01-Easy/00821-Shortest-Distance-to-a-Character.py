@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def shortestToChar(s: str, c: str) -> List[int]:
-        """Optimal Solution: Two Passes. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Two Passes. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the result array
         n = len(s)
         result = [0] * n

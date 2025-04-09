@@ -10,7 +10,7 @@ Return the merged string."""
 class Solution:
     @staticmethod
     def merge_alternately(word1: str, word2: str) -> str:
-        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: One Pass. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the merged string
         merged = []
         # Get the length of the shorter string

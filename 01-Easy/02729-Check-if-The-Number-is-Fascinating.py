@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isFascinating(n: int) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table. Time Complexity: O(1), Space Complexity: O(1)."""
         # Concatenate the numbers
         concatenated = str(n) + str(2 * n) + str(3 * n)
 

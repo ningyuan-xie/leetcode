@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maximumTripletValue(nums: List[int]) -> int:
-        """Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)"""
+        """Optimal Solution: Brute Force. Time Complexity: O(n^3), Space Complexity: O(1)."""
         n = len(nums)
         max_value = 0
 

@@ -14,7 +14,7 @@ from typing import List
 class Solution:
     @staticmethod
     def areaOfMaxDiagonal(dimensions: List[List[int]]) -> int:
-        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)."""
         max_area = 0
         longest_diagonal = 0
 

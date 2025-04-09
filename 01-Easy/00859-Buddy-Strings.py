@@ -11,7 +11,7 @@ For example, swapping at indices 0 and 2 in "abcd" results in "cbad"."""
 class Solution:
     @staticmethod
     def buddyStrings(s: str, goal: str) -> bool:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n)."""
         # Check if the two strings have the same length
         if len(s) != len(goal):
             return False

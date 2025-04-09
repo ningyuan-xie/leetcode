@@ -19,7 +19,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isWinner(player1: List[int], player2: List[int]) -> int:
-        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize variables to track the number of turns and the scores of the players
         turns = len(player1)
         score1, score2 = 0, 0

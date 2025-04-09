@@ -8,7 +8,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 class Solution:
     @staticmethod
     def climbStairs(n: int) -> int:
-        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)."""
         # Base case for "one": if currently at last stair (top), 1 way to reach the top (stay there)
         # Base case for "two": if currently at second to last stair, 1 way to reach the top (1 step)
         one, two = 1, 1

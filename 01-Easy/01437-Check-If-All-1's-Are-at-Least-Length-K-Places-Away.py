@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def kLengthApart(nums: List[int], k: int) -> bool:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize last 1's index to -k - 1, so that the distance check below
         # i - last_one_index > k will always pass for the first 1 at index 0
         last_one_index = -k - 1

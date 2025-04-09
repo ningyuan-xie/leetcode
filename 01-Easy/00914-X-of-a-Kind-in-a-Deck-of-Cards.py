@@ -15,7 +15,7 @@ class Solution:
     @staticmethod
     def hasGroupsSizeX(deck: List[int]) -> bool:
         """Optimal Solution: Hash Table and Common Divisor.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         # Count the frequency of each card
         count = {}
         for card in deck:

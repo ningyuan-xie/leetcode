@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findThreeDigitEvenNumbers(digits: List[int]) -> List[int]:
-        """Optimal Solution: Set. Time Complexity: O(n^3), Space Complexity: O(n)"""
+        """Optimal Solution: Set. Time Complexity: O(n^3), Space Complexity: O(n)."""
         # Use a set to avoid duplicates
         result = set()
 

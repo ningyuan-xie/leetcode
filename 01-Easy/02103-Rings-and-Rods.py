@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def countPoints(rings: str) -> int:
-        """Optimal Solution: Hash Table & Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Hash Table & Set. Time Complexity: O(n), Space Complexity: O(1)."""
         # Dictionary to store colors for each rod; colors are stored in a set to avoid duplicates
         rod_colors = {str(i): set() for i in range(10)}  # {'0': set(), '1': set(), ..., '9': set()}
 

@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def removeDigit(number: str, digit: str) -> str:
         """Optimal Solution: Iterate Through Each Character.
-           Time Complexity: O(n), Space Complexity: O(n)"""
+           Time Complexity: O(n), Space Complexity: O(n)."""
         max_result = ""
 
         # Iterate through each character in the number

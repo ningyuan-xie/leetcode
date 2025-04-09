@@ -15,7 +15,7 @@ from typing import List, Optional
 
 
 class OrderedStream:
-    """Optimal Solution: Array Stream. Time Complexity: O(n), Space Complexity: O(n)"""
+    """Optimal Solution: Array Stream. Time Complexity: O(n), Space Complexity: O(n)."""
 
     def __init__(self, n: int):
         """Constructor: Initialize the stream with n elements"""

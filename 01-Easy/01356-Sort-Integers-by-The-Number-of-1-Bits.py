@@ -13,7 +13,7 @@ class Solution:
     @staticmethod
     def sortByBits(arr: List[int]) -> List[int]:
         """Optimal Solution: Sorting with lambda function.
-           Time Complexity: O(nlog(n)), Space Complexity: O(n)"""
+           Time Complexity: O(nlog(n)), Space Complexity: O(n)."""
         # Sort the array based on the number of 1's in the binary representation of each element
         # key=lambda x: (bin(x).count("1"), x) sorts by the number of 1's and then by the element itself
         return sorted(arr, key=lambda x: (bin(x).count("1"), x))

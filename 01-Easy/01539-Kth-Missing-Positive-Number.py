@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def findKthPositive(arr: List[int], k: int) -> int:
-        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Search. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of missing numbers and the previous number in sequence
         count_of_missing, prev_num_in_sequence = 0, 0
 

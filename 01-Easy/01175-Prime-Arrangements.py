@@ -12,7 +12,7 @@ class Solution:
     @staticmethod
     def numPrimeArrangements(n: int) -> int:
         """Optimal Solution: Sieve of Eratosthenes (used to find all prime numbers less than n).
-           Time Complexity: O(n * log(log(n))), Space Complexity: O(n)"""
+           Time Complexity: O(n * log(log(n))), Space Complexity: O(n)."""
         # Initialize the modulo and the prime numbers from 0 to n
         MOD, prime = 10 ** 9 + 7, [True] * (n + 1)
 

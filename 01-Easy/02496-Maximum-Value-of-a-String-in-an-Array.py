@@ -10,7 +10,7 @@ Given an array strs of alphanumeric strings, return the maximum value of any str
 class Solution:
     @staticmethod
     def maximumValue(strs: list[str]) -> int:
-        """Optimal Solution: Compare and Update. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Compare and Update. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the maximum value to 0
         max_value = 0
 

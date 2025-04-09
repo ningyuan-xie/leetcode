@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def count_good_rectangles(rectangles: List[List[int]]) -> int:
-        """Optimal Solution: Counting. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Counting. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the maximum side length & the number of rectangles that can form the largest square
         max_side = max_squares = 0
 

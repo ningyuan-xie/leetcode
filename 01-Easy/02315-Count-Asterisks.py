@@ -10,7 +10,7 @@ Note that each '|' will belong to exactly one pair."""
 class Solution:
     @staticmethod
     def countAsterisks(s: str) -> int:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         asterisks = 0
         pair = False
 

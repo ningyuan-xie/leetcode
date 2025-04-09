@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def finalPositionOfSnake(n: int, commands: List[str]) -> int:
-        """Optimal Solution: Simulation. Time Complexity: O(m), Space Complexity: O(n^2)"""
+        """Optimal Solution: Simulation. Time Complexity: O(m), Space Complexity: O(n^2)."""
         # Initialize the matrix
         matrix = [[(i * n) + j for j in range(n)] for i in range(n)]
 

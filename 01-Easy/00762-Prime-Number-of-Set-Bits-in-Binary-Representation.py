@@ -10,7 +10,7 @@ in binary."""
 class Solution:
     @staticmethod
     def count_prime_set_bits(left: int, right: int) -> int:
-        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Set. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the count of numbers having a prime number of set bits
         count = 0
 

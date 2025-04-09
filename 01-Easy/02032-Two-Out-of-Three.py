@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def twoOutOfThree(nums1: List[int], nums2: List[int], nums3: List[int]) -> List[int]:
-        """Optimal Solution: Set Intersection. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Set Intersection. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the set to store the distinct values that are present in at least two out of
         # the three arrays
         result = set()

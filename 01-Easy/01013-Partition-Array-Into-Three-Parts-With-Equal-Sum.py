@@ -5,7 +5,7 @@ Description: Given an array of integers arr, return true if we can partition the
 non-empty parts with equal sums, otherwise return false.
 Formally, we can partition the array if we can find indexes i + 1 < j with (arr[0] + arr[1] + ...
 + arr[i] == arr[i + 1] + arr[i + 2] + ... + arr[j - 1] == arr[j] + arr[j + 1] + ...
-+ arr[arr.length - 1])"""
++ arr[arr.length - 1])."""
 
 from typing import List
 
@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def canThreePartsEqualSum(arr: List[int]) -> bool:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
         # Calculate the total sum of the array
         total_sum = sum(arr)
 

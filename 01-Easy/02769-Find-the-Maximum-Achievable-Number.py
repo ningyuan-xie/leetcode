@@ -10,7 +10,7 @@ Return the maximum possible value of x."""
 class Solution:
     @staticmethod
     def theMaximumAchievableX(num: int, t: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)"""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         return num + t * 2
 
 

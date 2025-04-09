@@ -13,7 +13,7 @@ Return the maximum integer in the array nums."""
 class Solution:
     @staticmethod
     def getMaximumGenerated(n: int) -> int:
-        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Simulation. Time Complexity: O(n), Space Complexity: O(n)."""
         # Base case: n = 0
         if n == 0:
             return 0

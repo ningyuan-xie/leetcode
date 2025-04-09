@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isMonotonic(nums: List[int]) -> bool:
-        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Linear Scan. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the monotonic flag
         is_increasing = is_decreasing = True
 

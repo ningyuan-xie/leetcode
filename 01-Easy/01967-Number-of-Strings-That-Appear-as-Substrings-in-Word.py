@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numOfStrings(patterns: List[str], word: str) -> int:
-        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
         count = 0
 
         for pattern in patterns:

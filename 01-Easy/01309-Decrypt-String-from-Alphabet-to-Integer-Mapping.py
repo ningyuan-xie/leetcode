@@ -12,7 +12,7 @@ The test cases are generated so that a unique mapping will always exist."""
 class Solution:
     @staticmethod
     def freqAlphabets(s: str) -> str:
-        """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
         # Initialize the result
         result = ""
 

@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def findRotation(mat: List[List[int]], target: List[List[int]]) -> bool:
         """Optimal Solution: Matrix Rotation & List Comprehension.
-           Time Complexity: O(n^2), Space Complexity: O(1)"""
+           Time Complexity: O(n^2), Space Complexity: O(1)."""
 
         def rotate(matrix: List[List[int]]) -> List[List[int]]:
             """Helper function to rotate a matrix by 90 degrees clockwise.

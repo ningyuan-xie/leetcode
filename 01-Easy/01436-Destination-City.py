@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def destCity(paths: List[List[str]]) -> str:
-        """Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Hash Set. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the hash set to store the cities with outgoing paths
         outgoing = set()
 

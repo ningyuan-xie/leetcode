@@ -11,7 +11,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def isUnivalTree(root: Optional[TreeNode]) -> bool:
-        """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(h)"""
+        """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(h)."""
         # Initialize the value of the root node
         val = root.val
 

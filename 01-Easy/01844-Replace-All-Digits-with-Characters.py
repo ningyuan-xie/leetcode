@@ -16,7 +16,7 @@ the solution."""
 class Solution:
     @staticmethod
     def replaceDigits(s: str) -> str:
-        """Optimal Solution: Digit Shift. Time Complexity: O(n), Space Complexity: O(n)"""
+        """Optimal Solution: Digit Shift. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the result
         result = []
 

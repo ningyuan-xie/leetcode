@@ -15,7 +15,7 @@ A substring is a contiguous sequence of characters in a string."""
 class Solution:
     @staticmethod
     def divisorSubstrings(num: int, k: int) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n), Space Complexity: O(1)."""
         # Convert the integer to a string
         num_str = str(num)  # 240 -> "240"
         # Initialize the window size and the number of substrings

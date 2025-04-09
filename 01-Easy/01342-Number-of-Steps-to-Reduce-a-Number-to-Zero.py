@@ -8,7 +8,7 @@ class Solution:
     @staticmethod
     def numberOfSteps(num: int) -> int:
         """Optimal Solution: Binary operation to reduce the number to zero.
-           Time Complexity: O(log(n)), Space Complexity: O(1)"""
+           Time Complexity: O(log(n)), Space Complexity: O(1)."""
         steps = 0
 
         while num > 0:
