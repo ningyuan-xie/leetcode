@@ -4,10 +4,10 @@ from typing import List, Optional
 
 
 class ListNode:
-    """Class for a singly-linked list node"""
+    """Class for a singly-linked list node."""
 
     def __init__(self, val=0, next=None):
-        """Constructor for a singly-linked list node"""
+        """Constructor for a singly-linked list node."""
         self.val = val
         self.next = next
 
@@ -15,20 +15,20 @@ class ListNode:
     identity_check = False  # Default version: check the full value of the node
 
     def __eq__(self, other):
-        """Instance equality method: overload the __eq__ method to compare two ListNode objects"""
+        """Instance equality method: overload the __eq__ method to compare two ListNode objects."""
         if ListNode.identity_check:
-            # 0141-Linked-List-Cycle.py, 0160-Intersection-of-Two-Linked-Lists.py
+            # 141. Linked List Cycle, 160. Intersection of Two Linked Lists
             return self is other if isinstance(other, ListNode) else False
         return (self.val == other.val
                 and self.next == other.next) if isinstance(other, ListNode) else False
 
     def __str__(self):
-        """Instance description method: override the __str__ method"""
+        """Instance description method: override the __str__ method."""
         return f"ListNode({self.val}, {self.next})"
 
     @staticmethod
     def build_linked_list(array: List) -> Optional['ListNode']:
-        """Helper function to build a linked list from a list"""
+        """Helper function to build a linked list from a list."""
         # Base Case: If the array is empty, return None
         if not array:
             return None
@@ -43,7 +43,7 @@ class ListNode:
 
     @staticmethod
     def printLinkedList(head):
-        """Static method: helper function to print the linked list"""
+        """Static method: helper function to print the linked list."""
         while head:
             print(head.val, end=" -> ")
             head = head.next
@@ -51,29 +51,29 @@ class ListNode:
 
 
 class TreeNode:
-    """Class for a binary tree node"""
+    """Class for a binary tree node."""
 
     def __init__(self, val=0, left=None, right=None):
-        """Constructor for a binary tree node"""
+        """Constructor for a binary tree node."""
         self.val = val
         self.left = left
         self.right = right
 
     def __eq__(self, other):
-        """Instance equality method: override the __eq__ method to compare two TreeNode objects"""
+        """Instance equality method: override the __eq__ method to compare two TreeNode objects."""
         return (self.val == other.val
                 and self.left == other.left
                 and self.right == other.right) if isinstance(other, TreeNode) else False
 
     def __str__(self):
-        """Instance description method: override the __str__ method"""
+        """Instance description method: override the __str__ method."""
         return f"TreeNode({self.val}, {self.left}, {self.right})"
 
     @staticmethod
     def build_binary_tree(array: List) -> Optional['TreeNode']:
         """Helper function to build a binary tree from a list: BFS level order traversal.
            E.g. [4, 2, 9, 3, 5, None, 7]
-           -> pop 4, append 2, 9 -> pop 2, append 3, 5 -> pop 9, append 7"""
+           -> pop 4, append 2, 9 -> pop 2, append 3, 5 -> pop 9, append 7."""
         if not array:
             return None
 
@@ -103,33 +103,33 @@ class TreeNode:
 
 
 class Node:
-    """Class for an N-ary tree node"""
+    """Class for an N-ary tree node."""
 
     def __init__(self, val=None, children=None):
-        """Constructor for an N-ary tree node"""
+        """Constructor for an N-ary tree node."""
         self.val = val
         self.children = children if children else []  # Still iterable when children is None
 
     def __eq__(self, other):
-        """Instance equality method: override the __eq__ method to compare two Node objects"""
+        """Instance equality method: override the __eq__ method to compare two Node objects."""
         return (self.val == other.val
                 and self.children == other.children) if isinstance(other, Node) else False
 
     def __str__(self):
-        """Instance description method: override the __str__ method"""
+        """Instance description method: override the __str__ method."""
         return f"Node({self.val}, {self.children})"
 
     def __repr__(self):
         """Instance representation method: override the __repr__ method,
            which is more official than the __str__ method.
            If children is a list of nodes, it will recursively call __str__ on each
-           child node, providing a clear and complete representation of the entire tree"""
+           child node, providing a clear and complete representation of the entire tree."""
         return self.__str__()
 
     @staticmethod
     def build_nary_tree(array: List) -> Optional['Node']:
         """Helper function to build an N-ary tree from a list: BFS level order traversal.
-           E.g. [1, None, 3, 2, 4, None, 5, 6] -> pop 1, append 3, 2, 4 -> pop 3, append 5, 6"""
+           E.g. [1, None, 3, 2, 4, None, 5, 6] -> pop 1, append 3, 2, 4 -> pop 3, append 5, 6."""
         # Base Case: If the array is empty, return None
         if not array:
             return None
