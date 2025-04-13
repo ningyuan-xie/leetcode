@@ -1,34 +1,34 @@
 """58. Length of Last Word
 Link: https://leetcode.com/problems/length-of-last-word/
 Difficulty: Easy
-Description: Given a string s consisting of some words separated by some number of spaces,
-return the length of the last word in the string."""
+Description: Given a string s consisting of words and spaces, return the length of the last word in the string.
+A word is a maximal substring consisting of non-space characters only."""
 
 
 class Solution:
     @staticmethod
     def lengthOfLastWord(s: str) -> int:
-        """Optimal Solution: Split. Time Complexity: O(n), Space Complexity: O(n)."""
-        # Split the string by space
-        words = s.split()  # E.g. "Hello World" -> ["Hello", "World"]
-        # If the list is empty, return 0
-        if not words:
-            return 0
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(1)."""
+        # Split the string into words using whitespace as the delimiter
+        words = s.split()
         # Return the length of the last word
-        return len(words[-1])
+        return len(words[-1]) if words else 0
 
 
-# Input: s = "Hello World", Output: 5
-assert Solution.lengthOfLastWord("Hello World") == 5
+def unit_tests():
+    # Input: s = "Hello World", Output: 5
+    assert Solution.lengthOfLastWord("Hello World") == 5
 
-# Input: s = "   fly me to   the moon  ", Output: 4
-assert Solution.lengthOfLastWord("   fly me to   the moon  ") == 4
+    # Input: s = "   fly me to   the moon  ", Output: 4
+    assert Solution.lengthOfLastWord("   fly me to   the moon  ") == 4
 
-# Input: s = "luffy is still joyboy", Output: 6
-assert Solution.lengthOfLastWord("luffy is still joyboy") == 6
+    # Input: s = "luffy is still joyboy", Output: 6
+    assert Solution.lengthOfLastWord("luffy is still joyboy") == 6
 
-# Input: s = "a", Output: 1
-assert Solution.lengthOfLastWord("a") == 1
+    # Input: s = "a", Output: 1
+    assert Solution.lengthOfLastWord("a") == 1
 
-print("All unit tests are passed.")
 
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
