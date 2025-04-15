@@ -1,43 +1,42 @@
 """69. Sqrt(x)
 Link: https://leetcode.com/problems/sqrtx/
 Difficulty: Easy
-Description: Given a non-negative integer x, compute and return the square root of x."""
+Description: Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.
+You must not use any built-in exponent function or operator.
+• For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python."""
 
 
 class Solution:
     @staticmethod
     def mySqrt(x: int) -> int:
-        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)."""
-        # Base case: if x is 0 or 1, return x
-        if x == 0 or x == 1:
-            return x
-        # Initialize the left and right pointers
-        left, right = 1, x
-        # Loop until left pointer > right pointer
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        left, right = 0, x
         while left <= right:
-            # Calculate the middle value
-            mid = left + (right - left) // 2
-            # Calculate the square of the middle value
-            mid_squared = mid ** 2
-            if mid_squared == x:
+            mid = (left + right) // 2
+            if mid * mid == x:
                 return mid
-            # The square of the middle is less than x, so the square root is on the right side
-            elif mid_squared < x:
+            elif mid * mid < x:
                 left = mid + 1
-            # The square of the middle is greater than x, so the square root is on the left side
             else:
                 right = mid - 1
-        # Left is the ceiling and right is the floor of the square root of x
+
+        # When the loop ends, right is the largest integer such that right * right <= x
         return right
 
+def unit_tests():
+    # Input: x = 4, Output: 2
+    assert Solution.mySqrt(4) == 2
 
-# Input: x = 4, Output: 2
-assert Solution.mySqrt(4) == 2
+    # Input: x = 8, Output: 2
+    assert Solution.mySqrt(8) == 2
 
-# Input: x = 8, Output: 2
-assert Solution.mySqrt(8) == 2
+    # Input: x = 1, Output: 1
+    assert Solution.mySqrt(1) == 1
 
-# Input: x = 1, Output: 1
-assert Solution.mySqrt(1) == 1
+    # Input: x = 0, Output: 0
+    assert Solution.mySqrt(0) == 0
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
