@@ -9,7 +9,7 @@ You must not use any built-in exponent function or operator.
 class Solution:
     @staticmethod
     def mySqrt(x: int) -> int:
-        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)"""
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)."""
         left, right = 0, x
         while left <= right:
             mid = (left + right) // 2

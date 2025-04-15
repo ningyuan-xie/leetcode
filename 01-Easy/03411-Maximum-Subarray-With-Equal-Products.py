@@ -15,7 +15,7 @@ from math import gcd, lcm
 class Solution:
     @staticmethod
     def maxLength(nums: List[int]) -> int:
-        """Optimal Solution: Sliding Window. Time Complexity: O(n^2), Space Complexity: O(1)"""
+        """Optimal Solution: Sliding Window. Time Complexity: O(n^2), Space Complexity: O(1)."""
         n = len(nums)
         max_len = 0
 

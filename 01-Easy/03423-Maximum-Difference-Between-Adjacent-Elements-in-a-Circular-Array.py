@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maxAdjacentDifference(nums: List[int]) -> int:
-        """Optimal Solution: Circular Array. Time Complexity: O(n), Space Complexity: O(1)"""
+        """Optimal Solution: Circular Array. Time Complexity: O(n), Space Complexity: O(1)."""
         n = len(nums)
         max_diff = 0
 

@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     @staticmethod
     def zigzagTraversal(grid: List[List[int]]) -> List[int]:
-        """Optimal Solution: Matrix Traversal. Time Complexity: O(m * n), Space Complexity: O(1)"""
+        """Optimal Solution: Matrix Traversal. Time Complexity: O(m * n), Space Complexity: O(1)."""
         m, n = len(grid), len(grid[0])
         result = []
 
