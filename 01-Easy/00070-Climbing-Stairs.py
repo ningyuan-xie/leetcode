@@ -8,25 +8,32 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 class Solution:
     @staticmethod
     def climbStairs(n: int) -> int:
-        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1)."""
-        # Base case for "one": if currently at last stair (top), 1 way to reach the top (stay there)
-        # Base case for "two": if currently at second to last stair, 1 way to reach the top (1 step)
-        one, two = 1, 1
-        # Fibonacci sequence going from back to beginning: F(n) = F(n - 1) + F(n - 2)
-        # as each PREVIOUS stair depends on the LATER two stairs: dynamic programming
-        # To get to the F(n) Fibonacci number, loop n - 1 times because we already have F(0) and F(1)
-        for i in range(n - 1):  # E.g. if n = 5, have stair 5 and 4, need stair 3, 2, 1, 0
-            one, two = two, one + two
-        return two
+        """Optimal Solution: Dynamic Programming. Time Complexity: O(n), Space Complexity: O(1).
+        1st step: 1 way; 2nd step: 2 ways;
+        3rd step: 1st step = 1 then 2 left (2 ways); 1st step = 2 then 1 left (1 way); 2 + 1 = 3 ways;
+        4th step: 1st step = 1 then 3 left (3 ways); 1st step = 2 then 2 left (2 way); 3 + 2 = 5 ways;
+        nth step: 1st step = 1 then (n-1) left; 1st step = 2 then (n-2) left; (n-1) + (n-2) ways."""
+        if n <= 2:
+            return n
+
+        first, second = 1, 2
+        # Climb(x) = Climb(x-1) + Climb(x-2)
+        for _ in range(3, n + 1):
+            first, second = second, first + second
+        return second
 
 
-# Input: n = 2, Output: 2
-assert Solution.climbStairs(2) == 2
+def unit_tests():
+    # Input: n = 2, Output: 2
+    assert Solution.climbStairs(2) == 2
 
-# Input: n = 3, Output: 3
-assert Solution.climbStairs(3) == 3
+    # Input: n = 3, Output: 3
+    assert Solution.climbStairs(3) == 3
 
-# Input: n = 4, Output: 5
-assert Solution.climbStairs(4) == 5
+    # Input: n = 4, Output: 5
+    assert Solution.climbStairs(4) == 5
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
