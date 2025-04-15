@@ -7,35 +7,41 @@ Description: Given two binary strings a and b, return their sum as a binary stri
 class Solution:
     @staticmethod
     def addBinary(a: str, b: str) -> str:
-        """Optimal Solution: Math. Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m)).
-           Similar to 0066-Plus-One.py"""
-        # Initialize result and carry
-        result, carry = [], 0
-        # Reverse the strings, so we can loop through the digits from RIGHT to LEFT
-        a, b = a[::-1], b[::-1]
-        # Loop through the maximum length to get every digit
-        for i in range(max(len(a), len(b))):
-            digit_a = int(a[i]) if i < len(a) else 0
-            digit_b = int(b[i]) if i < len(b) else 0
-            # Calculate the total and get the remainder and carry
+        """Optimal Solution: Binary Addition. Time Complexity: O(max(m, n)), Space Complexity: O(1)"""
+        m, n = len(a), len(b)
+        result = []
+        carry = 0
+
+        # Traverse both strings from the end
+        for i in range(max(m, n)):
+            # Get the current digits and add them along with the carry
+            digit_a = int(a[m - 1 - i]) if i < m else 0
+            digit_b = int(b[n - 1 - i]) if i < n else 0
             total = digit_a + digit_b + carry
-            remainder, carry = total % 2, total // 2
-            # Add the remainder to the back of the result (reverted)
-            result.append(str(remainder))
-        # If there's a carry left, add it to the result
+
+            # Calculate the new digit and carry
+            result.append(str(total % 2))
+            carry = total // 2
+
+        # If there's a carry left, append it
         if carry:
             result.append(str(carry))
-        # Reverse the result (which is a list of str) and join them into a string
-        return "".join(result[::-1])
+
+        # Reverse the result and join to form the final binary string
+        return ''.join(result[::-1])
 
 
-# Input: a = "11", b = "1", Output: "100"
-assert Solution.addBinary("11", "1") == "100"
+def unit_tests():
+    # Input: a = "11", b = "1", Output: "100"
+    assert Solution.addBinary("11", "1") == "100"
 
-# Input: a = "1010", b = "1011", Output: "10101"
-assert Solution.addBinary("1010", "1011") == "10101"
+    # Input: a = "1010", b = "1011", Output: "10101"
+    assert Solution.addBinary("1010", "1011") == "10101"
 
-# Input: a = "1", b = "0", Output: "1"
-assert Solution.addBinary("1", "0") == "1"
+    # Input: a = "1", b = "0", Output: "1"
+    assert Solution.addBinary("1", "0") == "1"
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
