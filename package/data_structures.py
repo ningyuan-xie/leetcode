@@ -71,9 +71,8 @@ class TreeNode:
 
     @staticmethod
     def build_binary_tree(array: List) -> Optional['TreeNode']:
-        """Helper function to build a binary tree from a list: BFS level order traversal.
-           E.g. [4, 2, 9, 3, 5, None, 7]
-           -> pop 4, append 2, 9 -> pop 2, append 3, 5 -> pop 9, append 7."""
+        """Helper function to build a binary tree from a list using BFS. 
+        E.g. [4, 2, 9, 3, 5, None, 7] -> pop 4, append 2, 9 -> pop 2, append 3, 5 -> pop 9, append 7."""
         if not array:
             return None
 
@@ -120,16 +119,14 @@ class Node:
         return f"Node({self.val}, {self.children})"
 
     def __repr__(self):
-        """Instance representation method: override the __repr__ method,
-           which is more official than the __str__ method.
-           If children is a list of nodes, it will recursively call __str__ on each
-           child node, providing a clear and complete representation of the entire tree."""
+        """Instance representation method: override the __repr__ method, which is more official than the __str__ method. If children is a list of nodes, it will recursively call __str__ on each
+        child node, providing a clear and complete representation of the entire tree."""
         return self.__str__()
 
     @staticmethod
     def build_nary_tree(array: List) -> Optional['Node']:
-        """Helper function to build an N-ary tree from a list: BFS level order traversal.
-           E.g. [1, None, 3, 2, 4, None, 5, 6] -> pop 1, append 3, 2, 4 -> pop 3, append 5, 6."""
+        """Helper function to build an N-ary tree from a list using BFS.
+        E.g. [1, None, 3, 2, 4, None, 5, 6] -> pop 1, append 3, 2, 4 -> pop 3, append 5, 6."""
         # Base Case: If the array is empty, return None
         if not array:
             return None
