@@ -33,8 +33,8 @@ class OrderedStream:
 
         # Traverse the stream starting from the pointer position (self.ptr) and collect values as
         # long as there are non-None values in contiguous slots
-        while (self.ptr < len(self.stream) and
-               self.stream[self.ptr]):  # does not run if self.stream[self.ptr] is None
+        while (self.ptr < len(self.stream) 
+               and self.stream[self.ptr]):  # does not run if self.stream[self.ptr] is None
             result.append(self.stream[self.ptr])
             self.ptr += 1
         # Return the list of contiguous values starting from the pointer position

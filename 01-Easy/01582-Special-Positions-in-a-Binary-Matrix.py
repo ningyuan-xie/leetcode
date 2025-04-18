@@ -20,8 +20,8 @@ class Solution:
             for j in range(len(mat[0])):
                 if mat[i][j] == 1:
                     # Check if the current row and column are special
-                    if (sum(mat[i]) == 1 and
-                            sum([mat[row][j] for row in range(len(mat))]) == 1):
+                    if (sum(mat[i]) == 1 
+                        and sum([mat[row][j] for row in range(len(mat))]) == 1):
                         special_positions += 1
 
         return special_positions
