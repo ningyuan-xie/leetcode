@@ -10,7 +10,7 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
-        """Optimal Solution: Inorder DFS. Time Complexity: O(n), Space Complexity: O(h)."""
+        """Optimal Solution: Inorder DFS. Time Complexity: O(n), Space Complexity: O(n)."""
         # Base Case: If the root is None, return an empty list
         if not root:
             return []
@@ -20,16 +20,16 @@ class Solution:
 
 def unit_tests():
     # Input: root = [1,null,2,3], Output: [1,3,2]
-    root_test = TreeNode.build_binary_tree([1, None, 2, 3])
-    assert Solution.inorderTraversal(root_test) == [1, 3, 2]
+    root = TreeNode.build_binary_tree([1, None, 2, 3])
+    assert Solution.inorderTraversal(root) == [1, 3, 2]
 
     # Input: root = [], Output: []
-    root_test = TreeNode.build_binary_tree([])
-    assert Solution.inorderTraversal(root_test) == []
+    root = TreeNode.build_binary_tree([])
+    assert Solution.inorderTraversal(root) == []
 
     # Input: root = [1], Output: [1]
-    root_test = TreeNode.build_binary_tree([1])
-    assert Solution.inorderTraversal(root_test) == [1]
+    root = TreeNode.build_binary_tree([1])
+    assert Solution.inorderTraversal(root) == [1]
 
 
 if __name__ == "__main__":
