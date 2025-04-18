@@ -1,8 +1,8 @@
 """100. Same Tree
 Link: https://leetcode.com/problems/same-tree/
 Difficulty: Easy
-Description: Given the roots of two binary trees p and q,
-write a function to check if they are the same or not."""
+Description: Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+Two binary trees are considered the same if they are structurally identical, and the nodes have the same value."""
 
 from typing import Optional
 from package.data_structures import TreeNode
@@ -11,38 +11,36 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def isSameTree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
-           Preorder because we need to compare the roots first before the subtrees"""
-        # Base case: if both trees are None, then they are the same
+        """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(n)."""
+        # Base Case: If both trees are None, return True
         if not p and not q:
             return True
-        # Base case: If one of the trees is None, then they are not the same
+        # Base Case: If one tree is None and the other is not, return False
         if not p or not q:
             return False
-        # 1. Root Case: If the values of the roots are not the same, then they are not the same
-        root_same = p.val == q.val
-        # 2. Recursive Case: Check if the left subtrees are the same
-        left_same = Solution.isSameTree(p.left, q.left)
-        # 3. Recursive Case: Check if the right subtrees are the same
-        right_same = Solution.isSameTree(p.right, q.right)
-
-        # Return the result of the recursive cases
-        return root_same and left_same and right_same
+        # Recursive Case: root -> left -> right
+        return (p.val == q.val and 
+                Solution.isSameTree(p.left, q.left) and 
+                Solution.isSameTree(p.right, q.right))
 
 
-# Input: p = [1,2,3], q = [1,2,3], Output: True
-root_test_1 = TreeNode.build_binary_tree([1, 2, 3])
-root_test_2 = TreeNode.build_binary_tree([1, 2, 3])
-assert Solution.isSameTree(root_test_1, root_test_2) is True
+def unit_tests():
+    # Input: p = [1,2,3], q = [1,2,3], Output: True
+    p = TreeNode.build_binary_tree([1, 2, 3])
+    q = TreeNode.build_binary_tree([1, 2, 3])
+    assert Solution.isSameTree(p, q) is True
 
-# Input: p = [1,2], q = [1,null,2], Output: False
-root_test_1 = TreeNode.build_binary_tree([1, 2])
-root_test_2 = TreeNode.build_binary_tree([1, None, 2])
-assert Solution.isSameTree(root_test_1, root_test_2) is False
+    # Input: p = [1,2], q = [1,null,2], Output: False
+    p = TreeNode.build_binary_tree([1, 2])
+    q = TreeNode.build_binary_tree([1, None, 2])
+    assert Solution.isSameTree(p, q) is False
 
-# Input: p = [1,2,1], q = [1,1,2], Output: False
-root_test_1 = TreeNode.build_binary_tree([1, 2, 1])
-root_test_2 = TreeNode.build_binary_tree([1, 1, 2])
-assert Solution.isSameTree(root_test_1, root_test_2) is False
+    # Input: p = [1,2,1], q = [1,1,2], Output: False
+    p = TreeNode.build_binary_tree([1, 2, 1])
+    q = TreeNode.build_binary_tree([1, 1, 2])
+    assert Solution.isSameTree(p, q) is False
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
