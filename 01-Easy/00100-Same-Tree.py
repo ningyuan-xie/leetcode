@@ -19,9 +19,9 @@ class Solution:
         if not p or not q:
             return False
         # Recursive Case: root -> left -> right
-        return (p.val == q.val and 
-                Solution.isSameTree(p.left, q.left) and 
-                Solution.isSameTree(p.right, q.right))
+        return (p.val == q.val
+                and Solution.isSameTree(p.left, q.left)
+                and Solution.isSameTree(p.right, q.right))
 
 
 def unit_tests():
