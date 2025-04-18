@@ -19,8 +19,9 @@ class Solution:
             first_digit = s[i]
             second_digit = s[i + 1]
 
-            if first_digit != second_digit and digit_count[first_digit] == int(first_digit) and\
-                  digit_count[second_digit] == int(second_digit):
+            if (first_digit != second_digit 
+                and digit_count[first_digit] == int(first_digit) 
+                and digit_count[second_digit] == int(second_digit)):
                 return first_digit + second_digit
 
         return ""
