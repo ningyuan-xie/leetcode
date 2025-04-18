@@ -21,9 +21,9 @@ class Solution:
             if not left or not right:
                 return False
             # Recursive Case: Check if the values are equal and the subtrees are mirrors
-            return (left.val == right.val and
-                    is_mirror(left.left, right.right) and
-                    is_mirror(left.right, right.left))
+            return (left.val == right.val
+                    and is_mirror(left.left, right.right)
+                    and is_mirror(left.right, right.left))
 
         return is_mirror(root.left, root.right)
 
