@@ -16,12 +16,8 @@ class Solution:
         if not root:
             return 0
         
-        # Recursive Case: Calculate the depth of the left and right subtrees
-        left_depth = Solution.maxDepth(root.left)
-        right_depth = Solution.maxDepth(root.right)
-        
         # Return the maximum of the two depths plus one for the current node
-        return max(left_depth, right_depth) + 1
+        return max(Solution.maxDepth(root.left), Solution.maxDepth(root.right)) + 1
 
 
 def unit_tests():
