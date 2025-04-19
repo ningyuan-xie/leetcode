@@ -10,63 +10,46 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def isBalanced(root: Optional[TreeNode]) -> bool:
-        def height(node: Optional[TreeNode]) -> int:
-            """Helper function: Postorder DFS Traversal.
-               Time Complexity: O(n), Space Complexity: O(1).
-               Postorder because we need to traverse the left and right subtrees before the root.
-               Similar to 0104-Maximum-Depth-of-Binary-Tree.py"""
-            # Base case: if the node is None, height is -1
+        """Optimal Solution: Postorder DFS. Time Complexity: O(n), Space Complexity: O(n)."""
+
+        def is_balanced(node: Optional[TreeNode]) -> int:
+            """Postorder DFS to check if the tree is balanced."""
+            # Base Case: If the node is None, return height -1
             if not node:
                 return -1
-            # Recursively calculate the height of the left and right subtrees
-            # 1. Recursive Case: Traverse the left subtree
-            left_height = height(node.left)
-            # 2. Recursive Case: Traverse the right subtree
-            right_height = height(node.right)
-            # 3. Root Case: Return the maximum height of the left and right subtrees
-            # + 1 to account for the current node
-            return max(left_height, right_height) + 1
+            
+            # Recursive Case: Check the left and right subtrees
+            left = is_balanced(node.left)
+            right = is_balanced(node.right)
 
-        def is_balanced(node: Optional[TreeNode]) -> bool:
-            """Helper function: Postorder DFS Traversal.
-               Time Complexity: O(n), Space Complexity: O(n).
-               Postorder because we need to traverse the left and right subtrees before the root"""
-            # Base case: if the node is None, return True
-            if not node:
-                return True
-            # Recursively check if the left and right subtrees are balanced
-            # 1. Recursive Case: Traverse the left subtree
-            left_balanced = is_balanced(node.left)
-            # 2. Recursive Case: Traverse the right subtree
-            right_balanced = is_balanced(node.right)
-            # 3. Root Case: Check if the tree is balanced
-            # If either subtree is not balanced, return False
-            if not left_balanced or not right_balanced:
-                return False
-            # Check if the difference in height between the left and right subtrees <= 1
-            if abs(height(node.left) - height(node.right)) > 1:
-                return False
-            # If both conditions are met, return True
-            return True
+            # If already imbalanced, propagate the error code (-2)
+            if left == -2 or right == -2 or abs(left - right) > 1:
+                return -2
 
-        # Call the helper function to check if the tree is balanced
-        return is_balanced(root)
+            # If still balanced, return the height of the tree
+            return max(left, right) + 1
+
+        return is_balanced(root) != -2
+    
+
+def unit_tests():
+    # Input: root = [3,9,20,null,null,15,7], Output: True
+    root = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
+    assert Solution.isBalanced(root) is True
+
+    # Input: root = [1,2,2,3,3,null,null,4,4], Output: False
+    root = TreeNode.build_binary_tree([1, 2, 2, 3, 3, None, None, 4, 4])
+    assert Solution.isBalanced(root) is False
+
+    # Input: root = [], Output: True. An empty tree is considered balanced
+    root = TreeNode.build_binary_tree([])
+    assert Solution.isBalanced(root) is True
+
+    # Input: root = [1], Output: True. A single node tree is considered balanced
+    root = TreeNode.build_binary_tree([1])
+    assert Solution.isBalanced(root) is True
 
 
-# Input: root = [3,9,20,null,null,15,7], Output: True
-root_test = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
-assert Solution.isBalanced(root_test) is True
-
-# Input: root = [1,2,2,3,3,null,null,4,4], Output: False
-root_test = TreeNode.build_binary_tree([1, 2, 2, 3, 3, None, None, 4, 4])
-assert Solution.isBalanced(root_test) is False
-
-# Input: root = [], Output: True. An empty tree is considered balanced
-root_test = TreeNode.build_binary_tree([])
-assert Solution.isBalanced(root_test) is True
-
-# Input: root = [1], Output: True. A single node tree is considered balanced
-root_test = TreeNode.build_binary_tree([1])
-assert Solution.isBalanced(root_test) is True
-
-print("All unit tests are passed.")
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
