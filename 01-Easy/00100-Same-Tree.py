@@ -15,9 +15,11 @@ class Solution:
         # Base Case: If both trees are None, return True
         if not p and not q:
             return True
+        
         # Base Case: If one tree is None and the other is not, return False
         if not p or not q:
             return False
+        
         # Recursive Case: root -> left -> right
         return (p.val == q.val
                 and Solution.isSameTree(p.left, q.left)

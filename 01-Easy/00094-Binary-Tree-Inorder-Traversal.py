@@ -14,6 +14,7 @@ class Solution:
         # Base Case: If the root is None, return an empty list
         if not root:
             return []
+        
         # Recursive Case: left -> root -> right
         return Solution.inorderTraversal(root.left) + [root.val] + Solution.inorderTraversal(root.right)
 

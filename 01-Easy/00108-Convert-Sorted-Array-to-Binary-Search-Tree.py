@@ -16,9 +16,11 @@ class Solution:
         # Base Case: If the array is empty, return None
         if not nums:
             return None
+        
         # Recursive Case: Find the middle element and create a node
         mid = len(nums) // 2
         root = TreeNode(nums[mid])
+        
         # Recursively build the left and right subtrees
         root.left = Solution.sortedArrayToBST(nums[:mid])
         root.right = Solution.sortedArrayToBST(nums[mid + 1:])

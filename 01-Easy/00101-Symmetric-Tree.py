@@ -17,9 +17,11 @@ class Solution:
             # Base Case: If both nodes are None, return True
             if not left and not right:
                 return True
+            
             # Base Case: If one node is None and the other is not, return False
             if not left or not right:
                 return False
+            
             # Recursive Case: Check if the values are equal and the subtrees are mirrors
             return (left.val == right.val
                     and is_mirror(left.left, right.right)
