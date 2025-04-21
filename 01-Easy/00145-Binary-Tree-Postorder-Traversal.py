@@ -10,33 +10,29 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def postorderTraversal(root: Optional[TreeNode]) -> List[int]:
-        """Optimal Solution: Postorder DFS Traversal.
-           Time Complexity: O(n), Space Complexity: O(n)."""
-        # Base case: if the tree root is None, return an empty list
+        """Optimal Solution: Postorder DFS. Time Complexity: O(n), Space Complexity: O(n)."""
+        # Base Case: If the root is None, return an empty list
         if not root:
             return []
-        # Recursive postorder DFS traversal: left -> right -> root
-        # 1. Recursive Case: Traverse the left subtree
-        left_traversal = Solution.postorderTraversal(root.left)
-        # 2. Recursive Case: Traverse the right subtree
-        right_traversal = Solution.postorderTraversal(root.right)
-        # 3. Root Case: Process the current node
-        root_value = [root.val]
 
-        # Takes effect whenever the current parent and its children have been traversed
-        return left_traversal + right_traversal + root_value
+        # Recursive Case: left -> right -> root
+        return Solution.postorderTraversal(root.left) + Solution.postorderTraversal(root.right) + [root.val]
 
 
-# Input: root = [1,null,2,3], Output: [3,2,1]
-root_test = TreeNode.build_binary_tree([1, None, 2, 3])
-assert Solution.postorderTraversal(root_test) == [3, 2, 1]
+def unit_tests():
+    # Input: root = [1,null,2,3], Output: [3,2,1]
+    root = TreeNode.build_binary_tree([1, None, 2, 3])
+    assert Solution.postorderTraversal(root) == [3, 2, 1]
 
-# Input: root = [], Output: []
-root_test = TreeNode.build_binary_tree([])
-assert Solution.postorderTraversal(root_test) == []
+    # Input: root = [], Output: []
+    root = TreeNode.build_binary_tree([])
+    assert Solution.postorderTraversal(root) == []
 
-# Input: root = [1], Output: [1]
-root_test = TreeNode.build_binary_tree([1])
-assert Solution.postorderTraversal(root_test) == [1]
+    # Input: root = [1], Output: [1]
+    root = TreeNode.build_binary_tree([1])
+    assert Solution.postorderTraversal(root) == [1]
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
