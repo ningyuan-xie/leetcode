@@ -10,33 +10,29 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def preorderTraversal(root: Optional[TreeNode]) -> List[int]:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n).
-           Similar to 0094-Binary-Tree-Inorder-Traversal.py"""
-        # Base case: if the tree root is None, return an empty list
+        """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(n)."""
+        # Base Case: If the root is None, return an empty list
         if not root:
             return []
-        # Recursive preorder DFS traversal: root -> left -> right
-        # 1. Root Case: Process the current node
-        root_value = [root.val]
-        # 2. Recursive Case: Traverse the left subtree
-        left_traversal = Solution.preorderTraversal(root.left)
-        # 3. Recursive Case: Traverse the right subtree
-        right_traversal = Solution.preorderTraversal(root.right)
 
-        # Takes effect whenever the current parent and its children have been traversed
-        return root_value + left_traversal + right_traversal
+        # Recursive Case: root -> left -> right
+        return [root.val] + Solution.preorderTraversal(root.left) + Solution.preorderTraversal(root.right)
 
 
-# Input: root = [1,null,2,3], Output: [1,2,3]
-root_test = TreeNode.build_binary_tree([1, None, 2, 3])
-assert Solution.preorderTraversal(root_test) == [1, 2, 3]
+def unit_tests():
+    # Input: root = [1,null,2,3], Output: [1,2,3]
+    root = TreeNode.build_binary_tree([1, None, 2, 3])
+    assert Solution.preorderTraversal(root) == [1, 2, 3]
 
-# Input: root = [], Output: []
-root_test = TreeNode.build_binary_tree([])
-assert Solution.preorderTraversal(root_test) == []
+    # Input: root = [], Output: []
+    root = TreeNode.build_binary_tree([])
+    assert Solution.preorderTraversal(root) == []
 
-# Input: root = [1], Output: [1]
-root_test = TreeNode.build_binary_tree([1])
-assert Solution.preorderTraversal(root_test) == [1]
+    # Input: root = [1], Output: [1]
+    root = TreeNode.build_binary_tree([1])
+    assert Solution.preorderTraversal(root) == [1]
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
