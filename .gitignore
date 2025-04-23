@@ -1,21 +1,17 @@
-# MacOS
+# OS
 *.DS_Store
-
-# Windows
 *.db
 *.ini
 $RECYCLE.BIN/
 
-# Software files
-.ipynb_checkpoints/
+# IDE
+.vscode/
 .idea/
+.ipynb_checkpoints/
 .metadata/
 
 # Virtual Environment
 venv/
 env/
 ENV/
-
-# VS Code
-.vscode/
 *.env
