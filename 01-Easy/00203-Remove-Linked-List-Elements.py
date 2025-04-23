@@ -1,7 +1,7 @@
 """203. Remove Linked List Elements
 Link: https://leetcode.com/problems/remove-linked-list-elements/
 Difficulty: Easy
-Description: Remove all elements from a linked list of integers that have value val."""
+Description: Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head."""
 
 from typing import Optional
 from package.data_structures import ListNode
@@ -10,37 +10,42 @@ from package.data_structures import ListNode
 class Solution:
     @staticmethod
     def removeElements(head: Optional[ListNode], val: int) -> Optional[ListNode]:
-        """Optimal Solution: Iteration. Time Complexity: O(n), Space Complexity: O(1).
-           Similar to 0083-Remove-Duplicates-from-Sorted-List.py"""
-        # Initialize a dummy node to avoid edge cases
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1).
+        Similar to 83. Remove Duplicates from Sorted List."""
+        # Create a dummy node to handle edge cases when removing the head node
         dummy = ListNode(0)
         dummy.next = head
-        # Initialize the current node as the dummy node
         current = dummy
-        # Iterate through the linked list
-        while current.next:
-            # If the next node has the target value, skip the next node
+
+        # Traverse the linked list when the current node and the next node are not None
+        while current and current.next:
+            # If the next node's value is equal to val, skip the next node
             if current.next.val == val:
                 current.next = current.next.next
             else:
-                # Otherwise, move to the next node
+                # Move to the next node
                 current = current.next
-        return dummy.next  # dummy: 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> None
+
+        return dummy.next
 
 
-# Input: head = [1,2,6,3,4,5,6], val = 6, Output: [1,2,3,4,5]
-head_test = ListNode.build_linked_list([1, 2, 6, 3, 4, 5, 6])
-head_expected = ListNode.build_linked_list([1, 2, 3, 4, 5])
-assert Solution.removeElements(head_test, 6) == head_expected
+def unit_tests():
+    # Input: head = [1,2,6,3,4,5,6], val = 6, Output: [1,2,3,4,5]
+    head = ListNode.build_linked_list([1, 2, 6, 3, 4, 5, 6])
+    output = ListNode.build_linked_list([1, 2, 3, 4, 5])
+    assert Solution.removeElements(head, 6) == output
 
-# Input: head = [], val = 1, Output: []
-head_test = ListNode.build_linked_list([])
-head_expected = ListNode.build_linked_list([])
-assert Solution.removeElements(head_test, 1) == head_expected
+    # Input: head = [], val = 1, Output: []
+    head = ListNode.build_linked_list([])
+    output = ListNode.build_linked_list([])
+    assert Solution.removeElements(head, 1) == output
 
-# Input: head = [7,7,7,7], val = 7, Output: []
-head_test = ListNode.build_linked_list([7, 7, 7, 7])
-head_expected = ListNode.build_linked_list([])
-assert Solution.removeElements(head_test, 7) == head_expected
+    # Input: head = [7,7,7,7], val = 7, Output: []
+    head = ListNode.build_linked_list([7, 7, 7, 7])
+    output = ListNode.build_linked_list([])
+    assert Solution.removeElements(head, 7) == output
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
