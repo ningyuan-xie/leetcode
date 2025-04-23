@@ -11,7 +11,7 @@ class Solution:
     @staticmethod
     def singleNumber(nums: List[int]) -> int:
         """Optimal Solution: Bit Manipulation. Time Complexity: O(n), Space Complexity: O(1).
-           0 ^ 0 = 0, 0 ^ 1 = 1, 1 ^ 1 = 0."""
+        0 ^ 0 = 0, 0 ^ 1 = 1, 1 ^ 1 = 0."""
         # Initialize the result to 0
         result = 0
 

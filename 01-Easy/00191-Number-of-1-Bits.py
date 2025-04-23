@@ -1,34 +1,35 @@
 """191. Number of 1 Bits
 Link: https://leetcode.com/problems/number-of-1-bits/
 Difficulty: Easy
-Description: Write a function that takes an unsigned integer and returns the number of '1'
-bits it has (also known as the Hamming weight)."""
+Description: Given a positive integer n, write a function that returns the number of set bits in its binary representation (also known as the Hamming weight)."""
 
 
 class Solution:
     @staticmethod
     def hammingWeight(n: int) -> int:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
-           Bitwise AND operator & : 1 & 1 = 1, 1 & 0 = 0, 0 & 0 = 0."""
-        # Initialize the number of '1' bits
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)."""
         count = 0
+        
         # Traverse the 32 bits of the given integer from RIGHT to LEFT
         for i in range(32):
-            # Check if the rightmost bit of n is 1
-            # If it is, increment the count of '1' bits
+            # Increment count if the rightmost bit is 1
             count += n & 1
             # Shift n to the right by 1 bit, removing the rightmost bit
             n >>= 1
         return count
 
 
-# Input: n = 11 (00000000000000000000000000001011), Output: 3
-assert Solution.hammingWeight(11) == 3
+def unit_tests():
+    # Input: n = 11, Output: 3
+    assert Solution.hammingWeight(11) == 3
 
-# Input: n = 128 (00000000000000000000000010000000), Output: 1
-assert Solution.hammingWeight(128) == 1
+    # Input: n = 128, Output: 1
+    assert Solution.hammingWeight(128) == 1
 
-# Input: n = 2147483647 (01111111111111111111111111111111), Output: 31
-assert Solution.hammingWeight(2147483647) == 31
+    # Input: n = 2147483647, Output: 31
+    assert Solution.hammingWeight(2147483647) == 31
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")

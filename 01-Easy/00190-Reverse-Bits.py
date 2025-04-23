@@ -8,31 +8,28 @@ class Solution:
     @staticmethod
     def reverseBits(n: int) -> int:
         """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1).
-           Bitwise AND operator & : 1 & 1 = 1, 1 & 0 = 0, 0 & 0 = 0.
-           Bitwise Assignment operator |=: similar to += for addition.
-           Similar to the reverse method in 02-Medium/0007-Reverse-Integer.py"""
-        # Initialize result in binary
-        result = 0  # 00000000000000000000000000000000
+        0 & 0 = 0, 0 & 1 = 0, 1 & 1 = 1. 0 | 0 = 0, 0 | 1 = 1, 1 | 1 = 1."""
+        result = 0
+        
         # Traverse the 32 bits of the given integer from RIGHT to LEFT
         for i in range(32):
-            # Shift the result to the left by 1 bit, leaving room for the next bit to be added
-            result <<= 1  # 001 -> 010 -> 100
-            # n & 1 extracts the rightmost bit of n, as 1 in binary only has its rightmost bit = 1
-            # result |= n & 1 adds this rightmost bit of the given integer to the result
+            # Shift the result to the left by 1 bit to make space for the next bit
+            result <<= 1
+            # Add the rightmost bit of n to the result using & and |
             result |= n & 1
-            # n is shifted to the right by 1 bit, removing the bit just added to result
-            n >>= 1  # 100 -> 010 -> 001 -> 000
-
-        # E.g. 5 (00000000000000000000000000000101) -> 2684354560 (10100000000000000000000000000000)
+            # Shift n to the right by 1 bit, removing the rightmost bit
+            n >>= 1
         return result
 
 
-# Unit Test:
-# 43261596 (00000010100101000001111010011100) -> 964176192 (00111001011110000010100101000000)
-assert Solution.reverseBits(43261596) == 964176192
+def unit_tests():
+    # Input: n = 43261596, Output: 964176192
+    assert Solution.reverseBits(43261596) == 964176192
 
-# Unit Test:
-# 4294967293 (00000011111111111111111111111101) -> 3221225471 (10111111111111111111111111111111)
-assert Solution.reverseBits(4294967293) == 3221225471
+    # Input: n = 4294967293, Output: 3221225471
+    assert Solution.reverseBits(4294967293) == 3221225471
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
