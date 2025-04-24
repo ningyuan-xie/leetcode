@@ -1,7 +1,7 @@
 """206. Reverse Linked List
 Link: https://leetcode.com/problems/reverse-linked-list/
 Difficulty: Easy
-Description: Reverse a singly linked list."""
+Description: Given the head of a singly linked list, reverse the list, and return the reversed list."""
 
 from typing import Optional
 from package.data_structures import ListNode
@@ -10,35 +10,40 @@ from package.data_structures import ListNode
 class Solution:
     @staticmethod
     def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
-        """Optimal Solution: Iterative. Time Complexity: O(n), Space Complexity: O(1)."""
-        # Initialize two pointers to store the previous and current nodes
-        prev, current = None, head
-        # Iterate through the linked list
-        while current:  # [1, 2, 3] -> [2, 3] -> [3]
-            # Save the next node for the next iteration
-            next_node = current.next  # [2, 3] -> [3] -> None
-            # Break the current's next node and point to the previous node
-            current.next = prev  # current: [1] -> [2, 1] -> [3, 2, 1]
-            # Move to the next node by updating two pointers; prev is now the new head
-            prev, current = current, next_node
-            # prev: [1] -> [2, 1] -> [3, 2, 1]; current: [2, 3] -> [3] -> None
-        return prev
-        # [1 -> 2 -> 3 -> None] becomes [None <- 1 <- 2 <- 3]
+        """Optimal Solution: Three Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
+        # Initialize previous and current pointers
+        new_list = None  # always points to the head of the new list
+        current = head  # used to traverse the original list
+
+        while current:
+            # Store the next node
+            next_node = current.next
+            # Reverse the link
+            current.next = new_list
+            # Move the pointers one position forward
+            new_list = current
+            current = next_node
+
+        return new_list
 
 
-# Input: head = [1,2,3,4,5], Output: [5,4,3,2,1]
-head_test = ListNode.build_linked_list([1, 2, 3, 4, 5])
-head_expected = ListNode.build_linked_list([5, 4, 3, 2, 1])
-assert Solution.reverseList(head_test) == head_expected
+def unit_tests():
+    # Input: head = [1,2,3,4,5], Output: [5,4,3,2,1]
+    head = ListNode.build_linked_list([1, 2, 3, 4, 5])
+    output = ListNode.build_linked_list([5, 4, 3, 2, 1])
+    assert Solution.reverseList(head) == output
 
-# Input: head = [1,2], Output: [2,1]
-head_test = ListNode.build_linked_list([1, 2])
-head_expected = ListNode.build_linked_list([2, 1])
-assert Solution.reverseList(head_test) == head_expected
+    # Input: head = [1,2], Output: [2,1]
+    head = ListNode.build_linked_list([1, 2])
+    output = ListNode.build_linked_list([2, 1])
+    assert Solution.reverseList(head) == output
 
-# Input: head = [], Output: []
-head_test = ListNode.build_linked_list([])
-head_expected = ListNode.build_linked_list([])
-assert Solution.reverseList(head_test) == head_expected
+    # Input: head = [], Output: []
+    head = ListNode.build_linked_list([])
+    output = ListNode.build_linked_list([])
+    assert Solution.reverseList(head) == output
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
