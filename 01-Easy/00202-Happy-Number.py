@@ -17,7 +17,9 @@ class Solution:
         
         # Iterate until n becomes 1 or we find a cycle
         while n != 1 and n not in seen:
+            # Add current n to the set of seen numbers
             seen.add(n)
+            # Update n to the sum of the squares of its digits
             n = sum(int(i) ** 2 for i in str(n))
         return n == 1
 
