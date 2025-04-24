@@ -2,35 +2,44 @@
 Link: https://leetcode.com/problems/isomorphic-strings/
 Difficulty: Easy
 Description: Given two strings s and t, determine if they are isomorphic.
-Two strings s and t are isomorphic if the characters in s can be replaced to get t."""
+Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself."""
 
 
 class Solution:
     @staticmethod
     def isIsomorphic(s: str, t: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n).
-           Similar to 0290-Word-Pattern.py"""
-        # Initialize two dictionaries to store the mapping of characters
-        s2t = {}
-        t2s = {}
-        # Iterate through the strings
-        for c1, c2 in zip(s, t):  # zip() is used to iterate through two strings simultaneously
-            # Check if the mutual mapping is violated
-            if (c1 in s2t and s2t[c1] != c2) or (c2 in t2s and t2s[c2] != c1):
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
+        # Initialize two dictionaries to store character mappings
+        s_to_t = {}
+        t_to_s = {}
+
+        # Iterate through both strings simultaneously
+        for char_s, char_t in zip(s, t):
+            # Check if the mapping exists in both dictionaries
+            if (char_s in s_to_t and s_to_t[char_s] != char_t
+                or char_t in t_to_s and t_to_s[char_t] != char_s):
+                # If the mapping is inconsistent, return False
                 return False
-            # Update the mapping
-            s2t[c1] = c2  # s2t: {'f': 'b', 'o': 'a'}
-            t2s[c2] = c1  # t2s: {'b': 'f', 'a': 'o'}
+
+            # Create the mapping if it doesn't exist
+            s_to_t[char_s] = char_t
+            t_to_s[char_t] = char_s
+
         return True
 
 
-# Input: s = "egg", t = "add", Output: True
-assert Solution.isIsomorphic("egg", "add") is True
+def unit_tests():
+    # Input: s = "egg", t = "add", Output: True
+    assert Solution.isIsomorphic("egg", "add") is True
 
-# Input: s = "foo", t = "bar", Output: False
-assert Solution.isIsomorphic("foo", "bar") is False
+    # Input: s = "foo", t = "bar", Output: False
+    assert Solution.isIsomorphic("foo", "bar") is False
 
-# Input: s = "paper", t = "title", Output: True
-assert Solution.isIsomorphic("paper", "title") is True
+    # Input: s = "paper", t = "title", Output: True
+    assert Solution.isIsomorphic("paper", "title") is True
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
