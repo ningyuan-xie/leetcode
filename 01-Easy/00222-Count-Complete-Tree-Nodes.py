@@ -1,7 +1,9 @@
 """222. Count Complete Tree Nodes
 Link: https://leetcode.com/problems/count-complete-tree-nodes/
 Difficulty: Easy
-Description: Given the root of a complete binary tree, return the number of the nodes in the tree."""
+Description: Given the root of a complete binary tree, return the number of the nodes in the tree.
+According to Wikipedia, every level, except possibly the last, is completely filled in a complete binary tree, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.
+Design an algorithm that runs in less than O(n) time complexity."""
 
 from typing import Optional
 from package.data_structures import TreeNode
@@ -10,29 +12,48 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def countNodes(root: Optional[TreeNode]) -> int:
-        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
-           Postorder because we need to traverse the left and right subtrees first before the root.
-           Similar to 0104-Maximum-Depth-of-Binary-Tree.py"""
-        # Base case: if the root is None, return 0
+        """Optimal Solution: Binary Search. Time Complexity: O(log^2(n)), Space Complexity: O(1)."""
+        # Base Case: If the tree is empty, return 0
         if not root:
             return 0
-        # 1. Recursive Case: Traverse the left subtree
-        left_count = Solution.countNodes(root.left)
-        # 2. Recursive Case: Traverse the right subtree
-        right_count = Solution.countNodes(root.right)
-        # 3. Root Case: Return the total number of nodes in the left and right subtrees
-        # + 1 for the current node
-        root_count = left_count + right_count + 1
+        
+        def getHeight(node: Optional[TreeNode], goLeft: bool) -> int:
+            """Helper function to calculate the height of the tree. Time Complexity: O(log(n))."""
+            height = -1
+            while node:
+                node = node.left if goLeft else node.right
+                height += 1
+            return height
 
-        return root_count
+        left_height = getHeight(root, True)
+        right_height = getHeight(root, False)
+
+        if left_height == right_height:
+            # Tree is perfect: 2^(h+1) - 1 nodes
+            return 2**(left_height + 1) - 1
+        else:
+            # Not perfect, recurse on left and right
+            return Solution.countNodes(root.left) + Solution.countNodes(root.right) + 1
 
 
-# Input: [1,2,3,4,5,6], Output: 6
-root_test = TreeNode.build_binary_tree([1, 2, 3, 4, 5, 6])
-assert Solution.countNodes(root_test) == 6
+def unit_tests():
+    # Input: root = [1,2,3,4,5,6], Output: 6
+    root = TreeNode.build_binary_tree([1, 2, 3, 4, 5, 6])
+    assert Solution.countNodes(root) == 6
 
-# Input: [1,2,3,4,5,6,7], Output: 7
-root_test = TreeNode.build_binary_tree([1, 2, 3, 4, 5, 6, 7])
-assert Solution.countNodes(root_test) == 7
+    # Input: root = [1,2,3,4,5,6,7], Output: 7
+    root = TreeNode.build_binary_tree([1, 2, 3, 4, 5, 6, 7])
+    assert Solution.countNodes(root) == 7
 
-print("All unit tests are passed.")
+    # Input: root = [], Output: 0
+    root = TreeNode.build_binary_tree([])
+    assert Solution.countNodes(root) == 0
+
+    # Input: root = [1], Output: 1
+    root = TreeNode.build_binary_tree([1])
+    assert Solution.countNodes(root) == 1
+
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
