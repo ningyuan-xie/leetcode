@@ -1,7 +1,8 @@
 """257. Binary Tree Paths
 Link: https://leetcode.com/problems/binary-tree-paths/
 Difficulty: Easy
-Description: Given the root of a binary tree, return all root-to-leaf paths in any order."""
+Description: Given the root of a binary tree, return all root-to-leaf paths in any order.
+A leaf is a node with no children."""
 
 from typing import List, Optional
 from package.data_structures import TreeNode
@@ -10,47 +11,47 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def binaryTreePaths(root: Optional[TreeNode]) -> List[str]:
-        """Optimal Solution: Preorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(n).
-           Similar to 0101-Symmetric-Tree.py, need a helper DFS function to take two parameters"""
-        # Base case: if the root is None, return an empty list
-        if not root:
-            return []
-        # Initialize a list to store the root-to-leaf paths
-        result = []
-        # don't need to declare it as nonlocal since list is mutable (can change in place),
-        # so modifications to the list will be reflected in the outer scope
-
-        def preorder_dfs_path(node: TreeNode, path: Optional[str]) -> None:
-            """Helper function: Preorder DFS Traversal: root -> left -> right
-               Preorder because we want to append the current node's value to the path first"""
-            # 1. Root Case: if the node is a leaf node, append the path to the list of paths
-            if not node.left and not node.right:
-                result.append(path + str(node.val))
+        """Optimal Solution: Preorder DFS. Time Complexity: O(n), Space Complexity: O(n)."""
+        
+        def preorder_dfs(node: Optional[TreeNode], path: str, paths: List[str]) -> None:
+            """Helper function to perform DFS and find all root-to-leaf paths."""
+            # Base case: if the node is None, return
+            if not node:
                 return
-            # Recursive Case: traverse the left and right subtrees
-            # and update path along the way using current node's value
-            # 2. Recursive Case: Traverse the left subtree
-            if node.left:
-                preorder_dfs_path(node=node.left, path=path + str(node.val) + "->")
-            # 3. Recursive Case: Traverse the right subtree
-            if node.right:
-                preorder_dfs_path(node=node.right, path=path + str(node.val) + "->")
 
-        # Start the DFS traversal from the root node
-        preorder_dfs_path(node=root, path="")
-        return result
+            # Append the current node's value to the path
+            path += str(node.val)
+
+            # If it's a leaf node, add the path to the list of paths
+            if not node.left and not node.right:
+                paths.append(path)
+            else:
+                # Continue DFS on left and right children
+                path += "->"
+                preorder_dfs(node.left, path, paths)
+                preorder_dfs(node.right, path, paths)
+        
+        # Initialize an empty list to store the paths
+        paths = []
+        # Start DFS from the root node
+        preorder_dfs(root, "", paths)
+        return paths
 
 
-# Input: root = [1,2,3,null,5], Output: ["1->2->5", "1->3"]
-root_test = TreeNode.build_binary_tree([1, 2, 3, None, 5])
-assert Solution.binaryTreePaths(root_test) == ["1->2->5", "1->3"]
+def unit_tests():
+    # Input: root = [1,2,3,null,5], Output: ["1->2->5", "1->3"]
+    root = TreeNode.build_binary_tree([1, 2, 3, None, 5])
+    assert Solution.binaryTreePaths(root) == ["1->2->5", "1->3"]
 
-# Input: root = [1], Output: ["1"]
-root_test = TreeNode.build_binary_tree([1])
-assert Solution.binaryTreePaths(root_test) == ["1"]
+    # Input: root = [1], Output: ["1"]
+    root = TreeNode.build_binary_tree([1])
+    assert Solution.binaryTreePaths(root) == ["1"]
 
-# Input: root = [1,2], Output: ["1->2"]
-root_test = TreeNode.build_binary_tree([1, 2])
-assert Solution.binaryTreePaths(root_test) == ["1->2"]
+    # Input: root = [1,2], Output: ["1->2"]
+    root = TreeNode.build_binary_tree([1, 2])
+    assert Solution.binaryTreePaths(root) == ["1->2"]
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
