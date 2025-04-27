@@ -12,7 +12,6 @@ class Solution:
         The digital root of a number dr(n) = 1 + ((n - 1) % 9).
         E.g. dr(38) = 1 + ((38 - 1) % 9) = 1 + (37 % 9) = 1 + 1 = 2;
         E.g. dr(0) = 1 + ((0 - 1) % 9) = 1 + (-1 % 9) = 1 + -1 = 0."""
-        # Digital Root Formula: 1 + (n - 1) % 9
         return 1 + ((n - 1) % 9) if n > 0 else 0
 
 
