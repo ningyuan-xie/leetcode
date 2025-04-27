@@ -16,7 +16,7 @@ class MyQueue:
     """Optimal Solution: Two Stacks. Time Complexity: O(n), Space Complexity: O(n)."""
 
     def __init__(self):
-        """Constructor: instance variable stack1 and stack2 are lists"""
+        """Constructor: instance variable stack1 and stack2 are lists."""
         self.stack1 = []  # stack1 is used to push elements
         self.stack2 = []  # stack2 is used to pop elements
 
@@ -25,12 +25,12 @@ class MyQueue:
         self.stack1.append(x)
 
     def pop(self) -> int:
-        """Pop: remove and return the first element in the queue by moving all elements from stack1 to stack2"""
+        """Pop: remove and return the first element in the queue by moving all elements from stack1 to stack2."""
         self.peek()  # peek() will move all elements from stack1 to stack2 and reverse the order
         return self.stack2.pop()
 
     def peek(self) -> int:
-        """Peek: look at and return the first element in the queue without removing it by moving all elements from stack1 to stack2 and reversing the order"""
+        """Peek: look at and return the first element in the queue without removing it by moving all elements from stack1 to stack2 and reversing the order."""
         # If stack2 is empty, move all elements from stack1 to stack2
         if not self.stack2:
             while self.stack1:
