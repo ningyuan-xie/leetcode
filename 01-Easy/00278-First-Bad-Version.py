@@ -6,15 +6,15 @@ Suppose you have n versions [1, 2, ..., n] and you want to find out the first ba
 You are given an API bool isBadVersion(version) which returns whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API."""
 
 
-def isBadVersion(version: int) -> bool:
-    """ Mock API function: Assume bad version starts from 4"""
-    return version >= 4
-
-
 class Solution:
     @staticmethod
     def firstBadVersion(n: int) -> int:
         """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)."""
+        
+        def isBadVersion(version: int) -> bool:
+            """Mock API function: Assume bad version starts from 4."""
+            return version >= 4
+
         left, right = 1, n
         while left <= right:
             mid = (left + right) // 2
