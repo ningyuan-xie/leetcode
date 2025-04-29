@@ -1,45 +1,56 @@
 """290. Word Pattern
 Link: https://leetcode.com/problems/word-pattern/
 Difficulty: Easy
-Description: Given a pattern and a string s, find if s follows the same pattern."""
+Description: Given a pattern and a string s, find if s follows the same pattern.
+Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s. Specifically:
+• Each letter in pattern maps to exactly one unique word in s.
+• Each unique word in s maps to exactly one letter in pattern.
+• No two letters map to the same word, and no two words map to the same letter."""
 
 
 class Solution:
     @staticmethod
     def wordPattern(pattern: str, s: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n).
-           Similar to 0205-Isomorphic-Strings.py"""
-        # Split the string into a list of words
-        words = s.split()  # E.g. "dog cat cat dog" -> ["dog", "cat", "cat", "dog"]
-        # If the length of the pattern and the number of words are not equal, return False
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
+        # Split the string into words
+        words = s.split()
+
+        # Check if the length of pattern and words are the same
         if len(pattern) != len(words):
             return False
-        # Initialize the hash tables to store the mapping between the pattern and the words
-        pattern_to_word = {}
-        word_to_pattern = {}
-        # Iterate through the pattern and the words
+
+        # Create two dictionaries to store character to word mapping and word to character mapping
+        char_to_word = {}
+        word_to_char = {}
+
+        # Iterate through both pattern and words simultaneously
         for char, word in zip(pattern, words):
-            # Check if mutual mapping is violated
-            if ((char in pattern_to_word and pattern_to_word[char] != word) or
-                    (word in word_to_pattern and word_to_pattern[word] != char)):
+            # Check if the mapping exists in both dictionaries
+            if (char in char_to_word and char_to_word[char] != word or
+                    word in word_to_char and word_to_char[word] != char):
                 return False
-            # Update the mapping between the pattern and the word
-            pattern_to_word[char] = word  # pattern_to_word: {'a': 'dog', 'b': 'cat'}
-            word_to_pattern[word] = char  # word_to_pattern: {'dog': 'a', 'cat': 'b'}
-        # If all the mappings are consistent, return True
+
+            # Create the mapping if it doesn't exist
+            char_to_word[char] = word
+            word_to_char[word] = char
+
         return True
 
 
-# Input: pattern = "abba", s = "dog cat cat dog", Output: True
-assert Solution.wordPattern("abba", "dog cat cat dog") is True
+def unit_tests():
+    # Input: pattern = "abba", s = "dog cat cat dog", Output: True
+    assert Solution.wordPattern("abba", "dog cat cat dog") is True
 
-# Input: pattern = "abba", s = "dog cat cat fish", Output: False
-assert Solution.wordPattern("abba", "dog cat cat fish") is False
+    # Input: pattern = "abba", s = "dog cat cat fish", Output: False
+    assert Solution.wordPattern("abba", "dog cat cat fish") is False
 
-# Input: pattern = "aaaa", s = "dog cat cat dog", Output: False
-assert Solution.wordPattern("aaaa", "dog cat cat dog") is False
+    # Input: pattern = "aaaa", s = "dog cat cat dog", Output: False
+    assert Solution.wordPattern("aaaa", "dog cat cat dog") is False
 
-# Input: pattern = "abba", s = "dog dog dog dog", Output: False
-assert Solution.wordPattern("abba", "dog dog dog dog") is False
+    # Input: pattern = "abba", s = "dog dog dog dog", Output: False
+    assert Solution.wordPattern("abba", "dog dog dog dog") is False
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
