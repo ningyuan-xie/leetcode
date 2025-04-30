@@ -8,7 +8,8 @@ The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower an
 class Solution:
     @staticmethod
     def reverseVowels(s: str) -> str:
-        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1)."""
+        """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1).
+        Similar to 344. Reverse String."""
         left, right = 0, len(s) - 1
         s_list = list(s)
         vowels = set("aeiouAEIOU")
@@ -25,7 +26,7 @@ class Solution:
             s_list[left], s_list[right] = s_list[right], s_list[left]
             left += 1
             right -= 1
-            
+
         return "".join(s_list)
 
 
