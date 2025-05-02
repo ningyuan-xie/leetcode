@@ -1,42 +1,43 @@
 """405. Convert a Number to Hexadecimal
 Link: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
 Difficulty: Easy
-Description: Given an integer num, return a string representing its hexadecimal representation.
-For negative integers, two’s complement method is used. For example:
--1 = 2^32 - 1 = 4294967295 = 0xffffffff; -2 = 2^32 - 2 = 4294967294 = 0xfffffffe"""
+Description: Given a 32-bit integer num, return a string representing its hexadecimal representation. For negative integers, two’s complement method is used.
+All the letters in the answer string should be lowercase characters, and there should not be any leading zeros in the answer except for the zero itself.
+Note: You are not allowed to use any built-in library method to directly solve this problem."""
 
 
 class Solution:
     @staticmethod
     def toHex(num: int) -> str:
-        """Optimal Solution: Iterative Division.
-           Time Complexity: O(log(n)), Space Complexity: O(log(n)).
-           Similar to 0168-Excel-Sheet-Column-Title.py"""
-        # Base case: If the number is 0, return "0"
-        if num == 0:
-            return "0"
-        # Initialize the result and a dictionary to map numbers to their hexadecimal representation
-        result = ""
+        """Optimal Solution: Math. Time Complexity: O(log(n)), Space Complexity: O(1).
+        Similar to 168. Excel Sheet Column Title."""
+        # Handle the case for negative numbers using two's complement
+        if num < 0:
+            num += 2 ** 32
+
+        # Define a mapping from integers to hexadecimal characters
         hex_map = "0123456789abcdef"
-        # Convert negative numbers to their two's complement representation
-        num += 2 ** 32 if num < 0 else 0  # E.g., -1 = 2^32 - 1 = 4294967295 = 0xffffffff
-        # Convert the number to its hexadecimal representation from RIGHT to LEFT
+        hex_str = ""
+
+        # Convert the number to hexadecimal
         while num > 0:
-            remainder = num % 16
-            # Add the remainder to the front of the string
-            result = hex_map[remainder] + result
-            # Divide the number by 16 using floor division to move to the next digit on the left
+            hex_str = hex_map[num % 16] + hex_str
             num //= 16
-        return result
+
+        return hex_str if hex_str else "0"
 
 
-# Input: num = 26, Output: "1a"
-assert Solution.toHex(26) == "1a"  # hex_str: hex_map[1] + hex_map[10] = "1a"
+def unit_tests():
+    # Input: num = 26, Output: "1a"
+    assert Solution.toHex(26) == "1a"  # hex_str: hex_map[1] + hex_map[10] = "1a"
 
-# Input: num = -1, Output: "ffffffff"
-assert Solution.toHex(-1) == "ffffffff"
+    # Input: num = -1, Output: "ffffffff"
+    assert Solution.toHex(-1) == "ffffffff"
 
-# Input: num = 0, Output: "0"
-assert Solution.toHex(0) == "0"
+    # Input: num = 0, Output: "0"
+    assert Solution.toHex(0) == "0"
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
