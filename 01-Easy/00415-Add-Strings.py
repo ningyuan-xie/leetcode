@@ -1,44 +1,49 @@
 """415. Add Strings
 Link: https://leetcode.com/problems/add-strings/
 Difficulty: Easy
-Description: Given two non-negative integers, num1 and num2 represented as string,
-return the sum of num1 and num2 as a string."""
+Description: Given two non-negative integers, num1 and num2 represented as string, return the sum of num1 and num2 as a string.
+You must solve the problem without using any built-in library for handling large integers (such as BigInteger). You must also not convert the inputs to integers directly."""
 
 
 class Solution:
     @staticmethod
     def addStrings(num1: str, num2: str) -> str:
-        """Optimal Solution: Two Pointers and Math.
-           Time Complexity: O(max(n, m)), Space Complexity: O(max(n, m)).
-           Similar to 0067-Add-Binary.py"""
-        # Initialize the sum and carry
-        sum_str, carry = "", 0
-        # Initialize pointers at the end of the strings
-        i, j = len(num1) - 1, len(num2) - 1
-        # Iterate through the strings from RIGHT to LEFT
-        while i >= 0 or j >= 0:
-            # Get the digits at the current positions
-            digit1 = int(num1[i]) if i >= 0 else 0
-            digit2 = int(num2[j]) if j >= 0 else 0
-            # Calculate the total and get the remainder and carry
-            total = digit1 + digit2 + carry
-            remainder, carry = total % 10, total // 10
-            # Add the remainder to the front of the string as a new digit
-            sum_str = str(remainder) + sum_str  # E.g. "4" + "" -> "4", "3" + "4" -> "34"
-            # Move the pointers to the left
-            i, j = i - 1, j - 1
+        """Optimal Solution: String Manipulation. Time Complexity: O(max(m, n)), Space Complexity: O(1).
+        Similar to 67. Add Binary."""
+        m, n = len(num1), len(num2)
+        result = []
+        carry = 0
 
-        # If there is a carry left, add it to the front of the string as a new digit
-        return str(carry) + sum_str if carry else sum_str
+        # Traverse both strings from the end
+        for i in range(max(m, n)):
+            # Get the current digits and add them along with the carry
+            digit_a = int(num1[m - 1 - i]) if i < m else 0
+            digit_b = int(num2[n - 1 - i]) if i < n else 0
+            total = digit_a + digit_b + carry
+
+            # Calculate the new digit and carry
+            result.append(str(total % 10))
+            carry = total // 10
+
+        # If there's a carry left, append it
+        if carry:
+            result.append(str(carry))
+
+        # Reverse the result and join to form the final string
+        return ''.join(result[::-1])
 
 
-# Input: num1 = "11", num2 = "123", Output: "134"
-assert Solution.addStrings("11", "123") == "134"
+def unit_tests():
+    # Input: num1 = "11", num2 = "123", Output: "134"
+    assert Solution.addStrings("11", "123") == "134"
 
-# Input: num1 = "456", num2 = "77", Output: "533"
-assert Solution.addStrings("456", "77") == "533"
+    # Input: num1 = "456", num2 = "77", Output: "533"
+    assert Solution.addStrings("456", "77") == "533"
 
-# Input: num1 = "0", num2 = "0", Output: "0"
-assert Solution.addStrings("0", "0") == "0"
+    # Input: num1 = "0", num2 = "0", Output: "0"
+    assert Solution.addStrings("0", "0") == "0"
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
