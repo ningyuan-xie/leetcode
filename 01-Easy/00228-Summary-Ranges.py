@@ -48,7 +48,7 @@ class Solution:
 def unit_tests():
     # Input: [0, 1, 2, 4, 5, 7], Output: ["0->2","4->5","7"]
     nums = [0, 1, 2, 4, 5, 7]
-    # assert Solution.summaryRanges(nums) == ["0->2", "4->5", "7"]
+    assert Solution.summaryRanges(nums) == ["0->2", "4->5", "7"]
 
     # Input: [0, 2, 3, 4, 6, 8, 9], Output: ["0","2->4","6","8->9"]
     nums = [0, 2, 3, 4, 6, 8, 9]
