@@ -18,7 +18,7 @@ class Solution:
         # Cyclic sort
         for i in range(n):
             while nums[i] != nums[nums[i] - 1]:
-                # Swap the elements to their correct positions
+                # Swap the elements until nums[i] is at its rightful home
                 correct_index = nums[i] - 1
                 nums[i], nums[correct_index] = nums[correct_index], nums[i]
 
