@@ -8,7 +8,7 @@ class Solution:
     @staticmethod
     def repeatedSubstringPattern(s: str) -> bool:
         """Optimal Solution: String Rotation. Time Complexity: O(n), Space Complexity: O(1).
-        If s can be formed by repeating a substring, then its rotation will appear inside (s + s)[1:-1]."""
+        A string that is formed by repeating a substring will appear as a rotation within (s + s)[1:-1], while a non-repeating string will not."""
         return s in (s + s)[1:-1]
 
 
