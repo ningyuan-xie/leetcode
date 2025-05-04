@@ -1,44 +1,40 @@
 """441. Arranging Coins
 Link: https://leetcode.com/problems/arranging-coins/
 Difficulty: Easy
-Description: You have n coins, and you want to build a staircase with these coins.
-The staircase consists of k rows where the ith row has exactly i coins.
-The last row of the staircase may be incomplete.
+Description: You have n coins and you want to build a staircase with these coins. The staircase consists of k rows where the ith row has exactly i coins. The last row of the staircase may be incomplete.
 Given the integer n, return the number of complete rows of the staircase you will build."""
 
 
 class Solution:
     @staticmethod
     def arrangeCoins(n: int) -> int:
-        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1).
-           Similar to 0374-Guess-Number-Higher-or-Lower.py"""
-        # Initialize the left and right pointers
-        left, right = 0, n  # upper bound is n itself
-        # Binary search: loop until left pointer > right pointer
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)."""
+        left, right = 0, n
         while left <= right:
-            # Calculate the middle row
-            mid = left + (right - left) // 2
-            # Gauss' formula to calculate the total number of coins in the middle row
-            total = mid * (mid + 1) // 2
-            # The total number of coins is less than n, so the number of rows is on the right side
-            if total < n:
-                left = mid + 1
-            # The total number of coins is greater than n, so the number of rows is on the left side
-            elif total > n:
-                right = mid - 1
-            else:
+            mid = (left + right) // 2
+            # Calculate the total number of coins needed for mid rows
+            total_coins = (mid * (mid + 1)) // 2
+            if total_coins == n:
                 return mid
-        # Left is the ceiling and right is the floor of the number of rows
+            elif total_coins < n:
+                left = mid + 1
+            else:
+                right = mid - 1
+        # When the loop ends, left is the first row that cannot be completed and right is the last complete row
         return right
 
 
-# Input: n = 5, Output: 2
-assert Solution.arrangeCoins(5) == 2
+def unit_tests():
+    # Input: n = 5, Output: 2
+    assert Solution.arrangeCoins(5) == 2
 
-# Input: n = 8, Output: 3
-assert Solution.arrangeCoins(8) == 3
+    # Input: n = 8, Output: 3
+    assert Solution.arrangeCoins(8) == 3
 
-# Input: n = 0, Output: 0
-assert Solution.arrangeCoins(0) == 0
+    # Input: n = 0, Output: 0
+    assert Solution.arrangeCoins(0) == 0
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
