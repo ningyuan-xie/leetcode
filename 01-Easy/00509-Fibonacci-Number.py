@@ -22,6 +22,7 @@ class Solution:
             one, two = two, one + two
         return two
 
+
 def unit_tests():
     # Input = 0, Output = 0
     assert Solution.fib(0) == 0
