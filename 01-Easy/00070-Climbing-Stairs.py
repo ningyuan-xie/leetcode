@@ -13,9 +13,11 @@ class Solution:
         3rd step: 1st step = 1 then 2 left (2 ways); 1st step = 2 then 1 left (1 way); 2 + 1 = 3 ways;
         4th step: 1st step = 1 then 3 left (3 ways); 1st step = 2 then 2 left (2 way); 3 + 2 = 5 ways;
         nth step: 1st step = 1 then (n-1) left; 1st step = 2 then (n-2) left; (n-1) + (n-2) ways."""
+        # Base cases
         if n <= 2:
             return n
-
+        
+        # Initialize the two variables
         first, second = 1, 2
         # Climb(x) = Climb(x-1) + Climb(x-2)
         for _ in range(3, n + 1):
@@ -24,6 +26,9 @@ class Solution:
 
 
 def unit_tests():
+    # Input: n = 1, Output: 1
+    assert Solution.climbStairs(1) == 1
+
     # Input: n = 2, Output: 2
     assert Solution.climbStairs(2) == 2
 
