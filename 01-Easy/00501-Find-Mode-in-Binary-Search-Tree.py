@@ -8,7 +8,7 @@ Assume a BST is defined as follows:
 • The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
 • Both the left and right subtrees must also be binary search trees."""
 
-from typing import List
+from typing import List, Optional
 from package.data_structures import TreeNode
 
 
@@ -19,10 +19,11 @@ class Solution:
         # Dictionary to store the frequency of each value
         count = {}
 
-        def inorder(node: TreeNode) -> None:
+        def inorder(node: Optional[TreeNode]) -> None:
             """Helper function to perform inorder traversal and count frequencies. Preorder or postorder traversal can also be used."""
             if not node:
                 return
+            
             inorder(node.left)
             count[node.val] = count.get(node.val, 0) + 1
             inorder(node.right)
