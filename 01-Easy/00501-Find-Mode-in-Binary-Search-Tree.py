@@ -14,7 +14,7 @@ from package.data_structures import TreeNode
 
 class Solution:
     @staticmethod
-    def findMode(root: TreeNode) -> List[int]:
+    def findMode(root: Optional[TreeNode]) -> List[int]:
         """Optimal Solution: Inorder DFS. Time Complexity: O(n), Space Complexity: O(n)."""
         # Dictionary to store the frequency of each value
         count = {}
