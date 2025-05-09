@@ -1,10 +1,8 @@
 """572. Subtree of Another Tree
 Link: https://leetcode.com/problems/subtree-of-another-tree/
 Difficulty: Easy
-Description: Given the roots of two binary trees root and subRoot, return true if there is a
-subtree of root with the same structure and node values of subRoot and false otherwise.
-A subtree of a binary tree is a tree that consists of a node in tree and
-all of this node's descendants. The tree could also be considered as a subtree of itself."""
+Description: Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
+A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself."""
 
 from typing import Optional
 from package.data_structures import TreeNode
@@ -13,51 +11,47 @@ from package.data_structures import TreeNode
 class Solution:
     @staticmethod
     def isSubtree(root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
-        """Optimal Solution: Preorder DFS Traversal.
-           Time Complexity: O(m * n), Space Complexity: O(m + n)."""
-
-        def is_same_tree(node1, node2):
-            """Helper function: Preorder DFS Traversal. Same as 0100-Same-Tree.py"""
-            # Base Case
-            if not node1 and not node2:
+        """Optimal Solution: Preorder DFS. Time Complexity: O(m*n), Space Complexity: O(m).
+        Similar to 100. Same Tree."""
+        
+        def isSameTree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+            """Helper function to check if two trees are identical."""
+            if not p and not q:
                 return True
-            # Base Case
-            if not node1 or not node2:
+            if not p or not q:
                 return False
-            # Root Case and Recursive Case
-            return (node1.val == node2.val
-                    and is_same_tree(node1.left, node2.left)
-                    and is_same_tree(node1.right, node2.right))
-
-        def preorder_dfs_traversal(node):
-            """Helper function: Preorder DFS Traversal"""
-            # Base Case
+            return (p.val == q.val 
+                    and isSameTree(p.left, q.left) 
+                    and isSameTree(p.right, q.right))
+        
+        def preorder(node: Optional[TreeNode]) -> bool:
+            """Helper function to traverse main tree and check for subtree match."""
             if not node:
                 return False
-            # Root Case: Check if the current node and subRoot are the same tree
-            if is_same_tree(node, subRoot):
+            if isSameTree(node, subRoot):
                 return True
-            # Recursive Case: Check if the left or right subtree and subRoot are the same tree
-            return (preorder_dfs_traversal(node.left)
-                    or preorder_dfs_traversal(node.right))
-
-        return preorder_dfs_traversal(root)
+            return preorder(node.left) or preorder(node.right)
+            
+        return preorder(root)
 
 
-# Input: root = [3, 4, 5, 1, 2], subRoot = [4, 1, 2], Output: True
-root_test = TreeNode.build_binary_tree([3, 4, 5, 1, 2])
-sub_root_test = TreeNode.build_binary_tree([4, 1, 2])
-assert Solution.isSubtree(root_test, sub_root_test) is True
+def unit_tests():
+    # Input: root = [3, 4, 5, 1, 2], subRoot = [4, 1, 2], Output: True
+    root = TreeNode.build_binary_tree([3, 4, 5, 1, 2])
+    subRoot = TreeNode.build_binary_tree([4, 1, 2])
+    assert Solution.isSubtree(root, subRoot) is True
 
-# Input: root = [3, 4, 5, 1, 2, None, None, None, None, 0], subRoot = [4, 1, 2],
-# Output: False
-root_test = TreeNode.build_binary_tree([3, 4, 5, 1, 2, None, None, None, None, 0])
-sub_root_test = TreeNode.build_binary_tree([4, 1, 2])
-assert Solution.isSubtree(root_test, sub_root_test) is False
+    # Input: root = [3, 4, 5, 1, 2, None, None, None, None, 0], subRoot = [4, 1, 2], Output: False
+    root = TreeNode.build_binary_tree([3, 4, 5, 1, 2, None, None, None, None, 0])
+    subRoot = TreeNode.build_binary_tree([4, 1, 2])
+    assert Solution.isSubtree(root, subRoot) is False
 
-# Input: root = [1, 2, 3], subRoot = [2], Output: True
-root_test = TreeNode.build_binary_tree([1, 2, 3])
-sub_root_test = TreeNode.build_binary_tree([2])
-assert Solution.isSubtree(root_test, sub_root_test) is True
+    # Input: root = [1, 2, 3], subRoot = [2], Output: True
+    root = TreeNode.build_binary_tree([1, 2, 3])
+    subRoot = TreeNode.build_binary_tree([2])
+    assert Solution.isSubtree(root, subRoot) is True
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
