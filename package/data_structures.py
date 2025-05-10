@@ -119,8 +119,7 @@ class Node:
         return f"Node({self.val}, {self.children})"
 
     def __repr__(self):
-        """Instance representation method: override the __repr__ method, which is more official than the __str__ method. If children is a list of nodes, it will recursively call __str__ on each
-        child node, providing a clear and complete representation of the entire tree."""
+        """Instance representation method: override the __repr__ method, which is more official than the __str__ method. If children is a list of nodes, it will recursively call __str__ on each child node, providing a clear and complete representation of the entire tree."""
         return self.__str__()
 
     @staticmethod
