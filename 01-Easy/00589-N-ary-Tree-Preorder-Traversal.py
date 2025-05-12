@@ -5,13 +5,13 @@ Description: Given the root of an n-ary tree, return the preorder traversal of i
 Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value (See examples).
 Follow up: Recursive solution is trivial, could you do it iteratively?"""
 
-from typing import List
+from typing import Optional, List
 from package.data_structures import Node
 
 
 class Solution:
     @staticmethod
-    def preorder(root: Node) -> List[int]:
+    def preorder(root: Optional[Node]) -> List[int]:
         """Optimal Solution: Preorder DFS with a Stack. Time Complexity: O(n), Space Complexity: O(n)."""
         if not root:
             return []
