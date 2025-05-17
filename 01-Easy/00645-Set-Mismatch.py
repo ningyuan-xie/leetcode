@@ -33,7 +33,7 @@ class Solution:
         return [duplicate, missing]
 
 
-def unit_test():
+def unit_tests():
     # Input: nums = [1, 2, 2, 4], Output: [2, 3]
     assert Solution.findErrorNums([1, 2, 2, 4]) == [2, 3]
 
@@ -45,5 +45,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

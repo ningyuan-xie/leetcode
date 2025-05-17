@@ -24,7 +24,7 @@ class Solution:
         return max_len
 
 
-def unit_test():
+def unit_tests():
     # Input: nums = [1, 3, 5, 4, 7], Output: 3
     assert Solution.findLengthOfLCIS([1, 3, 5, 4, 7]) == 3
 
@@ -33,5 +33,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

@@ -19,7 +19,7 @@ class Solution:
         return min(min_a, m) * min(min_b, n)
 
 
-def unit_test():
+def unit_tests():
     # Input: m = 3, n = 3, ops = [[2, 2], [3, 3]], Output: 4
     assert Solution.maxCount(3, 3, [[2, 2], [3, 3]]) == 4
 
@@ -31,5 +31,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

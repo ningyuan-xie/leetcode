@@ -26,7 +26,7 @@ class Solution:
         return max_sum / k
 
 
-def unit_test():
+def unit_tests():
     # Input: nums = [1, 12, -5, -6, 50, 3], k = 4, Output: 12.75 = (12 - 5 - 6 + 50) / 4
     assert Solution.findMaxAverage([1, 12, -5, -6, 50, 3], 4) == 12.75
 
@@ -38,5 +38,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

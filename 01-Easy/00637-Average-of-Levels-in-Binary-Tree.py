@@ -39,7 +39,7 @@ class Solution:
         return average_values
 
 
-def unit_test():
+def unit_tests():
     # Input: root = [3, 9, 20, None, None, 15, 7], Output: [3.0, 14.5, 11.0]
     root = TreeNode.build_binary_tree([3, 9, 20, None, None, 15, 7])
     assert Solution.averageOfLevels(root) == [3.0, 14.5, 11.0]
@@ -54,5 +54,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

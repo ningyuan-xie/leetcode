@@ -29,7 +29,7 @@ class Solution:
         return merged
 
 
-def unit_test():
+def unit_tests():
     # Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7], Output: [3,4,5,5,4,null,7]
     root1 = TreeNode.build_binary_tree([1, 3, 2, 5])
     root2 = TreeNode.build_binary_tree([2, 1, 3, None, 4, None, 7])
@@ -50,5 +50,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

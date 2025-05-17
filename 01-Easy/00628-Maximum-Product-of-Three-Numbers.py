@@ -33,7 +33,7 @@ class Solution:
         return max(max1 * max2 * max3, min1 * min2 * max1)
 
 
-def unit_test():
+def unit_tests():
     # Input: nums = [1,2,3], Output: 6
     assert Solution.maximumProduct([1, 2, 3]) == 6
 
@@ -45,5 +45,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

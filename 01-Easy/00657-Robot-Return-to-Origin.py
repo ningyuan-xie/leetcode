@@ -24,7 +24,7 @@ class Solution:
         return x == 0 and y == 0
 
 
-def unit_test():
+def unit_tests():
     # Input: moves = "UD", Output: True
     assert Solution.judgeCircle("UD") is True
 
@@ -36,5 +36,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

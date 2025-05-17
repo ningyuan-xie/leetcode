@@ -34,7 +34,7 @@ class Solution:
         return second_min if second_min != float('inf') else -1
 
 
-def unit_test():
+def unit_tests():
     # Input: root = [2, 2, 5, None, None, 5, 7], Output: 5
     root = TreeNode.build_binary_tree([2, 2, 5, None, None, 5, 7])
     assert Solution.findSecondMinimumValue(root) == 5
@@ -49,5 +49,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

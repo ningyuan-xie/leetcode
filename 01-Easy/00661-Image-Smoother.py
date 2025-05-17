@@ -26,7 +26,7 @@ class Solution:
         return result
 
 
-def unit_test():
+def unit_tests():
     # Input: img = [[1, 1, 1], [1, 0, 1], [1, 1, 1]], Output: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
     assert Solution.imageSmoother([[1, 1, 1], [1, 0, 1], [1, 1, 1]]) == [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
@@ -35,5 +35,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

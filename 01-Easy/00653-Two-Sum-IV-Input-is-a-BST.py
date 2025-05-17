@@ -31,7 +31,7 @@ class Solution:
         return inorder(root)
 
 
-def unit_test():
+def unit_tests():
     # Input: root = [5, 3, 6, 2, 4, None, 7], k = 9, Output: True
     root = TreeNode.build_binary_tree([5, 3, 6, 2, 4, None, 7])
     assert Solution.findTarget(root, 9) is True
@@ -46,5 +46,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")

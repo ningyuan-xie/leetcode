@@ -29,7 +29,7 @@ class Solution:
         return max_vowel + max_consonant
 
 
-def unit_test():
+def unit_tests():
     # Input: s = "successes", Output: 6
     assert Solution.maxFreqSum("successes") == 6
     
@@ -38,6 +38,6 @@ def unit_test():
     
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")
     

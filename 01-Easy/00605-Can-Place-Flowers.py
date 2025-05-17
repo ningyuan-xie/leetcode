@@ -29,7 +29,7 @@ class Solution:
         return count >= n
 
 
-def unit_test():
+def unit_tests():
     # Input: flowerbed = [1,0,0,0,1], n = 1, Output: True
     assert Solution.canPlaceFlowers([1, 0, 0, 0, 1], 1) is True
 
@@ -44,5 +44,5 @@ def unit_test():
 
 
 if __name__ == "__main__":
-    unit_test()
+    unit_tests()
     print("All unit tests are passed.")
