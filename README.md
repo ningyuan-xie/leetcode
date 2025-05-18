@@ -4,6 +4,6 @@ This repository contains exercises for LeetCode questions. Currently working in 
 
 ## Directory Structure
 
-- `01-Easy/`: Solutions to LeetCode problems categorized as "Easy."
-- `02-Medium/`: Solutions to LeetCode problems categorized as "Medium."
+- `01-easy/`: Solutions to LeetCode problems categorized as "Easy."
+- `02-medium/`: Solutions to LeetCode problems categorized as "Medium."
 - `package/`: Self-defined packages for LeetCode problems, including various data structures class and tools.
