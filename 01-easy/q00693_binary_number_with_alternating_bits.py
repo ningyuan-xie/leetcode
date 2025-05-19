@@ -7,10 +7,7 @@ Description: Given a positive integer, check whether it has alternating bits: na
 class Solution:
     @staticmethod
     def hasAlternatingBits(n: int) -> bool:
-        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)
-           Bitwise XOR operator ^ : 1 ^ 1 = 0, 1 ^ 0 = 1, 0 ^ 0 = 0.
-           Bitwise AND operator & : 1 & 1 = 1, 1 & 0 = 0, 0 & 0 = 0.
-           Similar to 231. Power of Two."""
+        """Optimal Solution: Bit Manipulation. Time Complexity: O(1), Space Complexity: O(1)."""
         # If n has alternating bits like 101, n >> 1 = 10, x = 101 ^ 10 = 111
         # If n has non-alternating bits like 111, n >> 1 = 11, x = 111 ^ 11 = 100
         x = n ^ (n >> 1)
