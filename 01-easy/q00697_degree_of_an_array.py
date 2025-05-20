@@ -11,24 +11,22 @@ class Solution:
     @staticmethod
     def findShortestSubArray(nums: List[int]) -> int:
         """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
-        # Initialize the three hash tables
-        freq, first, last = {}, {}, {}
-
-        # Iterate through the list of numbers and update the three hash tables
-        for i, num in enumerate(nums):  # E.g. nums = [1, 2, 2, 3, 1]
-            # Update the frequency of the number
-            freq[num] = freq.get(num, 0) + 1  # freq: {1: 2, 2: 2, 3: 1}
-            # Update the first appearance of each number using .setdefault()
-            first.setdefault(num, i)  # first: {1: 0, 2: 1, 3: 3}
-            # Update the last appearance of each number
-            last[num] = i  # last: {1: 4, 2: 2, 3: 3}
-
+        freq = {}
+        first_last = {}  # Stores (first, last) indices for each number
+        
+        for i, num in enumerate(nums):
+            if num not in first_last:
+                first_last[num] = [i, i]  # Initialize first and last index
+            else:
+                first_last[num][1] = i  # Update last index
+            freq[num] = freq.get(num, 0) + 1  # Update frequency
+        
         # Find the maximum frequency of any one of the elements as the degree
-        degree = max(freq.values())  # max_freq = 2
+        degree = max(freq.values())
 
         # Find the smallest possible length of the subarray
-        # last[1] - first[1] + 1 = 5; last[2] - first[2] + 1 = 2 -> the smallest subarray is [2, 2]
-        return min(last[num] - first[num] + 1 for num in freq if freq[num] == degree)
+        return min(last - first + 1 for num, (first, last) in first_last.items() 
+                   if freq[num] == degree)
 
 
 def unit_tests():
