@@ -1,9 +1,8 @@
 """697. Degree of an Array
 Link: https://leetcode.com/problems/degree-of-an-array/
 Difficulty: Easy
-Description: Given a non-empty array of non-negative integers nums, the degree of this array is
-defined as the maximum frequency of any one of its elements. Your task is to find the smallest
-possible length of a (contiguous) subarray of nums, that has the same degree as nums."""
+Description: Given a non-empty array of non-negative integers nums, the degree of this array is defined as the maximum frequency of any one of its elements.
+Your task is to find the smallest possible length of a (contiguous) subarray of nums, that has the same degree as nums."""
 
 from typing import List
 
@@ -32,13 +31,17 @@ class Solution:
         return min(last[num] - first[num] + 1 for num in freq if freq[num] == degree)
 
 
-# Input: nums = [1, 2, 2, 3, 1], Output: 2
-assert Solution.findShortestSubArray([1, 2, 2, 3, 1]) == 2
+def unit_tests():
+    # Input: nums = [1, 2, 2, 3, 1], Output: 2
+    assert Solution.findShortestSubArray([1, 2, 2, 3, 1]) == 2
 
-# Input: nums = [1, 2, 2, 3, 1, 4, 2], Output: 6
-assert Solution.findShortestSubArray([1, 2, 2, 3, 1, 4, 2]) == 6
+    # Input: nums = [1, 2, 2, 3, 1, 4, 2], Output: 6
+    assert Solution.findShortestSubArray([1, 2, 2, 3, 1, 4, 2]) == 6
 
-# Input: nums = [1, 2, 2, 3, 1, 4, 2, 1], Output: 6
-assert Solution.findShortestSubArray([1, 2, 2, 3, 1, 4, 2, 1]) == 6
+    # Input: nums = [1, 2, 2, 3, 1, 4, 2, 1], Output: 6
+    assert Solution.findShortestSubArray([1, 2, 2, 3, 1, 4, 2, 1]) == 6
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
