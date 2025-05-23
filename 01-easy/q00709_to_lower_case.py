@@ -1,24 +1,34 @@
 """709. To Lower Case
 Link: https://leetcode.com/problems/to-lower-case/
 Difficulty: Easy
-Description: Implement function ToLowerCase() that has a string parameter str, and returns the
-same string in lowercase."""
+Description: Given a string s, return the string after replacing every uppercase letter with the same lowercase letter."""
 
 
 class Solution:
     @staticmethod
     def to_lower_case(s: str) -> str:
-        """Optimal Solution: Convert to Lowercase. Time Complexity: O(n), Space Complexity: O(n)."""
-        return s.lower()
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)."""
+        result = []
+        for char in s:
+            if 'A' <= char <= 'Z':
+                # Convert uppercase to lowercase by adding 32 to the ASCII value
+                result.append(chr(ord(char) + 32))
+            else:
+                result.append(char)
+        return ''.join(result)
 
 
-# Input: "Hello", Output: "hello"
-assert Solution.to_lower_case("Hello") == "hello"
+def unit_tests():
+    # Input: "Hello", Output: "hello"
+    assert Solution.to_lower_case("Hello") == "hello"
 
-# Input: "here", Output: "here"
-assert Solution.to_lower_case("here") == "here"
+    # Input: "here", Output: "here"
+    assert Solution.to_lower_case("here") == "here"
 
-# Input: "LOVELY", Output: "lovely"
-assert Solution.to_lower_case("LOVELY") == "lovely"
+    # Input: "LOVELY", Output: "lovely"
+    assert Solution.to_lower_case("LOVELY") == "lovely"
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
