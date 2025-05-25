@@ -15,15 +15,13 @@ class Solution:
         if n <= k and m <= k:
             return 0
 
-        length = max(n, m)
         # Minimum cost is the farthest distance from the center of the log
-        for i in range(1, length // 2 + 1):
+        for i in range(1, max(n, m) // 2 + 1):
             # Once the longer log can fit in the truck, the cost is minimum
-            if length - i == k:
-                min_cost = i * (length - i)
-                break
+            if max(n, m) - i == k:
+                return i * (max(n, m) - i)
 
-        return min_cost
+        return 0
     
 
 def unit_tests():
