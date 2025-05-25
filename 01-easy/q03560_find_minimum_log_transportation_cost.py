@@ -10,18 +10,14 @@ Return the minimum total cost to distribute the logs onto the trucks. If the log
 class Solution:
     @staticmethod
     def minCuttingCost(n: int, m: int, k: int) -> int:
-        """Optimal Solution: Math. Time Complexity: O(n), Space Complexity: O(1)."""
+        """Optimal Solution: Math. Time Complexity: O(1), Space Complexity: O(1)."""
         # If no cutting needed (both logs fit in trucks)
         if n <= k and m <= k:
             return 0
-
-        # Minimum cost is the farthest distance from the center of the log
-        for i in range(1, max(n, m) // 2 + 1):
-            # Once the longer log can fit in the truck, the cost is minimum
-            if max(n, m) - i == k:
-                return i * (max(n, m) - i)
-
-        return 0
+        
+        # Calculate minimum cuts needed and cost
+        cuts_needed = max(n, m) - k
+        return cuts_needed * (max(n, m) - cuts_needed)
     
 
 def unit_tests():
