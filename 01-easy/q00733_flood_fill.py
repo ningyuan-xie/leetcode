@@ -1,13 +1,12 @@
 """733. Flood Fill
 Link: https://leetcode.com/problems/flood-fill/
 Difficulty: Easy
-Description: An image is represented by an m x n integer grid image where image[i][j] represents
-the pixel value of the image. You are also given three integers sr, sc, and newColor.
-You should perform a flood fill on the image starting from the pixel image[sr][sc].
-To perform a flood fill, consider the starting pixel, plus any pixels connected 4-directionally
-to the starting pixel of the same color as the starting pixel, plus any pixels connected
-4-directionally to those pixels (also with the same color), and so on. Replace the color of all
-of the aforementioned pixels with color.
+Description: You are given an image represented by an m x n grid of integers image, where image[i][j] represents the pixel value of the image. You are also given three integers sr, sc, and color. Your task is to perform a flood fill on the image starting from the pixel image[sr][sc].
+To perform a flood fill:
+1. Begin with the starting pixel and change its color to color.
+2. Perform the same process for each pixel that is directly adjacent (pixels that share a side with the original pixel, either horizontally or vertically) and shares the same color as the starting pixel.
+3. Keep repeating this process by checking neighboring pixels of the updated pixels and modifying their color if it matches the original color of the starting pixel.
+4. The process stops when there are no more adjacent pixels of the original color to update.
 Return the modified image after performing the flood fill."""
 
 from typing import List
@@ -16,57 +15,45 @@ from typing import List
 class Solution:
     @staticmethod
     def flood_fill(image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
-        """Optimal Solution: Preorder DFS Traversal.
-           Time Complexity: O(m * n), Space Complexity: O(m * n)."""
+        """Optimal Solution: Preorder DFS. Time Complexity: O(m * n), Space Complexity: O(m * n)."""
         # Get the original color of the starting pixel
         original_color = image[sr][sc]
 
         # Check if the original color is the same as the new color
         if original_color == color:
-            # If so, do nothing and return the original image
             return image
 
-        # Perform depth-first search
-        Solution.preorder_dfs_traversal(image, sr, sc, original_color, color)
+        # Directions for 4-way movement
+        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]  # up, down, left, right
 
-        # Return the updated image
+        def preorder(r: int, c: int) -> None:
+            """Helper function to perform preorder DFS."""
+            # Update the current pixel's color
+            image[r][c] = color
+            
+            # Check all 4 directions
+            for dr, dc in directions:
+                nr, nc = r + dr, c + dc
+                # Check if new coordinates are valid and color matches original
+                if (0 <= nr < len(image) and 0 <= nc < len(image[0]) 
+                    and image[nr][nc] == original_color):
+                    preorder(nr, nc)
+
+        preorder(sr, sc)
         return image
 
-    @staticmethod
-    def preorder_dfs_traversal(image: List[List[int]], r: int, c: int,
-                               original_color: int, new_color: int) -> None:
-        """Helper function to perform depth-first search"""
-        # Check if the current pixel is out of bounds or has a different color
-        if (r < 0 or r >= len(image)
-                or c < 0 or c >= len(image[0])
-                # color is initially not the original color or already changed
-                or image[r][c] != original_color):
-            # If so, return
-            return
 
-        # Update the color of the current pixel
-        image[r][c] = new_color
+def unit_tests():
+    # Input: image = [[1, 1, 1], [1, 1, 0], [1, 0, 1]], sr = 1, sc = 1, newColor = 2, Output: [[2, 2, 2], [2, 2, 0], [2, 0, 1]]
+    assert Solution.flood_fill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], 1, 1, 2) == [[2, 2, 2], [2, 2, 0], [2, 0, 1]]
 
-        # Recursively call dfs on the neighboring pixels
-        Solution.preorder_dfs_traversal(image, r - 1, c, original_color, new_color)  # Up
-        Solution.preorder_dfs_traversal(image, r + 1, c, original_color, new_color)  # Down
-        Solution.preorder_dfs_traversal(image, r, c - 1, original_color, new_color)  # Left
-        Solution.preorder_dfs_traversal(image, r, c + 1, original_color, new_color)  # Right
+    # Input: image = [[0, 0, 0], [0, 1, 1]], sr = 1, sc = 1, newColor = 1, Output: [[0, 0, 0], [0, 1, 1]]
+    assert Solution.flood_fill([[0, 0, 0], [0, 1, 1]], 1, 1, 1) == [[0, 0, 0], [0, 1, 1]]
+
+    # Input: image = [[0, 0, 0], [0, 1, 1]], sr = 1, sc = 1, newColor = 2, Output: [[0, 0, 0], [0, 2, 2]]
+    assert Solution.flood_fill([[0, 0, 0], [0, 1, 1]], 1, 1, 2) == [[0, 0, 0], [0, 2, 2]]
 
 
-# Input: image = [[1, 1, 1], [1, 1, 0], [1, 0, 1]], sr = 1, sc = 1, newColor = 2,
-# Output: [[2, 2, 2], [2, 2, 0], [2, 0, 1]]
-assert (Solution.flood_fill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], 1, 1, 2)
-        == [[2, 2, 2], [2, 2, 0], [2, 0, 1]])
-
-# Input: image = [[0, 0, 0], [0, 1, 1]], sr = 1, sc = 1, newColor = 1,
-# Output: [[0, 0, 0], [0, 1, 1]]
-assert (Solution.flood_fill([[0, 0, 0], [0, 1, 1]], 1, 1, 1)
-        == [[0, 0, 0], [0, 1, 1]])
-
-# Input: image = [[0, 0, 0], [0, 1, 1]], sr = 1, sc = 1, newColor = 2,
-# Output: [[0, 0, 0], [0, 2, 2]]
-assert (Solution.flood_fill([[0, 0, 0], [0, 1, 1]], 1, 1, 2)
-        == [[0, 0, 0], [0, 2, 2]])
-
-print("All unit tests are passed.")
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
