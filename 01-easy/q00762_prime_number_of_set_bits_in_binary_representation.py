@@ -1,10 +1,9 @@
 """762. Prime Number of Set Bits in Binary Representation
 Link: https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
 Difficulty: Easy
-Description: Given two integers left and right, return the count of numbers in the inclusive
-range [left, right] having a prime number of set bits in their binary representation.
-Recall that the number of set bits an integer has is the number of 1's present when written
-in binary."""
+Description: Given two integers left and right, return the count of numbers in the inclusive range [left, right] having a prime number of set bits in their binary representation.
+Recall that the number of set bits an integer has is the number of 1's present when written in binary.
+• For example, 21 written in binary is 10101, which has 3 set bits."""
 
 
 class Solution:
@@ -29,13 +28,17 @@ class Solution:
         return count
 
 
-# Input: left = 6, right = 10, Output: 4
-assert Solution.count_prime_set_bits(6, 10) == 4
+def unit_tests():
+    # Input: left = 6, right = 10, Output: 4
+    assert Solution.count_prime_set_bits(6, 10) == 4
 
-# Input: left = 10, right = 15, Output: 5
-assert Solution.count_prime_set_bits(10, 15) == 5
+    # Input: left = 10, right = 15, Output: 5
+    assert Solution.count_prime_set_bits(10, 15) == 5
 
-# Input: left = 10, right = 20, Output: 9
-assert Solution.count_prime_set_bits(10, 20) == 9
+    # Input: left = 10, right = 20, Output: 9
+    assert Solution.count_prime_set_bits(10, 20) == 9
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
