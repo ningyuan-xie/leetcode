@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minimumOperations(grid: List[List[int]]) -> int:
-        """Optimal Solution: Greedy. Time Complexity: O(m * n), Space Complexity: O(1)."""
+        """Optimal Solution: Greedy. Time Complexity: O(m*n), Space Complexity: O(1)."""
         m, n = len(grid), len(grid[0])
         operations = 0
 

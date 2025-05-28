@@ -9,7 +9,7 @@ from typing import List
 class Solution:
     @staticmethod
     def imageSmoother(img: List[List[int]]) -> List[List[int]]:
-        """Optimal Solution: 2D Convolution. Time Complexity: O(m * n), Space Complexity: O(m * n)."""
+        """Optimal Solution: 2D Convolution. Time Complexity: O(m*n), Space Complexity: O(m*n)."""
         m, n = len(img), len(img[0])
         result = [[0]*n for _ in range(m)]
         

@@ -12,7 +12,7 @@ from typing import List
 class Solution:
     @staticmethod
     def maximumWealth(accounts: List[List[int]]) -> int:
-        """Optimal Solution: 2D Array. Time Complexity: O(m * n), Space Complexity: O(1)."""
+        """Optimal Solution: 2D Array. Time Complexity: O(m*n), Space Complexity: O(1)."""
         # Initialize the maximum wealth to 0
         max_wealth = 0
 

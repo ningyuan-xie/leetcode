@@ -15,7 +15,7 @@ class Solution:
     @staticmethod
     def shiftGrid(grid: List[List[int]], k: int) -> List[List[int]]:
         """Optimal Solution: 1D List and Modulo Operation.
-           Time Complexity: O(m * n), Space Complexity: O(m * n)."""
+           Time Complexity: O(m*n), Space Complexity: O(m*n)."""
         # Get the dimensions of the grid
         m, n = len(grid), len(grid[0])
 

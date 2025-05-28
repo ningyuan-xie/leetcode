@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     @staticmethod
     def flood_fill(image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
-        """Optimal Solution: Preorder DFS. Time Complexity: O(m * n), Space Complexity: O(m * n)."""
+        """Optimal Solution: Preorder DFS. Time Complexity: O(m*n), Space Complexity: O(m*n)."""
         # Get the original color of the starting pixel
         original_color = image[sr][sc]
 

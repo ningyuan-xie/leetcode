@@ -11,7 +11,7 @@ from typing import List
 class Solution:
     @staticmethod
     def islandPerimeter(grid: List[List[int]]) -> int:
-        """Optimal Solution: Linear Scan. Time Complexity: O(m * n), Space Complexity: O(1)."""
+        """Optimal Solution: Linear Scan. Time Complexity: O(m*n), Space Complexity: O(1)."""
         # Initialize perimeter
         perimeter = 0
 
