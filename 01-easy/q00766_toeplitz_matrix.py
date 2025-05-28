@@ -10,33 +10,28 @@ from typing import List
 class Solution:
     @staticmethod
     def is_toeplitz_matrix(matrix: List[List[int]]) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(m*n), Space Complexity: O(m+n)."""
-        # Initialize the dictionary to store the elements of each diagonal
-        diagonals = {}
-
-        # Check each element in the matrix
-        for i in range(len(matrix)):  # 0, 1, 2
-            for j in range(len(matrix[0])):  # 0, 1, 2, 3
-                # Diagonal index = row - column: 0 - 0 = 1 - 1 = 2 - 2
-                diagonal_index = i - j
-
-                # If the diagonal index is not in the dictionary, add it
-                if diagonal_index not in diagonals:
-                    diagonals[diagonal_index] = matrix[i][j]
-                # If the element is not the same as the previous element in the diagonal, return False
-                elif diagonals[diagonal_index] != matrix[i][j]:
+        """Optimal Solution: Matrix Manipulation. Time Complexity: O(m*n), Space Complexity: O(1)."""
+        # Check each element starting from the second row and second column
+        for i in range(1, len(matrix)):
+            for j in range(1, len(matrix[0])):
+                # Compare current element with the element diagonally above-left
+                if matrix[i][j] != matrix[i-1][j-1]:
                     return False
-
+        
         return True
 
 
-# Input: matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]], Output: True
-assert Solution.is_toeplitz_matrix([[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]]) is True
+def unit_tests():
+    # Input: matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]], Output: True
+    assert Solution.is_toeplitz_matrix([[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]]) is True
 
-# Input: matrix = [[1, 2], [2, 2]], Output: False
-assert Solution.is_toeplitz_matrix([[1, 2], [2, 2]]) is False
+    # Input: matrix = [[1, 2], [2, 2]], Output: False
+    assert Solution.is_toeplitz_matrix([[1, 2], [2, 2]]) is False
 
-# Input: matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2], [1, 9, 5, 1]], Output: True
-assert Solution.is_toeplitz_matrix([[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2], [1, 9, 5, 1]]) is True
+    # Input: matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2], [1, 9, 5, 1]], Output: True
+    assert Solution.is_toeplitz_matrix([[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2], [1, 9, 5, 1]]) is True
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
