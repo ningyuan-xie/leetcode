@@ -1,8 +1,7 @@
 """812. Largest Triangle Area
 Link: https://leetcode.com/problems/largest-triangle-area/
 Difficulty: Easy
-Description: You have a list of points in the plane. Return the area of the largest triangle
-that can be formed by any 3 of the points."""
+Description: Given an array of points on the X-Y plane points where points[i] = [xi, yi], return the area of the largest triangle that can be formed by any three different points. Answers within 10-5 of the actual answer will be accepted."""
 
 from typing import List
 
@@ -15,8 +14,7 @@ class Solution:
         max_area = 0
 
         def area(p1: List[int], p2: List[int], p3: List[int]) -> float:
-            """Helper function: Calculate the area of a triangle using the
-               Shoelace Formula: 0.5 * |x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|"""
+            """Shoelace Formula: 0.5 * |x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|."""
             # Extract the coordinates of the points
             x1, y1 = p1
             x2, y2 = p2
@@ -36,13 +34,17 @@ class Solution:
         return max_area
 
 
-# Input: points = [[0,0],[0,1],[1,0],[0,2],[2,0]], Output: 2.0
-assert Solution.largestTriangleArea([[0, 0], [0, 1], [1, 0], [0, 2], [2, 0]]) == 2.0
+def unit_tests():
+    # Input: points = [[0,0],[0,1],[1,0],[0,2],[2,0]], Output: 2.0
+    assert Solution.largestTriangleArea([[0, 0], [0, 1], [1, 0], [0, 2], [2, 0]]) == 2.0
 
-# Input: points = [[1,0],[0,0],[0,1]], Output: 0.5
-assert Solution.largestTriangleArea([[1, 0], [0, 0], [0, 1]]) == 0.5
+    # Input: points = [[1,0],[0,0],[0,1]], Output: 0.5
+    assert Solution.largestTriangleArea([[1, 0], [0, 0], [0, 1]]) == 0.5
 
-# Input: points = [[1,1],[2,2],[3,3]], Output: 0.0
-assert Solution.largestTriangleArea([[1, 1], [2, 2], [3, 3]]) == 0.0
+    # Input: points = [[1,1],[2,2],[3,3]], Output: 0.0
+    assert Solution.largestTriangleArea([[1, 1], [2, 2], [3, 3]]) == 0.0
 
-print("All unit tests are passed.")
+
+if __name__ == '__main__':
+    unit_tests()
+    print("All unit tests are passed.")
