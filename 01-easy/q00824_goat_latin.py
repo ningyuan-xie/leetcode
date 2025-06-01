@@ -1,17 +1,15 @@
 """824. Goat Latin
 Link: https://leetcode.com/problems/goat-latin/
 Difficulty: Easy
-Description: You are given a string sentence that consist of words separated by spaces. Each word
-consists of lowercase and uppercase letters only.
-We would like to convert the sentence to "Goat Latin" (a made-up language similar to Pig Latin.)
-The rules of Goat Latin are as follows:
-If a word begins with a vowel ('a', 'e', 'i', 'o', or 'u'), append "ma" to the end of the word.
-For example, the word "apple" becomes "applema".
-If a word begins with a consonant (i.e., not a vowel), remove the first letter and append it to the
-end, then add "ma". For example, the word "goat" becomes "oatgma".
-Add one letter 'a' to the end of each word per its word index in the sentence, starting with 1.
-For example, the first word gets "a" added to the end, the second word gets "aa" added to the end,
-and so on. Return the final sentence representing the conversion from sentence to Goat Latin."""
+Description: You are given a string sentence that consist of words separated by spaces. Each word consists of lowercase and uppercase letters only.
+We would like to convert the sentence to "Goat Latin" (a made-up language similar to Pig Latin.) The rules of Goat Latin are as follows:
+• If a word begins with a vowel ('a', 'e', 'i', 'o', or 'u'), append "ma" to the end of the word.
+  • For example, the word "apple" becomes "applema".
+• If a word begins with a consonant (i.e., not a vowel), remove the first letter and append it to the end, then add "ma".
+  • For example, the word "goat" becomes "oatgma".
+• Add one letter 'a' to the end of each word per its word index in the sentence, starting with 1.
+  • For example, the first word gets "a" added to the end, the second word gets "aa" added to the end, and so on.
+Return the final sentence representing the conversion from sentence to Goat Latin."""
 
 
 class Solution:
@@ -19,12 +17,12 @@ class Solution:
     def toGoatLatin(sentence: str) -> str:
         """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)."""
         # Initialize the vowels set
-        vowels = set("aeiouAEIOU")
+        vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
         # Split the sentence into a list of words
-        words = sentence.split()  # E.g. "I speak Goat Latin" -> ["I", "speak", "Goat", "Latin"]
+        words = sentence.split()  # "I speak Goat Latin" -> ["I", "speak", "Goat", "Latin"]
 
-        # Initialize the result list
         result = []
+        # Iterate through the words
         for i, word in enumerate(words):
             # If the first letter is a vowel, append "ma" to the end of the word
             if word[0] in vowels:
@@ -36,17 +34,17 @@ class Solution:
             word += "a" * (i + 1)
             result.append(word)
 
-        return " ".join(result)
+        return ' '.join(result)
 
 
-# Input: sentence = "I speak Goat Latin", Output: "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
-assert Solution.toGoatLatin("I speak Goat Latin") == "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
+def unit_tests():
+    # Input: sentence = "I speak Goat Latin", Output: "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
+    assert Solution.toGoatLatin("I speak Goat Latin") == "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
 
-# Input: sentence = "The quick brown fox jumped over the lazy dog",
-# Output: "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa
-# overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
-assert Solution.toGoatLatin("The quick brown fox jumped over the lazy dog") == \
-       ("heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa "
-        "overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa")
+    # Input: sentence = "The quick brown fox jumped over the lazy dog", Output: "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
+    assert Solution.toGoatLatin("The quick brown fox jumped over the lazy dog") == "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
 
-print("All unit tests are passed.")
+
+if __name__ == '__main__':
+    unit_tests()
+    print("All unit tests are passed.")
