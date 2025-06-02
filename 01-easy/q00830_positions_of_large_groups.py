@@ -19,8 +19,9 @@ class Solution:
         start = 0  # Start of current group
         
         while start < n:
-            # Expand the end pointer to the end of the current group
+            # Initialize the end pointer to the start pointer
             end = start
+            # Expand the end pointer to the end of the current group
             while end < n and s[end] == s[start]:
                 end += 1
             # Check if group is large
