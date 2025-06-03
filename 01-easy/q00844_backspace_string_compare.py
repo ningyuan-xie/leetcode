@@ -1,8 +1,7 @@
 """844. Backspace String Compare
 Link: https://leetcode.com/problems/backspace-string-compare/
 Difficulty: Easy
-Description: Given two strings s and t, return true if they are equal when both are typed into
-empty text editors. '#' means a backspace character.
+Description: Given two strings s and t, return true if they are equal when both are typed into empty text editors. '#' means a backspace character.
 Note that after backspacing an empty text, the text will continue empty."""
 
 
@@ -12,7 +11,7 @@ class Solution:
         """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(n)."""
 
         def process_string(string: str) -> str:
-            """Helper function to process the string"""
+            """Helper function to process the string."""
             result, skip = [], 0
             for char in reversed(string):
                 # If the character is '#', then increment the skip counter
@@ -29,16 +28,20 @@ class Solution:
         return process_string(s) == process_string(t)
 
 
-# Input: s = "ab#c", t = "ad#c", Output: True
-assert Solution.backspaceCompare("ab#c", "ad#c") is True
+def unit_tests():
+    # Input: s = "ab#c", t = "ad#c", Output: True
+    assert Solution.backspaceCompare("ab#c", "ad#c") is True
 
-# Input: s = "ab##", t = "c#d#", Output: True
-assert Solution.backspaceCompare("ab##", "c#d#") is True
+    # Input: s = "ab##", t = "c#d#", Output: True
+    assert Solution.backspaceCompare("ab##", "c#d#") is True
 
-# Input: s = "a##c", t = "#a#c", Output: True
-assert Solution.backspaceCompare("a##c", "#a#c") is True
+    # Input: s = "a##c", t = "#a#c", Output: True
+    assert Solution.backspaceCompare("a##c", "#a#c") is True
 
-# Input: s = "a#c", t = "b", Output: False
-assert Solution.backspaceCompare("a#c", "b") is False
+    # Input: s = "a#c", t = "b", Output: False
+    assert Solution.backspaceCompare("a#c", "b") is False
 
-print("All unit tests are passed.")
+
+if __name__ == '__main__':
+    unit_tests()
+    print("All unit tests are passed.")
