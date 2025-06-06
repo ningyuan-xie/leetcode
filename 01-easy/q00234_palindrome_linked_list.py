@@ -12,9 +12,6 @@ class Solution:
     @staticmethod
     def isPalindrome(head: Optional[ListNode]) -> bool:
         """Optimal Solution: Reverse Half. Time Complexity: O(n), Space Complexity: O(1)."""
-        # Base case
-        if not head or not head.next:
-            return True
 
         def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
             """Helper function to reverse a linked list: from 206. Reverse Linked List."""
