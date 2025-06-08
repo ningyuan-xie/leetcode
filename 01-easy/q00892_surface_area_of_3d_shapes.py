@@ -1,10 +1,8 @@
 """892. Surface Area of 3D Shapes
 Link: https://leetcode.com/problems/surface-area-of-3d-shapes/
 Difficulty: Easy
-Description: You are given an n x n grid where you have placed some 1 x 1 x 1 cubes.
-Each value v = grid[i][j] represents a tower of v cubes placed on top of cell (i, j).
-After placing these cubes, you have decided to glue any directly adjacent cubes to each other,
-forming several irregular 3D shapes.
+Description: You are given an n x n grid where you have placed some 1 x 1 x 1 cubes. Each value v = grid[i][j] represents a tower of v cubes placed on top of cell (i, j).
+After placing these cubes, you have decided to glue any directly adjacent cubes to each other, forming several irregular 3D shapes.
 Return the total surface area of the resulting shapes.
 Note: The bottom face of each shape counts toward its surface area."""
 
@@ -15,7 +13,7 @@ class Solution:
     @staticmethod
     def surfaceArea(grid: List[List[int]]) -> int:
         """Optimal Solution: Math. Time Complexity: O(n^2), Space Complexity: O(1).
-           Similar to 0463-Island-Perimeter.py and 0883-Projection-Area-of-3D-Shapes.py"""
+        Similar to 463. Island Perimeter and 883. Projection Area of 3D Shapes."""
         # Initialize the total surface area
         total_area = 0
 
@@ -39,16 +37,20 @@ class Solution:
         return total_area
 
 
-# Input: grid = [[2]], Output: 10
-assert Solution.surfaceArea([[2]]) == 10
+def unit_tests():
+    # Input: grid = [[2]], Output: 10
+    assert Solution.surfaceArea([[2]]) == 10
 
-# Input: grid = [[1,2],[3,4]], Output: 34
-assert Solution.surfaceArea([[1, 2], [3, 4]]) == 34
+    # Input: grid = [[1,2],[3,4]], Output: 34
+    assert Solution.surfaceArea([[1, 2], [3, 4]]) == 34
 
-# Input: grid = [[1,0],[0,2]], Output: 16
-assert Solution.surfaceArea([[1, 0], [0, 2]]) == 16
+    # Input: grid = [[1,0],[0,2]], Output: 16
+    assert Solution.surfaceArea([[1, 0], [0, 2]]) == 16
 
-# Input: grid = [[1,1,1],[1,0,1],[1,1,1]], Output: 32
-assert Solution.surfaceArea([[1, 1, 1], [1, 0, 1], [1, 1, 1]]) == 32
+    # Input: grid = [[1,1,1],[1,0,1],[1,1,1]], Output: 32
+    assert Solution.surfaceArea([[1, 1, 1], [1, 0, 1], [1, 1, 1]]) == 32
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
