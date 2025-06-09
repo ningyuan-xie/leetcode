@@ -26,6 +26,10 @@ class ListNode:
         """Instance description method: override the __str__ method."""
         return f"ListNode({self.val}, {self.next})"
 
+    def __repr__(self):
+        """Instance representation method: override the __repr__ method, which is more official than the __str__ method. If next is a ListNode object, it will recursively call __str__ on the next node, providing a clear and complete representation of the entire linked list."""
+        return self.__str__()
+
     @staticmethod
     def build_linked_list(array: List) -> Optional['ListNode']:
         """Helper function to build a linked list from a list."""
@@ -68,6 +72,10 @@ class TreeNode:
     def __str__(self):
         """Instance description method: override the __str__ method."""
         return f"TreeNode({self.val}, {self.left}, {self.right})"
+
+    def __repr__(self):
+        """Instance representation method: override the __repr__ method, which is more official than the __str__ method. If children is a list of nodes, it will recursively call __str__ on each child node, providing a clear and complete representation of the entire tree."""
+        return self.__str__()
 
     @staticmethod
     def build_binary_tree(array: List) -> Optional['TreeNode']:
