@@ -1,8 +1,7 @@
 """914. X of a Kind in a Deck of Cards
 Link: https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/
 Difficulty: Easy
-Description: You are given an integer array deck where deck[i] represents the number written on the
-ith card.
+Description: You are given an integer array deck where deck[i] represents the number written on the ith card.
 Partition the cards into one or more groups such that:
 Each group has exactly x cards where x > 1, and
 All the cards in one group have the same integer written on them.
@@ -14,8 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def hasGroupsSizeX(deck: List[int]) -> bool:
-        """Optimal Solution: Hash Table and Common Divisor.
-           Time Complexity: O(n), Space Complexity: O(n)."""
+        """Optimal Solution: Hash Table and Common Divisor. Time Complexity: O(n), Space Complexity: O(n)."""
         # Count the frequency of each card
         count = {}
         for card in deck:
@@ -36,23 +34,23 @@ class Solution:
         return False
 
 
-# Input: deck = [1,2,3,4,4,3,2,1], Output: True
-# Explanation: Possible partition [1,1], [2,2], [3,3], [4,4]
-assert Solution.hasGroupsSizeX([1, 2, 3, 4, 4, 3, 2, 1])
+def unit_tests():
+    # Input: deck = [1,2,3,4,4,3,2,1], Output: True
+    assert Solution.hasGroupsSizeX([1, 2, 3, 4, 4, 3, 2, 1])
 
-# Input: deck = [1,1,1,2,2,2,3,3], Output: False
-# Explanation: No possible partition
-assert not Solution.hasGroupsSizeX([1, 1, 1, 2, 2, 2, 3, 3])
+    # Input: deck = [1,1,1,2,2,2,3,3], Output: False
+    assert not Solution.hasGroupsSizeX([1, 1, 1, 2, 2, 2, 3, 3])
 
-# Input: deck = [1], Output: False
-assert not Solution.hasGroupsSizeX([1])
+    # Input: deck = [1], Output: False
+    assert not Solution.hasGroupsSizeX([1])
 
-# Input: desk = [1, 1, 2, 2, 2, 2], Output: True
-# Explanation: Possible partition [1,1], [2,2], [2,2]
-assert Solution.hasGroupsSizeX([1, 1, 2, 2, 2, 2])
+    # Input: desk = [1, 1, 2, 2, 2, 2], Output: True
+    assert Solution.hasGroupsSizeX([1, 1, 2, 2, 2, 2])
 
-# Input: desk = [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3], Output: True
-# Explanation: Possible partition [1,1,1], [2,2,2], [3,3,3], [3,3,3]
-assert Solution.hasGroupsSizeX([1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3])
+    # Input: desk = [1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3], Output: True
+    assert Solution.hasGroupsSizeX([1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3])
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
