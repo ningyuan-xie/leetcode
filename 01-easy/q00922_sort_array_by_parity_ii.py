@@ -1,8 +1,7 @@
 """922. Sort Array By Parity II
 Link: https://leetcode.com/problems/sort-array-by-parity-ii/
 Difficulty: Easy
-Description: Given an array of integers nums, half of the integers in nums are odd, and the other
-half are even.
+Description: Given an array of integers nums, half of the integers in nums are odd, and the other half are even.
 Sort the array so that whenever nums[i] is odd, i is odd, and whenever nums[i] is even, i is even.
 Return any answer array that satisfies this condition."""
 
@@ -13,11 +12,11 @@ class Solution:
     @staticmethod
     def sortArrayByParityII(nums: List[int]) -> List[int]:
         """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(1).
-           Similar to 0905-Sort-Array-By-Parity.py"""
+        Similar to 905. Sort Array By Parity."""
         # Initialize the two pointers
         even, odd = 0, 1
 
-        # Move the even integers to the left and the odd integers to the right
+        # Move both pointers until they reach the end of the array
         while even < len(nums) and odd < len(nums):
             # If even index is even, skip it, and +2 to disregard the ignored even integer
             if nums[even] % 2 == 0:
@@ -34,16 +33,20 @@ class Solution:
         return nums
 
 
-# Input: nums = [4,2,5,7], Output: [4,5,2,7]
-assert Solution.sortArrayByParityII([4, 2, 5, 7]) == [4, 5, 2, 7]
+def unit_tests():
+    # Input: nums = [4,2,5,7], Output: [4,5,2,7]
+    assert Solution.sortArrayByParityII([4, 2, 5, 7]) == [4, 5, 2, 7]
 
-# Input: nums = [2,3], Output: [2,3]
-assert Solution.sortArrayByParityII([2, 3]) == [2, 3]
+    # Input: nums = [2,3], Output: [2,3]
+    assert Solution.sortArrayByParityII([2, 3]) == [2, 3]
 
-# Input: nums = [3,2], Output: [2,3]
-assert Solution.sortArrayByParityII([3, 2]) == [2, 3]
+    # Input: nums = [3,2], Output: [2,3]
+    assert Solution.sortArrayByParityII([3, 2]) == [2, 3]
 
-# Input: nums = [3,2,4,1], Output: [2,3,4,1]
-assert Solution.sortArrayByParityII([3, 2, 4, 1]) == [2, 3, 4, 1]
+    # Input: nums = [3,2,4,1], Output: [2,3,4,1]
+    assert Solution.sortArrayByParityII([3, 2, 4, 1]) == [2, 3, 4, 1]
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
