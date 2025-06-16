@@ -16,7 +16,7 @@ from typing import List
 class Solution:
     @staticmethod
     def minDeletionSize(strs: List[str]) -> int:
-        """Optimal Solution: Column-wise Comparison. Time Complexity: O(n*m), Space Complexity: O(1)."""
+        """Optimal Solution: Column-wise Comparison. Time Complexity: O(n * m), Space Complexity: O(1)."""
         delete_count = 0
         
         # Iterate through each column
