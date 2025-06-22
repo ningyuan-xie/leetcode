@@ -1,11 +1,8 @@
 """1013. Partition Array Into Three Parts With Equal Sum
 Link: https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum
 Difficulty: Easy
-Description: Given an array of integers arr, return true if we can partition the array into three
-non-empty parts with equal sums, otherwise return false.
-Formally, we can partition the array if we can find indexes i + 1 < j with (arr[0] + arr[1] + ...
-+ arr[i] == arr[i + 1] + arr[i + 2] + ... + arr[j - 1] == arr[j] + arr[j + 1] + ...
-+ arr[arr.length - 1])."""
+Description: Given an array of integers arr, return true if we can partition the array into three non-empty parts with equal sums.
+Formally, we can partition the array if we can find indexes i + 1 < j with (arr[0] + arr[1] + ... + arr[i] == arr[i + 1] + arr[i + 2] + ... + arr[j - 1] == arr[j] + arr[j + 1] + ... + arr[arr.length - 1])"""
 
 from typing import List
 
@@ -31,12 +28,12 @@ class Solution:
         target_sum = total_sum // 3
 
         # Move the left pointer to the right
-        while left + 1 < len(arr) and left_sum != target_sum:
+        while left <= len(arr) - 3 and left_sum != target_sum:
             left += 1
             left_sum += arr[left]
 
         # Move the right pointer to the left
-        while right - 1 >= 0 and right_sum != target_sum:
+        while right >= 2 and right_sum != target_sum:
             right -= 1
             right_sum += arr[right]
 
@@ -44,13 +41,17 @@ class Solution:
         return left + 1 < right and left_sum == right_sum == target_sum
 
 
-# Unit Test: arr = [0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1], Output: True
-assert Solution.canThreePartsEqualSum([0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1]) is True
+def unit_tests():
+    # Unit Test: arr = [0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1], Output: True
+    assert Solution.canThreePartsEqualSum([0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1]) is True
 
-# Unit Test: arr = [0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1], Output: False
-assert Solution.canThreePartsEqualSum([0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1]) is False
+    # Unit Test: arr = [0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1], Output: False
+    assert Solution.canThreePartsEqualSum([0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1]) is False
 
-# Unit Test: arr = [3, 3, 6, 5, -2, 2, 5, 1, -9, 4], Output: True
-assert Solution.canThreePartsEqualSum([3, 3, 6, 5, -2, 2, 5, 1, -9, 4]) is True
+    # Unit Test: arr = [3, 3, 6, 5, -2, 2, 5, 1, -9, 4], Output: True
+    assert Solution.canThreePartsEqualSum([3, 3, 6, 5, -2, 2, 5, 1, -9, 4]) is True
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
