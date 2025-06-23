@@ -48,6 +48,10 @@ def unit_tests():
     root = TreeNode.build_binary_tree([1])
     assert Solution.sumRootToLeaf(root) == 1
 
+    # Unit Test: root = [1, 1, 1], Output: 6
+    root = TreeNode.build_binary_tree([1, 1, 1])
+    assert Solution.sumRootToLeaf(root) == 6
+
 
 if __name__ == "__main__":
     unit_tests()
