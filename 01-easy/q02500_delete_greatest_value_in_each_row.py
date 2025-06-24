@@ -34,10 +34,10 @@ class Solution:
         return ans
 
 
-# Unit Test: grid = [[1, 2, 4], [3, 3, 1]], Output: 8
+# Input: grid = [[1, 2, 4], [3, 3, 1]], Output: 8
 assert Solution.deleteGreatestValue([[1, 2, 4], [3, 3, 1]]) == 8
 
-# Unit Test: grid = [[10]], Output: 10
+# Input: grid = [[10]], Output: 10
 assert Solution.deleteGreatestValue([[10]]) == 10
 
 print("All unit tests are passed.")

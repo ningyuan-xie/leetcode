@@ -27,10 +27,10 @@ class Solution:
         return True
 
 
-# Unit Test: nums = [3,2,3,2,2,2], Output: True
+# Input: nums = [3,2,3,2,2,2], Output: True
 assert Solution.divideArray([3, 2, 3, 2, 2, 2]) is True
 
-# Unit Test: nums = [1,2,3,4], Output: False
+# Input: nums = [1,2,3,4], Output: False
 assert Solution.divideArray([1, 2, 3, 4]) is False
 
 print("All unit tests are passed.")

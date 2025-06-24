@@ -30,10 +30,10 @@ class Solution:
         return True
 
 
-# Unit Test: grid = [[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]], Output: True
+# Input: grid = [[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]], Output: True
 assert Solution.checkXMatrix([[2, 0, 0, 1], [0, 3, 1, 0], [0, 5, 2, 0], [4, 0, 0, 2]]) is True
 
-# Unit Test: grid = [[5,7,0],[0,3,1],[0,5,0]], Output: False
+# Input: grid = [[5,7,0],[0,3,1],[0,5,0]], Output: False
 assert Solution.checkXMatrix([[5, 7, 0], [0, 3, 1], [0, 5, 0]]) is False
 
 print("All unit tests are passed.")

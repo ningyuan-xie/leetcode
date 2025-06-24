@@ -17,13 +17,13 @@ class Solution:
         return len(set(s))
 
 
-# Unit Test: s = "aaabc", Output: 3
+# Input: s = "aaabc", Output: 3
 assert Solution.minimizedStringLength("aaabc") == 3
 
-# Unit Test: s = "cbbd", Output: 3
+# Input: s = "cbbd", Output: 3
 assert Solution.minimizedStringLength("cbbd") == 3
 
-# Unit Test: s = "baadccab", Output: 4
+# Input: s = "baadccab", Output: 4
 assert Solution.minimizedStringLength("baadccab") == 4
 
 print("All unit tests are passed.")

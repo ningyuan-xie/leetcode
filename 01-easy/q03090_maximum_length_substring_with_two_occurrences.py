@@ -29,10 +29,10 @@ class Solution:
         return max_length
 
 
-# Unit Test: s = "bcbbbcba", Output = 4
+# Input: s = "bcbbbcba", Output = 4
 assert Solution.maximumLengthSubstring("bcbbbcba") == 4
 
-# Unit Test: s = "aaaa", Output = 2
+# Input: s = "aaaa", Output = 2
 assert Solution.maximumLengthSubstring("aaaa") == 2
 
 print("All unit tests are passed.")

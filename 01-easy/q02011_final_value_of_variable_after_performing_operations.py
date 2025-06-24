@@ -18,13 +18,13 @@ class Solution:
         return sum(1 if "++" in operation else -1 for operation in operations)
 
 
-# Unit Test: operations = ["--X", "X++", "X++"], Output: 1
+# Input: operations = ["--X", "X++", "X++"], Output: 1
 assert Solution.finalValueAfterOperations(["--X", "X++", "X++++"]) == 1
 
-# Unit Test: operations = ["++X", "++X", "X++"], Output: 3
+# Input: operations = ["++X", "++X", "X++"], Output: 3
 assert Solution.finalValueAfterOperations(["++X", "++X", "X++"]) == 3
 
-# Unit Test: operations = ["X++", "++X", "--X", "X--"], Output: 0
+# Input: operations = ["X++", "++X", "--X", "X--"], Output: 0
 assert Solution.finalValueAfterOperations(["X++", "++X", "--X", "X--"]) == 0
 
 print("All unit tests are passed.")

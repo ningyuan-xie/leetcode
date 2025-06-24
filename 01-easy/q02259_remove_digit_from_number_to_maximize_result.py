@@ -27,16 +27,16 @@ class Solution:
         return max_result
 
 
-# Unit Test: number = "123", digit = "3", Output: "12"
+# Input: number = "123", digit = "3", Output: "12"
 assert Solution.removeDigit("123", "3") == "12"
 
-# Unit Test: number = "1231", digit = "1", Output: "231"
+# Input: number = "1231", digit = "1", Output: "231"
 assert Solution.removeDigit("1231", "1") == "231"
 
-# Unit Test: number = "551", digit = "5", Output: "51"
+# Input: number = "551", digit = "5", Output: "51"
 assert Solution.removeDigit("551", "5") == "51"
 
-# Unit Test: number = "939", digit = "9", Output: "93"
+# Input: number = "939", digit = "9", Output: "93"
 assert Solution.removeDigit("939", "9") == "93"
 
 print("All unit tests are passed.")

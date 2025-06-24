@@ -38,13 +38,13 @@ class Solution:
         return has_lower and has_upper and has_digit and has_special
 
 
-# Unit Test: password = "IloveLe3tcode!", Output: True
+# Input: password = "IloveLe3tcode!", Output: True
 assert Solution.strongPasswordCheckerII("IloveLe3tcode!") is True
 
-# Unit Test: password = "Me+You--IsMyDream", Output: False
+# Input: password = "Me+You--IsMyDream", Output: False
 assert Solution.strongPasswordCheckerII("Me+You--IsMyDream") is False
 
-# Unit Test: password = "1aB!", Output: False
+# Input: password = "1aB!", Output: False
 assert Solution.strongPasswordCheckerII("1aB!") is False
 
 print("All unit tests are passed.")

@@ -30,10 +30,10 @@ class Solution:
         return sorted_sentence
 
 
-# Unit Test: s = "is2 sentence4 This1 a3", Output: "This is a sentence"
+# Input: s = "is2 sentence4 This1 a3", Output: "This is a sentence"
 assert Solution.sortSentence("is2 sentence4 This1 a3") == "This is a sentence"
 
-# Unit Test: s = "Myself 2 Me1 I4 and3", Output: "Me Myself and I"
+# Input: s = "Myself 2 Me1 I4 and3", Output: "Me Myself and I"
 assert Solution.sortSentence("Myself2 Me1 I4 and3") == "Me Myself and I"
 
 print("All unit tests are passed.")

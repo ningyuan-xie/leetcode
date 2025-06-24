@@ -21,13 +21,13 @@ class Solution:
         return ans
 
 
-# Unit Test: nums = [0, 2, 1, 5, 3, 4], Output: [0, 1, 2, 4, 5, 3]
+# Input: nums = [0, 2, 1, 5, 3, 4], Output: [0, 1, 2, 4, 5, 3]
 assert Solution.buildArray([0, 2, 1, 5, 3, 4]) == [0, 1, 2, 4, 5, 3]
 
-# Unit Test: nums = [5, 0, 1, 2, 3, 4], Output: [4, 5, 0, 1, 2, 3]
+# Input: nums = [5, 0, 1, 2, 3, 4], Output: [4, 5, 0, 1, 2, 3]
 assert Solution.buildArray([5, 0, 1, 2, 3, 4]) == [4, 5, 0, 1, 2, 3]
 
-# Unit Test: nums = [0, 1, 2, 3, 4], Output: [0, 1, 2, 3, 4]
+# Input: nums = [0, 1, 2, 3, 4], Output: [0, 1, 2, 3, 4]
 assert Solution.buildArray([0, 1, 2, 3, 4]) == [0, 1, 2, 3, 4]
 
 print("All unit tests are passed.")

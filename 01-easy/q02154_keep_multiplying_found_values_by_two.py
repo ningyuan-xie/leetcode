@@ -21,10 +21,10 @@ class Solution:
         return original
 
 
-# Unit Test: nums = [5,3,6,1,12], original = 3, Output: 24
+# Input: nums = [5,3,6,1,12], original = 3, Output: 24
 assert Solution.findFinalValue([5, 3, 6, 1, 12], 3) == 24
 
-# Unit Test: nums = [2,7,9], original = 4, Output: 4
+# Input: nums = [2,7,9], original = 4, Output: 4
 assert Solution.findFinalValue([2, 7, 9], 4) == 4
 
 print("All unit tests are passed.")

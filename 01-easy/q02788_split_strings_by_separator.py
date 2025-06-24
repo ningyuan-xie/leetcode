@@ -27,15 +27,15 @@ class Solution:
         return result
 
 
-# Unit Test: words = ["one.two.three","four.five","six"], separator = "."
+# Input: words = ["one.two.three","four.five","six"], separator = "."
 # Output: ["one", "two", "three", "four", "five", "six"]
 assert (Solution.splitWordsBySeparator(["one.two.three", "four.five", "six"], ".") ==
         ["one", "two", "three", "four", "five", "six"])
 
-# Unit Test: words = ["$easy$","$problem$"], separator = "$", Output: ["easy", "problem"]
+# Input: words = ["$easy$","$problem$"], separator = "$", Output: ["easy", "problem"]
 assert Solution.splitWordsBySeparator(["$easy$", "$problem$"], "$") == ["easy", "problem"]
 
-# Unit Test: words = ["|||"], separator = "|", Output: []
+# Input: words = ["|||"], separator = "|", Output: []
 assert Solution.splitWordsBySeparator(["|||"], "|") == []
 
 print("All unit tests are passed.")

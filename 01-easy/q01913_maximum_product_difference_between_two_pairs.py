@@ -42,13 +42,13 @@ class Solution:
         return (max1 * max2) - (min1 * min2)
 
 
-# Unit Test: nums = [5, 6, 2, 7, 4], Output: 34
+# Input: nums = [5, 6, 2, 7, 4], Output: 34
 assert Solution.maxProductDifference([5, 6, 2, 7, 4]) == 34
 
-# Unit Test: nums = [4, 2, 5, 9, 7, 4, 8], Output: 64
+# Input: nums = [4, 2, 5, 9, 7, 4, 8], Output: 64
 assert Solution.maxProductDifference([4, 2, 5, 9, 7, 4, 8]) == 64
 
-# Unit Test: nums = [3, 4, 5, 2], Output: 14
+# Input: nums = [3, 4, 5, 2], Output: 14
 assert Solution.maxProductDifferenceLinear([3, 4, 5, 2]) == 14
 
 print("All unit tests are passed.")

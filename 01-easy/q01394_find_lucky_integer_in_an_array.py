@@ -20,19 +20,19 @@ class Solution:
         return max(lucky_numbers) if lucky_numbers else -1
 
 
-# Unit Test: arr = [2, 2, 3, 4], Output: 2
+# Input: arr = [2, 2, 3, 4], Output: 2
 assert Solution.findLucky([2, 2, 3, 4]) == 2
 
-# Unit Test: arr = [1, 2, 2, 3, 3, 3], Output: 3
+# Input: arr = [1, 2, 2, 3, 3, 3], Output: 3
 assert Solution.findLucky([1, 2, 2, 3, 3, 3]) == 3
 
-# Unit Test: arr = [2, 2, 2, 3, 3], Output: -1
+# Input: arr = [2, 2, 2, 3, 3], Output: -1
 assert Solution.findLucky([2, 2, 2, 3, 3]) == -1
 
-# Unit Test: arr = [5], Output: -1
+# Input: arr = [5], Output: -1
 assert Solution.findLucky([5]) == -1
 
-# Unit Test: arr = [7, 7, 7, 7, 7, 7, 7], Output: 7
+# Input: arr = [7, 7, 7, 7, 7, 7, 7], Output: 7
 assert Solution.findLucky([7, 7, 7, 7, 7, 7, 7]) == 7
 
 print("All unit tests are passed.")

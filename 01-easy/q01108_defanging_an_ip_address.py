@@ -12,10 +12,10 @@ class Solution:
         return address.replace(".", "[.]")
 
 
-# Unit Test: address = "1.1.1.1", Output: "1[.]1[.]1[.]1"
+# Input: address = "1.1.1.1", Output: "1[.]1[.]1[.]1"
 assert Solution.defangIPaddr("1.1.1.1") == "1[.]1[.]1[.]1"
 
-# Unit Test: address = "255.100.50.0", Output: "255[.]100[.]50[.]0"
+# Input: address = "255.100.50.0", Output: "255[.]100[.]50[.]0"
 assert Solution.defangIPaddr("255.100.50.0") == "255[.]100[.]50[.]0"
 
 print("All unit tests are passed.")

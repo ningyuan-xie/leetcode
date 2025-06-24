@@ -33,13 +33,13 @@ class Solution:
         return min_avg
 
 
-# Unit Test: nums = [7,8,3,4,15,13,4,1], Output = 5.5
+# Input: nums = [7,8,3,4,15,13,4,1], Output = 5.5
 assert Solution.minimumAverage([7, 8, 3, 4, 15, 13, 4, 1]) == 5.5
 
-# Unit Test: nums = [1,9,8,3,10,5], Output = 5.5
+# Input: nums = [1,9,8,3,10,5], Output = 5.5
 assert Solution.minimumAverage([1, 9, 8, 3, 10, 5]) == 5.5
 
-# Unit Test: nums = [1,2,3,7,8,9], Output = 5.0
+# Input: nums = [1,2,3,7,8,9], Output = 5.0
 assert Solution.minimumAverage([1, 2, 3, 7, 8, 9]) == 5.0
 
 print("All unit tests are passed.")

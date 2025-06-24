@@ -24,16 +24,16 @@ class Solution:
         return max_depth
 
 
-# Unit Test: s = "(1+(2*3)+((8)/4))+1", Output: 3
+# Input: s = "(1+(2*3)+((8)/4))+1", Output: 3
 assert Solution.maxDepth("(1+(2*3)+((8)/4))+1") == 3
 
-# Unit Test: s = "(1)+((2))+(((3)))", Output: 3
+# Input: s = "(1)+((2))+(((3)))", Output: 3
 assert Solution.maxDepth("(1)+((2))+(((3)))") == 3
 
-# Unit Test: s = "1+(2*3)/(2-1)", Output: 1
+# Input: s = "1+(2*3)/(2-1)", Output: 1
 assert Solution.maxDepth("1+(2*3)/(2-1)") == 1
 
-# Unit Test: s = "1", Output: 0
+# Input: s = "1", Output: 0
 assert Solution.maxDepth("1") == 0
 
 print("All unit tests are passed.")

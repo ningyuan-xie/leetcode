@@ -18,13 +18,13 @@ class Solution:
         return -1
 
 
-# Unit Test: nums = [0,1,2], Output: 0
+# Input: nums = [0,1,2], Output: 0
 assert Solution.smallestIndex([0, 1, 2]) == 0
 
-# Unit Test: nums = [4,3,2,1], Output: 2
+# Input: nums = [4,3,2,1], Output: 2
 assert Solution.smallestIndex([4, 3, 2, 1]) == 2
 
-# Unit Test: nums = [1,2,3,4,5,6,7,8,9,0], Output: -1
+# Input: nums = [1,2,3,4,5,6,7,8,9,0], Output: -1
 assert Solution.smallestIndex([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) == -1
 
 print("All unit tests are passed.")

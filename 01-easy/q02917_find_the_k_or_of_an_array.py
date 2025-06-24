@@ -29,13 +29,13 @@ class Solution:
         return or_result
 
 
-# Unit Test: nums = [7,12,9,8,9,15], k = 4, Output: 9
+# Input: nums = [7,12,9,8,9,15], k = 4, Output: 9
 assert Solution.findKOr([7, 12, 9, 8, 9, 15], 4) == 9
 
-# Unit Test: nums = [2,12,1,11,4,5], k = 6, Output: 0
+# Input: nums = [2,12,1,11,4,5], k = 6, Output: 0
 assert Solution.findKOr([2, 12, 1, 11, 4, 5], 6) == 0
 
-# Unit Test: nums = [10,8,5,9,11,6,8], k = 1, Output: 15
+# Input: nums = [10,8,5,9,11,6,8], k = 1, Output: 15
 assert Solution.findKOr([10, 8, 5, 9, 11, 6, 8], 1) == 15
 
 print("All unit tests are passed.")

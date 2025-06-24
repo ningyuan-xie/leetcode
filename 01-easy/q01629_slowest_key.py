@@ -38,10 +38,10 @@ class Solution:
         return slowest_key
 
 
-# Unit Test: releaseTimes = [9, 29, 49, 50], keys = "cbcd", Output: "c"
+# Input: releaseTimes = [9, 29, 49, 50], keys = "cbcd", Output: "c"
 assert Solution.slowestKey([9, 29, 49, 50], "cbcd") == "c"
 
-# Unit Test: releaseTimes = [12, 23, 36, 46, 62], keys = "spuda", Output: "a"
+# Input: releaseTimes = [12, 23, 36, 46, 62], keys = "spuda", Output: "a"
 assert Solution.slowestKey([12, 23, 36, 46, 62], "spuda") == "a"
 
 print("All unit tests are passed.")

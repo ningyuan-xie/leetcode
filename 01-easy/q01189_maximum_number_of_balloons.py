@@ -23,15 +23,15 @@ class Solution:
         return min(freq["b"], freq["a"], freq["l"] // 2, freq["o"] // 2, freq["n"])
 
 
-# Unit Test: text = "nlaebolko", Output: 1
+# Input: text = "nlaebolko", Output: 1
 # Explanation: "balloon" can be formed once using the characters in text.
 assert Solution.maxNumberOfBalloons("nlaebolko") == 1
 
-# Unit Test: text = "loonbalxballpoon", Output: 2
+# Input: text = "loonbalxballpoon", Output: 2
 # Explanation: "balloon" can be formed twice using the characters in text.
 assert Solution.maxNumberOfBalloons("loonbalxballpoon") == 2
 
-# Unit Test: text = "leetcode", Output: 0
+# Input: text = "leetcode", Output: 0
 # Explanation: "balloon" cannot be formed using the characters in text.
 assert Solution.maxNumberOfBalloons("leetcode") == 0
 

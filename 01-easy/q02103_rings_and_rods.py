@@ -33,13 +33,13 @@ class Solution:
         return count
 
 
-# Unit Test: rings = "B0B6G0R6R0R6G9", Output: 1
+# Input: rings = "B0B6G0R6R0R6G9", Output: 1
 assert Solution.countPoints("B0B6G0R6R0R6G9") == 1
 
-# Unit Test: rings = "B0R0G0R9R0B0G0", Output: 1
+# Input: rings = "B0R0G0R9R0B0G0", Output: 1
 assert Solution.countPoints("B0R0G0R9R0B0G0") == 1
 
-# Unit Test: rings = "G4", Output: 0
+# Input: rings = "G4", Output: 0
 assert Solution.countPoints("G4") == 0
 
 print("All unit tests are passed.")

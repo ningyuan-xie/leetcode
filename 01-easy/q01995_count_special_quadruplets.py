@@ -28,16 +28,16 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [1, 2, 3, 6], Output: 1
+# Input: nums = [1, 2, 3, 6], Output: 1
 assert Solution.countQuadruplets([1, 2, 3, 6]) == 1
 
-# Unit Test: nums = [3, 3, 6, 4, 5], Output: 0
+# Input: nums = [3, 3, 6, 4, 5], Output: 0
 assert Solution.countQuadruplets([3, 3, 6, 4, 5]) == 0
 
-# Unit Test: nums = [1, 1, 1, 3, 5], Output: 4
+# Input: nums = [1, 1, 1, 3, 5], Output: 4
 assert Solution.countQuadruplets([1, 1, 1, 3, 5]) == 4
 
-# Unit Test: nums = [56,50,33,1,86,80,85,42,90], Output: 1
+# Input: nums = [56,50,33,1,86,80,85,42,90], Output: 1
 assert Solution.countQuadruplets([56, 50, 33, 1, 86, 80, 85, 42, 90]) == 1
 
 print("All unit tests are passed.")

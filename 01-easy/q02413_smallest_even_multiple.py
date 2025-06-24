@@ -12,10 +12,10 @@ class Solution:
         return n if n % 2 == 0 else n * 2
 
 
-# Unit Test: n = 5, Output: 10
+# Input: n = 5, Output: 10
 assert Solution.smallestEvenMultiple(5) == 10
 
-# Unit Test: n = 6, Output: 6
+# Input: n = 6, Output: 6
 assert Solution.smallestEvenMultiple(6) == 6
 
 print("All unit tests are passed.")

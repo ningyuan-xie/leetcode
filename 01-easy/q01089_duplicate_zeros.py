@@ -38,17 +38,17 @@ class Solution:
             modified_end -= 1
 
 
-# Unit Test: arr = [1, 0, 2, 3, 0, 4, 5, 0], Output: [1, 0, 0, 2, 3, 0, 0, 4]
+# Input: arr = [1, 0, 2, 3, 0, 4, 5, 0], Output: [1, 0, 0, 2, 3, 0, 0, 4]
 arr_test = [1, 0, 2, 3, 0, 4, 5, 0]
 Solution.duplicateZeros(arr_test)
 assert arr_test == [1, 0, 0, 2, 3, 0, 0, 4]
 
-# Unit Test: arr = [1, 2, 3], Output: [1, 2, 3]
+# Input: arr = [1, 2, 3], Output: [1, 2, 3]
 arr_test = [1, 2, 3]
 Solution.duplicateZeros(arr_test)
 assert arr_test == [1, 2, 3]
 
-# Unit Test: arr = [0, 0, 0, 0, 0, 0, 0], Output: [0, 0, 0, 0, 0, 0, 0]
+# Input: arr = [0, 0, 0, 0, 0, 0, 0], Output: [0, 0, 0, 0, 0, 0, 0]
 arr_test = [0, 0, 0, 0, 0, 0, 0]
 Solution.duplicateZeros(arr_test)
 assert arr_test == [0, 0, 0, 0, 0, 0, 0]

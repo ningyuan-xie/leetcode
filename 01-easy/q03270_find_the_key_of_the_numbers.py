@@ -29,13 +29,13 @@ class Solution:
         return int(result)
 
 
-# Unit Test: num1 = 1, num2 = 10, num3 = 1000, Output: 0
+# Input: num1 = 1, num2 = 10, num3 = 1000, Output: 0
 assert Solution.generateKey(1, 10, 1000) == 0
 
-# Unit Test: num1 = 987, num2 = 879, num3 = 798, Output: 777
+# Input: num1 = 987, num2 = 879, num3 = 798, Output: 777
 assert Solution.generateKey(987, 879, 798) == 777
 
-# Unit Test: num1 = 1, num2 = 2, num3 = 3, Output: 1
+# Input: num1 = 1, num2 = 2, num3 = 3, Output: 1
 assert Solution.generateKey(1, 2, 3) == 1
 
 print("All unit tests are passed.")

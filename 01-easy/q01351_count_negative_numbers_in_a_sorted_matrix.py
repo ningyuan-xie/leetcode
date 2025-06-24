@@ -32,17 +32,17 @@ class Solution:
         return count
 
 
-# Unit Test: grid = [[4, 3, 2, -1], [3, 2, 1, -1], [1, 1, -1, -2], [-1, -1, -2, -3]], Output: 8
+# Input: grid = [[4, 3, 2, -1], [3, 2, 1, -1], [1, 1, -1, -2], [-1, -1, -2, -3]], Output: 8
 assert (Solution.countNegatives([[4, 3, 2, -1], [3, 2, 1, -1], [1, 1, -1, -2], [-1, -1, -2, -3]])
         == 8)
 
-# Unit Test: grid = [[3, 2], [1, 0]], Output: 0
+# Input: grid = [[3, 2], [1, 0]], Output: 0
 assert Solution.countNegatives([[3, 2], [1, 0]]) == 0
 
-# Unit Test: grid = [[1, -1], [-1, -1]], Output: 3
+# Input: grid = [[1, -1], [-1, -1]], Output: 3
 assert Solution.countNegatives([[1, -1], [-1, -1]]) == 3
 
-# Unit Test: grid = [[-1]], Output: 1
+# Input: grid = [[-1]], Output: 1
 assert Solution.countNegatives([[-1]]) == 1
 
 print("All unit tests are passed.")

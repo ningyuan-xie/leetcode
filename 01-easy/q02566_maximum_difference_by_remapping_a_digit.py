@@ -36,10 +36,10 @@ class Solution:
         return max_num - min_num
 
 
-# Unit Test: num = 11891, Output: 99009
+# Input: num = 11891, Output: 99009
 assert Solution.minMaxDifference(11891) == 99009
 
-# Unit Test: num = 90, Output: 99
+# Input: num = 90, Output: 99
 assert Solution.minMaxDifference(90) == 99
 
 print("All unit tests are passed.")

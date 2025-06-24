@@ -33,13 +33,13 @@ class Solution:
         return result
 
 
-# Unit Test: arr = [4, 2, 1, 3], Output: [[1, 2], [2, 3], [3, 4]]
+# Input: arr = [4, 2, 1, 3], Output: [[1, 2], [2, 3], [3, 4]]
 assert Solution.minimumAbsDifference([4, 2, 1, 3]) == [[1, 2], [2, 3], [3, 4]]
 
-# Unit Test: arr = [1, 3, 6, 10, 15], Output: [[1, 3]]
+# Input: arr = [1, 3, 6, 10, 15], Output: [[1, 3]]
 assert Solution.minimumAbsDifference([1, 3, 6, 10, 15]) == [[1, 3]]
 
-# Unit Test: arr = [3, 8, -10, 23, 19, -4, -14, 27], Output: [[-14, -10], [19, 23], [23, 27]]
+# Input: arr = [3, 8, -10, 23, 19, -4, -14, 27], Output: [[-14, -10], [19, 23], [23, 27]]
 assert (Solution.minimumAbsDifference([3, 8, -10, 23, 19, -4, -14, 27])
         == [[-14, -10], [19, 23], [23, 27]])
 

@@ -36,13 +36,13 @@ class Solution:
         return -1
 
 
-# Unit Test: nums = [3, 5], Output: 2
+# Input: nums = [3, 5], Output: 2
 assert Solution.specialArray([3, 5]) == 2
 
-# Unit Test: nums = [0, 0], Output: -1
+# Input: nums = [0, 0], Output: -1
 assert Solution.specialArray([0, 0]) == -1
 
-# Unit Test: nums = [0, 4, 3, 0, 4], Output: 3
+# Input: nums = [0, 4, 3, 0, 4], Output: 3
 # count = [0, 0, 0, 0, 0, 0] -> [2, 0, 0, 1, 2, 0], x in range(5, 0, -1) -> x = 3
 assert Solution.specialArray([0, 4, 3, 0, 4]) == 3
 

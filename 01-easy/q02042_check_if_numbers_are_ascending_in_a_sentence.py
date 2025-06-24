@@ -39,13 +39,13 @@ class Solution:
         return True
 
 
-# Unit Test: s = "1 box has 3 blue 4 red 6 green and 12 yellow marbles", Output: True
+# Input: s = "1 box has 3 blue 4 red 6 green and 12 yellow marbles", Output: True
 assert Solution.areNumbersAscending("1 box has 3 blue 4 red 6 green and 12 yellow marbles") is True
 
-# Unit Test: s = "hello world 5 x 5", Output: False
+# Input: s = "hello world 5 x 5", Output: False
 assert Solution.areNumbersAscending("hello world 5 x 5") is False
 
-# Unit Test: s = "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s", Output: False
+# Input: s = "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s", Output: False
 assert Solution.areNumbersAscending("sunset is at 7 51 pm overnight lows will be in the low 50 "
                                     "and 60 s") is False
 

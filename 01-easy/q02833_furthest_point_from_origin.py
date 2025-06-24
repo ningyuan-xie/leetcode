@@ -30,13 +30,13 @@ class Solution:
         return abs(count_L - count_R) + count__
 
 
-# Unit Test: moves = "L_RL__R", Output: 3
+# Input: moves = "L_RL__R", Output: 3
 assert Solution.furthestDistanceFromOrigin("L_RL__R") == 3
 
-# Unit Test: moves = "_R__LL_", Output: 5
+# Input: moves = "_R__LL_", Output: 5
 assert Solution.furthestDistanceFromOrigin("_R__LL_") == 5
 
-# Unit Test: moves = "_______", Output: 7
+# Input: moves = "_______", Output: 7
 assert Solution.furthestDistanceFromOrigin("_______") == 7
 
 print("All unit tests are passed.")

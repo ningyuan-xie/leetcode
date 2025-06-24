@@ -21,13 +21,13 @@ class Solution:
         return count
 
 
-# Unit Test: patterns = ["a", "abc", "bc", "d"], word = "abc", Output: 3
+# Input: patterns = ["a", "abc", "bc", "d"], word = "abc", Output: 3
 assert Solution.numOfStrings(["a", "abc", "bc", "d"], "abc") == 3
 
-# Unit Test: patterns = ["a", "b", "c"], word = "aaaa", Output: 1
+# Input: patterns = ["a", "b", "c"], word = "aaaa", Output: 1
 assert Solution.numOfStrings(["a", "b", "c"], "aaaa") == 1
 
-# Unit Test: patterns = ["a", "a", "a"], word = "ab", Output: 3
+# Input: patterns = ["a", "a", "a"], word = "ab", Output: 3
 assert Solution.numOfStrings(["a", "a", "a"], "ab") == 3
 
 print("All unit tests are passed.")

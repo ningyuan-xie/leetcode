@@ -30,18 +30,18 @@ class Solution:
         return ""
 
 
-# Unit Test: paths = [["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]],
+# Input: paths = [["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]],
 # Output: "Sao Paulo"
 assert (Solution.destCity([["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]])
         == "Sao Paulo")
 
-# Unit Test: paths = [["B", "C"], ["D", "B"], ["C", "A"]], Output: "A"
+# Input: paths = [["B", "C"], ["D", "B"], ["C", "A"]], Output: "A"
 assert Solution.destCity([["B", "C"], ["D", "B"], ["C", "A"]]) == "A"
 
-# Unit Test: paths = [["A", "Z"]], Output: "Z"
+# Input: paths = [["A", "Z"]], Output: "Z"
 assert Solution.destCity([["A", "Z"]]) == "Z"
 
-# Unit Test: paths = [["A", "B"], ["B", "C"], ["C", "D"], ["D", "E"], ["E", "F"]], Output: "F"
+# Input: paths = [["A", "B"], ["B", "C"], ["C", "D"], ["D", "E"], ["E", "F"]], Output: "F"
 assert Solution.destCity([["A", "B"], ["B", "C"], ["C", "D"], ["D", "E"], ["E", "F"]]) == "F"
 
 print("All unit tests are passed.")

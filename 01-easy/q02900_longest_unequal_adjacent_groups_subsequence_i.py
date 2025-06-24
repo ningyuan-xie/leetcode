@@ -31,11 +31,11 @@ class Solution:
         return [words[i] for i in subsequence_index]
 
 
-# Unit Test: words = ["e","a","b"], groups = [0,0,1], Output: ["e","b"] or ["a","b"]
+# Input: words = ["e","a","b"], groups = [0,0,1], Output: ["e","b"] or ["a","b"]
 assert (Solution.getLongestSubsequence(["e", "a", "b"], [0, 0, 1])
         in [["e", "b"], ["a", "b"]])
 
-# Unit Test: words = ["a","b","c","d"], groups = [1,0,1,1], Output: ["a","b","c"] or ["a","b","d"]
+# Input: words = ["a","b","c","d"], groups = [1,0,1,1], Output: ["a","b","c"] or ["a","b","d"]
 assert (Solution.getLongestSubsequence(["a", "b", "c", "d"], [1, 0, 1, 1])
         in [["a", "b", "c"], ["a", "b", "d"]])
 

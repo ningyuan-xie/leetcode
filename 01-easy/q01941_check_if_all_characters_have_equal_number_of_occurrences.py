@@ -19,13 +19,13 @@ class Solution:
         return len(set(freq.values())) == 1
 
 
-# Unit Test: s = "abacbc", Output: True
+# Input: s = "abacbc", Output: True
 assert Solution.areOccurrencesEqual("abacbc") is True
 
-# Unit Test: s = "aaabb", Output: False
+# Input: s = "aaabb", Output: False
 assert Solution.areOccurrencesEqual("aaabb") is False
 
-# Unit Test: s = "a", Output: True
+# Input: s = "a", Output: True
 assert Solution.areOccurrencesEqual("a") is True
 
 print("All unit tests are passed.")

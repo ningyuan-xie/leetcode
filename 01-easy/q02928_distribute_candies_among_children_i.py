@@ -22,10 +22,10 @@ class Solution:
         return count
 
 
-# Unit Test: n = 5, limit = 2, Output: 3
+# Input: n = 5, limit = 2, Output: 3
 assert Solution.distributeCandies(5, 2) == 3
 
-# Unit Test: n = 3, limit = 3, Output: 10
+# Input: n = 3, limit = 3, Output: 10
 assert Solution.distributeCandies(3, 3) == 10
 
 print("All unit tests are passed.")

@@ -18,11 +18,11 @@ class Solution:
         return names
 
 
-# Unit Test: names = ["Mary","John","Emma"], heights = [180,165,170], Output: ["Mary","Emma","John"]
+# Input: names = ["Mary","John","Emma"], heights = [180,165,170], Output: ["Mary","Emma","John"]
 assert (Solution.sortPeople(["Mary", "John", "Emma"], [180, 165, 170])
         == ["Mary", "Emma", "John"])
 
-# Unit Test: names = ["Alice","Bob","Bob"], heights = [155,185,150], Output: ["Bob","Alice","Bob"]
+# Input: names = ["Alice","Bob","Bob"], heights = [155,185,150], Output: ["Bob","Alice","Bob"]
 assert (Solution.sortPeople(["Alice", "Bob", "Bob"], [155, 185, 150])
         == ["Bob", "Alice", "Bob"])
 

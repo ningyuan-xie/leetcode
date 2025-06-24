@@ -31,13 +31,13 @@ class Solution:
         return count
 
 
-# Unit Test: time = "?5:00", Output: 2
+# Input: time = "?5:00", Output: 2
 assert Solution.countTime("?5:00") == 2
 
-# Unit Test: time = "0?:0?", Output: 100
+# Input: time = "0?:0?", Output: 100
 assert Solution.countTime("0?:0?") == 100
 
-# Unit Test: time = "??:??", Output: 1440
+# Input: time = "??:??", Output: 1440
 assert Solution.countTime("??:??") == 1440
 
 print("All unit tests are passed.")

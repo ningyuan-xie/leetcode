@@ -32,11 +32,11 @@ class Solution:
         return arr[-1] + (k - count_of_missing)
 
 
-# Unit Test: arr = [2, 3, 4, 7, 11], k = 5, Output: 9
+# Input: arr = [2, 3, 4, 7, 11], k = 5, Output: 9
 # Explanation: The missing numbers are [1, 5, 6, 8, 9, 10, ...], hence the 5th missing number is 9
 assert Solution.findKthPositive([2, 3, 4, 7, 11], 5) == 9
 
-# Unit Test: arr = [1, 2, 3, 4], k = 2, Output: 6
+# Input: arr = [1, 2, 3, 4], k = 2, Output: 6
 # Explanation: The missing numbers are [5, 6, 7, ...], hence the 2nd missing number is 6
 assert Solution.findKthPositive([1, 2, 3, 4], 2) == 6
 

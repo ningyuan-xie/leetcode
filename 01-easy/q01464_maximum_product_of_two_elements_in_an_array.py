@@ -18,16 +18,16 @@ class Solution:
         return (nums[-1] - 1) * (nums[-2] - 1)
 
 
-# Unit Test: nums = [3, 4, 5, 2], Output: 12
+# Input: nums = [3, 4, 5, 2], Output: 12
 assert Solution.maxProduct([3, 4, 5, 2]) == 12
 
-# Unit Test: nums = [1, 5, 4, 5], Output: 16
+# Input: nums = [1, 5, 4, 5], Output: 16
 assert Solution.maxProduct([1, 5, 4, 5]) == 16
 
-# Unit Test: nums = [3, 7], Output: 12
+# Input: nums = [3, 7], Output: 12
 assert Solution.maxProduct([3, 7]) == 12
 
-# Unit Test: nums = [10, 2, 5, 2], Output: 36
+# Input: nums = [10, 2, 5, 2], Output: 36
 assert Solution.maxProduct([10, 2, 5, 2]) == 36
 
 print("All unit tests are passed.")

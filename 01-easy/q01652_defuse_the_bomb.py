@@ -47,13 +47,13 @@ class Solution:
         return result
 
 
-# Unit Test: code = [5, 7, 1, 4], k = 3, Output: [12, 10, 16, 13]
+# Input: code = [5, 7, 1, 4], k = 3, Output: [12, 10, 16, 13]
 assert Solution.decrypt([5, 7, 1, 4], 3) == [12, 10, 16, 13]
 
-# Unit Test: code = [1, 2, 3, 4], k = 0, Output: [0, 0, 0, 0]
+# Input: code = [1, 2, 3, 4], k = 0, Output: [0, 0, 0, 0]
 assert Solution.decrypt([1, 2, 3, 4], 0) == [0, 0, 0, 0]
 
-# Unit Test: code = [2, 4, 9, 3], k = -2, Output: [12, 5, 6, 13]
+# Input: code = [2, 4, 9, 3], k = -2, Output: [12, 5, 6, 13]
 assert Solution.decrypt([2, 4, 9, 3], -2) == [12, 5, 6, 13]
 
 print("All unit tests are passed.")

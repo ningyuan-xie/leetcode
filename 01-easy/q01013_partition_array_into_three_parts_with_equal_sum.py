@@ -42,13 +42,13 @@ class Solution:
 
 
 def unit_tests():
-    # Unit Test: arr = [0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1], Output: True
+    # Input: arr = [0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1], Output: True
     assert Solution.canThreePartsEqualSum([0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1]) is True
 
-    # Unit Test: arr = [0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1], Output: False
+    # Input: arr = [0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1], Output: False
     assert Solution.canThreePartsEqualSum([0, 2, 1, -6, 6, 7, 9, -1, 2, 0, 1]) is False
 
-    # Unit Test: arr = [3, 3, 6, 5, -2, 2, 5, 1, -9, 4], Output: True
+    # Input: arr = [3, 3, 6, 5, -2, 2, 5, 1, -9, 4], Output: True
     assert Solution.canThreePartsEqualSum([3, 3, 6, 5, -2, 2, 5, 1, -9, 4]) is True
 
 

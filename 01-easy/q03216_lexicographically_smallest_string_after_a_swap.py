@@ -37,13 +37,13 @@ class Solution:
         return s
 
 
-# Unit Test: s = "45320", Output: "43520"
+# Input: s = "45320", Output: "43520"
 assert Solution.getSmallestString("45320") == "43520"
 
-# Unit Test: s = "001", Output: "001"
+# Input: s = "001", Output: "001"
 assert Solution.getSmallestString("001") == "001"
 
-# Unit Test: s = "20", Output: "02"
+# Input: s = "20", Output: "02"
 assert Solution.getSmallestString("20") == "02"
 
 print("All unit tests are passed.")

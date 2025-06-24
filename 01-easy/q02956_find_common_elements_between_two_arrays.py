@@ -20,13 +20,13 @@ class Solution:
         return [answer1, answer2]
 
 
-# Unit Test: nums1 = [2,3,2], nums2 = [1,2], Output: [2,1]
+# Input: nums1 = [2,3,2], nums2 = [1,2], Output: [2,1]
 assert Solution.findIntersectionValues([2, 3, 2], [1, 2]) == [2, 1]
 
-# Unit Test: nums1 = [4,3,2,3,1], nums2 = [2,2,5,2,3,6], Output: [3,4]
+# Input: nums1 = [4,3,2,3,1], nums2 = [2,2,5,2,3,6], Output: [3,4]
 assert Solution.findIntersectionValues([4, 3, 2, 3, 1], [2, 2, 5, 2, 3, 6]) == [3, 4]
 
-# Unit Test: nums1 = [3,4,2,3], nums2 = [1,5], Output: [0,0]
+# Input: nums1 = [3,4,2,3], nums2 = [1,5], Output: [0,0]
 assert Solution.findIntersectionValues([3, 4, 2, 3], [1, 5]) == [0, 0]
 
 print("All unit tests are passed.")

@@ -34,13 +34,13 @@ class Solution:
         return count
 
 
-# Unit Test: words = ["a","aba","ababa","aa"], Output = 4
+# Input: words = ["a","aba","ababa","aa"], Output = 4
 assert Solution.countPrefixSuffixPairs(["a", "aba", "ababa", "aa"]) == 4
 
-# Unit Test: words = ["pa","papa","ma","mama"], Output = 2
+# Input: words = ["pa","papa","ma","mama"], Output = 2
 assert Solution.countPrefixSuffixPairs(["pa", "papa", "ma", "mama"]) == 2
 
-# Unit Test: words = ["abab","ab"], Output = 0
+# Input: words = ["abab","ab"], Output = 0
 assert Solution.countPrefixSuffixPairs(["abab", "ab"]) == 0
 
 print("All unit tests are passed.")

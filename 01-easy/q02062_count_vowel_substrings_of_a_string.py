@@ -41,13 +41,13 @@ class Solution:
         return count
 
 
-# Unit Test: word = "aeiouu", Output: 2
+# Input: word = "aeiouu", Output: 2
 assert Solution.countVowelSubstrings("aeiouu") == 2
 
-# Unit Test: word = "unicornarihan", Output: 0
+# Input: word = "unicornarihan", Output: 0
 assert Solution.countVowelSubstrings("unicornarihan") == 0
 
-# Unit Test: word = "cuaieuouac", Output: 7
+# Input: word = "cuaieuouac", Output: 7
 assert Solution.countVowelSubstrings("cuaieuouac") == 7
 
 print("All unit tests are passed.")

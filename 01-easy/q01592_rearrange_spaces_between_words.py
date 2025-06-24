@@ -26,13 +26,13 @@ class Solution:
         return (' ' * space_between_words).join(words) + ' ' * space_at_end
 
 
-# Unit Test: text = "  this   is  a sentence ", Output: "this   is   a   sentence"
+# Input: text = "  this   is  a sentence ", Output: "this   is   a   sentence"
 assert Solution.reorderSpaces("  this   is  a sentence ") == "this   is   a   sentence"
 
-# Unit Test: text = " practice   makes   perfect", Output: "practice   makes   perfect "
+# Input: text = " practice   makes   perfect", Output: "practice   makes   perfect "
 assert Solution.reorderSpaces(" practice   makes   perfect") == "practice   makes   perfect "
 
-# Unit Test: text = "hello", Output: "hello"
+# Input: text = "hello", Output: "hello"
 assert Solution.reorderSpaces("hello") == "hello"
 
 print("All unit tests are passed.")

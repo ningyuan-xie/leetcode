@@ -28,13 +28,13 @@ class Solution:
         return [-1, -1]
 
 
-# Unit Test: nums = [5,1,4,1], indexDifference = 2, valueDifference = 4, Output: [0, 3] or [3, 0]
+# Input: nums = [5,1,4,1], indexDifference = 2, valueDifference = 4, Output: [0, 3] or [3, 0]
 assert Solution.findIndices([5, 1, 4, 1], 2, 4) in [[0, 3], [3, 0]]
 
-# Unit Test: nums = [2,1], indexDifference = 0, valueDifference = 0, Output: [0, 0]
+# Input: nums = [2,1], indexDifference = 0, valueDifference = 0, Output: [0, 0]
 assert Solution.findIndices([2, 1], 0, 0) == [0, 0]
 
-# Unit Test: nums = [1,2,3], indexDifference = 2, valueDifference = 4, Output: [-1, -1]
+# Input: nums = [1,2,3], indexDifference = 2, valueDifference = 4, Output: [-1, -1]
 assert Solution.findIndices([1, 2, 3], 2, 4) == [-1, -1]
 
 print("All unit tests are passed.")

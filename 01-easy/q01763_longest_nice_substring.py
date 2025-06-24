@@ -30,13 +30,13 @@ class Solution:
         return s
 
 
-# Unit Test: s = "YazaAay", Output: "aAa"
+# Input: s = "YazaAay", Output: "aAa"
 assert Solution.longestNiceSubstring("YazaAay") == "aAa"
 
-# Unit Test: s = "Bb", Output: "Bb"
+# Input: s = "Bb", Output: "Bb"
 assert Solution.longestNiceSubstring("Bb") == "Bb"
 
-# Unit Test: s = "c", Output: ""
+# Input: s = "c", Output: ""
 assert Solution.longestNiceSubstring("c") == ""
 
 print("All unit tests are passed.")

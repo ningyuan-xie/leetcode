@@ -17,10 +17,10 @@ class Solution:
         return common_factors
 
 
-# Unit Test: a = 12, b = 6, Output: 4
+# Input: a = 12, b = 6, Output: 4
 assert Solution.commonFactors(12, 6) == 4
 
-# Unit Test: a = 25, b = 30, Output: 2
+# Input: a = 25, b = 30, Output: 2
 assert Solution.commonFactors(25, 30) == 2
 
 print("All unit tests are passed.")

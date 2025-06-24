@@ -27,13 +27,13 @@ class Solution:
         return max_diff
 
 
-# Unit Test: nums = [7, 1, 5, 4], Output: 4
+# Input: nums = [7, 1, 5, 4], Output: 4
 assert Solution.maximumDifference([7, 1, 5, 4]) == 4
 
-# Unit Test: nums = [9, 4, 3, 2], Output: -1
+# Input: nums = [9, 4, 3, 2], Output: -1
 assert Solution.maximumDifference([9, 4, 3, 2]) == -1
 
-# Unit Test: nums = [1, 5, 2, 10], Output: 9
+# Input: nums = [1, 5, 2, 10], Output: 9
 assert Solution.maximumDifference([1, 5, 2, 10]) == 9
 
 print("All unit tests are passed.")

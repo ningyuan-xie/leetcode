@@ -28,13 +28,13 @@ class Solution:
         return max_length
 
 
-# Unit Test: s = "aa", Output: 0
+# Input: s = "aa", Output: 0
 assert Solution.maxLengthBetweenEqualCharacters("aa") == 0
 
-# Unit Test: s = "abca", Output: 2
+# Input: s = "abca", Output: 2
 assert Solution.maxLengthBetweenEqualCharacters("abca") == 2
 
-# Unit Test: s = "cbzxy", Output: -1
+# Input: s = "cbzxy", Output: -1
 assert Solution.maxLengthBetweenEqualCharacters("cbzxy") == -1
 
 print("All unit tests are passed.")

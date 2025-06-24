@@ -11,10 +11,10 @@ class Solution:
         return num1 + num2
 
 
-# Unit Test: num1 = 12, num2 = 5, Output: 17
+# Input: num1 = 12, num2 = 5, Output: 17
 assert Solution.sum(12, 5) == 17
 
-# Unit Test: num1 = -10, num2 = 4, Output: -6
+# Input: num1 = -10, num2 = 4, Output: -6
 assert Solution.sum(-10, 4) == -6
 
 print("All unit tests are passed.")

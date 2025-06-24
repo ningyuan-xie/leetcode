@@ -23,13 +23,13 @@ class Solution:
         return num1 - num2
 
 
-# Unit Test: n = 10, m = 3, Output: 19
+# Input: n = 10, m = 3, Output: 19
 assert Solution.differenceOfSums(10, 3) == 19
 
-# Unit Test: n = 5, m = 6, Output: 15
+# Input: n = 5, m = 6, Output: 15
 assert Solution.differenceOfSums(5, 6) == 15
 
-# Unit Test: n = 5, m = 1, Output: -15
+# Input: n = 5, m = 1, Output: -15
 assert Solution.differenceOfSums(5, 1) == -15
 
 print("All unit tests are passed.")

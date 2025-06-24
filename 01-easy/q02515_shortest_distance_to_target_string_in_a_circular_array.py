@@ -33,14 +33,14 @@ class Solution:
         return min_distance if min_distance != float('inf') else -1
 
 
-# Unit Test: words = ["hello","i","am","leetcode","hello"], target = "hello", startIndex = 1, Output: 1
+# Input: words = ["hello","i","am","leetcode","hello"], target = "hello", startIndex = 1, Output: 1
 assert (Solution.closetTarget(["hello", "i", "am", "leetcode", "hello"], "hello", 1)
         == 1)
 
-# Unit Test: words = ["a","b","leetcode"], target = "leetcode", startIndex = 0, Output: 1
+# Input: words = ["a","b","leetcode"], target = "leetcode", startIndex = 0, Output: 1
 assert Solution.closetTarget(["a", "b", "leetcode"], "leetcode", 0) == 1
 
-# Unit Test: words = ["i","eat","leetcode"], target = "ate", startIndex = 0, Output: -1
+# Input: words = ["i","eat","leetcode"], target = "ate", startIndex = 0, Output: -1
 assert Solution.closetTarget(["i", "eat", "leetcode"], "ate", 0) == -1
 
 print("All unit tests are passed.")

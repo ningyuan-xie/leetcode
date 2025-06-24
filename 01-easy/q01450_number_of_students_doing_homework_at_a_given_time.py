@@ -25,16 +25,16 @@ class Solution:
         return count
 
 
-# Unit Test: startTime = [1, 2, 3], endTime = [3, 2, 7], queryTime = 4, Output: 1
+# Input: startTime = [1, 2, 3], endTime = [3, 2, 7], queryTime = 4, Output: 1
 assert Solution.busyStudent([1, 2, 3], [3, 2, 7], 4) == 1
 
-# Unit Test: startTime = [4], endTime = [4], queryTime = 4, Output: 1
+# Input: startTime = [4], endTime = [4], queryTime = 4, Output: 1
 assert Solution.busyStudent([4], [4], 4) == 1
 
-# Unit Test: startTime = [4], endTime = [4], queryTime = 5, Output: 0
+# Input: startTime = [4], endTime = [4], queryTime = 5, Output: 0
 assert Solution.busyStudent([4], [4], 5) == 0
 
-# Unit Test: startTime = [1, 1, 1, 1], endTime = [1, 3, 2, 4], queryTime = 7, Output: 0
+# Input: startTime = [1, 1, 1, 1], endTime = [1, 3, 2, 4], queryTime = 7, Output: 0
 assert Solution.busyStudent([1, 1, 1, 1], [1, 3, 2, 4], 7) == 0
 
 print("All unit tests are passed.")

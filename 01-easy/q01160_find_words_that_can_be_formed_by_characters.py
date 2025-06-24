@@ -43,13 +43,13 @@ class Solution:
         return total_length
 
 
-# Unit Test: words = ["cat", "bt", "hat", "tree"], chars = "atach", Output: 6
+# Input: words = ["cat", "bt", "hat", "tree"], chars = "atach", Output: 6
 assert Solution.countCharacters(["cat", "bt", "hat", "tree"], "atach") == 6
 
-# Unit Test: words = ["hello", "world", "leetcode"], chars = "welldonehoneyr", Output: 10
+# Input: words = ["hello", "world", "leetcode"], chars = "welldonehoneyr", Output: 10
 assert Solution.countCharacters(["hello", "world", "leetcode"], "welldonehoneyr") == 10
 
-# Unit Test: words = ["cat", "bt", "hat", "tree"], chars = "atach", Output: 6
+# Input: words = ["cat", "bt", "hat", "tree"], chars = "atach", Output: 6
 assert Solution.countCharacters(["cat", "bt", "hat", "tree"], "atach") == 6
 
 print("All unit tests are passed.")

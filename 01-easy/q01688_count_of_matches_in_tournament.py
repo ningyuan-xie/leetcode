@@ -19,13 +19,13 @@ class Solution:
         return n - 1
 
 
-# Unit Test: n = 7, Output: 6
+# Input: n = 7, Output: 6
 assert Solution.number_of_matches(7) == 6
 
-# Unit Test: n = 14, Output: 13
+# Input: n = 14, Output: 13
 assert Solution.number_of_matches(14) == 13
 
-# Unit Test: n = 9, Output: 8
+# Input: n = 9, Output: 8
 assert Solution.number_of_matches(9) == 8
 
 print("All unit tests are passed.")

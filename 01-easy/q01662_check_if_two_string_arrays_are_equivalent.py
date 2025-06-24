@@ -15,13 +15,13 @@ class Solution:
         return "".join(word1) == "".join(word2)
 
 
-# Unit Test: word1 = ["ab", "c"], word2 = ["a", "bc"], Output: True
+# Input: word1 = ["ab", "c"], word2 = ["a", "bc"], Output: True
 assert Solution.array_strings_are_equal(["ab", "c"], ["a", "bc"]) is True
 
-# Unit Test: word1 = ["a", "cb"], word2 = ["ab", "c"], Output: False
+# Input: word1 = ["a", "cb"], word2 = ["ab", "c"], Output: False
 assert Solution.array_strings_are_equal(["a", "cb"], ["ab", "c"]) is False
 
-# Unit Test: word1 = ["abc", "d", "defg"], word2 = ["abcddefg"], Output: True
+# Input: word1 = ["abc", "d", "defg"], word2 = ["abcddefg"], Output: True
 assert Solution.array_strings_are_equal(["abc", "d", "defg"], ["abcddefg"]) is True
 
 print("All unit tests are passed.")

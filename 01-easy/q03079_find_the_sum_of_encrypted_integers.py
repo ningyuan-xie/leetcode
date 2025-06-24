@@ -22,10 +22,10 @@ class Solution:
         return sum(encrypt(x) for x in nums)
 
 
-# Unit Test: nums = [1,2,3], Output = 6
+# Input: nums = [1,2,3], Output = 6
 assert Solution.sumOfEncryptedInt([1, 2, 3]) == 6
 
-# Unit Test: nums = [10,21,31], Output = 66
+# Input: nums = [10,21,31], Output = 66
 assert Solution.sumOfEncryptedInt([10, 21, 31]) == 66
 
 print("All unit tests are passed.")

@@ -29,13 +29,13 @@ class Solution:
         return minimum_num_of_chairs
 
 
-# Unit Test: s = "EEEEEEE", Output = 7
+# Input: s = "EEEEEEE", Output = 7
 assert Solution.minimumChairs("EEEEEEE") == 7
 
-# Unit Test: s = "ELELEEL", Output = 2
+# Input: s = "ELELEEL", Output = 2
 assert Solution.minimumChairs("ELELEEL") == 2
 
-# Unit Test: s = "ELEELEELLL", Output = 3
+# Input: s = "ELEELEELLL", Output = 3
 assert Solution.minimumChairs("ELEELEELLL") == 3
 
 print("All unit tests are passed.")

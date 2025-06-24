@@ -21,11 +21,11 @@ class Solution:
         return root.val == (root.left.val + root.right.val)
 
 
-# Unit Test: root = [10,4,6], Output: True
+# Input: root = [10,4,6], Output: True
 root_test = TreeNode.build_binary_tree([10, 4, 6])
 assert Solution.isSumEqual(root_test) is True
 
-# Unit Test: root = [5,3,1], Output: False
+# Input: root = [5,3,1], Output: False
 root_test = TreeNode.build_binary_tree([5, 3, 1])
 assert Solution.isSumEqual(root_test) is False
 

@@ -26,13 +26,13 @@ class Solution:
             return max(digits)
 
 
-# Unit Test: s = "dfa12321afd", Output: 2
+# Input: s = "dfa12321afd", Output: 2
 assert Solution.second_largest_digit("dfa12321afd") == 2
 
-# Unit Test: s = "abc1111", Output: -1
+# Input: s = "abc1111", Output: -1
 assert Solution.second_largest_digit("abc1111") == -1
 
-# Unit Test: s = "abc", Output: -1
+# Input: s = "abc", Output: -1
 assert Solution.second_largest_digit("abc") == -1
 
 print("All unit tests are passed.")

@@ -27,13 +27,13 @@ class Solution:
         return min_sum if min_sum is not None else -1
 
 
-# Unit Test: nums = [8,6,1,5,3], Output: 9
+# Input: nums = [8,6,1,5,3], Output: 9
 assert Solution.minSumOfMountainTriplets([8, 6, 1, 5, 3]) == 9
 
-# Unit Test: nums = [5,4,8,7,10,2], Output: 13
+# Input: nums = [5,4,8,7,10,2], Output: 13
 assert Solution.minSumOfMountainTriplets([5, 4, 8, 7, 10, 2]) == 13
 
-# Unit Test: nums = [6,5,4,3,4,5], Output: -1
+# Input: nums = [6,5,4,3,4,5], Output: -1
 assert Solution.minSumOfMountainTriplets([6, 5, 4, 3, 4, 5]) == -1
 
 print("All unit tests are passed.")

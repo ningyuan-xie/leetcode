@@ -27,13 +27,13 @@ class Solution:
         return False
 
 
-# Unit Test: arr = [10, 2, 5, 3], Output: True
+# Input: arr = [10, 2, 5, 3], Output: True
 assert Solution.checkIfExist([10, 2, 5, 3]) is True
 
-# Unit Test: arr = [7, 1, 14, 11], Output: True
+# Input: arr = [7, 1, 14, 11], Output: True
 assert Solution.checkIfExist([7, 1, 14, 11]) is True
 
-# Unit Test: arr = [3, 1, 7, 11], Output: False
+# Input: arr = [3, 1, 7, 11], Output: False
 assert Solution.checkIfExist([3, 1, 7, 11]) is False
 
 print("All unit tests are passed.")

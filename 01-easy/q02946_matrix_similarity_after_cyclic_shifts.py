@@ -33,13 +33,13 @@ class Solution:
         return True
 
 
-# Unit Test: mat = [[1,2,3],[4,5,6],[7,8,9]], k = 4, Output: False
+# Input: mat = [[1,2,3],[4,5,6],[7,8,9]], k = 4, Output: False
 assert Solution.areSimilar([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 4) is False
 
-# Unit Test: mat = [[1,2,1,2],[5,5,5,5],[6,3,6,3]], k = 2, Output: True
+# Input: mat = [[1,2,1,2],[5,5,5,5],[6,3,6,3]], k = 2, Output: True
 assert Solution.areSimilar([[1, 2, 1, 2], [5, 5, 5, 5], [6, 3, 6, 3]], 2) is True
 
-# Unit Test: mat = [[2,2],[2,2]], k = 3, Output: True
+# Input: mat = [[2,2],[2,2]], k = 3, Output: True
 assert Solution.areSimilar([[2, 2], [2, 2]], 3) is True
 
 print("All unit tests are passed.")

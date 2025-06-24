@@ -39,10 +39,10 @@ class Solution:
         return push
 
 
-# Unit Test: word = "abcde", Output = 5
+# Input: word = "abcde", Output = 5
 assert Solution.minimumPushes("abcde") == 5
 
-# Unit Test: word = "xycdefghij", Output = 12
+# Input: word = "xycdefghij", Output = 12
 assert Solution.minimumPushes("xycdefghij") == 12
 
 print("All unit tests are passed.")

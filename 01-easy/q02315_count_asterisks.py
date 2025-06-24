@@ -24,13 +24,13 @@ class Solution:
         return asterisks
 
 
-# Unit Test: s = "l|*e*et|c**o|*de|", Output: 2
+# Input: s = "l|*e*et|c**o|*de|", Output: 2
 assert Solution.countAsterisks("l|*e*et|c**o|*de|") == 2
 
-# Unit Test: s = "iamprogrammer", Output: 0
+# Input: s = "iamprogrammer", Output: 0
 assert Solution.countAsterisks("iamprogrammer") == 0
 
-# Unit Test: s = "yo|uar|e**|b|e***au|tifu|l", Output: 5
+# Input: s = "yo|uar|e**|b|e***au|tifu|l", Output: 5
 assert Solution.countAsterisks("yo|uar|e**|b|e***au|tifu|l") == 5
 
 print("All unit tests are passed.")

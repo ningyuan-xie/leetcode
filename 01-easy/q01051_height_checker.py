@@ -40,15 +40,15 @@ class Solution:
         return mismatch_count
 
 
-# Unit Test: heights = [1, 1, 4, 2, 1, 3], Output: 3
+# Input: heights = [1, 1, 4, 2, 1, 3], Output: 3
 # Explanation: The expected order is [1, 1, 1, 2, 3, 4], so indices 2, 3, and 5 do not match.
 assert Solution.heightChecker([1, 1, 4, 2, 1, 3]) == 3
 
-# Unit Test: heights = [5, 1, 2, 3, 4], Output: 5
+# Input: heights = [5, 1, 2, 3, 4], Output: 5
 # Explanation: The expected order is [1, 2, 3, 4, 5], so all indices do not match.
 assert Solution.heightChecker([5, 1, 2, 3, 4]) == 5
 
-# Unit Test: heights = [1, 2, 3, 4, 5], Output: 0
+# Input: heights = [1, 2, 3, 4, 5], Output: 0
 # Explanation: The expected order is [1, 2, 3, 4, 5], so all indices match.
 assert Solution.heightChecker([1, 2, 3, 4, 5]) == 0
 

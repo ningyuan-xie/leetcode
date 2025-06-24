@@ -17,10 +17,10 @@ class Solution:
         return len(set([num for num in nums if num > 0]))
 
 
-# Unit Test: nums = [1,5,0,3,5], Output: 3
+# Input: nums = [1,5,0,3,5], Output: 3
 assert Solution.minimumOperations([1, 5, 0, 3, 5]) == 3
 
-# Unit Test: nums = [0], Output: 0
+# Input: nums = [0], Output: 0
 assert Solution.minimumOperations([0]) == 0
 
 print("All unit tests are passed.")

@@ -29,14 +29,14 @@ class Solution:
                 or Solution.getTargetCopy(original.right, cloned.right, target))
 
 
-# Unit Test: original = [7, 4, 3, None, None, 6, 19], cloned = [7, 4, 3, None, None, 6, 19],
+# Input: original = [7, 4, 3, None, None, 6, 19], cloned = [7, 4, 3, None, None, 6, 19],
 # target = 3, Output: 3
 original_test = TreeNode.build_binary_tree([7, 4, 3, None, None, 6, 19])
 cloned_test = TreeNode.build_binary_tree([7, 4, 3, None, None, 6, 19])
 target_test = original_test.left
 assert Solution.getTargetCopy(original_test, cloned_test, target_test) == cloned_test.left
 
-# Unit Test: original = [7], cloned = [7], target = 7, Output: 7
+# Input: original = [7], cloned = [7], target = 7, Output: 7
 original_test = TreeNode.build_binary_tree([7])
 cloned_test = TreeNode.build_binary_tree([7])
 target_test = original_test

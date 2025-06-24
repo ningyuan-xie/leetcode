@@ -28,16 +28,16 @@ class Solution:
         return True
 
 
-# Unit Test: arr = [3, 5, 1], Output: True
+# Input: arr = [3, 5, 1], Output: True
 assert Solution.canMakeArithmeticProgression([3, 5, 1]) == True
 
-# Unit Test: arr = [1, 2, 4], Output: False
+# Input: arr = [1, 2, 4], Output: False
 assert Solution.canMakeArithmeticProgression([1, 2, 4]) == False
 
-# Unit Test: arr = [1, 2, 3], Output: True
+# Input: arr = [1, 2, 3], Output: True
 assert Solution.canMakeArithmeticProgression([1, 2, 3]) == True
 
-# Unit Test: arr = [1, 2, 4, 5], Output: False
+# Input: arr = [1, 2, 4, 5], Output: False
 assert Solution.canMakeArithmeticProgression([1, 2, 4, 5]) == False
 
 print("All unit tests are passed.")

@@ -26,13 +26,13 @@ class Solution:
         return max_xor
 
 
-# Unit Test: nums = [1,2,3,4,5], Output: 7
+# Input: nums = [1,2,3,4,5], Output: 7
 assert Solution.maximumStrongPairXor([1, 2, 3, 4, 5]) == 7
 
-# Unit Test: nums = [10,100], Output: 0
+# Input: nums = [10,100], Output: 0
 assert Solution.maximumStrongPairXor([10, 100]) == 0
 
-# Unit Test: nums = [5,6,25,30], Output: 7
+# Input: nums = [5,6,25,30], Output: 7
 assert Solution.maximumStrongPairXor([5, 6, 25, 30]) == 7
 
 print("All unit tests are passed.")

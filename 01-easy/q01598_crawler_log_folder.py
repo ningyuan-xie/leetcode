@@ -39,13 +39,13 @@ class Solution:
         return depth
 
 
-# Unit Test: logs = ["d1/", "d2/", "../", "d21/", "./"], Output: 2
+# Input: logs = ["d1/", "d2/", "../", "d21/", "./"], Output: 2
 assert Solution.minOperations(["d1/", "d2/", "../", "d21/", "./"]) == 2
 
-# Unit Test: logs = ["d1/", "d2/", "./", "d3/", "../", "d31/"], Output: 3
+# Input: logs = ["d1/", "d2/", "./", "d3/", "../", "d31/"], Output: 3
 assert Solution.minOperations(["d1/", "d2/", "./", "d3/", "../", "d31/"]) == 3
 
-# Unit Test: logs = ["d1/", "../", "../", "../"], Output: 0
+# Input: logs = ["d1/", "../", "../", "../"], Output: 0
 assert Solution.minOperations(["d1/", "../", "../", "../"]) == 0
 
 print("All unit tests are passed.")

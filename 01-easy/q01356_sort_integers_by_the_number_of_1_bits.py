@@ -19,18 +19,18 @@ class Solution:
         return sorted(arr, key=lambda x: (bin(x).count("1"), x))
 
 
-# Unit Test: arr = [0, 1, 2, 3, 4, 5, 6, 7, 8], Output: [0, 1, 2, 4, 8, 3, 5, 6, 7]
+# Input: arr = [0, 1, 2, 3, 4, 5, 6, 7, 8], Output: [0, 1, 2, 4, 8, 3, 5, 6, 7]
 assert Solution.sortByBits([0, 1, 2, 3, 4, 5, 6, 7, 8]) == [0, 1, 2, 4, 8, 3, 5, 6, 7]
 
-# Unit Test: arr = [1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1],
+# Input: arr = [1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1],
 # Output: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
 assert (Solution.sortByBits([1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1])
         == [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024])
 
-# Unit Test: arr = [10000, 10000], Output: [10000, 10000]
+# Input: arr = [10000, 10000], Output: [10000, 10000]
 assert Solution.sortByBits([10000, 10000]) == [10000, 10000]
 
-# Unit Test: arr = [2, 3, 5, 7, 11, 13, 17, 19], Output: [2, 3, 5, 17, 7, 11, 13, 19]
+# Input: arr = [2, 3, 5, 7, 11, 13, 17, 19], Output: [2, 3, 5, 17, 7, 11, 13, 19]
 assert Solution.sortByBits([2, 3, 5, 7, 11, 13, 17, 19]) == [2, 3, 5, 17, 7, 11, 13, 19]
 
 print("All unit tests are passed.")

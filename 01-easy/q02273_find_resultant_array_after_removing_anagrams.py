@@ -30,13 +30,13 @@ class Solution:
         return result
 
 
-# Unit Test: words = ["abba","baba","bbaa","cd","cd"], Output: ["abba","cd"]
+# Input: words = ["abba","baba","bbaa","cd","cd"], Output: ["abba","cd"]
 assert Solution.removeAnagrams(["abba", "baba", "bbaa", "cd", "cd"]) == ["abba", "cd"]
 
-# Unit Test: words = ["a","b","c","d"], Output: ["a","b","c","d"]
+# Input: words = ["a","b","c","d"], Output: ["a","b","c","d"]
 assert Solution.removeAnagrams(["a", "b", "c", "d"]) == ["a", "b", "c", "d"]
 
-# Unit Test: words = ["a","b","a"], Output: ["a","b","a"]
+# Input: words = ["a","b","a"], Output: ["a","b","a"]
 assert Solution.removeAnagrams(["a", "b", "a"]) == ["a", "b", "a"]
 
 print("All unit tests are passed.")

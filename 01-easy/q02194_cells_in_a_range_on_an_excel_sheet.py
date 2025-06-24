@@ -31,10 +31,10 @@ class Solution:
         ]
 
 
-# Unit Test: s = "K1:L2", Output: ["K1", "K2", "L1", "L2"]
+# Input: s = "K1:L2", Output: ["K1", "K2", "L1", "L2"]
 assert Solution.cellsInRange("K1:L2") == ["K1", "K2", "L1", "L2"]
 
-# Unit Test: s = "A1:F1", Output: ["A1", "B1", "C1", "D1", "E1", "F1"]
+# Input: s = "A1:F1", Output: ["A1", "B1", "C1", "D1", "E1", "F1"]
 assert Solution.cellsInRange("A1:F1") == ["A1", "B1", "C1", "D1", "E1", "F1"]
 
 print("All unit tests are passed.")

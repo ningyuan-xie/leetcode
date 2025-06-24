@@ -24,13 +24,13 @@ class Solution:
         return sneaky_numbers
 
 
-# Unit Test: nums = [0,1,1,0], Output: [0, 1]
+# Input: nums = [0,1,1,0], Output: [0, 1]
 assert sorted(Solution.getSneakyNumbers([0, 1, 1, 0])) == [0, 1]
 
-# Unit Test: nums = [0,3,2,1,3,2], Output: [2, 3]
+# Input: nums = [0,3,2,1,3,2], Output: [2, 3]
 assert sorted(Solution.getSneakyNumbers([0, 3, 2, 1, 3, 2])) == [2, 3]
 
-# Unit Test: nums = [7,1,5,4,3,4,6,0,9,5,8,2], Output: [4, 5]
+# Input: nums = [7,1,5,4,3,4,6,0,9,5,8,2], Output: [4, 5]
 assert sorted(Solution.getSneakyNumbers([7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2])) == [4, 5]
 
 print("All unit tests are passed.")

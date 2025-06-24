@@ -29,10 +29,10 @@ class Solution:
         return operations
 
 
-# Unit Test: current = "02:30", correct = "04:35", Output: 3
+# Input: current = "02:30", correct = "04:35", Output: 3
 assert Solution.convertTime("02:30", "04:35") == 3
 
-# Unit Test: current = "11:00", correct = "11:01", Output: 1
+# Input: current = "11:00", correct = "11:01", Output: 1
 assert Solution.convertTime("11:00", "11:01") == 1
 
 print("All unit tests are passed.")

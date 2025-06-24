@@ -23,10 +23,10 @@ class Solution:
         return (current_max + (current_max + k - 1)) * k // 2
 
 
-# Unit Test: nums = [1,2,3,4,5], k = 3, Output: 18
+# Input: nums = [1,2,3,4,5], k = 3, Output: 18
 assert Solution.maximizeSum([1, 2, 3, 4, 5], 3) == 18
 
-# Unit Test: nums = [5,5,5], k = 2, Output: 11
+# Input: nums = [5,5,5], k = 2, Output: 11
 assert Solution.maximizeSum([5, 5, 5], 2) == 11
 
 print("All unit tests are passed.")

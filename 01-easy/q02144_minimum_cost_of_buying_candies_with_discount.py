@@ -29,13 +29,13 @@ class Solution:
         return total
 
 
-# Unit Test: cost = [1,2,3], Output: 5
+# Input: cost = [1,2,3], Output: 5
 assert Solution.minimumCost([1, 2, 3]) == 5
 
-# Unit Test: cost = [6,5,7,9,2,2], Output: 23
+# Input: cost = [6,5,7,9,2,2], Output: 23
 assert Solution.minimumCost([6, 5, 7, 9, 2, 2]) == 23
 
-# Unit Test: cost = [5,5], Output: 10
+# Input: cost = [5,5], Output: 10
 assert Solution.minimumCost([5, 5]) == 10
 
 print("All unit tests are passed.")

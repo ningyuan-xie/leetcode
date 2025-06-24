@@ -23,10 +23,10 @@ class Solution:
         return True
 
 
-# Unit Test: matrix = [[1,2,3],[3,1,2],[2,3,1]], Output: True
+# Input: matrix = [[1,2,3],[3,1,2],[2,3,1]], Output: True
 assert Solution.checkValid([[1, 2, 3], [3, 1, 2], [2, 3, 1]]) is True
 
-# Unit Test: matrix = matrix = [[1,1,1],[1,2,3],[1,2,3]], Output: False
+# Input: matrix = matrix = [[1,1,1],[1,2,3],[1,2,3]], Output: False
 assert Solution.checkValid([[1, 1, 1], [1, 2, 3], [1, 2, 3]]) is False
 
 print("All unit tests are passed.")

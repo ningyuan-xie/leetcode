@@ -22,10 +22,10 @@ class Solution:
         return count
 
 
-# Unit Test: num = 4, Output: 2
+# Input: num = 4, Output: 2
 assert Solution.countEven(4) == 2
 
-# Unit Test: num = 30, Output: 14
+# Input: num = 30, Output: 14
 assert Solution.countEven(30) == 14
 
 print("All unit tests are passed.")

@@ -33,10 +33,10 @@ class Solution:
         return s
 
 
-# Unit Test: s = "11111222223", k = 3, Output: "135"
+# Input: s = "11111222223", k = 3, Output: "135"
 assert Solution.digitSum("11111222223", 3) == "135"
 
-# Unit Test: s = "00000000", k = 3, Output: "000"
+# Input: s = "00000000", k = 3, Output: "000"
 assert Solution.digitSum("00000000", 3) == "000"
 
 print("All unit tests are passed.")

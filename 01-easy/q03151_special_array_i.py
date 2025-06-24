@@ -25,13 +25,13 @@ class Solution:
         return True
 
 
-# Unit Test: nums = [1], Output = True
+# Input: nums = [1], Output = True
 assert Solution.isArraySpecial([1]) is True
 
-# Unit Test: nums = [2,1,4], Output = True
+# Input: nums = [2,1,4], Output = True
 assert Solution.isArraySpecial([2, 1, 4]) is True
 
-# Unit Test: nums = [4,3,1,6], Output = False
+# Input: nums = [4,3,1,6], Output = False
 assert Solution.isArraySpecial([4, 3, 1, 6]) is False
 
 print("All unit tests are passed.")

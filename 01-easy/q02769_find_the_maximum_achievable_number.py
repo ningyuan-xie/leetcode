@@ -14,10 +14,10 @@ class Solution:
         return num + t * 2
 
 
-# Unit Test: num = 4, t = 1, Output: 6
+# Input: num = 4, t = 1, Output: 6
 assert Solution.theMaximumAchievableX(4, 1) == 6
 
-# Unit Test: num = 3, t = 2, Output: 7
+# Input: num = 3, t = 2, Output: 7
 assert Solution.theMaximumAchievableX(3, 2) == 7
 
 print("All unit tests are passed.")

@@ -35,10 +35,10 @@ class Solution:
         return result
 
 
-# Unit Test: nums = [1,2,2,1,1,0], Output: [1,4,2,0,0,0]
+# Input: nums = [1,2,2,1,1,0], Output: [1,4,2,0,0,0]
 assert Solution.applyOperations([1, 2, 2, 1, 1, 0]) == [1, 4, 2, 0, 0, 0]
 
-# Unit Test: nums = [0,1], Output: [1,0]
+# Input: nums = [0,1], Output: [1,0]
 assert Solution.applyOperations([0, 1]) == [1, 0]
 
 print("All unit tests are passed.")

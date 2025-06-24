@@ -25,13 +25,13 @@ class Solution:
         return -1
 
 
-# Unit Test: nums = [3,2,1,4], Output: 2 or 3
+# Input: nums = [3,2,1,4], Output: 2 or 3
 assert Solution.findNonMinOrMax([3, 2, 1, 4]) in [2, 3]
 
-# Unit Test: nums = [1,2], Output: -1
+# Input: nums = [1,2], Output: -1
 assert Solution.findNonMinOrMax([1, 2]) == -1
 
-# Unit Test: nums = [2,1,3], Output: 2
+# Input: nums = [2,1,3], Output: 2
 assert Solution.findNonMinOrMax([2, 1, 3]) == 2
 
 print("All unit tests are passed.")

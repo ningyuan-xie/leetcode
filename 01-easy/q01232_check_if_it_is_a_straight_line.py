@@ -29,13 +29,13 @@ class Solution:
         return True
 
 
-# Unit Test: coordinates = [[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]], Output: True
+# Input: coordinates = [[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]], Output: True
 assert Solution.checkStraightLine([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]]) is True
 
-# Unit Test: coordinates = [[1, 1], [2, 2], [3, 4], [4, 5], [5, 6], [7, 7]], Output: False
+# Input: coordinates = [[1, 1], [2, 2], [3, 4], [4, 5], [5, 6], [7, 7]], Output: False
 assert Solution.checkStraightLine([[1, 1], [2, 2], [3, 4], [4, 5], [5, 6], [7, 7]]) is False
 
-# Unit Test: coordinates = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6]], Output: True
+# Input: coordinates = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6]], Output: True
 assert Solution.checkStraightLine([[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6]]) is True
 
 print("All unit tests are passed.")

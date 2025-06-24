@@ -32,13 +32,13 @@ class Solution:
         return len(freq) == 9
 
 
-# Unit Test: n = 192, Output: True
+# Input: n = 192, Output: True
 assert Solution.isFascinating(192) is True
 
-# Unit Test: n = 100, Output: False
+# Input: n = 100, Output: False
 assert Solution.isFascinating(100) is False
 
-# Unit Test: n = 783, Output: False
+# Input: n = 783, Output: False
 assert Solution.isFascinating(783) is False
 
 print("All unit tests are passed.")

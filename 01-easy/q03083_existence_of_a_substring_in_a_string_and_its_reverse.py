@@ -23,13 +23,13 @@ class Solution:
         return False
 
 
-# Unit Test: s = "leetcode", Output = True
+# Input: s = "leetcode", Output = True
 assert Solution.isSubstringPresent("leetcode") is True
 
-# Unit Test: s = "abcba", Output = True
+# Input: s = "abcba", Output = True
 assert Solution.isSubstringPresent("abcba") is True
 
-# Unit Test: s = "abcd", Output = False
+# Input: s = "abcd", Output = False
 assert Solution.isSubstringPresent("abcd") is False
 
 print("All unit tests are passed.")

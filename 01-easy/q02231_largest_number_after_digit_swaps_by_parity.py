@@ -31,10 +31,10 @@ class Solution:
         return int("".join(map(str, result)))
 
 
-# Unit Test: num = 1234, Output: 3412
+# Input: num = 1234, Output: 3412
 assert Solution.largestInteger(1234) == 3412
 
-# Unit Test: num = 65875, Output: 87655
+# Input: num = 65875, Output: 87655
 assert Solution.largestInteger(65875) == 87655
 
 print("All unit tests are passed.")

@@ -45,13 +45,13 @@ class Solution:
         return len(board)
 
 
-# Unit Test: n = 5, Output: 4
+# Input: n = 5, Output: 4
 assert Solution.distinctIntegersRecursion(5) == 4
 
-# Unit Test: n = 3, Output: 2
+# Input: n = 3, Output: 2
 assert Solution.distinctIntegersRecursion(3) == 2
 
-# Unit Test: n = 1, Output: 1
+# Input: n = 1, Output: 1
 assert Solution.distinctIntegers(1) == 1
 
 print("All unit tests are passed.")

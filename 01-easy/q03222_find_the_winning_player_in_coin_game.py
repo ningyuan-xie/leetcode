@@ -21,10 +21,10 @@ class Solution:
         return "Alice" if turn % 2 == 1 else "Bob"
 
 
-# Unit Test: x = 2, y = 7, Output: "Alice"
+# Input: x = 2, y = 7, Output: "Alice"
 assert Solution.winningPlayer(2, 7) == "Alice"
 
-# Unit Test: x = 4, y = 11, Output: "Bob"
+# Input: x = 4, y = 11, Output: "Bob"
 assert Solution.winningPlayer(4, 11) == "Bob"
 
 print("All unit tests are passed.")

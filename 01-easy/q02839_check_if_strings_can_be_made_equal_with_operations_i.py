@@ -25,16 +25,16 @@ class Solution:
         return even_s1 == even_s2 and odd_s1 == odd_s2
 
 
-# Unit Test: s1 = "abcd", s2 = "cdab", Output: True
+# Input: s1 = "abcd", s2 = "cdab", Output: True
 assert Solution.canBeEqual("abcd", "cdab") is True
 
-# Unit Test: s1 = "abcd", s2 = "dacb", Output: False
+# Input: s1 = "abcd", s2 = "dacb", Output: False
 assert Solution.canBeEqual("abcd", "dacb") is False
 
-# Unit Test: s1 = "abcdba", s2 = "cabdab", Output: True
+# Input: s1 = "abcdba", s2 = "cabdab", Output: True
 assert Solution.canBeEqual("abcdba", "cabdab") is True
 
-# Unit Test: s1 = "abe", s2 = "bea", Output: False
+# Input: s1 = "abe", s2 = "bea", Output: False
 assert Solution.canBeEqual("abe", "bea") is False
 
 print("All unit tests are passed.")

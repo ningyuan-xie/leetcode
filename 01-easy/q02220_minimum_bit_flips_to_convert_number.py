@@ -28,10 +28,10 @@ class Solution:
         return hamming_distance
 
 
-# Unit Test: start = 10, goal = 7, Output: 3
+# Input: start = 10, goal = 7, Output: 3
 assert Solution.minBitFlips(10, 7) == 3
 
-# Unit Test: start = 3, goal = 4, Output: 3
+# Input: start = 3, goal = 4, Output: 3
 assert Solution.minBitFlips(3, 4) == 3
 
 print("All unit tests are passed.")

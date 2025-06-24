@@ -34,10 +34,10 @@ class Solution:
         return word[k - 1]
 
 
-# Unit Test: k = 5, Output: 'b'
+# Input: k = 5, Output: 'b'
 assert Solution.kthCharacter(5) == 'b'
 
-# Unit Test: k = 10, Output: 'c'
+# Input: k = 10, Output: 'c'
 assert Solution.kthCharacter(10) == 'c'
 
 print("All unit tests are passed.")

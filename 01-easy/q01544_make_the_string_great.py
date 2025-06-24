@@ -32,13 +32,13 @@ class Solution:
         return ''.join(stack)
 
 
-# Unit Test: s = "leEeetcode", Output: "leetcode"
+# Input: s = "leEeetcode", Output: "leetcode"
 assert Solution.makeGood("leEeetcode") == "leetcode"
 
-# Unit Test: s = "abBAcC", Output: ""
+# Input: s = "abBAcC", Output: ""
 assert Solution.makeGood("abBAcC") == ""
 
-# Unit Test: s = "s", Output: "s"
+# Input: s = "s", Output: "s"
 assert Solution.makeGood("s") == "s"
 
 print("All unit tests are passed.")

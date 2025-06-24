@@ -23,13 +23,13 @@ class Solution:
         return False
 
 
-# Unit Test: nums = [4,2,4], Output: true
+# Input: nums = [4,2,4], Output: true
 assert Solution.findSubarrays([4, 2, 4]) is True
 
-# Unit Test: nums = [1,2,3,4,5], Output: false
+# Input: nums = [1,2,3,4,5], Output: false
 assert Solution.findSubarrays([1, 2, 3, 4, 5]) is False
 
-# Unit Test: nums = [0,0,0], Output: true
+# Input: nums = [0,0,0], Output: true
 assert Solution.findSubarrays([0, 0, 0]) is True
 
 print("All unit tests are passed.")

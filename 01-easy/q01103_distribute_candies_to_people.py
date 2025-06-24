@@ -45,13 +45,13 @@ class Solution:
         return distribution
 
 
-# Unit Test: candies = 7, num_people = 4, Output: [1, 2, 3, 1]
+# Input: candies = 7, num_people = 4, Output: [1, 2, 3, 1]
 assert Solution.distributeCandies(7, 4) == [1, 2, 3, 1]
 
-# Unit Test: candies = 10, num_people = 3, Output: [5, 2, 3]
+# Input: candies = 10, num_people = 3, Output: [5, 2, 3]
 assert Solution.distributeCandies(10, 3) == [5, 2, 3]
 
-# Unit Test: candies = 60, num_people = 4, Output: [15, 18, 15, 12]
+# Input: candies = 60, num_people = 4, Output: [15, 18, 15, 12]
 assert Solution.distributeCandies(60, 4) == [15, 18, 15, 12]
 
 print("All unit tests are passed.")

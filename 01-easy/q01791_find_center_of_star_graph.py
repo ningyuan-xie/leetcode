@@ -16,13 +16,13 @@ class Solution:
         return edges[0][0] if edges[0][0] in edges[1] else edges[0][1]
 
 
-# Unit Test: edges = [[1, 2], [2, 3], [4, 2]], Output: 2
+# Input: edges = [[1, 2], [2, 3], [4, 2]], Output: 2
 assert Solution.findCenter([[1, 2], [2, 3], [4, 2]]) == 2
 
-# Unit Test: edges = [[1, 2], [5, 1], [1, 3], [1, 4]], Output: 1
+# Input: edges = [[1, 2], [5, 1], [1, 3], [1, 4]], Output: 1
 assert Solution.findCenter([[1, 2], [5, 1], [1, 3], [1, 4]]) == 1
 
-# Unit Test: edges = [[1, 2], [2, 3]], Output: 2
+# Input: edges = [[1, 2], [2, 3]], Output: 2
 assert Solution.findCenter([[1, 2], [2, 3]]) == 2
 
 print("All unit tests are passed.")

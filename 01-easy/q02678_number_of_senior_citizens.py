@@ -19,10 +19,10 @@ class Solution:
         return sum(int(detail[11:13]) > 60 for detail in details)
 
 
-# Unit Test: details = ["7868190130M7522","5303914400F9211","9273338290F4010"], Output: 2
+# Input: details = ["7868190130M7522","5303914400F9211","9273338290F4010"], Output: 2
 assert Solution.countSeniors(["7868190130M7522", "5303914400F9211", "9273338290F4010"]) == 2
 
-# Unit Test: details = ["1313579440F2036","2921522980M5644"], Output: 0
+# Input: details = ["1313579440F2036","2921522980M5644"], Output: 0
 assert Solution.countSeniors(["1313579440F2036", "2921522980M5644"]) == 0
 
 print("All unit tests are passed.")

@@ -27,19 +27,19 @@ class Solution:
         return max(power, count)
 
 
-# Unit Test: s = "leetcode", Output: 2
+# Input: s = "leetcode", Output: 2
 assert Solution.maxPower("leetcode") == 2
 
-# Unit Test: s = "abbcccddddeeeeedcba", Output: 5
+# Input: s = "abbcccddddeeeeedcba", Output: 5
 assert Solution.maxPower("abbcccddddeeeeedcba") == 5
 
-# Unit Test: s = "triplepillooooow", Output: 5
+# Input: s = "triplepillooooow", Output: 5
 assert Solution.maxPower("triplepillooooow") == 5
 
-# Unit Test: s = "hooraaaaaaaaaaay", Output: 11
+# Input: s = "hooraaaaaaaaaaay", Output: 11
 assert Solution.maxPower("hooraaaaaaaaaaay") == 11
 
-# Unit Test: s = "tourist", Output: 1
+# Input: s = "tourist", Output: 1
 assert Solution.maxPower("tourist") == 1
 
 print("All unit tests are passed.")

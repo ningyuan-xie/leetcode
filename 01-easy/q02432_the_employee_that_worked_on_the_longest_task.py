@@ -33,13 +33,13 @@ class Solution:
         return employee_id
 
 
-# Unit Test: n = 10, logs = [[0,3],[2,5],[0,9],[1,15]], Output: 1
+# Input: n = 10, logs = [[0,3],[2,5],[0,9],[1,15]], Output: 1
 assert Solution.hardestWorker([[0, 3], [2, 5], [0, 9], [1, 15]]) == 1
 
-# Unit Test: n = 26, logs = [[1,1],[3,7],[2,12],[7,17]], Output: 3
+# Input: n = 26, logs = [[1,1],[3,7],[2,12],[7,17]], Output: 3
 assert Solution.hardestWorker([[1, 1], [3, 7], [2, 12], [7, 17]]) == 3
 
-# Unit Test: n = 2, logs = [[0,10],[1,20]], Output: 0
+# Input: n = 2, logs = [[0,10],[1,20]], Output: 0
 assert Solution.hardestWorker([[0, 10], [1, 20]]) == 0
 
 print("All unit tests are passed.")

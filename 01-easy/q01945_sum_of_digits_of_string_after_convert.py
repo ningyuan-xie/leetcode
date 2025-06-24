@@ -35,13 +35,13 @@ class Solution:
         return num
 
 
-# Unit Test: s = "iiii", k = 1, Output: 36
+# Input: s = "iiii", k = 1, Output: 36
 assert Solution.getLucky("iiii", 1) == 36
 
-# Unit Test: s = "leetcode", k = 2, Output: 6
+# Input: s = "leetcode", k = 2, Output: 6
 assert Solution.getLucky("leetcode", 2) == 6
 
-# Unit Test: s = "zbax", k = 2, Output: 8
+# Input: s = "zbax", k = 2, Output: 8
 assert Solution.getLucky("zbax", 2) == 8
 
 print("All unit tests are passed.")

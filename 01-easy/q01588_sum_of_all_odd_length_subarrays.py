@@ -32,13 +32,13 @@ class Solution:
         return odd_length_subarray_sum
 
 
-# Unit Test: arr = [1, 4, 2, 5, 3], Output: 58
+# Input: arr = [1, 4, 2, 5, 3], Output: 58
 assert Solution.sumOddLengthSubarrays([1, 4, 2, 5, 3]) == 58
 
-# Unit Test: arr = [1, 2], Output: 3
+# Input: arr = [1, 2], Output: 3
 assert Solution.sumOddLengthSubarrays([1, 2]) == 3
 
-# Unit Test: arr = [10, 11, 12], Output: 66
+# Input: arr = [10, 11, 12], Output: 66
 assert Solution.sumOddLengthSubarrays([10, 11, 12]) == 66
 
 print("All unit tests are passed.")

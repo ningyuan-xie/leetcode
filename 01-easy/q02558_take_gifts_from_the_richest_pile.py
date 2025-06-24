@@ -34,10 +34,10 @@ class Solution:
         return sum(-gift for gift in max_heap)
 
 
-# Unit Test: gifts = [25,64,9,4,100], k = 4, Output: 29
+# Input: gifts = [25,64,9,4,100], k = 4, Output: 29
 assert Solution.pickGifts([25, 64, 9, 4, 100], 4) == 29
 
-# Unit Test: gifts = [1,1,1,1], k = 4, Output: 4
+# Input: gifts = [1,1,1,1], k = 4, Output: 4
 assert Solution.pickGifts([1, 1, 1, 1], 4) == 4
 
 print("All unit tests are passed.")

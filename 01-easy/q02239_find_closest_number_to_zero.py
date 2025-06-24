@@ -22,10 +22,10 @@ class Solution:
         return closest_number
 
 
-# Unit Test: nums = [-4,-2,1,4,8], Output: 1
+# Input: nums = [-4,-2,1,4,8], Output: 1
 assert Solution.findClosestNumber([-4, -2, 1, 4, 8]) == 1
 
-# Unit Test: nums = [2,-1,1], Output: 1
+# Input: nums = [2,-1,1], Output: 1
 assert Solution.findClosestNumber([2, -1, 1]) == 1
 
 print("All unit tests are passed.")

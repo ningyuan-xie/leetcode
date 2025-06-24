@@ -24,13 +24,13 @@ class Solution:
         return stable_mountains
 
 
-# Unit Test: height = [1,2,3,4,5], threshold = 2, Output: [3, 4]
+# Input: height = [1,2,3,4,5], threshold = 2, Output: [3, 4]
 assert Solution.stableMountains([1, 2, 3, 4, 5], 2) == [3, 4]
 
-# Unit Test: height = [10,1,10,1,10], threshold = 3, Output: [1, 3]
+# Input: height = [10,1,10,1,10], threshold = 3, Output: [1, 3]
 assert Solution.stableMountains([10, 1, 10, 1, 10], 3) == [1, 3]
 
-# Unit Test: height = [10,1,10,1,10], threshold = 10, Output: []
+# Input: height = [10,1,10,1,10], threshold = 10, Output: []
 assert Solution.stableMountains([10, 1, 10, 1, 10], 10) == []
 
 print("All unit tests are passed.")

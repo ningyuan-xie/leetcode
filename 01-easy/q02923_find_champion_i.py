@@ -25,10 +25,10 @@ class Solution:
         return max(teams, key=teams.get)
 
 
-# Unit Test: grid = [[0,1],[0,0]], Output: 0
+# Input: grid = [[0,1],[0,0]], Output: 0
 assert Solution.findChampion([[0, 1], [0, 0]]) == 0
 
-# Unit Test: grid = [[0,0,1],[1,0,1],[0,0,0]], Output: 1
+# Input: grid = [[0,0,1],[1,0,1],[0,0,0]], Output: 1
 assert Solution.findChampion([[0, 0, 1], [1, 0, 1], [0, 0, 0]]) == 1
 
 print("All unit tests are passed.")

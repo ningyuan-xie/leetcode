@@ -36,10 +36,10 @@ class Solution:
         return nums[0]
 
 
-# Unit Test: nums = [1,3,5,2,4,8,2,2], Output: 1
+# Input: nums = [1,3,5,2,4,8,2,2], Output: 1
 assert Solution.minMaxGame([1, 3, 5, 2, 4, 8, 2, 2]) == 1
 
-# Unit Test: nums = [3], Output: 3
+# Input: nums = [3], Output: 3
 assert Solution.minMaxGame([3]) == 3
 
 print("All unit tests are passed.")

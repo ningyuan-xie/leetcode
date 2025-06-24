@@ -36,13 +36,13 @@ class Solution:
         return result
 
 
-# Unit Test: command = "G()(al)", Output: "Goal"
+# Input: command = "G()(al)", Output: "Goal"
 assert Solution.interpret("G()(al)") == "Goal"
 
-# Unit Test: command = "G()()()()(al)", Output: "Gooooal"
+# Input: command = "G()()()()(al)", Output: "Gooooal"
 assert Solution.interpret("G()()()()(al)") == "Gooooal"
 
-# Unit Test: command = "(al)G(al)()()G", Output: "alGalooG"
+# Input: command = "(al)G(al)()()G", Output: "alGalooG"
 assert Solution.interpret("(al)G(al)()()G") == "alGalooG"
 
 print("All unit tests are passed.")

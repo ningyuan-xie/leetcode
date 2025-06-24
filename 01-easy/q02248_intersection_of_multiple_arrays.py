@@ -24,10 +24,10 @@ class Solution:
         return list(sorted(result))
 
 
-# Unit Test: nums = [[3,1,2,4,5],[1,2,3,4],[3,4,5,6]], Output: [3,4]
+# Input: nums = [[3,1,2,4,5],[1,2,3,4],[3,4,5,6]], Output: [3,4]
 assert Solution.intersection([[3, 1, 2, 4, 5], [1, 2, 3, 4], [3, 4, 5, 6]]) == [3, 4]
 
-# Unit Test: nums = [[1,2,3],[4,5,6]], Output: []
+# Input: nums = [[1,2,3],[4,5,6]], Output: []
 assert Solution.intersection([[1, 2, 3], [4, 5, 6]]) == []
 
 print("All unit tests are passed.")

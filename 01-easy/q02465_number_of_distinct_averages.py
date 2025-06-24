@@ -29,10 +29,10 @@ class Solution:
         return len(distinct_averages)
 
 
-# Unit Test: nums = [4,1,4,0,3,5], Output: 2
+# Input: nums = [4,1,4,0,3,5], Output: 2
 assert Solution.distinctAverages([4, 1, 4, 0, 3, 5]) == 2
 
-# Unit Test: nums = [1,1000000], Output: 1
+# Input: nums = [1,1000000], Output: 1
 assert Solution.distinctAverages([1, 1000000]) == 1
 
 print("All unit tests are passed.")

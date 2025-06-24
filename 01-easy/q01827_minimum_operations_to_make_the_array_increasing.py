@@ -30,13 +30,13 @@ class Solution:
         return operations
 
 
-# Unit Test: nums = [1, 1, 1], Output: 3
+# Input: nums = [1, 1, 1], Output: 3
 assert Solution.minOperations([1, 1, 1]) == 3
 
-# Unit Test: nums = [1, 5, 2, 4, 1], Output: 14
+# Input: nums = [1, 5, 2, 4, 1], Output: 14
 assert Solution.minOperations([1, 5, 2, 4, 1]) == 14
 
-# Unit Test: nums = [8], Output: 0
+# Input: nums = [8], Output: 0
 assert Solution.minOperations([8]) == 0
 
 print("All unit tests are passed.")

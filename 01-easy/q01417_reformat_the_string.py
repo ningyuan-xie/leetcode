@@ -33,16 +33,16 @@ class Solution:
         return "".join(result)
 
 
-# Unit Test: s = "a0b1c2", Output: "a0b1c2"
+# Input: s = "a0b1c2", Output: "a0b1c2"
 assert Solution.reformat("a0b1c2") == "a0b1c2"
 
-# Unit Test: s = "leetcode", Output: ""
+# Input: s = "leetcode", Output: ""
 assert Solution.reformat("leetcode") == ""
 
-# Unit Test: s = "1229857369", Output: ""
+# Input: s = "1229857369", Output: ""
 assert Solution.reformat("1229857369") == ""
 
-# Unit Test: s = "ab123", Output: "1a2b3"
+# Input: s = "ab123", Output: "1a2b3"
 assert Solution.reformat("ab123") == "1a2b3"
 
 print("All unit tests are passed.")

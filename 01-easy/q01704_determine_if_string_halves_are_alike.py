@@ -30,16 +30,16 @@ class Solution:
         return count_a == count_b
 
 
-# Unit Test: s = "book", Output: True
+# Input: s = "book", Output: True
 assert Solution.halves_are_alike("book") is True
 
-# Unit Test: s = "textbook", Output: False
+# Input: s = "textbook", Output: False
 assert Solution.halves_are_alike("textbook") is False
 
-# Unit Test: s = "MerryChristmas", Output: False
+# Input: s = "MerryChristmas", Output: False
 assert Solution.halves_are_alike("MerryChristmas") is False
 
-# Unit Test: s = "AbCdEfGh", Output: True
+# Input: s = "AbCdEfGh", Output: True
 assert Solution.halves_are_alike("AbCdEfGh") is True
 
 print("All unit tests are passed.")

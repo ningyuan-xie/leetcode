@@ -17,19 +17,19 @@ class Solution:
         return 0 if s == "" else 1 if s == s[::-1] else 2
 
 
-# Unit Test: s = "ababa", Output: 1
+# Input: s = "ababa", Output: 1
 # Explanation: Remove the only palindromic subsequence "aba" to make the string empty.
 assert Solution.removePalindromeSub("ababa") == 1
 
-# Unit Test: s = "abb", Output: 2
+# Input: s = "abb", Output: 2
 # Explanation: Remove the palindromic subsequence "bb" first, then remove "a" to make the string empty.
 assert Solution.removePalindromeSub("abb") == 2
 
-# Unit Test: s = "baabb", Output: 2
+# Input: s = "baabb", Output: 2
 # Explanation: Remove the palindromic subsequence "baab" first then remove "b" to make the string empty.
 assert Solution.removePalindromeSub("baabb") == 2
 
-# Unit Test: s = "", Output: 0
+# Input: s = "", Output: 0
 # Explanation: The string is already empty.
 assert Solution.removePalindromeSub("") == 0
 

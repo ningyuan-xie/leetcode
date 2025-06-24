@@ -35,13 +35,13 @@ class Solution:
         return distance
 
 
-# Unit Test: mainTank = 5, additionalTank = 10, Output: 60
+# Input: mainTank = 5, additionalTank = 10, Output: 60
 assert Solution.distanceTraveled(5, 10) == 60
 
-# Unit Test: mainTank = 1, additionalTank = 2, Output: 10
+# Input: mainTank = 1, additionalTank = 2, Output: 10
 assert Solution.distanceTraveled(1, 2) == 10
 
-# Unit Test: mainTank = 7, additionalTank = 1, Output: 80
+# Input: mainTank = 7, additionalTank = 1, Output: 80
 assert Solution.distanceTraveled(7, 1) == 80
 
 print("All unit tests are passed.")

@@ -34,13 +34,13 @@ class Solution:
 
 
 def unit_tests():
-    # Unit Test: nums = [4, 2, 3], k = 1, Output: 5
+    # Input: nums = [4, 2, 3], k = 1, Output: 5
     assert Solution.largestSumAfterKNegations([4, 2, 3], 1) == 5
 
-    # Unit Test: nums = [3, -1, 0, 2], k = 3, Output: 6
+    # Input: nums = [3, -1, 0, 2], k = 3, Output: 6
     assert Solution.largestSumAfterKNegations([3, -1, 0, 2], 3) == 6
 
-    # Unit Test: nums = [2, -3, -1, 5, -4], k = 2, Output: 13
+    # Input: nums = [2, -3, -1, 5, -4], k = 2, Output: 13
 assert Solution.largestSumAfterKNegations([2, -3, -1, 5, -4], 2) == 13
 
 

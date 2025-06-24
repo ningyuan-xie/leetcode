@@ -35,13 +35,13 @@ class Solution:
         return max_length
 
 
-# Unit Test: nums = [1,4,3,3,2], Output = 2
+# Input: nums = [1,4,3,3,2], Output = 2
 assert Solution.longestMonotonicSubarray([1, 4, 3, 3, 2]) == 2
 
-# Unit Test: nums = [3,3,3,3], Output = 1
+# Input: nums = [3,3,3,3], Output = 1
 assert Solution.longestMonotonicSubarray([3, 3, 3, 3]) == 1
 
-# Unit Test: nums = [3,2,1], Output = 3
+# Input: nums = [3,2,1], Output = 3
 assert Solution.longestMonotonicSubarray([3, 2, 1]) == 3
 
 print("All unit tests are passed.")

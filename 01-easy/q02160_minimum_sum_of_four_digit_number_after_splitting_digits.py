@@ -31,10 +31,10 @@ class Solution:
         return new1 + new2
 
 
-# Unit Test: num = 2932, Output: 52
+# Input: num = 2932, Output: 52
 assert Solution.minimumSum(2932) == 52
 
-# Unit Test: num = 4009, Output: 13
+# Input: num = 4009, Output: 13
 assert Solution.minimumSum(4009) == 13
 
 print("All unit tests are passed.")

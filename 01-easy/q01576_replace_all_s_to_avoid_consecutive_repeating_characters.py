@@ -34,13 +34,13 @@ class Solution:
         return ''.join(s)
 
 
-# Unit Test: s = "?zs", Output: "azs"
+# Input: s = "?zs", Output: "azs"
 assert Solution.modifyString("?zs") == "azs"
 
-# Unit Test: s = "ubv?w", Output: "ubvaw"
+# Input: s = "ubv?w", Output: "ubvaw"
 assert Solution.modifyString("ubv?w") == "ubvaw"
 
-# Unit Test: s = "j?qg??b", Output: "jaqgacb"
+# Input: s = "j?qg??b", Output: "jaqgacb"
 assert Solution.modifyString("j?qg??b") == "jaqgacb"
 
 print("All unit tests are passed.")

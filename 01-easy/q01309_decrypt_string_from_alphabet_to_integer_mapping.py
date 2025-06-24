@@ -31,13 +31,13 @@ class Solution:
         return result
 
 
-# Unit Test: s = "10#11#12", Output: "jkab"
+# Input: s = "10#11#12", Output: "jkab"
 assert Solution.freqAlphabets("10#11#12") == "jkab"
 
-# Unit Test: s = "1326#", Output: "acz"
+# Input: s = "1326#", Output: "acz"
 assert Solution.freqAlphabets("1326#") == "acz"
 
-# Unit Test: s = "25#", Output: "y"
+# Input: s = "25#", Output: "y"
 assert Solution.freqAlphabets("25#") == "y"
 
 print("All unit tests are passed.")

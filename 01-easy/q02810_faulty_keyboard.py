@@ -20,10 +20,10 @@ class Solution:
         return ''.join(stack)
 
 
-# Unit Test: s = "string", Output: "rtsng"
+# Input: s = "string", Output: "rtsng"
 assert Solution.finalString("string") == "rtsng"
 
-# Unit Test: s = "poiinter", Output: "ponter"
+# Input: s = "poiinter", Output: "ponter"
 assert Solution.finalString("poiinter") == "ponter"
 
 print("All unit tests are passed.")

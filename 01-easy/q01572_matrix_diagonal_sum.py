@@ -27,13 +27,13 @@ class Solution:
         return diagonal_sum
 
 
-# Unit Test: mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], Output: 25
+# Input: mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], Output: 25
 assert Solution.diagonalSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) == 25
 
-# Unit Test: mat = [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]], Output: 8
+# Input: mat = [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]], Output: 8
 assert Solution.diagonalSum([[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]) == 8
 
-# Unit Test: mat = [[5]], Output: 5
+# Input: mat = [[5]], Output: 5
 assert Solution.diagonalSum([[5]]) == 5
 
 print("All unit tests are passed.")

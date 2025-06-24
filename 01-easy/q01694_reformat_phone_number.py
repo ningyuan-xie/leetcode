@@ -44,16 +44,16 @@ class Solution:
         return "-".join(result)
 
 
-# Unit Test: number = "1-23-45 6", Output: "123-456"
+# Input: number = "1-23-45 6", Output: "123-456"
 assert Solution.reformat_number("1-23-45 6") == "123-456"
 
-# Unit Test: number = "123 4-567", Output: "123-45-67"
+# Input: number = "123 4-567", Output: "123-45-67"
 assert Solution.reformat_number("123 4-567") == "123-45-67"
 
-# Unit Test: number = "123 4-5678", Output: "123-456-78"
+# Input: number = "123 4-5678", Output: "123-456-78"
 assert Solution.reformat_number("123 4-5678") == "123-456-78"
 
-# Unit Test: number = "12", Output: "12"
+# Input: number = "12", Output: "12"
 assert Solution.reformat_number("12") == "12"
 
 print("All unit tests are passed.")

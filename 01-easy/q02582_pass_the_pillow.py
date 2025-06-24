@@ -30,10 +30,10 @@ class Solution:
             return n - remaining_time
 
 
-# Unit Test: n = 4, time = 5, Output: 2
+# Input: n = 4, time = 5, Output: 2
 assert Solution.passThePillow(4, 5) == 2
 
-# Unit Test: n = 3, time = 2, Output: 3
+# Input: n = 3, time = 2, Output: 3
 assert Solution.passThePillow(3, 2) == 3
 
 print("All unit tests are passed.")

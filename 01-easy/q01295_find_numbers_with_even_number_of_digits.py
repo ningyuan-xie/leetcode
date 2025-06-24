@@ -29,10 +29,10 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [12, 345, 2, 6, 7896], Output: 2
+# Input: nums = [12, 345, 2, 6, 7896], Output: 2
 assert Solution.findNumbers([12, 345, 2, 6, 7896]) == 2
 
-# Unit Test: nums = [555, 901, 482, 1771], Output: 1
+# Input: nums = [555, 901, 482, 1771], Output: 1
 assert Solution.findNumbers([555, 901, 482, 1771]) == 1
 
 print("All unit tests are passed.")

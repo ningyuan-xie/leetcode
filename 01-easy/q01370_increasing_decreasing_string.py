@@ -49,19 +49,19 @@ class Solution:
         return "".join(result)
 
 
-# Unit Test: s = "aaaabbbbcccc", Output: "abccbaabccba"
+# Input: s = "aaaabbbbcccc", Output: "abccbaabccba"
 assert Solution.sortString("aaaabbbbcccc") == "abccbaabccba"
 
-# Unit Test: s = "rat", Output: "art"
+# Input: s = "rat", Output: "art"
 assert Solution.sortString("rat") == "art"
 
-# Unit Test: s = "leetcode", Output: "cdelotee"
+# Input: s = "leetcode", Output: "cdelotee"
 assert Solution.sortString("leetcode") == "cdelotee"
 
-# Unit Test: s = "ggggggg", Output: "ggggggg"
+# Input: s = "ggggggg", Output: "ggggggg"
 assert Solution.sortString("ggggggg") == "ggggggg"
 
-# Unit Test: s = "spo", Output: "ops"
+# Input: s = "spo", Output: "ops"
 assert Solution.sortString("spo") == "ops"
 
 print("All unit tests are passed.")

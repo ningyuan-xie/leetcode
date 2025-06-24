@@ -33,10 +33,10 @@ class Solution:
         return int(num1) + int(num2)
 
 
-# Unit Test: num = 4325, Output: 59
+# Input: num = 4325, Output: 59
 assert Solution.splitNum(4325) == 59
 
-# Unit Test: num = 687, Output: 75
+# Input: num = 687, Output: 75
 assert Solution.splitNum(687) == 75
 
 print("All unit tests are passed.")

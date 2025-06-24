@@ -30,13 +30,13 @@ class Solution:
         return result == arr
 
 
-# Unit Test: arr = [15, 88], pieces = [[88], [15]], Output: True
+# Input: arr = [15, 88], pieces = [[88], [15]], Output: True
 assert Solution.canFormArray([15, 88], [[88], [15]]) is True
 
-# Unit Test: arr = [49, 18, 16], pieces = [[16, 18, 49]], Output: False
+# Input: arr = [49, 18, 16], pieces = [[16, 18, 49]], Output: False
 assert Solution.canFormArray([49, 18, 16], [[16, 18, 49]]) is False
 
-# Unit Test: arr = [91, 4, 64, 78], pieces = [[78], [4, 64], [91]], Output: True
+# Input: arr = [91, 4, 64, 78], pieces = [[78], [4, 64], [91]], Output: True
 assert Solution.canFormArray([91, 4, 64, 78], [[78], [4, 64], [91]]) is True
 
 print("All unit tests are passed.")

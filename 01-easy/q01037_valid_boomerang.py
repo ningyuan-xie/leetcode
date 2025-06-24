@@ -28,15 +28,15 @@ class Solution:
         return slope1 != slope2
 
 
-# Unit Test: points = [[1, 1], [2, 3], [3, 2]], Output: True
+# Input: points = [[1, 1], [2, 3], [3, 2]], Output: True
 # Explanation: The slopes are different.
 assert Solution.isBoomerang([[1, 1], [2, 3], [3, 2]]) is True
 
-# Unit Test: points = [[1, 1], [2, 2], [3, 3]], Output: False
+# Input: points = [[1, 1], [2, 2], [3, 3]], Output: False
 # Explanation: The slopes are the same.
 assert Solution.isBoomerang([[1, 1], [2, 2], [3, 3]]) is False
 
-# Unit Test: points = [[1, 1], [2, 2], [1, 1]], Output: False
+# Input: points = [[1, 1], [2, 2], [1, 1]], Output: False
 # Explanation: The points are not distinct.
 assert Solution.isBoomerang([[1, 1], [2, 2], [1, 1]]) is False
 

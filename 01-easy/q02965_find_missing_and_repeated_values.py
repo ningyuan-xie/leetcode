@@ -35,10 +35,10 @@ class Solution:
         return [repeated, missing]
 
 
-# Unit Test: grid = [[1,3],[2,2]], Output: [2,4]
+# Input: grid = [[1,3],[2,2]], Output: [2,4]
 assert Solution.findMissingAndRepeatedValues([[1, 3], [2, 2]]) == [2, 4]
 
-# Unit Test: grid = [[9,1,7],[8,9,2],[3,4,6]], Output: [9,5]
+# Input: grid = [[9,1,7],[8,9,2],[3,4,6]], Output: [9,5]
 assert Solution.findMissingAndRepeatedValues([[9, 1, 7], [8, 9, 2], [3, 4, 6]]) == [9, 5]
 
 print("All unit tests are passed.")

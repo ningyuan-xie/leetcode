@@ -41,7 +41,7 @@ class OrderedStream:
         return result
 
 
-# Unit Test: n = 5, insert(3, "ccccc") -> [], insert(1, "aaaaa") -> ["aaaaa"], insert(2, "bbbbb") ->
+# Input: n = 5, insert(3, "ccccc") -> [], insert(1, "aaaaa") -> ["aaaaa"], insert(2, "bbbbb") ->
 # ["bbbbb", "ccccc"], insert(5, "eeeee") -> [], insert(4, "ddddd") -> ["ddddd", "eeeee"]
 os = OrderedStream(5)
 assert os.insert(3, "ccccc") == []

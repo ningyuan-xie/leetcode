@@ -22,10 +22,10 @@ class Solution:
         return product_of_digits - sum_of_digits
 
 
-# Unit Test: n = 234, Output: 15
+# Input: n = 234, Output: 15
 assert Solution.subtractProductAndSum(234) == 15
 
-# Unit Test: n = 4421, Output: 21
+# Input: n = 4421, Output: 21
 assert Solution.subtractProductAndSum(4421) == 21
 
 print("All unit tests are passed.")

@@ -22,13 +22,13 @@ class Solution:
         return ans
 
 
-# Unit Test: n = 7, Output: 1
+# Input: n = 7, Output: 1
 assert Solution.countDividingDigits(7) == 1
 
-# Unit Test: n = 121, Output: 2
+# Input: n = 121, Output: 2
 assert Solution.countDividingDigits(121) == 2
 
-# Unit Test: n = 1248, Output: 4
+# Input: n = 1248, Output: 4
 assert Solution.countDividingDigits(1248) == 4
 
 print("All unit tests are passed.")

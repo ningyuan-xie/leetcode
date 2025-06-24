@@ -25,16 +25,16 @@ class Solution:
         return (len(s1) + len(s2) + len(s3) - 3 * longest_common) if longest_common > 0 else -1
 
 
-# Unit Test: s1 = "abc", s2 = "abb", s3 = "ab", Output: 2
+# Input: s1 = "abc", s2 = "abb", s3 = "ab", Output: 2
 assert Solution.findMinimumOperations("abc", "abb", "ab") == 2
 
-# Unit Test: s1 = "dac", s2 = "bac", s3 = "cac", Output: -1
+# Input: s1 = "dac", s2 = "bac", s3 = "cac", Output: -1
 assert Solution.findMinimumOperations("dac", "bac", "cac") == -1
 
-# Unit Test: s1 = "a", s2 = "a", s3 = "a", Output: 0
+# Input: s1 = "a", s2 = "a", s3 = "a", Output: 0
 assert Solution.findMinimumOperations("a", "a", "a") == 0
 
-# Unit Test: s1 = "a", s2 = "aabc", s3 = "a", Output: 3
+# Input: s1 = "a", s2 = "aabc", s3 = "a", Output: 3
 assert Solution.findMinimumOperations("a", "aabc", "a") == 3
 
 print("All unit tests are passed.")

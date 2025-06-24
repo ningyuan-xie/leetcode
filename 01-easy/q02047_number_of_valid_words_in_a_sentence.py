@@ -29,16 +29,16 @@ class Solution:
                    for token in sentence.split())
 
 
-# Unit Test: sentence = "cat and  dog", Output: 3
+# Input: sentence = "cat and  dog", Output: 3
 assert Solution.countValidWords("cat and  dog") == 3
 
-# Unit Test: sentence = "!this  1-s b8d!", Output: 0
+# Input: sentence = "!this  1-s b8d!", Output: 0
 assert Solution.countValidWords("!this  1-s b8d!") == 0
 
-# Unit Test: sentence = "alice and  bob are playing stone-game10", Output: 5
+# Input: sentence = "alice and  bob are playing stone-game10", Output: 5
 assert Solution.countValidWords("alice and  bob are playing stone-game10") == 5
 
-# Unit Test: sentence = ""he bought 2 pencils, 3 erasers, and 1  pencil-sharpener.", Output: 6
+# Input: sentence = ""he bought 2 pencils, 3 erasers, and 1  pencil-sharpener.", Output: 6
 assert Solution.countValidWords("he bought 2 pencils, 3 erasers, and 1  pencil-sharpener.") == 6
 
 print("All unit tests are passed.")

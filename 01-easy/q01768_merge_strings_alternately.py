@@ -28,13 +28,13 @@ class Solution:
         return "".join(merged)
 
 
-# Unit Test: word1 = "abc", word2 = "pqr", Output: "apbqcr"
+# Input: word1 = "abc", word2 = "pqr", Output: "apbqcr"
 assert Solution.merge_alternately("abc", "pqr") == "apbqcr"
 
-# Unit Test: word1 = "ab", word2 = "pqrs", Output: "apbqrs"
+# Input: word1 = "ab", word2 = "pqrs", Output: "apbqrs"
 assert Solution.merge_alternately("ab", "pqrs") == "apbqrs"
 
-# Unit Test: word1 = "abcd", word2 = "pq", Output: "apbqcd"
+# Input: word1 = "abcd", word2 = "pq", Output: "apbqcd"
 assert Solution.merge_alternately("abcd", "pq") == "apbqcd"
 
 print("All unit tests are passed.")

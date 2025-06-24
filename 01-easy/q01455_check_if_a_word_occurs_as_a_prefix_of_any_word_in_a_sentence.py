@@ -31,19 +31,19 @@ class Solution:
         return -1
 
 
-# Unit Test: sentence = "i love eating burger", searchWord = "burg", Output: 4
+# Input: sentence = "i love eating burger", searchWord = "burg", Output: 4
 assert Solution.isPrefixOfWord("i love eating burger", "burg") == 4
 
-# Unit Test: sentence = "this problem is an easy problem", searchWord = "pro", Output: 2
+# Input: sentence = "this problem is an easy problem", searchWord = "pro", Output: 2
 assert Solution.isPrefixOfWord("this problem is an easy problem", "pro") == 2
 
-# Unit Test: sentence = "i am tired", searchWord = "you", Output: -1
+# Input: sentence = "i am tired", searchWord = "you", Output: -1
 assert Solution.isPrefixOfWord("i am tired", "you") == -1
 
-# Unit Test: sentence = "i use triple pillow", searchWord = "pill", Output: 4
+# Input: sentence = "i use triple pillow", searchWord = "pill", Output: 4
 assert Solution.isPrefixOfWord("i use triple pillow", "pill") == 4
 
-# Unit Test: sentence = "hello from the other side", searchWord = "they", Output: -1
+# Input: sentence = "hello from the other side", searchWord = "they", Output: -1
 assert Solution.isPrefixOfWord("hello from the other side", "they") == -1
 
 print("All unit tests are passed.")

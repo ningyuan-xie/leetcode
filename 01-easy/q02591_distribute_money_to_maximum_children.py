@@ -38,19 +38,19 @@ class Solution:
         return max_eights
 
 
-# Unit Test: money = 20, children = 3, Output: 1
+# Input: money = 20, children = 3, Output: 1
 assert Solution.distMoney(20, 3) == 1
 
-# Unit Test: money = 16, children = 2, Output: 2
+# Input: money = 16, children = 2, Output: 2
 assert Solution.distMoney(16, 2) == 2
 
 # United Test: money = 17, children = 2, Output: 1
 assert Solution.distMoney(17, 2) == 1
 
-# Unit Test: money = 8, children = 2, Output: 0
+# Input: money = 8, children = 2, Output: 0
 assert Solution.distMoney(8, 2) == 0
 
-# Unit Test: money = 23, children = 2, Output: 1
+# Input: money = 23, children = 2, Output: 1
 assert Solution.distMoney(23, 2) == 1
 
 print("All unit tests are passed.")

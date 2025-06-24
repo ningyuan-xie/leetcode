@@ -23,10 +23,10 @@ class Solution:
         return count
 
 
-# Unit Test: num1 = 2, num2 = 3, Output: 3
+# Input: num1 = 2, num2 = 3, Output: 3
 assert Solution.countOperations(2, 3) == 3
 
-# Unit Test: num1 = 10, num2 = 10, Output: 1
+# Input: num1 = 10, num2 = 10, Output: 1
 assert Solution.countOperations(10, 10) == 1
 
 print("All unit tests are passed.")

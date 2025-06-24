@@ -27,13 +27,13 @@ class Solution:
         return "".join(stack)
 
 
-# Unit Test: s = "abbaca", Output: "ca"
+# Input: s = "abbaca", Output: "ca"
 assert Solution.removeDuplicates("abbaca") == "ca"
 
-# Unit Test: s = "azxxzy", Output: "ay"
+# Input: s = "azxxzy", Output: "ay"
 assert Solution.removeDuplicates("azxxzy") == "ay"
 
-# Unit Test: s = "a", Output: "a"
+# Input: s = "a", Output: "a"
 assert Solution.removeDuplicates("a") == "a"
 
 print("All unit tests are passed.")

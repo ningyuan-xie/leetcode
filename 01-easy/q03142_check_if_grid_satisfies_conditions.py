@@ -35,13 +35,13 @@ class Solution:
         return True
 
 
-# Unit Test: grid = [[1,0,2],[1,0,2]], Output = True
+# Input: grid = [[1,0,2],[1,0,2]], Output = True
 assert Solution.checkGrid([[1, 0, 2], [1, 0, 2]]) is True
 
-# Unit Test: grid = [[1,1,1],[0,0,0]], Output = False
+# Input: grid = [[1,1,1],[0,0,0]], Output = False
 assert Solution.checkGrid([[1, 1, 1], [0, 0, 0]]) is False
 
-# Unit Test: grid = [[1],[2],[3]], Output = False
+# Input: grid = [[1],[2],[3]], Output = False
 assert Solution.checkGrid([[1], [2], [3]]) is False
 
 print("All unit tests are passed.")

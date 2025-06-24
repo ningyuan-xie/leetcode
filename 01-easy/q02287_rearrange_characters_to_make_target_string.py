@@ -32,13 +32,13 @@ class Solution:
         return max_copies
 
 
-# Unit Test: s = "ilovecodingonleetcode", target = "code", Output: 2
+# Input: s = "ilovecodingonleetcode", target = "code", Output: 2
 assert Solution.rearrangeCharacters("ilovecodingonleetcode", "code") == 2
 
-# Unit Test: s = "abcba", target = "abc", Output: 1
+# Input: s = "abcba", target = "abc", Output: 1
 assert Solution.rearrangeCharacters("abcba", "abc") == 1
 
-# Unit Test: s = "abbaccaddaeea", target = "aaaaa", Output: 1
+# Input: s = "abbaccaddaeea", target = "aaaaa", Output: 1
 assert Solution.rearrangeCharacters("abbaccaddaeea", "aaaaa") == 1
 
 print("All unit tests are passed.")

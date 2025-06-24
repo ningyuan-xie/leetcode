@@ -28,13 +28,13 @@ class Solution:
         return decoded
 
 
-# Unit Test: encoded = [1, 2, 3], first = 1, Output: [1, 0, 2, 1]
+# Input: encoded = [1, 2, 3], first = 1, Output: [1, 0, 2, 1]
 assert Solution.decode([1, 2, 3], 1) == [1, 0, 2, 1]
 
-# Unit Test: encoded = [6, 2, 7, 3], first = 4, Output: [4, 2, 0, 7, 4]
+# Input: encoded = [6, 2, 7, 3], first = 4, Output: [4, 2, 0, 7, 4]
 assert Solution.decode([6, 2, 7, 3], 4) == [4, 2, 0, 7, 4]
 
-# Unit Test: encoded = [1], first = 1, Output: [1, 0]
+# Input: encoded = [1], first = 1, Output: [1, 0]
 assert Solution.decode([1], 1) == [1, 0]
 
 print("All unit tests are passed.")

@@ -24,10 +24,10 @@ class Solution:
         return num[:index + 1]
 
 
-# Unit Test: num = "51230100", Output: "512301"
+# Input: num = "51230100", Output: "512301"
 assert Solution.removeTrailingZeros("51230100") == "512301"
 
-# Unit Test: num = "123", Output: "123"
+# Input: num = "123", Output: "123"
 assert Solution.removeTrailingZeros("123") == "123"
 
 print("All unit tests are passed.")

@@ -35,13 +35,13 @@ class Solution:
         return False
 
 
-# Unit Test: grid = [["B","W","B"],["B","W","W"],["B","W","B"]], Output = True
+# Input: grid = [["B","W","B"],["B","W","W"],["B","W","B"]], Output = True
 assert Solution.canMakeSquare([["B", "W", "B"], ["B", "W", "W"], ["B", "W", "B"]]) is True
 
-# Unit Test: grid = [["B","W","B"],["W","B","W"],["B","W","B"]], Output = False
+# Input: grid = [["B","W","B"],["W","B","W"],["B","W","B"]], Output = False
 assert Solution.canMakeSquare([["B", "W", "B"], ["W", "B", "W"], ["B", "W", "B"]]) is False
 
-# Unit Test: grid = [["B","W","B"],["B","W","W"],["B","W","W"]], Output = True
+# Input: grid = [["B","W","B"],["B","W","W"],["B","W","W"]], Output = True
 assert Solution.canMakeSquare([["B", "W", "B"], ["B", "W", "W"], ["B", "W", "W"]]) is True
 
 print("All unit tests are passed.")

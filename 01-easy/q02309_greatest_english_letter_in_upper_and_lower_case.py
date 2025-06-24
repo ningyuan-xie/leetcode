@@ -29,13 +29,13 @@ class Solution:
         return greatest_letter
 
 
-# Unit Test: s = "lEeTcOdE", Output: "E"
+# Input: s = "lEeTcOdE", Output: "E"
 assert Solution.greatestLetter("lEeTcOdE") == "E"
 
-# Unit Test: s = "arRAzFif", Output: "R"
+# Input: s = "arRAzFif", Output: "R"
 assert Solution.greatestLetter("arRAzFif") == "R"
 
-# Unit Test: s = "AbCdEfGhIjK", Output: ""
+# Input: s = "AbCdEfGhIjK", Output: ""
 assert Solution.greatestLetter("AbCdEfGhIjK") == ""
 
 print("All unit tests are passed.")

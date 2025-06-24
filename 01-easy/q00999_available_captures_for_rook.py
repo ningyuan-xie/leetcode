@@ -36,7 +36,7 @@ class Solution:
 
 
 def unit_tests():
-    # Unit Test: rook is at (2, 3); the rook is attacking all the pawns
+    # Input: rook is at (2, 3); the rook is attacking all the pawns
     board_test = [[".", ".", ".", ".", ".", ".", ".", "."],
                   [".", ".", ".", "p", ".", ".", ".", "."],
                   [".", ".", ".", "R", ".", ".", ".", "p"],
@@ -47,7 +47,7 @@ def unit_tests():
                   [".", ".", ".", ".", ".", ".", ".", "."]]
     assert Solution.numRookCaptures(board_test) == 3
 
-    # Unit Test: rook is at (3, 3); the rook is attacking all the pawns
+    # Input: rook is at (3, 3); the rook is attacking all the pawns
     board_test = [[".", ".", ".", ".", ".", ".", ".", "."],
                   [".", "p", "p", "p", "p", "p", ".", "."],
                   [".", "p", "p", "B", "p", "p", ".", "."],
@@ -58,7 +58,7 @@ def unit_tests():
                   [".", ".", ".", ".", ".", ".", ".", "."]]
     assert Solution.numRookCaptures(board_test) == 0
 
-    # Unit Test: rook is at (3, 3); the rook is attacking the pawns at positions b5, d6, and f5
+    # Input: rook is at (3, 3); the rook is attacking the pawns at positions b5, d6, and f5
     board_test = [[".", ".", ".", ".", ".", ".", ".", "."],
                   [".", ".", ".", "p", ".", ".", ".", "."],
                   [".", ".", ".", "p", ".", ".", ".", "."],

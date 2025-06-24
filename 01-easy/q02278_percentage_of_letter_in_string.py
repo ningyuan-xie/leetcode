@@ -24,10 +24,10 @@ class Solution:
         return int(percentage)
 
 
-# Unit Test: s = "foobar", letter = "o", Output: 33
+# Input: s = "foobar", letter = "o", Output: 33
 assert Solution.percentageLetter("foobar", "o") == 33
 
-# Unit Test: s = "jjjj", letter = "k", Output: 0
+# Input: s = "jjjj", letter = "k", Output: 0
 assert Solution.percentageLetter("jjjj", "k") == 0
 
 print("All unit tests are passed.")

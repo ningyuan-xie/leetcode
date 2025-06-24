@@ -23,13 +23,13 @@ class Solution:
         return 1 - min_sum
 
 
-# Unit Test: nums = [-3, 2, -3, 4, 2], Output: 5
+# Input: nums = [-3, 2, -3, 4, 2], Output: 5
 assert Solution.minStartValue([-3, 2, -3, 4, 2]) == 5
 
-# Unit Test: nums = [1, 2], Output: 1
+# Input: nums = [1, 2], Output: 1
 assert Solution.minStartValue([1, 2]) == 1
 
-# Unit Test: nums = [1, -2, -3], Output: 5
+# Input: nums = [1, -2, -3], Output: 5
 assert Solution.minStartValue([1, -2, -3]) == 5
 
 print("All unit tests are passed.")

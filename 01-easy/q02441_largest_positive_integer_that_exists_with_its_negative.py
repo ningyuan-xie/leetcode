@@ -23,13 +23,13 @@ class Solution:
         return max_k
 
 
-# Unit Test: nums = [-1, 2, -3, 3], Output: 3
+# Input: nums = [-1, 2, -3, 3], Output: 3
 assert Solution.findMaxK([-1, 2, -3, 3]) == 3
 
-# Unit Test: nums = [-1, 10, 6, 7, -7, -6, 5], Output: 7
+# Input: nums = [-1, 10, 6, 7, -7, -6, 5], Output: 7
 assert Solution.findMaxK([-1, 10, 6, 7, -7, -6, 5]) == 7
 
-# Unit Test: nums = [-10, 8, 6, 7, -2, -3], Output: -1
+# Input: nums = [-10, 8, 6, 7, -2, -3], Output: -1
 assert Solution.findMaxK([-10, 8, 6, 7, -2, -3]) == -1
 
 print("All unit tests are passed.")

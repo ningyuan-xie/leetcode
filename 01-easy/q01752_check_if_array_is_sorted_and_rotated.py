@@ -31,13 +31,13 @@ class Solution:
         return rotations <= 1
 
 
-# Unit Test: nums = [3, 4, 5, 1, 2], Output: True
+# Input: nums = [3, 4, 5, 1, 2], Output: True
 assert Solution.check([3, 4, 5, 1, 2]) is True
 
-# Unit Test: nums = [2, 1, 3, 4], Output: False
+# Input: nums = [2, 1, 3, 4], Output: False
 assert Solution.check([2, 1, 3, 4]) is False
 
-# Unit Test: nums = [1, 2, 3], Output: True
+# Input: nums = [1, 2, 3], Output: True
 assert Solution.check([1, 2, 3]) is True
 
 print("All unit tests are passed.")

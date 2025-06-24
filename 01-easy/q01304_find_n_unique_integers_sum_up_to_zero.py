@@ -26,13 +26,13 @@ class Solution:
         return arr
 
 
-# Unit Test: n = 5, Output: [0, 1, -1, 2, -2]
+# Input: n = 5, Output: [0, 1, -1, 2, -2]
 assert Solution.sumZero(5) == [0, 1, -1, 2, -2]
 
-# Unit Test: n = 3, Output: [0, 1, -1]
+# Input: n = 3, Output: [0, 1, -1]
 assert Solution.sumZero(3) == [0, 1, -1]
 
-# Unit Test: n = 1, Output: [0]
+# Input: n = 1, Output: [0]
 assert Solution.sumZero(1) == [0]
 
 print("All unit tests are passed.")

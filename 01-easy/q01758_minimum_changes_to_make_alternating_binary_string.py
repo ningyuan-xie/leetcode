@@ -33,13 +33,13 @@ class Solution:
         return min(pattern0_operations, pattern1_operations)
 
 
-# Unit Test: s = "0100", Output: 1
+# Input: s = "0100", Output: 1
 assert Solution.min_operations("0100") == 1
 
-# Unit Test: s = "10", Output: 0
+# Input: s = "10", Output: 0
 assert Solution.min_operations("10") == 0
 
-# Unit Test: s = "1111", Output: 2
+# Input: s = "1111", Output: 2
 assert Solution.min_operations("1111") == 2
 
 print("All unit tests are passed.")

@@ -24,13 +24,13 @@ class Solution:
         return day_of_year
 
 
-# Unit Test: date = "2019-01-09", Output: 9
+# Input: date = "2019-01-09", Output: 9
 assert Solution.dayOfYear("2019-01-09") == 9
 
-# Unit Test: date = "2019-02-10", Output: 41
+# Input: date = "2019-02-10", Output: 41
 assert Solution.dayOfYear("2019-02-10") == 41
 
-# Unit Test: date = "2003-03-01", Output: 60
+# Input: date = "2003-03-01", Output: 60
 assert Solution.dayOfYear("2003-03-01") == 60
 
 print("All unit tests are passed.")

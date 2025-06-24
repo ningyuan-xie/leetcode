@@ -40,16 +40,16 @@ class Solution:
         return final_prices
 
 
-# Unit Test: prices = [8, 4, 6, 2, 3], Output: [4, 2, 4, 2, 3]
+# Input: prices = [8, 4, 6, 2, 3], Output: [4, 2, 4, 2, 3]
 assert Solution.finalPrices([8, 4, 6, 2, 3]) == [4, 2, 4, 2, 3]
 
-# Unit Test: prices = [1, 2, 3, 4, 5], Output: [1, 2, 3, 4, 5]
+# Input: prices = [1, 2, 3, 4, 5], Output: [1, 2, 3, 4, 5]
 assert Solution.finalPrices([1, 2, 3, 4, 5]) == [1, 2, 3, 4, 5]
 
-# Unit Test: prices = [10, 1, 1, 6], Output: [9, 0, 1, 6]
+# Input: prices = [10, 1, 1, 6], Output: [9, 0, 1, 6]
 assert Solution.finalPrices([10, 1, 1, 6]) == [9, 0, 1, 6]
 
-# Unit Test: prices = [10, 1, 1, 6, 3], Output: [9, 0, 1, 3, 3]
+# Input: prices = [10, 1, 1, 6, 3], Output: [9, 0, 1, 3, 3]
 assert Solution.finalPrices([10, 1, 1, 6, 3]) == [9, 0, 1, 3, 3]
 
 print("All unit tests are passed.")

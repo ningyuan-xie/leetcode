@@ -42,10 +42,10 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [2,4,1,1,6,5], Output: 3
+# Input: nums = [2,4,1,1,6,5], Output: 3
 assert Solution.countHillsAndValleys([2, 4, 1, 1, 6, 5]) == 3
 
-# Unit Test: nums = [6,6,5,5,4,1], Output: 0
+# Input: nums = [6,6,5,5,4,1], Output: 0
 assert Solution.countHillsAndValleys([6, 6, 5, 5, 4, 1]) == 0
 
 print("All unit tests are passed.")

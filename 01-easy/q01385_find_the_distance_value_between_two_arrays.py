@@ -21,13 +21,13 @@ class Solution:
         return count
 
 
-# Unit Test: arr1 = [4, 5, 8], arr2 = [10, 9, 1, 8], d = 2, Output: 2
+# Input: arr1 = [4, 5, 8], arr2 = [10, 9, 1, 8], d = 2, Output: 2
 assert Solution.findTheDistanceValue([4, 5, 8], [10, 9, 1, 8], 2) == 2
 
-# Unit Test: arr1 = [1, 4, 2, 3], arr2 = [-4, -3, 6, 10, 20, 30], d = 3, Output: 2
+# Input: arr1 = [1, 4, 2, 3], arr2 = [-4, -3, 6, 10, 20, 30], d = 3, Output: 2
 assert Solution.findTheDistanceValue([1, 4, 2, 3], [-4, -3, 6, 10, 20, 30], 3) == 2
 
-# Unit Test: arr1 = [2, 1, 100, 3], arr2 = [-5, -2, 10, -3, 7], d = 6, Output: 1
+# Input: arr1 = [2, 1, 100, 3], arr2 = [-5, -2, 10, -3, 7], d = 6, Output: 1
 assert Solution.findTheDistanceValue([2, 1, 100, 3], [-5, -2, 10, -3, 7], 6) == 1
 
 print("All unit tests are passed.")

@@ -33,10 +33,10 @@ class Solution:
         return count
 
 
-# Unit Test: hours = [12,12,30,24,24], Output = 2
+# Input: hours = [12,12,30,24,24], Output = 2
 assert Solution.countCompleteDayPairs([12, 12, 30, 24, 24]) == 2
 
-# Unit Test: hours = [72,48,24,3], Output = 3
+# Input: hours = [72,48,24,3], Output = 3
 assert Solution.countCompleteDayPairs([72, 48, 24, 3]) == 3
 
 print("All unit tests are passed.")

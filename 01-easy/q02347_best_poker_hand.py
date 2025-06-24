@@ -36,13 +36,13 @@ class Solution:
         return "High Card"
 
 
-# Unit Test: ranks = [13,2,3,1,9], suits = ["a","a","a","a","a"], Output: "Flush"
+# Input: ranks = [13,2,3,1,9], suits = ["a","a","a","a","a"], Output: "Flush"
 assert Solution.bestHand([13, 2, 3, 1, 9], ["a", "a", "a", "a", "a"]) == "Flush"
 
-# Unit Test: ranks = [4,4,2,4,4], suits = ["d","a","a","b","c"], Output: "Three of a Kind"
+# Input: ranks = [4,4,2,4,4], suits = ["d","a","a","b","c"], Output: "Three of a Kind"
 assert Solution.bestHand([4, 4, 2, 4, 4], ["d", "a", "a", "b", "c"]) == "Three of a Kind"
 
-# Unit Test: ranks = [10,10,2,12,9], suits = ["a","b","c","a","d"], Output: "Pair"
+# Input: ranks = [10,10,2,12,9], suits = ["a","b","c","a","d"], Output: "Pair"
 assert Solution.bestHand([10, 10, 2, 12, 9], ["a", "b", "c", "a", "d"]) == "Pair"
 
 print("All unit tests are passed.")

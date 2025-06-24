@@ -27,14 +27,14 @@ class Solution:
         return result
 
 
-# Unit Test: allowed = "ab", words = ["ad", "bd", "aaab", "baa", "badab"], Output: 2
+# Input: allowed = "ab", words = ["ad", "bd", "aaab", "baa", "badab"], Output: 2
 assert Solution.count_consistent_strings("ab", ["ad", "bd", "aaab", "baa", "badab"]) == 2
 
-# Unit Test: allowed = "abc", words = ["a", "b", "c", "ab", "ac", "bc", "abc"], Output: 7
+# Input: allowed = "abc", words = ["a", "b", "c", "ab", "ac", "bc", "abc"], Output: 7
 assert Solution.count_consistent_strings("abc", ["a", "b", "c", "ab",
                                                  "ac", "bc", "abc"]) == 7
 
-# Unit Test: allowed = "cad", words = ["cc", "acd", "b", "ba", "bac", "bad", "ac", "d"], Output: 4
+# Input: allowed = "cad", words = ["cc", "acd", "b", "ba", "bac", "bad", "ac", "d"], Output: 4
 assert Solution.count_consistent_strings("cad", ["cc", "acd", "b", "ba",
                                                  "bac", "bad", "ac", "d"]) == 4
 

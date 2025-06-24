@@ -30,13 +30,13 @@ class Solution:
         return result
 
 
-# Unit Test: n = 987, Output: "987"
+# Input: n = 987, Output: "987"
 assert Solution.thousandSeparator(987) == "987"
 
-# Unit Test: n = 1234, Output: "1.234"
+# Input: n = 1234, Output: "1.234"
 assert Solution.thousandSeparator(1234) == "1.234"
 
-# Unit Test: n = 123456789, Output: "123.456.789"
+# Input: n = 123456789, Output: "123.456.789"
 assert Solution.thousandSeparator(123456789) == "123.456.789"
 
 print("All unit tests are passed.")

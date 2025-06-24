@@ -31,10 +31,10 @@ class Solution:
         return max_ones > max_zeros
 
 
-# Unit Test: s = "1101", Output: True
+# Input: s = "1101", Output: True
 assert Solution.checkZeroOnes("1101") is True
 
-# Unit Test: s = "111000", Output: False
+# Input: s = "111000", Output: False
 assert Solution.checkZeroOnes("111000") is False
 
 print("All unit tests are passed.")

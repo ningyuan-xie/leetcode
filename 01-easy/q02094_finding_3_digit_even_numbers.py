@@ -40,14 +40,14 @@ class Solution:
         return sorted(result)
 
 
-# Unit Test: digits = [2,1,3,0], Output: [102,120,130,132,210,230,302,310,312,320]
+# Input: digits = [2,1,3,0], Output: [102,120,130,132,210,230,302,310,312,320]
 assert (Solution.findThreeDigitEvenNumbers([2, 1, 3, 0]) ==
         [102, 120, 130, 132, 210, 230, 302, 310, 312, 320])
 
-# Unit Test: digits = [2,2,8,8,2], Output: [222,228,282,288,822,828,882]
+# Input: digits = [2,2,8,8,2], Output: [222,228,282,288,822,828,882]
 assert Solution.findThreeDigitEvenNumbers([2, 2, 8, 8, 2]) == [222, 228, 282, 288, 822, 828, 882]
 
-# Unit Test: digits = [3,7,5], Output: []
+# Input: digits = [3,7,5], Output: []
 assert Solution.findThreeDigitEvenNumbers([3, 7, 5]) == []
 
 print("All unit tests are passed.")

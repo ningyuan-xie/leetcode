@@ -21,10 +21,10 @@ class Solution:
         return count
 
 
-# Unit Test: s = "xyzzaz", Output: 1
+# Input: s = "xyzzaz", Output: 1
 assert Solution.countGoodSubstrings("xyzzaz") == 1
 
-# Unit Test: s = "aababcabc", Output: 4
+# Input: s = "aababcabc", Output: 4
 assert Solution.countGoodSubstrings("aababcabc") == 4
 
 print("All unit tests are passed.")

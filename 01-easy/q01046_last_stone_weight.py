@@ -37,13 +37,13 @@ class Solution:
         return -stones[0] if stones else 0
 
 
-# Unit Test: stones = [2, 7, 4, 1, 8, 1], Output: 1
+# Input: stones = [2, 7, 4, 1, 8, 1], Output: 1
 assert Solution.lastStoneWeight([2, 7, 4, 1, 8, 1]) == 1
 
-# Unit Test: stones = [1, 3], Output: 2
+# Input: stones = [1, 3], Output: 2
 assert Solution.lastStoneWeight([1, 3]) == 2
 
-# Unit Test: stones = [2, 2], Output: 0
+# Input: stones = [2, 2], Output: 0
 assert Solution.lastStoneWeight([2, 2]) == 0
 
 print("All unit tests are passed.")

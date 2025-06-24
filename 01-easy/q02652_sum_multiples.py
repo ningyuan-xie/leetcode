@@ -21,13 +21,13 @@ class Solution:
         return sum_multiples
 
 
-# Unit Test: n = 7, Output: 21
+# Input: n = 7, Output: 21
 assert Solution.sumOfMultiples(7) == 21
 
-# Unit Test: n = 10, Output: 40
+# Input: n = 10, Output: 40
 assert Solution.sumOfMultiples(10) == 40
 
-# Unit Test: n = 9, Output: 30
+# Input: n = 9, Output: 30
 assert Solution.sumOfMultiples(9) == 30
 
 print("All unit tests are passed.")

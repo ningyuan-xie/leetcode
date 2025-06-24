@@ -30,13 +30,13 @@ class Solution:
         return max_sum
 
 
-# Unit Test: nums = [10, 20, 30, 5, 10, 50], Output: 65
+# Input: nums = [10, 20, 30, 5, 10, 50], Output: 65
 assert Solution.max_ascending_sum([10, 20, 30, 5, 10, 50]) == 65
 
-# Unit Test: nums = [10, 20, 30, 40, 50], Output: 150
+# Input: nums = [10, 20, 30, 40, 50], Output: 150
 assert Solution.max_ascending_sum([10, 20, 30, 40, 50]) == 150
 
-# Unit Test: nums = [12, 17, 15, 13, 10, 11, 12], Output: 33
+# Input: nums = [12, 17, 15, 13, 10, 11, 12], Output: 33
 assert Solution.max_ascending_sum([12, 17, 15, 13, 10, 11, 12]) == 33
 
 print("All unit tests are passed.")

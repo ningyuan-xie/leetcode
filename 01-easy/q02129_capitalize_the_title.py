@@ -18,13 +18,13 @@ class Solution:
                          for word in title.split()])
 
 
-# Unit Test: title = "capiTalIze tHe titLe", Output: "Capitalize The Title"
+# Input: title = "capiTalIze tHe titLe", Output: "Capitalize The Title"
 assert Solution.capitalizeTitle("capiTalIze tHe titLe") == "Capitalize The Title"
 
-# Unit Test: title = "First leTTeR of EACH Word", Output: "First Letter of Each Word"
+# Input: title = "First leTTeR of EACH Word", Output: "First Letter of Each Word"
 assert Solution.capitalizeTitle("First leTTeR of EACH Word") == "First Letter of Each Word"
 
-# Unit Test: title = "i lOve leetcode", Output: "i Love Leetcode"
+# Input: title = "i lOve leetcode", Output: "i Love Leetcode"
 assert Solution.capitalizeTitle("i lOve leetcode") == "i Love Leetcode"
 
 print("All unit tests are passed.")

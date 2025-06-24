@@ -15,10 +15,10 @@ class Solution:
         return sum_of_digits if x % sum_of_digits == 0 else -1
 
 
-# Unit Test: x = 18, Output = 9
+# Input: x = 18, Output = 9
 assert Solution.sumOfTheDigitsOfHarshadNumber(18) == 9
 
-# Unit Test: x = 23, Output = -1
+# Input: x = 23, Output = -1
 assert Solution.sumOfTheDigitsOfHarshadNumber(23) == -1
 
 print("All unit tests are passed.")

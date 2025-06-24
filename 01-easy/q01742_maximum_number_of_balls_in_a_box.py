@@ -26,13 +26,13 @@ class Solution:
         return max(balls_in_box.values())
 
 
-# Unit Test: low_limit = 1, high_limit = 10, Output: 2
+# Input: low_limit = 1, high_limit = 10, Output: 2
 assert Solution.count_balls(1, 10) == 2
 
-# Unit Test: low_limit = 5, high_limit = 15, Output: 2
+# Input: low_limit = 5, high_limit = 15, Output: 2
 assert Solution.count_balls(5, 15) == 2
 
-# Unit Test: low_limit = 19, high_limit = 28, Output: 2
+# Input: low_limit = 19, high_limit = 28, Output: 2
 assert Solution.count_balls(19, 28) == 2
 
 print("All unit tests are passed.")

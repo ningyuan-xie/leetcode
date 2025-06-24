@@ -35,10 +35,10 @@ class Solution:
         return False
 
 
-# Unit Test: mat = [[0, 1], [1, 0]], target = [[1, 0], [0, 1]], Output: True
+# Input: mat = [[0, 1], [1, 0]], target = [[1, 0], [0, 1]], Output: True
 assert Solution.findRotation([[0, 1], [1, 0]], [[1, 0], [0, 1]]) is True
 
-# Unit Test: mat = [[0, 1], [1, 1]], target = [[1, 0], [0, 1]], Output: False
+# Input: mat = [[0, 1], [1, 1]], target = [[1, 0], [0, 1]], Output: False
 assert Solution.findRotation([[0, 1], [1, 1]], [[1, 0], [0, 1]]) is False
 
 print("All unit tests are passed.")

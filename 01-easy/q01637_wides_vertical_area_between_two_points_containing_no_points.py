@@ -26,10 +26,10 @@ class Solution:
         return max_width
 
 
-# Unit Test: points = [[8, 7], [9, 9], [7, 4], [9, 7]], Output: 1
+# Input: points = [[8, 7], [9, 9], [7, 4], [9, 7]], Output: 1
 assert Solution.maxWidthOfVerticalArea([[8, 7], [9, 9], [7, 4], [9, 7]]) == 1
 
-# Unit Test: points = [[3, 1], [9, 0], [1, 0], [1, 4], [5, 3], [8, 8]], Output: 3
+# Input: points = [[3, 1], [9, 0], [1, 0], [1, 4], [5, 3], [8, 8]], Output: 3
 assert Solution.maxWidthOfVerticalArea([[3, 1], [9, 0], [1, 0], [1, 4], [5, 3], [8, 8]]) == 3
 
 print("All unit tests are passed.")

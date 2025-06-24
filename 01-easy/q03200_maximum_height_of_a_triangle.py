@@ -45,16 +45,16 @@ class Solution:
         return res
 
 
-# Unit Test: red = 2, blue = 4, Output = 3
+# Input: red = 2, blue = 4, Output = 3
 assert Solution.maxHeightOfTriangle(2, 4) == 3
 
-# Unit Test: red = 2, blue = 1, Output = 2
+# Input: red = 2, blue = 1, Output = 2
 assert Solution.maxHeightOfTriangle(2, 1) == 2
 
-# Unit Test: red = 1, blue = 1, Output = 1
+# Input: red = 1, blue = 1, Output = 1
 assert Solution.maxHeightOfTriangle(1, 1) == 1
 
-# Unit Test: red = 10, blue = 1, Output = 2
+# Input: red = 10, blue = 1, Output = 2
 assert Solution.maxHeightOfTriangle(10, 1) == 2
 
 print("All unit tests are passed.")

@@ -35,13 +35,13 @@ class Solution:
         return -1
 
 
-# Unit Test: nums = [2, 3, -1, 8, 4], Output: 3
+# Input: nums = [2, 3, -1, 8, 4], Output: 3
 assert Solution.findMiddleIndex([2, 3, -1, 8, 4]) == 3
 
-# Unit Test: nums = [1, -1, 4], Output: 2
+# Input: nums = [1, -1, 4], Output: 2
 assert Solution.findMiddleIndex([1, -1, 4]) == 2
 
-# Unit Test: nums = [2, 5], Output: -1
+# Input: nums = [2, 5], Output: -1
 assert Solution.findMiddleIndex([2, 5]) == -1
 
 print("All unit tests are passed.")

@@ -14,10 +14,10 @@ class Solution:
         return (arrivalTime + delayedTime) % 24
 
 
-# Unit Test: arrivalTime = 15, delayedTime = 5, Output: 20
+# Input: arrivalTime = 15, delayedTime = 5, Output: 20
 assert Solution.findDelayedArrivalTime(15, 5) == 20
 
-# Unit Test: arrivalTime = 13, delayedTime = 11, Output: 0
+# Input: arrivalTime = 13, delayedTime = 11, Output: 0
 assert Solution.findDelayedArrivalTime(13, 11) == 0
 
 print("All unit tests are passed.")

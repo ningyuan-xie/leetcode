@@ -24,16 +24,16 @@ class Solution:
 
 
 def unit_tests():
-    # Unit Test: nums = [1, 0, 1], Output: [False, False, True]
+    # Input: nums = [1, 0, 1], Output: [False, False, True]
     assert Solution.prefixesDivBy5([1, 0, 1]) == [False, False, True]
 
-    # Unit Test: nums = [0, 1, 1], Output: [True, False, False]
+    # Input: nums = [0, 1, 1], Output: [True, False, False]
     assert Solution.prefixesDivBy5([0, 1, 1]) == [True, False, False]
 
-    # Unit Test: nums = [1, 1, 1], Output: [False, False, False]
+    # Input: nums = [1, 1, 1], Output: [False, False, False]
     assert Solution.prefixesDivBy5([1, 1, 1]) == [False, False, False]
 
-    # Unit Test: nums = [0, 1, 1, 1, 1, 1], Output: [True, False, False, False, True, False]
+    # Input: nums = [0, 1, 1, 1, 1, 1], Output: [True, False, False, False, True, False]
     assert Solution.prefixesDivBy5([0, 1, 1, 1, 1, 1]) == [True, False, False, False, True, False]
 
 

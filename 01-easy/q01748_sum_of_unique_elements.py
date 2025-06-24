@@ -23,13 +23,13 @@ class Solution:
         return sum(num for (num, count) in freq.items() if count == 1)
 
 
-# Unit Test: nums = [1, 2, 3, 2], Output: 4
+# Input: nums = [1, 2, 3, 2], Output: 4
 assert Solution.sum_of_unique([1, 2, 3, 2]) == 4
 
-# Unit Test: nums = [1, 1, 1, 1, 1], Output: 0
+# Input: nums = [1, 1, 1, 1, 1], Output: 0
 assert Solution.sum_of_unique([1, 1, 1, 1, 1]) == 0
 
-# Unit Test: nums = [1, 2, 3, 4, 5], Output: 15
+# Input: nums = [1, 2, 3, 4, 5], Output: 15
 assert Solution.sum_of_unique([1, 2, 3, 4, 5]) == 15
 
 print("All unit tests are passed.")

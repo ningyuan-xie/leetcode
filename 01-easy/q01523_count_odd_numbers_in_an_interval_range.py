@@ -17,13 +17,13 @@ class Solution:
         return count_high - count_low
 
 
-# Unit Test: low = 3, high = 7, Output: 3
+# Input: low = 3, high = 7, Output: 3
 assert Solution.countOdds(3, 7) == 3
 
-# Unit Test: low = 8, high = 10, Output: 1
+# Input: low = 8, high = 10, Output: 1
 assert Solution.countOdds(8, 10) == 1
 
-# Unit Test: low = 1, high = 1, Output: 1
+# Input: low = 1, high = 1, Output: 1
 assert Solution.countOdds(1, 1) == 1
 
 print("All unit tests are passed.")

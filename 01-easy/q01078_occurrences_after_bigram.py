@@ -23,12 +23,12 @@ class Solution:
         return result
 
 
-# Unit Test: text = "alice is a good girl she is a good student", first = "a", second = "good",
+# Input: text = "alice is a good girl she is a good student", first = "a", second = "good",
 # Output: ["girl", "student"]
 assert Solution.findOcurrences("alice is a good girl she is a good student",
                                "a", "good") == ["girl", "student"]
 
-# Unit Test: text = "we will we will rock you", first = "we", second = "will", Output: ["we","rock"]
+# Input: text = "we will we will rock you", first = "we", second = "will", Output: ["we","rock"]
 assert Solution.findOcurrences("we will we will rock you",
                                "we", "will") == ["we", "rock"]
 

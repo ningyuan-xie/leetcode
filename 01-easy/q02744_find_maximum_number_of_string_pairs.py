@@ -33,13 +33,13 @@ class Solution:
         return count
 
 
-# Unit Test: words = ["cd","ac","dc","ca","zz"], Output: 2
+# Input: words = ["cd","ac","dc","ca","zz"], Output: 2
 assert Solution.maximumNumberOfStringPairs(["cd", "ac", "dc", "ca", "zz"]) == 2
 
-# Unit Test: words = ["ab","ba","cc"], Output: 1
+# Input: words = ["ab","ba","cc"], Output: 1
 assert Solution.maximumNumberOfStringPairs(["ab", "ba", "cc"]) == 1
 
-# Unit Test: words = ["aa","ab"], Output: 0
+# Input: words = ["aa","ab"], Output: 0
 assert Solution.maximumNumberOfStringPairs(["aa", "ab"]) == 0
 
 print("All unit tests are passed.")

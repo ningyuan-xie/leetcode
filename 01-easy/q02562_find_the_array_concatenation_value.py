@@ -34,10 +34,10 @@ class Solution:
         return total
 
 
-# Unit Test: nums = [7,52,2,4], Output: 596
+# Input: nums = [7,52,2,4], Output: 596
 assert Solution.findTheArrayConcVal([7, 52, 2, 4]) == 596
 
-# Unit Test: nums = [5,14,13,8,12], Output: 673
+# Input: nums = [5,14,13,8,12], Output: 673
 assert Solution.findTheArrayConcVal([5, 14, 13, 8, 12]) == 673
 
 print("All unit tests are passed.")

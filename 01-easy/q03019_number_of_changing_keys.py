@@ -26,10 +26,10 @@ class Solution:
         return key_changes
 
 
-# Unit Test: s = "aAbBcC", Output = 2
+# Input: s = "aAbBcC", Output = 2
 assert Solution.countKeyChanges("aAbBcC") == 2
 
-# Unit Test: s = "AaAaAaaA", Output = 0
+# Input: s = "AaAaAaaA", Output = 0
 assert Solution.countKeyChanges("AaAaAaaA") == 0
 
 print("All unit tests are passed.")

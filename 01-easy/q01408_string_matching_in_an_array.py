@@ -23,13 +23,13 @@ class Solution:
         return substrings
 
 
-# Unit Test: words = ["mass", "as", "hero", "superhero"], Output: ["as", "hero"]
+# Input: words = ["mass", "as", "hero", "superhero"], Output: ["as", "hero"]
 assert Solution.stringMatching(["mass", "as", "hero", "superhero"]) == ["as", "hero"]
 
-# Unit Test: words = ["leetcode", "et", "code"], Output: ["et", "code"]
+# Input: words = ["leetcode", "et", "code"], Output: ["et", "code"]
 assert Solution.stringMatching(["leetcode", "et", "code"]) == ["et", "code"]
 
-# Unit Test: words = ["blue", "green", "bu"], Output: []
+# Input: words = ["blue", "green", "bu"], Output: []
 assert Solution.stringMatching(["blue", "green", "bu"]) == []
 
 print("All unit tests are passed.")

@@ -30,13 +30,13 @@ class Solution:
         return operations
 
 
-# Unit Test: nums = [2,1,4,3], Output: 2
+# Input: nums = [2,1,4,3], Output: 2
 assert Solution.semiOrderedPermutation([2, 1, 4, 3]) == 2
 
-# Unit Test: nums = [2,4,1,3], Output: 3
+# Input: nums = [2,4,1,3], Output: 3
 assert Solution.semiOrderedPermutation([2, 4, 1, 3]) == 3
 
-# Unit Test: nums = [1,3,4,2,5], Output: 0
+# Input: nums = [1,3,4,2,5], Output: 0
 assert Solution.semiOrderedPermutation([1, 3, 4, 2, 5]) == 0
 
 print("All unit tests are passed.")

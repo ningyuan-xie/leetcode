@@ -41,16 +41,16 @@ class Solution:
         return has_vowel and has_consonant
 
 
-# Unit Test: word = "234Adas", Output = True
+# Input: word = "234Adas", Output = True
 assert Solution.isValidWord("234Adas") is True
 
-# Unit Test: word = "b3", Output = False
+# Input: word = "b3", Output = False
 assert Solution.isValidWord("b3") is False
 
-# Unit Test: word = "a3$e", Output = False
+# Input: word = "a3$e", Output = False
 assert Solution.isValidWord("a3$e") is False
 
-# Unit Test: word = "Ya$", Output = False
+# Input: word = "Ya$", Output = False
 assert Solution.isValidWord("Ya$") is False
 
 print("All unit tests are passed.")

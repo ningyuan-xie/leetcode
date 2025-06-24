@@ -43,12 +43,12 @@ class Solution:
         return training_hours
 
 
-# Unit Test: initialEnergy = 5, initialExperience = 3, energy = [1,4,3,2], experience = [2,6,3,1],
+# Input: initialEnergy = 5, initialExperience = 3, energy = [1,4,3,2], experience = [2,6,3,1],
 # Output: 8
 assert (Solution.minNumberOfHours(5, 3, [1, 4, 3, 2], [2, 6, 3, 1])
         == 8)
 
-# Unit Test: initialEnergy = 2, initialExperience = 4, energy = [1], experience = [3]
+# Input: initialEnergy = 2, initialExperience = 4, energy = [1], experience = [3]
 # Output: 0
 assert (Solution.minNumberOfHours(2, 4, [1], [3])
         == 0)

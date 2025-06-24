@@ -29,13 +29,13 @@ class Solution:
         return list(result)
 
 
-# Unit Test: nums1 = [1, 1, 3, 2], nums2 = [2, 3], nums3 = [3], Output: [2, 3]
+# Input: nums1 = [1, 1, 3, 2], nums2 = [2, 3], nums3 = [3], Output: [2, 3]
 assert Solution.twoOutOfThree([1, 1, 3, 2], [2, 3], [3]) == [2, 3]
 
-# Unit Test: nums1 = [3, 1], nums2 = [2, 3], nums3 = [1, 2], Output: [1, 2, 3]
+# Input: nums1 = [3, 1], nums2 = [2, 3], nums3 = [1, 2], Output: [1, 2, 3]
 assert Solution.twoOutOfThree([3, 1], [2, 3], [1, 2]) == [1, 2, 3]
 
-# Unit Test: nums1 = [1, 2, 2], nums2 = [4, 3, 3], nums3 = [5], Output: []
+# Input: nums1 = [1, 2, 2], nums2 = [4, 3, 3], nums3 = [5], Output: []
 assert Solution.twoOutOfThree([1, 2, 2], [4, 3, 3], [5]) == []
 
 print("All unit tests are passed.")

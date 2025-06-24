@@ -45,13 +45,13 @@ class Solution:
         return max_sum
 
 
-# Unit Test: nums = [112,131,411], Output: -1
+# Input: nums = [112,131,411], Output: -1
 assert Solution.maxSum([112, 131, 411]) == -1
 
-# Unit Test: nums = [2536,1613,3366,162], Output: 5902
+# Input: nums = [2536,1613,3366,162], Output: 5902
 assert Solution.maxSum([2536, 1613, 3366, 162]) == 5902
 
-# Unit Test: nums = [51,71,17,24,42], Output: 88
+# Input: nums = [51,71,17,24,42], Output: 88
 assert Solution.maxSum([51, 71, 17, 24, 42]) == 88
 
 print("All unit tests are passed.")

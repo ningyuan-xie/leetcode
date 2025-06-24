@@ -27,13 +27,13 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [3,1,5,4,2], k = 2, Output: 4
+# Input: nums = [3,1,5,4,2], k = 2, Output: 4
 assert Solution.minOperations([3, 1, 5, 4, 2], 2) == 4
 
-# Unit Test: nums = [3,1,5,4,2], k = 5, Output: 5
+# Input: nums = [3,1,5,4,2], k = 5, Output: 5
 assert Solution.minOperations([3, 1, 5, 4, 2], 5) == 5
 
-# Unit Test: nums = [3,2,5,3,1], k = 3, Output: 4
+# Input: nums = [3,2,5,3,1], k = 3, Output: 4
 assert Solution.minOperations([3, 2, 5, 3, 1], 3) == 4
 
 print("All unit tests are passed.")

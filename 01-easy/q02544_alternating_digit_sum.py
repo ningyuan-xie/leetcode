@@ -20,13 +20,13 @@ class Solution:
         return alternating_sum
 
 
-# Unit Test: n = 521, Output: 4
+# Input: n = 521, Output: 4
 assert Solution.alternatingDigitSum(521) == 4
 
-# Unit Test: n = 111, Output: 1
+# Input: n = 111, Output: 1
 assert Solution.alternatingDigitSum(111) == 1
 
-# Unit Test: n = 886996, Output: 0
+# Input: n = 886996, Output: 0
 assert Solution.alternatingDigitSum(886996) == 0
 
 print("All unit tests are passed.")

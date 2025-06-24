@@ -27,10 +27,10 @@ class Solution:
         return arr
 
 
-# Unit Test: nums = [5,4,2,3], Output: [3,2,5,4]
+# Input: nums = [5,4,2,3], Output: [3,2,5,4]
 assert Solution.numberGame([5, 4, 2, 3]) == [3, 2, 5, 4]
 
-# Unit Test: nums = [2,5], Output: [5,2]
+# Input: nums = [2,5], Output: [5,2]
 assert Solution.numberGame([2, 5]) == [5, 2]
 
 print("All unit tests are passed.")

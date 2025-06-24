@@ -31,13 +31,13 @@ class Solution:
         return max_squares
 
 
-# Unit Test: rectangles = [[5, 8], [3, 9], [5, 12], [16, 5]], Output: 3
+# Input: rectangles = [[5, 8], [3, 9], [5, 12], [16, 5]], Output: 3
 assert Solution.count_good_rectangles([[5, 8], [3, 9], [5, 12], [16, 5]]) == 3
 
-# Unit Test: rectangles = [[2, 3], [3, 7], [4, 3], [3, 7]], Output: 3
+# Input: rectangles = [[2, 3], [3, 7], [4, 3], [3, 7]], Output: 3
 assert Solution.count_good_rectangles([[2, 3], [3, 7], [4, 3], [3, 7]]) == 3
 
-# Unit Test: rectangles = [[5, 8], [3, 9], [3, 12], [16, 5]], Output: 2
+# Input: rectangles = [[5, 8], [3, 9], [3, 12], [16, 5]], Output: 2
 assert Solution.count_good_rectangles([[5, 8], [3, 9], [3, 12], [16, 5]]) == 2
 
 print("All unit tests are passed.")

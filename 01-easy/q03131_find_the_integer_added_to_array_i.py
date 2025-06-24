@@ -18,13 +18,13 @@ class Solution:
         return min(nums2) - min(nums1)
 
 
-# Unit Test: nums1 = [2,6,4], nums2 = [9,7,5], Output = 3
+# Input: nums1 = [2,6,4], nums2 = [9,7,5], Output = 3
 assert Solution.addedInteger([2, 6, 4], [9, 7, 5]) == 3
 
-# Unit Test: nums1 = [10], nums2 = [5], Output = -5
+# Input: nums1 = [10], nums2 = [5], Output = -5
 assert Solution.addedInteger([10], [5]) == -5
 
-# Unit Test: nums1 = [1,1,1,1], nums2 = [1,1,1,1], Output = 0
+# Input: nums1 = [1,1,1,1], nums2 = [1,1,1,1], Output = 0
 assert Solution.addedInteger([1, 1, 1, 1], [1, 1, 1, 1]) == 0
 
 print("All unit tests are passed.")

@@ -17,13 +17,13 @@ class Solution:
         return True
 
 
-# Unit Test: s = "aaabbb", Output: True
+# Input: s = "aaabbb", Output: True
 assert Solution.allAsBeforeBs("aaabbb") is True
 
-# Unit Test: s = "abab", Output: False
+# Input: s = "abab", Output: False
 assert Solution.allAsBeforeBs("abab") is False
 
-# Unit Test: s = "bbb", Output: True
+# Input: s = "bbb", Output: True
 assert Solution.allAsBeforeBs("bbb") is True
 
 print("All unit tests are passed.")

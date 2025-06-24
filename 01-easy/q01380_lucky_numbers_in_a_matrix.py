@@ -22,13 +22,13 @@ class Solution:
         return lucky_numbers
 
 
-# Unit Test: matrix = [[3, 7, 8], [9, 11, 13], [15, 16, 17]], Output: [15]
+# Input: matrix = [[3, 7, 8], [9, 11, 13], [15, 16, 17]], Output: [15]
 assert Solution.luckyNumbers([[3, 7, 8], [9, 11, 13], [15, 16, 17]]) == [15]
 
-# Unit Test: matrix = [[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]], Output: [12]
+# Input: matrix = [[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]], Output: [12]
 assert Solution.luckyNumbers([[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]]) == [12]
 
-# Unit Test: matrix = [[7, 8], [1, 2]], Output: [7]
+# Input: matrix = [[7, 8], [1, 2]], Output: [7]
 assert Solution.luckyNumbers([[7, 8], [1, 2]]) == [7]
 
 print("All unit tests are passed.")

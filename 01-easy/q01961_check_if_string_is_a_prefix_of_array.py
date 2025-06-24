@@ -30,13 +30,13 @@ class Solution:
         return False
 
 
-# Unit Test: s = "iloveleetcode", words = ["i", "love", "leetcode", "apples"], Output: True
+# Input: s = "iloveleetcode", words = ["i", "love", "leetcode", "apples"], Output: True
 assert Solution.isPrefixString("iloveleetcode", ["i", "love", "leetcode", "apples"]) is True
 
-# Unit Test: s = "iloveleetcode", words = ["apples", "i", "love", "leetcode"], Output: False
+# Input: s = "iloveleetcode", words = ["apples", "i", "love", "leetcode"], Output: False
 assert Solution.isPrefixString("iloveleetcode", ["apples", "i", "love", "leetcode"]) is False
 
-# Unit Test: s = "a", words = ["a", "aa", "aaa"], Output: True
+# Input: s = "a", words = ["a", "aa", "aaa"], Output: True
 assert Solution.isPrefixString("a", ["a", "aa", "aaa"]) is True
 
 print("All unit tests are passed.")

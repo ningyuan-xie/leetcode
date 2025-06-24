@@ -41,10 +41,10 @@ class Solution:
         return max_captured
 
 
-# Unit Test: forts = [1,0,0,-1,0,0,0,0,1], Output: 4
+# Input: forts = [1,0,0,-1,0,0,0,0,1], Output: 4
 assert Solution.captureForts([1, 0, 0, -1, 0, 0, 0, 0, 1]) == 4
 
-# Unit Test: forts = [0,0,1,-1], Output: 0
+# Input: forts = [0,0,1,-1], Output: 0
 assert Solution.captureForts([0, 0, 1, -1]) == 0
 
 print("All unit tests are passed.")

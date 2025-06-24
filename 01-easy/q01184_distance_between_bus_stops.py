@@ -28,13 +28,13 @@ class Solution:
         return min(clockwise_distance, counterclockwise_distance)  # min(1, 9) = 1
 
 
-# Unit Test: distance = [1, 2, 3, 4], start = 0, destination = 1, Output: 1
+# Input: distance = [1, 2, 3, 4], start = 0, destination = 1, Output: 1
 assert Solution.distanceBetweenBusStops([1, 2, 3, 4], 0, 1) == 1
 
-# Unit Test: distance = [1, 2, 3, 4], start = 0, destination = 2, Output: 3
+# Input: distance = [1, 2, 3, 4], start = 0, destination = 2, Output: 3
 assert Solution.distanceBetweenBusStops([1, 2, 3, 4], 0, 2) == 3
 
-# Unit Test: distance = [1, 2, 3, 4], start = 0, destination = 3, Output: 4
+# Input: distance = [1, 2, 3, 4], start = 0, destination = 3, Output: 4
 assert Solution.distanceBetweenBusStops([1, 2, 3, 4], 0, 3) == 4
 
 print("All unit tests are passed.")

@@ -24,10 +24,10 @@ class Solution:
         return (col1 + row1) % 2 == (col2 + row2) % 2
 
         
-# Unit Test: coordinate1 = "a1", coordinate2 = "c3", Output: True
+# Input: coordinate1 = "a1", coordinate2 = "c3", Output: True
 assert Solution.checkTwoChessboards("a1", "c3") is True
 
-# Unit Test: coordinate1 = "a1", coordinate2 = "h3", Output: False
+# Input: coordinate1 = "a1", coordinate2 = "h3", Output: False
 assert Solution.checkTwoChessboards("a1", "h3") is False
 
 print("All unit tests are passed.")

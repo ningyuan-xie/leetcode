@@ -26,13 +26,13 @@ class Solution:
         return running_sum
 
 
-# Unit Test: nums = [1, 2, 3, 4], Output: [1, 3, 6, 10]
+# Input: nums = [1, 2, 3, 4], Output: [1, 3, 6, 10]
 assert Solution.runningSum([1, 2, 3, 4]) == [1, 3, 6, 10]
 
-# Unit Test: nums = [1, 1, 1, 1, 1], Output: [1, 2, 3, 4, 5]
+# Input: nums = [1, 1, 1, 1, 1], Output: [1, 2, 3, 4, 5]
 assert Solution.runningSum([1, 1, 1, 1, 1]) == [1, 2, 3, 4, 5]
 
-# Unit Test: nums = [3, 1, 2, 10, 1], Output: [3, 4, 6, 16, 17]
+# Input: nums = [3, 1, 2, 10, 1], Output: [3, 4, 6, 16, 17]
 assert Solution.runningSum([3, 1, 2, 10, 1]) == [3, 4, 6, 16, 17]
 
 print("All unit tests are passed.")

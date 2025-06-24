@@ -28,13 +28,13 @@ class Solution:
         return max_ops
 
 
-# Unit Test: nums = [3,2,1,4,5], Output = 2
+# Input: nums = [3,2,1,4,5], Output = 2
 assert Solution.maxOperations([3, 2, 1, 4, 5]) == 2
 
-# Unit Test: nums = [1,5,3,3,4,1,3,2,2,3], Output = 2
+# Input: nums = [1,5,3,3,4,1,3,2,2,3], Output = 2
 assert Solution.maxOperations([1, 5, 3, 3, 4, 1, 3, 2, 2, 3]) == 2
 
-# Unit Test: nums = [5,3], Output = 1
+# Input: nums = [5,3], Output = 1
 assert Solution.maxOperations([5, 3]) == 1
 
 print("All unit tests are passed.")

@@ -36,10 +36,10 @@ class Solution:
         return ans
 
 
-# Unit Test: nums = [1,2,-1,-1,-1], Output: [2,1,-1]
+# Input: nums = [1,2,-1,-1,-1], Output: [2,1,-1]
 assert Solution.lastVisitedIntegers([1, 2, -1, -1, -1]) == [2, 1, -1]
 
-# Unit Test: nums = [1,-1,2,-1,-1], Output: [1,2,1]
+# Input: nums = [1,-1,2,-1,-1], Output: [1,2,1]
 assert Solution.lastVisitedIntegers([1, -1, 2, -1, -1]) == [1, 2, 1]
 
 print("All unit tests are passed.")

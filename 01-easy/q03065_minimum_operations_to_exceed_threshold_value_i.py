@@ -24,13 +24,13 @@ class Solution:
         return ops
 
 
-# Unit Test: nums = [2,11,10,1,3], k = 10, Output = 3
+# Input: nums = [2,11,10,1,3], k = 10, Output = 3
 assert Solution.minOperations([2, 11, 10, 1, 3], 10) == 3
 
-# Unit Test: nums = [1,1,2,4,9], k = 1, Output = 0
+# Input: nums = [1,1,2,4,9], k = 1, Output = 0
 assert Solution.minOperations([1, 1, 2, 4, 9], 1) == 0
 
-# Unit Test: nums = [1,1,2,4,9], k = 9, Output = 4
+# Input: nums = [1,1,2,4,9], k = 9, Output = 4
 assert Solution.minOperations([1, 1, 2, 4, 9], 9) == 4
 
 print("All unit tests are passed.")

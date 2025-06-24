@@ -32,10 +32,10 @@ class Solution:
         return len(stack)
 
 
-# Unit Test: s = "ABFCACDB", Output: 2
+# Input: s = "ABFCACDB", Output: 2
 assert Solution.minLength("ABFCACDB") == 2
 
-# Unit Test: s = "ACBBD", Output: 5
+# Input: s = "ACBBD", Output: 5
 assert Solution.minLength("ACBBD") == 5
 
 print("All unit tests are passed.")

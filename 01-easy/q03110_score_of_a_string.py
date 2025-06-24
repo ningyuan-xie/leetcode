@@ -18,10 +18,10 @@ class Solution:
         return score
 
 
-# Unit Test: s = "hello", Output = 13
+# Input: s = "hello", Output = 13
 assert Solution.scoreOfString("hello") == 13
 
-# Unit Test: s = "zaz", Output = 50
+# Input: s = "zaz", Output = 50
 assert Solution.scoreOfString("zaz") == 50
 
 print("All unit tests are passed.")

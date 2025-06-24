@@ -22,10 +22,10 @@ class Solution:
         return current_sum // count if count > 0 else 0
 
 
-# Unit Test: nums = [1,3,6,10,12,15], Output: 9
+# Input: nums = [1,3,6,10,12,15], Output: 9
 assert Solution.averageValue([1, 3, 6, 10, 12, 15]) == 9
 
-# Unit Test: nums = [1,2,4,7,10], Output: 0
+# Input: nums = [1,2,4,7,10], Output: 0
 assert Solution.averageValue([1, 2, 4, 7, 10]) == 0
 
 print("All unit tests are passed.")

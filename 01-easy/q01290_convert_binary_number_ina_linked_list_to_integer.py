@@ -27,19 +27,19 @@ class Solution:
         return result
 
 
-# Unit Test: head = [1, 0, 1], Output: 5
+# Input: head = [1, 0, 1], Output: 5
 # 1st node: head.val = 1, result = 0 * 2 + 1 = 1
 # 2nd node: head.val = 0, result = 1 * 2 + 0 = 2
 # 3rd node: head.val = 1, result = 2 * 2 + 1 = 5
 head_test = ListNode.build_linked_list([1, 0, 1])
 assert Solution.getDecimalValue(head_test) == 5
 
-# Unit Test: head = [0], Output: 0
+# Input: head = [0], Output: 0
 # 1st node: head.val = 0, result = 0 * 2 + 0 = 0
 head_test = ListNode.build_linked_list([0])
 assert Solution.getDecimalValue(head_test) == 0
 
-# Unit Test: head = [1], Output: 1
+# Input: head = [1], Output: 1
 # 1st node: head.val = 1, result = 0 * 2 + 1 = 1
 head_test = ListNode.build_linked_list([1])
 assert Solution.getDecimalValue(head_test) == 1

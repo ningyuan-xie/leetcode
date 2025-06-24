@@ -52,15 +52,15 @@ class Solution:
         return preorder_dfs(source)
 
 
-# Unit Test: n = 3, edges = [[0, 1], [1, 2], [2, 0]], source = 0, destination = 2, Output: True
+# Input: n = 3, edges = [[0, 1], [1, 2], [2, 0]], source = 0, destination = 2, Output: True
 assert Solution.validPath(3, [[0, 1], [1, 2], [2, 0]], 0, 2) is True
 
-# Unit Test: n = 6, edges = [[0, 1], [0, 2], [3, 5], [5, 4], [4, 3]], source = 0, destination = 5,
+# Input: n = 6, edges = [[0, 1], [0, 2], [3, 5], [5, 4], [4, 3]], source = 0, destination = 5,
 # Output: False
 # assert (Solution.validPath(6, [[0, 1], [0, 2], [3, 5], [5, 4], [4, 3]], 0, 5)
 #         is False)
 
-# Unit Test: n = 1, edges = [], source = 0, destination = 0, Output: True
+# Input: n = 1, edges = [], source = 0, destination = 0, Output: True
 # assert Solution.validPath(1, [], 0, 0) is True
 
 print("All unit tests are passed.")

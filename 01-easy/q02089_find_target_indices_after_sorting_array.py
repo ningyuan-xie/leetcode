@@ -21,13 +21,13 @@ class Solution:
         return target_indices
 
 
-# Unit Test: nums = [1,2,5,2,3], target = 2, Output: [1, 2]
+# Input: nums = [1,2,5,2,3], target = 2, Output: [1, 2]
 assert Solution.findTargetIndices([1, 2, 5, 2, 3], 2) == [1, 2]
 
-# Unit Test: nums = [1,2,5,2,3], target = 3, Output: [3]
+# Input: nums = [1,2,5,2,3], target = 3, Output: [3]
 assert Solution.findTargetIndices([1, 2, 5, 2, 3], 3) == [3]
 
-# Unit Test: nums = [1,2,5,2,3], target = 5, Output: [4]
+# Input: nums = [1,2,5,2,3], target = 5, Output: [4]
 assert Solution.findTargetIndices([1, 2, 5, 2, 3], 5) == [4]
 
 print("All unit tests are passed.")

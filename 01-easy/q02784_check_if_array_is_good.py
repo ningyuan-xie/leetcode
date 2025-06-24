@@ -32,16 +32,16 @@ class Solution:
         return count[max_num] == 2
 
 
-# Unit Test: nums = [2, 1, 3], Output: false
+# Input: nums = [2, 1, 3], Output: false
 assert Solution.isGood([2, 1, 3]) is False
 
-# Unit Test: nums = [1, 3, 3, 2], Output: true
+# Input: nums = [1, 3, 3, 2], Output: true
 assert Solution.isGood([1, 3, 3, 2]) is True
 
-# Unit Test: nums = [1, 1], Output: true
+# Input: nums = [1, 1], Output: true
 assert Solution.isGood([1, 1]) is True
 
-# Unit Test: nums = [3, 4, 4, 1, 2, 1], Output: false
+# Input: nums = [3, 4, 4, 1, 2, 1], Output: false
 assert Solution.isGood([3, 4, 4, 1, 2, 1]) is False
 
 print("All unit tests are passed.")

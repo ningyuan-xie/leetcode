@@ -34,13 +34,13 @@ class Solution:
         return tax_paid
 
 
-# Unit Test: brackets = [[3,50],[7,10],[12,25]], income = 10, Output: 2.65
+# Input: brackets = [[3,50],[7,10],[12,25]], income = 10, Output: 2.65
 assert Solution.calculateTax([[3, 50], [7, 10], [12, 25]], 10) == 2.65
 
-# Unit Test: brackets = [[1,0],[4,25],[5,50]], income = 2, Output: 0.25
+# Input: brackets = [[1,0],[4,25],[5,50]], income = 2, Output: 0.25
 assert Solution.calculateTax([[1, 0], [4, 25], [5, 50]], 2) == 0.25
 
-# Unit Test: brackets = [[2,50]], income = 0, Output: 0
+# Input: brackets = [[2,50]], income = 0, Output: 0
 assert Solution.calculateTax([[2, 50]], 0) == 0
 
 print("All unit tests are passed.")

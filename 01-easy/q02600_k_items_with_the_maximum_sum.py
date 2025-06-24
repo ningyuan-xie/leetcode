@@ -30,10 +30,10 @@ class Solution:
         return ones_taken - neg_ones_taken
 
 
-# Unit Test: numOnes = 3, numZeros = 2, numNegOnes = 0, k = 2, Output: 2
+# Input: numOnes = 3, numZeros = 2, numNegOnes = 0, k = 2, Output: 2
 assert Solution.kItemsWithMaximumSum(3, 2, 0, 2) == 2
 
-# Unit Test: numOnes = 3, numZeros = 2, numNegOnes = 0, k = 4, Output: 3
+# Input: numOnes = 3, numZeros = 2, numNegOnes = 0, k = 4, Output: 3
 assert Solution.kItemsWithMaximumSum(3, 2, 0, 4) == 3
 
 print("All unit tests are passed.")

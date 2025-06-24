@@ -47,22 +47,22 @@ class Solution:
         return False
 
 
-# Unit Test: word = "abcc", Output: True
+# Input: word = "abcc", Output: True
 assert Solution.equalFrequency("abcc") is True
 
-# Unit Test: word = "aazz", Output: False
+# Input: word = "aazz", Output: False
 assert Solution.equalFrequency("aazz") is False
 
-# Unit Test: word = "abbcc", Output: True
+# Input: word = "abbcc", Output: True
 assert Solution.equalFrequency("abbcc") is True
 
-# Unit Test: word = "a", Output: True
+# Input: word = "a", Output: True
 assert Solution.equalFrequency("a") is True
 
-# Unit Test: word = "zz", Output: True
+# Input: word = "zz", Output: True
 assert Solution.equalFrequency("zz") is True
 
-# Unit Test: word = "bac", Output: True
+# Input: word = "bac", Output: True
 assert Solution.equalFrequency("bac") is True
 
 print("All unit tests are passed.")

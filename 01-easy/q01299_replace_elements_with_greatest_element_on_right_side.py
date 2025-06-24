@@ -24,13 +24,13 @@ class Solution:
         return arr
 
 
-# Unit Test: arr = [17, 18, 5, 4, 6, 1], Output: [18, 6, 6, 6, 1, -1]
+# Input: arr = [17, 18, 5, 4, 6, 1], Output: [18, 6, 6, 6, 1, -1]
 assert Solution.replaceElements([17, 18, 5, 4, 6, 1]) == [18, 6, 6, 6, 1, -1]
 
-# Unit Test: arr = [400], Output: [-1]
+# Input: arr = [400], Output: [-1]
 assert Solution.replaceElements([400]) == [-1]
 
-# Unit Test: arr = [1, 2, 3, 4, 5], Output: [5, 5, 5, 5, -1]
+# Input: arr = [1, 2, 3, 4, 5], Output: [5, 5, 5, 5, -1]
 assert Solution.replaceElements([1, 2, 3, 4, 5]) == [5, 5, 5, 5, -1]
 
 print("All unit tests are passed.")

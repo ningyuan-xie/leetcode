@@ -26,13 +26,13 @@ class Solution:
         return min_element
 
 
-# Unit Test: nums = [10,12,13,14], Output: 1
+# Input: nums = [10,12,13,14], Output: 1
 assert Solution.minElement([10,12,13,14]) == 1
 
-# Unit Test: nums = [1,2,3,4], Output: 1
+# Input: nums = [1,2,3,4], Output: 1
 assert Solution.minElement([1,2,3,4]) == 1
 
-# Unit Test: nums = [999,19,199], Output: 10
+# Input: nums = [999,19,199], Output: 10
 assert Solution.minElement([999,19,199]) == 10
 
 print("All unit tests are passed.")

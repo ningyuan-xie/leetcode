@@ -31,11 +31,11 @@ class Solution:
         return [even_count, odd_count]
 
 
-# Unit Test: n = 50, Output: [1, 2]
+# Input: n = 50, Output: [1, 2]
 # Explanation: Binary representation of 50 is 110010. It contains 1 on indices 1, 4, and 5.
 assert Solution.evenOddBit(50) == [1, 2]
 
-# Unit Test: n = 2, Output: [0, 1]
+# Input: n = 2, Output: [0, 1]
 # Explanation: Binary representation of 2 is 10. It contains 1 on index 1.
 assert Solution.evenOddBit(2) == [0, 1]
 

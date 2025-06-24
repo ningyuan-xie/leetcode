@@ -50,10 +50,10 @@ class Solution:
         return count_0 + count_1
 
 
-# Unit Test: students = [1, 1, 0, 0], sandwiches = [0, 1, 0, 1], Output: 0
+# Input: students = [1, 1, 0, 0], sandwiches = [0, 1, 0, 1], Output: 0
 assert Solution.count_students([1, 1, 0, 0], [0, 1, 0, 1]) == 0
 
-# Unit Test: students = [1, 1, 1, 0, 0, 1], sandwiches = [1, 0, 0, 0, 1, 1], Output: 3
+# Input: students = [1, 1, 1, 0, 0, 1], sandwiches = [1, 0, 0, 0, 1, 1], Output: 3
 assert Solution.count_students([1, 1, 1, 0, 0, 1], [1, 0, 0, 0, 1, 1]) == 3
 
 print("All unit tests are passed.")

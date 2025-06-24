@@ -35,13 +35,13 @@ class Solution:
 
 
 def unit_tests():
-    # Unit Test: s = "(()())(())", Output: "()()()"
+    # Input: s = "(()())(())", Output: "()()()"
     assert Solution.removeOuterParentheses("(()())(())") == "()()()"
 
-    # Unit Test: s = "(()())(())(()(()))", Output: "()()()()(())"
+    # Input: s = "(()())(())(()(()))", Output: "()()()()(())"
     assert Solution.removeOuterParentheses("(()())(())(()(()))") == "()()()()(())"
 
-    # Unit Test: s = "()()", Output: ""
+    # Input: s = "()()", Output: ""
     assert Solution.removeOuterParentheses("()()") == ""
 
 

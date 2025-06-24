@@ -22,13 +22,13 @@ class Solution:
         return abs((d2 - d1).days)
 
 
-# Unit Test: date1 = "2019-06-29", date2 = "2019-06-30", Output: 1
+# Input: date1 = "2019-06-29", date2 = "2019-06-30", Output: 1
 assert Solution.daysBetweenDates("2019-06-29", "2019-06-30") == 1
 
-# Unit Test: date1 = "2020-01-15", date2 = "2019-12-31", Output: 15
+# Input: date1 = "2020-01-15", date2 = "2019-12-31", Output: 15
 assert Solution.daysBetweenDates("2020-01-15", "2019-12-31") == 15
 
-# Unit Test: date1 = "2020-01-15", date2 = "2019-12-31", Output: 15
+# Input: date1 = "2020-01-15", date2 = "2019-12-31", Output: 15
 assert Solution.daysBetweenDates("2020-01-15", "2019-12-31") == 15
 
 print("All unit tests are passed.")

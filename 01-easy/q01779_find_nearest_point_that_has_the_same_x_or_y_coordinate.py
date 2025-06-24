@@ -34,13 +34,13 @@ class Solution:
         return nearest_index
 
 
-# Unit Test: x = 3, y = 4, points = [[1, 2], [3, 1], [2, 4], [2, 3], [4, 4]], Output: 2
+# Input: x = 3, y = 4, points = [[1, 2], [3, 1], [2, 4], [2, 3], [4, 4]], Output: 2
 assert Solution.nearestValidPoint(3, 4, [[1, 2], [3, 1], [2, 4], [2, 3], [4, 4]]) == 2
 
-# Unit Test: x = 3, y = 4, points = [[3, 4]], Output: 0
+# Input: x = 3, y = 4, points = [[3, 4]], Output: 0
 assert Solution.nearestValidPoint(3, 4, [[3, 4]]) == 0
 
-# Unit Test: x = 3, y = 4, points = [[2, 3]], Output: -1
+# Input: x = 3, y = 4, points = [[2, 3]], Output: -1
 assert Solution.nearestValidPoint(3, 4, [[2, 3]]) == -1
 
 print("All unit tests are passed.")

@@ -37,13 +37,13 @@ class Solution:
         return winning_players
 
 
-# Unit Test: n = 4, pick = [[0,0],[1,0],[1,0],[2,1],[2,1],[2,0]], Output: 2
+# Input: n = 4, pick = [[0,0],[1,0],[1,0],[2,1],[2,1],[2,0]], Output: 2
 assert Solution.winningPlayerCount(4, [[0, 0], [1, 0], [1, 0], [2, 1], [2, 1], [2, 0]]) == 2
 
-# Unit Test: n = 5, pick = [[1,1],[1,2],[1,3],[1,4]], Output: 0
+# Input: n = 5, pick = [[1,1],[1,2],[1,3],[1,4]], Output: 0
 assert Solution.winningPlayerCount(5, [[1, 1], [1, 2], [1, 3], [1, 4]]) == 0
 
-# Unit Test: n = 5, pick = [[1,1],[2,4],[2,4],[2,4]], Output: 1
+# Input: n = 5, pick = [[1,1],[2,4],[2,4],[2,4]], Output: 1
 assert Solution.winningPlayerCount(5, [[1, 1], [2, 4], [2, 4], [2, 4]]) == 1
 
 print("All unit tests are passed.")

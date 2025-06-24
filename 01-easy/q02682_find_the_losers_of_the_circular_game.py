@@ -46,10 +46,10 @@ class Solution:
         return losers
 
 
-# Unit Test: n = 5, k = 2, Output: [4,5]
+# Input: n = 5, k = 2, Output: [4,5]
 assert Solution.circularGameLosers(5, 2) == [4, 5]
 
-# Unit Test: n = 4, k = 4, Output: [1]
+# Input: n = 4, k = 4, Output: [1]
 # assert Solution.circularGameLosers(4, 4) == [1]
 
 print("All unit tests are passed.")

@@ -32,16 +32,16 @@ class Solution:
         return boxes
 
 
-# Unit Test: apple = [1,3,2], capacity = [4,3,1,5,2], Output = 2
+# Input: apple = [1,3,2], capacity = [4,3,1,5,2], Output = 2
 assert Solution.minimumBoxes([1, 3, 2], [4, 3, 1, 5, 2]) == 2
 
-# Unit Test: apple = [5,5,5], capacity = [2,4,2,7], Output = 4
+# Input: apple = [5,5,5], capacity = [2,4,2,7], Output = 4
 assert Solution.minimumBoxes([5, 5, 5], [2, 4, 2, 7]) == 4
 
-# Unit Test: apple = [1,8,3,3,5], capacity = [3,9,5,1,9], Output = 3
+# Input: apple = [1,8,3,3,5], capacity = [3,9,5,1,9], Output = 3
 assert Solution.minimumBoxes([1, 8, 3, 3, 5], [3, 9, 5, 1, 9]) == 3
 
-# Unit Test: apple = [9,8,8,2,3,1,6], capacity = [10,1,4,10,8,5], Output = 5
+# Input: apple = [9,8,8,2,3,1,6], capacity = [10,1,4,10,8,5], Output = 5
 assert Solution.minimumBoxes([9, 8, 8, 2, 3, 1, 6], [10, 1, 4, 10, 8, 5]) == 5
 
 print("All unit tests are passed.")

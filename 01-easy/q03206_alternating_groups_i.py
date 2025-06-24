@@ -27,10 +27,10 @@ class Solution:
         return count
 
 
-# Unit Test: colors = [1,1,1], Output = 0
+# Input: colors = [1,1,1], Output = 0
 assert Solution.numberOfAlternatingGroups([1, 1, 1]) == 0
 
-# Unit Test: colors = [0,1,0,0,1], Output = 3
+# Input: colors = [0,1,0,0,1], Output = 3
 assert Solution.numberOfAlternatingGroups([0, 1, 0, 0, 1]) == 3
 
 print("All unit tests are passed.")

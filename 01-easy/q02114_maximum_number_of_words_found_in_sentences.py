@@ -17,12 +17,12 @@ class Solution:
                    for sentence in sentences)
 
 
-# Unit Test: sentences = ["alice and bob love leetcode", "i think so too",
+# Input: sentences = ["alice and bob love leetcode", "i think so too",
 # "this is great thanks very much"], Output: 6
 assert Solution.mostWordsFound(["alice and bob love leetcode", "i think so too",
                                 "this is great thanks very much"]) == 6
 
-# Unit Test: sentences = ["please wait", "continue to fight", "continue to win"], Output: 3
+# Input: sentences = ["please wait", "continue to fight", "continue to win"], Output: 3
 assert Solution.mostWordsFound(["please wait", "continue to fight", "continue to win"]) == 3
 
 print("All unit tests are passed.")

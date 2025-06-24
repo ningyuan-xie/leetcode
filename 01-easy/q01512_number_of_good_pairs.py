@@ -31,16 +31,16 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [1, 2, 3, 1, 1, 3], Output: 4
+# Input: nums = [1, 2, 3, 1, 1, 3], Output: 4
 assert Solution.numIdenticalPairs([1, 2, 3, 1, 1, 3]) == 4
 
-# Unit Test: nums = [1, 1, 1, 1], Output: 6
+# Input: nums = [1, 1, 1, 1], Output: 6
 assert Solution.numIdenticalPairs([1, 1, 1, 1]) == 6
 
-# Unit Test: nums = [1, 2, 3], Output: 0
+# Input: nums = [1, 2, 3], Output: 0
 assert Solution.numIdenticalPairs([1, 2, 3]) == 0
 
-# Unit Test: nums = [1, 1, 1, 1, 1], Output: 10
+# Input: nums = [1, 1, 1, 1, 1], Output: 10
 assert Solution.numIdenticalPairs([1, 1, 1, 1, 1]) == 10
 
 print("All unit tests are passed.")

@@ -26,10 +26,10 @@ class Solution:
         return min(nums1[0] * 10 + nums2[0], nums2[0] * 10 + nums1[0])
 
 
-# Unit Test: arr1 = [4, 1, 3], arr2 = [5, 7], Output: 15
+# Input: arr1 = [4, 1, 3], arr2 = [5, 7], Output: 15
 assert Solution.minNumber([4, 1, 3], [5, 7]) == 15
 
-# Unit Test: nums1 = [3, 5, 2, 6], nums2 = [3, 1, 7], Output: 3
+# Input: nums1 = [3, 5, 2, 6], nums2 = [3, 1, 7], Output: 3
 assert Solution.minNumber([3, 5, 2, 6], [3, 1, 7]) == 3
 
 print("All unit tests are passed.")

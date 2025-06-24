@@ -18,13 +18,13 @@ class Solution:
         return ""
 
 
-# Unit Test: num = "52", Output: "5"
+# Input: num = "52", Output: "5"
 assert Solution.largestOddNumber("52") == "5"
 
-# Unit Test: num = "4206", Output: ""
+# Input: num = "4206", Output: ""
 assert Solution.largestOddNumber("4206") == ""
 
-# Unit Test: num = "35427", Output: "35427"
+# Input: num = "35427", Output: "35427"
 assert Solution.largestOddNumber("35427") == "35427"
 
 print("All unit tests are passed.")

@@ -32,13 +32,13 @@ class Solution:
         return moves
 
 
-# Unit Test: seats = [3, 1, 5], students = [2, 7, 4], Output: 4
+# Input: seats = [3, 1, 5], students = [2, 7, 4], Output: 4
 assert Solution.minMovesToSeat([3, 1, 5], [2, 7, 4]) == 4
 
-# Unit Test: seats = [4, 1, 5, 9], students = [1, 3, 2, 6], Output: 7
+# Input: seats = [4, 1, 5, 9], students = [1, 3, 2, 6], Output: 7
 assert Solution.minMovesToSeat([4, 1, 5, 9], [1, 3, 2, 6]) == 7
 
-# Unit Test: seats = [2, 2, 6, 6], students = [1, 3, 2, 6], Output: 4
+# Input: seats = [2, 2, 6, 6], students = [1, 3, 2, 6], Output: 4
 assert Solution.minMovesToSeat([2, 2, 6, 6], [1, 3, 2, 6]) == 4
 
 print("All unit tests are passed.")

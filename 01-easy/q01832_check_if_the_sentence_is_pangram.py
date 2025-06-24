@@ -14,10 +14,10 @@ class Solution:
         return len(set(sentence)) == 26
 
 
-# Unit Test: sentence = "thequickbrownfoxjumpsoverthelazydog", Output: True
+# Input: sentence = "thequickbrownfoxjumpsoverthelazydog", Output: True
 assert Solution.checkIfPangram("thequickbrownfoxjumpsoverthelazydog") is True
 
-# Unit Test: sentence = "leetcode", Output: False
+# Input: sentence = "leetcode", Output: False
 assert Solution.checkIfPangram("leetcode") is False
 
 print("All unit tests are passed.")

@@ -24,10 +24,10 @@ class Solution:
         return result
 
 
-# Unit Test: s = "abc", t = "bac", Output = 2
+# Input: s = "abc", t = "bac", Output = 2
 assert Solution.permutationDifference("abc", "bac") == 2
 
-# Unit Test: s = "abcde", t = "edbac", Output = 12
+# Input: s = "abcde", t = "edbac", Output = 12
 assert Solution.permutationDifference("abcde", "edbac") == 12
 
 print("All unit tests are passed.")

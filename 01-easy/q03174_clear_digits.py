@@ -31,10 +31,10 @@ class Solution:
         return "".join(stack)
 
 
-# Unit Test: s = "abc", Output = "abc"
+# Input: s = "abc", Output = "abc"
 assert Solution.clearDigits("abc") == "abc"
 
-# Unit Test: s = "cb34", Output = ""
+# Input: s = "cb34", Output = ""
 assert Solution.clearDigits("cb34") == ""
 
 print("All unit tests are passed.")

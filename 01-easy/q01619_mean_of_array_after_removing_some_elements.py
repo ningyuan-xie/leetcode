@@ -25,13 +25,13 @@ class Solution:
         return sum_remaining / (len(arr) - 2 * remove_count)
 
 
-# Unit Test: arr = [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3], Output: 2.00000
+# Input: arr = [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3], Output: 2.00000
 assert Solution.trimMean([1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3]) == 2.00000
 
-# Unit Test: arr = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], Output: 1.00000
+# Input: arr = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], Output: 1.00000
 assert Solution.trimMean([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]) == 1.00000
 
-# Unit Test: arr = [6, 2, 7, 5, 1, 2, 0, 3, 10, 2, 5, 0, 5, 5, 0, 8, 7, 6, 8, 0], Output: 4.00000
+# Input: arr = [6, 2, 7, 5, 1, 2, 0, 3, 10, 2, 5, 0, 5, 5, 0, 8, 7, 6, 8, 0], Output: 4.00000
 assert Solution.trimMean([6, 2, 7, 5, 1, 2, 0, 3, 10, 2, 5, 0, 5, 5, 0, 8, 7, 6, 8, 0]) == 4.00000
 
 print("All unit tests are passed.")

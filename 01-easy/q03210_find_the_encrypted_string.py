@@ -22,10 +22,10 @@ class Solution:
         return ''.join(encrypted_chars)
 
 
-# Unit Test: s = "dart", k = 3, Output = "tdar"
+# Input: s = "dart", k = 3, Output = "tdar"
 assert Solution.getEncryptedString("dart", 3) == "tdar"
 
-# Unit Test: s = "aaa", k = 1, Output = "aaa"
+# Input: s = "aaa", k = 1, Output = "aaa"
 assert Solution.getEncryptedString("aaa", 1) == "aaa"
 
 print("All unit tests are passed.")

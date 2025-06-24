@@ -32,16 +32,16 @@ class Solution:
         return max_score
 
 
-# Unit Test: s = "011101", Output: 5
+# Input: s = "011101", Output: 5
 assert Solution.maxScore("011101") == 5
 
-# Unit Test: s = "00111", Output: 5
+# Input: s = "00111", Output: 5
 assert Solution.maxScore("00111") == 5
 
-# Unit Test: s = "1111", Output: 3
+# Input: s = "1111", Output: 3
 assert Solution.maxScore("1111") == 3
 
-# Unit Test: s = "00", Output: 1
+# Input: s = "00", Output: 1
 assert Solution.maxScore("00") == 1
 
 print("All unit tests are passed.")

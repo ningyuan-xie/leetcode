@@ -39,16 +39,16 @@ class Solution:
         return f"{year_str}-{month}-{day}"
 
 
-# Unit Test: date = "20th Oct 2052", Output: "2052-10-20"
+# Input: date = "20th Oct 2052", Output: "2052-10-20"
 assert Solution.reformatDate("20th Oct 2052") == "2052-10-20"
 
-# Unit Test: date = "6th Jun 1933", Output: "1933-06-06"
+# Input: date = "6th Jun 1933", Output: "1933-06-06"
 assert Solution.reformatDate("6th Jun 1933") == "1933-06-06"
 
-# Unit Test: date = "26th May 1960", Output: "1960-05-26"
+# Input: date = "26th May 1960", Output: "1960-05-26"
 assert Solution.reformatDate("26th May 1960") == "1960-05-26"
 
-# Unit Test: date = "1st Jan 2000", Output: "2000-01-01"
+# Input: date = "1st Jan 2000", Output: "2000-01-01"
 assert Solution.reformatDate("1st Jan 2000") == "2000-01-01"
 
 print("All unit tests are passed.")

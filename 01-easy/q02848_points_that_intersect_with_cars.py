@@ -24,10 +24,10 @@ class Solution:
         return len(points)
 
 
-# Unit Test: nums = [[3,6],[1,5],[4,7]], Output: 7
+# Input: nums = [[3,6],[1,5],[4,7]], Output: 7
 assert Solution.numberOfPoints([[3, 6], [1, 5], [4, 7]]) == 7
 
-# Unit Test: nums = [[1,3],[5,8]], Output: 7
+# Input: nums = [[1,3],[5,8]], Output: 7
 assert Solution.numberOfPoints([[1, 3], [5, 8]]) == 7
 
 print("All unit tests are passed.")

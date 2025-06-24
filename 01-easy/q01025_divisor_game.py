@@ -18,13 +18,13 @@ class Solution:
 
 
 def unit_tests():
-    # Unit Test: n = 2, Output: True
+    # Input: n = 2, Output: True
     assert Solution.divisorGame(2) is True
 
-    # Unit Test: n = 3, Output: False
+    # Input: n = 3, Output: False
     assert Solution.divisorGame(3) is False
 
-    # Unit Test: n = 4, Output: True
+    # Input: n = 4, Output: True
     assert Solution.divisorGame(4) is True
 
 

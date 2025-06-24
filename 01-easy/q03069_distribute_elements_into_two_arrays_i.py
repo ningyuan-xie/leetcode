@@ -34,10 +34,10 @@ class Solution:
         return array1 + array2
 
 
-# Unit Test: nums = [2,1,3], Output = [2,3,1]
+# Input: nums = [2,1,3], Output = [2,3,1]
 assert Solution.resultArray([2, 1, 3]) == [2, 3, 1]
 
-# Unit Test: nums = [5,4,3,8], Output = [5,3,4,8]
+# Input: nums = [5,4,3,8], Output = [5,3,4,8]
 assert Solution.resultArray([5, 4, 3, 8]) == [5, 3, 4, 8]
 
 print("All unit tests are passed.")

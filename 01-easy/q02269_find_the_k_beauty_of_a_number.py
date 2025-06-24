@@ -36,10 +36,10 @@ class Solution:
         return num_substrings
 
 
-# Unit Test: num = 240, k = 2, Output: 2
+# Input: num = 240, k = 2, Output: 2
 assert Solution.divisorSubstrings(240, 2) == 2
 
-# Unit Test: num = 430043, k = 2, Output: 2
+# Input: num = 430043, k = 2, Output: 2
 assert Solution.divisorSubstrings(430043, 2) == 2
 
 print("All unit tests are passed.")

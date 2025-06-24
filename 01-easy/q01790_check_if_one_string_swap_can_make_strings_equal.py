@@ -24,13 +24,13 @@ class Solution:
         return len(differences) == 2 and differences[0] == differences[1][::-1]
 
 
-# Unit Test: s1 = "bank", s2 = "kanb", Output: True
+# Input: s1 = "bank", s2 = "kanb", Output: True
 assert Solution.can_strings_equal("bank", "kanb") is True
 
-# Unit Test: s1 = "attack", s2 = "defend", Output: False
+# Input: s1 = "attack", s2 = "defend", Output: False
 assert Solution.can_strings_equal("attack", "defend") is False
 
-# Unit Test: s1 = "kelb", s2 = "kelb", Output: True
+# Input: s1 = "kelb", s2 = "kelb", Output: True
 assert Solution.can_strings_equal("kelb", "kelb") is True
 
 print("All unit tests are passed.")

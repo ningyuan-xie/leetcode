@@ -24,10 +24,10 @@ class Solution:
         return k_distant_indices
 
 
-# Unit Test: nums = [3,4,9,1,3,9,5], key = 9, k = 1, Output: [1,2,3,4,5,6]
+# Input: nums = [3,4,9,1,3,9,5], key = 9, k = 1, Output: [1,2,3,4,5,6]
 assert Solution.findKDistantIndices([3, 4, 9, 1, 3, 9, 5], 9, 1) == [1, 2, 3, 4, 5, 6]
 
-# Unit Test: nums = [2,2,2,2,2], key = 2, k = 2, Output: [0,1,2,3,4]
+# Input: nums = [2,2,2,2,2], key = 2, k = 2, Output: [0,1,2,3,4]
 assert Solution.findKDistantIndices([2, 2, 2, 2, 2], 2, 2) == [0, 1, 2, 3, 4]
 
 print("All unit tests are passed.")

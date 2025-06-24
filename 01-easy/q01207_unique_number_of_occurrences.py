@@ -22,13 +22,13 @@ class Solution:
         return len(freq) == len(set(freq.values()))
 
 
-# Unit Test: arr = [1, 2, 2, 1, 1, 3], Output: True
+# Input: arr = [1, 2, 2, 1, 1, 3], Output: True
 assert Solution.uniqueOccurrences([1, 2, 2, 1, 1, 3]) is True
 
-# Unit Test: arr = [1, 2], Output: False
+# Input: arr = [1, 2], Output: False
 assert Solution.uniqueOccurrences([1, 2]) is False
 
-# Unit Test: arr = [-3, 0, 1, -3, 1, 1, 1, -3, 10, 0], Output: True
+# Input: arr = [-3, 0, 1, -3, 1, 1, 1, -3, 10, 0], Output: True
 assert Solution.uniqueOccurrences([-3, 0, 1, -3, 1, 1, 1, -3, 10, 0]) is True
 
 print("All unit tests are passed.")

@@ -33,14 +33,14 @@ class Solution:
         return count
 
 
-# Unit Test: items = [["phone", "blue", "pixel"], ["computer", "silver", "lenovo"],
+# Input: items = [["phone", "blue", "pixel"], ["computer", "silver", "lenovo"],
 #                     ["phone", "gold", "iphone"]], rule_key = "color", rule_value = "silver",
 # Output: 1
 assert Solution.count_matches([["phone", "blue", "pixel"],
                                ["computer", "silver", "lenovo"],
                                ["phone", "gold", "iphone"]], "color", "silver") == 1
 
-# Unit Test: items = [["phone", "blue", "pixel"], ["computer", "silver", "phone"],
+# Input: items = [["phone", "blue", "pixel"], ["computer", "silver", "phone"],
 #                     ["phone", "gold", "iphone"]], ruleKey = "type", ruleValue = "phone",
 # Output: 2
 assert Solution.count_matches([["phone", "blue", "pixel"],

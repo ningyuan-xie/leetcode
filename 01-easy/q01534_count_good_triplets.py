@@ -34,13 +34,13 @@ class Solution:
         return count
 
 
-# Unit Test: arr = [3, 0, 1, 1, 9, 7], a = 7, b = 2, c = 3, Output: 4
+# Input: arr = [3, 0, 1, 1, 9, 7], a = 7, b = 2, c = 3, Output: 4
 assert Solution.countGoodTriplets([3, 0, 1, 1, 9, 7], 7, 2, 3) == 4
 
-# Unit Test: arr = [1, 1, 2, 2, 3], a = 0, b = 0, c = 1, Output: 0
+# Input: arr = [1, 1, 2, 2, 3], a = 0, b = 0, c = 1, Output: 0
 assert Solution.countGoodTriplets([1, 1, 2, 2, 3], 0, 0, 1) == 0
 
-# Unit Test: arr = [7, 3, 7, 3, 12, 1, 12, 2, 3], a = 5, b = 8, c = 1, Output: 12
+# Input: arr = [7, 3, 7, 3, 12, 1, 12, 2, 3], a = 5, b = 8, c = 1, Output: 12
 assert Solution.countGoodTriplets([7, 3, 7, 3, 12, 1, 12, 2, 3], 5, 8, 1) == 12
 
 print("All unit tests are passed.")

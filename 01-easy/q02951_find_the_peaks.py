@@ -26,10 +26,10 @@ class Solution:
         return peaks
 
 
-# Unit Test: mountain = [2,4,4], Output: []
+# Input: mountain = [2,4,4], Output: []
 assert Solution.findPeaks([2, 4, 4]) == []
 
-# Unit Test: mountain = [1,4,3,8,5], Output: [1,3]
+# Input: mountain = [1,4,3,8,5], Output: [1,3]
 assert Solution.findPeaks([1, 4, 3, 8, 5]) == [1, 3]
 
 print("All unit tests are passed.")

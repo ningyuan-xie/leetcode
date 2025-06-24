@@ -38,10 +38,10 @@ class Solution:
 
 
 def unit_tests():
-    # Unit Test: words = ["bella","label","roller"], Output: ["e","l","l"]
+    # Input: words = ["bella","label","roller"], Output: ["e","l","l"]
     assert Solution.commonChars(["bella", "label", "roller"]) == ["e", "l", "l"]
 
-    # Unit Test: words = ["cool","lock","cook"], Output: ["c","o"]
+    # Input: words = ["cool","lock","cook"], Output: ["c","o"]
     assert Solution.commonChars(["cool", "lock", "cook"]) == ["c", "o"]
 
 

@@ -32,10 +32,10 @@ class Solution:
         return min_recolors
 
 
-# Unit Test: blocks = "WBBWWBBWBW", k = 7, Output: 3
+# Input: blocks = "WBBWWBBWBW", k = 7, Output: 3
 assert Solution.minimumRecolors("WBBWWBBWBW", 7) == 3
 
-# Unit Test: blocks = "WBWBBBW", k = 2, Output: 0
+# Input: blocks = "WBWBBBW", k = 2, Output: 0
 assert Solution.minimumRecolors("WBWBBBW", 2) == 0
 
 print("All unit tests are passed.")

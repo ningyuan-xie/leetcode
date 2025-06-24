@@ -30,13 +30,13 @@ class Solution:
         return True
 
 
-# Unit Test: sentence = "leetcode exercises sound delightful", Output: True
+# Input: sentence = "leetcode exercises sound delightful", Output: True
 assert Solution.isCircularSentence("leetcode exercises sound delightful") is True
 
-# Unit Test: sentence = "eetcode", Output: True
+# Input: sentence = "eetcode", Output: True
 assert Solution.isCircularSentence("eetcode") is True
 
-# Unit Test: sentence = "Leetcode is cool", Output: False
+# Input: sentence = "Leetcode is cool", Output: False
 assert Solution.isCircularSentence("Leetcode is cool") is False
 
 print("All unit tests are passed.")

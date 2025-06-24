@@ -28,10 +28,10 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [4,4,2,4,3], Output: 3
+# Input: nums = [4,4,2,4,3], Output: 3
 assert Solution.unequalTriplets([4, 4, 2, 4, 3]) == 3
 
-# Unit Test: nums = [1,1,1,1,1], Output: 0
+# Input: nums = [1,1,1,1,1], Output: 0
 assert Solution.unequalTriplets([1, 1, 1, 1, 1]) == 0
 
 print("All unit tests are passed.")

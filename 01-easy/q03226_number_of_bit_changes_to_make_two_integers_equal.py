@@ -23,13 +23,13 @@ class Solution:
         return count
 
 
-# Unit Test: n = 13, k = 4, Output: 2
+# Input: n = 13, k = 4, Output: 2
 assert Solution.minChanges(13, 4) == 2
 
-# Unit Test: n = 21, k = 21, Output: 0
+# Input: n = 21, k = 21, Output: 0
 assert Solution.minChanges(21, 21) == 0
 
-# Unit Test: n = 14, k = 13, Output: -1
+# Input: n = 14, k = 13, Output: -1
 assert Solution.minChanges(14, 13) == -1
 
 print("All unit tests are passed.")

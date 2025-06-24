@@ -30,13 +30,13 @@ class Solution:
         return result
 
 
-# Unit Test: nums = [1,2,1,3], Output = 1
+# Input: nums = [1,2,1,3], Output = 1
 assert Solution.findXOR([1, 2, 1, 3]) == 1
 
-# Unit Test: nums = [1,2,3], Output = 0
+# Input: nums = [1,2,3], Output = 0
 assert Solution.findXOR([1, 2, 3]) == 0
 
-# Unit Test: nums = [1,2,2,1], Output = 3
+# Input: nums = [1,2,2,1], Output = 3
 assert Solution.findXOR([1, 2, 2, 1]) == 3
 
 print("All unit tests are passed.")

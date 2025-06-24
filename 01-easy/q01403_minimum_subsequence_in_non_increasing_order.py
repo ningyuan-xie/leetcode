@@ -33,13 +33,13 @@ class Solution:
                 return subsequence_list
 
 
-# Unit Test: nums = [4, 3, 10, 9, 8], Output: [10, 9]
+# Input: nums = [4, 3, 10, 9, 8], Output: [10, 9]
 assert Solution.minSubsequence([4, 3, 10, 9, 8]) == [10, 9]
 
-# Unit Test: nums = [4, 4, 7, 6, 7], Output: [7, 7, 6]
+# Input: nums = [4, 4, 7, 6, 7], Output: [7, 7, 6]
 assert Solution.minSubsequence([4, 4, 7, 6, 7]) == [7, 7, 6]
 
-# Unit Test: nums = [6], Output: [6]
+# Input: nums = [6], Output: [6]
 assert Solution.minSubsequence([6]) == [6]
 
 print("All unit tests are passed.")

@@ -22,13 +22,13 @@ class Solution:
         return count == 3
 
 
-# Unit Test: n = 2, Output: False
+# Input: n = 2, Output: False
 assert Solution.isThree(2) is False
 
-# Unit Test: n = 4, Output: True
+# Input: n = 4, Output: True
 assert Solution.isThree(4) is True
 
-# Unit Test: n = 5, Output: False
+# Input: n = 5, Output: False
 assert Solution.isThree(5) is False
 
 print("All unit tests are passed.")

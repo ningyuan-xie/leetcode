@@ -61,13 +61,13 @@ class Solution:
         return max_length
 
 
-# Unit Test: nums = [3,2,5,4], threshold = 5, Output: 3
+# Input: nums = [3,2,5,4], threshold = 5, Output: 3
 assert Solution.longestAlternatingSubarraySlidingWindow([3, 2, 5, 4], 5) == 3
 
-# Unit Test: nums = [1,2], threshold = 2, Output: 1
+# Input: nums = [1,2], threshold = 2, Output: 1
 assert Solution.longestAlternatingSubarraySlidingWindow([1, 2], 2) == 1
 
-# Unit Test: nums = [2,3,4,5], threshold = 4, Output: 3
+# Input: nums = [2,3,4,5], threshold = 4, Output: 3
 assert Solution.longestAlternatingSubarraySlidingWindow([2, 3, 4, 5], 4) == 3
 
 print("All unit tests are passed.")

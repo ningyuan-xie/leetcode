@@ -27,16 +27,16 @@ class Solution:
         return total
 
 
-# Unit Test: numBottles = 9, numExchange = 3, Output: 13
+# Input: numBottles = 9, numExchange = 3, Output: 13
 assert Solution.numWaterBottles(9, 3) == 13
 
-# Unit Test: numBottles = 15, numExchange = 4, Output: 19
+# Input: numBottles = 15, numExchange = 4, Output: 19
 assert Solution.numWaterBottles(15, 4) == 19
 
-# Unit Test: numBottles = 5, numExchange = 5, Output: 6
+# Input: numBottles = 5, numExchange = 5, Output: 6
 assert Solution.numWaterBottles(5, 5) == 6
 
-# Unit Test: numBottles = 2, numExchange = 3, Output: 2
+# Input: numBottles = 2, numExchange = 3, Output: 2
 assert Solution.numWaterBottles(2, 3) == 2
 
 print("All unit tests are passed.")

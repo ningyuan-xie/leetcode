@@ -30,13 +30,13 @@ class Solution:
         return ans
 
 
-# Unit Test: words = ["aba", "aabb", "abcd", "bac", "aabc"], Output: 2
+# Input: words = ["aba", "aabb", "abcd", "bac", "aabc"], Output: 2
 assert Solution.similarPairs(["aba", "aabb", "abcd", "bac", "aabc"]) == 2
 
-# Unit Test: words = ["aabb", "ab", "ba"], Output: 3
+# Input: words = ["aabb", "ab", "ba"], Output: 3
 assert Solution.similarPairs(["aabb", "ab", "ba"]) == 3
 
-# Unit Test: words = ["nba", "cba", "dba"], Output: 0
+# Input: words = ["nba", "cba", "dba"], Output: 0
 assert Solution.similarPairs(["nba", "cba", "dba"]) == 0
 
 print("All unit tests are passed.")

@@ -27,13 +27,13 @@ class Solution:
         return special_positions
 
 
-# Unit Test: mat = [[1, 0, 0], [0, 0, 1], [1, 0, 0]], Output: 1
+# Input: mat = [[1, 0, 0], [0, 0, 1], [1, 0, 0]], Output: 1
 assert Solution.numSpecial([[1, 0, 0], [0, 0, 1], [1, 0, 0]]) == 1
 
-# Unit Test: mat = [[1, 0, 0], [0, 1, 0], [0, 0, 1]], Output: 3
+# Input: mat = [[1, 0, 0], [0, 1, 0], [0, 0, 1]], Output: 3
 assert Solution.numSpecial([[1, 0, 0], [0, 1, 0], [0, 0, 1]]) == 3
 
-# Unit Test: mat = [[0, 0, 0, 1], [1, 0, 0, 0], [0, 1, 1, 0], [0, 0, 0, 0]], Output: 2
+# Input: mat = [[0, 0, 0, 1], [1, 0, 0, 0], [0, 1, 1, 0], [0, 0, 0, 0]], Output: 2
 assert Solution.numSpecial([[0, 0, 0, 1], [1, 0, 0, 0], [0, 1, 1, 0], [0, 0, 0, 0]]) == 2
 
 print("All unit tests are passed.")

@@ -27,13 +27,13 @@ class Solution:
         return nums[0] + first + second
 
 
-# Unit Test: nums = [1,2,3,12], Output = 6
+# Input: nums = [1,2,3,12], Output = 6
 assert Solution.minimumCost([1, 2, 3, 12]) == 6
 
-# Unit Test: nums = [5,4,3], Output = 12
+# Input: nums = [5,4,3], Output = 12
 assert Solution.minimumCost([5, 4, 3]) == 12
 
-# Unit Test: nums = [10,3,1,1], Output = 12
+# Input: nums = [10,3,1,1], Output = 12
 assert Solution.minimumCost([10, 3, 1, 1]) == 12
 
 print("All unit tests are passed.")

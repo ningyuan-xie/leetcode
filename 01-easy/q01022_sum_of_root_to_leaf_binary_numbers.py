@@ -36,19 +36,19 @@ class Solution:
 
 
 def unit_tests():
-    # Unit Test: root = [1, 0, 1, 0, 1, 0, 1], Output: 22
+    # Input: root = [1, 0, 1, 0, 1, 0, 1], Output: 22
     root = TreeNode.build_binary_tree([1, 0, 1, 0, 1, 0, 1])
     assert Solution.sumRootToLeaf(root) == 22
 
-    # Unit Test: root = [1, 1, 0, 0, 1, 0, 1], Output: 22
+    # Input: root = [1, 1, 0, 0, 1, 0, 1], Output: 22
     root = TreeNode.build_binary_tree([1, 1, 0, 0, 1, 0, 1])
     assert Solution.sumRootToLeaf(root) == 22
 
-    # Unit Test: root = [1], Output: 1
+    # Input: root = [1], Output: 1
     root = TreeNode.build_binary_tree([1])
     assert Solution.sumRootToLeaf(root) == 1
 
-    # Unit Test: root = [1, 1, 1], Output: 6
+    # Input: root = [1, 1, 1], Output: 6
     root = TreeNode.build_binary_tree([1, 1, 1])
     assert Solution.sumRootToLeaf(root) == 6
 

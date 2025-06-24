@@ -28,10 +28,10 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [-1,1,2,3,1], target = 2, Output: 3
+# Input: nums = [-1,1,2,3,1], target = 2, Output: 3
 assert Solution.countPairs([-1, 1, 2, 3, 1], 2) == 3
 
-# Unit Test: nums = [-6,2,5,-2,-7,-1,3], target = -2, Output: 10
+# Input: nums = [-6,2,5,-2,-7,-1,3], target = -2, Output: 10
 assert Solution.countPairs([-6, 2, 5, -2, -7, -1, 3], -2) == 10
 
 print("All unit tests are passed.")

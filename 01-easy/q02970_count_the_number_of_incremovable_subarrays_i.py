@@ -31,13 +31,13 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [1,2,3,4], Output: 10
+# Input: nums = [1,2,3,4], Output: 10
 assert Solution.incremovableSubarrayCount([1, 2, 3, 4]) == 10
 
-# Unit Test: nums = [6,5,7,8], Output: 7
+# Input: nums = [6,5,7,8], Output: 7
 assert Solution.incremovableSubarrayCount([6, 5, 7, 8]) == 7
 
-# Unit Test: nums = [8,7,6,6], Output:3
+# Input: nums = [8,7,6,6], Output:3
 assert Solution.incremovableSubarrayCount([8, 7, 6, 6]) == 3
 
 print("All unit tests are passed.")

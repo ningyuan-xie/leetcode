@@ -26,13 +26,13 @@ class Solution:
         return most_frequent_even
 
 
-# Unit Test: nums = [0,1,2,2,4,4,1], Output: 2
+# Input: nums = [0,1,2,2,4,4,1], Output: 2
 assert Solution.mostFrequentEven([0, 1, 2, 2, 4, 4, 1]) == 2
 
-# Unit Test: nums = [4,4,4,9,2,4], Output: 4
+# Input: nums = [4,4,4,9,2,4], Output: 4
 assert Solution.mostFrequentEven([4, 4, 4, 9, 2, 4]) == 4
 
-# Unit Test: nums = [29,47,21,41,13,37,25,7], Output: -1
+# Input: nums = [29,47,21,41,13,37,25,7], Output: -1
 assert Solution.mostFrequentEven([29, 47, 21, 41, 13, 37, 25, 7]) == -1
 
 print("All unit tests are passed.")

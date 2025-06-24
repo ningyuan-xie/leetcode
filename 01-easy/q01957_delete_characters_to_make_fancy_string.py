@@ -27,13 +27,13 @@ class Solution:
         return result
 
 
-# Unit Test: s = "leeetcode", Output: "leetcode"
+# Input: s = "leeetcode", Output: "leetcode"
 assert Solution.makeFancyString("leeetcode") == "leetcode"
 
-# Unit Test: s = "aaabaaaa", Output: "aabaa"
+# Input: s = "aaabaaaa", Output: "aabaa"
 assert Solution.makeFancyString("aaabaaaa") == "aabaa"
 
-# Unit Test: s = "aab", Output: "aab"
+# Input: s = "aab", Output: "aab"
 assert Solution.makeFancyString("aab") == "aab"
 
 print("All unit tests are passed.")

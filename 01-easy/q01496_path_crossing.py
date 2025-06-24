@@ -42,16 +42,16 @@ class Solution:
         return False
 
 
-# Unit Test: path = "NES", Output: False
+# Input: path = "NES", Output: False
 assert Solution.isPathCrossing("NES") == False
 
-# Unit Test: path = "NESWW", Output: True
+# Input: path = "NESWW", Output: True
 assert Solution.isPathCrossing("NESWW") == True
 
-# Unit Test: path = "NESW", Output: True
+# Input: path = "NESW", Output: True
 assert Solution.isPathCrossing("NESW") == True
 
-# Unit Test: path = "NESWW", Output: True
+# Input: path = "NESWW", Output: True
 assert Solution.isPathCrossing("NESWW") == True
 
 print("All unit tests are passed.")

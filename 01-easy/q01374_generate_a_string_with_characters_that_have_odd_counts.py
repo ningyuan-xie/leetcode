@@ -16,13 +16,13 @@ class Solution:
         return "a" * (n - 1) + ("b" if n % 2 == 0 else "a")
 
 
-# Unit Test: n = 4, Output: "aaab"
+# Input: n = 4, Output: "aaab"
 assert Solution.generateTheString(4) == "aaab"
 
-# Unit Test: n = 2, Output: "ab"
+# Input: n = 2, Output: "ab"
 assert Solution.generateTheString(2) == "ab"
 
-# Unit Test: n = 7, Output: "aaaaaaa"
+# Input: n = 7, Output: "aaaaaaa"
 assert Solution.generateTheString(7) == "aaaaaaa"
 
 print("All unit tests are passed.")

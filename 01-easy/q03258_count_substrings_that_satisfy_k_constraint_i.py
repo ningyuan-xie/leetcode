@@ -38,13 +38,13 @@ class Solution:
         return count
     
 
-# Unit Test: s = "10101", k = 1, Output: 12
+# Input: s = "10101", k = 1, Output: 12
 assert Solution.countKConstraintSubstrings("10101", 1) == 12
 
-# Unit Test: s = "1010101", k = 2, Output: 25
+# Input: s = "1010101", k = 2, Output: 25
 assert Solution.countKConstraintSubstrings("1010101", 2) == 25
 
-# Unit Test: s = "11111", k = 1, Output: 15
+# Input: s = "11111", k = 1, Output: 15
 assert Solution.countKConstraintSubstrings("11111", 1) == 15
 
 print("All unit tests are passed.")

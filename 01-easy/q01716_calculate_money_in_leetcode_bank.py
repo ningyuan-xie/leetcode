@@ -29,13 +29,13 @@ class Solution:
         return total_money
 
 
-# Unit Test: n = 4, Output: 10
+# Input: n = 4, Output: 10
 assert Solution.total_money(4) == 10
 
-# Unit Test: n = 10, Output: 37
+# Input: n = 10, Output: 37
 assert Solution.total_money(10) == 37
 
-# Unit Test: n = 20, Output: 96
+# Input: n = 20, Output: 96
 assert Solution.total_money(20) == 96
 
 print("All unit tests are passed.")

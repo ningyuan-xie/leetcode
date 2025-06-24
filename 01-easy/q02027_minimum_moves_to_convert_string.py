@@ -32,13 +32,13 @@ class Solution:
         return moves
 
 
-# Unit Test: s = "XXX", Output: 1
+# Input: s = "XXX", Output: 1
 assert Solution.minimumMoves("XXX") == 1
 
-# Unit Test: s = "XXOX", Output: 2
+# Input: s = "XXOX", Output: 2
 assert Solution.minimumMoves("XXOX") == 2
 
-# Unit Test: s = "OOOO", Output: 0
+# Input: s = "OOOO", Output: 0
 assert Solution.minimumMoves("OOOO") == 0
 
 print("All unit tests are passed.")

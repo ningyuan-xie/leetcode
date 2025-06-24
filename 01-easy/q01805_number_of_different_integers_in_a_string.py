@@ -29,13 +29,13 @@ class Solution:
         return len(integers)
 
 
-# Unit Test: word = "a123bc34d8ef34", Output: 3
+# Input: word = "a123bc34d8ef34", Output: 3
 assert Solution.num_different_integers("a123bc34d8ef34") == 3
 
-# Unit Test: word = "leet1234code234", Output: 2
+# Input: word = "leet1234code234", Output: 2
 assert Solution.num_different_integers("leet1234code234") == 2
 
-# Unit Test: word = "a1b01c001", Output: 1
+# Input: word = "a1b01c001", Output: 1
 assert Solution.num_different_integers("a1b01c001") == 1
 
 print("All unit tests are passed.")

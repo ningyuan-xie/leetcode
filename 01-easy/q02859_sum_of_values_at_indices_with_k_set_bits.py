@@ -32,10 +32,10 @@ class Solution:
         return sum_elements
 
 
-# Unit Test: nums = [5,10,1,5,2], k = 1, Output: 13
+# Input: nums = [5,10,1,5,2], k = 1, Output: 13
 assert Solution.sumIndicesWithKSetBits([5, 10, 1, 5, 2], 1) == 13
 
-# Unit Test: nums = [4,3,2,1], k = 2, Output: 1
+# Input: nums = [4,3,2,1], k = 2, Output: 1
 assert Solution.sumIndicesWithKSetBits([4, 3, 2, 1], 2) == 1
 
 print("All unit tests are passed.")

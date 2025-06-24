@@ -22,13 +22,13 @@ class Solution:
         return (col + row) % 2 == 1
 
 
-# Unit Test: coordinates = "a1", Output: False
+# Input: coordinates = "a1", Output: False
 assert Solution.square_is_white("a1") is False
 
-# Unit Test: coordinates = "h3", Output: True
+# Input: coordinates = "h3", Output: True
 assert Solution.square_is_white("h3") is True
 
-# Unit Test: coordinates = "c7", Output: False
+# Input: coordinates = "c7", Output: False
 assert Solution.square_is_white("c7") is False
 
 print("All unit tests are passed.")

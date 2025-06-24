@@ -31,13 +31,13 @@ class Solution:
         return gcd(min_num, max_num)
 
 
-# Unit Test: nums = [2, 5, 6, 9, 10], Output: 2
+# Input: nums = [2, 5, 6, 9, 10], Output: 2
 assert Solution.findGCD([2, 5, 6, 9, 10]) == 2
 
-# Unit Test: nums = [7, 5, 6, 8, 3], Output: 1
+# Input: nums = [7, 5, 6, 8, 3], Output: 1
 assert Solution.findGCD([7, 5, 6, 8, 3]) == 1
 
-# Unit Test: nums = [3, 3], Output: 3
+# Input: nums = [3, 3], Output: 3
 assert Solution.findGCD([3, 3]) == 3
 
 print("All unit tests are passed.")

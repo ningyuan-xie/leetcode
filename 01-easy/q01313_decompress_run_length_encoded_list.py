@@ -26,10 +26,10 @@ class Solution:
         return result
 
 
-# Unit Test: nums = [1, 2, 3, 4], Output: [2, 4, 4, 4]
+# Input: nums = [1, 2, 3, 4], Output: [2, 4, 4, 4]
 assert Solution.decompressRLElist([1, 2, 3, 4]) == [2, 4, 4, 4]
 
-# Unit Test: nums = [1, 1, 2, 3], Output: [1, 3, 3]
+# Input: nums = [1, 1, 2, 3], Output: [1, 3, 3]
 assert Solution.decompressRLElist([1, 1, 2, 3]) == [1, 3, 3]
 
 print("All unit tests are passed.")

@@ -27,13 +27,13 @@ class Solution:
         return count
 
 
-# Unit Test: n = 5, Output: 2
+# Input: n = 5, Output: 2
 assert Solution.countTriples(5) == 2
 
-# Unit Test: n = 10, Output: 4
+# Input: n = 10, Output: 4
 assert Solution.countTriples(10) == 4
 
-# Unit Test: n = 1, Output: 0
+# Input: n = 1, Output: 0
 assert Solution.countTriples(1) == 0
 
 print("All unit tests are passed.")

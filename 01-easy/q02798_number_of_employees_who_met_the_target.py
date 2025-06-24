@@ -23,10 +23,10 @@ class Solution:
         return count
 
 
-# Unit Test: hours = [0,1,2,3,4], target = 2, Output: 3
+# Input: hours = [0,1,2,3,4], target = 2, Output: 3
 assert Solution.numberOfEmployeesWhoMetTarget([0, 1, 2, 3, 4], 2) == 3
 
-# Unit Test: hours = [5,1,4,2,2], target = 6, Output: 0
+# Input: hours = [5,1,4,2,2], target = 6, Output: 0
 assert Solution.numberOfEmployeesWhoMetTarget([5, 1, 4, 2, 2], 6) == 0
 
 print("All unit tests are passed.")

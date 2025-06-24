@@ -36,16 +36,16 @@ class Solution:
         return [max_row, max_ones]
 
 
-# Unit Test: mat = [[0,1],[1,0]], Output: [0, 1]
+# Input: mat = [[0,1],[1,0]], Output: [0, 1]
 assert Solution.rowAndMaximumOnes([[0, 1], [1, 0]]) == [0, 1]
 
-# Unit Test: mat = [[0,0,0],[0,1,1]], Output: [1, 2]
+# Input: mat = [[0,0,0],[0,1,1]], Output: [1, 2]
 assert Solution.rowAndMaximumOnes([[0, 0, 0], [0, 1, 1]]) == [1, 2]
 
-# Unit Test: mat = [[0,0],[1,1],[0,0]], Output: [1, 2]
+# Input: mat = [[0,0],[1,1],[0,0]], Output: [1, 2]
 assert Solution.rowAndMaximumOnes([[0, 0], [1, 1], [0, 0]]) == [1, 2]
 
-# Unit Test: mat = [[0],[0]], Output: [0, 0]
+# Input: mat = [[0],[0]], Output: [0, 0]
 assert Solution.rowAndMaximumOnes([[0], [0]]) == [0, 0]
 
 print("All unit tests are passed.")

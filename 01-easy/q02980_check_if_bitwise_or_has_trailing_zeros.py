@@ -27,13 +27,13 @@ class Solution:
         return False
 
 
-# Unit Test: nums = [1,2,3,4,5], Output: True
+# Input: nums = [1,2,3,4,5], Output: True
 assert Solution.hasTrailingZeros([1, 2, 3, 4, 5]) is True
 
-# Unit Test: nums = [2,4,8,16], Output: True
+# Input: nums = [2,4,8,16], Output: True
 assert Solution.hasTrailingZeros([2, 4, 8, 16]) is True
 
-# Unit Test: nums = [1,3,5,7,9], Output: False
+# Input: nums = [1,3,5,7,9], Output: False
 assert Solution.hasTrailingZeros([1, 3, 5, 7, 9]) is False
 
 print("All unit tests are passed.")

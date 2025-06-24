@@ -27,13 +27,13 @@ class Solution:
         return min_length if min_length != float("inf") else -1
 
 
-# Unit Test: nums = [1,2,3], k = 2, Output = 1
+# Input: nums = [1,2,3], k = 2, Output = 1
 assert Solution.minimumSubarrayLength([1, 2, 3], 2) == 1
 
-# Unit Test: nums = [2,1,8], k = 10, Output = 3
+# Input: nums = [2,1,8], k = 10, Output = 3
 assert Solution.minimumSubarrayLength([2, 1, 8], 10) == 3
 
-# Unit Test: nums = [1,2], k = 0, Output = 1
+# Input: nums = [1,2], k = 0, Output = 1
 assert Solution.minimumSubarrayLength([1, 2], 0) == 1
 
 print("All unit tests are passed.")

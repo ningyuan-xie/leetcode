@@ -26,10 +26,10 @@ class Solution:
         return f"{year_bin}-{month_bin}-{day_bin}"
 
 
-# Unit Test: date = "2080-02-29", Output: "100000100000-10-11101"
+# Input: date = "2080-02-29", Output: "100000100000-10-11101"
 assert Solution.convertDateToBinary("2080-02-29") == "100000100000-10-11101"
 
-# Unit Test: date = "1900-01-01", Output: "11101101100-1-1"
+# Input: date = "1900-01-01", Output: "11101101100-1-1"
 assert Solution.convertDateToBinary("1900-01-01") == "11101101100-1-1"
 
 print("All unit tests are passed.")

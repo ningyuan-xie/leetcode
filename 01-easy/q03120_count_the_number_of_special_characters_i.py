@@ -21,13 +21,13 @@ class Solution:
         return count
 
 
-# Unit Test: word = "aaAbcBC", Output = 3
+# Input: word = "aaAbcBC", Output = 3
 assert Solution.numberOfSpecialChars("aaAbcBC") == 3
 
-# Unit Test: word = "abc", Output = 0
+# Input: word = "abc", Output = 0
 assert Solution.numberOfSpecialChars("abc") == 0
 
-# Unit Test: word = "abBCab", Output = 1
+# Input: word = "abBCab", Output = 1
 assert Solution.numberOfSpecialChars("abBCab") == 1
 
 print("All unit tests are passed.")

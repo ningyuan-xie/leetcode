@@ -32,10 +32,10 @@ class Solution:
         return arr[-1]
 
 
-# Unit Test: arr = [1, 2, 2, 6, 6, 6, 6, 7, 10], Output: 6
+# Input: arr = [1, 2, 2, 6, 6, 6, 6, 7, 10], Output: 6
 assert Solution.findSpecialInteger([1, 2, 2, 6, 6, 6, 6, 7, 10]) == 6
 
-# Unit Test: arr = [1, 1], Output: 1
+# Input: arr = [1, 1], Output: 1
 assert Solution.findSpecialInteger([1, 1]) == 1
 
 print("All unit tests are passed.")

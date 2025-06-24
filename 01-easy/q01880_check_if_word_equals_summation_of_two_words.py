@@ -28,10 +28,10 @@ class Solution:
                 == get_numerical_value(targetWord))
 
 
-# Unit Test: firstWord = "acb", secondWord = "cba", targetWord = "cdb", Output: True
+# Input: firstWord = "acb", secondWord = "cba", targetWord = "cdb", Output: True
 assert Solution.isSumEqual("acb", "cba", "cdb") is True
 
-# Unit Test: firstWord = "aaa", secondWord = "a", targetWord = "aab", Output: False
+# Input: firstWord = "aaa", secondWord = "a", targetWord = "aab", Output: False
 assert Solution.isSumEqual("aaa", "a", "aab") is False
 
 print("All unit tests are passed.")

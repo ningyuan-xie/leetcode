@@ -24,13 +24,13 @@ class Solution:
         return word
 
 
-# Unit Test: word = "abcdefd", ch = "d", Output: "dcbaefd"
+# Input: word = "abcdefd", ch = "d", Output: "dcbaefd"
 assert Solution.reversePrefix("abcdefd", "d") == "dcbaefd"
 
-# Unit Test: word = "xyxzxe", ch = "z", Output: "zxyxxe"
+# Input: word = "xyxzxe", ch = "z", Output: "zxyxxe"
 assert Solution.reversePrefix("xyxzxe", "z") == "zxyxxe"
 
-# Unit Test: word = "abcd", ch = "z", Output: "abcd"
+# Input: word = "abcd", ch = "z", Output: "abcd"
 assert Solution.reversePrefix("abcd", "z") == "abcd"
 
 print("All unit tests are passed.")

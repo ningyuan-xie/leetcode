@@ -33,13 +33,13 @@ class Solution:
         return total_time
 
 
-# Unit Test: word = "abc", Output: 5
+# Input: word = "abc", Output: 5
 assert Solution.minTimeToType("abc") == 5
 
-# Unit Test: word = "bza", Output: 7
+# Input: word = "bza", Output: 7
 assert Solution.minTimeToType("bza") == 7
 
-# Unit Test: word = "z", Output: 2
+# Input: word = "z", Output: 2
 assert Solution.minTimeToType("z") == 2
 
 print("All unit tests are passed.")

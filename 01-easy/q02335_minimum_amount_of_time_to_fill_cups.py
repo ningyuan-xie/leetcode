@@ -26,10 +26,10 @@ class Solution:
             return (sum(amount) + 1) // 2
 
 
-# Unit Test: amount = [1,4,2], Output: 4
+# Input: amount = [1,4,2], Output: 4
 assert Solution.fillCups([1, 4, 2]) == 4
 
-# Unit Test: amount = [5,4,4], Output: 7
+# Input: amount = [5,4,4], Output: 7
 assert Solution.fillCups([5, 4, 4]) == 7
 
 print("All unit tests are passed.")

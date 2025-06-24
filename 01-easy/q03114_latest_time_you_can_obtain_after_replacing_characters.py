@@ -33,16 +33,16 @@ class Solution:
         return ''.join(s)  # Convert list back to string
 
 
-# Unit Test: s = "1?:?4", Output = "11:54"
+# Input: s = "1?:?4", Output = "11:54"
 assert Solution.findLatestTime("1?:?4") == "11:54"
 
-# Unit Test: s = "0?:5?", Output = "09:59"
+# Input: s = "0?:5?", Output = "09:59"
 assert Solution.findLatestTime("0?:5?") == "09:59"
 
-# Unit Test: s = "?3:12", Output = "03:12"
+# Input: s = "?3:12", Output = "03:12"
 assert Solution.findLatestTime("?3:12") == "03:12"
 
-# Unit Test: s = "??:1?", Output = "11:19"
+# Input: s = "??:1?", Output = "11:19"
 assert Solution.findLatestTime("??:1?") == "11:19"
 
 print("All unit tests are passed.")

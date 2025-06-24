@@ -23,13 +23,13 @@ class Solution:
                 return [A, n - A]
 
 
-# Unit Test: n = 2, Output: [1, 1]
+# Input: n = 2, Output: [1, 1]
 assert Solution.getNoZeroIntegers(2) == [1, 1]
 
-# Unit Test: n = 11, Output: [2, 9]
+# Input: n = 11, Output: [2, 9]
 assert Solution.getNoZeroIntegers(11) == [2, 9]
 
-# Unit Test: n = 10000, Output: [1, 9999]
+# Input: n = 10000, Output: [1, 9999]
 assert Solution.getNoZeroIntegers(10000) == [1, 9999]
 
 print("All unit tests are passed.")

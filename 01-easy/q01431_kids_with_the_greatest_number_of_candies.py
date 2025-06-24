@@ -22,15 +22,15 @@ class Solution:
         return [(candies[i] + extraCandies) >= max_candies for i in range(len(candies))]
 
 
-# Unit Test: candies = [2, 3, 5, 1, 3], extraCandies = 3, Output: [True, True, True, False, True]
+# Input: candies = [2, 3, 5, 1, 3], extraCandies = 3, Output: [True, True, True, False, True]
 assert (Solution.kidsWithCandies([2, 3, 5, 1, 3], 3)
         == [True, True, True, False, True])
 
-# Unit Test: candies = [4, 2, 1, 1, 2], extraCandies = 1, Output: [True, False, False, False, False]
+# Input: candies = [4, 2, 1, 1, 2], extraCandies = 1, Output: [True, False, False, False, False]
 assert (Solution.kidsWithCandies([4, 2, 1, 1, 2], 1)
         == [True, False, False, False, False])
 
-# Unit Test: candies = [12, 1, 12], extraCandies = 10, Output: [True, False, True]
+# Input: candies = [12, 1, 12], extraCandies = 10, Output: [True, False, True]
 assert Solution.kidsWithCandies([12, 1, 12], 10) == [True, False, True]
 
 print("All unit tests are passed.")

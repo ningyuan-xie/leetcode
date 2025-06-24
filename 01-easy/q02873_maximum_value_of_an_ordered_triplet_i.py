@@ -24,13 +24,13 @@ class Solution:
         return max(max_value, 0)
 
 
-# Unit Test: nums = [12,6,1,2,7], Output: 77
+# Input: nums = [12,6,1,2,7], Output: 77
 assert Solution.maximumTripletValue([12, 6, 1, 2, 7]) == 77
 
-# Unit Test: nums = [1,10,3,4,19], Output: 133
+# Input: nums = [1,10,3,4,19], Output: 133
 assert Solution.maximumTripletValue([1, 10, 3, 4, 19]) == 133
 
-# Unit Test: nums = [1,2,3], Output: 0
+# Input: nums = [1,2,3], Output: 0
 assert Solution.maximumTripletValue([1, 2, 3]) == 0
 
 print("All unit tests are passed.")

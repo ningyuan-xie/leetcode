@@ -15,13 +15,13 @@ class Solution:
         return "01" not in s
 
 
-# Unit Test: s = "1001", Output: False
+# Input: s = "1001", Output: False
 assert Solution.check_ones_segment("1001") is False
 
-# Unit Test: s = "110", Output: True
+# Input: s = "110", Output: True
 assert Solution.check_ones_segment("110") is True
 
-# Unit Test: s = "1", Output: True
+# Input: s = "1", Output: True
 assert Solution.check_ones_segment("1") is True
 
 print("All unit tests are passed.")

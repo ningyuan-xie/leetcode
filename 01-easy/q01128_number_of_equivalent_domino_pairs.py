@@ -34,13 +34,13 @@ class Solution:
         return num_pairs
 
 
-# Unit Test: dominoes = [[1, 2], [2, 1], [3, 4], [5, 6]], Output: 1
+# Input: dominoes = [[1, 2], [2, 1], [3, 4], [5, 6]], Output: 1
 assert Solution.numEquivDominoPairs([[1, 2], [2, 1], [3, 4], [5, 6]]) == 1
 
-# Unit Test: dominoes = [[1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1]], Output: 15
+# Input: dominoes = [[1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1]], Output: 15
 assert Solution.numEquivDominoPairs([[1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1]]) == 15
 
-# Unit Test: dominoes = [[1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1]], Output: 28
+# Input: dominoes = [[1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1]], Output: 28
 assert (Solution.numEquivDominoPairs([[1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1], [1, 2], [2, 1]])
         == 28)
 

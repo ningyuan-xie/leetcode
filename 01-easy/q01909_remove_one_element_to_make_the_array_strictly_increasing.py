@@ -31,13 +31,13 @@ class Solution:
         return False
 
 
-# Unit Test: nums = [1, 2, 10, 5, 7], Output: True
+# Input: nums = [1, 2, 10, 5, 7], Output: True
 assert Solution.canBeIncreasing([1, 2, 10, 5, 7]) is True
 
-# Unit Test: nums = [2, 3, 1, 2], Output: False
+# Input: nums = [2, 3, 1, 2], Output: False
 assert Solution.canBeIncreasing([2, 3, 1, 2]) is False
 
-# Unit Test: nums = [1, 1, 1], Output: False
+# Input: nums = [1, 1, 1], Output: False
 assert Solution.canBeIncreasing([1, 1, 1]) is False
 
 print("All unit tests are passed.")

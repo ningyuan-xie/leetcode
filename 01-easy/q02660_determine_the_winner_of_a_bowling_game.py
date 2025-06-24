@@ -56,16 +56,16 @@ class Solution:
             return 0
 
 
-# Unit Test: player1 = [5,10,3,2], player2 = [6,5,7,3], Output: 1
+# Input: player1 = [5,10,3,2], player2 = [6,5,7,3], Output: 1
 assert Solution.isWinner([5, 10, 3, 2], [6, 5, 7, 3]) == 1
 
-# Unit Test: player1 = [3,5,7,6], player2 = [8,10,10,2], Output: 2
+# Input: player1 = [3,5,7,6], player2 = [8,10,10,2], Output: 2
 assert Solution.isWinner([3, 5, 7, 6], [8, 10, 10, 2]) == 2
 
-# Unit Test: player1 = [2,3], player2 = [4,1], Output: 2
+# Input: player1 = [2,3], player2 = [4,1], Output: 2
 assert Solution.isWinner([2, 3], [4, 1]) == 0
 
-# Unit Test: player1 = [1,1,1,10,10,10,10], player2 = [10,10,10,10,1,1,1],
+# Input: player1 = [1,1,1,10,10,10,10], player2 = [10,10,10,10,1,1,1],
 # Output: 2
 assert Solution.isWinner([1, 1, 1, 10, 10, 10, 10],
                          [10, 10, 10, 10, 1, 1, 1]) == 2

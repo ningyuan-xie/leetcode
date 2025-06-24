@@ -22,16 +22,16 @@ class Solution:
         return count
 
 
-# Unit Test: sequence = "ababc", word = "ab", Output: 2
+# Input: sequence = "ababc", word = "ab", Output: 2
 assert Solution.max_repeating("ababc", "ab") == 2
 
-# Unit Test: sequence = "ababc", word = "ba", Output: 1
+# Input: sequence = "ababc", word = "ba", Output: 1
 assert Solution.max_repeating("ababc", "ba") == 1
 
-# Unit Test: sequence = "ababc", word = "ac", Output: 0
+# Input: sequence = "ababc", word = "ac", Output: 0
 assert Solution.max_repeating("ababc", "ac") == 0
 
-# Unit Test: sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba", word = "aaaba", Output: 5
+# Input: sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba", word = "aaaba", Output: 5
 assert Solution.max_repeating("aaabaaaabaaabaaaabaaaabaaaabaaaaba", "aaaba") == 5
 
 print("All unit tests are passed.")

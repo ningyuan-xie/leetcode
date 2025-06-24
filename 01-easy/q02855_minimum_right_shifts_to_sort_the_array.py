@@ -36,13 +36,13 @@ class Solution:
         return -1  # Not possible
 
 
-# Unit Test: nums = [3,4,5,1,2], Output: 2
+# Input: nums = [3,4,5,1,2], Output: 2
 assert Solution.minimumRightShifts([3, 4, 5, 1, 2]) == 2
 
-# Unit Test: nums = [1,3,5], Output: 0
+# Input: nums = [1,3,5], Output: 0
 assert Solution.minimumRightShifts([1, 3, 5]) == 0
 
-# Unit Test: nums = [2,1,4], Output: -1
+# Input: nums = [2,1,4], Output: -1
 assert Solution.minimumRightShifts([2, 1, 4]) == -1
 
 print("All unit tests are passed.")

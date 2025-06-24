@@ -25,16 +25,16 @@ class Solution:
         return sum(1 for value in frequency.values() if value == max_frequency)
 
 
-# Unit Test: n = 13, Output: 4
+# Input: n = 13, Output: 4
 assert Solution.countLargestGroup(13) == 4
 
-# Unit Test: n = 2, Output: 2
+# Input: n = 2, Output: 2
 assert Solution.countLargestGroup(2) == 2
 
-# Unit Test: n = 15, Output: 6
+# Input: n = 15, Output: 6
 assert Solution.countLargestGroup(15) == 6
 
-# Unit Test: n = 24, Output: 5
+# Input: n = 24, Output: 5
 assert Solution.countLargestGroup(24) == 5
 
 print("All unit tests are passed.")

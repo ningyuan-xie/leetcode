@@ -32,16 +32,16 @@ class Solution:
         return count
 
 
-# Unit Test: s = "RLRRLLRLRL", Output: 4
+# Input: s = "RLRRLLRLRL", Output: 4
 assert Solution.balancedStringSplit("RLRRLLRLRL") == 4
 
-# Unit Test: s = "RLLLLRRRLR", Output: 3
+# Input: s = "RLLLLRRRLR", Output: 3
 assert Solution.balancedStringSplit("RLLLLRRRLR") == 3
 
-# Unit Test: s = "LLLLRRRR", Output: 1
+# Input: s = "LLLLRRRR", Output: 1
 assert Solution.balancedStringSplit("LLLLRRRR") == 1
 
-# Unit Test: s = "RLRRRLLRLL", Output: 2
+# Input: s = "RLRRRLLRLL", Output: 2
 assert Solution.balancedStringSplit("RLRRRLLRLL") == 2
 
 print("All unit tests are passed.")

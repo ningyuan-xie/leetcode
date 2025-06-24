@@ -36,19 +36,19 @@ class Solution:
             return False
 
 
-# Unit Test: event1 = ["01:15", "02:00"], event2 = ["02:00", "03:00"], Output: True
+# Input: event1 = ["01:15", "02:00"], event2 = ["02:00", "03:00"], Output: True
 assert Solution.haveConflict(["01:15", "02:00"], ["02:00", "03:00"]) is True
 
-# Unit Test: event1 = ["01:00", "02:00"], event2 = ["01:20", "03:00"], Output: True
+# Input: event1 = ["01:00", "02:00"], event2 = ["01:20", "03:00"], Output: True
 assert Solution.haveConflict(["01:00", "02:00"], ["01:20", "03:00"]) is True
 
-# Unit Test: event1 = ["10:00", "11:00"], event2 = ["14:00", "15:00"], Output: False
+# Input: event1 = ["10:00", "11:00"], event2 = ["14:00", "15:00"], Output: False
 assert Solution.haveConflict(["10:00", "11:00"], ["14:00", "15:00"]) is False
 
-# Unit Test: event1 = ["06:35", "07:15"], event2 = ["16:41", "19:36"], Output: False
+# Input: event1 = ["06:35", "07:15"], event2 = ["16:41", "19:36"], Output: False
 assert Solution.haveConflict(["06:35", "07:15"], ["16:41", "19:36"]) is False
 
-# Unit Test: event1 = ["14:13", "22:08"], event2 = ["02:40","08:08"], Output: False
+# Input: event1 = ["14:13", "22:08"], event2 = ["02:40","08:08"], Output: False
 assert Solution.haveConflict(["14:13", "22:08"], ["02:40", "08:08"]) is False
 
 print("All unit tests are passed.")

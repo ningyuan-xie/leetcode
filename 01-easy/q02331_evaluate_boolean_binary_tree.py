@@ -34,12 +34,12 @@ class Solution:
             return self.evaluateTree(root.left) and self.evaluateTree(root.right)
 
 
-# Unit Test: root = [2,1,3,null,null,0,1], Output: true
+# Input: root = [2,1,3,null,null,0,1], Output: true
 Solution = Solution()
 root_test = TreeNode.build_binary_tree([2, 1, 3, None, None, 0, 1])
 assert Solution.evaluateTree(root_test) is True
 
-# Unit Test: root = [0], Output: false
+# Input: root = [0], Output: false
 root_test = TreeNode.build_binary_tree([0])
 assert Solution.evaluateTree(root_test) is False
 

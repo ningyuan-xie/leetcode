@@ -35,13 +35,13 @@ class Solution:
         return "".join(chars)
 
 
-# Unit Test: s = "egcfe", Output: "efcfe"
+# Input: s = "egcfe", Output: "efcfe"
 assert Solution.makeSmallestPalindrome("egcfe") == "efcfe"
 
-# Unit Test: s = "abcd", Output: "abba"
+# Input: s = "abcd", Output: "abba"
 assert Solution.makeSmallestPalindrome("abcd") == "abba"
 
-# Unit Test: s = "seven", Output: "neven"
+# Input: s = "seven", Output: "neven"
 assert Solution.makeSmallestPalindrome("seven") == "neven"
 
 print("All unit tests are passed.")

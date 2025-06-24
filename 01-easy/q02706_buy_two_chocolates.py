@@ -22,10 +22,10 @@ class Solution:
         return money if money >= 0 else money + prices[0] + prices[1]
 
 
-# Unit Test: prices = [1,2,2], money = 3, Output: 0
+# Input: prices = [1,2,2], money = 3, Output: 0
 assert Solution.buyChoco([1, 2, 2], 3) == 0
 
-# Unit Test: prices = [3,2,3], money = 3, Output: 3
+# Input: prices = [3,2,3], money = 3, Output: 3
 assert Solution.buyChoco([3, 2, 3], 3) == 3
 
 print("All unit tests are passed.")

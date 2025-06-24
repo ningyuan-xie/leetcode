@@ -25,13 +25,13 @@ class Solution:
         return highest_altitude
 
 
-# Unit Test: gain = [-5, 1, 5, 0, -7], Output: 1
+# Input: gain = [-5, 1, 5, 0, -7], Output: 1
 assert Solution.largest_altitude([-5, 1, 5, 0, -7]) == 1
 
-# Unit Test: gain = [-4, -3, -2, -1, 4, 3, 2], Output: 0
+# Input: gain = [-4, -3, -2, -1, 4, 3, 2], Output: 0
 assert Solution.largest_altitude([-4, -3, -2, -1, 4, 3, 2]) == 0
 
-# Unit Test: gain = [1, 2, 3, 4, 5], Output: 15
+# Input: gain = [1, 2, 3, 4, 5], Output: 15
 assert Solution.largest_altitude([1, 2, 3, 4, 5]) == 15
 
 print("All unit tests are passed.")

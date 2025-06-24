@@ -37,19 +37,19 @@ class Solution:
         return max_length
 
 
-# Unit Test: s = "01000111", Output: 6
+# Input: s = "01000111", Output: 6
 assert Solution.findTheLongestBalancedSubstring("01000111") == 6
 
-# Unit Test: s = "00111", Output: 4
+# Input: s = "00111", Output: 4
 assert Solution.findTheLongestBalancedSubstring("00111") == 4
 
-# Unit Test: s = "111", Output: 0
+# Input: s = "111", Output: 0
 assert Solution.findTheLongestBalancedSubstring("111") == 0
 
-# Unit Test: s = "", Output: 0
+# Input: s = "", Output: 0
 assert Solution.findTheLongestBalancedSubstring("") == 0
 
-# Unit Test: s= "10", Output: 0
+# Input: s= "10", Output: 0
 assert Solution.findTheLongestBalancedSubstring("10") == 0
 
 print("All unit tests are passed.")

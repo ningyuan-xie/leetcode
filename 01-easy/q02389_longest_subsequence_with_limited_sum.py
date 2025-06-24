@@ -36,10 +36,10 @@ class Solution:
         return results
 
 
-# Unit Test: nums = [4,5,2,1], queries = [3,10,21], Output: [2,3,4]
+# Input: nums = [4,5,2,1], queries = [3,10,21], Output: [2,3,4]
 assert Solution.answerQueries([4, 5, 2, 1], [3, 10, 21]) == [2, 3, 4]
 
-# Unit Test: nums = [2,3,4,5], queries = [1], Output: [0]
+# Input: nums = [2,3,4,5], queries = [1], Output: [0]
 assert Solution.answerQueries([2, 3, 4, 5], [1]) == [0]
 
 print("All unit tests are passed.")

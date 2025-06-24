@@ -29,10 +29,10 @@ class Solution:
         return result
 
 
-# Unit Test: grid = [[1],[22],[333]], Output: [3]
+# Input: grid = [[1],[22],[333]], Output: [3]
 assert Solution.findColumnWidth([[1], [22], [333]]) == [3]
 
-# Unit Test: grid = [[-15,1,3],[15,7,12],[5,6,-2]], Output: [3,1,2]
+# Input: grid = [[-15,1,3],[15,7,12],[5,6,-2]], Output: [3,1,2]
 assert Solution.findColumnWidth([[-15, 1, 3], [15, 7, 12], [5, 6, -2]]) == [3, 1, 2]
 
 print("All unit tests are passed.")

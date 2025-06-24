@@ -27,12 +27,12 @@ class Solution:
         return count
 
 
-# Unit Test: words1 = ["leetcode","is","amazing","as","is"], words2 = ["amazing","leetcode","is"],
+# Input: words1 = ["leetcode","is","amazing","as","is"], words2 = ["amazing","leetcode","is"],
 # Output: 2
 assert Solution.countCommonWords(["leetcode", "is", "amazing", "as", "is"],
                                  ["amazing", "leetcode", "is"]) == 2
 
-# Unit Test: words1 =["b","bb","bbb"], words2 = ["a","aa","aaa"], Output: 0
+# Input: words1 =["b","bb","bbb"], words2 = ["a","aa","aaa"], Output: 0
 assert Solution.countCommonWords(["b", "bb", "bbb"], ["a", "aa", "aaa"]) == 0
 
 print("All unit tests are passed.")

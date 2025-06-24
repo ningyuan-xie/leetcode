@@ -27,10 +27,10 @@ class Solution:
         return True
 
 
-# Unit Test: nums = [1,1,2,2,3,4], Output = True
+# Input: nums = [1,1,2,2,3,4], Output = True
 assert Solution.isPossibleToSplit([1, 1, 2, 2, 3, 4]) is True
 
-# Unit Test: nums = [1,1,1,1], Output = False
+# Input: nums = [1,1,1,1], Output = False
 assert Solution.isPossibleToSplit([1, 1, 1, 1]) is False
 
 print("All unit tests are passed.")

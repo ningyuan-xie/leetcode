@@ -27,16 +27,16 @@ class Solution:
         return True
 
 
-# Unit Test: nums = [1, 0, 0, 0, 1, 0, 0, 1], k = 2, Output: True
+# Input: nums = [1, 0, 0, 0, 1, 0, 0, 1], k = 2, Output: True
 assert Solution.kLengthApart([1, 0, 0, 0, 1, 0, 0, 1], 2) == True
 
-# Unit Test: nums = [1, 0, 0, 1, 0, 1], k = 2, Output: False
+# Input: nums = [1, 0, 0, 1, 0, 1], k = 2, Output: False
 assert Solution.kLengthApart([1, 0, 0, 1, 0, 1], 2) == False
 
-# Unit Test: nums = [1, 1, 1, 1, 1], k = 0, Output: True
+# Input: nums = [1, 1, 1, 1, 1], k = 0, Output: True
 assert Solution.kLengthApart([1, 1, 1, 1, 1], 0) == True
 
-# Unit Test: nums = [0, 1, 0, 1], k = 1, Output: True
+# Input: nums = [0, 1, 0, 1], k = 1, Output: True
 assert Solution.kLengthApart([0, 1, 0, 1], 1) == True
 
 print("All unit tests are passed.")

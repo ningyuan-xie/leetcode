@@ -16,10 +16,10 @@ class Solution:
         return sum(num % 3 != 0 for num in nums)
 
 
-# Unit Test: nums = [1,2,3,4], Output = 3
+# Input: nums = [1,2,3,4], Output = 3
 assert Solution.minimumOperations([1, 2, 3, 4]) == 3
 
-# Unit Test: nums = [3,6,9], Output = 0
+# Input: nums = [3,6,9], Output = 0
 assert Solution.minimumOperations([3, 6, 9]) == 0
 
 print("All unit tests are passed.")

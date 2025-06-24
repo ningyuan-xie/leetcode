@@ -31,13 +31,13 @@ class Solution:
         return -1
 
 
-# Unit Test: n = 8, Output: 6
+# Input: n = 8, Output: 6
 assert Solution.pivotInteger(8) == 6
 
-# Unit Test: n = 1, Output: 1
+# Input: n = 1, Output: 1
 assert Solution.pivotInteger(1) == 1
 
-# Unit Test: n = 4, Output: -1
+# Input: n = 4, Output: -1
 assert Solution.pivotInteger(4) == -1
 
 print("All unit tests are passed.")

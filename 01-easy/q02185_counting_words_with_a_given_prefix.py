@@ -19,10 +19,10 @@ class Solution:
         return count
 
 
-# Unit Test: words = ["pay","attention","practice","attend"], prefix = "at", Output: 2
+# Input: words = ["pay","attention","practice","attend"], prefix = "at", Output: 2
 assert Solution.countWords(["pay", "attention", "practice", "attend"], "at") == 2
 
-# Unit Test: words = ["leetcode","win","loops","success"], pref = "code", Output: 0
+# Input: words = ["leetcode","win","loops","success"], pref = "code", Output: 0
 assert Solution.countWords(["leetcode", "win", "loops", "success"], "code") == 0
 
 print("All unit tests are passed.")

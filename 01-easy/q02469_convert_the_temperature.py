@@ -21,10 +21,10 @@ class Solution:
         return [kelvin, fahrenheit]
 
 
-# Unit Test: celsius = 36.50, Output: [309.65000, 97.70000]
+# Input: celsius = 36.50, Output: [309.65000, 97.70000]
 assert Solution.convertTemperature(36.50) == [309.65000, 97.70000]
 
-# Unit Test: celsius = 122.11, Output: [395.26000, 251.79800]
+# Input: celsius = 122.11, Output: [395.26000, 251.79800]
 assert Solution.convertTemperature(122.11) == [395.26000, 251.79800]
 
 print("All unit tests are passed.")

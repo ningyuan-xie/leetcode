@@ -19,10 +19,10 @@ class Solution:
         return True
 
 
-# Unit Test: num = "1210", Output: True
+# Input: num = "1210", Output: True
 assert Solution.digitCount("1210") is True
 
-# Unit Test: num = "030", Output: False
+# Input: num = "030", Output: False
 assert Solution.digitCount("030") is False
 
 print("All unit tests are passed.")

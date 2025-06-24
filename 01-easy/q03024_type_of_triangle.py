@@ -31,10 +31,10 @@ class Solution:
             return "scalene"
 
 
-# Unit Test: nums = [3,3,3], Output = "Equilateral"
+# Input: nums = [3,3,3], Output = "Equilateral"
 assert Solution.triangleType([3, 3, 3]) == "Equilateral"
 
-# Unit Test: nums = [3,4,5], Output = "Scalene"
+# Input: nums = [3,4,5], Output = "Scalene"
 assert Solution.triangleType([3, 4, 5]) == "Scalene"
 
 print("All unit tests are passed.")

@@ -22,18 +22,18 @@ class Solution:
         return xor
 
 
-# Unit Test: n = 5, start = 0, Output: 8
+# Input: n = 5, start = 0, Output: 8
 # Explanation: 0 ^ 2 = 2, 2 ^ 4 = 6, 6 ^ 6 = 0, 0 ^ 8 = 8
 assert Solution.xorOperation(5, 0) == 8
 
-# Unit Test: n = 4, start = 3, Output: 8
+# Input: n = 4, start = 3, Output: 8
 # Explanation: 3 ^ 5 = 6, 6 ^ 7 = 1, 1 ^ 9 = 8
 assert Solution.xorOperation(4, 3) == 8
 
-# Unit Test: n = 1, start = 7, Output: 7
+# Input: n = 1, start = 7, Output: 7
 assert Solution.xorOperation(1, 7) == 7
 
-# Unit Test: n = 10, start = 5, Output: 2
+# Input: n = 10, start = 5, Output: 2
 assert Solution.xorOperation(10, 5) == 2
 
 print("All unit tests are passed.")

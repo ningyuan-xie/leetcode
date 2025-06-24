@@ -23,13 +23,13 @@ class Solution:
         return ""
 
 
-# Unit Test: words = ["abc", "aba", "xyz", "aba"], Output: "aba"
+# Input: words = ["abc", "aba", "xyz", "aba"], Output: "aba"
 assert Solution.firstPalindrome(["abc", "aba", "xyz", "aba"]) == "aba"
 
-# Unit Test: words = ["notapalindrome","racecar"], Output: "racecar"
+# Input: words = ["notapalindrome","racecar"], Output: "racecar"
 assert Solution.firstPalindrome(["notapalindrome", "racecar"]) == "racecar"
 
-# Unit Test: words = ["def","ghi"], Output: ""
+# Input: words = ["def","ghi"], Output: ""
 assert Solution.firstPalindrome(["def", "ghi"]) == ""
 
 print("All unit tests are passed.")

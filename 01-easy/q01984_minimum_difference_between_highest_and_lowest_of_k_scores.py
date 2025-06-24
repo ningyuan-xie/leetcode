@@ -28,13 +28,13 @@ class Solution:
         return min_diff
 
 
-# Unit Test: nums = [90], k = 1, Output: 0
+# Input: nums = [90], k = 1, Output: 0
 assert Solution.minDifference([90], 1) == 0
 
-# Unit Test: nums = [9, 4, 1, 7], k = 2, Output: 2
+# Input: nums = [9, 4, 1, 7], k = 2, Output: 2
 assert Solution.minDifference([9, 4, 1, 7], 2) == 2
 
-# Unit Test: nums = [9, 4, 1, 7], k = 4, Output: 8
+# Input: nums = [9, 4, 1, 7], k = 4, Output: 8
 assert Solution.minDifference([9, 4, 1, 7], 4) == 8
 
 print("All unit tests are passed.")

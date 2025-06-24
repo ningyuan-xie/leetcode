@@ -37,13 +37,13 @@ class Solution:
         return False
 
 
-# Unit Test: arr = [1, 2, 4, 4, 4, 4], m = 1, k = 3, Output: True
+# Input: arr = [1, 2, 4, 4, 4, 4], m = 1, k = 3, Output: True
 assert Solution.containsPattern([1, 2, 4, 4, 4, 4], 1, 3) is True
 
-# Unit Test: arr = [1, 2, 1, 2, 1, 1, 1, 3], m = 2, k = 2, Output: True
+# Input: arr = [1, 2, 1, 2, 1, 1, 1, 3], m = 2, k = 2, Output: True
 assert Solution.containsPattern([1, 2, 1, 2, 1, 1, 1, 3], 2, 2) is True
 
-# Unit Test: arr = [1, 2, 1, 2, 1, 3], m = 2, k = 3, Output: False
+# Input: arr = [1, 2, 1, 2, 1, 3], m = 2, k = 3, Output: False
 assert Solution.containsPattern([1, 2, 1, 2, 1, 3], 2, 3) is False
 
 print("All unit tests are passed.")

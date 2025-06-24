@@ -25,16 +25,16 @@ class Solution:
         return ''.join(shuffled)
 
 
-# Unit Test: s = "codeleet", indices = [4, 5, 6, 7, 0, 2, 1, 3], Output: "leetcode"
+# Input: s = "codeleet", indices = [4, 5, 6, 7, 0, 2, 1, 3], Output: "leetcode"
 assert Solution.restoreString("codeleet", [4, 5, 6, 7, 0, 2, 1, 3]) == "leetcode"
 
-# Unit Test: s = "abc", indices = [0, 1, 2], Output: "abc"
+# Input: s = "abc", indices = [0, 1, 2], Output: "abc"
 assert Solution.restoreString("abc", [0, 1, 2]) == "abc"
 
-# Unit Test: s = "aiohn", indices = [3, 1, 4, 2, 0], Output: "nihao"
+# Input: s = "aiohn", indices = [3, 1, 4, 2, 0], Output: "nihao"
 assert Solution.restoreString("aiohn", [3, 1, 4, 2, 0]) == "nihao"
 
-# Unit Test: s = "aaiougrt", indices = [4, 0, 2, 6, 7, 3, 1, 5], Output: "arigatou"
+# Input: s = "aaiougrt", indices = [4, 0, 2, 6, 7, 3, 1, 5], Output: "arigatou"
 assert Solution.restoreString("aaiougrt", [4, 0, 2, 6, 7, 3, 1, 5]) == "arigatou"
 
 print("All unit tests are passed.")

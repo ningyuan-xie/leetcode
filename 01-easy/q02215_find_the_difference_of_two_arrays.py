@@ -23,13 +23,13 @@ class Solution:
         return [diff1, diff2]
 
 
-# Unit Test: nums1 = [1,2,3], nums2 = [2,4,6], Output: [[1,3],[4,6]]
+# Input: nums1 = [1,2,3], nums2 = [2,4,6], Output: [[1,3],[4,6]]
 assert Solution.findDifference([1, 2, 3], [2, 4, 6]) == [[1, 3], [4, 6]]
 
-# Unit Test: nums1 = [1,2,3,3], nums2 = [1,1,2,2], Output: [[3],[]]
+# Input: nums1 = [1,2,3,3], nums2 = [1,1,2,2], Output: [[3],[]]
 assert Solution.findDifference([1, 2, 3, 3], [1, 1, 2, 2]) == [[3], []]
 
-# Unit Test: nums1 = [-68,-80,-19,-94,82,21,-43], nums2 = [-63],
+# Input: nums1 = [-68,-80,-19,-94,82,21,-43], nums2 = [-63],
 # Output: [[-94, -19, -80, 82, 21, -43, -68],[-63]]
 assert (Solution.findDifference([-68, -80, -19, -94, 82, 21, -43], [-63])
         == [[-94, -19, -80, 82, 21, -43, -68], [-63]])

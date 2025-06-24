@@ -17,13 +17,13 @@ class Solution:
         return s == ''.join([word[0] for word in words])
 
 
-# Unit Test: words = ["alice","bob","charlie"], s = "abc", Output: True
+# Input: words = ["alice","bob","charlie"], s = "abc", Output: True
 assert Solution.isAcronym(["alice", "bob", "charlie"], "abc") is True
 
-# Unit Test: words = ["an","apple"], s = "a", Output: False
+# Input: words = ["an","apple"], s = "a", Output: False
 assert Solution.isAcronym(["an", "apple"], "a") is False
 
-# Unit Test: words = ["never","gonna","give","up","on","you"], s = "ngguoy", Output: True
+# Input: words = ["never","gonna","give","up","on","you"], s = "ngguoy", Output: True
 assert Solution.isAcronym(["never", "gonna", "give", "up", "on", "you"], "ngguoy") is True
 
 print("All unit tests are passed.")

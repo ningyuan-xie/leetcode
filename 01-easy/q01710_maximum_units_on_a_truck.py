@@ -38,13 +38,13 @@ class Solution:
         return total_units
 
 
-# Unit Test: box_types = [[1, 3], [2, 2], [3, 1]], truck_size = 4, Output: 8
+# Input: box_types = [[1, 3], [2, 2], [3, 1]], truck_size = 4, Output: 8
 assert Solution.maximum_units([[1, 3], [2, 2], [3, 1]], 4) == 8
 
-# Unit Test: box_types = [[5, 10], [2, 5], [4, 7], [3, 9]], truck_size = 10, Output: 91
+# Input: box_types = [[5, 10], [2, 5], [4, 7], [3, 9]], truck_size = 10, Output: 91
 assert Solution.maximum_units([[5, 10], [2, 5], [4, 7], [3, 9]], 10) == 91
 
-# Unit Test: box_types = [[1, 1]], truck_size = 1, Output: 1
+# Input: box_types = [[1, 1]], truck_size = 1, Output: 1
 assert Solution.maximum_units([[1, 1]], 1) == 1
 
 print("All unit tests are passed.")

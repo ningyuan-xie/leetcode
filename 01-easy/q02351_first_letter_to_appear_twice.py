@@ -31,10 +31,10 @@ class Solution:
         return ""
 
 
-# Unit Test: s = "abccbaacz", Output: "c"
+# Input: s = "abccbaacz", Output: "c"
 assert Solution.firstLetterToAppearTwice("abccbaacz") == "c"
 
-# Unit Test: s = "abcdd", Output: "d"
+# Input: s = "abcdd", Output: "d"
 assert Solution.firstLetterToAppearTwiceDictionary("abcdd") == "d"
 
 print("All unit tests are passed.")

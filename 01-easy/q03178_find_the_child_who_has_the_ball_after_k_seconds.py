@@ -30,13 +30,13 @@ class Solution:
             return n - remaining_time - 1
 
 
-# Unit Test: n = 3, k = 5, Output = 1
+# Input: n = 3, k = 5, Output = 1
 assert Solution.numberOfChild(3, 5) == 1
 
-# Unit Test: n = 5, k = 6, Output = 2
+# Input: n = 5, k = 6, Output = 2
 assert Solution.numberOfChild(5, 6) == 2
 
-# Unit Test: n = 4, k = 2, Output = 2
+# Input: n = 4, k = 2, Output = 2
 assert Solution.numberOfChild(4, 2) == 2
 
 print("All unit tests are passed.")

@@ -32,13 +32,13 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [3,1,2,2,2,1,3], k = 2, Output: 4
+# Input: nums = [3,1,2,2,2,1,3], k = 2, Output: 4
 assert Solution.countPairs([3, 1, 2, 2, 2, 1, 3], 2) == 4
 
-# Unit Test: nums = [1,2,3,4], k = 1, Output: 0
+# Input: nums = [1,2,3,4], k = 1, Output: 0
 assert Solution.countPairs([1, 2, 3, 4], 1) == 0
 
-# Unit Test: nums = [5,5,9,2,5,5,9,2,2,5,5,6,2,2,5,2,5,4,3], k = 7, Output: 18
+# Input: nums = [5,5,9,2,5,5,9,2,2,5,5,6,2,2,5,2,5,4,3], k = 7, Output: 18
 assert Solution.countPairs([5, 5, 9, 2, 5, 5, 9, 2, 2, 5, 5,
                             6, 2, 2, 5, 2, 5, 4, 3], 7) == 18
 

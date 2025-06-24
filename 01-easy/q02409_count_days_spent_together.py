@@ -28,12 +28,12 @@ class Solution:
         return max(0, min(leaveAlice, leaveBob) - max(arriveAlice, arriveBob) + 1)
 
 
-# Unit Test: arriveAlice = "08-15", leaveAlice = "08-18", arriveBob = "08-16", leaveBob = "08-19",
+# Input: arriveAlice = "08-15", leaveAlice = "08-18", arriveBob = "08-16", leaveBob = "08-19",
 # Output: 3
 assert (Solution.countDaysTogether("08-15", "08-18", "08-16", "08-19")
         == 3)
 
-# Unit Test: arriveAlice = "10-01", leaveAlice = "10-31", arriveBob = "11-01", leaveBob = "12-31",
+# Input: arriveAlice = "10-01", leaveAlice = "10-31", arriveBob = "11-01", leaveBob = "12-31",
 # Output: 0
 assert (Solution.countDaysTogether("10-01", "10-31", "11-01", "12-31")
         == 0)

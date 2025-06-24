@@ -20,10 +20,10 @@ class Solution:
         return '1' * (count_1 - 1) + '0' * (len(s) - count_1) + '1'
 
 
-# Unit Test: s = "010", Output: "001"
+# Input: s = "010", Output: "001"
 assert Solution.maximumOddBinaryNumber("010") == "001"
 
-# Unit Test: s = "0101", Output: "1001"
+# Input: s = "0101", Output: "1001"
 assert Solution.maximumOddBinaryNumber("0101") == "1001"
 
 print("All unit tests are passed.")

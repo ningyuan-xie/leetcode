@@ -15,13 +15,13 @@ class Solution:
         return [i for i, word in enumerate(words) if x in word]
 
 
-# Unit Test: words = ["leet","code"], x = "e", Output: [0,1]
+# Input: words = ["leet","code"], x = "e", Output: [0,1]
 assert Solution.findWordsContaining(["leet", "code"], "e") == [0, 1]
 
-# Unit Test: words = ["abc","bcd","aaaa","cbc"], x = "a", Output: [0, 2]
+# Input: words = ["abc","bcd","aaaa","cbc"], x = "a", Output: [0, 2]
 assert Solution.findWordsContaining(["abc", "bcd", "aaaa", "cbc"], "a") == [0, 2]
 
-# Unit Test: words = ["abc","bcd","aaaa","cbc"], x = "z", Output: []
+# Input: words = ["abc","bcd","aaaa","cbc"], x = "z", Output: []
 assert Solution.findWordsContaining(["abc", "bcd", "aaaa", "cbc"], "z") == []
 
 print("All unit tests are passed.")

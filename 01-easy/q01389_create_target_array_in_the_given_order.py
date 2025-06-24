@@ -22,13 +22,13 @@ class Solution:
         return target
 
 
-# Unit Test: nums = [0, 1, 2, 3, 4], index = [0, 1, 2, 2, 1], Output: [0, 4, 1, 3, 2]
+# Input: nums = [0, 1, 2, 3, 4], index = [0, 1, 2, 2, 1], Output: [0, 4, 1, 3, 2]
 assert Solution.createTargetArray([0, 1, 2, 3, 4], [0, 1, 2, 2, 1]) == [0, 4, 1, 3, 2]
 
-# Unit Test: nums = [1, 2, 3, 4, 0], index = [0, 1, 2, 3, 0], Output: [0, 1, 2, 3, 4]
+# Input: nums = [1, 2, 3, 4, 0], index = [0, 1, 2, 3, 0], Output: [0, 1, 2, 3, 4]
 assert Solution.createTargetArray([1, 2, 3, 4, 0], [0, 1, 2, 3, 0]) == [0, 1, 2, 3, 4]
 
-# Unit Test: nums = [1], index = [0], Output: [1]
+# Input: nums = [1], index = [0], Output: [1]
 assert Solution.createTargetArray([1], [0]) == [1]
 
 print("All unit tests are passed.")

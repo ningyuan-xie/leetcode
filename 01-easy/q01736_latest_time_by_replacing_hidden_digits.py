@@ -29,13 +29,13 @@ class Solution:
         return ''.join(time)  # Convert list back to string
 
 
-# Unit Test: time = "2?:?0", Output: "23:50"
+# Input: time = "2?:?0", Output: "23:50"
 assert Solution.maximum_time("2?:?0") == "23:50"
 
-# Unit Test: time = "0?:3?", Output: "09:39"
+# Input: time = "0?:3?", Output: "09:39"
 assert Solution.maximum_time("0?:3?") == "09:39"
 
-# Unit Test: time = "1?:22", Output: "19:22"
+# Input: time = "1?:22", Output: "19:22"
 assert Solution.maximum_time("1?:22") == "19:22"
 
 print("All unit tests are passed.")

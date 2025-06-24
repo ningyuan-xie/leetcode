@@ -35,12 +35,12 @@ class Solution:
         return decoded_message
 
 
-# Unit Test: key = "the quick brown fox jumps over the lazy dog", message = "vkbs bs t suepuv"
+# Input: key = "the quick brown fox jumps over the lazy dog", message = "vkbs bs t suepuv"
 # Output: "this is a secret"
 assert Solution.decodeMessage("the quick brown fox jumps over the lazy dog",
                               "vkbs bs t suepuv") == "this is a secret"
 
-# Unit Test: key = "eljuxhpwnyrdgtqkviszcfmabo", message = "zwx hnfx lqantp mnoeius ycgk vcnjrdb"
+# Input: key = "eljuxhpwnyrdgtqkviszcfmabo", message = "zwx hnfx lqantp mnoeius ycgk vcnjrdb"
 # Output: "the five boxing wizards jump quickly"
 assert (Solution.decodeMessage("eljuxhpwnyrdgtqkviszcfmabo",
                                "zwx hnfx lqantp mnoeius ycgk vcnjrdb")

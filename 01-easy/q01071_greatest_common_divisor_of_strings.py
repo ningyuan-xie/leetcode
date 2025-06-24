@@ -42,16 +42,16 @@ class Solution:
         return Solution.gcdOfStringsRecursion(str2, str1[:len(str1) % len(str2)])
 
 
-# Unit Test: str1 = "ABCABC", str2 = "ABC", Output: "ABC"
+# Input: str1 = "ABCABC", str2 = "ABC", Output: "ABC"
 assert Solution.gcdOfStrings("ABCABC", "ABC") == "ABC"
 
-# Unit Test: str1 = "ABABAB", str2 = "ABAB", Output: "AB"
+# Input: str1 = "ABABAB", str2 = "ABAB", Output: "AB"
 assert Solution.gcdOfStrings("ABABAB", "ABAB") == "AB"
 
-# Unit Test: str1 = "LEET", str2 = "CODE", Output: ""
+# Input: str1 = "LEET", str2 = "CODE", Output: ""
 assert Solution.gcdOfStringsRecursion("LEET", "CODE") == ""
 
-# Unit Test: str1 = ""TAUXXTAUXXTAUXXTAUXXTAUXX",
+# Input: str1 = ""TAUXXTAUXXTAUXXTAUXXTAUXX",
 # str2 = "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX", Output: "TAUXX"
 assert Solution.gcdOfStringsRecursion("TAUXXTAUXXTAUXXTAUXXTAUXX",
                                       "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX") == "TAUXX"

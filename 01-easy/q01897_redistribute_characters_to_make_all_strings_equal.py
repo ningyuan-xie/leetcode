@@ -27,10 +27,10 @@ class Solution:
         return True
 
 
-# Unit Test: words = ["abc", "aabc", "bc"], Output: True
+# Input: words = ["abc", "aabc", "bc"], Output: True
 assert Solution.makeEqual(["abc", "aabc", "bc"]) is True
 
-# Unit Test: words = ["ab", "a"], Output: False
+# Input: words = ["ab", "a"], Output: False
 assert Solution.makeEqual(["ab", "a"]) is False
 
 print("All unit tests are passed.")

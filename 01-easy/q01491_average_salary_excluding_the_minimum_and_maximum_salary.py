@@ -30,13 +30,13 @@ class Solution:
         return (total - min_salary - max_salary) / (len(salary) - 2)
 
 
-# Unit Test: salary = [4000, 3000, 1000, 2000], Output: 2500.00000
+# Input: salary = [4000, 3000, 1000, 2000], Output: 2500.00000
 assert Solution.average([4000, 3000, 1000, 2000]) == 2500.00000
 
-# Unit Test: salary = [1000, 2000, 3000], Output: 2000.00000
+# Input: salary = [1000, 2000, 3000], Output: 2000.00000
 assert Solution.average([1000, 2000, 3000]) == 2000.000
 
-# Unit Test: salary = [6000, 5000, 4000, 3000, 2000, 1000], Output: 3500.00000
+# Input: salary = [6000, 5000, 4000, 3000, 2000, 1000], Output: 3500.00000
 assert Solution.average([6000, 5000, 4000, 3000, 2000, 1000]) == 3500.00000
 
 print("All unit tests are passed.")

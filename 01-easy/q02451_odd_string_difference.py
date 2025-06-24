@@ -38,10 +38,10 @@ class Solution:
                 return value[0]
 
 
-# Unit Test: words = ["adc", "wzy", "abc"], Output: "abc"
+# Input: words = ["adc", "wzy", "abc"], Output: "abc"
 assert Solution.oddString(["adc", "wzy", "abc"]) == "abc"
 
-# Unit Test: words = ["aaa", "bob", "ccc", "ddd"], Output: "bob"
+# Input: words = ["aaa", "bob", "ccc", "ddd"], Output: "bob"
 assert Solution.oddString(["aaa", "bob", "ccc", "ddd"]) == "bob"
 
 print("All unit tests are passed.")

@@ -31,10 +31,10 @@ class Solution:
         return population.index(max_population) + 1950
 
 
-# Unit Test: logs = [[1993, 1999], [2000, 2010]], Output: 1993
+# Input: logs = [[1993, 1999], [2000, 2010]], Output: 1993
 assert Solution.maximumPopulation([[1993, 1999], [2000, 2010]]) == 1993
 
-# Unit Test: logs = [[1950, 1961], [1960, 1971], [1970, 1981]], Output: 1960
+# Input: logs = [[1950, 1961], [1960, 1971], [1970, 1981]], Output: 1960
 assert Solution.maximumPopulation([[1950, 1961], [1960, 1971], [1970, 1981]]) == 1960
 
 print("All unit tests are passed.")

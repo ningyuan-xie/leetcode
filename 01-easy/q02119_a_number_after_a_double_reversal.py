@@ -27,10 +27,10 @@ class Solution:
 # Input: num = 526, Output: True
 assert Solution.doubleReversal(526) is True
 
-# Unit Test: num = 1800, Output: False
+# Input: num = 1800, Output: False
 assert Solution.doubleReversal(1800) is False
 
-# Unit Test: num = 0, Output: True
+# Input: num = 0, Output: True
 assert Solution.doubleReversal(0) is True
 
 print("All unit tests are passed.")

@@ -23,19 +23,19 @@ class Solution:
         return digit_sum
 
 
-# Unit Test: n = 34, k = 6, Output: 9
+# Input: n = 34, k = 6, Output: 9
 # 34 in base 6 is 5 * 6^1 + 4 * 6^0 = 30 + 4 = 34
 assert Solution.sumBase(34, 6) == 9
 
-# Unit Test: n = 10, k = 10, Output: 1
+# Input: n = 10, k = 10, Output: 1
 # 10 in base 10 is 1 * 10^1 + 0 * 10^0 = 10 + 0 = 10
 assert Solution.sumBase(10, 10) == 1
 
-# Unit Test: n = 42, k = 2, Output: 3
+# Input: n = 42, k = 2, Output: 3
 # 42 in base 2 is 1 * 2^5 + 0 * 2^4 + 1 * 2^3 + 0 * 2^2 + 1 * 2^1 + 0 * 2^0 = 32 + 8 + 2 = 42
 assert Solution.sumBase(42, 2) == 3
 
-# Unit Test: n = 8, k = 2, Output: 1
+# Input: n = 8, k = 2, Output: 1
 # 8 in base 2 is 1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 0 * 2^0 = 8
 assert Solution.sumBase(8, 2) == 1
 

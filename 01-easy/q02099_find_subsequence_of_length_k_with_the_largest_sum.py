@@ -29,13 +29,13 @@ class Solution:
         return result
 
 
-# Unit Test: nums = [2,1,3,3], k = 2, Output: [3,3]
+# Input: nums = [2,1,3,3], k = 2, Output: [3,3]
 assert Solution.maxSubsequenceSum([2, 1, 3, 3], 2) == [3, 3]
 
-# Unit Test: nums = [-1,-2,3,4], k = 3, Output: [-1,3,4]
+# Input: nums = [-1,-2,3,4], k = 3, Output: [-1,3,4]
 assert Solution.maxSubsequenceSum([-1, -2, 3, 4], 3) == [-1, 3, 4]
 
-# Unit Test: nums = [3,4,3,3], k = 2, Output: [3,4]
+# Input: nums = [3,4,3,3], k = 2, Output: [3,4]
 assert Solution.maxSubsequenceSum([3, 4, 3, 3], 2) == [3, 4]
 
 print("All unit tests are passed.")

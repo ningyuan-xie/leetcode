@@ -42,12 +42,12 @@ class Solution:
         return (prime_permutation * non_prime_permutation) % MOD
 
 
-# Unit Test: n = 5, Output: 12
+# Input: n = 5, Output: 12
 # Explanation: prime numbers = [2, 3, 5], non-prime numbers = [1, 4]
 # prime permutations = 3!, non-prime permutations = 2!, total permutations = 3! * 2! = 12
 assert Solution.numPrimeArrangements(5) == 12
 
-# Unit Test: n = 100, Output: 682289015
+# Input: n = 100, Output: 682289015
 # prime permutations = 25!, non-prime permutations = 75!, total permutations = 25! * 75! = 682289015
 assert Solution.numPrimeArrangements(100) == 682289015
 

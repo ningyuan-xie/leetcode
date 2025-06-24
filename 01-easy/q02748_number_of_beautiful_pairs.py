@@ -36,10 +36,10 @@ class Solution:
         return count
 
 
-# Unit Test: nums = [2,5,1,4], Output: 5
+# Input: nums = [2,5,1,4], Output: 5
 assert Solution.countBeautifulPairs([2, 5, 1, 4]) == 5
 
-# Unit Test: nums = [11,21,12], Output: 2
+# Input: nums = [11,21,12], Output: 2
 assert Solution.countBeautifulPairs([11, 21, 12]) == 2
 
 print("All unit tests are passed.")
