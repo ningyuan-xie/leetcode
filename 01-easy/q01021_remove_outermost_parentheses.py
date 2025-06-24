@@ -12,7 +12,7 @@ class Solution:
     @staticmethod
     def removeOuterParentheses(s: str) -> str:
         """Optimal Solution: Count the number of open parentheses. Time Complexity: O(n), Space Complexity: O(n)."""
-        # Stack to track the level of parentheses
+        # Track the level of parentheses
         open_count, result = 0, []
 
         # Iterate through the string
