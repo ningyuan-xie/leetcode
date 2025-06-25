@@ -19,7 +19,7 @@ class Solution:
     @staticmethod
     def reverseWordsTwoPointers(s: str) -> str:
         """Optimal Solution: Two Pointers. Time Complexity: O(n), Space Complexity: O(n).
-           Similar to 0344-Reverse-String.py and 0541-Reverse-String-II.py"""
+        Similar to 0344-Reverse-String.py and 0541-Reverse-String-II.py"""
         # Convert the string into a list of characters
         s = list(s)
         # Initialize the left and right pointers
