@@ -8,14 +8,18 @@ A defanged IP address replaces every period "." with "[.]"."""
 class Solution:
     @staticmethod
     def defangIPaddr(address: str) -> str:
-        """Optimal Solution: Replace Method. Time Complexity: O(n), Space Complexity: O(n)."""
+        """Optimal Solution: String Manipulation. Time Complexity: O(n), Space Complexity: O(n)."""
         return address.replace(".", "[.]")
 
 
-# Input: address = "1.1.1.1", Output: "1[.]1[.]1[.]1"
-assert Solution.defangIPaddr("1.1.1.1") == "1[.]1[.]1[.]1"
+def unit_tests():
+    # Input: address = "1.1.1.1", Output: "1[.]1[.]1[.]1"
+    assert Solution.defangIPaddr("1.1.1.1") == "1[.]1[.]1[.]1"
 
-# Input: address = "255.100.50.0", Output: "255[.]100[.]50[.]0"
-assert Solution.defangIPaddr("255.100.50.0") == "255[.]100[.]50[.]0"
+    # Input: address = "255.100.50.0", Output: "255[.]100[.]50[.]0"
+    assert Solution.defangIPaddr("255.100.50.0") == "255[.]100[.]50[.]0"
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
