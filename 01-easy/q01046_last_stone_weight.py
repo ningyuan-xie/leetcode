@@ -15,7 +15,7 @@ class Solution:
     @staticmethod
     def lastStoneWeight(stones: List[int]) -> int:
         """Optimal Solution: Min Heap. Time Complexity: O(nlog(n)), Space Complexity: O(n).
-        Similar to 0703-Kth-Largest-Element-in-a-Stream.py"""
+        Similar to 703. Kth Largest Element in a Stream."""
         # Python's heapq is a min heap, but we need a max heap to pick the heaviest stones
         stones = [-stone for stone in stones]  # [2, 7, 4, 1, 8, 1] -> [-2, -7, -4, -1, -8, -1]
         heapq.heapify(stones)  # [-8, -7, -4, -1, -2, -1]
