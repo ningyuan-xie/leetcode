@@ -1,7 +1,9 @@
 """559. Maximum Depth of N-ary Tree
 Link: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
 Difficulty: Easy
-Description: Given a n-ary tree, find its maximum depth."""
+Description: Given a n-ary tree, find its maximum depth.
+The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See examples)."""
 
 from typing import Optional
 from package.data_structures import Node
@@ -10,47 +12,38 @@ from package.data_structures import Node
 class Solution:
     @staticmethod
     def maxDepth(root: Optional[Node]) -> int:
-        """Optimal Solution: Postorder DFS Traversal. Time Complexity: O(n), Space Complexity: O(1).
-        Similar to 0104-Maximum-Depth-of-Binary-Tree.py and 0543-Diameter-of-Binary-Tree.py"""
-        # Base Case: If the current node is None, return 0
+        """Optimal Solution: Postorder DFS. Time Complexity: O(n), Space Complexity: O(n).
+        Similar to 104. Maximum Depth of Binary Tree."""
+        # Base Case: empty tree has depth 0
         if not root:
             return 0
-        # Base Case: If the current node is a leaf node (no children), return 1 and go back up
-        # This base case is necessary since max() cannot take an empty list
+        
+        # Base Case: leaf node has depth 1
         if not root.children:
             return 1
-        # Initialize a list to store the depths of all children
-        child_depths = []
-        # Iterate over each child first before the root
-        for child in root.children:
-            # Access order: [1, 3, 5, 6, 2, 4] -- the same as preorder traversal
-            # Actual depth calculation order: [5, 6, 3, 2, 4, 1] -- the actual postorder traversal
-            # 1. Recursive Case: Traverse each child and store their depths
-            child_depths.append(Solution.maxDepth(child))  # 3: [1, 1] and return 2; 1: [2, 1, 1]
-        # 2. Root Case: After traversing all children, find the maximum depth among them,
-        # and +1 to account for the current node
-        return max(child_depths) + 1
+        
+        # Find the maximum depth among all children and add 1 for current node
+        return 1 + max(Solution.maxDepth(child) for child in root.children)
 
 
-# Input: root = [1, None, 3, 2, 4, None, 5, 6], Output: 3
-root_test = Node.build_nary_tree([1, None, 3, 2, 4, None, 5, 6])
-print(root_test)
-assert Solution.maxDepth(root_test) == 3
+def unit_tests():
+    # Input: root = [1, None, 3, 2, 4, None, 5, 6], Output: 3
+    root = Node.build_nary_tree([1, None, 3, 2, 4, None, 5, 6])
+    assert Solution.maxDepth(root) == 3
 
-# Input: root = [1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10,
-# None, None, 11, None, 12, None, 13, None, None, 14], Output: 5
-root_test = Node.build_nary_tree([1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10,
-                                  None, None, 11, None, 12, None, 13, None, None, 14])
-print(root_test)
-assert Solution.maxDepth(root_test) == 5
+    # Input: root = [1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10, None, None, 11, None, 12, None, 13, None, None, 14], Output: 5
+    root = Node.build_nary_tree([1, None, 2, 3, 4, 5, None, None, 6, 7, None, 8, None, 9, 10, None, None, 11, None, 12, None, 13, None, None, 14])
+    assert Solution.maxDepth(root) == 5
 
-# Input: root = [1, None, 2], Output: 2
-root_test = Node.build_nary_tree([1, None, 2])
-print(root_test)
-assert Solution.maxDepth(root_test) == 2
+    # Input: root = [1, None, 2], Output: 2
+    root = Node.build_nary_tree([1, None, 2])
+    assert Solution.maxDepth(root) == 2
 
-# Input: root = [], Output: 0
-root_test = Node.build_nary_tree([])
-assert Solution.maxDepth(root_test) == 0
+    # Input: root = [], Output: 0
+    root = Node.build_nary_tree([])
+    assert Solution.maxDepth(root) == 0
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
