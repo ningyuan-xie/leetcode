@@ -1,8 +1,7 @@
 """1154. Day of the Year
 Link: https://leetcode.com/problems/day-of-the-year/
 Difficulty: Easy
-Description: Given a string date representing a Gregorian calendar date formatted as YYYY-MM-DD,
-return the day number of the year."""
+Description: Given a string date representing a Gregorian calendar date formatted as YYYY-MM-DD, return the day number of the year."""
 
 
 class Solution:
@@ -24,13 +23,17 @@ class Solution:
         return day_of_year
 
 
-# Input: date = "2019-01-09", Output: 9
-assert Solution.dayOfYear("2019-01-09") == 9
+def unit_tests():
+    # Input: date = "2019-01-09", Output: 9
+    assert Solution.dayOfYear("2019-01-09") == 9
 
-# Input: date = "2019-02-10", Output: 41
-assert Solution.dayOfYear("2019-02-10") == 41
+    # Input: date = "2019-02-10", Output: 41
+    assert Solution.dayOfYear("2019-02-10") == 41
 
-# Input: date = "2003-03-01", Output: 60
-assert Solution.dayOfYear("2003-03-01") == 60
+    # Input: date = "2003-03-01", Output: 60
+    assert Solution.dayOfYear("2003-03-01") == 60
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
