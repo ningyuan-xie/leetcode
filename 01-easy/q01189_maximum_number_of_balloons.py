@@ -1,38 +1,34 @@
 """1189. Maximum Number of Balloons
 Link: https://leetcode.com/problems/maximum-number-of-balloons/
 Difficulty: Easy
-Description: Given a string text, you want to use the characters of text to form as many instances of
-the word "balloon" as possible.
-You can use each character in text at most once. Return the maximum number of instances that can be
-formed."""
+Description: Given a string text, you want to use the characters of text to form as many instances of the word "balloon" as possible.
+You can use each character in text at most once. Return the maximum number of instances that can be formed."""
 
 
 class Solution:
     @staticmethod
     def maxNumberOfBalloons(text: str) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(1)."""
-        # Initialize the frequency of each character in text
-        freq = {c: 0 for c in "balon"}  # {b: 0, a: 0, l: 0, o: 0, n: 0}
-
-        # Count the frequency of each character in text
+        """Optimal Solution: Hash Table. Time Complexity: O(n), Space Complexity: O(n)."""
+        # Count frequency of each character in text
+        freq = {}
         for c in text:
-            if c in freq:
-                freq[c] += 1
+            freq[c] = freq.get(c, 0) + 1
+        
+        # Calculate max instances of "balloon" based on character requirements
+        return min(freq.get("b", 0), freq.get("a", 0), freq.get("l", 0) // 2, freq.get("o", 0) // 2, freq.get("n", 0))
 
-        # Calculate the maximum number of instances of the word "balloon" that can be formed
-        return min(freq["b"], freq["a"], freq["l"] // 2, freq["o"] // 2, freq["n"])
+
+def unit_tests():
+    # Input: text = "nlaebolko", Output: 1
+    assert Solution.maxNumberOfBalloons("nlaebolko") == 1
+
+    # Input: text = "loonbalxballpoon", Output: 2
+    assert Solution.maxNumberOfBalloons("loonbalxballpoon") == 2
+
+    # Input: text = "leetcode", Output: 0
+    assert Solution.maxNumberOfBalloons("leetcode") == 0
 
 
-# Input: text = "nlaebolko", Output: 1
-# Explanation: "balloon" can be formed once using the characters in text.
-assert Solution.maxNumberOfBalloons("nlaebolko") == 1
-
-# Input: text = "loonbalxballpoon", Output: 2
-# Explanation: "balloon" can be formed twice using the characters in text.
-assert Solution.maxNumberOfBalloons("loonbalxballpoon") == 2
-
-# Input: text = "leetcode", Output: 0
-# Explanation: "balloon" cannot be formed using the characters in text.
-assert Solution.maxNumberOfBalloons("leetcode") == 0
-
-print("All unit tests are passed.")
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
