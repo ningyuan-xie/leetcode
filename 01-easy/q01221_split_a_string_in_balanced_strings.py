@@ -3,7 +3,7 @@ Link: https://leetcode.com/problems/split-a-string-in-balanced-strings
 Difficulty: Easy
 Description: Balanced strings are those that have an equal quantity of 'L' and 'R' characters.
 Given a balanced string s, split it into some number of substrings such that:
-- Each substring is balanced.
+• Each substring is balanced.
 Return the maximum number of balanced strings you can obtain."""
 
 
@@ -23,8 +23,7 @@ class Solution:
                 l_count += 1
             else:
                 r_count += 1
-            # Greedy approach: whenever the number of 'L' and 'R' are equal,
-            # increment the count and reset the number of 'L' and 'R' characters
+            # Greedy approach: whenever the number of 'L' and 'R' are equal, increment the count and reset the number of 'L' and 'R' characters
             if l_count == r_count:
                 count += 1
                 l_count, r_count = 0, 0
@@ -32,16 +31,20 @@ class Solution:
         return count
 
 
-# Input: s = "RLRRLLRLRL", Output: 4
-assert Solution.balancedStringSplit("RLRRLLRLRL") == 4
+def unit_tests():
+    # Input: s = "RLRRLLRLRL", Output: 4
+    assert Solution.balancedStringSplit("RLRRLLRLRL") == 4
 
-# Input: s = "RLLLLRRRLR", Output: 3
-assert Solution.balancedStringSplit("RLLLLRRRLR") == 3
+    # Input: s = "RLLLLRRRLR", Output: 3
+    assert Solution.balancedStringSplit("RLLLLRRRLR") == 3
 
-# Input: s = "LLLLRRRR", Output: 1
-assert Solution.balancedStringSplit("LLLLRRRR") == 1
+    # Input: s = "LLLLRRRR", Output: 1
+    assert Solution.balancedStringSplit("LLLLRRRR") == 1
 
-# Input: s = "RLRRRLLRLL", Output: 2
-assert Solution.balancedStringSplit("RLRRRLLRLL") == 2
+    # Input: s = "RLRRRLLRLL", Output: 2
+    assert Solution.balancedStringSplit("RLRRRLLRLL") == 2
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
