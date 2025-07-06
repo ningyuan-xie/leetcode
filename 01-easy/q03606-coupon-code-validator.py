@@ -17,7 +17,7 @@ class Solution:
     @staticmethod
     def validateCoupons(code: List[str], businessLine: List[str], isActive: List[bool]) -> List[str]:
         """Optimal Solution: Sorting. Time Complexity: O(nlog(n)), Space Complexity: O(n)."""
-        valid_business_lines = {"electronics", "grocery", "pharmacy", "restaurant"}
+        business_order = ["electronics", "grocery", "pharmacy", "restaurant"]
         valid_coupons = []
 
         def is_valid_code(code: str) -> bool:
@@ -25,11 +25,10 @@ class Solution:
             return len(code) > 0 and all(c.isalnum() or c == "_" for c in code)
         
         for coupon_code, business_line, is_active in zip(code, businessLine, isActive):
-            if is_active and is_valid_code(coupon_code) and business_line in valid_business_lines:
+            if is_active and is_valid_code(coupon_code) and business_line in business_order:
                 valid_coupons.append((coupon_code, business_line))
         
         # Sort by business line order, then by code alphabetically
-        business_order = ["electronics", "grocery", "pharmacy", "restaurant"]
         valid_coupons.sort(key=lambda x: (business_order.index(x[1]), x[0]))
         
         return [coupon[0] for coupon in valid_coupons]
