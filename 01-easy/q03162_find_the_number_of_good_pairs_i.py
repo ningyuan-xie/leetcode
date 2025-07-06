@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def numberOfPairs(nums1: List[int], nums2: List[int], k: int) -> int:
-        """Optimal Solution: Hash Table. Time Complexity: O(n * m), Space Complexity: O(n)."""
+        """Optimal Solution: Hash Table. Time Complexity: O(n*m), Space Complexity: O(n)."""
         # Initialize a dictionary to count occurrences of each number in nums2
         count = {}
         # Iterate through nums2 and count occurrences

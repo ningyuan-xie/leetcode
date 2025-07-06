@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isAlienSorted(words: List[str], order: str) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n * m), Space Complexity: O(1)."""
+        """Optimal Solution: Hash Table. Time Complexity: O(n*m), Space Complexity: O(1)."""
         # Initialize the hash table to store the order of each character in the alien language
         order_map = {char: i for i, char in enumerate(order)}
 

@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def isCovered(ranges: List[List[int]], left: int, right: int) -> bool:
-        """Optimal Solution: Brute Force. Time Complexity: O(n * m), Space Complexity: O(1)."""
+        """Optimal Solution: Brute Force. Time Complexity: O(n*m), Space Complexity: O(1)."""
         # Initialize covered to False
         for x in range(left, right + 1):
             covered = False

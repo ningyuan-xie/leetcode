@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     @staticmethod
     def longestCommonPrefix(strs: List[str]) -> str:
-        """Optimal Solution: Horizontal scanning. Time Complexity: O(n * m), Space Complexity: O(1)."""
+        """Optimal Solution: Horizontal scanning. Time Complexity: O(n*m), Space Complexity: O(1)."""
         # Check if the list is empty
         if not strs:
             return ""

@@ -13,7 +13,7 @@ class Solution:
     @staticmethod
     def minBitwiseArray(nums: List[int]) -> List[int]:
         """Optimal Solution: Bit Manipulation. 
-           Time Complexity: O(n * m), where m is the max num, Space Complexity: O(n).
+           Time Complexity: O(n*m), where m is the max num, Space Complexity: O(n).
            Bitwise XOR operator ^ : 1 ^ 1 = 0, 1 ^ 0 = 1, 0 ^ 0 = 0.
            Bitwise OR operator | : 1 | 1 = 1, 1 | 0 = 1, 0 | 0 = 0."""
         # Initialize the result array

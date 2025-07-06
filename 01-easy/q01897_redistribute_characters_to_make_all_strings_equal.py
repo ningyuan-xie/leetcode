@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     @staticmethod
     def makeEqual(words: List[str]) -> bool:
-        """Optimal Solution: Hash Table. Time Complexity: O(n * m), Space Complexity: O(1)."""
+        """Optimal Solution: Hash Table. Time Complexity: O(n*m), Space Complexity: O(1)."""
         # Count the frequency of each character in all words
         char_count = {}
         for word in words:

@@ -11,7 +11,7 @@ Given strings sequence and word, return the maximum k-repeating value of word in
 class Solution:
     @staticmethod
     def max_repeating(sequence: str, word: str) -> int:
-        """Optimal Solution: Incremental Search. Time Complexity: O(n * m), Space Complexity: O(n)."""
+        """Optimal Solution: Incremental Search. Time Complexity: O(n*m), Space Complexity: O(n)."""
         count = 0
         repeated_word = word
 
