@@ -12,7 +12,7 @@ Return the maximum height of the triangle that can be achieved."""
 class Solution:
     @staticmethod
     def maxHeightOfTriangle(red: int, blue: int) -> int:
-        """Optimal Solution: Binary Search. Time Complexity: O(logn), Space Complexity: O(1)."""
+        """Optimal Solution: Binary Search. Time Complexity: O(log(n)), Space Complexity: O(1)."""
 
         def can_build(h: int) -> bool:
             """Helper function to determine if a triangle with height h can be built"""
