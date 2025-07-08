@@ -1,8 +1,7 @@
 """1281. Subtract the Product and Sum of Digits of an Integer
 Link: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 Difficulty: Easy
-Description: Given an integer number n, return the difference between the product of its digits
-and the sum of its digits."""
+Description: Given an integer number n, return the difference between the product of its digits and the sum of its digits."""
 
 
 class Solution:
@@ -22,10 +21,14 @@ class Solution:
         return product_of_digits - sum_of_digits
 
 
-# Input: n = 234, Output: 15
-assert Solution.subtractProductAndSum(234) == 15
+def unit_tests():
+    # Input: n = 234, Output: 15
+    assert Solution.subtractProductAndSum(234) == 15
 
-# Input: n = 4421, Output: 21
-assert Solution.subtractProductAndSum(4421) == 21
+    # Input: n = 4421, Output: 21
+    assert Solution.subtractProductAndSum(4421) == 21
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
