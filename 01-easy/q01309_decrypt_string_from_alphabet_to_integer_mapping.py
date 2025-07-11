@@ -1,10 +1,9 @@
 """1309. Decrypt String from Alphabet to Integer Mapping
 Link: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/
 Difficulty: Easy
-Description: You are given a string s formed by digits and '#'. We want to map s to English lowercase
-characters as follows:
-Characters ('a' to 'i') are represented by ('1' to '9') respectively.
-Characters ('j' to 'z') are represented by ('10#' to '26#') respectively.
+Description: You are given a string s formed by digits and '#'. We want to map s to English lowercase characters as follows:
+• Characters ('a' to 'i') are represented by ('1' to '9') respectively.
+• Characters ('j' to 'z') are represented by ('10#' to '26#') respectively.
 Return the string formed after mapping.
 The test cases are generated so that a unique mapping will always exist."""
 
@@ -13,7 +12,6 @@ class Solution:
     @staticmethod
     def freqAlphabets(s: str) -> str:
         """Optimal Solution: Reverse Iteration. Time Complexity: O(n), Space Complexity: O(1)."""
-        # Initialize the result
         result = ""
 
         # Traverse the string in reverse order
@@ -31,13 +29,17 @@ class Solution:
         return result
 
 
-# Input: s = "10#11#12", Output: "jkab"
-assert Solution.freqAlphabets("10#11#12") == "jkab"
+def unit_tests():
+    # Input: s = "10#11#12", Output: "jkab"
+    assert Solution.freqAlphabets("10#11#12") == "jkab"
 
-# Input: s = "1326#", Output: "acz"
-assert Solution.freqAlphabets("1326#") == "acz"
+    # Input: s = "1326#", Output: "acz"
+    assert Solution.freqAlphabets("1326#") == "acz"
 
-# Input: s = "25#", Output: "y"
-assert Solution.freqAlphabets("25#") == "y"
+    # Input: s = "25#", Output: "y"
+    assert Solution.freqAlphabets("25#") == "y"
 
-print("All unit tests are passed.")
+
+if __name__ == "__main__":
+    unit_tests()
+    print("All unit tests are passed.")
